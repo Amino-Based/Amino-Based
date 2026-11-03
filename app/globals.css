@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.stroke-text {
+  -webkit-text-stroke: 1px #71717a;
+  color: transparent;
+}
+
+/* Payload admin (/pb-console): its `.collection-list .table` rule sets
+   `max-width: unset` plus a negative-margin full-bleed width, meant for desktop
+   edge-to-edge rows. On narrow viewports there's no room for that bleed, so it
+   drags the whole table past `.table-wrap`'s bounds instead of staying inside its
+   scroll boundary, and the overflow escapes all the way out to the page. Dropping
+   the bleed keeps the table inside `.table-wrap`, which is then free to actually
+   scroll horizontally on its own with the sidebar/header staying put. */
+.collection-list .table {
+  width: 100%;
+  max-width: 100%;
+  left: 0;
+  padding-left: 0;
+}
+.table-wrap {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Honour the OS "reduce motion" preference across the whole site. This covers every CSS
+   transition, animation and smooth scroll. GSAP tweens are set inline and are NOT reachable
+   from here, so each GSAP block checks matchMedia separately (see HomeClient). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
