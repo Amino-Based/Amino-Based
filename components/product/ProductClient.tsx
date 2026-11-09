@@ -23,6 +23,33 @@ import { type ProductRelatedPost } from "@/lib/types/blog";
 import type { ShopMockProduct } from "@/lib/shopCardProduct";
 import { resolveProductImageUrl } from "@/lib/products/productImage";
 
+/**
+ * Renders CMS long-form copy as discrete paragraphs.
+ *
+ * The dossier fields are plain Payload `textarea` values in which paragraphs are
+ * separated by a blank line. Rendering that string inside a single <p> collapses every
+ * break, so multi-paragraph copy arrives as one unbroken block of text. Splitting on
+ * blank lines restores the authored structure.
+ *
+ * Content is rendered as text nodes only - no HTML is interpreted.
+ */
+function DossierProse({ text }: { text?: string | null }) {
+  const paragraphs = (text ?? "")
+    .split(/\n\s*\n/)
+    .map((paragraph) => paragraph.trim())
+    .filter(Boolean);
+
+  if (paragraphs.length === 0) return null;
+
+  return (
+    <div className="space-y-3">
+      {paragraphs.map((paragraph, index) => (
+        <p key={index}>{paragraph}</p>
+      ))}
+    </div>
+  );
+}
+
 // 10 Detailed Laboratory Research FAQs for this specific product
 const PRODUCT_TEN_FAQS = [
   {
@@ -557,7 +584,7 @@ export default function ProductClient({
               </button>
               {openDossierAccordions.details && (
                 <div className="pt-3.5 pb-1 text-sm sm:text-[15px] text-[#475569] leading-relaxed">
-                  <p>{dossierDetails.detailsContent}</p>
+                  <DossierProse text={dossierDetails.detailsContent} />
                 </div>
               )}
             </div>
@@ -578,7 +605,7 @@ export default function ProductClient({
               </button>
               {openDossierAccordions.research && (
                 <div className="pt-3.5 pb-1 text-sm sm:text-[15px] text-[#475569] leading-relaxed">
-                  <p>{dossierDetails.researchContent}</p>
+                  <DossierProse text={dossierDetails.researchContent} />
                 </div>
               )}
             </div>
@@ -599,7 +626,7 @@ export default function ProductClient({
               </button>
               {openDossierAccordions.quality && (
                 <div className="pt-3.5 pb-1 text-sm sm:text-[15px] text-[#475569] leading-relaxed space-y-3">
-                  <p>{dossierDetails.qualityContent}</p>
+                  <DossierProse text={dossierDetails.qualityContent} />
                   <div className="flex flex-wrap items-center justify-between gap-3 p-4 bg-[#F8FAFC] rounded-xl border border-[#E2E8F0] mt-2">
                     <div className="flex items-center gap-4 text-xs sm:text-sm font-semibold text-[#071739]">
                       {coaBatchNumber && (
@@ -653,7 +680,7 @@ export default function ProductClient({
               </button>
               {openDossierAccordions.compliance && (
                 <div className="pt-3.5 pb-1 text-sm sm:text-[15px] text-[#475569] leading-relaxed">
-                  <p>{dossierDetails.complianceContent}</p>
+                  <DossierProse text={dossierDetails.complianceContent} />
                 </div>
               )}
             </div>
