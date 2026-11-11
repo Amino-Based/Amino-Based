@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "ghk-cu",
+    "qc": {
+      "main_content_words": 2225,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED as a medicine. Used as a cosmetic ingredient in many jurisdictions. Compliance section written specifically.",
+    "variants_from_csv": [
+      {
+        "variant": "50mg",
+        "price_usd": "54.99"
+      },
+      {
+        "variant": "100mg",
+        "price_usd": "88.00"
+      }
+    ],
+    "images": [
+      {
+        "variant": "50mg",
+        "source_file": "GHK-Cu 50mg.png",
+        "upload_as": "amino-ghk-cu-50mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      },
+      {
+        "variant": "100mg",
+        "source_file": "GHK-Cu 100mg.png",
+        "upload_as": "amino-ghk-cu-100mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 139035031 (PUG REST, verified 2026-11-09): C14H21CuN6O4-, MW 400.90; CAS 130120-56-8",
+      "PMID 26236730 doi:10.1155/2015/648108 - Biomed Res Int - GHK Peptide as a Natural Modulator of Multiple Cellular Pathways in Skin Regeneration. NOTE: authors are affiliated with Skin Biology, a company selling GHK products - a commercial conflict of interest relevant to the broad claims made.",
+      "PMID 35083444 doi:10.31491/apt.2020.03.014 - Aging Pathobiol Ther - The potential of GHK as an anti-aging peptide; serum GHK ~200 ng/ml at age 20 declining to ~80 ng/ml by age 60",
+      "PMID 15803494 doi:10.1002/jbm.b.30246 - J Biomed Mater Res B - biotinylated GHK in collagen matrix, rat dermal wound healing; ninefold increase in copper concentration at wound site"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Copper loading / stoichiometry of the supplied material - whether it is the fully formed Cu(II) chelate or the free tripeptide is NOT VERIFIED and materially changes what the material is"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what GHK-Cu is, how it differs from GHK, and how much the broad claims should be trusted.",
+    "primary_keyword": "GHK-Cu",
+    "secondary_keywords": [
+      "copper tripeptide-1",
+      "GHK peptide",
+      "glycyl-histidyl-lysine copper",
+      "GHK-Cu molecular weight",
+      "copper peptide"
+    ],
+    "long_tail_keywords": [
+      "what is GHK-Cu",
+      "GHK vs GHK-Cu difference",
+      "GHK-Cu molecular formula",
+      "does GHK decline with age",
+      "GHK-Cu 4000 genes claim",
+      "GHK-Cu CAS 130120-56-8",
+      "is GHK-Cu FDA approved",
+      "copper tripeptide-1 cosmetic",
+      "GHK-Cu copper content analysis",
+      "GHK-Cu vs AHK-Cu"
+    ],
+    "semantic_terms": [
+      "coordination complex",
+      "chelate",
+      "matrikine",
+      "extracellular matrix",
+      "metalloproteinase",
+      "decorin",
+      "glycosaminoglycan",
+      "histidine imidazole",
+      "metal-catalysed oxidation",
+      "elemental analysis",
+      "copper tripeptide-1"
+    ],
+    "name_variations": [
+      "GHK-Cu",
+      "GHK",
+      "copper tripeptide-1",
+      "glycyl-L-histidyl-L-lysine copper",
+      "Cu-GHK"
+    ],
+    "informational_queries": [
+      "what is GHK-Cu",
+      "GHK-Cu mechanism",
+      "is GHK-Cu effective",
+      "GHK vs GHK-Cu",
+      "GHK-Cu side effects"
+    ],
+    "commercial_queries": [
+      "buy GHK-Cu",
+      "GHK-Cu 50mg 100mg",
+      "GHK-Cu certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns GHK-Cu and copper tripeptide-1. /product/ahk-cu owns the AHK variant. Blend pages (glow, klow) own their combinations and link here rather than restating identity content.",
+    "h1": "Driven by CMS name field; renders as \"GHK-CU\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/ahk-cu",
+        "anchor": "AHK-CU",
+        "rationale": "The closely related copper tripeptide; direct comparison.",
+        "verified": true
+      },
+      {
+        "route": "/product/glow",
+        "anchor": "Glow",
+        "rationale": "Blend commonly containing this compound.",
+        "verified": true
+      },
+      {
+        "route": "/product/klow",
+        "anchor": "Klow",
+        "rationale": "Blend commonly containing this compound.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "GHK-Cu | Copper Tripeptide-1 | Amino Based",
+    "seoDescription": "GHK-Cu: glycyl-L-histidyl-L-lysine copper complex, C14H21CuN6O4-, MW 400.90, CAS 130120-56-8. Identity, evidence and its limits. Research use only.",
+    "description": "GHK-Cu is the copper(II) complex of the naturally occurring tripeptide glycyl-L-histidyl-L-lysine. Its molecular formula is recorded as C14H21CuN6O4-, with a molecular weight of approximately 400.90 g/mol and CAS registry number 130120-56-8 (PubChem CID 139035031). The free tripeptide occurs in human plasma and declines with age. It is not an approved medicine, though it is widely used as a cosmetic ingredient. Research use only.",
+    "productDetailsTitle": "GHK-Cu: A Tripeptide, a Metal Ion, and Why the Distinction Matters",
+    "productDetailsDescription": "GHK-Cu is not a peptide in the ordinary sense of this catalogue. It is a coordination complex: a very short peptide bound to a metal ion, and the metal is not an impurity or an additive but part of what the substance is.\n\nThe peptide portion is glycyl-L-histidyl-L-lysine — glycine, histidine, lysine, three residues. The histidine imidazole and the terminal amine groups give the tripeptide a geometry well suited to chelating divalent copper, and the resulting complex is what is designated GHK-Cu. The verified identifiers for the complex are a molecular formula recorded as C14H21CuN6O4-, a molecular weight of approximately 400.90 g/mol and CAS registry number 130120-56-8, under PubChem CID 139035031. The trailing minus sign in that formula is not a typographical error: it indicates that the recorded species carries a net negative charge, which is a normal way for metal-peptide complexes to be catalogued and a reminder that this entity has a different chemical character from an uncharged peptide.\n\nThe free tripeptide and the copper complex are distinct substances with distinct identifiers, and conflating them is the commonest error made about this compound. A great deal of published work describes \"GHK\", meaning the peptide, while a great deal of commercial material describes \"GHK-Cu\", meaning the complex, and the two literatures are often merged. Whether a given preparation is supplied as the pre-formed copper chelate or as the free tripeptide that will acquire copper from its environment is a real question about the material in the vial, and this page records it as unverified rather than assuming it.\n\nThat question matters because copper is doing pharmacological work here, not merely riding along. A rat wound-healing study using a biotinylated GHK incorporated into a collagen matrix reported a ninefold increase in copper concentration at the wound site, and the authors concluded that the wound-healing property could be linked to both copper localisation and matrikine activity (PMID 15803494, doi:10.1002/jbm.b.30246). Copper delivery is part of the proposed mechanism, which means the copper loading of a preparation is a specification rather than a detail.\n\nThe compound is endogenous, which is unusual in this catalogue. GHK is present in human plasma, saliva and urine, and its concentration declines with age — reported as averaging around 200 ng/ml at age 20 and around 80 ng/ml by age 60 (PMID 35083444, doi:10.31491/apt.2020.03.014). As with other endogenous molecules whose levels fall with age, that observation is a correlation and is frequently over-read; it does not establish that the decline causes anything or that restoring the level would reverse anything.\n\nA classification note worth stating plainly: in cosmetic ingredient nomenclature this substance is listed as copper tripeptide-1, and that is the context in which most consumers encounter it. Cosmetic use is a regulatory category with a far lower evidentiary bar than medicinal approval, and presence in cosmetic products is not evidence of therapeutic effect.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 50 mg and 100 mg presentations.",
+    "researchFocusTitle": "A Broad Literature, a Commercial Author, and How to Read Both",
+    "researchFocusDescription": "GHK has an unusually broad claimed activity profile, and the most useful thing this page can do is help a reader calibrate how much weight that breadth should carry.\n\nThe central review in this area, published in BioMed Research International, catalogues an extensive range of reported activities: stimulation of both synthesis and breakdown of collagen and glycosaminoglycans, modulation of metalloproteinases and their inhibitors, stimulation of collagen, dermatan sulfate, chondroitin sulfate and decorin, restoration of replicative vitality to fibroblasts after radiation, attraction of immune and endothelial cells to injury sites, and accelerated wound healing across skin, hair follicles, gastrointestinal tract and bone in several species. It further reports cosmetic effects on skin elasticity, density, firmness, fine lines, photodamage and hyperpigmentation, proposes the compound as a therapeutic agent for conditions as varied as skin inflammation, chronic obstructive pulmonary disease and metastatic colon cancer, and states that it is capable of up- and downregulating at least 4,000 human genes, \"essentially resetting DNA to a healthier state\" (PMID 26236730, doi:10.1155/2015/648108).\n\nThat list should prompt caution rather than enthusiasm, for two reasons that are worth separating.\n\nThe first is structural. A compound reported to beneficially affect skin, lung, bone, gut, hair, radiation injury, inflammation and cancer, while regulating thousands of genes, is being described in terms that no well-characterised pharmacological agent is described in. Specificity is what makes a mechanism testable, and a claimed activity profile this broad is either evidence of a very general effect on cellular state — plausible for a metal-delivery agent, since copper is a cofactor for numerous enzymes — or evidence that the literature has accumulated loosely controlled positive findings. The phrase \"resetting DNA to a healthier state\" is not a mechanistic claim in any testable sense.\n\nThe second is a declared affiliation. The authors of that review are affiliated with Skin Biology, a company whose business is selling GHK-containing products. That does not make the content wrong, and commercial researchers produce sound work. But it is a material conflict of interest on a review making expansive claims about a product the authors sell, and a reader weighing the evidence should know it. This page states it because the spec for this catalogue requires transparent sourcing, and because a reader encountering the same claims on a competitor's product page will not be told.\n\nIndependent work is more restrained and more useful. The rat dermal wound-healing study described above attributes effects to a combination of copper localisation and matrikine activity — matrikines being small fragments of extracellular matrix proteins with tissue-repair activity — and makes a bounded claim supported by a specific measurement (PMID 15803494, doi:10.1002/jbm.b.30246). A separate review considering GHK as an anti-ageing peptide notes the age-related decline in serum levels, describes anti-inflammatory and tissue-remodelling properties for both the peptide and its copper chelate, and characterises observations on cognitive impairment in ageing mice explicitly as preliminary, concluding that the evidence provides a rationale for further preclinical and clinical investigation (PMID 35083444, doi:10.31491/apt.2020.03.014). \"Provides the rationale to further investigate\" is the appropriate register, and it is notably more modest than the review above.\n\nThe limitations are therefore partly about evidence quality rather than only quantity. Much of the cosmetic-effect literature concerns topical formulations in commercial contexts rather than controlled trials. Mechanistic work is largely in vitro and in animals. Copper itself has biological effects independent of the peptide, so attributing an observed effect to GHK specifically requires a copper-matched control, which is frequently absent. And the endogenous decline with age is a correlation that has been repeatedly recruited into causal narratives it does not support.\n\nFor laboratory work, the tractable questions are the ones that discriminate: comparing the copper complex against the free peptide and against copper alone, which separates metal delivery from peptide activity; measuring defined extracellular matrix outputs rather than general tissue appearance; and testing specific transcriptional claims against appropriately controlled conditions.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThe analytical questions for a metal-peptide complex differ from those for an ordinary peptide, and a certificate written for the latter will not answer them.\n\nThe first question is copper content and stoichiometry. A preparation may be the fully formed copper(II) chelate, the free tripeptide, or a mixture, and these are chemically different materials despite sharing a name. Peptide-focused analysis — mass spectrometry and reverse-phase chromatography — characterises the peptide portion and may not establish the metal content at all. Elemental analysis or a comparable copper determination is what answers it, and this page records the copper loading of the supplied material as unverified for exactly that reason. Because copper delivery appears to be part of the proposed mechanism, this is a specification rather than a technicality.\n\nThe second question is the peptide identity itself, addressed by mass spectrometry against the calculated value. Note that the complexed and uncomplexed forms differ in mass by the copper contribution, so what a mass spectrum shows depends on whether the complex survives the ionisation conditions used — a point of method detail that matters more here than for a simple peptide, and one a bare purity figure conceals entirely.\n\nChromatographic behaviour is likewise affected by metal coordination, so a reverse-phase purity method developed for the free tripeptide will not necessarily behave the same way on the chelate. A purity percentage should be read together with the method and with a statement of which species was being measured.\n\nGHK contains histidine, whose imidazole side chain is the principal copper-coordinating group. Histidine is also susceptible to oxidative modification, and in the presence of a redox-active metal such as copper that susceptibility is not merely theoretical — metal-catalysed oxidation is a recognised degradation route for histidine-containing peptides. Storage conditions therefore carry more analytical weight here than for a peptide with no bound metal.\n\nLyophilised mass is also not peptide content: a vial labelled 100 mg may contain counter-ions, residual water and the copper itself, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Cosmetic Ingredient Status Is Not Medicinal Approval",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nGHK-Cu is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority as a therapeutic agent for any indication. There is no regulator-reviewed medicinal labelling, no approved indication, and no post-marketing safety surveillance as a medicine.\n\nA specific clarification is needed because this compound's regulatory position is routinely overstated. GHK-Cu, under the cosmetic ingredient name copper tripeptide-1, is used in cosmetic products in many jurisdictions. Cosmetic regulation and medicinal regulation are different frameworks with very different evidentiary requirements: a cosmetic ingredient is generally subject to safety requirements for topical use rather than to demonstration of therapeutic efficacy. Lawful presence in a cosmetic product therefore establishes neither therapeutic effect nor safety outside that use, and claims framed as \"used in approved cosmetic products\" should not be read as medicinal endorsement.\n\nTwo further points follow from the nature of the substance. First, this is a copper-containing material. Copper is an essential trace element with its own toxicology, and its biological effects are not confined to those attributed to the peptide. Second, the material supplied here is for laboratory use and has not been formulated, tested or validated for application to skin or any other tissue.\n\nThe research findings described above derive predominantly from in vitro work and animal models, with cosmetic-effect reports largely from commercial contexts rather than controlled trials. They are not an assessment of this material and must not be read as evidence of its safety or efficacy in any application.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is GHK-Cu?",
+        "answer": "It is a coordination complex: the tripeptide glycyl-L-histidyl-L-lysine bound to a copper(II) ion. The metal is part of what the substance is rather than an additive. Verified identifiers for the complex are molecular formula C14H21CuN6O4-, molecular weight approximately 400.90 g/mol, CAS 130120-56-8, PubChem CID 139035031."
+      },
+      {
+        "question": "Why does the formula have a minus sign?",
+        "answer": "It indicates that the recorded species carries a net negative charge, which is a normal way for metal-peptide complexes to be catalogued rather than a typographical error. It is a useful reminder that this entity has a different chemical character from an uncharged peptide, which has consequences for how it behaves chromatographically and how it should be analysed."
+      },
+      {
+        "question": "What is the difference between GHK and GHK-Cu?",
+        "answer": "GHK is the free tripeptide; GHK-Cu is its copper complex. They are distinct substances with distinct identifiers, and conflating them is the commonest error about this compound. Much published work describes GHK while much commercial material describes GHK-Cu, and the two literatures are frequently merged. Whether a given preparation is the pre-formed chelate or the free peptide is a real question about the vial contents."
+      },
+      {
+        "question": "Does the copper do anything, or is it just a carrier?",
+        "answer": "It appears to do pharmacological work. A rat wound-healing study using biotinylated GHK in a collagen matrix reported a ninefold increase in copper concentration at the wound site, with the authors linking the healing property to both copper localisation and matrikine activity. That makes copper loading a specification rather than a detail, and it means attributing an effect to the peptide specifically requires a copper-matched control."
+      },
+      {
+        "question": "Is it true that GHK regulates 4,000 genes and resets DNA?",
+        "answer": "That claim appears in a widely cited review, and it warrants caution on two grounds. Structurally, an activity profile that broad — skin, lung, bone, gut, hair, radiation injury, inflammation, cancer — is not how well-characterised pharmacological agents are described, and \"resetting DNA to a healthier state\" is not a testable mechanistic claim. Separately, the authors of that review are affiliated with a company selling GHK products, which is a material conflict of interest on expansive claims."
+      },
+      {
+        "question": "Does GHK really decline with age?",
+        "answer": "Published reports give serum levels averaging around 200 ng/ml at age 20 and around 80 ng/ml by age 60. That is a correlation, and it is frequently recruited into causal narratives it does not support: a decline in a measured analyte with age does not establish that the decline causes anything, nor that restoring the level would reverse anything."
+      },
+      {
+        "question": "Is GHK-Cu approved?",
+        "answer": "Not as a medicine, anywhere. It is used as a cosmetic ingredient in many jurisdictions under the name copper tripeptide-1, but cosmetic and medicinal regulation are different frameworks with very different evidentiary requirements. A cosmetic ingredient is generally subject to safety requirements for topical use rather than demonstration of therapeutic efficacy, so lawful cosmetic presence is not medicinal endorsement."
+      },
+      {
+        "question": "What should a certificate of analysis show for a metal complex?",
+        "answer": "Copper content and stoichiometry, which peptide-focused analysis may not establish at all. Mass spectrometry and reverse-phase chromatography characterise the peptide portion; elemental analysis or a comparable copper determination answers the metal question. Because copper delivery appears to be part of the mechanism, a certificate that omits it leaves a specification unaddressed rather than a detail."
+      },
+      {
+        "question": "Why do storage conditions matter more for this compound?",
+        "answer": "Because histidine, the principal copper-coordinating residue, is susceptible to oxidative modification, and in the presence of a redox-active metal such as copper that susceptibility is not theoretical — metal-catalysed oxidation is a recognised degradation route for histidine-containing peptides. A bound redox-active metal changes the degradation chemistry relative to an ordinary peptide."
+      },
+      {
+        "question": "How would I design an experiment that isolates the peptide effect?",
+        "answer": "By comparing three conditions: the copper complex, the free tripeptide, and copper alone at matched concentration. That design separates metal delivery from peptide activity, which is precisely the distinction most of the existing literature fails to make. Measuring defined extracellular matrix outputs rather than general tissue appearance also makes results interpretable."
+      }
+    ]
+  }
+}

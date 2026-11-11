@@ -1,0 +1,233 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "glutathione",
+    "qc": {
+      "main_content_words": 3090,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED as a drug in any jurisdiction; no FDA-approved injectable glutathione product was identified. This is an endogenous tripeptide, widely sold as an oral dietary supplement, and a standard laboratory biochemical reagent.",
+    "variants_from_csv": [
+      {
+        "variant": "600mg",
+        "price_usd": "54.99"
+      },
+      {
+        "variant": "1500mg",
+        "price_usd": "76.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "600mg",
+        "source_file": "Glutathione 600mg.png",
+        "upload_as": "amino-glutathione-600mg.png"
+      },
+      {
+        "variant": "1500mg",
+        "source_file": "Glutathione 1500mg.png",
+        "upload_as": "amino-glutathione-1500mg.png"
+      }
+    ],
+    "unusual_bond_note": "Glutathione is a tripeptide with a GAMMA-peptide bond: the glutamate is linked through its side-chain carboxyl rather than its alpha-carboxyl. This is why ordinary peptidases do not cleave it and why it is degraded instead by the specific enzyme gamma-glutamyltransferase. The shared lyophilised-peptide storage boilerplate was deliberately NOT used; a bespoke paragraph covering free-thiol oxidation was written instead.",
+    "references": [
+      "PubChem CID 124886 (PUG REST, verified 2026-11-09, matched name \"glutathione\"): C10H17N3O6S, MW 307.33, CAS 70-18-8.",
+      "PMID 24791752 doi:10.1007/s00394-014-0706-z - Eur J Nutr 54(2):251-63 - Penn State; 6-MONTH RANDOMISED, DOUBLE-BLINDED, PLACEBO-CONTROLLED trial of oral GSH (250 or 1000 mg/day) in 54 non-smoking adults. At 6 months mean GSH increased 30-35% in erythrocytes, plasma and lymphocytes and 260% in buccal cells in the high-dose group (P < 0.05); 17% in blood and 29% in erythrocytes in the low-dose group (P < 0.05). Increases were dose- and time-dependent and RETURNED TO BASELINE after a 1-month washout. Oxidised:reduced glutathione ratio in whole blood decreased at 6 months. Natural killer cytotoxicity increased more than two-fold versus placebo at 3 months in the high-dose group (P < 0.05). Authors state this shows \"for the first time\" that daily oral GSH increased body compartment stores.",
+      "PMID 26262996 doi:10.1016/j.redox.2015.07.012 - Redox Biol 6:198-205 - three-week randomised crossover, 20 volunteers with metabolic syndrome, comparing a sublingual GSH form against oral GSH and N-acetylcysteine. States at the outset that GSH's \"very low bioavailability limits the interest of a supplementation.\" Reports increased total and reduced plasma GSH and a higher GSH/GSSG ratio (P = 0.003) for sublingual versus oral, and increased plasma vitamin E only in the sublingual group (0.83 micromol/g; P = 0.04). CONFLICT OF INTEREST: two of the four authors list affiliation with Laboratoires Le Stum, the company behind the sublingual product being favoured."
+    ],
+    "unverified": [
+      "Oxidised (GSSG) content for any given lot - the free thiol oxidises readily in air and the disulfide dimer is a distinct chemical entity; not addressed by a purity figure reported without reference to it",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Product-specific stability and solution stability - no study supplied, none claimed",
+      "Whether the 600 mg and 1500 mg figures are reduced-GSH content or as-is mass including oxidised material - not stated"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a verification component. The searcher wants to know what glutathione is, whether supplementation works, and how GSH differs from GSSG.",
+    "primary_keyword": "Glutathione",
+    "secondary_keywords": [
+      "GSH",
+      "reduced glutathione",
+      "glutathione molecular weight",
+      "glutathione CAS 70-18-8",
+      "GSH vs GSSG",
+      "glutathione bioavailability"
+    ],
+    "long_tail_keywords": [
+      "what is glutathione",
+      "does oral glutathione work",
+      "glutathione molecular formula C10H17N3O6S",
+      "GSH GSSG ratio oxidative stress",
+      "why is glutathione a gamma peptide bond",
+      "glutathione gamma-glutamyltransferase degradation",
+      "is injectable glutathione FDA approved",
+      "glutathione Ellman assay thiol",
+      "glutathione vs N-acetylcysteine",
+      "glutathione certificate of analysis"
+    ],
+    "semantic_terms": [
+      "tripeptide",
+      "gamma-peptide bond",
+      "gamma-glutamyltransferase",
+      "free thiol",
+      "sulfhydryl",
+      "disulfide",
+      "GSSG",
+      "glutathione peroxidase",
+      "glutathione S-transferase",
+      "phase II detoxification",
+      "redox state",
+      "oxidative stress",
+      "natural killer cytotoxicity",
+      "washout period",
+      "conflict of interest",
+      "Ellman's reagent"
+    ],
+    "name_variations": [
+      "Glutathione",
+      "GSH",
+      "reduced glutathione",
+      "L-glutathione",
+      "gamma-L-glutamyl-L-cysteinylglycine",
+      "GSSG is the oxidised dimer, a DISTINCT entity",
+      "N-acetylcysteine is a different compound"
+    ],
+    "informational_queries": [
+      "what is glutathione",
+      "does glutathione supplementation work",
+      "GSH vs GSSG",
+      "glutathione bioavailability",
+      "glutathione antioxidant mechanism"
+    ],
+    "commercial_queries": [
+      "buy glutathione 600mg",
+      "glutathione 1500mg",
+      "reduced glutathione reagent",
+      "glutathione COA"
+    ],
+    "cannibalisation_check": "Owns glutathione and the GSH/GSSG and oral-bioavailability intents. /product/nad owns the coenzyme and precursor-distinction intent; /product/l-carnitine owns carnitine. All three are endogenous non-peptide-drug metabolites and cross-link rather than restate.",
+    "h1": "Driven by CMS name field; renders as \"Glutathione\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/nad",
+        "anchor": "NAD+",
+        "rationale": "Other endogenous cofactor in the catalogue with a closely parallel membrane-permeability and precursor-versus-product problem.",
+        "verified": true
+      },
+      {
+        "route": "/product/l-carnitine",
+        "anchor": "L-Carnitine",
+        "rationale": "Co-component of the Combined Metabolic Activator formulations discussed on the NAD+ page; adjacent metabolite intent.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "The other tripeptide in the catalogue, linked by ordinary alpha-peptide bonds; direct structural contrast with the gamma linkage.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Glutathione (GSH) | Gamma-Glutamyl Tripeptide, MW 307.33 | Amino Based",
+    "seoDescription": "Glutathione: C10H17N3O6S, MW 307.33, CAS 70-18-8. An endogenous antioxidant tripeptide with a gamma-peptide bond. Research use only.",
+    "description": "Glutathione is an endogenous tripeptide comprising glutamate, cysteine and glycine, and is the most abundant intracellular thiol antioxidant in human cells. Its molecular formula is C10H17N3O6S, with a molecular weight of approximately 307.33 g/mol (PubChem CID 124886, CAS 70-18-8). It is unusual among peptides in being linked through a gamma-peptide bond, which makes it resistant to ordinary peptidases. It is not approved as a drug in any jurisdiction, and no FDA-approved injectable glutathione product was identified. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "Glutathione: A Tripeptide With the Wrong Kind of Peptide Bond",
+    "productDetailsDescription": "Glutathione is a tripeptide — glutamate, cysteine, glycine — of molecular formula C10H17N3O6S and molecular weight approximately 307.33 g/mol, recorded under PubChem CID 124886 with CAS registry number 70-18-8. At roughly 307 g/mol it is among the smallest molecules in this catalogue, smaller even than the KPV tripeptide.\n\nTwo structural features define it, and both have consequences that matter more than their technical sound suggests.\n\nThe first is the bond. In an ordinary peptide, residues are joined through alpha-peptide bonds: the alpha-carboxyl of one residue to the alpha-amino of the next. In glutathione, the glutamate is linked to the cysteine through its **side-chain** carboxyl — a gamma-peptide bond. This is not a trivial variation. Peptidases recognise and cleave alpha-peptide bonds; they do not cleave a gamma linkage. The practical result is that glutathione is not degraded by the ordinary proteolytic machinery that destroys other peptides, and is instead broken down by a specific enzyme, gamma-glutamyltransferase, which exists largely for that purpose. That single structural feature explains why glutathione can persist and function as an intracellular pool, and it also explains where orally administered glutathione goes, since gamma-glutamyltransferase is abundant in the intestinal and renal epithelium.\n\nThe second is the thiol. The cysteine residue carries a free sulfhydryl group, and this is the business end of the molecule — the chemical group that performs glutathione's antioxidant function by donating a reducing equivalent. Two glutathione molecules can be joined through their thiols into a disulfide-linked dimer, conventionally written GSSG, with the reduced monomer written GSH. The ratio of GSH to GSSG in a cell or tissue is one of the standard measures of oxidative stress in biology, and that same chemistry is why this product has a specific and significant handling problem: free thiols oxidise readily on exposure to air, so material can convert to the dimer during storage or handling without any visible change. The dimer is a different chemical entity.\n\nGlutathione's biological role requires no contested claims. It is the most abundant endogenous intracellular antioxidant, a substrate for glutathione peroxidases that reduce peroxides, a cofactor in glutathione S-transferase-mediated conjugation that is central to phase II detoxification, and a regulator of cellular redox state that influences enzyme activity and signalling broadly. None of this is in dispute and all of it is textbook material.\n\nWhat is genuinely contested is whether administering glutathione raises its concentration where it matters, and this is where the evidence section below becomes interesting rather than routine. The gamma-glutamyltransferase point above is the reason for the doubt: an orally administered tripeptide passing through tissue rich in the one enzyme that specifically degrades it is a poor candidate for intact absorption. That reasoning has been standard in the field for decades, which is why the trial described in the research section is notable.\n\nA note on the presentations. This product is supplied in 600 mg and 1500 mg quantities, which are large in molar terms — at approximately 307 g/mol, 600 mg is roughly 2 millimoles. These are reagent-scale quantities, entirely appropriate for in vitro biochemistry, where glutathione is a standard reagent in enzyme assays, in redox buffering, and as a substrate or standard in glutathione peroxidase and S-transferase work.\n\nA naming note. This compound appears as glutathione, GSH, reduced glutathione, L-glutathione, and chemically as gamma-L-glutamyl-L-cysteinylglycine. GSSG is oxidised glutathione, the disulfide dimer, and is a distinct chemical entity with approximately twice the mass. S-acetyl glutathione and liposomal glutathione are different preparations. N-acetylcysteine is a different compound entirely — a cysteine derivative used as a glutathione precursor, not glutathione itself — and the two are frequently conflated in discussions of supplementation.\n\nThe material is supplied as a solid in a sealed glass vial, and the stated quantity refers to the mass of material in the vial. One handling property dominates all others for this compound: it carries a free thiol group, and free thiols oxidise readily on exposure to air. The oxidation product is the disulfide-linked dimer, which is a different chemical entity. The practical consequences are that vials should be kept sealed until needed, that solutions are conventionally prepared fresh rather than stored, and that a preparation handled carelessly can contain a substantial proportion of oxidised material without any visible change. Amino Based publishes no product-specific stability study for this material, so no shelf-life, solution-stability or freeze-thaw tolerance figures are claimed here; where such data are needed they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 600 mg and 1500 mg presentations.",
+    "researchFocusTitle": "A Bioavailability Question With a Surprising Answer, and a Conflict of Interest",
+    "researchFocusDescription": "The interesting question about glutathione is not what it does — that is settled biochemistry — but whether administering it accomplishes anything. The field's long-standing expectation was that it would not, for the structural reason set out above. Two randomised trials address this, they reach different conclusions, and the difference between them is instructive about how to read nutritional and supplement literature.\n\nThe first and stronger trial is from Penn State. It was a six-month randomised, double-blinded, placebo-controlled study of oral glutathione at 250 or 1,000 mg per day in 54 non-smoking adults, measuring glutathione in blood, erythrocytes, plasma, lymphocytes and exfoliated buccal mucosal cells, with a battery of immune markers as secondary outcomes in a subset (PMID 24791752, doi:10.1007/s00394-014-0706-z).\n\nThe results contradicted the expectation. Glutathione levels in blood increased at one, three and six months versus baseline at both doses. At six months, mean levels had increased by 30 to 35 per cent in erythrocytes, plasma and lymphocytes, and by 260 per cent in buccal cells in the high-dose group, all statistically significant. The low-dose group showed increases of 17 per cent in blood and 29 per cent in erythrocytes. The increases were in most cases dose- and time-dependent. The oxidised-to-reduced glutathione ratio in whole blood decreased after six months in both dose groups, indicating reduced oxidative stress. And natural killer cell cytotoxicity increased more than two-fold versus placebo at three months in the high-dose group. The authors concluded that this showed, for the first time, that daily consumption of glutathione supplements was effective at increasing body compartment stores.\n\nSeveral features make this a good trial and deserve credit. Six months is a genuinely long duration for a supplement study. Two doses rather than one allows a dose-response assessment, and the responses were in fact dose-dependent, which is strong internal evidence of a real effect rather than drift. Multiple independent compartments were measured and moved coherently. And the inclusion of a one-month washout, after which levels returned to baseline, is the detail that most strengthens the interpretation: a measure that rises with administration and falls when it stops is behaving as a response to the intervention rather than as a secular trend or an assay artefact. That washout is better evidence than any single significance value in the paper.\n\nThe 260 per cent rise in buccal cells against 30 to 35 per cent elsewhere also tells you something worth noting — that the effect was far from uniform across compartments, with the tissue in most direct contact with the administered material responding most. That pattern is consistent with the structural argument against intact systemic absorption rather than against it.\n\nThe second trial reaches a different conclusion, and its framing is the first thing to notice. A three-week randomised crossover study in 20 volunteers with metabolic syndrome compared a sublingual glutathione formulation against oral glutathione and against N-acetylcysteine. The paper states at the outset that glutathione's \"very low bioavailability limits the interest of a supplementation\" — asserting as background exactly what the Penn State trial had found otherwise. It reports that compared with the oral group, the sublingual group showed increased total and reduced plasma glutathione and a higher GSH/GSSG ratio with P = 0.003, and that plasma vitamin E increased significantly only in the sublingual group. The conclusion claims the superiority of the new sublingual form over both oral glutathione and N-acetylcysteine (PMID 26262996, doi:10.1016/j.redox.2015.07.012).\n\nThat conclusion should be read alongside a disclosure visible in the author affiliations: two of the four authors list Laboratoires Le Stum, which is the company behind the sublingual product the study favours. This does not make the findings wrong, and declaring affiliation is normal practice. But a study whose conclusion is that a particular commercial formulation is superior, co-authored by that formulation's manufacturer, with a sample of twenty and a duration of three weeks, is weaker evidence than a six-month independent trial of 54 participants with a washout period — and it is notable that the sponsored study's premise, that oral glutathione has very low bioavailability, is the proposition the independent trial contradicts.\n\nWeighing them honestly: the Penn State trial is the better study by duration, sample size, dose-response design, washout control and independence, and its finding is that oral glutathione does raise body stores. The sublingual study is smaller, shorter, and sponsored by an interested party, and its central comparison favours its sponsor's product. The reasonable conclusion is that oral glutathione raises measured glutathione in several compartments, that the magnitude varies considerably between compartments, and that claims of superiority for particular alternative delivery formats should be examined for who conducted the comparison.\n\nThe limitations across this literature are real: both trials measured glutathione levels and oxidative-stress markers rather than clinical outcomes, so what has been shown is that a biomarker moves, not that health improves. The immune finding in the Penn State trial — more than doubled natural killer cytotoxicity — was a secondary outcome measured in a subset at one timepoint, which is hypothesis-generating rather than established. And neither trial speaks to parenteral administration: no FDA-approved injectable glutathione product was identified, and the skin-lightening claims attached to injectable glutathione have no support in either of these studies, neither of which examined pigmentation.\n\nFor a laboratory, glutathione is not a speculative compound at all but one of the most established reagents in biochemistry. The GSH/GSSG ratio is a standard oxidative-stress readout, glutathione is a required substrate in glutathione peroxidase and glutathione S-transferase assays, and it functions as a redox buffer in protein work where disulfide status must be controlled. At 600 mg to 1500 mg these are generous reagent quantities for exactly that work, and none of it depends on resolving the bioavailability question.",
+    "qualityPurityTitle": "Analytical Verification: The Oxidised Dimer Is the Whole Question",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is against the verified molecular formula C10H17N3O6S, molecular weight approximately 307.33 g/mol, and CAS registry number 70-18-8 (PubChem CID 124886). For a molecule this small, mass spectrometry and nuclear magnetic resonance both confirm identity readily, and identity is not the difficult part.\n\nThe difficult part is oxidation state, and it is the specification that matters most for this product. Glutathione carries a free thiol, and free thiols oxidise on exposure to air to form the disulfide-linked dimer, oxidised glutathione or GSSG. The dimer has approximately twice the monomer mass — it is a distinct chemical entity, not a degradation product in the vague sense — and critically, it does not perform the reducing function for which glutathione is used. A preparation containing a substantial proportion of GSSG will behave very differently in a redox assay from one that does not, and the difference is invisible to inspection.\n\nA purity figure alone does not address this, and here is the specific reason to be careful: depending on the method and how it is reported, GSSG may be resolved and counted as an impurity, or it may elute separately and simply not be integrated, or a total-glutathione assay may count it along with the monomer. A certificate should state the reduced glutathione content explicitly, or the GSH/GSSG ratio, rather than only a purity percentage. This is the single most useful thing to insist upon for this compound.\n\nFortunately, this is a product a laboratory can verify substantially for itself, which is unusual in this catalogue. Thiol content is measurable with Ellman's reagent, a standard, inexpensive colorimetric assay specific to free sulfhydryl groups: it reports how much reduced thiol is actually present, independent of any supplier claim. For material whose storage history is unknown, running that assay on arrival is a reasonable precaution and takes very little effort.\n\nStereochemistry requires attention. The biologically active form is built from L-amino acids — the full chemical name is gamma-L-glutamyl-L-cysteinylglycine. D-isomers share the molecular formula and mass and are not distinguished by mass spectrometry. Where configuration matters, optical rotation or chiral analysis is required.\n\nThe gamma linkage is itself an identity question worth noting. An isomer linked through the glutamate alpha-carboxyl rather than the gamma side-chain carboxyl would have the same molecular formula and the same mass while being a different compound — and, because peptidases cleave alpha bonds and not gamma bonds, one with quite different stability. Nuclear magnetic resonance distinguishes them; mass spectrometry does not.\n\nPurity assessment by high-performance liquid chromatography is well established for this compound. The impurity classes to expect are GSSG, free cysteine and other hydrolysis products, residual synthesis reagents, and metal contamination — the last worth mentioning because thiols chelate metals, and trace metal content can both catalyse oxidation of the material and interfere with assays.\n\nWater content is a quantitative issue for a hygroscopic small molecule at these fill masses. Unless water content has been determined, the stated 600 mg or 1500 mg includes adsorbed moisture, and the listing does not state whether those figures represent reduced glutathione content or as-is mass including oxidised material.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: An Endogenous Tripeptide, Not an Approved Therapy",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nGlutathione is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority as a drug for any indication, in any jurisdiction, and no FDA-approved injectable glutathione product was identified. That this molecule occurs naturally in every human cell, and that oral glutathione is widely sold as a dietary supplement, confer no drug approval on a manufactured preparation of it.\n\nThe evidence should be represented at the level it supports. Two randomised controlled trials have examined glutathione supplementation, and the better of them — a six-month double-blinded placebo-controlled trial of 54 adults at two doses, with a washout period — found that oral glutathione increased measured glutathione by 30 to 35 per cent in erythrocytes, plasma and lymphocytes and by 260 per cent in buccal cells at the higher dose, with levels returning to baseline after washout. That is a credible finding and it contradicted the field's prior expectation. But what it demonstrates is that a biomarker moves, not that health outcomes improve: both trials measured glutathione concentrations and oxidative-stress markers rather than clinical endpoints. The immune observation in that trial, a more than doubled natural killer cytotoxicity, was a secondary outcome in a subset at a single timepoint and is hypothesis-generating rather than established.\n\nA caution about a second study is warranted because its framing circulates widely. A three-week crossover study in 20 volunteers concluded that a sublingual glutathione formulation was superior to oral glutathione and to N-acetylcysteine, and asserted as background that glutathione's very low bioavailability limits the interest of supplementation. Two of that study's four authors list affiliation with the company behind the sublingual product it favours. Declaring such affiliation is normal practice and does not make findings wrong, but a small, short, sponsor-co-authored comparison favouring the sponsor's own product is weaker evidence than a longer independent trial, and its stated premise is the proposition the independent trial contradicted.\n\nTwo further points. Neither trial examined parenteral administration, and neither examined skin pigmentation — so the skin-lightening claims commonly attached to injectable glutathione have no support in this evidence, and no approved injectable product was identified. And this compound's free thiol oxidises readily in air to the disulfide dimer, which is a distinct chemical entity that does not perform glutathione's reducing function; the oxidation state of any given preparation is unverified here.\n\nNothing on this page suggests that this material is suitable for addressing oxidative stress, detoxification, immune function, skin pigmentation, liver disease or any other condition in any person. It is not for human use. Its well-founded application is in vitro biochemistry, where it is a long-established laboratory reagent.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is glutathione?",
+        "answer": "Glutathione is an endogenous tripeptide of glutamate, cysteine and glycine, and the most abundant intracellular thiol antioxidant in human cells. Verified identifiers are molecular formula C10H17N3O6S, molecular weight approximately 307.33 g/mol, CAS 70-18-8, PubChem CID 124886. At roughly 307 g/mol it is among the smallest molecules in this catalogue — smaller even than the KPV tripeptide."
+      },
+      {
+        "question": "Why is its peptide bond unusual?",
+        "answer": "Because the glutamate is linked through its side-chain carboxyl, not its alpha-carboxyl — a gamma-peptide bond. Peptidases recognise and cleave alpha bonds; they do not cleave a gamma linkage. So glutathione escapes the ordinary proteolytic machinery and is instead broken down by a specific enzyme, gamma-glutamyltransferase. That single feature explains how it persists as an intracellular pool and where orally administered glutathione goes."
+      },
+      {
+        "question": "Does oral glutathione actually work?",
+        "answer": "The best trial says yes, contradicting the field’s prior expectation. A six-month randomised double-blinded placebo-controlled study of 54 adults at 250 or 1,000 mg/day found mean glutathione increased 30-35 per cent in erythrocytes, plasma and lymphocytes and 260 per cent in buccal cells at the high dose, with dose- and time-dependent responses. The authors concluded it showed for the first time that oral GSH increases body compartment stores."
+      },
+      {
+        "question": "What makes that trial convincing?",
+        "answer": "The washout, more than any p-value in it. Levels rose with administration and returned to baseline after a one-month washout — a measure that goes up when you give something and down when you stop is behaving as a response to the intervention, not as a secular trend or assay artefact. Six months is also long for a supplement study, and two doses allowed a dose-response assessment that came out dose-dependent."
+      },
+      {
+        "question": "Why did a second study claim bioavailability is very low?",
+        "answer": "That three-week crossover study in 20 volunteers concluded a sublingual formulation was superior to oral glutathione and N-acetylcysteine — and two of its four authors list affiliation with Laboratoires Le Stum, the company behind the sublingual product it favours. Declaring affiliation is normal and does not make findings wrong, but a small, short, sponsor-co-authored comparison favouring the sponsor’s product is weaker evidence than a six-month independent trial."
+      },
+      {
+        "question": "What do these trials not show?",
+        "answer": "That health improves. Both measured glutathione concentrations and oxidative-stress markers — biomarkers — rather than clinical outcomes. The immune finding in the Penn State trial, a more than doubled natural killer cytotoxicity, was a secondary outcome in a subset at one timepoint, which is hypothesis-generating rather than established. Neither trial examined parenteral administration or skin pigmentation."
+      },
+      {
+        "question": "What is GSSG and why does it matter?",
+        "answer": "GSSG is oxidised glutathione — two molecules joined through their thiols into a disulfide dimer, at roughly twice the monomer mass. It is a distinct chemical entity, and critically it does not perform the reducing function glutathione is used for. Since free thiols oxidise readily in air, a preparation can convert substantially to GSSG during storage with no visible change, and will then behave very differently in a redox assay."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "Reduced glutathione content explicitly, or the GSH/GSSG ratio — not just a purity percentage. The reason is specific: depending on method and reporting, GSSG may be resolved and counted as an impurity, may elute separately and not be integrated, or may be counted along with the monomer by a total-glutathione assay. Stating reduced content is the single most useful thing to insist on here."
+      },
+      {
+        "question": "Can I verify this myself?",
+        "answer": "To a useful degree, yes — unusually for this catalogue. Thiol content is measurable with Ellman’s reagent, a standard, inexpensive colorimetric assay specific to free sulfhydryl groups, which reports how much reduced thiol is actually present independent of any supplier claim. For material of unknown storage history, running it on arrival is a sensible precaution and takes very little effort."
+      },
+      {
+        "question": "Is injectable glutathione approved for skin lightening?",
+        "answer": "No approved injectable glutathione product was identified in any jurisdiction, and neither randomised trial discussed here examined skin pigmentation at all — both measured glutathione levels and oxidative-stress markers. So skin-lightening claims attached to injectable glutathione have no support in this evidence. The well-founded use of this material is in vitro biochemistry, where it is a long-established reagent."
+      }
+    ]
+  }
+}

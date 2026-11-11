@@ -1,0 +1,248 @@
+{
+  "_meta": {
+    "status": "BLOCKED",
+    "status_reason": "COMPOSITION NOT VERIFIED AND NO QUANTITIES STATED. Lipo-C is a lipotropic mixture commonly marketed as methionine, inositol and choline with added B vitamins, but the exact per-vial composition and ratios are supplier-specified and NOT VERIFIED, and the product listing states only \"Standard\" with no quantities for any component. No molecular formula exists for the product. No component is a peptide. No randomised controlled trial of a lipotropic injection mixture for weight loss was identified in the PubMed-indexed literature.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "lipo-c",
+    "qc": {
+      "main_content_words": 3258,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED as a drug in any jurisdiction in this form. The individual components are nutrients: methionine is an essential amino acid, choline is a recognised essential nutrient, inositol is a carbocyclic polyol, and the B vitamins are vitamins. Nutrient status confers no drug approval on an injectable mixture of them.",
+    "not_a_peptide": "NO component of this product is a peptide. Methionine is a single amino acid, not a peptide. The peptide storage boilerplate was deliberately NOT used.",
+    "variants_from_csv": [
+      {
+        "variant": "Standard",
+        "price_usd": "43.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "Standard",
+        "source_file": "Lipo-C.png",
+        "upload_as": "amino-lipo-c-standard.png"
+      }
+    ],
+    "blend_note": "MULTI-COMPONENT PRODUCT. No single molecular formula exists and none is stated. The composition below is the COMMONLY MARKETED composition for products of this type; it is NOT verified for this product, and NO RATIOS ARE INVENTED. The listing states \"Standard\" and no component quantities.",
+    "components": [
+      {
+        "name": "Methionine",
+        "note": "Essential sulfur-containing amino acid; precursor to S-adenosylmethionine. NOT a peptide. Commonly supplied as L-methionine; the D-isomer and the racemate are distinct."
+      },
+      {
+        "name": "Inositol",
+        "note": "Carbocyclic polyol (sugar alcohol); myo-inositol is the predominant biological isomer and several other stereoisomers exist."
+      },
+      {
+        "name": "Choline",
+        "note": "Quaternary ammonium nutrient, recognised as an essential nutrient; precursor to phosphatidylcholine, betaine and acetylcholine."
+      },
+      {
+        "name": "B vitamins",
+        "note": "Commonly cyanocobalamin (B12), pyridoxine (B6) and thiamine (B1). WHICH vitamins, in WHICH forms, at WHAT quantities is NOT verified for this product."
+      }
+    ],
+    "references": [
+      "PMID 42505407 doi:10.3390/cells15141298 - Cells 15(14):1298 - uses the METHIONINE-CHOLINE-DEFICIENT (MCD) diet as a standard mouse model of metabolic dysfunction-associated steatotic liver disease, alongside a high-fat-high-fructose model and human liver biopsies (n = 20). MCD-fed mice showed elevated hepatic expression of NLRP3, NLRC4 and AIM2 inflammasomes and stronger induction of IL-1beta and IL-18. In vitro, choline supplementation attenuated free fatty acid- and fructose-induced cytokine elevation. RELEVANCE: methionine and choline deficiency is used to INDUCE liver pathology in animals, which is the factual basis of the historical \"lipotropic\" concept - a deficiency-correction observation, not a weight-loss mechanism.",
+      "PMID 26047850 doi:10.1016/j.bcp.2015.05.014 - Biochem Pharmacol 96(3):256-66 - sulfur amino acid metabolomics; describes the area under the curve of the INCREASE IN PLASMA TOTAL HOMOCYSTEINE following a methionine load, confirming the methionine-to-homocysteine relationship that underlies the standard methionine loading test. Rat study.",
+      "No randomised controlled trial of a methionine/inositol/choline injectable mixture for weight loss or body composition was identified in the PubMed-indexed literature (verified 2026-11-10)."
+    ],
+    "unverified": [
+      "ACTUAL COMPOSITION - the composition stated is the one commonly marketed for products of this type and is NOT verified for this product",
+      "ALL COMPONENT QUANTITIES - the listing states \"Standard\" with no masses or concentrations; no molar calculation of any kind is possible",
+      "WHICH B VITAMINS, in which chemical forms, and at what quantities - not stated",
+      "Stereochemistry of the methionine component - L-methionine, D-methionine and the racemate are distinct, and enantiomers are not distinguished by mass spectrometry",
+      "Which inositol stereoisomer is present - myo-inositol is the predominant biological form but several stereoisomers exist and share a molecular formula",
+      "Solution pH, tonicity, sterility, pyrogen status and preservative content - no lot certificate supplied and no sterility claim is made here",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with scepticism. The searcher wants to know what is in Lipo-C, whether lipotropic injections work, and what evidence exists.",
+    "primary_keyword": "Lipo-C",
+    "secondary_keywords": [
+      "lipotropic injection",
+      "MIC injection",
+      "methionine inositol choline",
+      "Lipo-C composition",
+      "lipotropic blend"
+    ],
+    "long_tail_keywords": [
+      "what is in Lipo-C",
+      "do lipotropic injections work for weight loss",
+      "methionine inositol choline injection evidence",
+      "is Lipo-C a peptide",
+      "what does lipotropic mean",
+      "methionine choline deficient diet model",
+      "does choline cause fat loss",
+      "Lipo-C component quantities",
+      "methionine homocysteine increase",
+      "Lipo-C certificate of analysis"
+    ],
+    "semantic_terms": [
+      "lipotropic",
+      "methionine",
+      "inositol",
+      "myo-inositol",
+      "choline",
+      "phosphatidylcholine",
+      "very-low-density lipoprotein",
+      "S-adenosylmethionine",
+      "methyl donor",
+      "betaine",
+      "homocysteine",
+      "methionine loading test",
+      "methionine-choline-deficient diet",
+      "steatotic liver disease",
+      "cyanocobalamin",
+      "pernicious anaemia",
+      "rate-limiting step",
+      "caloric restriction",
+      "stereoisomer",
+      "chiral chromatography"
+    ],
+    "name_variations": [
+      "Lipo-C",
+      "lipotropic injection",
+      "MIC injection",
+      "MICC (with carnitine added)",
+      "methionine / inositol / choline",
+      "NONE of these components is a peptide"
+    ],
+    "informational_queries": [
+      "what is Lipo-C",
+      "do lipotropic injections work",
+      "what is in a MIC injection",
+      "does choline burn fat",
+      "is Lipo-C a peptide"
+    ],
+    "commercial_queries": [
+      "buy Lipo-C",
+      "lipotropic injection vial",
+      "MIC injection research",
+      "Lipo-C COA"
+    ],
+    "cannibalisation_check": "Owns Lipo-C and the lipotropic / MIC-mixture intent. /product/l-carnitine owns carnitine and the necessary-versus-limiting argument in detail; /product/hcg owns the caloric-restriction-attribution and weight-loss-label intent; /product/semaglutide owns weight-management trial evidence.",
+    "h1": "Driven by CMS name field; renders as \"Lipo-C\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/l-carnitine",
+        "anchor": "L-Carnitine",
+        "rationale": "The clearest worked example of the necessary-versus-limiting reasoning error that underpins lipotropic claims; also a related nutrient with its own chirality verification problem.",
+        "verified": true
+      },
+      {
+        "route": "/product/hcg",
+        "anchor": "HCG",
+        "rationale": "Where the caloric-restriction attribution problem is documented in FDA-approved labelling; the direct precedent for assessing an injection marketed for weight loss.",
+        "verified": true
+      },
+      {
+        "route": "/product/semaglutide",
+        "anchor": "Semaglutide",
+        "rationale": "Where the weight-management trial evidence in this catalogue actually sits; direct contrast with a mixture having no randomised evidence.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Lipo-C | Lipotropic Nutrient Mixture, Composition Unverified | Amino Based",
+    "seoDescription": "Lipo-C: commonly methionine, inositol and choline with B vitamins. No peptides, composition and quantities unverified. Research use only.",
+    "description": "Lipo-C is a lipotropic mixture commonly marketed as containing methionine, inositol and choline, usually with added B vitamins. That composition is the one commonly marketed for products of this type and is not verified for this product; the listing states a variant of \"Standard\" with no quantities for any component, although a total fill mass of 120 mg was recovered from the repository’s own catalogue data for the corresponding spray presentation. No component is a peptide — methionine is a single amino acid, inositol a sugar alcohol, choline a quaternary ammonium nutrient. Being a mixture, the product has no molecular formula and none is stated here. No randomised controlled trial of a lipotropic injection mixture for weight loss was identified. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "Lipo-C: Nutrients, Not Peptides — and a Historical Idea Doing Modern Work",
+    "productDetailsDescription": "Lipo-C is the odd item in this catalogue in two respects: none of its components is a peptide, and its rationale is older than most of the compounds here by several decades.\n\nThe product has no molecular formula, no molecular weight and no CAS registry number, because a mixture of several substances does not have them. Any document quoting a single formula for this product is describing something other than its contents. Each component must be considered on its own.\n\nThe composition commonly marketed under this and similar names is methionine, inositol and choline — frequently abbreviated MIC — usually with one or more B vitamins added. That is stated here as the commonly marketed composition, not as a verified fact about this product, and no ratios are invented because none are available to state. The listing gives a variant of \"Standard\" with **no quantities for any component**: no masses, no concentrations, no ratios. For a mixture whose identity is its composition, this means the product's actual contents are unspecified, and no molar calculation, concentration preparation or comparison with any published figure is possible. This is why the page carries a BLOCKED status, and it should be resolved with the supplier before any use.\n\nThe components themselves are ordinary nutrients and worth describing accurately, since they are frequently mischaracterised.\n\nMethionine is an essential sulfur-containing amino acid — a single amino acid, not a peptide. Its principal metabolic significance here is as the precursor to S-adenosylmethionine, the cell's universal methyl donor. Note that methionine is also the oxidation-sensitive residue discussed on several peptide pages in this catalogue, where its conversion to the sulfoxide adds 16 mass units; the same chemistry applies to the free amino acid.\n\nCholine is a quaternary ammonium compound and a recognised essential nutrient. It is a precursor to phosphatidylcholine, a major membrane phospholipid; to betaine, which acts as a methyl donor; and to acetylcholine. Its role in phosphatidylcholine synthesis is directly relevant to the lipotropic concept, because hepatic export of triglyceride as very-low-density lipoprotein requires phosphatidylcholine.\n\nInositol is a carbocyclic polyol — a six-carbon ring bearing six hydroxyl groups, chemically a sugar alcohol rather than a vitamin, despite older literature sometimes grouping it with the B complex. Myo-inositol is the predominant biological stereoisomer, and several other stereoisomers exist that share the same molecular formula. It participates in phosphoinositide signalling.\n\nThe B vitamins commonly added are cyanocobalamin, pyridoxine and thiamine, though which vitamins, in which chemical forms, and at what quantities is not stated for this product.\n\nNow the rationale, which has a genuine scientific basis that is routinely misapplied. \"Lipotropic\" means promoting the transport or metabolism of fat in the liver, and the term comes from nutritional science in which deficiency of choline and methionine was found to cause fat accumulation in the liver of animals. That finding is not folklore — it is robust enough that it remains in active use as an experimental tool. A 2026 study of metabolic dysfunction-associated steatotic liver disease used the **methionine-choline-deficient diet** as one of its two standard mouse models, reporting that MCD-fed mice showed elevated hepatic expression of the NLRP3, NLRC4 and AIM2 inflammasomes and stronger induction of interleukin-1 beta and interleukin-18 than a high-fat-high-fructose model; the same study found that choline supplementation attenuated free fatty acid- and fructose-induced cytokine elevation in vitro (PMID 42505407, doi:10.3390/cells15141298).\n\nRead that carefully, because it establishes the opposite of what the marketing implies. Methionine and choline deficiency is used to **induce** liver pathology in animals. The lipotropic effect is a deficiency-correction observation: removing these nutrients causes hepatic fat accumulation, and restoring them in a deficient animal reverses it. What does not follow is that supplying extra to an individual who is not deficient accelerates fat loss. That is the same reasoning error documented on the L-carnitine page in this catalogue — a required nutrient increases flux through a pathway only when its availability is the rate-limiting step — and on the NAD+ and glutathione pages. The biochemistry is solid; the extrapolation is where it fails.\n\nOne safety-relevant point about methionine deserves statement because it is specific and rarely mentioned. Methionine metabolism proceeds through S-adenosylmethionine to S-adenosylhomocysteine and then to **homocysteine**. The relationship is direct enough that methionine loading is a standard clinical provocation test precisely because it raises plasma homocysteine, and the published literature describes measuring the area under the curve of the increase in plasma total homocysteine following a methionine load (PMID 26047850, doi:10.1016/j.bcp.2015.05.014). Supplying methionine therefore has a predictable metabolic consequence beyond methyl-donor availability. Whether that matters depends on quantity — which, for this product, is not stated.\n\nA naming note. This product appears as Lipo-C, lipotropic injection, MIC injection, and variations such as MICC where carnitine is added. The components appear as methionine or L-methionine, inositol or myo-inositol, and choline or choline chloride, which is a salt form with a higher formula weight. None of these is a peptide, and none is a drug.",
+    "researchFocusTitle": "A Real Deficiency Finding, Extrapolated Well Past Its Evidence",
+    "researchFocusDescription": "The evidence position for this product separates cleanly into two parts: established nutritional biochemistry, which is sound, and the weight-loss proposition, for which no randomised controlled trial was identified.\n\nThe established part first, because it deserves credit. The lipotropic concept rests on real findings. Choline is required for phosphatidylcholine synthesis, and phosphatidylcholine is required for hepatic export of triglyceride as very-low-density lipoprotein — so a choline-deficient liver accumulates fat it cannot package and export. Methionine contributes through S-adenosylmethionine, which is required for the alternative phosphatidylethanolamine methylation route to phosphatidylcholine, and because methionine availability affects methyl-donor status generally.\n\nThat mechanism is well enough established that it remains a working experimental tool. The methionine-choline-deficient diet is a standard model for inducing steatotic liver disease in mice, and the 2026 study cited above used it alongside a high-fat-high-fructose model and human liver biopsies, reporting that MCD-fed mice showed elevated hepatic expression of all three canonical inflammasomes examined and stronger induction of interleukin-1 beta and interleukin-18 than the dietary model (PMID 42505407, doi:10.3390/cells15141298). The same work found choline supplementation attenuated cytokine elevation in vitro under obesogenic conditions, which is a reasonable demonstration that choline availability modulates metabolic stress responses in cells.\n\nNote what that study's design tells you, and it is the most informative thing on this page. Researchers use methionine and choline *deprivation* to create liver disease. The nutrients' role is established by what happens when they are absent. That is a deficiency-correction finding, and the population in which correcting a deficiency helps is a deficient population.\n\nThe weight-loss proposition is a different claim entirely, and **no randomised controlled trial of a methionine/inositol/choline injectable mixture for weight loss or body composition was identified in the PubMed-indexed literature.** That absence is the central finding for this product. A mixture marketed specifically for fat loss, in widespread commercial use, has no retrievable randomised evidence for that use.\n\nThe reasoning error that fills the gap is worth naming explicitly because it recurs throughout this catalogue. It runs: this nutrient is required for hepatic fat handling; therefore supplying more will increase hepatic fat handling. The inference holds only if the nutrient's availability is the rate-limiting step in the pathway. In an individual with adequate choline and methionine intake, it is not — the pathway is limited elsewhere, and adding substrate to a pathway constrained downstream does not increase throughput. This is structurally identical to the L-carnitine case on its own page in this catalogue, where carnitine is genuinely required for fatty acid entry into mitochondria and yet supplementation does not accelerate fat oxidation in people with normal carnitine status because muscle concentrations already saturate the relevant enzymes. It is also the same shape as the NAD+ precursor question and the glutathione bioavailability question. Necessary is not the same as limiting.\n\nThere is also an attribution problem specific to injectable lipotropic mixtures that any honest assessment has to raise. These preparations are typically administered in programmes that also involve caloric restriction and often other interventions. Caloric restriction produces weight loss by itself. Without a design that controls caloric intake and includes a placebo injection arm, any weight loss observed cannot be attributed to the injection. This is precisely the structure that the FDA-approved labelling for chorionic gonadotropin addresses for a different compound, as documented on the HCG page in this catalogue: that label records that there is no substantial evidence hCG increases weight loss beyond that resulting from caloric restriction. The same methodological question applies here, and here there is no trial at all to answer it.\n\nOne component merits a genuine exception, and fairness requires stating it. Vitamin B12 — cyanocobalamin — has a legitimate and well-established indication for injection: B12 deficiency, including pernicious anaemia, where impaired intestinal absorption makes oral replacement unreliable and parenteral administration is the appropriate route. That is a real, approved, deficiency-correction use. It provides no support for the lipotropic claim and nothing about weight loss, but it is the one component of a typical MIC-plus-B12 mixture for which injection has an established rationale in a defined population.\n\nThe limitations in summary: the composition is unverified; no quantities are stated for any component; no randomised controlled trial of this mixture for its marketed purpose was identified; the underlying lipotropic finding is a deficiency-induction and deficiency-correction result rather than a weight-loss mechanism; the necessary-versus-limiting inference that bridges the gap is unsound in non-deficient individuals; and attribution of any observed effect is confounded by the caloric restriction that typically accompanies administration.\n\nFor a laboratory, the components are individually legitimate and inexpensive reagents with well-defined roles. Methionine, choline and inositol are standard constituents of defined cell culture media and are used in studies of methyl-donor metabolism, phospholipid synthesis and phosphoinositide signalling respectively. The methionine-choline-deficient model is a well-characterised experimental system for steatotic liver disease. But none of that work requires a pre-mixed vial of unstated composition — defined media and individually weighed reagents are what such work actually uses, and for the same reason: known quantities.",
+    "qualityPurityTitle": "Verification for a Nutrient Mixture of Unstated Composition",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nVerification of a multi-component nutrient mixture requires identification and quantitation of each component. For this product neither can be completed, because the composition is unverified and no quantities are stated.\n\nNo single molecular formula, molecular weight or CAS registry number exists for this product, and none is stated here. A certificate quoting any of those for the mixture as a whole is describing something other than its contents.\n\nThe absence of stated quantities is the primary gap and must be addressed first. The listing gives a variant of \"Standard\" with no component masses, concentrations or ratios, and a certificate cannot verify a specification that does not exist. The first requirement is for the supplier to state the intended composition, including which B vitamins in which chemical forms, and at what quantities.\n\nStereochemistry is the most consequential analytical issue once composition is known, and it applies to two components.\n\nMethionine is chiral. L-methionine is the biologically utilised form; D-methionine and the racemate DL-methionine are distinct substances. As with L-carnitine, documented on its own page in this catalogue, enantiomers share molecular formula, exact mass, ultraviolet absorbance and ordinary achiral chromatographic behaviour — so no mass spectrometric measurement and no standard HPLC method distinguishes them. Chiral chromatography or optical rotation is required, and a certificate reporting only purity and mass is fully compatible with racemic material.\n\nInositol has stereoisomers. Myo-inositol is the predominant biological form, and other stereoisomers — including scyllo-, D-chiro- and others — share the molecular formula C6H12O6 with myo-inositol and with each other. These are not distinguished by mass. Nuclear magnetic resonance or a chromatographic method developed for isomer separation is required, and which isomer is present is not stated for this product.\n\nCholine salt form matters quantitatively. Choline is commonly supplied as choline chloride or choline bitartrate, each with a higher formula weight than the free cation. A stated mass of \"choline\" may refer to the salt or to the choline content, and the difference is substantial.\n\nMethionine oxidation is a stability question with a convenient marker. Methionine oxidises to methionine sulfoxide, adding 16 mass units — the same chemistry discussed on several peptide pages in this catalogue, applied here to the free amino acid. Sulfoxide content is readily measured and is informative about handling and storage history.\n\nVitamin identity and content requires component-specific methods. Cyanocobalamin, pyridoxine and thiamine are chemically unrelated and are assayed differently; cyanocobalamin in particular is light-sensitive and its degradation is a real stability consideration. Which vitamins are present, in which forms, at what quantities, is unverified.\n\nSolution properties are specifications in their own right for an aqueous mixture and none is claimed here: pH, tonicity, sterility, pyrogen status, and preservative identity and content. A mixture of amino acid, polyol, quaternary ammonium nutrient and vitamins is not automatically at physiological pH or tonicity, and no sterility or endotoxin claim is made for this product.\n\nA final note on what a purity figure means here. For a deliberate mixture, \"purity\" is not a meaningful single number — the material is by design not a single substance. What matters is per-component identity and quantitation, each against its own authentic reference standard, plus the solution properties above. A single purity percentage on a certificate for a multi-component mixture should prompt a question about what was actually measured.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Nutrients in a Mixture, With No Trial for the Marketed Purpose",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThis product is a mixture of nutrients, not an approved medicine. It has not been approved as a drug in this form by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance for the mixture.\n\nThe nutrient status of the components confers no drug approval on an injectable mixture of them. Methionine is an essential amino acid, choline is a recognised essential nutrient, inositol is a carbocyclic polyol, and the B vitamins are vitamins. That these substances are required in the diet establishes nothing about what administering them by injection to a non-deficient individual achieves.\n\nThree points specific to this product require direct statement, and together they are why this page carries a BLOCKED status.\n\nFirst, the composition is unverified — the composition described here is the one commonly marketed for products of this type, not a verified fact about this product, and no ratios are asserted.\n\nSecond, **no component quantities are stated at all.** The listing gives a variant of \"Standard\" with no masses, concentrations or ratios, and does not specify which B vitamins are present in which chemical forms. For a mixture whose identity is its composition, the contents are unspecified, and no molar calculation or preparation of a known concentration is possible.\n\nThird, **no randomised controlled trial of a methionine/inositol/choline injectable mixture for weight loss or body composition was identified in the PubMed-indexed literature.** A mixture marketed specifically for fat loss has no retrievable randomised evidence for that use.\n\nThe underlying science should be represented accurately, because it points the other way from the marketing. The lipotropic concept rests on the finding that methionine and choline deficiency causes hepatic fat accumulation — a finding robust enough that the methionine-choline-deficient diet remains a standard experimental model for *inducing* steatotic liver disease in mice. That is a deficiency-induction and deficiency-correction result. It does not establish that supplying extra to someone who is not deficient accelerates fat loss, and the inference that it does requires the nutrient's availability to be the rate-limiting step, which in an adequately nourished individual it is not.\n\nAn attribution problem also applies. Lipotropic injections are typically administered alongside caloric restriction, which produces weight loss by itself. Without a design controlling caloric intake and including a placebo injection arm, weight loss cannot be attributed to the injection. The FDA-approved labelling for chorionic gonadotropin addresses exactly this question for a different compound, recording that there is no substantial evidence it increases weight loss beyond that resulting from caloric restriction; here there is no trial at all to answer the equivalent question.\n\nOne component-specific point in fairness: vitamin B12 as cyanocobalamin has a legitimate established indication for injection in B12 deficiency, including pernicious anaemia, where impaired absorption makes oral replacement unreliable. That is a genuine deficiency-correction use in a defined population and provides no support for the lipotropic claim.\n\nA metabolic consequence of methionine also warrants mention. Methionine metabolism proceeds to homocysteine, and methionine loading is a standard clinical provocation test precisely because it raises plasma homocysteine. Supplying methionine has that predictable effect, and its magnitude depends on quantity — which is not stated for this product.\n\nNothing on this page suggests that this material is suitable for addressing obesity, weight loss, body composition, fatty liver, fatigue, vitamin deficiency or any other condition in any person. It is not for human use. No sterility, pyrogen or solution-property claim is made for this product.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is in Lipo-C?",
+        "answer": "It is commonly marketed as methionine, inositol and choline — abbreviated MIC — usually with one or more B vitamins added. That is stated here as the commonly marketed composition for products of this type, not as a verified fact about this product. Being a mixture it has no molecular formula, molecular weight or CAS number, and none is stated here."
+      },
+      {
+        "question": "Are any of the components peptides?",
+        "answer": "No, none of them. Methionine is a single essential amino acid, not a peptide. Inositol is a carbocyclic polyol — a sugar alcohol. Choline is a quaternary ammonium nutrient. The B vitamins are vitamins. This is the one product in this catalogue containing no peptide at all, which is worth knowing given the company it is sold in."
+      },
+      {
+        "question": "How much of each component does it contain?",
+        "answer": "Nothing is stated. The listing gives a variant of \"Standard\" with no masses, concentrations or ratios, and does not specify which B vitamins are present in which chemical forms. For a mixture whose identity *is* its composition, the contents are unspecified — so no molar calculation is possible and no concentration can be prepared to a known value."
+      },
+      {
+        "question": "What does \"lipotropic\" actually mean?",
+        "answer": "Promoting the transport or metabolism of fat in the liver. The term comes from nutritional science in which deficiency of choline and methionine was found to cause fat accumulation in animal livers. The mechanism is real: choline is required for phosphatidylcholine synthesis, and phosphatidylcholine is required for hepatic export of triglyceride as very-low-density lipoprotein. A choline-deficient liver accumulates fat it cannot package and export."
+      },
+      {
+        "question": "Does that mechanism support weight loss?",
+        "answer": "No, and the experimental literature points the other way. The methionine-choline-deficient diet is a standard mouse model used to *induce* steatotic liver disease — researchers deprive animals of these nutrients to create pathology. The lipotropic effect is a deficiency-correction finding, established by what happens when the nutrients are absent. The population in which correcting a deficiency helps is a deficient population."
+      },
+      {
+        "question": "Is there a trial for lipotropic injections?",
+        "answer": "No randomised controlled trial of a methionine/inositol/choline injectable mixture for weight loss or body composition was identified in the PubMed-indexed literature. That absence is the central finding for this product: a mixture marketed specifically for fat loss, in widespread commercial use, has no retrievable randomised evidence for that use."
+      },
+      {
+        "question": "What is the reasoning error behind the claims?",
+        "answer": "It runs: this nutrient is required for hepatic fat handling, therefore more will increase hepatic fat handling. That holds only if the nutrient’s availability is the rate-limiting step. In an adequately nourished individual it is not — adding substrate to a pathway constrained downstream does not increase throughput. It is structurally identical to the L-carnitine case documented on its own page, and the same shape as the NAD+ precursor and glutathione bioavailability questions."
+      },
+      {
+        "question": "Why is caloric restriction a problem for these claims?",
+        "answer": "Because lipotropic injections are typically given alongside it, and caloric restriction produces weight loss by itself. Without a design that controls caloric intake and includes a placebo injection arm, any weight loss observed cannot be attributed to the injection. FDA-approved labelling addresses exactly this for chorionic gonadotropin, recording no substantial evidence of weight loss beyond that from caloric restriction. Here there is no trial at all to answer it."
+      },
+      {
+        "question": "Is any component legitimately given by injection?",
+        "answer": "Yes — vitamin B12, as cyanocobalamin, has a well-established indication for injection in B12 deficiency including pernicious anaemia, where impaired intestinal absorption makes oral replacement unreliable. That is a genuine approved deficiency-correction use in a defined population. It provides no support for the lipotropic claim and says nothing about weight loss, but it is the one honest exception."
+      },
+      {
+        "question": "Does methionine have metabolic consequences worth knowing?",
+        "answer": "Yes, and it is rarely mentioned. Methionine metabolism proceeds via S-adenosylmethionine and S-adenosylhomocysteine to **homocysteine** — the relationship is direct enough that methionine loading is a standard clinical provocation test precisely because it raises plasma homocysteine. Supplying methionine therefore has a predictable effect beyond methyl-donor availability, and its magnitude depends on quantity, which is not stated here."
+      }
+    ]
+  }
+}

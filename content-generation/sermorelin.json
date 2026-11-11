@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "sermorelin",
+    "qc": {
+      "main_content_words": 2088,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "PREVIOUSLY APPROVED, NOW WITHDRAWN. Geref Diagnostic and Geref Pediatric NDAs withdrawn (2008 / 2006). Not currently approved or marketed in the US. Compliance section written specifically.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "76.99"
+      },
+      {
+        "variant": "20mg",
+        "price_usd": "109.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Sermorelin 10mg.png",
+        "upload_as": "amino-sermorelin-10mg.png"
+      },
+      {
+        "variant": "20mg",
+        "source_file": "Sermorelin 20mg.png",
+        "upload_as": "amino-sermorelin-20mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 16132413 (PUG REST, verified 2026-11-09): C149H246N44O42S, MW 3357.9; CAS 86168-78-7",
+      "PMID 19243281 doi:10.1517/13543780802707658 - Expert Opin Investig Drugs - GRF analogue development rationale vs recombinant hGH",
+      "PMID 22298602 doi:10.1345/aph.1Q629 - Ann Pharmacother - tesamorelin, the approved GRF analogue, for comparison",
+      "FDA Drugs@FDA / FDA Pharmacy Compounding Advisory Committee briefing material - Geref Diagnostic and Geref Pediatric NDA withdrawals (2008 and 2006 respectively); statement that no growth hormone secretagogue is approved for treating adult- or childhood-onset GH deficiency"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what sermorelin is, whether it is approved, and how it relates to CJC-1295 and the secretagogues.",
+    "primary_keyword": "sermorelin",
+    "secondary_keywords": [
+      "GRF 1-29",
+      "sermorelin peptide",
+      "GHRH analogue",
+      "sermorelin molecular weight",
+      "growth hormone releasing hormone analogue",
+      "Geref"
+    ],
+    "long_tail_keywords": [
+      "what is sermorelin",
+      "is sermorelin FDA approved",
+      "why was Geref withdrawn",
+      "sermorelin vs CJC-1295 no DAC",
+      "sermorelin vs ipamorelin",
+      "sermorelin molecular formula C149H246N44O42S",
+      "sermorelin CAS 86168-78-7",
+      "what is GRF 1-29",
+      "sermorelin stimulation test validated",
+      "sermorelin vs tesamorelin"
+    ],
+    "semantic_terms": [
+      "GRF 1-29",
+      "GHRH receptor",
+      "somatotroph",
+      "truncation",
+      "structure-activity relationship",
+      "minimal active fragment",
+      "pulsatile secretion",
+      "negative feedback",
+      "intact mass",
+      "deletion sequence",
+      "reverse-phase HPLC",
+      "NDA withdrawal"
+    ],
+    "name_variations": [
+      "sermorelin",
+      "GRF 1-29",
+      "GHRH (1-29)",
+      "Geref (former brand)",
+      "sermorelin acetate"
+    ],
+    "informational_queries": [
+      "what is sermorelin",
+      "is sermorelin approved",
+      "sermorelin vs CJC-1295",
+      "sermorelin mechanism",
+      "why was sermorelin discontinued"
+    ],
+    "commercial_queries": [
+      "buy sermorelin research peptide",
+      "sermorelin 10mg 20mg",
+      "sermorelin COA"
+    ],
+    "cannibalisation_check": "Owns sermorelin, GRF 1-29 and the withdrawn-approval narrative. /product/tesamorelin owns the approved GRF analogue intent; /product/cjc-1295-no-dac owns modified GRF 1-29. Secretagogue pages own GHS-R1a intent.",
+    "h1": "Driven by CMS name field; renders as \"Sermorelin\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/cjc-1295-no-dac",
+        "anchor": "CJC-1295 No DAC",
+        "rationale": "The modified variant this compound is routinely confused with; the distinction is load-bearing.",
+        "verified": true
+      },
+      {
+        "route": "/product/tesamorelin",
+        "anchor": "Tesamorelin",
+        "rationale": "The stabilised GRF analogue that retained approval; direct comparator.",
+        "verified": true
+      },
+      {
+        "route": "/product/ipamorelin",
+        "anchor": "Ipamorelin",
+        "rationale": "GHS-R1a comparator; the key class distinction.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Sermorelin (GRF 1-29) | GHRH Analogue | Amino Based",
+    "seoDescription": "Sermorelin: GRF 1-29 growth hormone-releasing hormone analogue, C149H246N44O42S, MW 3357.9, CAS 86168-78-7. Identity, withdrawn approval. Research use only.",
+    "description": "Sermorelin is a synthetic analogue of growth hormone-releasing hormone corresponding to the first 29 amino acids of the natural sequence, which is why it is commonly written as GRF 1-29. Its molecular formula is C149H246N44O42S, with a molecular weight of approximately 3357.9 g/mol and CAS registry number 86168-78-7 (PubChem CID 16132413). It was previously an approved medicine in the United States but its approvals have been withdrawn. It is supplied here for laboratory research use only.",
+    "productDetailsTitle": "Sermorelin (GRF 1-29): Identity and the Minimal Active Fragment",
+    "productDetailsDescription": "Sermorelin is a synthetic peptide corresponding to the first 29 residues of human growth hormone-releasing hormone, counted from the N-terminus. The full natural hormone is 44 amino acids long, and the central fact about sermorelin is that the first 29 of those residues retain the biological activity of the whole. This is why the compound is written as GRF 1-29 and why it exists at all: it is the minimal fragment that still does the job.\n\nThat observation is more interesting than it first appears. It means the C-terminal fifteen residues of the natural hormone are not required for receptor activation, which tells you something about how the hormone engages its receptor and provides a smaller, cheaper synthetic target. Truncation studies of this kind are a standard route to understanding structure-activity relationships, and sermorelin is one of the clearer published examples of the result being carried through to a usable compound.\n\nThe verified identifiers are a molecular formula of C149H246N44O42S, a molecular weight of approximately 3357.9 g/mol, and CAS registry number 86168-78-7, recorded under PubChem CID 16132413.\n\nSermorelin acts on the growth hormone-releasing hormone receptor on pituitary somatotrophs — the same receptor as the natural hormone and as tesamorelin. This places it in a different pharmacological class from the growth hormone-releasing peptides such as GHRP-2, GHRP-6 and ipamorelin, which act on the growth hormone secretagogue receptor 1a, whose endogenous ligand is ghrelin. The abbreviations GHRH and GHRP differ by one letter; the receptors, their endogenous ligands and their signalling are entirely separate, and results from one class do not transfer to the other.\n\nA distinction that matters commercially and is frequently elided: sermorelin is not the same molecule as CJC-1295 without DAC, despite the two being discussed interchangeably and sometimes substituted for one another. CJC-1295 without DAC is described in supplier literature as modified GRF 1-29, where \"modified\" refers to amino acid substitutions intended to improve stability that the plain 1-29 sequence does not carry. A modified sequence is a different chemical entity. Sermorelin has a verified registry identity; the modified variant, as discussed on its own page in this catalogue, does not have a comparable verified public record. Material sold under either name should be confirmed analytically rather than assumed equivalent.\n\nUnmodified sermorelin is rapidly degraded in circulation, as the natural hormone is, and that short duration is both its principal limitation as a therapeutic and part of what made it suitable as a diagnostic agent: a stimulus that acts and clears quickly is useful for provoking a measurable response at a defined time.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 10 mg and 20 mg presentations.",
+    "researchFocusTitle": "A Withdrawn Approval, and What That Does and Does Not Mean",
+    "researchFocusDescription": "Sermorelin occupies an unusual regulatory position that makes it genuinely instructive, and getting the history right matters because it is routinely misrepresented in both directions.\n\nSermorelin was an approved medicine in the United States. The FDA approved Geref Diagnostic in the early 1990s as a single intravenous dose test for adult growth hormone deficiency, and a paediatric formulation for short stature followed in the late 1990s. Both approvals were subsequently withdrawn: the new drug application for Geref Pediatric in 2006 and for Geref Diagnostic in 2008. Neither product is manufactured or marketed today.\n\nThe reason for the withdrawal is the part most often misreported. According to later FDA review material, the manufacturer's decision was a commercial one, taken because the active ingredient used to produce the diagnostic was no longer being manufactured. That is a supply and business decision, not a safety withdrawal. The distinction is important in both directions: it means the withdrawal should not be cited as evidence that the compound was found unsafe, and equally that a prior approval which has since lapsed confers no current regulatory standing whatsoever.\n\nA further point from FDA briefing material deserves to be stated plainly, because it cuts against a common assumption about this compound's diagnostic pedigree: the Geref stimulation test is not a validated test for the diagnosis of growth hormone deficiency. Diagnostic practice has moved on, and newer agents have been studied against the older GHRH plus arginine test. The same material notes that no growth hormone secretagogue is approved for treating adult-onset or childhood-onset growth hormone deficiency, and that the historical sermorelin approval covered paediatric short stature rather than adult deficiency.\n\nTaken together these facts describe a compound with a real but lapsed regulatory history, a diagnostic application that has been superseded, and no current approval anywhere for treatment. That is a more precise picture than either \"FDA-approved\" or \"never approved\", and both of those shorthands appear in marketing material for this molecule.\n\nThe underlying pharmacological rationale remains sound and is shared with the rest of its class. Recombinant human growth hormone is effective in deficiency states but carries adverse effects, and the reasoning behind developing growth hormone-releasing factor analogues was that acting upstream on the pituitary's own secretory machinery might be better tolerated than administering the hormone directly (PMID 19243281, doi:10.1517/13543780802707658). Because a releasing-factor analogue stimulates the pituitary rather than replacing its output, the resulting secretion retains its episodic character and remains subject to normal negative feedback — which is the mechanistic argument for the whole class. Tesamorelin, a chemically stabilised analogue of the same hormone, is the clearest case of that reasoning reaching and retaining approval, for a defined indication (PMID 22298602, doi:10.1345/aph.1Q629).\n\nThe limitations for research purposes are specific. Sermorelin's rapid clearance means that experiments examining sustained exposure require either repeated administration or a stabilised analogue, and results obtained with a short-acting agent should not be generalised to long-acting ones. The historical clinical data concern a licensed product in defined populations and do not describe research material. And the published literature is largely of some age, reflecting a compound whose development ceased rather than one under active investigation.\n\nFor laboratory work, sermorelin is most defensible as a reference GHRH-receptor agonist: it is the minimal active fragment of the natural hormone, its identity is verified, and comparative work against stabilised analogues such as tesamorelin can isolate the contribution of the stabilising modifications themselves rather than of receptor engagement.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation by mass spectrometry compares observed mass against the value calculated for the sequence, approximately 3357.9 Da. This figure is particularly useful here because of the confusion surrounding closely related products. Sermorelin at approximately 3358 Da is distinguishable by mass from the analogues it is sometimes conflated with, and a measured intact mass is therefore the most direct way to establish whether material sold as sermorelin is in fact the plain 1-29 sequence rather than a modified variant carrying amino acid substitutions. Where substitution changes the residue composition, it changes the mass, and that difference is measurable.\n\nThis is not an abstract concern. Sermorelin and CJC-1295 without DAC are routinely discussed as though interchangeable, and material sold under one name may be the other. A certificate reporting an intact mass consistent with 3357.9 Da supports the plain sequence; one that reports no mass data at all leaves the question open regardless of what purity percentage it quotes.\n\nPurity assessment by reverse-phase high-performance liquid chromatography establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual reagents. For a 29-residue chain, single-residue deletions change total mass by a proportionally small amount and may be poorly resolved from the parent peak, so method quality matters: a high purity figure from a shallow gradient is weaker evidence than the same figure from conditions demonstrated to separate close-eluting species.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass rather than a verified peptide mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: A Lapsed Approval Is Not an Approval",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nSermorelin's regulatory position requires a precise statement, because both of the available shorthands are misleading. It is not accurate to describe sermorelin as FDA-approved, and it is not accurate to describe it as never approved.\n\nSermorelin was approved in the United States: Geref Diagnostic in the early 1990s as a single intravenous dose test for adult growth hormone deficiency, and a paediatric formulation for short stature in the late 1990s. Both new drug applications were subsequently withdrawn, Geref Pediatric in 2006 and Geref Diagnostic in 2008, and neither product is manufactured or marketed today. According to later FDA review material, the withdrawal of the diagnostic reflected a commercial decision by the manufacturer, taken because the active ingredient was no longer being produced.\n\nTwo consequences follow, and they point in opposite directions. The withdrawal was not a safety action and should not be cited as evidence that the compound was found unsafe. Equally, a lapsed approval confers no current regulatory standing: there is no currently marketed licensed sermorelin product in the United States, no current regulator-reviewed labelling, and no post-marketing surveillance. FDA briefing material further states that the Geref stimulation test is not a validated test for diagnosing growth hormone deficiency, and that no growth hormone secretagogue is approved for treating adult-onset or childhood-onset growth hormone deficiency.\n\nMarketing that describes sermorelin as an FDA-approved compound is therefore relying on a status that ceased nearly two decades ago. This material is not a licensed medicine, is not manufactured as one, and is not a substitute for any prescribed product.\n\nGrowth hormone-releasing factor analogues fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list rather than rely on any statement here.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is sermorelin?",
+        "answer": "Sermorelin is a synthetic peptide corresponding to the first 29 amino acids of human growth hormone-releasing hormone, which is why it is written as GRF 1-29. The natural hormone is 44 residues long, and the first 29 retain its biological activity. Its molecular formula is C149H246N44O42S, molecular weight approximately 3357.9 g/mol, CAS 86168-78-7, PubChem CID 16132413."
+      },
+      {
+        "question": "Why only the first 29 amino acids?",
+        "answer": "Because that fragment is sufficient. Truncation studies established that the C-terminal fifteen residues of the 44-residue natural hormone are not required for receptor activation, which both tells you something about how the hormone engages its receptor and provides a smaller, cheaper synthetic target. Sermorelin is one of the clearer published cases of a structure-activity finding being carried through into a usable compound."
+      },
+      {
+        "question": "Is sermorelin FDA-approved?",
+        "answer": "Not currently, and the honest answer is more precise than either common shorthand. It was approved: Geref Diagnostic in the early 1990s for adult growth hormone deficiency testing, and a paediatric formulation for short stature in the late 1990s. Both new drug applications were withdrawn, in 2008 and 2006 respectively, and neither product is manufactured or marketed today. So describing it as FDA-approved relies on a status that ceased nearly two decades ago; describing it as never approved is also wrong."
+      },
+      {
+        "question": "Was sermorelin withdrawn for safety reasons?",
+        "answer": "No. According to later FDA review material, the withdrawal of the diagnostic product reflected a commercial decision by the manufacturer, taken because the active ingredient used to produce it was no longer being manufactured. That distinction cuts both ways: the withdrawal is not evidence the compound was found unsafe, and a lapsed approval confers no current regulatory standing either."
+      },
+      {
+        "question": "Is the sermorelin stimulation test still used diagnostically?",
+        "answer": "FDA briefing material states that the Geref stimulation test is not a validated test for the diagnosis of growth hormone deficiency. Diagnostic practice has moved on and newer agents have been studied against the older GHRH plus arginine test. The same material notes that no growth hormone secretagogue is approved for treating adult-onset or childhood-onset growth hormone deficiency."
+      },
+      {
+        "question": "Is sermorelin the same as CJC-1295 without DAC?",
+        "answer": "No, though they are routinely discussed as though interchangeable. CJC-1295 without DAC is described as modified GRF 1-29, where \"modified\" refers to amino acid substitutions intended to improve stability that the plain 1-29 sequence does not carry. A modified sequence is a different chemical entity. Sermorelin has a verified registry identity; the modified variant does not have a comparable verified public record. Confirm analytically rather than assuming equivalence."
+      },
+      {
+        "question": "How does sermorelin differ from ipamorelin or GHRP-6?",
+        "answer": "Different receptors. Sermorelin acts on the growth hormone-releasing hormone receptor on pituitary somatotrophs, the same receptor as the natural hormone and as tesamorelin. GHRP-2, GHRP-6 and ipamorelin act on the growth hormone secretagogue receptor 1a, whose endogenous ligand is ghrelin. The abbreviations differ by one letter; the receptors, ligands and signalling are entirely separate."
+      },
+      {
+        "question": "Why is sermorelin short-acting?",
+        "answer": "Because it is an unmodified fragment of the natural sequence and is degraded in circulation much as the natural hormone is. That short duration is its main limitation as a therapeutic, but it is part of what made it suitable as a diagnostic agent: a stimulus that acts and clears quickly is useful for provoking a measurable response at a defined time. Stabilised analogues such as tesamorelin address the duration problem by chemical modification."
+      },
+      {
+        "question": "How can I tell sermorelin from a modified variant on a certificate?",
+        "answer": "By intact mass. Sermorelin is approximately 3357.9 Da, and where substitution changes residue composition it changes mass measurably. A certificate reporting an intact mass consistent with that value supports the plain 1-29 sequence. One reporting no mass data leaves the question open regardless of the purity percentage quoted, which matters because material sold under one of these names may be the other."
+      },
+      {
+        "question": "What does \"research use only\" mean here?",
+        "answer": "It means the material is sold for laboratory research and nothing else, and that it sits outside any regulatory framework. There is no currently marketed licensed sermorelin product in the United States, no current regulator-reviewed labelling and no post-marketing surveillance. Research use only is not a legal classification and does not exempt a purchaser from applicable law. No dosing or administration guidance for human or veterinary use is provided."
+      }
+    ]
+  }
+}

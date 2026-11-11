@@ -1,0 +1,236 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "epitalon",
+    "qc": {
+      "main_content_words": 2732,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "49.49"
+      },
+      {
+        "variant": "50mg",
+        "price_usd": "87.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Epitalon 10mg.png",
+        "upload_as": "amino-epitalon-10mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      },
+      {
+        "variant": "50mg",
+        "source_file": "Epitalon 50mg.png",
+        "upload_as": "amino-epitalon-50mg.png"
+      }
+    ],
+    "evidence_concentration_flag": "The large majority of primary research on this tetrapeptide originates from a single institution, the St Petersburg Institute of Bioregulation and Gerontology, and substantially from one investigator group (Khavinson and colleagues). This is a material independent-replication concern and the page states it plainly.",
+    "references": [
+      "PubChem CID 219042 (PUG REST, verified 2026-11-09): C14H22N4O9, MW 390.35, CAS 307297-39-8.",
+      "PMID 40141333 doi:10.3390/ijms26062691 - Int J Mol Sci 26(6):2691 (2025) - review, Medical University of Warsaw; 25 years of study; lists antioxidant, neuroprotective and antimutagenic effects, influence on melatonin synthesis, IL-2 mRNA levels, murine thymocyte mitogenic activity, and enhanced AChE, BuChE and telomerase activity; states explicitly that it REMAINS UNCERTAIN whether these are the sole mechanisms, and that physico-chemical and structural investigation of this peptide REMAINS QUITE LIMITED.",
+      "PMID 35413689 doi:10.18632/aging.204007 - Aging (Albany NY) 14(7):3191-3202 - INDEPENDENT of the Khavinson group (Shanxi Medical University / Chinese Academy of Sciences); 0.1 mM in culture medium; reduced intracellular ROS, decreased spindle defects and abnormal cortical granule distribution at 12h and 24h, increased mitochondrial membrane potential and mtDNA copy number, decreased apoptosis by 24h in post-ovulatory aging mouse oocytes.",
+      "PMID 29124531 doi:10.1007/s10517-017-3922-8 - Bull Exp Biol Med 164(1):41-43 - Khavinson group; AEDG detected among the tetrapeptides of the epiphysis polypeptide complex by selective reaction monitoring; complex composition by MS/HPLC reported as free amino acids 3.26%, dipeptides 23.19%, tripeptides 50.72%, tetrapeptides 22.10%, pentapeptides 0.72%.",
+      "PMID 30791821 doi:10.1177/2058738419828613 - Int J Immunopathol Pharmacol 33:2058738419828613 - hPDLSC neuronal differentiation; IMPORTANT NUANCE: increased GAP43 and Nestin expression was attributed to the compound of all peptides and to KED alone, NOT to AEDG alone. Co-authored with the Khavinson group.",
+      "PMID 33342107 - Adv Gerontol 33(4):741-747 (2020), Russian language, NO DOI - AEDG increased MitoTracker Red mitochondrial staining area 1.5-fold and decreased ribosomal protein L7A expression by 22% in senescing human pineal gland cell cultures. Khavinson institute."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Crystal structure and solid-state characterisation - the 2025 review states structural investigation of this peptide remains quite limited",
+      "Any controlled human trial outcome - none identified in the indexed literature"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what Epitalon is, whether the telomerase and anti-ageing claims are supported, and what the evidence actually shows.",
+    "primary_keyword": "Epitalon",
+    "secondary_keywords": [
+      "Epithalon",
+      "AEDG peptide",
+      "Ala-Glu-Asp-Gly",
+      "Epitalon molecular weight",
+      "pineal tetrapeptide",
+      "Epitalon telomerase"
+    ],
+    "long_tail_keywords": [
+      "what is Epitalon",
+      "does Epitalon lengthen telomeres",
+      "Epitalon vs Epithalamin",
+      "Epitalon molecular formula C14H22N4O9",
+      "Epitalon CAS 307297-39-8",
+      "is Epitalon FDA approved",
+      "Epitalon human studies",
+      "Epitalon AEDG mechanism",
+      "Epitalon 50mg",
+      "Epitalon certificate of analysis"
+    ],
+    "semantic_terms": [
+      "pineal gland",
+      "Epithalamin",
+      "telomerase",
+      "melatonin synthesis",
+      "geroprotective",
+      "antioxidant",
+      "reactive oxygen species",
+      "mitochondrial membrane potential",
+      "mtDNA copy number",
+      "interleukin-2",
+      "isoaspartate",
+      "counter-ion",
+      "sequence isomer"
+    ],
+    "name_variations": [
+      "Epitalon",
+      "Epithalon",
+      "Epithalone",
+      "AEDG",
+      "Ala-Glu-Asp-Gly",
+      "alanyl-glutamyl-aspartyl-glycine",
+      "Epithalamin (parent extract, distinct substance)"
+    ],
+    "informational_queries": [
+      "what is Epitalon",
+      "Epitalon telomerase",
+      "does Epitalon work",
+      "Epitalon anti-aging evidence",
+      "Epitalon mechanism"
+    ],
+    "commercial_queries": [
+      "buy Epitalon",
+      "Epitalon 10mg",
+      "Epitalon 50mg",
+      "Epitalon COA"
+    ],
+    "cannibalisation_check": "Owns Epitalon and the AEDG / pineal tetrapeptide intent. /product/nad owns the NAD+ and cellular-metabolism longevity intent; /product/thymosin-alpha-1 owns thymic peptide intent. This page does not restate those.",
+    "h1": "Driven by CMS name field; renders as \"Epitalon\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/nad",
+        "anchor": "NAD+",
+        "rationale": "Adjacent cellular-ageing and mitochondrial research intent, with a substantially different and better-characterised evidence base.",
+        "verified": true
+      },
+      {
+        "route": "/product/thymosin-alpha-1",
+        "anchor": "Thymosin Alpha-1",
+        "rationale": "Other gland-derived peptide in the catalogue; useful contrast between an approved-elsewhere peptide and an unapproved one.",
+        "verified": true
+      },
+      {
+        "route": "/product/ghk-cu",
+        "anchor": "GHK-Cu",
+        "rationale": "Another short peptide where promotional gene-expression claims outrun the evidence; parallel caution applies.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Epitalon (AEDG) | Ala-Glu-Asp-Gly Pineal Tetrapeptide | Amino Based",
+    "seoDescription": "Epitalon: Ala-Glu-Asp-Gly tetrapeptide, C14H22N4O9, MW 390.35, CAS 307297-39-8. Evidence, replication limits and telomerase claims. Research use only.",
+    "description": "Epitalon is the tetrapeptide alanine-glutamic acid-aspartic acid-glycine, abbreviated AEDG and also written Epithalon or Epithalone. It was synthesised on the basis of the amino acid composition of Epithalamin, a bovine pineal gland extract. Its molecular formula is C14H22N4O9, with a molecular weight of approximately 390.35 g/mol (PubChem CID 219042, CAS 307297-39-8). It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "Epitalon: A Four-Residue Peptide Reverse-Engineered From a Gland Extract",
+    "productDetailsDescription": "Epitalon is four residues long: alanine, glutamic acid, aspartic acid, glycine. At approximately 390.35 g/mol it is among the smallest compounds in this catalogue — slightly larger than the KPV tripeptide and an order of magnitude smaller than the thymic and incretin peptides. Two of its four residues are acidic, which gives the molecule a pronounced negative charge at physiological pH and is relevant to both its handling and its analysis.\n\nIts origin is unusual and worth understanding, because it explains both the compound's appeal and the structure of its evidence base. The starting point was not a known human peptide but Epithalamin, a polypeptide extract of bovine pineal gland. Investigators performed an amino acid analysis of that extract and synthesised a tetrapeptide on the basis of the composition they found. In other words, AEDG was constructed from compositional data about a crude extract rather than isolated as a defined endogenous molecule — it was reverse-engineered rather than discovered.\n\nThat sequence of events left an obvious gap, which the same research programme later addressed. A study using mass spectrometry and high-performance liquid chromatography characterised the pineal polypeptide complex and reported that it comprises free amino acids at 3.26 per cent, dipeptides at 23.19 per cent, tripeptides at 50.72 per cent, tetrapeptides at 22.10 per cent and pentapeptides at 0.72 per cent, and detected the AEDG sequence among the tetrapeptide fraction by selective reaction monitoring (PMID 29124531, doi:10.1007/s10517-017-3922-8). That is a meaningful result: it moves AEDG from inferred-from-composition to detected-as-present. It is worth noting, though, what the same figures show — tetrapeptides are roughly a fifth of the complex, and AEDG is one tetrapeptide among those, so the extract's reported effects cannot be attributed to this one sequence on the strength of its presence alone. The authors of that study concluded that the complex's biological effects are determined by the effect of its AEDG component, which is a stronger claim than detection by itself establishes.\n\nHere is the structural fact a researcher evaluating this compound most needs, and it comes from an independent review rather than from a critic. A 2025 review in the International Journal of Molecular Sciences, from the Medical University of Warsaw, surveys 25 years of in vitro, in vivo and in silico study. It lists the reported effects — antioxidant, neuroprotective and antimutagenic activity, direct influence on melatonin synthesis, alteration of interleukin-2 mRNA levels, modulation of murine thymocyte mitogenic activity, and enhancement of acetylcholinesterase, butyrylcholinesterase and telomerase activity. And it then states two things plainly: that it remains uncertain whether these are the sole mechanisms of action of the compound, and that despite the considerable volume of biological and pharmacodynamic research, the quantity of physico-chemical and structural investigation of this peptide remains quite limited (PMID 40141333, doi:10.3390/ijms26062691).\n\nThat second point is the more unusual admission. For most compounds in this catalogue, basic physical characterisation is settled and the biology is contested. Here a review reports the opposite imbalance: a substantial body of claimed biological effects resting on a comparatively thin foundation of structural and physico-chemical work. For a laboratory, that is directly actionable — basic characterisation is an open area rather than a solved one.\n\nThe telomerase point deserves separate handling, because it is the single claim most heavily used in marketing. It is accurate that enhanced telomerase activity appears among the effects catalogued in the review literature. What does not follow, and what is routinely asserted anyway, is that this compound lengthens human telomeres, slows human ageing or extends human lifespan. No controlled human trial supporting such conclusions was identified in the indexed literature. The gap between \"telomerase activity was reported to increase in an experimental system\" and \"this extends human lifespan\" is very large, and it is the gap into which most of the promotional material about this compound falls.\n\nA naming note. This compound appears as Epitalon, Epithalon, Epithalone, AEDG, and written out as Ala-Glu-Asp-Gly or alanyl-glutamyl-aspartyl-glycine. The parent extract, Epithalamin, is a different substance entirely — a crude bovine gland preparation, not a defined tetrapeptide — and conflating the two attributes extract findings to the synthetic peptide. Much of the older literature concerns Epithalamin rather than AEDG.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 10 mg and 50 mg presentations.",
+    "researchFocusTitle": "Geroprotective Claims, One Independent Replication, and a Replication Problem",
+    "researchFocusDescription": "The research picture for this tetrapeptide has an unusual shape: a large volume of publications, a narrow range of origins, and a small amount of genuinely independent work that is more informative than its size suggests.\n\nThe concentration issue has to come first because it conditions everything else. The great majority of primary research on AEDG originates from the St Petersburg Institute of Bioregulation and Gerontology, and substantially from one investigator group. Over 25 years, that group has published extensively on this peptide and on a family of related short peptides. This is not an accusation of error — a specialist institute producing most of the work on its specialist subject is a normal pattern. But it is a material limitation on how much confidence the volume of literature can support. When many papers on a compound share an institutional origin, they do not provide the mutual corroboration that the same number of papers from unrelated groups would. Independent replication is the mechanism by which findings become reliable, and for this compound there is strikingly little of it relative to the publication count.\n\nWhich makes the clearest independent study disproportionately valuable. Investigators at Shanxi Medical University and the Chinese Academy of Sciences, with no connection to the St Petersburg programme, tested the peptide on post-ovulatory ageing in mouse oocytes — a well-defined system where the quality of oocytes declines measurably with time after ovulation. Adding the peptide at 0.1 millimolar to the culture medium, they reported reduced intracellular reactive oxygen species; significantly decreased frequency of spindle defects and of abnormal cortical granule distribution during ageing at both 12 and 24 hours; increased mitochondrial membrane potential and increased mitochondrial DNA copy number; and consequently decreased apoptosis of oocytes by 24 hours. They concluded that the peptide can delay the ageing process of oocytes by modulating mitochondrial activity and reactive oxygen species levels (PMID 35413689, doi:10.18632/aging.204007).\n\nThat study is worth reading closely for what it does and does not show. Its strengths are real: multiple independent readouts moving coherently, a defined time course, an unrelated laboratory, and a mechanistic interpretation that follows from the measurements rather than being asserted. Its scope is also clear: this is an in vitro antioxidant and mitochondrial effect on cultured oocytes at a concentration of 0.1 millimolar, which is a high concentration in cell-culture terms. It supports \"this peptide has antioxidant and mitochondria-preserving activity in a cell culture model of ageing.\" It does not support claims about systemic ageing in an organism, and the authors do not make them.\n\nWork from the originating institute points in a compatible direction on mitochondria. A study of senescing human pineal gland and thymus cell cultures reported that AEDG increased the area of MitoTracker Red mitochondrial staining by 1.5-fold and decreased expression of the ribosomal protein L7A by 22 per cent in pineal cells, with the related dipeptide KE producing comparable effects in thymic cells, and interpreted the results as a tissue-specific normalisation of mitochondrial and ribosomal function (PMID 33342107, Advances in Gerontology, published in Russian; no DOI is indexed for this article). The convergence with the independent oocyte work on mitochondrial readouts is the most interesting thing in this literature, because it is the one place where unrelated groups report in the same direction.\n\nOne study provides a useful corrective and deserves mention precisely because it is less favourable. Work on neuronal differentiation of human periodontal ligament stem cells examined several short peptides, including AEDG, both individually and in combination. Increased expression of GAP43, a protein involved in neurotransmission and neuroplasticity, and of Nestin, a neurofilament protein marking early neuronal precursors, was attributed to the compound of all the peptides studied and to the dipeptide KED alone (PMID 30791821, doi:10.1177/2058738419828613). AEDG alone was not identified as the driver of those effects. That is a negative result for this specific peptide within a study co-authored by the originating group, and it is the kind of detail that promotional summaries omit. It usefully demonstrates that the short-peptide family's effects are not interchangeable and should not be attributed to AEDG by association.\n\nThe limitations, stated directly: the evidence is overwhelmingly preclinical; it is heavily concentrated in one institutional source; the independent replication that exists is in vitro and at high concentration; no controlled human trial outcome was identified; the mechanism is explicitly described by a recent review as not established to be the sole mechanism; and basic physico-chemical and structural characterisation is described by that same review as quite limited. The telomerase claim circulating about this compound is not supported by human data.\n\nFor a laboratory, the genuine opportunities are specific. Independent replication of the mitochondrial and antioxidant findings in a second system would be a real contribution, since that is the one line where unrelated groups currently converge. Basic physico-chemical and structural characterisation is, by the review literature's own account, underdeveloped and tractable. And a four-residue peptide with two acidic side chains is an easy and inexpensive compound to work with analytically, which lowers the cost of doing that work properly.",
+    "qualityPurityTitle": "Analytical Verification for a Four-Residue Acidic Peptide",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 390.35 g/mol, with molecular formula C14H22N4O9 and CAS registry number 307297-39-8 (PubChem CID 219042). For a four-residue peptide, tandem mass spectrometry fragmentation can establish the residue order outright rather than merely the composition, and this is worth requesting specifically. Sequence isomers — the same four residues arranged differently — would share a molecular formula and an exact mass while being different compounds, and a composition-only identity check cannot separate them.\n\nThat concern is more than formal for this particular molecule, because of how it came to exist. This sequence was derived from the amino acid composition of a gland extract, and the related short peptides studied alongside it in the same research programme are built from overlapping sets of the same residues. A certificate that confirms elemental composition without confirming order confirms less than it appears to.\n\nThe acidic character of the molecule has practical analytical consequences. Two of the four residues, glutamic acid and aspartic acid, carry carboxylic acid side chains, giving the peptide a strong net negative charge at neutral pH. This affects retention behaviour in reverse-phase chromatography, where a short and highly polar peptide may elute very early and resolve poorly from salts and other polar contaminants under conditions optimised for larger hydrophobic peptides. An appropriate chromatographic method matters here, and an early-eluting peak reported as high purity warrants scrutiny of the method rather than acceptance at face value.\n\nAspartic acid residues raise a specific degradation question. Peptides containing aspartate are susceptible to isomerisation to isoaspartate and to related rearrangements, particularly where aspartate is adjacent to glycine — which is precisely the arrangement at the C-terminal end of this sequence. The resulting species are identical in mass to the parent peptide and are invisible to mass spectrometry alone. Where this matters, a method capable of separating isoaspartate-containing variants is required, and a routine certificate will not address it.\n\nThe salt-form question is proportionally severe. At roughly 390 g/mol, an acetate or trifluoroacetate counter-ion represents a large fraction of the mass of supplied material — and with two acidic side chains, multiple counter-ion equivalents are possible. A molar calculation using the free-peptide value on salt-form material will be substantially wrong.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg or 50 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Status, Evidence Limits and Anti-Ageing Claims",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nEpitalon is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. No controlled human trial outcome for this tetrapeptide was identified in the indexed literature.\n\nThe anti-ageing and longevity claims attached to this compound require direct comment, because they are the reason most people encounter it. Enhanced telomerase activity does appear among the effects catalogued in the review literature for this peptide. It does not follow that the compound lengthens human telomeres, slows human ageing, or extends human lifespan, and no evidence supporting those conclusions was identified. Claims of that kind are extrapolations well beyond what the published work establishes.\n\nTwo further limitations are material to any evaluation. First, the great majority of primary research on this peptide originates from a single institution and substantially from one investigator group, so the volume of publications does not provide the independent corroboration that an equivalent number of papers from unrelated laboratories would. Second, a 2025 independent review states explicitly that it remains uncertain whether the catalogued mechanisms are the sole mechanisms of action, and that physico-chemical and structural investigation of this peptide remains quite limited. The reported biology rests on a thinner characterisation foundation than is usual.\n\nThe research described above was conducted in cultured cells and in animal models. Nothing on this page suggests that this material is suitable for addressing ageing, cognitive decline, immune function, sleep, or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is Epitalon?",
+        "answer": "Epitalon is the tetrapeptide alanine-glutamic acid-aspartic acid-glycine, abbreviated AEDG and also written Epithalon or Epithalone. Verified identifiers are molecular formula C14H22N4O9, molecular weight approximately 390.35 g/mol, CAS 307297-39-8, PubChem CID 219042. It was synthesised on the basis of the amino acid composition of Epithalamin, a bovine pineal gland extract."
+      },
+      {
+        "question": "Does Epitalon lengthen telomeres or extend lifespan?",
+        "answer": "No such effect in humans is supported by evidence identified in the indexed literature. Enhanced telomerase activity does appear among the effects catalogued in the review literature for this peptide. But the step from \"telomerase activity increased in an experimental system\" to \"this lengthens human telomeres and extends human lifespan\" is very large, and no controlled human trial supporting it was identified. That gap is where most promotional material about this compound sits."
+      },
+      {
+        "question": "Is Epitalon the same as Epithalamin?",
+        "answer": "No, and conflating them is a common error. Epithalamin is a crude polypeptide extract of bovine pineal gland. Epitalon is a defined synthetic tetrapeptide constructed from amino acid composition data about that extract. Much of the older literature concerns the extract rather than the peptide, so attributing extract findings to AEDG overstates what has been shown about the synthetic compound."
+      },
+      {
+        "question": "Is AEDG actually present in the pineal gland?",
+        "answer": "It has been detected there. A study characterising the pineal polypeptide complex by mass spectrometry and HPLC reported its composition as free amino acids 3.26 per cent, dipeptides 23.19 per cent, tripeptides 50.72 per cent, tetrapeptides 22.10 per cent and pentapeptides 0.72 per cent, and detected the AEDG sequence within the tetrapeptide fraction. Worth noting: tetrapeptides are about a fifth of the complex and AEDG is one of them, so the extract’s effects cannot be attributed to this sequence on presence alone."
+      },
+      {
+        "question": "Why does the source of the research matter?",
+        "answer": "Because it is highly concentrated. The great majority of primary research on this peptide comes from the St Petersburg Institute of Bioregulation and Gerontology, substantially from one investigator group, over about 25 years. That is a normal pattern for a specialist institute, but many papers sharing an institutional origin do not provide the mutual corroboration that the same number from unrelated groups would. Independent replication is what makes findings reliable, and there is little of it here relative to the publication count."
+      },
+      {
+        "question": "What is the best independent evidence?",
+        "answer": "A study from Shanxi Medical University and the Chinese Academy of Sciences, unconnected to the originating programme, tested the peptide on post-ovulatory ageing in mouse oocytes at 0.1 millimolar. It reported reduced reactive oxygen species, significantly fewer spindle defects and abnormal cortical granule distributions at 12 and 24 hours, increased mitochondrial membrane potential and mtDNA copy number, and decreased apoptosis by 24 hours. That supports in vitro antioxidant and mitochondria-preserving activity — not systemic anti-ageing."
+      },
+      {
+        "question": "Is there any study where Epitalon did not work?",
+        "answer": "Yes, and it is worth knowing. Work on neuronal differentiation of human periodontal ligament stem cells examined several short peptides. Increased GAP43 and Nestin expression was attributed to the combination of all peptides studied and to the dipeptide KED alone — not to AEDG alone. That result appears in a study co-authored by the originating group, and it shows the short-peptide family’s effects are not interchangeable."
+      },
+      {
+        "question": "How well characterised is the molecule itself?",
+        "answer": "Less well than you might expect, and this comes from a review rather than a critic. A 2025 review from the Medical University of Warsaw states that despite the considerable volume of biological and pharmacodynamic research, the quantity of physico-chemical and structural investigation of this peptide remains quite limited. That is an unusual imbalance — a large body of claimed biology on a thin characterisation foundation — and it makes basic characterisation an open, tractable research area."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "Mass spectrometric identity against approximately 390.35 g/mol, and ideally tandem MS fragmentation establishing residue order, since sequence isomers share formula and exact mass. Note two specifics: the two acidic side chains make this peptide very polar, so it may elute early and resolve poorly from salts under methods tuned for larger peptides; and the aspartate-glycine arrangement at the C-terminus is susceptible to isoaspartate formation, which is mass-identical and invisible to MS alone."
+      },
+      {
+        "question": "Is Epitalon approved for any use?",
+        "answer": "No. It is not approved by the FDA or any other regulatory authority, for any indication, in any jurisdiction. There is no approved labelling, no established dosing, and no post-marketing surveillance. No controlled human trial outcome was identified in the indexed literature. It is supplied for laboratory research use only and is not for human or veterinary use."
+      }
+    ]
+  }
+}

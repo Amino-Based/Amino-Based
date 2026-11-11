@@ -1,0 +1,228 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "oxytocin",
+    "qc": {
+      "main_content_words": 2978,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "The MOLECULE is an approved drug (oxytocin injection, USP; e.g. Pitocin) for obstetric indications, administered intravenously or intramuscularly under clinical supervision. There is NO approved intranasal oxytocin product in the United States, and the behavioural research literature overwhelmingly concerns intranasal administration.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "79.19"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Oxytocin 10mg.png",
+        "upload_as": "amino-oxytocin-10mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 439302 (PUG REST, verified 2026-11-09, matched name \"oxytocin\"): C43H66N12O12S2, MW 1007.2, CAS 50-56-6.",
+      "PMID 23695233 doi:10.1038/tp.2013.34 - Transl Psychiatry 3(5):e258 - review and meta-analyses of oxytocin trials. In healthy participants intranasal OT leads to better emotion recognition and more trust, but effects are MODERATED by context (perceived out-group threat), personality and childhood experiences; in individuals with untoward childhood experiences positive effects seem LOWERED OR ABSENT. Across 19 CLINICAL trials (autism, social anxiety, postnatal depression, OCD, schizophrenia, borderline personality disorder, PTSD) with doses ranging from 15 IU to MORE THAN 7000 IU, combined effect size d = 0.32 (N = 304; 95% CI 0.18-0.47; P < 0.01). Of all disorders, ONLY autism spectrum disorder showed a significant combined effect size (d = 0.57; N = 68; 95% CI 0.15-0.99; P < 0.01).",
+      "PMID 21802859 doi:10.1016/j.psyneuen.2011.07.008 - Psychoneuroendocrinology 37(3):438-43 - meta-analysis of intranasal oxytocin: enhances recognition of facial expressions of emotion (13 effect sizes, N = 408) and elevates in-group trust (8 effect sizes, N = 317). The hypothesis that out-group trust is significantly DECREASED was NOT SUPPORTED (10 effect sizes, N = 505)."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Disulfide bridge integrity - oxytocin is cyclised by a disulfide bond; the reduced linear form is mass-shifted by only 2 units and is inactive",
+      "Dimer and oligomer content - disulfide-bonded peptides readily form intermolecular dimers, which are not detected by a routine purity figure alone",
+      "Whether the supplied material meets the approved drug substance specification for oxytocin injection USP - it should not be assumed to"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what oxytocin is, whether the trust and social effects are real, and how the approved use differs from the research use.",
+    "primary_keyword": "Oxytocin",
+    "secondary_keywords": [
+      "oxytocin peptide",
+      "oxytocin molecular weight",
+      "oxytocin CAS 50-56-6",
+      "intranasal oxytocin",
+      "oxytocin vs vasopressin",
+      "oxytocin nonapeptide"
+    ],
+    "long_tail_keywords": [
+      "what is oxytocin",
+      "does intranasal oxytocin work",
+      "oxytocin molecular formula C43H66N12O12S2",
+      "oxytocin effect size meta-analysis",
+      "is oxytocin the love hormone",
+      "oxytocin vs vasopressin difference",
+      "oxytocin disulfide bridge",
+      "oxytocin IU to mg",
+      "is intranasal oxytocin approved",
+      "oxytocin certificate of analysis"
+    ],
+    "semantic_terms": [
+      "nonapeptide",
+      "disulfide bridge",
+      "cysteine",
+      "hypothalamus",
+      "posterior pituitary",
+      "uterine smooth muscle",
+      "milk ejection",
+      "vasopressin",
+      "antidiuretic hormone",
+      "oxytocin receptor",
+      "blood-brain barrier",
+      "intranasal administration",
+      "effect size",
+      "Cohen's d",
+      "confidence interval",
+      "deamidation",
+      "disulfide scrambling",
+      "International Unit"
+    ],
+    "name_variations": [
+      "Oxytocin",
+      "OT",
+      "OXT",
+      "oxytocin injection USP",
+      "Pitocin",
+      "vasopressin / ADH is a DIFFERENT nonapeptide",
+      "carbetocin and desmopressin are distinct analogues"
+    ],
+    "informational_queries": [
+      "what is oxytocin",
+      "does oxytocin increase trust",
+      "is oxytocin the love hormone",
+      "oxytocin vs vasopressin",
+      "how does intranasal oxytocin work"
+    ],
+    "commercial_queries": [
+      "buy oxytocin peptide",
+      "oxytocin 10mg research",
+      "oxytocin reference standard",
+      "oxytocin COA"
+    ],
+    "cannibalisation_check": "Owns oxytocin and the intranasal-behavioural-evidence intent. /product/kisspeptin and /product/hcg own reproductive-axis intent; /product/selank and /product/semax own the anxiolytic and nootropic peptide intents rather than this page.",
+    "h1": "Driven by CMS name field; renders as \"Oxytocin\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/selank",
+        "anchor": "Selank",
+        "rationale": "Other behaviourally studied peptide in the catalogue; useful contrast in evidence quality and in delivery rationale.",
+        "verified": true
+      },
+      {
+        "route": "/product/kisspeptin",
+        "anchor": "Kisspeptin",
+        "rationale": "Other hypothalamic peptide in the catalogue; keeps the neuroendocrine comparison available.",
+        "verified": true
+      },
+      {
+        "route": "/product/dhea",
+        "anchor": "DHEA",
+        "rationale": "Another approved drug substance where the approved dosage form differs sharply from research material; parallel reasoning.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Oxytocin | Cyclic Nonapeptide, C43H66N12O12S2, MW 1007.2 | Amino Based",
+    "seoDescription": "Oxytocin: C43H66N12O12S2, MW 1007.2, CAS 50-56-6. Approved for obstetric use; the behavioural literature is intranasal. Research use only.",
+    "description": "Oxytocin is a cyclic nonapeptide hormone produced in the hypothalamus, cyclised by a disulfide bridge between its first and sixth residues. Its molecular formula is C43H66N12O12S2, with a molecular weight of approximately 1007.2 g/mol (PubChem CID 439302, CAS 50-56-6). The molecule is an approved drug for obstetric indications, given intravenously or intramuscularly under clinical supervision; no intranasal oxytocin product is approved in the United States, although the behavioural research literature concerns intranasal administration almost exclusively. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "Oxytocin: A Thoroughly Characterised Hormone With a Contested Behavioural Literature",
+    "productDetailsDescription": "Oxytocin is one of the best-characterised peptide hormones in biology, and it has a claim to historical significance: it was the first polypeptide hormone to be sequenced and chemically synthesised, work that earned a Nobel Prize in Chemistry. Nothing about its identity or basic physiology is in doubt.\n\nStructurally it is a nonapeptide — nine residues — cyclised by a disulfide bridge between cysteine residues at positions 1 and 6, leaving a three-residue tail. Verified identifiers are molecular formula C43H66N12O12S2, molecular weight approximately 1007.2 g/mol, and CAS registry number 50-56-6, recorded under PubChem CID 439302. The two sulfur atoms in the formula are the cysteines forming that bridge, and the bridge is not optional: the reduced, linear form is inactive.\n\nIt is closely related to vasopressin, the antidiuretic hormone, which is also a disulfide-cyclised nonapeptide and differs from oxytocin at only two of the nine positions. This near-identity has a consequence that matters pharmacologically: oxytocin has appreciable activity at vasopressin receptors and vice versa, so effects attributed to oxytocin receptor engagement may in part reflect vasopressin receptor activity, particularly at high concentrations. Any interpretation of an oxytocin experiment that does not consider vasopressin receptor cross-reactivity is incomplete.\n\nIts established physiology is twofold and uncontested. Oxytocin is synthesised in hypothalamic neurons and released from the posterior pituitary, where it causes contraction of uterine smooth muscle during labour and of the myoepithelial cells of the mammary gland producing milk ejection. These are the effects on which its approved medical use rests: oxytocin injection is an approved drug for obstetric indications, administered intravenously or intramuscularly in a clinical setting with monitoring, because uterine stimulation is a powerful effect requiring control.\n\nThe behavioural literature is an entirely separate matter, and the distinction is the single most important thing to understand about this compound's research profile. Over the past two decades oxytocin has been studied extensively for effects on social cognition, trust, emotion recognition and a range of psychiatric conditions. That literature is almost entirely based on **intranasal** administration — and there is no approved intranasal oxytocin product in the United States. So the approved uses and the heavily publicised research uses concern different routes of administration, with different and in one case questionable delivery rationales.\n\nThe rationale question deserves stating because it is a genuine scientific controversy rather than a quibble. The premise of intranasal administration is that some fraction of the peptide reaches the brain directly via the nasal route, bypassing the blood-brain barrier. Oxytocin is a 1,007 Da cyclic peptide, and peptides of this size do not readily cross the blood-brain barrier from the circulation. Whether, and how much, intranasally delivered oxytocin reaches central receptors at concentrations sufficient to produce the reported behavioural effects has been debated throughout the period in which the behavioural literature was accumulating. This is not a reason to dismiss that literature, but it is a reason to hold its mechanistic interpretation loosely.\n\nA naming note. This compound appears as oxytocin, OT, OXT, oxytocin injection USP, and under brand names including Pitocin. Vasopressin, also called antidiuretic hormone or ADH, is a distinct nonapeptide differing at two positions. Carbetocin and desmopressin are synthetic analogues of oxytocin and vasopressin respectively, and are distinct compounds. Oxytocin should not be confused with oxycodone or OxyContin, which are entirely unrelated; this confusion is common enough to be worth stating.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation. At approximately 1007.2 g/mol, 10 mg is roughly 10 micromoles. A note on units: oxytocin is conventionally dosed clinically and in the behavioural literature in International Units, a measure of biological activity, and the research literature uses IU almost exclusively — so converting between a mass-labelled vial and the IU figures reported in published studies is not a trivial arithmetic step and depends on the potency of the specific material.",
+    "researchFocusTitle": "Meta-Analysed Effects That Are Real, Small, and Narrower Than Reported",
+    "researchFocusDescription": "Oxytocin's behavioural literature is large enough to have been meta-analysed repeatedly, which is a considerable advantage: rather than weighing individual studies, it is possible to look at pooled estimates and at how they break down. Doing so produces a picture much more modest than the compound's popular reputation, and the meta-analyses themselves say so.\n\nThe most informative source reviewed the evidence across both healthy and clinical groups. In healthy participants, it found that intranasally administered oxytocin leads to better emotion recognition and more trust in others — but with an important qualification: the effects appear to be moderated by context, specifically the perceived threat of an out-group, as well as by personality and by childhood experiences. In individuals with untoward childhood experiences, positive behavioural or neurobiological effects seemed lowered or absent (PMID 23695233, doi:10.1038/tp.2013.34).\n\nThe clinical findings in the same work are where the numbers become instructive. Across 19 clinical trials covering autism, social anxiety, postnatal depression, obsessive-compulsive problems, schizophrenia, borderline personality disorder and post-traumatic stress, the combined effect size was d = 0.32, with a total N of 304, a 95 per cent confidence interval of 0.18 to 0.47, and P below 0.01. So: statistically significant, and small to moderate by conventional interpretation of Cohen's d. Then the decomposition: of all the disorders examined, only autism spectrum disorder showed a significant combined effect size, at d = 0.57 with an N of 68 and a confidence interval of 0.15 to 0.99.\n\nSeveral things in those figures deserve attention rather than being passed over. The pooled clinical sample across nineteen trials and seven diagnostic categories was 304 participants — an average of roughly sixteen per trial, which is very small for psychiatric intervention research. The only diagnosis reaching significance did so on 68 participants, and its confidence interval runs from 0.15 to 0.99, spanning everything from a barely detectable effect to a large one. That is a wide interval signalling considerable imprecision rather than a well-estimated effect. And six of the seven conditions examined did not show a significant pooled effect.\n\nOne further detail in that review is, on reflection, the most striking of all: the doses across those clinical trials ranged from 15 International Units to more than 7,000 IU. That is a greater than four-hundred-fold range. Pooling trials spanning such a range into a single effect estimate is a substantial source of heterogeneity, and it tells you something about the state of the field during that period — there was no established dose. A literature in which the administered quantity varies by more than two orders of magnitude between studies is a literature in which dose-response relationships had not been worked out, and pooled estimates from it should be treated as provisional.\n\nThe second meta-analysis is narrower and cleaner, and it contains a result worth highlighting because it is negative. Examining three specific psychological effects, it found that intranasal oxytocin enhances recognition of facial expressions of emotion, across 13 effect sizes and 408 participants, and that it elevates the level of in-group trust, across 8 effect sizes and 317 participants. But the hypothesis that out-group trust is significantly decreased in the oxytocin condition was not supported, across 10 effect sizes and 505 participants (PMID 21802859, doi:10.1016/j.psyneuen.2011.07.008).\n\nThat null result is substantively interesting. A prominent interpretation of oxytocin's social effects held that it increases in-group favouritism at the expense of out-group trust — the \"tribal\" account, which was widely reported and widely repeated. The meta-analysis tested it on the largest of its three samples and did not support it. The in-group effect held; the out-group counterpart did not. Noting that is a small but real corrective to a story that circulated more successfully than its evidence warranted, and it demonstrates the value of meta-analysis in a field where individual striking findings attract disproportionate attention.\n\nThe limitations, stated together: the behavioural effects are statistically real but small; the clinical evidence rests on very small pooled samples; only one of seven diagnostic categories reached significance and did so with a wide confidence interval; the dose range across trials spans more than four hundred-fold, indicating no established dose; the effects in healthy participants are moderated by context, personality and childhood history, which means they are not robust main effects but conditional ones; and the mechanistic premise of intranasal delivery to the brain remains debated for a 1,007 Da peptide. None of this makes oxytocin an uninteresting compound. It makes the popular characterisation of it as a \"trust hormone\" or \"love hormone\" an overstatement of a small, conditional and route-dependent set of findings.\n\nFor a laboratory, the strengths of this compound are considerable and lie mostly outside the behavioural literature. It is a thoroughly characterised nonapeptide of known structure with well-established, readily measurable peripheral effects on smooth muscle, a cloned receptor, approved pharmaceutical comparators, and a closely related partner peptide in vasopressin that makes receptor selectivity questions concrete and tractable. Oxytocin receptor pharmacology, smooth muscle physiology, and the oxytocin-vasopressin receptor cross-reactivity question are all well-founded research areas requiring no reliance on the contested behavioural claims.",
+    "qualityPurityTitle": "Analytical Verification for a Disulfide-Cyclised Nonapeptide",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 1007.2 g/mol, with molecular formula C43H66N12O12S2 and CAS registry number 50-56-6 (PubChem CID 439302). For this peptide, however, there is a specific and easily missed failure mode that an intact-mass figure handles poorly.\n\nThe disulfide bridge is the issue. Oxytocin is cyclised by a disulfide bond between cysteines at positions 1 and 6, and that bridge is required for activity — the reduced, linear form is inactive. Reduction of a disulfide adds two hydrogen atoms, so the reduced peptide is heavier by only 2 mass units out of 1,007, a difference of about 0.2 per cent. That is well within the practical tolerance of a loosely specified intact-mass check. A preparation that has been partially reduced can therefore pass a mass identity test while containing a substantial fraction of inactive material. Confirming disulfide integrity requires either accurate mass measurement with the 2-unit distinction explicitly addressed, a free-thiol assay such as Ellman's reagent, or chromatographic separation of reduced from oxidised forms.\n\nDimer and oligomer content is the companion question, and it is specific to disulfide-containing peptides. A free thiol on one molecule can form an intermolecular disulfide with another, producing dimers and higher oligomers rather than the intended intramolecular ring. These species appear at multiples of the monomer mass, are inactive, and are not detected by a chromatographic purity figure reported without reference to the high-mass region. Size-exclusion analysis or an explicit statement on dimer content is worth requesting, particularly for material whose storage history is unknown, since disulfide scrambling accumulates over time.\n\nSequence confirmation by tandem mass spectrometry fragmentation is worth having. At nine residues, sequence isomers would share formula and exact mass; and the near-identity with vasopressin — a nonapeptide differing at only two positions — makes this more than a formal concern. Vasopressin has a different molecular formula and mass, so gross substitution would be caught, but partial contamination or a synthesis error at one of the two differing positions is the kind of problem that sequence data addresses and mass alone does not.\n\nPurity assessment by reverse-phase chromatography is well established for this peptide, and the impurity classes to expect are deletion sequences, the reduced linear form, dimers, and deamidation products. Oxytocin contains asparagine and glutamine residues, both susceptible to deamidation, which converts an amide to a carboxylic acid and shifts mass by 1 unit — another small shift requiring deliberate attention rather than a nominal mass check.\n\nA note on units that bears on verification as much as on use. Oxytocin potency is conventionally expressed in International Units, a measure of biological activity, and both the clinical and behavioural literature use IU almost exclusively. This vial is labelled by mass. Relating the two requires knowing the potency of the specific material, which a mass-only certificate does not provide. For any work intended to relate to published studies, this is a practical obstacle worth resolving explicitly rather than by assumed conversion.\n\nThe salt-form question applies as usual, and lyophilised mass is not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass. Finally, and specific to an approved-drug substance: this material should not be assumed to meet the approved drug substance specification for oxytocin injection USP, and no such equivalence is claimed here.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: An Approved Obstetric Drug, and an Unapproved Research Route",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position for oxytocin needs stating carefully, because the approved use and the publicised research use differ in route, setting and purpose.\n\nOxytocin injection is an approved drug for obstetric indications, administered intravenously or intramuscularly in a clinical setting under monitoring. That administration is supervised for a reason: stimulating uterine contraction is a powerful physiological effect with serious potential consequences if uncontrolled, which is precisely why the approved product is used under clinical control rather than self-administered. An approved product is also manufactured under pharmaceutical quality systems and released against defined specifications; research-grade material is not, and should not be assumed to meet the approved drug substance specification.\n\nThere is no approved intranasal oxytocin product in the United States, and this matters because the behavioural literature on oxytocin — social cognition, trust, emotion recognition, psychiatric applications — concerns intranasal administration almost exclusively. The route that generated the research interest is not an approved route, and the mechanistic premise behind it, that a 1,007 Da cyclic peptide reaches central receptors in behaviourally relevant quantities via the nose, has been debated throughout the period in which that literature accumulated.\n\nThe strength of the behavioural evidence should also be represented accurately rather than through its popular reputation. Across 19 clinical trials spanning seven diagnostic categories, the combined effect size was d = 0.32 on a pooled sample of 304 participants — statistically significant and small to moderate. Only autism spectrum disorder reached significance among the individual diagnoses, at d = 0.57 on 68 participants with a confidence interval of 0.15 to 0.99. Doses across those trials ranged from 15 International Units to more than 7,000 IU, a greater than four-hundred-fold range indicating that no dose had been established. Effects in healthy participants are moderated by context, personality and childhood experience, and appear lowered or absent in individuals with adverse childhood experiences. Separately, the widely repeated claim that oxytocin decreases out-group trust was not supported on meta-analysis of the largest relevant sample. The characterisation of this hormone as a \"trust\" or \"love\" hormone overstates a small, conditional and route-dependent set of findings.\n\nNothing on this page suggests that this material is suitable for addressing labour, lactation, autism, social anxiety, depression, post-traumatic stress or any other condition in any person. It is not for human use, and the uterine effects of this hormone are a specific reason why unsupervised use would be hazardous. Any medical use of oxytocin requires a prescription and the approved product administered under clinical supervision.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is oxytocin?",
+        "answer": "Oxytocin is a cyclic nonapeptide hormone produced in hypothalamic neurons and released from the posterior pituitary, cyclised by a disulfide bridge between cysteines at positions 1 and 6. Verified identifiers are molecular formula C43H66N12O12S2, molecular weight approximately 1007.2 g/mol, CAS 50-56-6, PubChem CID 439302. It was the first polypeptide hormone to be sequenced and chemically synthesised."
+      },
+      {
+        "question": "Is oxytocin approved as a medicine?",
+        "answer": "Yes, for obstetric indications — oxytocin injection is administered intravenously or intramuscularly in a clinical setting under monitoring. That supervision exists because stimulating uterine contraction is a powerful effect with serious consequences if uncontrolled. Importantly, there is no approved intranasal oxytocin product in the United States, and the behavioural research literature concerns intranasal administration almost exclusively."
+      },
+      {
+        "question": "Do the trust and social effects hold up?",
+        "answer": "They are real but much smaller and narrower than the popular reputation suggests. Meta-analysis found intranasal oxytocin enhances facial emotion recognition (13 effect sizes, N=408) and elevates in-group trust (8 effect sizes, N=317). But effects in healthy participants are moderated by context, personality and childhood experience, and appear lowered or absent in people with adverse childhood experiences — conditional effects rather than robust main effects."
+      },
+      {
+        "question": "What does the clinical evidence show?",
+        "answer": "Across 19 clinical trials spanning autism, social anxiety, postnatal depression, OCD, schizophrenia, borderline personality disorder and PTSD, the combined effect size was d = 0.32 on a pooled sample of just 304 participants (CI 0.18-0.47). Only autism spectrum disorder reached significance individually, at d = 0.57 on 68 participants with a confidence interval of 0.15 to 0.99 — a wide interval signalling imprecision. Six of seven conditions showed no significant pooled effect."
+      },
+      {
+        "question": "Why is the dose range in those trials a problem?",
+        "answer": "Because it spanned 15 International Units to more than 7,000 IU — a greater than four-hundred-fold range. Pooling trials across such a range into one effect estimate introduces substantial heterogeneity, and more tellingly it indicates that no dose had been established. A literature where the administered quantity varies by over two orders of magnitude between studies is one where dose-response had not been worked out, so pooled estimates from it are provisional."
+      },
+      {
+        "question": "Does oxytocin reduce out-group trust?",
+        "answer": "Meta-analysis did not support it. The \"tribal\" account — that oxytocin increases in-group favouritism at the expense of out-group trust — was widely reported and widely repeated. It was tested on the largest of three samples in a dedicated meta-analysis (10 effect sizes, N=505) and was not supported, while the in-group trust effect did hold. A useful corrective to a story that circulated more successfully than its evidence warranted."
+      },
+      {
+        "question": "Is intranasal delivery to the brain established?",
+        "answer": "It is debated, and this is a genuine scientific controversy rather than a quibble. The premise is that some fraction reaches the brain directly via the nasal route, bypassing the blood-brain barrier. But oxytocin is a 1,007 Da cyclic peptide, and peptides of that size do not readily cross the blood-brain barrier from circulation. Whether enough reaches central receptors to produce the reported behavioural effects has been questioned throughout the period that literature accumulated."
+      },
+      {
+        "question": "How does oxytocin relate to vasopressin?",
+        "answer": "They are near-twins, and it matters pharmacologically. Vasopressin is also a disulfide-cyclised nonapeptide and differs from oxytocin at only two of nine positions. Consequently oxytocin has appreciable activity at vasopressin receptors and vice versa, so effects attributed to oxytocin receptor engagement may partly reflect vasopressin receptor activity, especially at high concentrations. Any interpretation ignoring that cross-reactivity is incomplete."
+      },
+      {
+        "question": "Why must the disulfide bridge be verified?",
+        "answer": "Because it is required for activity and is easy to miss analytically. Reducing a disulfide adds two hydrogen atoms, so the inactive reduced form is heavier by only 2 units out of 1,007 — about 0.2 per cent, well within the tolerance of a loosely specified intact-mass check. Partially reduced material can pass a mass identity test while containing substantial inactive content. Confirmation needs accurate mass addressing the 2-unit shift, a free-thiol assay, or chromatographic separation."
+      },
+      {
+        "question": "How do IU relate to the milligram label?",
+        "answer": "Not by simple arithmetic. Oxytocin potency is conventionally expressed in International Units — a measure of biological activity — and both the clinical and behavioural literature use IU almost exclusively. This vial is labelled by mass. Relating the two requires knowing the potency of the specific material, which a mass-only certificate does not supply. For work intended to relate to published studies, resolve this explicitly rather than by assumed conversion."
+      }
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "mots-c",
+    "qc": {
+      "main_content_words": 2092,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "INVESTIGATIONAL / endogenous peptide - not approved in any jurisdiction.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "65.99"
+      },
+      {
+        "variant": "40mg",
+        "price_usd": "98.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Motc-10mg.png",
+        "upload_as": "amino-mots-c-10mg.png",
+        "label_verified": "Vial label read directly: MOTS-C 10 mg"
+      },
+      {
+        "variant": "40mg",
+        "source_file": "Motc-40mg.png",
+        "upload_as": "amino-mots-c-40mg.png",
+        "label_verified": "Vial label read directly: MOTS-C 40 mg"
+      }
+    ],
+    "references": [
+      "PubChem CID 146675088 (PUG REST, verified 2026-11-09): MolecularFormula C101H152N28O22S2, MolecularWeight 2174.6; CAS 1627580-64-6",
+      "PMID 25738459 doi:10.1016/j.cmet.2015.02.009 - Cell Metab 2015 - Lee et al, original identification; 16-aa peptide from 12S rRNA sORF, folate cycle / de novo purine biosynthesis inhibition, AMPK activation, skeletal muscle as primary target",
+      "PMID 29983246 doi:10.1016/j.cmet.2018.06.008 - Cell Metab 2018 - Kim et al, nuclear translocation under metabolic stress, AMPK-dependent, ARE genes and NRF2 interaction",
+      "PMID 36233287 doi:10.3390/ijms231911991 - Int J Mol Sci 2022 - review of MOTS-c in aging and age-related disease; plasma levels decline with age"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to understand what a mitochondrial-derived peptide is, what MOTS-c does mechanistically, and how strong the evidence is.",
+    "primary_keyword": "MOTS-c",
+    "secondary_keywords": [
+      "mitochondrial derived peptide",
+      "MOTS-c peptide",
+      "MOTS-c molecular weight",
+      "MOTS-c AMPK",
+      "mitochondrial open reading frame 12S rRNA",
+      "MOTS-c research peptide"
+    ],
+    "long_tail_keywords": [
+      "what is MOTS-c",
+      "MOTS-c mechanism of action AMPK",
+      "MOTS-c molecular formula C101H152N28O22S2",
+      "MOTS-c CAS 1627580-64-6",
+      "what are mitochondrial derived peptides",
+      "does MOTS-c decline with age",
+      "MOTS-c nuclear translocation NRF2",
+      "MOTS-c vs humanin",
+      "is MOTS-c the same as MOTC",
+      "MOTS-c folate cycle purine biosynthesis"
+    ],
+    "semantic_terms": [
+      "mitochondrial DNA",
+      "short open reading frame",
+      "sORF",
+      "12S rRNA",
+      "humanin",
+      "AMPK",
+      "folate cycle",
+      "de novo purine biosynthesis",
+      "skeletal muscle",
+      "insulin sensitivity",
+      "mitonuclear communication",
+      "antioxidant response element",
+      "NRF2",
+      "methionine oxidation",
+      "reverse-phase HPLC"
+    ],
+    "name_variations": [
+      "MOTS-c",
+      "MOTS-C",
+      "MOTC",
+      "MOT-C",
+      "mitochondrial open reading frame of the 12S rRNA type-c"
+    ],
+    "informational_queries": [
+      "what is MOTS-c",
+      "MOTS-c mechanism",
+      "mitochondrial derived peptides explained",
+      "MOTS-c and aging",
+      "MOTS-c AMPK activation"
+    ],
+    "commercial_queries": [
+      "buy MOTS-c research peptide",
+      "MOTS-c 10mg 40mg",
+      "MOTS-c certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns MOTS-c and the mitochondrial-derived-peptide concept. No overlap with the incretin pages or with /product/ss-31 and /product/epitalon, which own mitochondrial-targeting and telomere/pineal intents respectively; cross-links rather than competes.",
+    "h1": "Driven by CMS name field; renders as \"MOTS-C\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/ss-31",
+        "anchor": "SS-31",
+        "rationale": "The other mitochondria-focused compound in the catalogue; genuine research adjacency for readers exploring mitochondrial biology.",
+        "verified": true
+      },
+      {
+        "route": "/product/nad",
+        "anchor": "NAD+",
+        "rationale": "Directly relevant to cellular energy metabolism and AMPK-adjacent research interests.",
+        "verified": true
+      },
+      {
+        "route": "/product/epitalon",
+        "anchor": "Epitalon",
+        "rationale": "Commonly researched alongside MOTS-c in ageing-related contexts.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "MOTS-c | Mitochondrial-Derived Peptide | Amino Based",
+    "seoDescription": "MOTS-c: 16-amino-acid mitochondrial-derived peptide, C101H152N28O22S2, MW 2174.6, CAS 1627580-64-6. Identity, AMPK mechanism, evidence. Research use only.",
+    "description": "MOTS-c (mitochondrial open reading frame of the 12S rRNA type-c) is a 16-amino-acid peptide encoded not in the nuclear genome but within mitochondrial DNA. Its molecular formula is C101H152N28O22S2, with a molecular weight of approximately 2174.6 g/mol and CAS registry number 1627580-64-6 (PubChem CID 146675088). It is studied as a regulator of metabolic homeostasis and as a mitochondrial signalling molecule. It is not approved in any jurisdiction and is supplied here for laboratory research use only.",
+    "productDetailsTitle": "MOTS-c: A Peptide Encoded in the Mitochondrial Genome",
+    "productDetailsDescription": "MOTS-c is unusual in a way that is easy to state and genuinely significant: it is encoded within mitochondrial DNA rather than in the cell nucleus. Its name is an acronym — mitochondrial open reading frame of the 12S ribosomal RNA type c — which describes exactly where in the mitochondrial genome its coding sequence sits. The peptide is 16 amino acids long, and it belongs to a small class known as mitochondrial-derived peptides, of which humanin was the first identified.\n\nThis genomic origin is the conceptual heart of the molecule. Mitochondria have long been understood as functional organelles that generate cellular energy, with their own small genome regulated by nuclear-encoded factors. The identification of short open reading frames within mitochondrial DNA that encode signalling peptides reframed that relationship, indicating that mitochondria also act as a signalling unit and encode factors of their own. MOTS-c was identified in 2015 within the 12S rRNA region by researchers who reported that it regulates insulin sensitivity and metabolic homeostasis.\n\nMOTS-c is not the only member of its class. The 2015 identification was explicitly motivated by the earlier discovery of humanin, a signalling peptide encoded by a short open reading frame in mitochondrial DNA, which suggested that additional such reading frames might exist. That reasoning proved productive, and mitochondrial-derived peptides are now treated as a small family rather than as isolated curiosities. The practical consequence for a researcher is that MOTS-c should be interpreted within that family context: findings attributed to one mitochondrial-derived peptide do not transfer to another, and the shared genomic origin is not evidence of shared activity.\n\nThe verified identifiers are a molecular formula of C101H152N28O22S2, a molecular weight of approximately 2174.6 g/mol, and CAS registry number 1627580-64-6, recorded under PubChem CID 146675088. The two sulfur atoms correspond to methionine residues rather than to a disulfide bridge, since the published sequence contains methionine but the peptide is not cyclised. At roughly 2.2 kDa and 16 residues, MOTS-c sits in the mid-range of research peptides: substantially larger than a short tripeptide such as KPV, and roughly half the mass of the incretin analogues.\n\nA practical note on naming. This compound appears in supplier listings and in some filenames as \"MOTC\", \"MOTS\", \"MOT-C\" and \"MOTS-C\" with varying capitalisation and hyphenation. The form used in the primary literature is MOTS-c, with a lowercase c denoting the specific open reading frame. Literature searches should use \"MOTS-c\", and material labelled with a variant spelling should not be assumed on that basis to be a different compound — nor assumed to be the same one, absent analytical confirmation.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 10 mg and 40 mg presentations.",
+    "researchFocusTitle": "Mechanism, Mitonuclear Signalling and the Limits of the Evidence",
+    "researchFocusDescription": "The research literature on MOTS-c is considerably more mechanistically specific than that of most peptides in this catalogue, which makes it unusually tractable for laboratory work. Where many research peptides have a proposed mechanism and an associated pathway, MOTS-c has a described biochemical action, a described cellular consequence and a described subcellular relocalisation, each reported in peer-reviewed work in a major journal.\n\nThe founding study, published in Cell Metabolism in 2015, reported that MOTS-c is encoded by a short open reading frame within the mitochondrial 12S rRNA, that its primary target organ appears to be skeletal muscle, and that its cellular actions inhibit the folate cycle and the de novo purine biosynthesis tethered to it, leading to activation of AMP-activated protein kinase. In mice, treatment prevented age-dependent and high-fat-diet-induced insulin resistance as well as diet-induced obesity (PMID 25738459, doi:10.1016/j.cmet.2015.02.009). The mechanistic chain here is worth noting for its specificity: a named metabolic cycle, a named downstream biosynthetic pathway, and a named energy-sensing kinase, rather than a general assertion of metabolic benefit.\n\nA subsequent study in the same journal in 2018 reported something conceptually striking. Under metabolic stress, MOTS-c translocates from the mitochondrion to the nucleus, where it regulates nuclear gene expression in an AMPK-dependent manner. Under glucose restriction it regulated a broad range of genes, including those carrying antioxidant response elements, and interacted with stress-responsive transcription factors regulating those elements, among them NFE2L2, also known as NRF2 (PMID 29983246, doi:10.1016/j.cmet.2018.06.008). The authors framed the finding in terms of mitonuclear communication: the nuclear genome was already known to regulate the mitochondrial genome, and this indicates regulation running in the other direction, with the two genomes having co-evolved to encode factors that cross-regulate each other. That is a claim about cell biology of considerably broader interest than the peptide itself.\n\nA 2022 review in the International Journal of Molecular Sciences surveys subsequent work on MOTS-c in ageing and age-related disease, noting that the peptide is colocalised with mitochondria in various tissues, is detectable in plasma, and that circulating levels decline with age (PMID 36233287, doi:10.3390/ijms231911991). The observation that an endogenous peptide declines with age is frequently over-interpreted, so it is worth being precise: a decline in a measured analyte with age is a correlation. It does not establish that the decline causes any age-related change, nor that restoring the level would reverse one. Reviews in this area discuss therapeutic potential across a range of conditions, and that discussion is appropriately framed as potential rather than demonstrated.\n\nThe limitations follow the familiar pattern for this field but are worth stating specifically. The metabolic findings are predominantly from mouse models, and prevention of diet-induced insulin resistance in mice does not establish an effect in humans. Human data are limited largely to observational measurements of endogenous levels rather than to controlled intervention. As an endogenous peptide, MOTS-c also raises pharmacokinetic questions that an engineered analogue does not: an unmodified 16-residue peptide has no acylation or other half-life-extending modification, so its persistence and route-dependence are material experimental variables rather than details.\n\nThe identification of skeletal muscle as the apparent primary target organ gives the metabolic findings a specific anatomical focus, and it connects this peptide to a broader question about how muscle senses and responds to metabolic state. AMPK is the canonical cellular energy sensor, activated when energy charge falls, and a mitochondrially encoded peptide acting upstream of it in muscle is a mechanistically coherent arrangement rather than an arbitrary association. That coherence is part of why the finding attracted attention. It also sets up the obvious experimental questions, which concern how this signalling interacts with the other established inputs to muscle AMPK activity, and whether the peptide's reported effects depend on an intact folate cycle in the tissue being studied.\n\nFor laboratory work, the specificity of the published mechanism is the opportunity. AMPK activation, folate-cycle inhibition, purine biosynthesis and nuclear translocation are all directly measurable, which means experiments can be designed against defined, published readouts rather than against a general hypothesis. The nuclear translocation finding in particular suggests experimental designs — subcellular fractionation, transcriptional profiling under metabolic stress, NRF2 pathway readouts — that are well specified in the existing literature.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation, typically by mass spectrometry, establishes whether the molecule present is the intended one, by comparing observed mass against the value calculated for the sequence — approximately 2174.6 Da in this case. Purity assessment, typically by reverse-phase high-performance liquid chromatography, establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual synthesis reagents. A certificate reporting only one answers half the question, and an HPLC percentage quoted without its chromatogram is weaker evidence than one accompanied by the trace.\n\nOne consideration is specific to this sequence. MOTS-c contains methionine residues, and methionine is among the amino acids most readily oxidised, converting to methionine sulfoxide with a mass increase of 16 Da per residue. Oxidation can occur during synthesis, purification, lyophilisation or storage, and an oxidised species is a distinct chemical entity whose activity should not be assumed equivalent. On a mass spectrum this appears as a satellite peak 16 or 32 Da above the expected mass, and on reverse-phase HPLC oxidised forms typically elute earlier than the parent peptide. A certificate that reports only a single purity percentage without showing the chromatogram or the full mass spectrum will not reveal whether such species are present, which is a concrete reason to ask for the underlying data rather than the summary figure.\n\nLyophilised mass is also not peptide content: a vial labelled 40 mg may contain counter-ions and residual water alongside the peptide, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass rather than a verified peptide mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nMOTS-c is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nThe fact that MOTS-c occurs naturally in the body warrants a specific caution, because it is a common source of confusion. That a peptide is endogenous says nothing about the safety of administering it exogenously. Dose, route, timing, formulation and the physiological context of administration all differ from endogenous production, and an endogenous molecule given as an external agent is a pharmacological intervention like any other. The observation that circulating levels decline with age is likewise a correlation and not a demonstration that supplementation is beneficial or safe.\n\nThe metabolic findings described in the research section above were obtained predominantly in mouse models. They do not demonstrate safety in humans, do not demonstrate efficacy in humans, and must not be presented or interpreted as evidence of either.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is MOTS-c?",
+        "answer": "MOTS-c is a 16-amino-acid peptide encoded within mitochondrial DNA rather than in the cell nucleus. The name is an acronym for mitochondrial open reading frame of the 12S ribosomal RNA type c, describing where in the mitochondrial genome its coding sequence sits. It belongs to a small class called mitochondrial-derived peptides, of which humanin was the first identified. It was reported in 2015 as a regulator of insulin sensitivity and metabolic homeostasis."
+      },
+      {
+        "question": "What is its molecular formula and molecular weight?",
+        "answer": "The molecular formula is C101H152N28O22S2, with a molecular weight of approximately 2174.6 g/mol and CAS registry number 1627580-64-6, recorded under PubChem CID 146675088. The two sulfur atoms correspond to methionine residues rather than a disulfide bridge, since the peptide is not cyclised. At roughly 2.2 kDa it sits in the mid-range of research peptides."
+      },
+      {
+        "question": "Why does it matter that MOTS-c is encoded in mitochondrial DNA?",
+        "answer": "Because it reframes what mitochondria do. They were long understood as energy-generating organelles with a small genome regulated by nuclear-encoded factors. Finding short open reading frames in mitochondrial DNA that encode signalling peptides indicates mitochondria also act as a signalling unit and encode factors of their own. A 2018 study went further, reporting that the nuclear genome is regulated by a mitochondrially encoded factor, suggesting the two genomes co-evolved to cross-regulate each other."
+      },
+      {
+        "question": "What is its described mechanism of action?",
+        "answer": "More specific than for most research peptides. The 2015 founding study reported that its cellular actions inhibit the folate cycle and the de novo purine biosynthesis tethered to it, leading to activation of AMP-activated protein kinase, with skeletal muscle as the apparent primary target organ. That is a named metabolic cycle, a named downstream pathway and a named energy-sensing kinase, rather than a general assertion of metabolic benefit."
+      },
+      {
+        "question": "What is the nuclear translocation finding?",
+        "answer": "A 2018 study in Cell Metabolism reported that under metabolic stress MOTS-c moves from the mitochondrion into the nucleus, where it regulates nuclear gene expression in an AMPK-dependent manner. Under glucose restriction it regulated a broad range of genes including those with antioxidant response elements, and interacted with stress-responsive transcription factors regulating those elements, including NRF2. This is the basis of the mitonuclear communication framing."
+      },
+      {
+        "question": "Do MOTS-c levels really decline with age, and what does that mean?",
+        "answer": "Reviews report that MOTS-c is detectable in plasma and that circulating levels decline with age. It is important to be precise about what that does and does not show: a decline in a measured analyte with age is a correlation. It does not establish that the decline causes any age-related change, nor that restoring the level would reverse one. This observation is frequently over-interpreted."
+      },
+      {
+        "question": "What are the main limitations of the evidence?",
+        "answer": "The metabolic findings are predominantly from mouse models, and prevention of diet-induced insulin resistance in mice does not establish an effect in humans. Human data are limited largely to observational measurement of endogenous levels rather than controlled intervention. Discussion of therapeutic potential in review articles is appropriately framed as potential rather than demonstrated, and should be read that way."
+      },
+      {
+        "question": "Does being a natural peptide make MOTS-c safe?",
+        "answer": "No, and this is a common and consequential confusion. That a peptide occurs naturally in the body says nothing about the safety of administering it exogenously. Dose, route, timing, formulation and physiological context all differ from endogenous production. An endogenous molecule given as an external agent is a pharmacological intervention like any other, and must be evaluated as one."
+      },
+      {
+        "question": "Why should I care about methionine oxidation in this peptide?",
+        "answer": "Because MOTS-c contains methionine, among the most readily oxidised amino acids, which converts to methionine sulfoxide with a mass increase of 16 Da per residue. Oxidation can occur during synthesis, purification, lyophilisation or storage, and the oxidised species is a distinct chemical entity whose activity should not be assumed equivalent. It appears as a satellite peak 16 or 32 Da above the expected mass, and oxidised forms typically elute earlier on reverse-phase HPLC. A bare purity percentage will not reveal it."
+      },
+      {
+        "question": "Is the spelling MOTS-c, MOTC or MOT-C?",
+        "answer": "The form used in the primary literature is MOTS-c, with a lowercase c denoting the specific open reading frame. Supplier listings and filenames use variants including MOTC, MOTS and MOT-C with differing capitalisation and hyphenation. Literature searches should use MOTS-c. Material labelled with a variant spelling should not be assumed on that basis to be a different compound, nor assumed to be the same one without analytical confirmation."
+      }
+    ]
+  }
+}

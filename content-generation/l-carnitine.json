@@ -1,0 +1,226 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "l-carnitine",
+    "qc": {
+      "main_content_words": 3113,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "Levocarnitine IS an approved prescription drug substance in the United States for primary and secondary carnitine deficiency, available in oral and intravenous forms. L-carnitine is also widely sold as a dietary supplement. This research-grade material is neither; it is supplied for laboratory research use only.",
+    "variants_from_csv": [
+      {
+        "variant": "Standard",
+        "price_usd": "27.50"
+      }
+    ],
+    "images": [
+      {
+        "variant": "Standard",
+        "source_file": "L-Carnitine.png",
+        "upload_as": "amino-l-carnitine-standard.png"
+      }
+    ],
+    "not_a_peptide": "L-carnitine is a small quaternary ammonium zwitterion, not a peptide. The shared lyophilised-peptide storage boilerplate was deliberately NOT used; a bespoke paragraph covering hygroscopicity was written instead.",
+    "references": [
+      "PubChem CID 10917 (PUG REST, verified 2026-11-09, matched name \"L-carnitine\"): C7H15NO3, MW 161.20, CAS 541-15-1.",
+      "PMID 30408788 doi:10.1159/000494338 - Am J Nephrol 48(5):349-356 - CARNIDIAL: MULTICENTRE, RANDOMISED, DOUBLE-BLIND, PLACEBO-CONTROLLED trial; 92 incident haemodialysis subjects, 1 year, L-carnitine versus placebo (ClinicalTrials.gov 00322322). MIXED-TO-UNFAVOURABLE RESULT: no L-carnitine effect was detected on parathyroid hormone or on either form of FGF23; but calcium and phosphate increased MORE in the L-carnitine group. Authors conclude L-carnitine supplementation increased calcium and phosphate plasma concentrations with no detected downregulation effect on PTH and FGF23.",
+      "PMID 23909402 doi:10.1089/rej.2013.1459 - Rejuvenation Res 16(6):460-6 - single-centre randomised trial; 102 haemodialysis patients with total carnitine below 50 micromol/L, randomised to oral L-carnitine 900 mg/day (n = 51) or control (n = 51) for 6 months. Decreased skin advanced glycation end-product autofluorescence, alanine transaminase, acyl/free carnitine ratio and beta-2-microglobulin. BUT ALSO SIGNIFICANTLY INCREASED LDL cholesterol AND triglycerides. ATTRITION: 32 of 102 patients did not complete the assessment or treatment. Control arm, not placebo."
+    ],
+    "unverified": [
+      "Enantiomeric purity - D-carnitine is a distinct stereoisomer, is not biologically equivalent, and is reported to inhibit carnitine-dependent processes; chiral analysis is required and mass spectrometry cannot distinguish the enantiomers",
+      "Purity and organic-impurity profile - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Water content - the compound is markedly hygroscopic and absorbed moisture contributes to the stated mass",
+      "Whether the supplied material meets the approved drug substance specification for levocarnitine - it should not be assumed to",
+      "Nominal fill quantity - the product listing states \"Standard\" rather than a mass, which is a specification gap"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a verification component. The searcher wants to know what L-carnitine does, whether supplementation works, and how L differs from D.",
+    "primary_keyword": "L-Carnitine",
+    "secondary_keywords": [
+      "levocarnitine",
+      "L-carnitine molecular weight",
+      "L-carnitine CAS 541-15-1",
+      "L-carnitine vs D-carnitine",
+      "carnitine shuttle",
+      "L-carnitine tartrate"
+    ],
+    "long_tail_keywords": [
+      "what is L-carnitine",
+      "does L-carnitine burn fat",
+      "L-carnitine molecular formula C7H15NO3",
+      "L-carnitine vs D-carnitine difference",
+      "is levocarnitine FDA approved",
+      "L-carnitine haemodialysis trial results",
+      "L-carnitine LDL cholesterol increase",
+      "how to verify L-carnitine chirality",
+      "L-carnitine free base vs tartrate",
+      "L-carnitine certificate of analysis"
+    ],
+    "semantic_terms": [
+      "carnitine shuttle",
+      "carnitine palmitoyltransferase",
+      "CPT1",
+      "CPT2",
+      "carnitine-acylcarnitine translocase",
+      "beta-oxidation",
+      "inner mitochondrial membrane",
+      "acylcarnitine",
+      "OCTN2",
+      "zwitterion",
+      "quaternary ammonium",
+      "enantiomer",
+      "chiral chromatography",
+      "optical rotation",
+      "rate-limiting step",
+      "hygroscopic",
+      "Karl Fischer titration"
+    ],
+    "name_variations": [
+      "L-Carnitine",
+      "levocarnitine",
+      "L-(−)-carnitine",
+      "(R)-3-hydroxy-4-(trimethylammonio)butanoate",
+      "D-carnitine is the INACTIVE and interfering enantiomer",
+      "DL-carnitine is the racemate",
+      "acetyl-L-carnitine and propionyl-L-carnitine are distinct compounds"
+    ],
+    "informational_queries": [
+      "what is L-carnitine",
+      "does L-carnitine work for fat loss",
+      "L-carnitine vs D-carnitine",
+      "how does the carnitine shuttle work",
+      "is L-carnitine safe"
+    ],
+    "commercial_queries": [
+      "buy L-carnitine",
+      "L-carnitine research grade",
+      "levocarnitine reference standard",
+      "L-carnitine COA"
+    ],
+    "cannibalisation_check": "Owns L-carnitine and the carnitine-shuttle and chirality-verification intents. /product/nad owns NAD+ and the Combined Metabolic Activator discussion in which carnitine tartrate appears; /product/glutathione owns the oral-bioavailability intent for endogenous metabolites.",
+    "h1": "Driven by CMS name field; renders as \"L-Carnitine\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/nad",
+        "anchor": "NAD+",
+        "rationale": "L-carnitine tartrate is a component of the Combined Metabolic Activator formulations discussed on that page; also the closest parallel for the necessary-versus-limiting reasoning error.",
+        "verified": true
+      },
+      {
+        "route": "/product/glutathione",
+        "anchor": "Glutathione",
+        "rationale": "Other endogenous metabolite in the catalogue where the biochemistry is solid and the supplementation question is separate; parallel reasoning.",
+        "verified": true
+      },
+      {
+        "route": "/product/dhea",
+        "anchor": "DHEA",
+        "rationale": "Another compound where a well-designed trial produced a favourable change on one marker and an unfavourable lipid change alongside it.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "L-Carnitine | C7H15NO3, MW 161.20, CAS 541-15-1 | Amino Based",
+    "seoDescription": "L-Carnitine: C7H15NO3, MW 161.20. An endogenous zwitterion and approved drug substance, with honest trial data. Research use only.",
+    "description": "L-carnitine is a small endogenous quaternary ammonium zwitterion that carries long-chain fatty acids across the inner mitochondrial membrane for beta-oxidation. Its molecular formula is C7H15NO3, with a molecular weight of approximately 161.20 g/mol (PubChem CID 10917, CAS 541-15-1). Under the generic name levocarnitine it is an approved prescription drug substance for carnitine deficiency, and it is also widely sold as a dietary supplement; this research-grade material is neither of those things. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "L-Carnitine: A Mitochondrial Shuttle With an Enantiomer That Matters",
+    "productDetailsDescription": "L-carnitine is a small molecule — molecular formula C7H15NO3, molecular weight approximately 161.20 g/mol, CAS registry number 541-15-1, recorded under PubChem CID 10917. At roughly 161 g/mol it is the smallest molecule in this catalogue apart from 5-Amino-1MQ. Structurally it is a zwitterion: it carries a quaternary ammonium group with a permanent positive charge and a carboxylate with a negative one, so the molecule is charged at both ends and electrically neutral overall. That zwitterionic character makes it extremely water-soluble and markedly hygroscopic, which are the two facts that govern handling.\n\nIts biological function is textbook and entirely uncontroversial, which distinguishes it from most of this catalogue. Long-chain fatty acids cannot cross the inner mitochondrial membrane unaided. L-carnitine solves this: fatty acyl groups are transferred onto carnitine by carnitine palmitoyltransferase I on the outer mitochondrial membrane, the resulting acylcarnitine is transported across the inner membrane by carnitine-acylcarnitine translocase, and carnitine palmitoyltransferase II then transfers the acyl group back onto coenzyme A inside the matrix for beta-oxidation. Carnitine is regenerated and shuttles back. This is the carnitine shuttle, and it is the obligatory route by which long-chain fat enters mitochondrial oxidation.\n\nThat mechanism is also the source of the compound's commercial appeal and of the most common error about it. Because carnitine is required for fat oxidation, it is widely marketed on the inference that supplying more will increase fat oxidation. The inference does not follow, and the reason is worth stating plainly: a required cofactor increases flux through a pathway only when its availability is the rate-limiting step. In people with normal carnitine status, muscle carnitine concentrations are far above the levels at which the transferase enzymes are saturated, so adding more does not accelerate the shuttle. This is the same logical structure as the precursor-versus-product issue discussed on the NAD+ page and the oral-availability question on the glutathione page: the biochemistry is solid, and the leap from \"necessary\" to \"limiting\" is where the reasoning fails.\n\nThe population in which carnitine supplementation genuinely matters is therefore the deficient one, and this is reflected in the regulatory position. Under the generic name levocarnitine, L-carnitine is an approved prescription drug substance in the United States for primary systemic carnitine deficiency and for secondary carnitine deficiency, in oral and intravenous forms. That is a real approval for a real indication — a defined deficiency state. It supports nothing about supplementation in people who are not deficient, and a research-grade vial is not the approved product: approved products are manufactured under pharmaceutical quality systems, released against specifications, and supplied with regulator-reviewed labelling. This material should not be assumed to meet the approved drug substance specification.\n\nNow the point that matters most for verification, and it is specific to this compound. Carnitine has a stereocentre and exists as two enantiomers. **L-carnitine is the biologically active form. D-carnitine is not biologically equivalent**, and it is reported to inhibit carnitine-dependent processes rather than simply being inert — a competitive interference with the very system L-carnitine serves. Racemic DL-carnitine was historically marketed and is a different proposition from the L-enantiomer. The analytical consequence is severe and is developed in the quality section: enantiomers have identical molecular formulas, identical masses and identical ordinary chromatographic behaviour, so no mass spectrometric or standard HPLC measurement distinguishes them. For this compound, chiral analysis is not a refinement — it is the check that establishes whether you have the active substance or something that opposes it.\n\nA naming note. This compound appears as L-carnitine, levocarnitine, L-(−)-carnitine, and chemically as (R)-3-hydroxy-4-(trimethylammonio)butanoate. D-carnitine is the inactive and interfering enantiomer, and DL-carnitine is the racemate. Acetyl-L-carnitine and propionyl-L-carnitine are acylated derivatives and distinct compounds with different masses and different properties. L-carnitine tartrate, a common commercial salt form, has a higher formula weight than the free zwitterion and is not interchangeable with it on a mass basis — notably, L-carnitine tartrate is the form used in the Combined Metabolic Activator formulations discussed on the NAD+ page in this catalogue.\n\nThe material is supplied as a solid in a sealed glass vial, and the stated quantity refers to the mass of material in the vial. This compound is a small, highly water-soluble zwitterionic molecule rather than a peptide, which makes the handling questions straightforward but introduces one that matters: it is markedly hygroscopic, readily taking up atmospheric moisture, so a vial should be allowed to reach room temperature before opening and should be resealed promptly. Absorbed water contributes to the stated mass. Amino Based publishes no product-specific stability study for this material, so no shelf-life, solution-stability or freeze-thaw tolerance figures are claimed here. The product listing states a quantity of \"Standard\" rather than a nominal mass, which is a specification gap that should be resolved with the supplier before any quantitative work, since no molar calculation is possible without it.",
+    "researchFocusTitle": "Two Randomised Trials in the Right Population, Both With Unfavourable Findings",
+    "researchFocusDescription": "L-carnitine has a large literature, much of it in athletic performance and weight loss where results have been inconsistent. Rather than survey that, the most informative approach is to examine randomised trials in the population where supplementation has the clearest rationale: haemodialysis patients, in whom carnitine is lost across the dialysis membrane and deficiency is common and documented. If carnitine supplementation works anywhere, it should work there. Two such trials are instructive, and neither produced an unambiguously favourable result.\n\nThe first is CARNIDIAL, a multicentre, randomised, double-blind, placebo-controlled trial that enrolled 92 incident haemodialysis subjects for one year, randomised to L-carnitine or placebo, examining parameters of chronic kidney disease–mineral and bone disorder (PMID 30408788, doi:10.1159/000494338). The design is strong: multicentre, double-blind, genuinely placebo-controlled, a full year of follow-up, with analysis by mixed linear models for repeated measurements.\n\nThe findings were negative on the intended targets and adverse on others. No L-carnitine effect was detected on parathyroid hormone or on either form of fibroblast growth factor 23 — the measures the trial set out to influence. Parathyroid hormone decreased slightly over time and FGF23 increased, in both arms alike. But calcium and phosphate increased **more** in the L-carnitine group. The authors' conclusion was precisely that: L-carnitine supplementation increased calcium and phosphate plasma concentrations with no detected downregulation effect on PTH and FGF23.\n\nThat is a null result on the hypothesis plus an unwanted direction of change on mineral parameters. In dialysis patients, raised phosphate is not a neutral laboratory finding — phosphate control is a central clinical concern in this population. So a well-designed year-long placebo-controlled trial found no benefit on its targets and a shift in the wrong direction on something that matters.\n\nThe second trial reported a genuine positive finding alongside two significant problems. It randomised 102 haemodialysis patients with documented carnitine deficiency — total carnitine below 50 micromoles per litre, so the right population by design — to oral L-carnitine 900 mg per day or control for six months, with skin advanced glycation end-product levels measured by autofluorescence as the primary interest (PMID 23909402, doi:10.1089/rej.2013.1459).\n\nThe positive result: L-carnitine significantly decreased skin AGE values, along with alanine transaminase, the acyl/free carnitine ratio and beta-2-microglobulin. Changes in total and free carnitine were inversely associated with changes in skin AGE levels, and in multiple regression the change in free carnitine was the sole independent determinant of the change in skin AGEs. The internal consistency there is worth crediting — the biomarker moved in proportion to how much the intervention actually raised carnitine, which is the pattern a real effect produces.\n\nThe two problems. First, the same supplementation **significantly increased LDL cholesterol and triglycerides**. That is an unfavourable lipid shift reported in the same paper as the favourable AGE finding, and it is routinely omitted when this study is cited. It also echoes the pattern seen with DHEA elsewhere in this catalogue: a supplement producing a desired change on one marker and an undesired change on another, where selective reporting of either would misrepresent the trial.\n\nSecond, and more serious methodologically: **32 of the 102 enrolled patients did not complete the assessment or treatment.** Attrition approaching a third in a six-month trial substantially weakens the result, because patients who drop out are frequently not a random subset, and the remaining comparison can be biased in either direction. The trial was also single-centre and used a control arm rather than a placebo arm, which leaves it open to expectation effects on any outcome not measured by instrument.\n\nTaking both trials together produces an honest and somewhat unflattering picture even in the population with the strongest rationale. The better-designed trial — multicentre, double-blind, placebo-controlled, one year — found no effect on its targets and an adverse shift in calcium and phosphate. The trial that found a benefit did so on a surrogate biomarker, in a single centre, without placebo, with a third of patients not completing, and alongside significant increases in LDL cholesterol and triglycerides. Neither trial measured clinical outcomes such as mortality, cardiovascular events or hospitalisation.\n\nWhat this does not challenge is the underlying biochemistry or the approved indication. The carnitine shuttle is established beyond dispute, and levocarnitine's approval for primary and secondary carnitine deficiency rests on a genuine deficiency state. The trials above tested something different and harder: whether supplementation in dialysis patients improves specific disease-related parameters. The answer is mixed at best.\n\nThe implication for the claims most often made about this compound — fat loss, exercise performance, energy — is more straightforward. Those claims rest on the inference from carnitine's necessary role in fat oxidation to the conclusion that more increases fat oxidation. That inference requires carnitine availability to be the rate-limiting step, which in people with normal carnitine status it is not, because muscle concentrations already saturate the relevant enzymes. The trials above, conducted in people who were genuinely deficient, did not even deliver consistent benefit on disease markers.\n\nFor a laboratory, L-carnitine is an excellent and entirely legitimate reagent. It is inexpensive, chemically stable as a dry solid, highly water-soluble, and central to a well-defined and important pathway. Fatty acid oxidation assays, mitochondrial respiration studies, carnitine palmitoyltransferase enzymology, acylcarnitine profiling as a readout of fatty acid oxidation flux, and work on the carnitine transporter OCTN2 are all well-founded applications requiring no reliance on any supplementation claim. The one precondition is enantiomeric purity, for the reason set out below.",
+    "qualityPurityTitle": "Analytical Verification: Chirality Is the Whole Question",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is against the verified molecular formula C7H15NO3, molecular weight approximately 161.20 g/mol, and CAS registry number 541-15-1 (PubChem CID 10917). For a molecule this small, mass spectrometry and nuclear magnetic resonance both establish composition and structure readily. Identity in that sense is not the difficult part — and it is not what matters most.\n\n**Chirality is the critical specification for this compound, and an ordinary certificate will not address it.** Carnitine has a stereocentre and exists as two enantiomers. The L-enantiomer is the biologically active form. The D-enantiomer is not biologically equivalent and is reported to inhibit carnitine-dependent processes — it does not merely dilute the active material, it can interfere with the system the active material serves. Racemic DL-carnitine is a historically marketed and chemically different proposition.\n\nThe analytical difficulty is complete. Enantiomers have identical molecular formulas, identical exact masses, identical ultraviolet absorbance and identical retention behaviour on ordinary achiral chromatography. No mass spectrometric measurement distinguishes them. No standard reverse-phase HPLC method distinguishes them. A certificate reporting \"carnitine, 99.5 per cent pure by HPLC, molecular weight confirmed by MS\" is entirely compatible with the material being racemic, or being predominantly the D-enantiomer. The relevant methods are chiral chromatography on a chiral stationary phase, or optical rotation measurement — L-carnitine is the levorotatory enantiomer, which is the origin of the alternative name L-(−)-carnitine, so a specific optical rotation figure is a direct and inexpensive check. Either a stated specific optical rotation or a chiral purity figure should be required, and in the absence of one the enantiomeric composition of the material is simply unknown.\n\nThe CAS registry number is useful here, because registry numbers are enantiomer-specific: 541-15-1 designates L-carnitine specifically, and D-carnitine and the racemate carry different numbers. A certificate quoting a different CAS number is describing a different substance, so checking the quoted number against 541-15-1 is a quick first filter.\n\nSalt form is the second specification. L-carnitine is commonly supplied as the tartrate, which has a substantially higher formula weight than the free zwitterion and is not interchangeable with it on a mass basis. A certificate should state whether the material is the free base zwitterion or a salt, and the listing for this product does not say.\n\nWater content is a genuine quantitative issue. This compound is markedly hygroscopic — a consequence of its zwitterionic structure — and will take up atmospheric moisture readily. Unless water content has been determined by Karl Fischer titration or an equivalent method, the stated mass includes adsorbed moisture in an unknown proportion, and for a hygroscopic solid that is not a negligible correction.\n\nPurity assessment by high-performance liquid chromatography is well established. The impurity profile to expect is synthetic-organic — unreacted precursors, related quaternary amines, and residual solvents — plus, for material produced by resolution of a racemate, residual D-enantiomer, which brings the discussion back to chirality.\n\nA specification gap worth raising directly: the product listing states a quantity of \"Standard\" rather than a nominal mass. No molar calculation is possible from that, and it should be resolved with the supplier before any quantitative work.\n\nFinally, and specific to an approved-drug substance: this material should not be assumed to meet the approved drug substance specification for levocarnitine, and no such equivalence is claimed here.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: An Approved Deficiency Treatment, Not a Supplement Claim",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position for L-carnitine has three parts and conflating them in either direction would be misleading.\n\nUnder the generic name levocarnitine, L-carnitine is an approved prescription drug substance in the United States for primary systemic carnitine deficiency and for secondary carnitine deficiency, in oral and intravenous forms. That is a genuine approval for a defined deficiency state. L-carnitine is separately and widely sold as a dietary supplement. This research-grade material is neither: it is not manufactured under pharmaceutical quality systems, is not released against approved specifications, carries no regulator-reviewed labelling, and should not be assumed to meet the approved drug substance specification for levocarnitine. Its characterisation is not established here, and the product listing does not even state a nominal mass.\n\nThe approval supports nothing about supplementation in people who are not carnitine-deficient, and the claims most commonly made for this compound require direct comment. Fat loss, exercise performance and energy claims rest on an inference from carnitine's necessary role in the mitochondrial fatty acid shuttle to the conclusion that supplying more increases fat oxidation. That inference holds only if carnitine availability is the rate-limiting step in the pathway. In people with normal carnitine status it is not: muscle carnitine concentrations are already far above the levels saturating the relevant transferase enzymes. A required cofactor does not increase flux unless it is limiting.\n\nThe randomised trial evidence in the population with the strongest rationale — haemodialysis patients, who lose carnitine across the dialysis membrane — should also be represented fully. CARNIDIAL, a multicentre double-blind placebo-controlled one-year trial in 92 patients, detected no L-carnitine effect on parathyroid hormone or fibroblast growth factor 23, while calcium and phosphate increased **more** in the L-carnitine group; raised phosphate is not a neutral finding in dialysis patients. A second randomised six-month trial in 102 carnitine-deficient patients did report decreased skin advanced glycation end-products — but in the same patients it **significantly increased LDL cholesterol and triglycerides**, it used a control rather than placebo arm at a single centre, and **32 of 102 enrolled patients did not complete** the assessment or treatment. Neither trial measured clinical outcomes such as mortality or cardiovascular events.\n\nOne analytical point has direct safety and interpretive relevance. D-carnitine, the opposite enantiomer, is not biologically equivalent and is reported to inhibit carnitine-dependent processes. Enantiomers cannot be distinguished by mass spectrometry or ordinary chromatography, so material of unverified chiral purity may contain a substance that opposes the intended activity. The enantiomeric purity of this material is unverified.\n\nNothing on this page suggests that this material is suitable for addressing carnitine deficiency, fatigue, obesity, weight loss, athletic performance, kidney disease or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is L-carnitine?",
+        "answer": "L-carnitine is a small endogenous quaternary ammonium zwitterion that carries long-chain fatty acids across the inner mitochondrial membrane for beta-oxidation. Verified identifiers are molecular formula C7H15NO3, molecular weight approximately 161.20 g/mol, CAS 541-15-1, PubChem CID 10917. At roughly 161 g/mol it is among the smallest molecules in this catalogue."
+      },
+      {
+        "question": "How does the carnitine shuttle work?",
+        "answer": "Long-chain fatty acids cannot cross the inner mitochondrial membrane unaided. Carnitine palmitoyltransferase I transfers fatty acyl groups onto carnitine on the outer membrane; carnitine-acylcarnitine translocase moves the acylcarnitine across the inner membrane; carnitine palmitoyltransferase II transfers the acyl group back onto coenzyme A inside the matrix for beta-oxidation. Carnitine is regenerated and shuttles back. This is the obligatory route for long-chain fat entry."
+      },
+      {
+        "question": "Does L-carnitine burn fat?",
+        "answer": "The inference does not follow from the biochemistry, and this is the most common error about this compound. Carnitine is *required* for fat oxidation — but a required cofactor increases flux only when its availability is the rate-limiting step. In people with normal carnitine status, muscle carnitine concentrations are far above the levels saturating the relevant transferase enzymes, so adding more does not accelerate the shuttle."
+      },
+      {
+        "question": "Is levocarnitine an approved drug?",
+        "answer": "Yes, for a defined deficiency state. Under the generic name levocarnitine it is an approved prescription drug substance in the United States for primary systemic carnitine deficiency and for secondary carnitine deficiency, in oral and intravenous forms. That approval supports nothing about supplementation in people who are not deficient, and a research-grade vial is not the approved product."
+      },
+      {
+        "question": "What did the best randomised trial find?",
+        "answer": "CARNIDIAL — multicentre, double-blind, placebo-controlled, 92 incident haemodialysis patients over one year — detected no L-carnitine effect on parathyroid hormone or on either form of FGF23, the measures it set out to influence. And calcium and phosphate increased *more* in the L-carnitine group. In dialysis patients raised phosphate is not a neutral finding, so that is a null result plus an unwanted direction of change."
+      },
+      {
+        "question": "Did any trial show a benefit?",
+        "answer": "One did, with caveats. In 102 haemodialysis patients with documented carnitine deficiency given 900 mg/day for six months, skin advanced glycation end-products decreased, along with ALT, the acyl/free carnitine ratio and beta-2-microglobulin — and the change in free carnitine was the sole independent determinant of the AGE change, which is the pattern a real effect produces."
+      },
+      {
+        "question": "What were the problems with that trial?",
+        "answer": "Two serious ones, both usually omitted. The same supplementation **significantly increased LDL cholesterol and triglycerides** — an unfavourable lipid shift reported in the same paper. And **32 of the 102 enrolled patients did not complete** the assessment or treatment: attrition approaching a third substantially weakens a six-month result, since drop-outs are rarely a random subset. It was also single-centre and used a control rather than a placebo arm."
+      },
+      {
+        "question": "Why is D-carnitine a problem?",
+        "answer": "Because it is not merely inactive. D-carnitine is not biologically equivalent to the L-form and is reported to *inhibit* carnitine-dependent processes — competitive interference with the very system L-carnitine serves. Racemic DL-carnitine is a chemically different proposition from the L-enantiomer, and material of unverified chiral purity may contain a substance that opposes the intended activity."
+      },
+      {
+        "question": "How do I verify I have the L-enantiomer?",
+        "answer": "Not by mass spectrometry or ordinary HPLC — enantiomers share molecular formula, exact mass, UV absorbance and achiral retention behaviour, so a certificate reading \"99.5 per cent pure, mass confirmed\" is fully compatible with racemic or D-predominant material. You need chiral chromatography or a specific optical rotation figure; L-carnitine is levorotatory, hence L-(−)-carnitine. Also check the CAS number: 541-15-1 is enantiomer-specific to the L-form."
+      },
+      {
+        "question": "What is a well-founded laboratory use?",
+        "answer": "Several, and none requires any supplementation claim. Fatty acid oxidation assays, mitochondrial respiration studies, carnitine palmitoyltransferase enzymology, acylcarnitine profiling as a readout of fatty acid oxidation flux, and work on the carnitine transporter OCTN2. It is inexpensive, stable as a dry solid and highly water-soluble. The precondition is verified enantiomeric purity — and note the listing states \"Standard\" rather than a mass, so no molar calculation is possible yet."
+      }
+    ]
+  }
+}

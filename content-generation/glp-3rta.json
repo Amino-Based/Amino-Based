@@ -1,0 +1,255 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "glp-3rta",
+    "qc": {
+      "main_content_words": 2093,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "product_name_note": "Catalogue name GLP-3RTA. Molecular identity confirmed by the site owner on 2026-11-09 as RETATRUTIDE (LY3437943).",
+    "regulatory_class": "INVESTIGATIONAL - not approved in any jurisdiction. Standard RUO compliance language applies.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "87.99"
+      },
+      {
+        "variant": "20mg",
+        "price_usd": "137.49"
+      },
+      {
+        "variant": "30mg",
+        "price_usd": "192.49"
+      },
+      {
+        "variant": "60mg",
+        "price_usd": "274.99"
+      }
+    ],
+    "note": "Price, SKU, stock, variants and categories are reference only. NOT part of this content payload.",
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "GLP-3RTA 10mg.png",
+        "upload_as": "amino-glp-3rta-10mg.png"
+      },
+      {
+        "variant": "20mg",
+        "source_file": "GLP-3RTA 20mg.png",
+        "upload_as": "amino-glp-3rta-20mg.png"
+      },
+      {
+        "variant": "30mg",
+        "source_file": "GLP-3RTA 30mg.png",
+        "upload_as": "amino-glp-3rta-30mg.png"
+      },
+      {
+        "variant": "60mg",
+        "source_file": "GLP-3RTA 60mg.png",
+        "upload_as": "amino-glp-3rta-60mg.png"
+      }
+    ],
+    "references": [
+      "PubChem PUG REST: NO CID found for \"retatrutide\", \"LY3437943\" or CAS 2381089-83-2 (verified 2026-11-09). PubChem therefore cannot be cited as a source for this compound.",
+      "FDA GSRS/GINAS retatrutide records: CAS 2381089-83-2. Two entries conflict - C187H281N43O60 at ~4091.5 (a software DEFAULT for an unresolved protein, not a measurement) and C221H342N46O68 at 4731.36.",
+      "PMID 42559975 doi:10.1111/dar.70231 - Drug Alcohol Rev 2026 - Composition and Labelling Accuracy of Products Sold as Retatrutide in Australia; cites expected mass of authentic retatrutide ~4730.477 Da",
+      "PMID 38302593 doi:10.1038/s41366-024-01473-y - Int J Obes - obesity pipeline; retatrutide as GLP-1/GIP/glucagon triple agonist progressed to phase 3",
+      "PMID 38687506 doi:10.2337/dci23-0100 - Diabetes Care - incretin pharmacotherapy; ~15-24% weight loss and ~10% / ~6kg lean mass loss across the class",
+      "PMID 36050763 doi:10.1186/s12933-022-01604-7 - Cardiovasc Diabetol - comparator context for the incretin class",
+      "PMC13578828 - Detection and Excretion Profile of Retatrutide in Human Plasma and Urine by LC-HRMS: Implications for Antidoping Analysis"
+    ],
+    "unverified": [
+      "EXACT MOLECULAR FORMULA - NOT INDEPENDENTLY VERIFIED. FDA GSRS holds two conflicting entries and PubChem has no record. C221H342N46O68 is the better supported of the two; the page states the uncertainty rather than resolving it.",
+      "Salt form / counter-ion content for any Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for 10/20/30/60 mg presentations - no data supplied",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset",
+      "Sterility and endotoxin content - not established for research material"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational-commercial. The searcher wants to establish what GLP-3RTA is, confirm it is retatrutide, and understand how provisional the evidence is.",
+    "primary_keyword": "retatrutide",
+    "secondary_keywords": [
+      "GLP-3RTA",
+      "LY3437943",
+      "retatrutide research peptide",
+      "triple agonist peptide",
+      "retatrutide molecular weight",
+      "GLP-1 GIP glucagon agonist"
+    ],
+    "long_tail_keywords": [
+      "what is GLP-3RTA",
+      "is GLP-3RTA retatrutide",
+      "retatrutide molecular weight 4731",
+      "retatrutide CAS 2381089-83-2",
+      "retatrutide vs tirzepatide",
+      "what is a triple agonist peptide",
+      "is retatrutide FDA approved",
+      "retatrutide glucagon receptor energy expenditure",
+      "are retatrutide products mislabelled",
+      "retatrutide certificate of analysis mass spectrometry"
+    ],
+    "semantic_terms": [
+      "triple agonist",
+      "glucagon receptor",
+      "GIP receptor",
+      "GLP-1 receptor",
+      "energy expenditure",
+      "hepatic glucose output",
+      "incretin",
+      "phase 3",
+      "investigational",
+      "lean mass",
+      "high-resolution mass spectrometry",
+      "labelling accuracy",
+      "lyophilised",
+      "fill mass",
+      "acylation"
+    ],
+    "name_variations": [
+      "GLP-3RTA",
+      "retatrutide",
+      "LY3437943",
+      "LY-3437943",
+      "triple G agonist",
+      "GGG agonist"
+    ],
+    "informational_queries": [
+      "what is retatrutide",
+      "retatrutide mechanism of action",
+      "retatrutide vs tirzepatide",
+      "is retatrutide approved",
+      "retatrutide side effects"
+    ],
+    "commercial_queries": [
+      "buy retatrutide research peptide",
+      "GLP-3RTA 10mg 20mg 30mg 60mg",
+      "retatrutide COA"
+    ],
+    "cannibalisation_check": "Owns retatrutide, LY3437943 and GLP-3RTA intent plus the triple-agonist concept. /product/glp-1trz owns tirzepatide; /product/semaglutide owns single-target GLP-1.",
+    "h1": "Driven by CMS name field; renders as \"GLP-3RTA\". Generic name carried in seoTitle and the opening sentence so the identity is machine-readable."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/glp-1trz",
+        "anchor": "GLP-1TRZ (tirzepatide)",
+        "rationale": "The direct comparator in pipeline reviews; highest-intent comparison query.",
+        "verified": true
+      },
+      {
+        "route": "/product/semaglutide",
+        "anchor": "Semaglutide",
+        "rationale": "Completes the single/dual/triple agonist progression.",
+        "verified": true
+      },
+      {
+        "route": "/product/cagrilintide",
+        "anchor": "Cagrilintide",
+        "rationale": "Amylin analogue; the other combination approach in the same pipeline review.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; especially relevant given documented labelling-accuracy problems.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Relevant to the molar-calculation uncertainty discussed in characterisation.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement for an investigational compound.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Commercial promotion inappropriate adjacent to an investigational compound with provisional evidence."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "GLP-3RTA (Retatrutide) | Triple Agonist | Amino Based",
+    "seoDescription": "GLP-3RTA is retatrutide (LY3437943): GLP-1/GIP/glucagon triple receptor agonist, CAS 2381089-83-2, MW ~4731. Identity, evidence, limits. Research use only.",
+    "description": "GLP-3RTA is Amino Based's catalogue designation for retatrutide (development code LY3437943), an investigational triple agonist acting at the glucagon-like peptide-1 (GLP-1), glucose-dependent insulinotropic polypeptide (GIP) and glucagon receptors. It carries CAS registry number 2381089-83-2 and a molecular weight of approximately 4731 Da. Retatrutide is not approved in any jurisdiction. The material supplied here is an unapproved research chemical for laboratory use only.",
+    "productDetailsTitle": "GLP-3RTA (Retatrutide): Identity, and Where the Public Record Is Incomplete",
+    "productDetailsDescription": "GLP-3RTA is this catalogue's name for retatrutide, also known by its development code LY3437943. The two names refer to the same molecule throughout this page. \"GLP-3RTA\" appears in no peer-reviewed publication, so any literature search should use \"retatrutide\" or \"LY3437943\".\n\nRetatrutide is a synthetic acylated peptide engineered to act as an agonist at three receptors simultaneously: the GLP-1 receptor, the GIP receptor and the glucagon receptor. It is the logical extension of the single-target and dual-target designs that preceded it. The addition of glucagon receptor agonism is the conceptually interesting part, because glucagon raises blood glucose, which appears to work against the goal of glycaemic control. The design rationale is that glucagon receptor activation also increases energy expenditure, and that pairing it with sufficient incretin activity allows the energy-expenditure benefit to be captured while the incretin components manage the glycaemic consequence. Whether that balance holds across populations and durations is precisely what the clinical programme is testing.\n\nThe chemical identity of this compound is less completely documented in public sources than that of its approved relatives, and that gap is reported here rather than papered over. Retatrutide carries CAS registry number 2381089-83-2. As of verification on 9 November 2026, PubChem returns no compound record for \"retatrutide\", for the development code \"LY3437943\", or for that CAS number, so PubChem cannot be cited as a source for its formula or mass. The FDA's substance registration system holds two entries that disagree: one states a formula of C187H281N43O60 with a weight of approximately 4091.5, the other a formula of C221H342N46O68 with a weight of 4731.36.\n\nThose two figures are not equally credible. The approximately 4091.5 value is explicitly a software-generated default applied where a protein's weight has not been resolved, rather than a measured or calculated property of this molecule. The approximately 4731 value is independently supported: a 2026 analytical letter in Drug and Alcohol Review examining products sold as retatrutide reports an expected molecular weight for authentic retatrutide of 4730.477 Da (PMID 42559975, doi:10.1111/dar.70231). On that basis this page states the molecular weight as approximately 4731 Da and treats C221H342N46O68 as the better-supported formula, while recording that the exact molecular formula is not independently verified. Anyone performing quantitative work should confirm the figure against a current primary source or a lot-specific certificate rather than relying on this page or any supplier listing.\n\nThe mass does, however, place retatrutide cleanly between its two relatives for analytical purposes: semaglutide at approximately 4114 Da, retatrutide at approximately 4731 Da, and tirzepatide at approximately 4813 Da. High-resolution mass spectrometry separates all three without ambiguity.\n\nThe material is supplied as a lyophilised white to off-white powder in a sealed glass vial, in nominal 10 mg, 20 mg, 30 mg and 60 mg presentations, where the stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual convention is to allow a sealed vial to reach room temperature before opening. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here.",
+    "researchFocusTitle": "Triple-Agonist Rationale, Trial Status and Evidence Limits",
+    "researchFocusDescription": "Retatrutide is the least mature of the incretin-based compounds in this catalogue, and its evidence base should be read accordingly. It is an investigational agent in active clinical development, not an approved medicine, and the published record is correspondingly thinner than for semaglutide or tirzepatide.\n\nThe pharmacological rationale is a progression. Semaglutide activates one receptor, tirzepatide two, and retatrutide three — adding glucagon receptor agonism to GLP-1 and GIP. A review of the obesity pharmacotherapy pipeline in the International Journal of Obesity places retatrutide within this sequence, noting that combinations of entero-pancreatic hormones with complementary or synergistic actions have progressed to phase 3 trials as obesity treatments, and that early data suggest they may produce greater weight loss than tirzepatide (PMID 38302593, doi:10.1038/s41366-024-01473-y). That same review frames the broader development: the field has reached a point where combination entero-pancreatic approaches approach the weight loss achieved by bariatric surgery.\n\nThe glucagon receptor component is the scientifically distinctive element and the one that warrants the most careful reading. Glucagon receptor agonism increases hepatic glucose output, which in isolation would worsen glycaemic control; it also increases energy expenditure. The triple-agonist design is a bet that sufficient incretin activity offsets the former while retaining the latter. That is a hypothesis under test rather than an established property, and it is the reason retatrutide's safety profile cannot be assumed to mirror that of GLP-1 or GIP/GLP-1 agents. Hepatic effects, glycaemic excursions and longer-term metabolic consequences are open questions.\n\nA review in Diabetes Care that includes retatrutide among incretin-based weight-loss agents reports that this class produces roughly 15 to 24 per cent weight loss in adults with overweight and obesity, with beneficial effects on blood pressure, cholesterol, blood glucose and insulin — while also causing rapid and significant loss of lean mass on the order of ten per cent or about 6 kg, which the authors compare to a decade or more of ageing, and proposing resistance exercise as an adjunct to preserve it (PMID 38687506, doi:10.2337/dci23-0100). Body-composition effects are an active question across the class and are not specific to any one agent.\n\nThree limitations should be stated plainly. First, retatrutide is not approved anywhere, so there is no regulator-reviewed labelling, no approved indication, and no post-marketing safety surveillance. Second, much of the publicly discussed efficacy data derives from phase 2 results and from trials still in progress, which means the evidence is provisional and subject to revision in a way that approved-product data is not. Third, and most relevant to anyone sourcing the compound, the identity of material sold under this name is demonstrably unreliable: the 2026 analytical letter cited above exists precisely because products sold as retatrutide warranted independent compositional testing.\n\nAnalytical chemistry around this compound has developed faster than its clinical record, which is itself informative about where the demand lies. Methods for detecting retatrutide and profiling its excretion in human plasma and urine by liquid chromatography coupled to high-resolution mass spectrometry have been published with explicit reference to anti-doping application. The practical significance for a laboratory is twofold: validated analytical approaches for this specific molecule exist in the literature and can be adapted rather than developed from scratch, and the compound is detectable in biological matrices, which is relevant to any context where its presence may be tested for.\n\nFor laboratory work, retatrutide is best treated as what it is — an investigational compound with a genuinely interesting and incompletely resolved pharmacology. The triple-agonist mechanism offers real research questions at the receptor level: relative potency at each of the three receptors, biased signalling, the contribution of glucagon receptor activation to energy expenditure, and species differences in GIP and glucagon biology. These are open questions, and experiments addressing them should be designed with appropriate controls and with independent confirmation of material identity, not on the assumption that a vial contains what its label says.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here. No published numerical purity measurement is currently supplied for this product. The absence of a reported figure should be read as the absence of a published measurement, not as an implied standard, a withheld result, or evidence of any particular purity level.\n\nIndependent verification matters more for this compound than for almost anything else in the catalogue, and there is published evidence to support that statement rather than merely assert it. A 2026 analytical letter in Drug and Alcohol Review examined the composition and labelling accuracy of products sold as retatrutide in Australia (PMID 42559975, doi:10.1111/dar.70231). The existence of that work makes the general point concrete: material sold under this name cannot be assumed to be what the label says, and this is an empirical question answered by analysis rather than by supplier reputation or price.\n\nIdentity and purity answer different questions and both are needed. Identity confirmation, typically by high-resolution mass spectrometry, establishes whether the molecule present is retatrutide, by comparing observed mass against the expected value of approximately 4731 Da. That comparison is unusually informative here, because the two most likely substitutes are well separated by mass: semaglutide at approximately 4114 Da and tirzepatide at approximately 4813 Da. A measured mass near 4731 Da is therefore meaningful evidence of identity within this class, and a certificate that omits mass data while quoting a purity percentage is weak evidence regardless of how high that percentage is. Purity assessment, typically by reverse-phase high-performance liquid chromatography, establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual reagents, and the chromatogram matters as much as the number.\n\nTwo further points apply. First, lyophilised mass is not peptide content: a vial labelled 30 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass. Second, because the exact molecular formula of retatrutide is not independently verified in public sources, any molar calculation inherits that uncertainty, and the figure used should be taken from a current primary source or a lot certificate rather than from a supplier listing.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Investigational Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nRetatrutide is an investigational compound. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. Unlike semaglutide and tirzepatide, which are approved medicines whose molecules are also sold as research chemicals, retatrutide has no approved counterpart anywhere. There is no regulator-reviewed labelling for it, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nThis matters because the absence of approval is often presented, in informal discussion of this compound, as though it were a technicality pending resolution. It is not. A compound in clinical trials is a compound whose benefit-risk profile has not yet been established to a regulator's satisfaction, and whose trials may yet fail. Efficacy figures circulating from phase 2 results and ongoing trials are provisional. They are not a safety finding, and they say nothing whatever about material obtained outside the clinical supply chain.\n\nThe triple-agonist mechanism also means the safety profile of this compound cannot be inferred from that of GLP-1 or GIP/GLP-1 agents. Glucagon receptor agonism is a pharmacologically distinct action with its own consequences, and extrapolating from the better-characterised members of the class is not justified.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law. Note additionally that metabolic and incretin-active agents are subject to anti-doping regulation in some sporting contexts, and analytical methods for detecting retatrutide in human samples have been published; competitors subject to such rules should consult the current prohibited list rather than rely on any statement here.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is GLP-3RTA, and is it the same as retatrutide?",
+        "answer": "Yes. GLP-3RTA is this catalogue’s commercial designation for retatrutide, also known by its development code LY3437943. The names refer to the same molecule. \"GLP-3RTA\" appears in no peer-reviewed publication, so literature searches should use \"retatrutide\" or \"LY3437943\"."
+      },
+      {
+        "question": "What is retatrutide’s molecular formula and molecular weight?",
+        "answer": "Its CAS registry number is 2381089-83-2 and its molecular weight is approximately 4731 Da. The exact molecular formula is not independently verified in public sources, and this page does not pretend otherwise. PubChem returns no record for retatrutide, LY3437943, or that CAS number. The FDA substance registry holds two conflicting entries: C187H281N43O60 at about 4091.5, and C221H342N46O68 at 4731.36. The lower figure is a software default for an unresolved protein rather than a property of the molecule, and an independent 2026 analytical letter reports an expected mass of 4730.477 Da, which supports the higher value."
+      },
+      {
+        "question": "What does \"triple agonist\" mean?",
+        "answer": "It means the molecule activates three receptors rather than one: the GLP-1 receptor, the GIP receptor and the glucagon receptor. Semaglutide targets one, tirzepatide two, retatrutide three. The glucagon receptor component is the distinctive element, because glucagon raises blood glucose, which appears to work against glycaemic control. The design rationale is that glucagon receptor activation also increases energy expenditure, and that sufficient incretin activity offsets the glycaemic consequence. That balance is a hypothesis under test, not an established property."
+      },
+      {
+        "question": "Is retatrutide approved?",
+        "answer": "No. It is not approved by the FDA or any other regulatory authority, for any indication, in any jurisdiction. Unlike semaglutide and tirzepatide, it has no approved counterpart anywhere. There is no regulator-reviewed labelling, no approved indication, and no post-marketing safety surveillance. A compound in clinical trials is one whose benefit-risk profile has not yet been established to a regulator’s satisfaction, and whose trials may yet fail."
+      },
+      {
+        "question": "How does it compare with semaglutide and tirzepatide?",
+        "answer": "By receptor count, maturity and mass. Semaglutide is a single-target GLP-1 agonist, approximately 4114 Da, approved. Tirzepatide is a dual GIP/GLP-1 agonist, approximately 4813 Da, approved. Retatrutide is a triple GLP-1/GIP/glucagon agonist, approximately 4731 Da, investigational. Reviews of the obesity pipeline note that early data suggest triple agonists may produce greater weight loss than tirzepatide, but that evidence is provisional in a way approved-product data is not."
+      },
+      {
+        "question": "Why can’t retatrutide’s safety be inferred from semaglutide or tirzepatide?",
+        "answer": "Because glucagon receptor agonism is a pharmacologically distinct action that neither of those compounds has. It increases hepatic glucose output and energy expenditure, and its longer-term metabolic and hepatic consequences are open questions. Extrapolating a safety profile from better-characterised members of the class is not justified when the mechanism differs in a specific, known way."
+      },
+      {
+        "question": "Does weight loss with this class affect lean mass?",
+        "answer": "Yes. A review in Diabetes Care covering incretin-based weight-loss agents including retatrutide reports roughly 15 to 24 per cent weight loss in adults with overweight and obesity, alongside rapid and significant lean mass loss on the order of ten per cent or about 6 kg, which the authors compare to a decade or more of ageing. The review proposes resistance exercise as an adjunct to preserve lean mass. This is a class-wide finding rather than one specific to any single agent."
+      },
+      {
+        "question": "Is material sold as retatrutide reliably what it claims to be?",
+        "answer": "Not reliably, and there is published evidence on exactly this point. A 2026 analytical letter in Drug and Alcohol Review examined the composition and labelling accuracy of products sold as retatrutide in Australia. The existence of that work makes the general principle concrete: a product name on a vial is not evidence of its contents. This is an empirical question answered by analysis, not by supplier reputation or by price."
+      },
+      {
+        "question": "What should a certificate of analysis show for this compound?",
+        "answer": "Identity and purity, reported separately. For identity, high-resolution mass spectrometry compared against the expected mass of approximately 4731 Da, which is unusually informative here because the two most likely substitutes are well separated: semaglutide at about 4114 Da and tirzepatide at about 4813 Da. For purity, reverse-phase HPLC with the chromatogram included, not just a percentage. A certificate quoting a high purity figure while omitting mass data is weak evidence regardless of the number."
+      },
+      {
+        "question": "What does \"research use only\" mean here?",
+        "answer": "It means this material is sold for laboratory research and nothing else. Research use only is not a legal classification and does not exempt a purchaser from applicable law; legality depends on your jurisdiction and on what you do with the material. Researchers are responsible for their own regulatory compliance, including institutional approvals, import and export controls, and safe disposal. Note also that analytical methods for detecting retatrutide in human samples have been published, and competitors subject to anti-doping rules should consult the current prohibited list."
+      }
+    ]
+  }
+}

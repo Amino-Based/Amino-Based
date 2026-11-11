@@ -1,0 +1,229 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "melanotan-1",
+    "qc": {
+      "main_content_words": 2939,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "The MOLECULE is FDA-APPROVED as afamelanotide (SCENESSE, NDA 210797, approved 8 October 2019, Clinuvel) to increase pain-free light exposure in adults with a history of phototoxic reactions from erythropoietic protoporphyria. The approved product is a 16 mg controlled-release IMPLANT placed subcutaneously by a clinician every 2 months - not an injectable vial. EU marketing authorisation December 2014; Australian approval October 2020.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "49.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Melanotan-1 10mg.png",
+        "upload_as": "amino-melanotan-1-10mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 16197727 (PUG REST, verified 2026-11-09, matched name \"afamelanotide\"): C78H111N21O19, MW 1646.8, CAS 75921-69-6.",
+      "FDA, SCENESSE (afamelanotide) implant - NDA 210797; approval letter and approval package dated 8 October 2019 (accessdata.fda.gov/drugsatfda_docs/appletter/2019/210797Orig1s000ltr.pdf; .../nda/2019/210797Orig1s000Approv.pdf); label accessdata.fda.gov/drugsatfda_docs/label/2019/210797s000lbl.pdf. 16 mg controlled-release implant for subcutaneous administration, placed by a health professional every 2 months above the anterior supra-iliac crest. Verified 2026-11-09.",
+      "FDA Drug Trials Snapshots: SCENESSE - approval rested on three trials in 244 adult patients aged 18-74 with EPP. In the first trial, drug-arm patients spent approximately 64 hours in direct sunlight without pain versus approximately 41 hours on placebo over 180 days. Most common adverse event implant site reaction, 26/124 (21%) drug versus 12/118 (10%) vehicle. Verified 2026-11-09.",
+      "PMID 28266027 doi:10.1111/ijd.13585 - Int J Dermatol 56(10):975-980 - review of the risks of UNREGULATED use of alpha-MSH analogues. States afamelanotide is the only alpha-MSH analogue approved for use, and has been thoroughly tested and deemed safe; whereas illegal melanotans are likely risky. Increasing case reports of cutaneous complications from unregulated use of BOTH melanotan I and II, particularly melanocytic changes in existing moles and newly emerging (dysplastic) nevi. FOUR case reports describe melanomas emerging from existing moles during or shortly after melanotan use; conclusive causal evidence lacking. MULTIPLE NATIONAL HEALTH ORGANISATIONS have issued safety warnings about melanotan I and II.",
+      "PMID 30704898 doi:10.1016/j.ymgme.2019.01.020 - Mol Genet Metab 128(3):298-303 - EPP/XLP review: partial ferrochelatase deficiency; erythrocyte protoporphyrin accumulates, is activated by sunlight generating singlet oxygen reactions causing tissue damage and excruciating pain; acute non-blistering phototoxicity within minutes of sun exposure; 2-5% develop clinically significant liver dysfunction; anaemia in about 47%, abnormal serum aminotransferases in about 27%.",
+      "PMID 33507118 doi:10.1080/17512433.2021.1879638 - Expert Rev Clin Pharmacol 14(2):151-160 - afamelanotide review: activates eumelanogenesis WITHOUT exposure to UV radiation; acts on melanocortin-1 receptors; clinical studies showed significantly increased sunlight exposure and quality of life; well tolerated, common adverse events headache, fatigue and nausea. Notes the 60-day interval was not based on effectiveness studies."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Whether the supplied material meets the approved drug substance specification for afamelanotide - it should not be assumed to",
+      "D-phenylalanine configuration at position 7 - a defining structural feature, invisible to mass spectrometry, and not addressed by a routine purity figure"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a regulatory component. The searcher wants to know what Melanotan-1 is, that it is afamelanotide, whether it is approved, and how it differs from Melanotan-2.",
+    "primary_keyword": "Melanotan-1",
+    "secondary_keywords": [
+      "afamelanotide",
+      "Melanotan 1 peptide",
+      "SCENESSE",
+      "Melanotan-1 molecular weight",
+      "alpha-MSH analogue",
+      "Melanotan 1 vs 2"
+    ],
+    "long_tail_keywords": [
+      "what is Melanotan-1",
+      "is Melanotan-1 afamelanotide",
+      "is Melanotan-1 FDA approved",
+      "Melanotan-1 molecular formula C78H111N21O19",
+      "Melanotan-1 CAS 75921-69-6",
+      "SCENESSE implant 16 mg",
+      "Melanotan-1 vs Melanotan-2 difference",
+      "melanotan melanoma case reports",
+      "afamelanotide erythropoietic protoporphyria",
+      "Melanotan-1 certificate of analysis"
+    ],
+    "semantic_terms": [
+      "melanocortin-1 receptor",
+      "MC1R",
+      "eumelanogenesis",
+      "eumelanin",
+      "alpha-melanocyte-stimulating hormone",
+      "erythropoietic protoporphyria",
+      "ferrochelatase",
+      "protoporphyrin",
+      "phototoxicity",
+      "singlet oxygen",
+      "controlled-release implant",
+      "D-phenylalanine",
+      "norleucine",
+      "stereoisomer",
+      "dysplastic nevi",
+      "eruptive melanocytic nevi"
+    ],
+    "name_variations": [
+      "Melanotan-1",
+      "Melanotan I",
+      "MT-1",
+      "MT-I",
+      "afamelanotide",
+      "SCENESSE",
+      "[Nle4, D-Phe7]-alpha-MSH",
+      "Melanotan-2 and PT-141 are DIFFERENT compounds"
+    ],
+    "informational_queries": [
+      "what is Melanotan-1",
+      "is Melanotan-1 approved",
+      "Melanotan-1 vs Melanotan-2",
+      "how does Melanotan-1 work",
+      "is melanotan dangerous"
+    ],
+    "commercial_queries": [
+      "buy Melanotan-1",
+      "Melanotan-1 10mg",
+      "afamelanotide research peptide",
+      "Melanotan-1 COA"
+    ],
+    "cannibalisation_check": "Owns Melanotan-1 / afamelanotide and the EPP and implant-dosage-form intents. /product/melanotan-2 owns the cyclic heptapeptide and the tanning-risk intent; /product/pt-141 owns bremelanotide and the HSDD intent. All three cross-link rather than restate.",
+    "h1": "Driven by CMS name field; renders as \"Melanotan-1\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/melanotan-2",
+        "anchor": "Melanotan-2",
+        "rationale": "Essential disambiguation: a cyclic heptapeptide, not a linear 13-residue peptide, with different selectivity and no approval.",
+        "verified": true
+      },
+      {
+        "route": "/product/pt-141",
+        "anchor": "PT-141",
+        "rationale": "Third melanocortin agonist in the catalogue; completes the comparator set for receptor-subtype selectivity work.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "Alpha-MSH C-terminal fragment acting at least partly independently of melanocortin receptors; informative mechanistic contrast.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Melanotan-1 (Afamelanotide) | Linear Alpha-MSH Analogue | Amino Based",
+    "seoDescription": "Melanotan-1: afamelanotide, C78H111N21O19, MW 1646.8, CAS 75921-69-6. FDA-approved as a 16 mg implant, not a vial. Research use only.",
+    "description": "Melanotan-1 is afamelanotide, a linear 13-residue analogue of alpha-melanocyte-stimulating hormone. Its molecular formula is C78H111N21O19, with a molecular weight of approximately 1646.8 g/mol (PubChem CID 16197727, CAS 75921-69-6). The molecule is FDA-approved under the brand name SCENESSE to increase pain-free light exposure in adults with a history of phototoxic reactions from erythropoietic protoporphyria — but the approved product is a 16 mg controlled-release implant placed by a clinician, not an injectable vial. This material is supplied for laboratory research use only.",
+    "productDetailsTitle": "Melanotan-1: An Approved Drug Whose Approved Form Is an Implant",
+    "productDetailsDescription": "Melanotan-1 is a linear peptide of 13 residues, structurally a modified version of alpha-melanocyte-stimulating hormone. The native hormone is also 13 residues; this analogue substitutes norleucine at position 4 and D-phenylalanine at position 7. Those two substitutions confer resistance to enzymatic degradation and increase potency at the melanocortin-1 receptor, which is why a modified hormone is useful where the native one is not. Verified identifiers are molecular formula C78H111N21O19, molecular weight approximately 1646.8 g/mol, and CAS registry number 75921-69-6, recorded under PubChem CID 16197727 as afamelanotide.\n\nThe D-phenylalanine substitution deserves note because it is the kind of structural feature that disappears from a certificate of analysis. D-amino acids are mirror images of the natural L-form. A peptide containing D-phenylalanine and the equivalent peptide containing L-phenylalanine have identical molecular formulas and identical masses, and mass spectrometry cannot distinguish them at all. Since the substitution is part of what makes this molecule degradation-resistant and potent, getting it wrong produces a compound that is correct by mass and wrong in behaviour.\n\nThe mechanism is better characterised than for most compounds in this catalogue, and one feature of it is worth stating because it is often misunderstood. Afamelanotide acts on melanocortin-1 receptors and activates eumelanogenesis — the production of eumelanin, the darker and more photoprotective of the two melanin types — and it does so without requiring exposure to ultraviolet radiation (PMID 33507118, doi:10.1080/17512433.2021.1879638). Conventional tanning depends on UV-induced DNA damage triggering a protective melanin response. A melanocortin-1 receptor agonist stimulates the protective step directly, bypassing the damaging stimulus. That is the pharmacological logic behind its approved indication.\n\nThe approved indication, and the condition it addresses, are worth understanding because they explain why this molecule was developed at all. Erythropoietic protoporphyria is a rare inherited disorder of heme biosynthesis caused by partial deficiency of the enzyme ferrochelatase. Protoporphyrin accumulates in erythrocytes, is released into plasma and taken up by liver and vascular endothelium, and when activated by sunlight generates singlet oxygen reactions that cause tissue damage and excruciating pain. Patients experience acute, severe, non-blistering phototoxicity within minutes of sun exposure. Anaemia occurs in roughly 47 per cent of patients and abnormal serum aminotransferases in roughly 27 per cent, and between 2 and 5 per cent develop clinically significant liver dysfunction from protoporphyrin deposition, which can progress to cholestatic liver failure requiring transplantation (PMID 30704898, doi:10.1016/j.ymgme.2019.01.020). Before afamelanotide, treatment was limited to sun avoidance.\n\nNow the point that matters most for anyone considering this product, and it is a dosage-form point rather than a molecular one. According to FDA's approval documents, SCENESSE was approved on 8 October 2019 under NDA 210797 as a **16 mg controlled-release implant for subcutaneous administration**, placed by a health professional every two months above the anterior supra-iliac crest. It is not an injection. It is not a vial of powder. It is a solid implant inserted under the skin by a clinician, designed to release the peptide slowly over about two months.\n\nThat is a fundamental difference from a 10 mg vial of lyophilised powder, and it is not a packaging detail. A controlled-release implant and a bolus of reconstituted peptide deliver entirely different exposure profiles from the same molecule — sustained low-level release over 60 days versus a single rapid peak. The approved clinical evidence was generated with the implant. None of it describes what the same quantity of peptide does when administered any other way. So while it is accurate to say the molecule is approved, it would be misleading to leave the impression that material in a vial is a version of an approved therapy. It is the same active substance in a form for which no clinical evidence exists.\n\nA naming note. This compound appears as Melanotan-1, Melanotan I, MT-1, MT-I, afamelanotide, under the brand name SCENESSE, and in the older literature as [Nle4, D-Phe7]-alpha-MSH. Melanotan-2 is a different compound — a cyclic heptapeptide, not a linear 13-residue peptide — and PT-141 (bremelanotide) is a third. All three are in this catalogue and are frequently conflated, including in material that ought to know better. Their receptor selectivity profiles and their regulatory statuses all differ.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "Strong Trial Evidence for One Rare Indication, and a Documented Safety Signal for Unregulated Use",
+    "researchFocusDescription": "This compound presents an unusual evidence picture: genuinely good clinical trial data within a narrow indication, alongside a specific and well-documented safety literature concerning its use outside that indication. Both halves belong on the page.\n\nThe approval evidence is concrete. According to FDA's Drug Trials Snapshot for SCENESSE, approval rested on three trials enrolling 244 adult patients aged 18 to 74 with erythropoietic protoporphyria. In the first of those trials, patients in the drug arm spent approximately 64 hours in direct sunlight without pain over 180 days, compared with approximately 41 hours for patients receiving placebo. The most common adverse event was implant site reaction, occurring in 26 of 124 drug-treated patients, about 21 per cent, versus 12 of 118 on vehicle, about 10 per cent.\n\nThose numbers reward attention. The endpoint — hours of pain-free direct sunlight exposure — is unusually well matched to what the condition actually costs patients, which is a mark of good trial design in a rare disease. The difference, roughly 64 versus 41 hours over 180 days, is a real and meaningful improvement rather than a marginal one, while plainly not a cure: treated patients still had limited tolerance. And the adverse event profile is dominated by a local reaction to an implant procedure rather than by systemic toxicity. A review of the compound describes it as well tolerated with common adverse events of headache, fatigue and nausea (PMID 33507118, doi:10.1080/17512433.2021.1879638).\n\nThat same review makes an observation worth recording because it is a candid limitation from a favourable source: the 60-day dosing interval was not based on effectiveness studies, and the authors note that for some patients the maximum of four implants per year at that interval is insufficient. An approved dosing interval that was not derived from effectiveness data is a real gap, and clinicians working in the field saying so is more informative than a sponsor summary.\n\nThe other half of the literature concerns what happens when alpha-MSH analogues are used outside regulated medical supply, and it is specific enough to be actionable. A review in the International Journal of Dermatology examined the risks of unregulated use of these analogues. It draws a sharp distinction: afamelanotide is the only alpha-MSH analogue approved for use, and has been thoroughly tested and deemed safe, whereas the reviewers describe illegal melanotans as likely risky, citing uncertainties about preparation, administration and dosage. On clinical consequences, the review reports increasing numbers of case reports of cutaneous complications from unregulated use of both melanotan I and melanotan II, particularly melanocytic changes in existing moles and newly emerging dysplastic nevi. It records that four case reports have described melanomas emerging from existing moles either during or shortly after melanotan use, while stating explicitly that conclusive evidence linking these phenomena is lacking. And it notes that multiple national health organisations have issued safety warnings regarding melanotan I and II (PMID 28266027, doi:10.1111/ijd.13585).\n\nThe honest reading of that is important in both directions. Four case reports do not establish causation, and the review says so. Case reports are vulnerable to reporting bias, and people who seek out tanning compounds may differ in sun exposure and in skin cancer risk from those who do not — a confound the case reports cannot resolve. At the same time, a mechanistic rationale for concern exists and is not speculative: this is a compound that acts directly on melanocytes, the cell type from which melanoma arises, and the reported findings are changes in melanocytic lesions. A signal that is biologically coherent with the compound's mechanism is not the same as a random adverse event cluster, and the convergence of multiple national regulators issuing warnings indicates that bodies with access to pharmacovigilance data took it seriously.\n\nA separate systematic review of eruptive melanocytic nevi provides supporting context on the strength of the association. Compiling 93 articles covering 179 patients, it attributed 41 per cent of cases to immunosuppressive agents, chemotherapy or melanotan as a group — placing melanotan among a small set of recognised triggers for sudden onset of multiple nevi. Overall, 16 per cent of the compiled cases had at least one histologically confirmed dysplastic nevus, and five cases of associated melanoma were reported, though the authors state that the nature of the data precluded assessment of the risk of malignant transformation (PMID 31119650, doi:10.1007/s40257-019-00444-8).\n\nThe limitations in summary: the trial evidence is confined to one rare genetic photodermatosis and was generated entirely with a controlled-release implant, not with injected material; the approved dosing interval was not derived from effectiveness studies; the safety literature on unregulated use consists of case reports and case series that cannot establish causation but are mechanistically coherent and have prompted warnings from multiple national health organisations.\n\nFor a laboratory, this is a well-characterised melanocortin-1 receptor agonist with a known structure, an approved comparator product and quantified clinical data — which makes it a genuinely useful reference compound in melanocortin receptor pharmacology and in melanogenesis research. The UV-independent activation of eumelanogenesis is itself an interesting experimental property, since it permits separation of melanin induction from UV-induced DNA damage in a way that no UV-based protocol can.",
+    "qualityPurityTitle": "Analytical Verification for a Linear Analogue With Non-Natural Stereochemistry",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 1646.8 g/mol, with molecular formula C78H111N21O19 and CAS registry number 75921-69-6 (PubChem CID 16197727).\n\nThe check most likely to be missing is stereochemical, and for this molecule it is not a refinement. Afamelanotide incorporates D-phenylalanine at position 7, a deliberate non-natural substitution that is part of what makes the peptide degradation-resistant and potent at its receptor. The L-isomer has an identical molecular formula and identical mass, and mass spectrometry cannot distinguish the two under any conditions. A preparation synthesised with L-phenylalanine at that position would pass an intact-mass identity check and a chromatographic purity check and would behave differently in an assay. Confirming configuration requires chiral analysis or an explicit written supplier statement, and an ordinary certificate will not address it. The same consideration applies to norleucine at position 4, which is itself a non-standard residue.\n\nFor a 13-residue peptide, fragmentation data establishing the sequence is worth requesting, because sequence isomers share a molecular formula and exact mass. This matters more than usual here because of a catalogue-level consideration: three structurally related melanocortin compounds are sold alongside one another, and a mix-up in a production or labelling setting is a realistic failure mode rather than a theoretical one.\n\nPurity assessment by reverse-phase chromatography is appropriate, and the impurity classes to expect for a linear peptide of this length are deletion sequences, truncated chains and incompletely deprotected species. At 13 residues a single-residue deletion is a proportionally modest mass change and may not resolve cleanly, so a chromatographic purity figure should be read alongside the method rather than on its own.\n\nTwo residue-specific degradation questions apply. The sequence contains methionine in the native hormone framework and tryptophan, both of which are oxidation-prone; oxidised species are mass-shifted and detectable, but only if sought. The presence of oxidation products speaks to handling and storage history rather than to synthetic quality, which makes it a more informative figure than a purity percentage alone.\n\nThe salt-form question applies as usual. At approximately 1,647 g/mol, with multiple basic residues including lysine and arginine in the alpha-MSH framework, several counter-ion equivalents are possible, and acetate or trifluoroacetate loading represents a meaningful fraction of supplied mass. A molar calculation using the free-peptide value on salt-form material will be wrong.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass. Finally, and specific to an approved-drug substance: this material should not be assumed to meet the approved drug substance specification for afamelanotide, and no such equivalence is claimed here.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: An Approved Implant, a Vial of Powder, and a Documented Safety Signal",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position requires precision here, because this molecule's approval is genuine and the inferences commonly drawn from it are not.\n\nAfamelanotide is an approved medicine. According to FDA's approval documents, SCENESSE was approved on 8 October 2019 under NDA 210797 to increase pain-free light exposure in adults with a history of phototoxic reactions from erythropoietic protoporphyria. It received EU marketing authorisation in December 2014 and Australian approval in October 2020.\n\nThree qualifications are essential. First, the approved product is a 16 mg controlled-release implant placed subcutaneously by a health professional every two months — not an injectable solution and not a vial of powder. A controlled-release implant and a reconstituted bolus produce entirely different exposure profiles from the same molecule, and all of the approved clinical evidence was generated with the implant. Material in a vial is the same active substance in a form for which no clinical evidence exists. Second, the approved indication is a single rare inherited photodermatosis. Cosmetic tanning is not an approved use of this or any other melanocortin agonist, and no trial evidence supports it. Third, research-grade material is not manufactured under pharmaceutical quality systems, is not released against approved specifications, and should not be assumed to meet the approved drug substance specification; its characterisation is not established here.\n\nA safety signal specific to unregulated use must be stated plainly. According to a review in the International Journal of Dermatology, unregulated use of melanotan I and melanotan II has generated increasing case reports of cutaneous complications, particularly melanocytic changes in existing moles and newly emerging dysplastic nevi, and four case reports have described melanomas emerging from existing moles during or shortly after melanotan use. The review states that conclusive evidence linking these phenomena is lacking — case reports cannot establish causation, and people who use tanning compounds may differ in sun exposure and skin cancer risk from those who do not. But the reviewers also record that multiple national health organisations have issued safety warnings regarding these substances, and the signal is mechanistically coherent: this compound acts directly on melanocytes, the cell type from which melanoma arises. A separate systematic review of eruptive melanocytic nevi placed melanotan among a small group of recognised triggers for sudden onset of multiple nevi.\n\nNothing on this page suggests that this material is suitable for tanning, for photoprotection, for erythropoietic protoporphyria or for any other purpose in any person. It is not for human use. Any medical use of afamelanotide requires a prescription and the approved implant product administered by a clinician.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is Melanotan-1?",
+        "answer": "Melanotan-1 is afamelanotide, a linear 13-residue analogue of alpha-melanocyte-stimulating hormone with norleucine substituted at position 4 and D-phenylalanine at position 7. Verified identifiers are molecular formula C78H111N21O19, molecular weight approximately 1646.8 g/mol, CAS 75921-69-6, PubChem CID 16197727. The substitutions confer resistance to enzymatic degradation and increase potency at the melanocortin-1 receptor."
+      },
+      {
+        "question": "Is Melanotan-1 FDA approved?",
+        "answer": "The molecule is. SCENESSE (afamelanotide) was approved on 8 October 2019 under NDA 210797 to increase pain-free light exposure in adults with a history of phototoxic reactions from erythropoietic protoporphyria. It also holds EU marketing authorisation from December 2014 and Australian approval from October 2020. The approved indication is a single rare inherited photodermatosis — cosmetic tanning is not an approved use."
+      },
+      {
+        "question": "Why does the dosage form matter so much?",
+        "answer": "Because the approved product is a 16 mg controlled-release implant placed under the skin by a clinician every two months — not an injection and not a vial of powder. A controlled-release implant and a reconstituted bolus produce entirely different exposure profiles from the same molecule. All the approved clinical evidence was generated with the implant, so vial material is the same active substance in a form for which no clinical evidence exists."
+      },
+      {
+        "question": "How does it work without UV exposure?",
+        "answer": "It acts on melanocortin-1 receptors and activates eumelanogenesis — production of eumelanin, the darker and more photoprotective melanin — without requiring ultraviolet radiation. Conventional tanning depends on UV-induced DNA damage triggering a protective melanin response; an MC1R agonist stimulates the protective step directly and bypasses the damaging stimulus. That is the pharmacological logic behind its approved indication."
+      },
+      {
+        "question": "What did the approval trials show?",
+        "answer": "According to FDA’s Drug Trials Snapshot, approval rested on three trials in 244 adults aged 18 to 74 with erythropoietic protoporphyria. In the first trial, drug-arm patients spent approximately 64 hours in direct sunlight without pain over 180 days, versus approximately 41 hours on placebo. The most common adverse event was implant site reaction, 21 per cent on drug versus 10 per cent on vehicle. A real improvement — but plainly not a cure."
+      },
+      {
+        "question": "What condition does it treat?",
+        "answer": "Erythropoietic protoporphyria, a rare inherited disorder of heme biosynthesis caused by partial ferrochelatase deficiency. Protoporphyrin accumulates and, when activated by sunlight, generates singlet oxygen reactions causing tissue damage and excruciating pain, with acute non-blistering phototoxicity within minutes of sun exposure. Roughly 47 per cent of patients have anaemia and 2 to 5 per cent develop clinically significant liver dysfunction. Before afamelanotide, treatment was sun avoidance."
+      },
+      {
+        "question": "Are there documented safety concerns with unregulated melanotan use?",
+        "answer": "Yes, and they should be stated plainly. A review in the International Journal of Dermatology reports increasing case reports of cutaneous complications from unregulated use of both melanotan I and II — particularly melanocytic changes in existing moles and newly emerging dysplastic nevi — and records four case reports of melanomas emerging from existing moles during or shortly after use. Multiple national health organisations have issued safety warnings."
+      },
+      {
+        "question": "Do those case reports prove melanotan causes melanoma?",
+        "answer": "No, and the review itself states that conclusive evidence linking these phenomena is lacking. Case reports cannot establish causation and are vulnerable to reporting bias; people who seek tanning compounds may also differ in sun exposure and baseline skin cancer risk. But the signal is mechanistically coherent — the compound acts directly on melanocytes, the cell type melanoma arises from — and multiple regulators with pharmacovigilance access took it seriously."
+      },
+      {
+        "question": "Does stereochemistry need checking?",
+        "answer": "Yes, and it is the check most likely to be missing. Afamelanotide incorporates D-phenylalanine at position 7, a deliberate non-natural substitution that is part of what makes it degradation-resistant and potent. The L-isomer has an identical formula and mass, and mass spectrometry cannot distinguish them under any conditions. A preparation made with L-phenylalanine would pass intact-mass and purity checks and behave differently. Chiral analysis or an explicit supplier statement is required."
+      },
+      {
+        "question": "Is Melanotan-1 the same as Melanotan-2?",
+        "answer": "No. Melanotan-1 is a linear 13-residue peptide; Melanotan-2 is a cyclic heptapeptide; and PT-141 (bremelanotide) is a third distinct compound. All three are in this catalogue and are frequently conflated, including in material that ought to know better. Their receptor selectivity profiles and regulatory statuses all differ — Melanotan-1 is approved for a rare indication, Melanotan-2 is approved nowhere."
+      }
+    ]
+  }
+}

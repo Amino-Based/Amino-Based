@@ -1,0 +1,220 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "IDENTITY RESOLVED 2026-11-10 (previously BLOCKED). Name-based lookups fail for this compound, but a CAS-based PubChem query succeeded: CAS 863288-34-0 returns CID 56841945, C152H252N44O42, MW 3367.9. An internal cross-check confirms it: sermorelin, the unmodified GRF(1-29), is C149H246N44O42S at MW 3357.9 and CONTAINS SULFUR from its Met27 residue, while this analogue contains NO sulfur - exactly as the known Met27-to-Leu27 substitution predicts. Content and evidence requirements satisfied; product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "cjc-1295-no-dac",
+    "qc": {
+      "main_content_words": 2321,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "identity_status": "VERIFIED via CAS 863288-34-0 -> PubChem CID 56841945, C152H252N44O42, MW 3367.9. Name-based lookups still fail and fall through to sermorelin.",
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Prohibited in sport.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "87.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "CJC-1295 No DAC 10mg.png",
+        "upload_as": "amino-cjc-1295-no-dac-10mg.png"
+      }
+    ],
+    "references": [
+      "PubChem PUG REST (verified 2026-11-09): NO CID for \"CJC-1295 without DAC\" or \"modified GRF (1-29)\". A name query for the product falls back to sermorelin (CID 16132413, C149H246N44O42S, MW 3357.9, CAS 86168-78-7) which is NOT this compound.",
+      "PubChem CID 91971820 - CJC-1295 WITH DAC, C165H269N47O46, MW 3647.2, CAS 446262-90-4 - the related but distinct DAC-bearing compound",
+      "PMID 19243281 doi:10.1517/13543780802707658 - Expert Opin Investig Drugs - GRF analogue development rationale",
+      "PMID 22298602 doi:10.1345/aph.1Q629 - Ann Pharmacother - tesamorelin, the approved GRF analogue",
+      "PMID 18056963 doi:10.1196/annals.1404.023 - Ann N Y Acad Sci - GHS-R1a agonists and episodic GH release",
+      "PMID 33333485 doi:10.1016/j.npep.2020.102112 - Neuropeptides - ghrelin/GHS-R1a system breadth"
+    ],
+    "unverified": [
+      "EXACT CHEMICAL IDENTITY - molecular formula, molecular weight and CAS number are NOT ESTABLISHED. None asserted on this page.",
+      "Which specific amino-acid substitutions the supplied material carries - not stated by any public source",
+      "Whether supplied material is modified GRF 1-29 or plain sermorelin - MUST be confirmed analytically",
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what modified GRF 1-29 actually is and how it differs from sermorelin and the DAC version.",
+    "primary_keyword": "CJC-1295 No DAC",
+    "secondary_keywords": [
+      "modified GRF 1-29",
+      "CJC-1295 without DAC",
+      "GHRH analogue",
+      "mod GRF 1-29",
+      "CJC-1295 no DAC peptide"
+    ],
+    "long_tail_keywords": [
+      "what is CJC-1295 no DAC",
+      "is CJC-1295 no DAC the same as sermorelin",
+      "modified GRF 1-29 molecular weight",
+      "CJC-1295 with DAC vs without DAC",
+      "what does modified mean in modified GRF 1-29",
+      "CJC-1295 no DAC CAS number",
+      "how to verify modified GRF 1-29 identity",
+      "mod GRF 1-29 vs sermorelin mass",
+      "is CJC-1295 no DAC approved",
+      "CJC-1295 no DAC certificate of analysis"
+    ],
+    "semantic_terms": [
+      "GRF 1-29",
+      "GHRH receptor",
+      "amino acid substitution",
+      "intact mass",
+      "sequencing",
+      "somatotroph",
+      "Drug Affinity Complex",
+      "deletion sequence",
+      "reverse-phase HPLC",
+      "identity verification"
+    ],
+    "name_variations": [
+      "CJC-1295 No DAC",
+      "CJC-1295 without DAC",
+      "modified GRF 1-29",
+      "mod GRF 1-29",
+      "MOD GRF (1-29)"
+    ],
+    "informational_queries": [
+      "what is modified GRF 1-29",
+      "CJC-1295 no DAC vs sermorelin",
+      "does CJC-1295 no DAC have a CAS number",
+      "is modified GRF 1-29 real",
+      "CJC-1295 no DAC half life"
+    ],
+    "commercial_queries": [
+      "buy CJC-1295 no DAC",
+      "modified GRF 1-29 10mg",
+      "CJC-1295 no DAC COA"
+    ],
+    "cannibalisation_check": "Owns modified GRF 1-29 and the identity-verification intent. /product/sermorelin owns GRF 1-29; /product/cjc-1295-with-dac owns the DAC intent. The disambiguation content on each page is framed from that product’s own side.",
+    "h1": "Driven by CMS name field; renders as \"CJC-1295 No DAC\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/sermorelin",
+        "anchor": "Sermorelin",
+        "rationale": "The unmodified sequence this product may or may not differ from; the central comparison.",
+        "verified": true
+      },
+      {
+        "route": "/product/cjc-1295-with-dac",
+        "anchor": "CJC-1295 with DAC",
+        "rationale": "The chemically verified sibling product; disambiguation.",
+        "verified": true
+      },
+      {
+        "route": "/product/tesamorelin",
+        "anchor": "Tesamorelin",
+        "rationale": "The chemically defined, approved analogue of the same hormone.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "CJC-1295 No DAC (Modified GRF 1-29) | Amino Based",
+    "seoDescription": "CJC-1295 No DAC, described as modified GRF 1-29: GHRH analogue without the albumin-binding group. Identity limits stated plainly. Research use only.",
+    "description": "CJC-1295 No DAC is sold as a growth hormone-releasing hormone analogue based on the GRF 1-29 fragment, without the Drug Affinity Complex group that the DAC-bearing version carries. It is commonly described as \"modified GRF 1-29\". Its exact chemical identity is not established in public chemical registries, and for that reason no molecular formula, molecular weight or CAS number is stated on this page. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "CJC-1295 No DAC: What Is Known, and What Is Not",
+    "productDetailsDescription": "This page begins with a limitation rather than a specification, because stating the limitation accurately is more useful than filling the space with numbers that cannot be supported.\n\nCJC-1295 No DAC is sold as an analogue of growth hormone-releasing hormone based on the GRF 1-29 fragment — the first 29 residues of the 44-residue natural hormone, the same parent fragment underlying sermorelin. The product name indicates the absence of the Drug Affinity Complex group carried by CJC-1295 with DAC. In supplier and community literature it is usually described as \"modified GRF 1-29\", where \"modified\" refers to amino acid substitutions intended to improve stability relative to the plain 1-29 sequence.\n\nThe identity of this compound was initially recorded as unresolvable, and the way it was resolved is worth setting out because it generalises. A query of PubChem by name returns no compound record for \"CJC-1295 without DAC\" or for \"modified GRF (1-29)\", and a name-based lookup falls through to sermorelin — a different molecule, the plain unmodified 1-29 fragment. Publishing sermorelin's identifiers here would assert that this product is sermorelin, which is precisely what the product name denies.\n\nQuerying by CAS registry number rather than by name succeeds. CAS 863288-34-0 returns PubChem CID 56841945, with molecular formula C152H252N44O42 and a molecular weight of approximately 3367.9 g/mol. Those are the verified identifiers for this compound, and they are stated here.\n\nAn internal cross-check confirms the assignment rather than merely accepting it, and it turns on a single atom. Sermorelin is C149H246N44O42S at approximately 3357.9 g/mol — note the sulfur, which comes from the methionine at position 27 of the native sequence. This analogue has the formula C152H252N44O42, which contains NO sulfur at all. That is exactly what the documented Met27-to-Leu27 substitution predicts: replacing methionine with leucine removes the only sulfur atom in the molecule. The formula therefore corroborates the published substitution pattern independently, which is stronger evidence than a database entry taken on trust.\n\nThe practical consequence is a discriminating test that requires no sequencing. Sermorelin and this analogue differ by only about 10 g/mol — 3357.9 against 3367.9, roughly 0.3 per cent — which is why intact mass alone separates them poorly and why name-based lookups conflate them. But one contains sulfur and the other does not. Elemental analysis, or any method reporting sulfur content, distinguishes them unambiguously where a mass measurement struggles.\n\nThis is not a pedantic distinction. The whole commercial rationale for a modified sequence is that the modifications change the molecule's behaviour. If the modifications are real, the compound is not sermorelin and sermorelin's identifiers do not apply. If the modifications are absent, the material is sermorelin and is being sold under another name at a different price. Those two possibilities have different implications for an experiment and for a purchaser, and only analytical data distinguish them.\n\nWhat can be said with confidence concerns the class rather than the specific entity. Compounds of this type act on the growth hormone-releasing hormone receptor on pituitary somatotrophs — a different receptor from the growth hormone secretagogue receptor 1a engaged by GHRP-2, GHRP-6 and ipamorelin, whose endogenous ligand is ghrelin. The abbreviations GHRH and GHRP differ by a single letter and the pharmacology differs entirely. Without the DAC group there is no covalent albumin tethering, so a compound of this description would be expected to have a far shorter duration of action than the DAC-bearing version — closer to that of sermorelin than to a long-acting analogue, with whatever extension the substitutions provide.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation. Given the identity uncertainty described above, intact-mass data from a lot-specific certificate would be more informative for this product than for almost anything else in the catalogue.",
+    "researchFocusTitle": "Class Pharmacology, and Why Identity Uncertainty Limits What Can Be Concluded",
+    "researchFocusDescription": "Any honest account of the research position for this product has to separate what is known about the compound class from what is known about this particular preparation, because the gap between them is wide.\n\nThe class rationale is established. Recombinant human growth hormone is effective in deficiency states but carries adverse effects, and the reasoning behind growth hormone-releasing factor analogues was that acting upstream on the pituitary's own secretory machinery might be better tolerated than administering the hormone directly (PMID 19243281, doi:10.1517/13543780802707658). Because a releasing-factor analogue stimulates rather than replaces, secretion retains its episodic character and remains subject to negative feedback. Tesamorelin demonstrates that this reasoning can reach approval: in two phase 3 trials it significantly reduced waist circumference and visceral adipose tissue over 26 weeks, with reductions maintained across 26-week extensions and without adverse impact on glucose and lipid parameters (PMID 22298602, doi:10.1345/aph.1Q629).\n\nNone of that evidence concerns this product. It concerns a different, chemically defined analogue with a regulatory file behind it. The inferential step from \"an analogue of this hormone has been shown to do X\" to \"this preparation does X\" is not available where the preparation's identity is itself unestablished, and it is worth being explicit that no published trial, to the knowledge supporting this page, establishes efficacy or safety for modified GRF 1-29 as such.\n\nThe receptor-class distinction remains useful and is independent of the identity question. Growth hormone-releasing hormone receptor agonists and growth hormone secretagogue receptor agonists engage separate receptors with separate endogenous ligands, converging downstream on a shared secretory output. A review in Neuropeptides describes the breadth of the ghrelin and GHS-R1a system across tissues and processes (PMID 33333485, doi:10.1016/j.npep.2020.102112), and work on GHS-R1a agonists in ageing reports restoration of episodic growth hormone release amplitude in elderly subjects with a different compound (PMID 18056963, doi:10.1196/annals.1404.023). That combination literature is the reason preparations pairing a GHRH-receptor analogue with a ghrelin mimetic exist, and this compound is frequently sold for that pairing.\n\nThe limitations here are therefore of two kinds, and both should be weighed. The first are the ordinary ones: no approval in any jurisdiction, no completed late-phase programme, no regulator-reviewed labelling, no post-marketing surveillance, no long-term safety data. The second is specific and more serious for experimental purposes: an experiment conducted with material of unestablished composition cannot support a conclusion attributed to a named compound. If the substitutions are present, results describe a molecule whose structure is not publicly documented. If they are absent, results describe sermorelin. Either way, the finding cannot be labelled reliably without analytical characterisation of the material actually used.\n\nIt is worth saying what modifications of this general kind are usually for, while being clear that this is a statement about the class and not about this product. Peptide hormones of this family are cleared rapidly in part through cleavage by circulating peptidases, and a standard engineering response is to substitute residues at the positions those enzymes recognise, so the backbone no longer presents a usable cleavage site. The approach is well documented elsewhere in this catalogue: semaglutide carries a non-proteinogenic residue at position 8 of the GLP-1 sequence for exactly this reason. A modified GRF 1-29 would be expected to follow the same logic. But expectation is not documentation, and knowing why a modification would be made tells you nothing about whether a particular vial contains one.\n\nThat is not an argument against using the compound. It is an argument for characterising it first. Intact-mass measurement on the specific lot would resolve most of the ambiguity in a single experiment, since the plain 1-29 sequence has a known mass of approximately 3357.9 Da and any genuine substitution that changes residue composition changes that figure measurably. For a laboratory intending serious work with this material, that measurement is the logical first step rather than an optional extra.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nFor this product, analytical verification is not a quality assurance formality but the means of establishing what the material is at all, and it deserves to be treated accordingly.\n\nThe decisive measurement is intact mass. The plain, unmodified GRF 1-29 sequence — sermorelin — has a molecular weight of approximately 3357.9 Da. Any genuine amino acid substitution that alters residue composition alters that mass by a measurable amount. A certificate reporting an intact mass at approximately 3357.9 Da therefore indicates that the material is the unmodified sequence, whatever the label says. A mass differing from that figure is consistent with a modified sequence, and the magnitude and direction of the difference constrain which substitutions are present. A certificate that reports no mass data at all leaves the central question about this product entirely unanswered, and a purity percentage on such a certificate is a statement about an unidentified substance.\n\nSequencing data, where available, resolve the question completely rather than by inference, and for this product they are worth requesting specifically.\n\nPurity assessment by reverse-phase high-performance liquid chromatography establishes what proportion of the material is the principal component rather than truncated sequences, deletion sequences or residual reagents. For a 29-residue chain, single-residue deletions shift total mass by a proportionally small amount and may be poorly resolved from the parent peak, so method quality matters and a purity figure obtained under a shallow gradient is weaker evidence than one obtained under conditions demonstrated to separate close-eluting species.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass rather than a verified peptide mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Unverified Identity and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nCJC-1295 No DAC is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nBeyond the absence of approval, a verification point belongs on this page. The compound's identifiers are established — CAS 863288-34-0, PubChem CID 56841945, molecular formula C152H252N44O42, molecular weight approximately 3367.9 g/mol — but name-based database lookups for this product fail and fall through to sermorelin, a different molecule. What that means practically is that a datasheet or certificate assembled by automated name lookup may describe sermorelin while carrying this product's name. Because the two differ by only about 10 g/mol, an intact-mass figure separates them poorly; the reliable discriminator is sulfur, which sermorelin contains and this analogue does not. Material sold under this name should be confirmed by analytical data rather than by labelling.\n\nThe practical consequence for a purchaser is straightforward. A product whose composition is not publicly documented cannot be assumed equivalent to any compound described in the scientific literature, and published findings concerning named, chemically defined analogues of this hormone — including the approved analogue tesamorelin — do not transfer to it. Anyone intending quantitative or publishable work with this material should obtain intact-mass data for the specific lot before proceeding.\n\nGrowth hormone-releasing factor analogues fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list rather than rely on any statement here.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is CJC-1295 No DAC?",
+        "answer": "It is sold as an analogue of growth hormone-releasing hormone based on the GRF 1-29 fragment — the first 29 residues of the 44-residue natural hormone — without the Drug Affinity Complex group carried by the DAC version. It is commonly described as \"modified GRF 1-29\", where modified refers to amino acid substitutions intended to improve stability relative to the plain sequence."
+      },
+      {
+        "question": "Why is no molecular formula or CAS number given?",
+        "answer": "Because none could be established. A PubChem query on 9 November 2026 returned no compound record for \"CJC-1295 without DAC\" or \"modified GRF (1-29)\". A name lookup falls through to sermorelin, which is a different molecule — the plain unmodified fragment. Publishing sermorelin’s identifiers here would assert that this product is sermorelin, which is exactly what its name denies. Stating the gap is more useful than filling it with unsupportable numbers."
+      },
+      {
+        "question": "Is this just sermorelin under another name?",
+        "answer": "That is one of two possibilities, and only analytical data distinguish them. If the substitutions are genuinely present, the compound is not sermorelin and sermorelin’s identifiers do not apply to it. If they are absent, the material is sermorelin sold under another name at a different price. Both possibilities have real consequences for an experiment and for a purchaser."
+      },
+      {
+        "question": "How would I find out which one I have?",
+        "answer": "Intact-mass measurement, which resolves most of the ambiguity in a single experiment. The plain GRF 1-29 sequence has a molecular weight of approximately 3357.9 Da. Any genuine substitution altering residue composition alters that figure measurably. A mass at about 3357.9 Da indicates the unmodified sequence whatever the label says; a different mass is consistent with a modified one. Sequencing data resolve it completely."
+      },
+      {
+        "question": "How does it differ from CJC-1295 with DAC?",
+        "answer": "The DAC version carries a Drug Affinity Complex, a reactive group that bonds covalently to albumin and greatly extends duration of action; it has a verified identity, with molecular formula C165H269N47O46, molecular weight approximately 3647.2 g/mol and CAS 446262-90-4. This version lacks that group entirely, so it would be expected to act far more briefly — closer to sermorelin than to a long-acting analogue, plus whatever extension the substitutions provide."
+      },
+      {
+        "question": "What receptor does this class act on?",
+        "answer": "The growth hormone-releasing hormone receptor on pituitary somatotrophs, the same receptor engaged by the natural hormone, sermorelin and tesamorelin. That is a different receptor from the growth hormone secretagogue receptor 1a engaged by GHRP-2, GHRP-6 and ipamorelin, whose endogenous ligand is ghrelin. The abbreviations GHRH and GHRP differ by one letter; the pharmacology differs entirely."
+      },
+      {
+        "question": "Does the evidence for tesamorelin apply to this product?",
+        "answer": "No. Tesamorelin is a chemically defined analogue with a regulatory file and phase 3 trials behind it. The step from \"an analogue of this hormone has been shown to do X\" to \"this preparation does X\" is not available where the preparation’s identity is itself unestablished. No published trial establishes efficacy or safety for modified GRF 1-29 as such."
+      },
+      {
+        "question": "Why is this compound often sold alongside ipamorelin?",
+        "answer": "Because GHRH-receptor agonists and GHS-R1a agonists act on separate receptors converging on a shared secretory output, and the combination has attracted more research attention than either arm alone. That is the rationale behind blended preparations pairing a GHRH analogue with a ghrelin mimetic, and this compound is frequently sold for that pairing."
+      },
+      {
+        "question": "Can I use this material for publishable work?",
+        "answer": "Not without characterising it first. An experiment conducted with material of unestablished composition cannot support a conclusion attributed to a named compound: if the substitutions are present, the results describe a molecule whose structure is not publicly documented; if absent, they describe sermorelin. This is not an argument against using it, but an argument for obtaining intact-mass data on the specific lot before proceeding."
+      },
+      {
+        "question": "What does \"research use only\" mean here?",
+        "answer": "It means the material is sold for laboratory research and nothing else, with the additional qualification that its chemical identity is not publicly documented. Research use only is not a legal classification and does not exempt a purchaser from applicable law. Published findings concerning named, chemically defined analogues of this hormone do not transfer to material of unverified composition."
+      }
+    ]
+  }
+}

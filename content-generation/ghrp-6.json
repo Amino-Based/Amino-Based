@@ -1,0 +1,222 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "ghrp-6",
+    "qc": {
+      "main_content_words": 2125,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any major jurisdiction. Prohibited in sport.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "49.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "GHRP-6 10mg.png",
+        "upload_as": "amino-ghrp-6-10mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 4345065 (PUG REST, verified 2026-11-09): C46H56N12O6, MW 873.0. No CAS number returned by PubChem synonyms - not asserted.",
+      "PMID 18056963 doi:10.1196/annals.1404.023 - Ann N Y Acad Sci - GHS-R1a agonists in aging; MK-0677 restored episodic GH amplitude in elderly subjects; lean mass and bone density effects; GHS-R1a/D1R heterodimerisation",
+      "PMID 28873385 doi:10.1159/000475732 - Endocr Dev - Ghrelin and Growth; GHS receptor gene variants and human height",
+      "PMID 33333485 doi:10.1016/j.npep.2020.102112 - Neuropeptides - ghrelin/GHS-R1a regulation of ER stress, oxidative stress and autophagy"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "CAS registry number - PubChem returned no CAS-format synonym for this compound; none is stated on the page"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what GHRP-6 is, how it compares with GHRP-2 and ipamorelin, and why it is still referenced.",
+    "primary_keyword": "GHRP-6",
+    "secondary_keywords": [
+      "GHRP-6 peptide",
+      "growth hormone releasing peptide 6",
+      "GHS-R1a agonist",
+      "ghrelin mimetic",
+      "GHRP-6 molecular weight",
+      "growth hormone secretagogue"
+    ],
+    "long_tail_keywords": [
+      "what is GHRP-6",
+      "GHRP-6 vs GHRP-2",
+      "GHRP-6 vs ipamorelin",
+      "GHRP-6 molecular formula C46H56N12O6",
+      "does GHRP-6 increase appetite",
+      "GHRP-6 CAS number",
+      "what is GHS-R1a receptor",
+      "GHRP vs GHRH difference",
+      "is GHRP-6 approved",
+      "GHRP-6 reference agonist pharmacology"
+    ],
+    "semantic_terms": [
+      "hexapeptide",
+      "GHS-R1a",
+      "ghrelin",
+      "appetite regulation",
+      "feeding behaviour",
+      "pituitary",
+      "reference agonist",
+      "receptor desensitisation",
+      "signalling bias",
+      "deletion sequence",
+      "acetate salt",
+      "reverse-phase HPLC"
+    ],
+    "name_variations": [
+      "GHRP-6",
+      "growth hormone-releasing peptide 6",
+      "GHRP-6 acetate"
+    ],
+    "informational_queries": [
+      "what is GHRP-6",
+      "GHRP-6 mechanism",
+      "GHRP-6 appetite",
+      "GHRP-6 vs GHRP-2",
+      "is GHRP-6 legal"
+    ],
+    "commercial_queries": [
+      "buy GHRP-6 research peptide",
+      "GHRP-6 10mg",
+      "GHRP-6 COA"
+    ],
+    "cannibalisation_check": "Owns GHRP-6 and the appetite/reference-agonist angle. /product/ghrp-2 owns GHRP-2 and pralmorelin; /product/ipamorelin owns selectivity. Shared class explainer is framed from this compound’s perspective on each page.",
+    "h1": "Driven by CMS name field; renders as \"GHRP-6\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/ghrp-2",
+        "anchor": "GHRP-2",
+        "rationale": "Closest comparator within the same receptor class.",
+        "verified": true
+      },
+      {
+        "route": "/product/ipamorelin",
+        "anchor": "Ipamorelin",
+        "rationale": "The selectivity comparator within the same receptor class.",
+        "verified": true
+      },
+      {
+        "route": "/product/sermorelin",
+        "anchor": "Sermorelin",
+        "rationale": "Acts on the GHRH receptor rather than GHS-R1a; the key class distinction.",
+        "verified": true
+      },
+      {
+        "route": "/product/tesamorelin",
+        "anchor": "Tesamorelin",
+        "rationale": "The approved GHRH analogue; useful contrast on regulatory status.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "GHRP-6 | Growth Hormone-Releasing Peptide | Amino Based",
+    "seoDescription": "GHRP-6: synthetic hexapeptide GHS-R1a agonist, C46H56N12O6, MW 873.0. Receptor pharmacology, appetite signalling, evidence limits. Research use only.",
+    "description": "GHRP-6 is a synthetic hexapeptide agonist at the growth hormone secretagogue receptor 1a (GHS-R1a), the receptor whose endogenous ligand is ghrelin. Its molecular formula is C46H56N12O6, with a molecular weight of approximately 873.0 g/mol (PubChem CID 4345065). It is one of the earliest compounds of its class and is widely used as a reference agonist in receptor pharmacology. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "GHRP-6: Identity and Its Role as a Reference Agonist",
+    "productDetailsDescription": "GHRP-6 is a synthetic hexapeptide belonging to the growth hormone-releasing peptide group. It is among the earliest members of its class, and that historical primacy gives it a particular standing in the literature: a great deal of the foundational pharmacology of the growth hormone secretagogue receptor was established using GHRP-6, which means it functions as a reference compound against which later agonists are compared.\n\nIts verified identifiers are a molecular formula of C46H56N12O6 and a molecular weight of approximately 873.0 g/mol, recorded under PubChem CID 4345065. One honest gap should be noted: a query of PubChem's synonym records for this compound returned no entry in CAS registry format, so no CAS number is asserted on this page. That is a limitation of what could be verified rather than an indication that none exists, and anyone requiring a registry identifier should obtain it from a primary chemical registry rather than from a supplier listing.\n\nAs with GHRP-2, the abbreviation invites confusion with GHRH and the distinction is fundamental. Growth hormone-releasing hormone acts on the GHRH receptor; growth hormone-releasing peptides act on GHS-R1a, a different G protein-coupled receptor with a different endogenous ligand, ghrelin. Sermorelin, CJC-1295 and tesamorelin belong to the first group; GHRP-6, GHRP-2 and ipamorelin to the second. The abbreviations differ by a single letter and the pharmacology differs completely.\n\nWhat distinguishes GHRP-6 within its own class is less its potency than its breadth of effect. Because ghrelin signalling is centrally involved in appetite regulation as well as in growth hormone release, agonists at this receptor can influence feeding behaviour, and GHRP-6 is conventionally described in the literature as having pronounced effects in that direction relative to more selective later compounds. This is the clearest practical contrast with ipamorelin, which was developed specifically to minimise effects outside growth hormone release. For experimental purposes that breadth can be an asset rather than a drawback: a less selective agonist is a more useful probe when the question concerns the receptor system as a whole rather than one output of it.\n\nAt approximately 873 Da, GHRP-6 is a small peptide, and the same considerations that apply to GHRP-2 regarding counter-ion contribution to mass apply here with equal force.\n\nShort synthetic peptides of this kind have a characteristic handling profile that differs from that of longer natural-sequence peptides, and it is worth understanding rather than treating generically. Having few residues, they present proportionally more terminal chemistry relative to their bulk, and they incorporate non-proteinogenic residues deliberately chosen to resist the proteases that would rapidly clear a natural sequence. That engineered resistance is a property of the backbone, not a general guarantee of robustness: it says nothing about behaviour in solution at varying pH, about adsorption to container surfaces, or about oxidation of susceptible side chains. Stability against enzymatic degradation and stability during laboratory handling are different questions with different answers, and a claim about one should not be read as a claim about the other.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "Receptor System Breadth, Appetite Signalling and Evidence Limits",
+    "researchFocusDescription": "GHRP-6's research value lies substantially in what it helped establish rather than in a late-stage clinical record, and framing it accurately means describing the receptor system it opened up.\n\nThe growth hormone secretagogue receptor 1a is a G protein-coupled receptor expressed widely across central and peripheral tissues. A review in Neuropeptides describes ghrelin as its endogenous ligand and surveys reported roles for the ghrelin/GHS-R1a system in regulating endoplasmic reticulum stress, oxidative stress and autophagy across multiple tissues and disease models, presenting these as therapeutic potential rather than established application (PMID 33333485, doi:10.1016/j.npep.2020.102112). For a compound like GHRP-6, which acts on that receptor without the downstream selectivity of later analogues, this breadth is directly relevant: effects observed in an experiment may arise through any part of a widely distributed system, and attributing them to growth hormone release specifically requires that the experiment be designed to distinguish the possibilities.\n\nAppetite signalling is the most prominent of those additional effects and the one most often cited in connection with this compound. Ghrelin is centrally involved in the regulation of feeding, and agonism at its receptor is accordingly expected to influence appetite-related pathways. This is not a side issue to be noted and set aside; for many research purposes it is the point. A compound that engages the ghrelin system broadly is a more informative tool for studying that system than one engineered to touch only part of it.\n\nOn growth, a review in Endocrine Development sets out the relationship between ghrelin signalling and human growth, including associations between GHS receptor gene variants and height in healthy individuals and in patients with growth disorders including constitutional delay in growth and puberty, idiopathic short stature and isolated growth hormone deficiency (PMID 28873385, doi:10.1159/000475732). This genetic work speaks to the physiological role of the receptor in humans and is useful precisely because it does not depend on administering an agonist.\n\nEvidence from administering secretagogues to humans comes largely from other compounds in the class. A review in the Annals of the New York Academy of Sciences describes the orally active GHS-R1a agonist MK-0677 restoring the amplitude of endogenous episodic growth hormone release in elderly subjects to that of young adults, with functional benefits characterised as increased lean mass and bone density and modest improvements in strength, alongside animal findings on thymic function, liver phenotype and GHS-R1a heterodimerisation with the dopamine D1 receptor (PMID 18056963, doi:10.1196/annals.1404.023). Those results concern MK-0677, not GHRP-6, and the distinction matters: shared receptor targets do not make compounds equivalent, and the field's recurring error is precisely this kind of transfer.\n\nOne pharmacological point recurs throughout this literature and explains an otherwise puzzling feature of the product catalogue: compounds acting on the GHRH receptor and compounds acting on GHS-R1a are frequently studied in combination rather than alone. The rationale is mechanistic. Because the two receptors are distinct and their signalling converges downstream on the same secretory output, engaging both simultaneously is not simply additive in the way that two agonists at the same receptor would be. The combination has consequently attracted more research attention than either arm in isolation, and it is why blended preparations pairing a GHRH analogue with a ghrelin mimetic exist as products at all. For experimental design the implication is specific: a study of one arm alone answers a narrower question than it may appear to, and controls should establish which receptor an observed effect depends on rather than assuming it.\n\nThe limitations are substantial and should not be understated. GHRP-6 has no completed late-phase clinical programme and is not approved in any major jurisdiction. Much of its literature is of considerable age, reflecting its role in establishing the field rather than in current therapeutic development. Long-term safety data in healthy subjects are not available. And because the compound engages a receptor system with wide tissue distribution and multiple outputs, experiments that measure a single endpoint are liable to attribute effects more narrowly than the data support.\n\nFor laboratory work, the most defensible use is as what the literature has long treated it as: a reference agonist. Comparative potency and efficacy studies, receptor desensitisation and trafficking experiments, and investigations of signalling bias all benefit from a well-characterised comparator, and GHRP-6's long presence in the literature means a substantial body of prior data exists to design against.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation by mass spectrometry compares observed mass against the value calculated for the sequence, approximately 873.0 Da for the free peptide. As with other small synthetic peptides, these compounds are commonly supplied as acetate salts, and at this molecular size the counter-ion represents a proportionally substantial share of total mass. A molar calculation using the free-peptide value on acetate-salt material will be meaningfully wrong, and the form should be confirmed rather than assumed before any quantitative work.\n\nPurity assessment by reverse-phase high-performance liquid chromatography establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual synthesis reagents. For a hexapeptide the dominant synthesis-related impurities are single-residue deletion sequences, which are generally well resolved chromatographically and differ from the target by the mass of the omitted residue. The chromatogram therefore carries genuine diagnostic value and a bare percentage discards it.\n\nBecause no CAS registry number could be verified for this compound through PubChem's synonym records, a registry identifier quoted on a supplier certificate should be treated as a claim to be checked against a primary chemical registry rather than as confirmation of identity in itself. Identity is established by analytical data, not by a number printed on a document.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nGHRP-6 is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other major regulatory authority, for any indication. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. Its long presence in the scientific literature should not be mistaken for regulatory standing: a compound can be well studied as a pharmacological tool and remain entirely unapproved as a therapeutic, and that is the case here.\n\nGrowth hormone secretagogues fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list rather than rely on any statement here, as the relevant categories are revised periodically.\n\nThe findings described above concern the receptor system broadly, and the human data concern a different compound. They are not an assessment of this material and must not be read as evidence of its safety or efficacy in any context.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is GHRP-6?",
+        "answer": "GHRP-6 is a synthetic hexapeptide that activates the growth hormone secretagogue receptor 1a (GHS-R1a), whose endogenous ligand is ghrelin. Its molecular formula is C46H56N12O6 and its molecular weight approximately 873.0 g/mol, recorded under PubChem CID 4345065. It is among the earliest compounds of its class and much of the foundational pharmacology of the receptor was established using it."
+      },
+      {
+        "question": "Why is no CAS number given on this page?",
+        "answer": "Because one could not be verified. A query of PubChem’s synonym records for this compound returned no entry in CAS registry format, so none is asserted here. That reflects the limit of what could be checked rather than an indication that no registry number exists. Anyone requiring a registry identifier should obtain it from a primary chemical registry, and should treat a number printed on a supplier certificate as a claim to be checked rather than as proof of identity."
+      },
+      {
+        "question": "How does GHRP-6 differ from GHRP-2 and ipamorelin?",
+        "answer": "All three act on the same receptor but differ in how broadly their effects extend beyond growth hormone release. GHRP-6 is conventionally described as having pronounced effects on appetite-related signalling, reflecting ghrelin’s central role in feeding regulation. Ipamorelin was developed specifically to minimise effects outside GH release. GHRP-2 sits between them. For experimental purposes, breadth can be an asset: a less selective agonist is a better probe when the question concerns the receptor system as a whole."
+      },
+      {
+        "question": "What is the difference between GHRP and GHRH?",
+        "answer": "Different receptors entirely, despite abbreviations differing by one letter. GHRH is an endogenous hypothalamic hormone acting on the GHRH receptor; sermorelin, CJC-1295 and tesamorelin are its analogues. GHRPs act on GHS-R1a, whose natural ligand is ghrelin; GHRP-6, GHRP-2 and ipamorelin belong here. Findings for one class do not transfer to the other, and conflating them is the most common error in this area."
+      },
+      {
+        "question": "Why is GHRP-6 described as a reference agonist?",
+        "answer": "Because of its historical primacy. A great deal of the foundational pharmacology of the growth hormone secretagogue receptor was established using GHRP-6, so later agonists are routinely characterised by comparison with it. That accumulated body of prior data is precisely what makes it valuable for comparative potency, desensitisation, trafficking and signalling-bias experiments today."
+      },
+      {
+        "question": "Does GHRP-6 affect appetite?",
+        "answer": "Ghrelin is centrally involved in the regulation of feeding, and agonism at its receptor is accordingly expected to engage appetite-related pathways; GHRP-6 is conventionally described in the literature as having pronounced effects in that direction relative to more selective later compounds. For much research this is the point rather than an incidental effect, since a compound engaging the ghrelin system broadly is a more informative tool for studying that system."
+      },
+      {
+        "question": "What human evidence exists?",
+        "answer": "Little that concerns GHRP-6 directly. The most cited human data for this receptor class involve MK-0677, an orally active agonist, where a review reports restoration of episodic growth hormone release amplitude in elderly subjects toward young-adult values with modest functional benefits. That is a different compound, and shared receptor targets do not make compounds equivalent. GHRP-6 itself has no completed late-phase clinical programme."
+      },
+      {
+        "question": "Is GHRP-6 approved anywhere?",
+        "answer": "No. It has not been approved by the FDA or any other major regulatory authority for any indication. Its long presence in the scientific literature should not be mistaken for regulatory standing: a compound can be well studied as a pharmacological tool and remain entirely unapproved as a therapeutic. There is no regulator-reviewed labelling, no approved indication, and no post-marketing surveillance."
+      },
+      {
+        "question": "What impurities matter for a hexapeptide?",
+        "answer": "Mainly single-residue deletion sequences arising during synthesis. These differ from the target by the mass of the omitted residue and are generally well resolved chromatographically, so for a peptide this short the chromatogram carries real diagnostic value. A certificate quoting only a purity percentage discards that information, which is why the trace should be requested alongside the number."
+      },
+      {
+        "question": "What does \"research use only\" mean here?",
+        "answer": "It means the material is sold for laboratory research and nothing else. Research use only is not a legal classification and does not exempt a purchaser from applicable law; legality depends on your jurisdiction and on what you do with the material. Researchers are responsible for institutional approvals, import and export controls, and safe disposal. No dosing or administration guidance for human or veterinary use is provided."
+      }
+    ]
+  }
+}

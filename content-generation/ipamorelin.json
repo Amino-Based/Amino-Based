@@ -1,0 +1,230 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "ipamorelin",
+    "qc": {
+      "main_content_words": 2014,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Prohibited in sport.",
+    "variants_from_csv": [
+      {
+        "variant": "5mg",
+        "price_usd": "49.49"
+      },
+      {
+        "variant": "10mg",
+        "price_usd": "65.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "5mg",
+        "source_file": "Ipamorelin 5mg.png",
+        "upload_as": "amino-ipamorelin-5mg.png"
+      },
+      {
+        "variant": "10mg",
+        "source_file": "Ipamorelin-10mg.png",
+        "upload_as": "amino-ipamorelin-10mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 9831659 (PUG REST, verified 2026-11-09): C38H49N9O5, MW 711.9; CAS 170851-70-4",
+      "PMID 18056963 doi:10.1196/annals.1404.023 - Ann N Y Acad Sci - GHS-R1a agonists in aging; MK-0677 restored episodic GH amplitude in elderly subjects",
+      "PMID 28873385 doi:10.1159/000475732 - Endocr Dev - Ghrelin and Growth",
+      "PMID 33333485 doi:10.1016/j.npep.2020.102112 - Neuropeptides - ghrelin/GHS-R1a and ER stress, oxidative stress, autophagy"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to understand what ipamorelin is, what its selectivity actually means, and how it compares with other secretagogues.",
+    "primary_keyword": "ipamorelin",
+    "secondary_keywords": [
+      "ipamorelin peptide",
+      "selective growth hormone secretagogue",
+      "GHS-R1a agonist",
+      "ipamorelin molecular weight",
+      "pentapeptide secretagogue",
+      "ghrelin receptor agonist"
+    ],
+    "long_tail_keywords": [
+      "what is ipamorelin",
+      "is ipamorelin selective",
+      "ipamorelin vs GHRP-6",
+      "ipamorelin vs sermorelin",
+      "ipamorelin molecular formula C38H49N9O5",
+      "ipamorelin CAS 170851-70-4",
+      "does selective mean safer peptide",
+      "why use a secretagogue instead of growth hormone",
+      "ipamorelin biased agonism",
+      "ipamorelin acetate salt molar calculation"
+    ],
+    "semantic_terms": [
+      "pentapeptide",
+      "GHS-R1a",
+      "ghrelin",
+      "biased agonism",
+      "G protein-coupled receptor",
+      "pulsatile secretion",
+      "episodic GH release",
+      "pituitary feedback",
+      "deletion sequence",
+      "acetate salt",
+      "reverse-phase HPLC",
+      "receptor desensitisation"
+    ],
+    "name_variations": [
+      "ipamorelin",
+      "NNC 26-0161",
+      "ipamorelin acetate"
+    ],
+    "informational_queries": [
+      "what is ipamorelin",
+      "ipamorelin mechanism of action",
+      "ipamorelin vs GHRP-2",
+      "is ipamorelin safe",
+      "ipamorelin selectivity"
+    ],
+    "commercial_queries": [
+      "buy ipamorelin research peptide",
+      "ipamorelin 5mg 10mg",
+      "ipamorelin certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns ipamorelin and the selectivity/biased-agonism angle. /product/ghrp-6 owns the reference-agonist and appetite angle; /product/ghrp-2 owns pralmorelin. GHRH-receptor intent belongs to sermorelin, cjc-1295 and tesamorelin pages.",
+    "h1": "Driven by CMS name field; renders as \"Ipamorelin\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/ghrp-6",
+        "anchor": "GHRP-6",
+        "rationale": "The less selective comparator; the contrast is the core of this page.",
+        "verified": true
+      },
+      {
+        "route": "/product/ghrp-2",
+        "anchor": "GHRP-2",
+        "rationale": "Intermediate selectivity within the same receptor class.",
+        "verified": true
+      },
+      {
+        "route": "/product/cjc-1295-ipamorelin",
+        "anchor": "CJC-1295 / Ipamorelin",
+        "rationale": "The blend pairing this compound with a GHRH analogue.",
+        "verified": true
+      },
+      {
+        "route": "/product/sermorelin",
+        "anchor": "Sermorelin",
+        "rationale": "GHRH-receptor comparator; the key class distinction.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Ipamorelin | Selective GHS-R1a Agonist | Amino Based",
+    "seoDescription": "Ipamorelin: pentapeptide GHS-R1a agonist, C38H49N9O5, MW 711.9, CAS 170851-70-4. Selectivity profile, receptor pharmacology. Research use only.",
+    "description": "Ipamorelin is a synthetic pentapeptide agonist at the growth hormone secretagogue receptor 1a (GHS-R1a), the receptor whose endogenous ligand is ghrelin. Its molecular formula is C38H49N9O5, with a molecular weight of approximately 711.9 g/mol and CAS registry number 170851-70-4 (PubChem CID 9831659). It is distinguished within its class by a selectivity profile deliberately engineered to minimise effects outside growth hormone release. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "Ipamorelin: Identity and the Engineering of Selectivity",
+    "productDetailsDescription": "Ipamorelin is a synthetic pentapeptide — five amino acid residues — and at approximately 711.9 g/mol it is the smallest of the growth hormone secretagogues in this catalogue. Its verified identifiers are a molecular formula of C38H49N9O5 and CAS registry number 170851-70-4, recorded under PubChem CID 9831659.\n\nAs with the other compounds in this group, the abbreviation landscape invites a confusion worth dispatching at the outset. Growth hormone-releasing hormone, GHRH, is an endogenous hypothalamic hormone acting on its own dedicated receptor; sermorelin, CJC-1295 and tesamorelin are analogues of it. Ipamorelin does not act on that receptor. It acts on the growth hormone secretagogue receptor 1a, a separate G protein-coupled receptor whose endogenous ligand is ghrelin, placing it in the same class as GHRP-2 and GHRP-6. Different receptor, different endogenous ligand, converging downstream output.\n\nWhat makes ipamorelin interesting is not its receptor target, which it shares with several other compounds, but what it was designed to avoid. Activation of GHS-R1a does not produce growth hormone release in isolation. The receptor is expressed widely, and agonism at it has been described in the literature as influencing other pituitary outputs and appetite-related signalling alongside the growth hormone effect. Earlier compounds in the class, GHRP-6 in particular, are conventionally characterised as producing those additional effects prominently. Ipamorelin was developed specifically to retain potency at the receptor while minimising them, and it is generally presented in the literature as the selective member of the group.\n\nThat design goal is worth examining rather than accepting as a slogan, because \"selective\" is doing precise work here and is easily misread. Ipamorelin is not selective for a different receptor; it binds the same GHS-R1a as its less selective relatives. The selectivity claimed for it concerns the downstream profile of effects that follow receptor activation, not receptor discrimination. How a single receptor can be engaged by two agonists with differing downstream consequences is a genuine and still-active question in G protein-coupled receptor pharmacology, usually framed in terms of biased agonism: different ligands stabilising different receptor conformations and thereby favouring different intracellular signalling pathways. Whether ipamorelin's profile is best explained in those terms, or by differences in potency, kinetics and tissue exposure, is not settled, and a researcher should treat the selectivity description as an empirical observation about outcomes rather than as a mechanism already established.\n\nThis matters for experimental design in a specific way. If the question concerns the growth hormone axis narrowly, a cleaner agonist reduces confounding. If the question concerns the ghrelin system more broadly, a selective agonist is the wrong tool, and a less selective comparator such as GHRP-6 will be more informative. Choosing between them is a design decision, not a quality judgement, and the frequent framing of ipamorelin as simply the better compound obscures that.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 5 mg and 10 mg presentations.",
+    "researchFocusTitle": "Selectivity, the Pulsatility Rationale and Evidence Limits",
+    "researchFocusDescription": "The research case for ipamorelin rests on two ideas: that the growth hormone axis responds differently to upstream stimulation than to hormone administration, and that a cleaner agonist isolates that stimulation more precisely. Both deserve examination.\n\nThe first idea concerns the structure of growth hormone physiology. Growth hormone is secreted not continuously but in discrete episodic pulses, and a substantial part of its downstream signalling appears to depend on that pattern rather than on average concentration alone. Administering recombinant growth hormone raises the concentration without reproducing the pattern. A secretagogue acts instead on the pituitary's own secretory machinery, in principle amplifying the endogenous pulse while remaining subject to the feedback mechanisms that constrain endogenous secretion. A review in the Annals of the New York Academy of Sciences describes exactly this framing in the context of ageing, reporting that an orally active GHS-R1a agonist restored the amplitude of endogenous episodic growth hormone release in elderly subjects to that of young adults, with functional benefits characterised as increased lean mass and bone density alongside modest improvements in strength (PMID 18056963, doi:10.1196/annals.1404.023). The phrase \"restored the amplitude of endogenous episodic release\" is the key one, and it describes something different from raising a hormone level.\n\nTwo cautions attach to that evidence immediately. It concerns MK-0677, a distinct orally active compound, not ipamorelin; and the functional benefits were characterised as modest. Shared receptor targets do not make compounds equivalent, and this is precisely the inference that the literature in this area is most prone to making incorrectly.\n\nThe second idea, selectivity, is supported mainly by comparative characterisation rather than by outcome trials. The broader receptor literature establishes why it would matter: a review in Neuropeptides surveys reported roles for the ghrelin and GHS-R1a system in regulating endoplasmic reticulum stress, oxidative stress and autophagy across many tissues, presenting these as therapeutic potential rather than demonstrated application (PMID 33333485, doi:10.1016/j.npep.2020.102112). A receptor implicated in that many processes is one whose non-selective activation carries correspondingly more scope for effects outside the intended axis — which is the argument for a selective agonist, and equally the reason a selective agonist is a narrower research tool.\n\nOn the physiological role of the receptor in humans, work independent of agonist administration is informative. A review in Endocrine Development describes associations between growth hormone secretagogue receptor gene variants and human height in both healthy individuals and patients with growth disorders, including constitutional delay in growth and puberty, idiopathic short stature and isolated growth hormone deficiency (PMID 28873385, doi:10.1159/000475732). Genetic association evidence of this kind speaks to what the receptor does physiologically rather than to what happens when it is stimulated pharmacologically, and the two questions are distinct.\n\nThe limitations are clear and should not be glossed. Ipamorelin has no completed late-phase clinical programme and is not approved in any jurisdiction. Its selectivity profile is an empirical characterisation rather than a mechanistically settled property. Long-term safety data in healthy subjects do not exist. And the most-cited human data for this receptor class concern other compounds entirely.\n\nFor laboratory work the tractable questions follow from the selectivity question itself: comparative potency and efficacy against GHRP-6 and GHRP-2 at the same receptor, whether the differing profiles reflect biased signalling, receptor desensitisation and trafficking on repeated exposure, and how the response differs between tissues expressing the receptor at different densities. The existence of well-characterised less-selective comparators within the same class makes these comparisons genuinely feasible rather than merely proposable.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation by mass spectrometry compares observed mass against the value calculated for the sequence, approximately 711.9 Da for the free peptide. The salt-form question is more consequential for ipamorelin than for almost anything else in this catalogue, simply because of its size. At roughly 712 Da this is the smallest peptide in the growth hormone group, so an acetate counter-ion represents a proportionally large share of the total mass of the supplied material. A molar calculation performed with the free-peptide value on acetate-salt material will be wrong by a correspondingly large margin. Confirm the form before any quantitative work rather than assuming it.\n\nPurity assessment by reverse-phase high-performance liquid chromatography establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual synthesis reagents. For a pentapeptide the dominant synthesis-related impurities are single-residue deletion sequences, which differ from the target by the mass of the omitted residue and are usually well resolved chromatographically. On a five-residue chain such a deletion is a proportionally large structural change, so these impurities are both more consequential and more detectable than they would be in a longer peptide. The chromatogram therefore carries substantial diagnostic value, and a bare purity percentage discards it.\n\nLyophilised mass is also not peptide content: a vial labelled 5 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass rather than a verified peptide mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nIpamorelin is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nA specific caution attaches to the word \"selective\" in connection with this compound, because it is routinely misread as a safety claim. Selectivity as described in the literature refers to the profile of effects that follow receptor activation, measured in comparative characterisation studies. It is not a demonstration of safety, it does not derive from clinical safety trials, and a compound can have a clean profile on the endpoints that were measured while remaining entirely uncharacterised on those that were not. A narrower observed effect profile and an established safety profile are different things.\n\nGrowth hormone secretagogues fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list rather than rely on any statement here.\n\nThe findings described in the research section concern the receptor system broadly and, for the human data, a different compound. They are not an assessment of this material and must not be read as evidence of its safety or efficacy.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is ipamorelin?",
+        "answer": "Ipamorelin is a synthetic pentapeptide that activates the growth hormone secretagogue receptor 1a (GHS-R1a), the receptor whose endogenous ligand is ghrelin. Its molecular formula is C38H49N9O5, molecular weight approximately 711.9 g/mol, CAS 170851-70-4, PubChem CID 9831659. At five residues it is the smallest growth hormone secretagogue in this catalogue."
+      },
+      {
+        "question": "What does it mean that ipamorelin is \"selective\"?",
+        "answer": "Less than it is usually taken to mean, and the precision matters. Ipamorelin is not selective for a different receptor: it binds the same GHS-R1a as GHRP-2 and GHRP-6. The selectivity described in the literature concerns the downstream profile of effects following receptor activation, not receptor discrimination. It was engineered to retain potency while minimising effects outside growth hormone release."
+      },
+      {
+        "question": "How can one receptor give different agonists different downstream profiles?",
+        "answer": "This is a genuine open question in G protein-coupled receptor pharmacology, usually framed as biased agonism: different ligands stabilise different receptor conformations and thereby favour different intracellular signalling pathways. Whether ipamorelin’s profile is best explained that way, or by differences in potency, kinetics and tissue exposure, is not settled. Treat the selectivity description as an empirical observation about outcomes rather than as an established mechanism."
+      },
+      {
+        "question": "Is ipamorelin simply better than GHRP-6?",
+        "answer": "No, and framing it that way obscures a design decision. If your question concerns the growth hormone axis narrowly, a cleaner agonist reduces confounding. If your question concerns the ghrelin system more broadly, a selective agonist is the wrong tool and a less selective comparator such as GHRP-6 is more informative. Which is appropriate depends on the experiment, not on which compound is newer."
+      },
+      {
+        "question": "What is the difference between ipamorelin and sermorelin or CJC-1295?",
+        "answer": "Different receptors entirely. Sermorelin, CJC-1295 and tesamorelin are analogues of growth hormone-releasing hormone and act on the GHRH receptor. Ipamorelin acts on GHS-R1a, whose endogenous ligand is ghrelin. The two classes converge on a shared downstream output but through separate receptors and separate signalling, so findings for one do not transfer to the other."
+      },
+      {
+        "question": "Why is a secretagogue of research interest rather than growth hormone itself?",
+        "answer": "Because growth hormone is secreted in discrete episodic pulses rather than continuously, and much of its downstream signalling appears to depend on that pattern rather than on average concentration. Administering the recombinant hormone raises concentration without reproducing the pattern. A secretagogue acts on the pituitary’s own secretory machinery, in principle amplifying the endogenous pulse while remaining subject to the feedback that constrains endogenous secretion."
+      },
+      {
+        "question": "What human evidence supports this class?",
+        "answer": "The most-cited human data concern MK-0677, an orally active GHS-R1a agonist and a different compound. A review reports it restoring the amplitude of endogenous episodic growth hormone release in elderly subjects toward young-adult values, with benefits described as increased lean mass and bone density plus modest improvements in strength. Ipamorelin itself has no completed late-phase clinical programme."
+      },
+      {
+        "question": "Does \"selective\" mean safer?",
+        "answer": "No, and conflating the two is the most consequential misreading of this compound. Selectivity refers to the profile of effects measured in comparative characterisation studies. It is not a demonstration of safety, does not derive from clinical safety trials, and a compound can look clean on the endpoints that were measured while being entirely uncharacterised on those that were not."
+      },
+      {
+        "question": "Why does salt form matter so much for this peptide specifically?",
+        "answer": "Because it is the smallest peptide in the group. At roughly 712 Da, an acetate counter-ion represents a proportionally large fraction of the total mass of supplied material, so a molar calculation using the free-peptide value on acetate-salt material is wrong by a correspondingly large margin. The same error on a 4 kDa peptide would be far less significant."
+      },
+      {
+        "question": "What impurities matter for a five-residue peptide?",
+        "answer": "Mainly single-residue deletion sequences from synthesis. On a five-residue chain, losing one residue is a proportionally large structural change, which makes such impurities both more consequential and more readily detected chromatographically than in a longer peptide. The chromatogram carries substantial diagnostic value here, so request it alongside any purity percentage."
+      }
+    ]
+  }
+}

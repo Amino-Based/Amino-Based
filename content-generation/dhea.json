@@ -1,0 +1,227 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "dhea",
+    "qc": {
+      "main_content_words": 3142,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "DHEA (prasterone) IS an approved drug substance in a specific form: INTRAROSA, NDA 208470, approved 16 November 2016 (EndoCeutics), a 6.5 mg VAGINAL INSERT for moderate-to-severe dyspareunia due to menopause in postmenopausal women; the label states the mechanism of action is not fully established. DHEA is also expressly EXCLUDED from the statutory definition of \"anabolic steroid\" at 21 U.S.C. 802(41)(A) and again at (41)(C) for the analog test, a carve-out added by the Anabolic Steroid Control Act of 2004 (Pub. L. 108-358) and repeated in DEA regulation at 21 CFR 1300.01. It is therefore NOT a controlled substance in the United States on that basis.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "77.00"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "DHEA 10mg.png",
+        "upload_as": "amino-dhea-10mg.png"
+      }
+    ],
+    "not_a_peptide": "DHEA is a C19 steroid, not a peptide. The shared lyophilised-peptide storage boilerplate was deliberately NOT used; a bespoke handling paragraph covering aqueous insolubility and vehicle choice was written instead.",
+    "references": [
+      "PubChem CID 5881 (PUG REST, verified 2026-11-09, matched name \"dehydroepiandrosterone\"): C19H28O2, MW 288.4, CAS 53-43-0.",
+      "FDA, INTRAROSA (prasterone) vaginal insert - NDA 208470; approval package dated 16 November 2016, sponsor EndoCeutics Inc. (accessdata.fda.gov/drugsatfda_docs/nda/2016/208470Orig1s000Approv.pdf); label accessdata.fda.gov/drugsatfda_docs/label/2018/208470s001lbl.pdf. Indicated for moderate to severe dyspareunia, a symptom of vulvar and vaginal atrophy, due to menopause; indicated only in postmenopausal women; each insert contains 6.5 mg prasterone in 1.3 mL off-white hard fat; chemical identity 3-beta-hydroxyandrost-5-en-17-one; MECHANISM OF ACTION NOT FULLY ESTABLISHED. Verified 2026-11-09.",
+      "21 U.S.C. 802(41)(A) and (41)(C) - DHEA expressly excluded from the statutory definition of \"anabolic steroid\" and from the structural-analog test; carve-out added by the Anabolic Steroid Control Act of 2004, Pub. L. 108-358; repeated in DEA regulation 21 CFR 1300.01. Verified 2026-11-09 via govinfo.gov, congress.gov and ecfr.gov.",
+      "PMID 19066301 doi:10.1210/jc.2008-1774 - J Clin Endocrinol Metab 94(3):761-4 - Mayo Clinic; DOUBLE-BLIND, RANDOMISED, PLACEBO-CONTROLLED CROSSOVER, 33 hypoadrenal women, 50 mg/day oral DHEA for 3 months. NEGATIVE FINDING: DHEA significantly reduced total cholesterol (P = 0.02) AND significantly reduced HDL (P = 0.006), reduced larger HDL particles, and tended to reduce triglycerides and total LDL. Authors conclude oral DHEA in hypoadrenal women results in an UNFAVOURABLE lipoprotein profile and call for long-term cardiovascular-risk studies.",
+      "PMID 15762190 doi:10.1530/eje.1.01810 - Eur J Endocrinol 152(1):77-85 - double-blind placebo-controlled crossover, 9 women with adrenal insufficiency, 9 days oral DHEA 50 mg/day, isotope dilution, indirect calorimetry, euglycaemic hyperinsulinaemic clamp and in situ microdialysis. NULL FINDING: DHEA normalised all androgen levels but basal and insulin-stimulated energy expenditure, protein/lipid/glucose oxidation, whole-body glucose and protein turnover, forearm protein breakdown, clamp insulin sensitivity and adipose glycerol release were all UNAFFECTED."
+    ],
+    "unverified": [
+      "Purity and steroid-impurity profile - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Residual solvent content - relevant for a steroid supplied as a solid and not addressed by a chromatographic purity figure",
+      "Whether the supplied material meets the approved drug substance specification for prasterone - it should not be assumed to",
+      "Product-specific stability and solution stability - no study supplied, none claimed"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a regulatory component. The searcher wants to know what DHEA is, its legal status, and whether the evidence supports the claims made for it.",
+    "primary_keyword": "DHEA",
+    "secondary_keywords": [
+      "dehydroepiandrosterone",
+      "prasterone",
+      "DHEA molecular weight",
+      "DHEA CAS 53-43-0",
+      "DHEA vs DHEA-S",
+      "Intrarosa"
+    ],
+    "long_tail_keywords": [
+      "what is DHEA",
+      "is DHEA a controlled substance",
+      "DHEA anabolic steroid exclusion 21 USC 802",
+      "DHEA molecular formula C19H28O2",
+      "is DHEA FDA approved",
+      "DHEA HDL cholesterol trial",
+      "DHEA adrenal insufficiency replacement",
+      "DHEA vs DHEA sulfate",
+      "DHEA solubility DMSO",
+      "DHEA certificate of analysis"
+    ],
+    "semantic_terms": [
+      "adrenal cortex",
+      "androgen precursor",
+      "DHEA-S",
+      "DHEA sulfate",
+      "steroidogenesis",
+      "androstane",
+      "3-beta-hydroxyandrost-5-en-17-one",
+      "local tissue conversion",
+      "lipoprotein profile",
+      "HDL particle size",
+      "euglycaemic hyperinsulinaemic clamp",
+      "microdialysis",
+      "isotope dilution",
+      "Anabolic Steroid Control Act",
+      "positional isomer",
+      "epimer",
+      "vehicle control"
+    ],
+    "name_variations": [
+      "DHEA",
+      "dehydroepiandrosterone",
+      "prasterone",
+      "androstenolone",
+      "3-beta-hydroxyandrost-5-en-17-one",
+      "DHEA-S / DHEA sulfate is a DISTINCT entity",
+      "7-keto-DHEA is a different compound"
+    ],
+    "informational_queries": [
+      "what is DHEA",
+      "is DHEA legal",
+      "does DHEA work",
+      "DHEA vs DHEA-S",
+      "is DHEA a steroid"
+    ],
+    "commercial_queries": [
+      "buy DHEA 10mg",
+      "DHEA research chemical",
+      "prasterone reference standard",
+      "DHEA COA"
+    ],
+    "cannibalisation_check": "Owns DHEA / prasterone and the steroid-status and statutory-carve-out intents. This is the only steroid in the catalogue, so there is no overlap with the peptide pages; /product/hcg owns gonadotropin intent and is linked for the endocrine contrast.",
+    "h1": "Driven by CMS name field; renders as \"DHEA\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/hcg",
+        "anchor": "HCG",
+        "rationale": "Acts on the gonadal axis to drive endogenous steroid production; useful contrast with supplying a precursor steroid directly.",
+        "verified": true
+      },
+      {
+        "route": "/product/nad",
+        "anchor": "NAD+",
+        "rationale": "Other endogenous non-peptide metabolite in the catalogue; parallel precursor-versus-product reasoning applies.",
+        "verified": true
+      },
+      {
+        "route": "/product/oxytocin",
+        "anchor": "Oxytocin",
+        "rationale": "Another approved drug substance in the catalogue where the approved dosage form differs sharply from research material.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "DHEA (Prasterone) | C19H28O2, MW 288.4, CAS 53-43-0 | Amino Based",
+    "seoDescription": "DHEA: dehydroepiandrosterone, C19H28O2, MW 288.4. An endogenous steroid, approved as a 6.5 mg vaginal insert. Research use only.",
+    "description": "DHEA is dehydroepiandrosterone, an endogenous C19 steroid produced principally by the adrenal cortex and serving as a precursor to both androgens and oestrogens. Its molecular formula is C19H28O2, with a molecular weight of approximately 288.4 g/mol (PubChem CID 5881, CAS 53-43-0). Under the generic name prasterone it is an approved drug substance in one specific form — a 6.5 mg vaginal insert — and it is expressly excluded from the statutory definition of an anabolic steroid in United States law. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "DHEA: A Precursor Steroid With an Unusual Legal and Regulatory Position",
+    "productDetailsDescription": "DHEA is not a peptide, and this is the only steroid in this catalogue. Its formula is C19H28O2 and its molecular weight approximately 288.4 g/mol — making it, apart from nothing else here, among the smallest molecules in the range and less than a third the mass of the shortest peptides. Chemically it is 3-beta-hydroxyandrost-5-en-17-one, a nineteen-carbon steroid with the four-ring androstane skeleton, a hydroxyl at carbon 3, a ketone at carbon 17 and a double bond between carbons 5 and 6.\n\nIts biological role is as a precursor rather than as a strongly active hormone in its own right, and this is the key to understanding both its appeal and the difficulty of studying it. DHEA is produced principally by the adrenal cortex, circulates largely as its sulfate ester DHEA-S at concentrations far higher than those of most steroid hormones, and serves as a substrate from which peripheral tissues can synthesise both androgens and oestrogens locally. That last point is the interesting one: because conversion happens in target tissues rather than centrally, the effect of supplying DHEA depends heavily on the enzymatic capacity of whichever tissue is doing the converting. The same circulating precursor can produce different local hormone profiles in different tissues and in different people. This is a genuinely complex pharmacology, and it is a substantial part of why clinical results with DHEA have been inconsistent.\n\nThe regulatory position is unusual in two respects, and both are worth stating precisely because both are widely misreported.\n\nFirst, DHEA is an approved drug substance — in one particular form. According to FDA's approval documents, INTRAROSA (prasterone) was approved on 16 November 2016 under NDA 208470 for the treatment of moderate to severe dyspareunia, a symptom of vulvar and vaginal atrophy, due to menopause. It is indicated only in postmenopausal women. The product is a vaginal insert containing 6.5 mg of prasterone in 1.3 mL of off-white hard fat. Notably, the approved label states that the mechanism of action is not fully established — an unusual admission in approved labelling, and one consistent with the precursor pharmacology described above: a substance that acts by being converted locally into other hormones is genuinely harder to attribute a mechanism to than a direct receptor agonist.\n\nThe dosage form matters as much here as it does for the implant discussed on the Melanotan-1 page. A 6.5 mg vaginal insert delivering a precursor steroid locally to vaginal tissue, where local conversion is the point, is not comparable to 10 mg of powder. The approval provides no support for any other route, quantity or purpose.\n\nSecond, and frequently garbled: DHEA occupies a specific carved-out position in United States controlled substance law. The statutory definition of an anabolic steroid at 21 U.S.C. 802(41)(A) expressly excludes dehydroepiandrosterone, alongside oestrogens, progestins and corticosteroids, and the exclusion is repeated at 802(41)(C), which governs the structural-analog test for substances not specifically listed. That carve-out was added by the Anabolic Steroid Control Act of 2004, Public Law 108-358, and DEA's own regulation at 21 CFR 1300.01 repeats it in its definition. The practical consequence is that although DHEA is unambiguously an androgen precursor and is structurally related to testosterone, it is not a controlled substance in the United States on that basis — because Congress specifically wrote it out of the definition. This is a legislative carve-out rather than a scientific conclusion, and that distinction is worth holding onto: the exclusion reflects a policy decision, not a finding that the substance lacks androgenic activity.\n\nA naming note. This compound appears as DHEA, dehydroepiandrosterone, prasterone, androstenolone, and chemically as 3-beta-hydroxyandrost-5-en-17-one. DHEA-S, the sulfate ester, is a distinct chemical entity with a different mass and is the form in which most circulating DHEA actually exists — assays and literature frequently concern DHEA-S rather than DHEA, and conflating them produces errors in both directions. 7-keto-DHEA is a different metabolite and a different compound.\n\nThe material is supplied as a solid in a sealed glass vial, and the stated quantity refers to the mass of material in the vial. This compound is a steroid, not a peptide, and the handling questions differ accordingly. Steroids of this class are poorly soluble in water and are conventionally dissolved in ethanol or dimethyl sulfoxide for in vitro work, so the solvent and the final vehicle concentration are decisions that need making before an assay rather than afterwards — vehicle effects on cells are a common and avoidable confound. Amino Based publishes no product-specific stability study for this material, so no shelf-life, solution-stability or freeze-thaw tolerance figures are claimed here; where such data are needed they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation. At approximately 288.4 g/mol, 10 mg is roughly 35 micromoles, which is a large molar quantity relative to the peptides in this catalogue and ample for in vitro work.",
+    "researchFocusTitle": "Two Well-Designed Trials, Two Inconvenient Results",
+    "researchFocusDescription": "DHEA has been studied in humans for decades, and the literature is large. Rather than survey it loosely, the most useful thing this page can do is examine two well-designed randomised controlled trials in the population where DHEA physiology is clearest — women with adrenal insufficiency, in whom endogenous DHEA is severely reduced or undetectable, so that replacement is a genuine intervention rather than supplementation on top of normal levels. Both trials are methodologically strong. Neither produced the result that DHEA marketing would predict.\n\nThe first examined lipoproteins. A double-blind, randomised, placebo-controlled crossover study at the Mayo Clinic enrolled 33 hypoadrenal women, who received either placebo or 50 mg per day of oral DHEA for three months each, with lipid and lipoprotein profiles analysed by a nuclear magnetic resonance lipoprotein system. DHEA administration raised plasma DHEA-S levels as intended, confirming the intervention worked biochemically. The lipid results were mixed in direction but unfavourable in net: DHEA significantly reduced total cholesterol, with a P value of 0.02, but it also significantly reduced HDL, with a P value of 0.006, and specifically reduced the larger HDL particles, with a modest reduction in small HDL particles as well. Triglycerides and total LDL tended to fall. The authors' conclusion was explicit: oral DHEA administration in hypoadrenal women results in an unfavourable lipoprotein profile, and the results warrant long-term studies to determine the impact on cardiovascular risk (PMID 19066301, doi:10.1210/jc.2008-1774).\n\nThat is a carefully stated negative finding, and the nuance is instructive. Total cholesterol fell, which taken alone sounds favourable. HDL fell more meaningfully, and it was the larger HDL particles — the subfraction generally regarded as the more protective — that were reduced. A study reporting only total cholesterol would have described a benefit. The particle-level analysis reversed the interpretation. This is a good illustration of why surrogate endpoints need to be examined at the resolution the technology allows rather than at the level that produces the cleanest headline.\n\nThe second trial examined metabolism, and is notable for the quality of its measurement. A double-blind, placebo-controlled crossover study gave nine women with adrenal insufficiency oral DHEA at 50 mg per day for nine days, and assessed whole-body and regional substrate metabolism using isotope dilution for glucose and amino acids, indirect calorimetry, a euglycaemic hyperinsulinaemic glucose clamp, and in situ microdialysis for adipose tissue lipolysis. DHEA treatment normalised the levels of all androgens — again confirming the intervention worked. And essentially nothing else changed. Basal and insulin-stimulated total energy expenditure were unaffected. Rates of protein, lipid and glucose oxidation were unaffected. Whole-body turnover of glucose and protein were unaffected. Forearm protein breakdown was reduced by insulin to the same extent on DHEA as on placebo. Insulin sensitivity, expressed as the glucose infusion rate during the clamp, was similar on both. Interstitial glycerol release in adipose tissue was not significantly influenced. The authors concluded that short-term oral DHEA replacement in these women was not associated with measurable changes in total or regional substrate metabolism (PMID 15762190, doi:10.1530/eje.1.01810).\n\nThe value of that null result lies in the methods. This was not a study that failed to find an effect because it measured crudely — it used some of the most sensitive techniques available in human metabolic physiology, including a glucose clamp and tissue microdialysis, and it confirmed that the intervention had achieved its biochemical goal by normalising androgen levels. A null result from sensitive measurement in a population where the hormone was genuinely deficient is considerably more informative than a null result from a weak study. The honest caveats are that the sample was nine participants and the duration nine days, so a small or slowly developing effect could have been missed.\n\nTaken together, these two trials describe a substance that reliably raises its own circulating levels and androgen levels when administered, and that in the population with the clearest rationale for replacement produced an unfavourable lipoprotein change in one study and no detectable metabolic change in the other. That is the opposite of the profile implied by marketing around this compound, and it comes from the better end of the evidence rather than from fringe studies.\n\nThe approved indication is consistent with this picture rather than contradicting it. The one form in which DHEA achieved approval delivers 6.5 mg locally to vaginal tissue for a local symptom, with the label stating that the mechanism of action is not fully established. A precursor steroid working through local tissue conversion is plausible for a local indication and much harder to make work systemically — which is roughly what the trial literature shows.\n\nThe limitations relevant to a researcher are therefore not that the evidence is thin but that it is unfavourable or null for systemic effects, that the precursor pharmacology makes effects tissue-dependent and therefore variable between tissues and individuals, and that most of the literature concerns oral administration and DHEA-S measurement rather than the compound as supplied here.\n\nFor a laboratory, this is a well-characterised, inexpensive, readily available steroid of defined structure — which makes it a legitimate and tractable tool for steroidogenesis research: studying local conversion by steroidogenic enzymes in tissue-specific systems, where the tissue-dependence that frustrates clinical interpretation is exactly the phenomenon under study. The 10 mg presentation is roughly 35 micromoles, which is generous for in vitro work.",
+    "qualityPurityTitle": "Analytical Verification for a Small Steroid, Not a Peptide",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThe analytical questions here are those of synthetic organic chemistry rather than peptide chemistry, and a certificate written on a peptide template would check the wrong things.\n\nIdentity confirmation is against the verified molecular formula C19H28O2, molecular weight approximately 288.4 g/mol, and CAS registry number 53-43-0 (PubChem CID 5881). For a small steroid, nuclear magnetic resonance spectroscopy is the appropriate confirmatory technique and is the one to request, because the steroid nucleus admits many isomers that share a molecular formula. Mass spectrometry confirms composition; it does not establish where the hydroxyl, the ketone and the double bond actually sit.\n\nThat isomer concern is substantive rather than formal for this class. The androstane skeleton gives rise to a large family of closely related steroids differing only in the position of a double bond, the position or orientation of a hydroxyl, or the oxidation state at a given carbon. Several of these are themselves biologically active, in some cases more androgenic than DHEA. Compounds such as androstenedione and various androstenediols are structurally adjacent and occupy neighbouring positions in the same biosynthetic pathway. A preparation containing a positional or stereochemical isomer, or a pathway-adjacent steroid as an impurity, could match on formula and mass while behaving differently — and in this chemical family, differently can mean considerably more androgenic. This is the most important impurity question for this product, and it is one that NMR and chromatography against authentic standards address while mass measurement does not.\n\nStereochemistry requires attention for the same reason. The steroid nucleus carries multiple stereocentres, and the 3-beta-hydroxyl configuration is part of the compound's definition — 3-beta-hydroxyandrost-5-en-17-one is the chemical name, and the beta designation is not decorative. Epimers at carbon 3 are distinct compounds with identical formulas and masses. Where configuration matters, optical rotation, chiral chromatography or NMR is required.\n\nPurity assessment by high-performance liquid chromatography or gas chromatography is appropriate and well established for steroids of this class. The impurity profile to expect is synthetic-organic: unreacted starting materials, pathway-adjacent steroids as described above, oxidation products, and residual solvents from synthesis and recrystallisation. Residual solvent content is a legitimate separate question that a chromatographic purity figure does not address.\n\nA practical point about handling belongs with verification, because it causes avoidable experimental failures. This compound is poorly soluble in water. It is conventionally dissolved in ethanol or dimethyl sulfoxide for in vitro work, which means a vehicle is introduced into every experiment and the vehicle itself has effects on cells at sufficient concentration. A vehicle control is not optional in work with this compound, and the final vehicle concentration should be a deliberate decision rather than whatever results from the stock concentration chosen.\n\nA note on DHEA-S. Most circulating DHEA exists as the sulfate ester, which is a distinct chemical entity with a different mass, different solubility and different behaviour. A certificate should be clear which substance it describes, and literature comparisons should be checked for the same thing, since assays and clinical studies frequently concern DHEA-S.\n\nFinally, and specific to an approved-drug substance: this material should not be assumed to meet the approved drug substance specification for prasterone, and no such equivalence is claimed here.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: An Approved Insert, a Statutory Carve-Out, and Prohibited in Sport",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position for DHEA is more complicated than for most substances in this catalogue, and each element should be stated accurately because each is commonly misreported.\n\nDHEA is an approved drug substance in one specific form. According to FDA's approval documents, INTRAROSA (prasterone) was approved on 16 November 2016 under NDA 208470 for moderate to severe dyspareunia, a symptom of vulvar and vaginal atrophy, due to menopause, and is indicated only in postmenopausal women. The approved product is a vaginal insert containing 6.5 mg of prasterone, and the approved label states that its mechanism of action is not fully established. That approval supports nothing about any other route, quantity, population or purpose, and a 10 mg vial of powder is not a version of it. Research-grade material is not manufactured under pharmaceutical quality systems and should not be assumed to meet the approved drug substance specification.\n\nOn controlled substance status, the position is specific. The statutory definition of an anabolic steroid at 21 U.S.C. 802(41)(A) expressly excludes dehydroepiandrosterone, and the exclusion is repeated at 802(41)(C) governing the structural-analog test. That carve-out was introduced by the Anabolic Steroid Control Act of 2004, Public Law 108-358, and DEA's regulation at 21 CFR 1300.01 repeats it. DHEA is therefore not a controlled substance in the United States on that basis. It is important to understand what this does and does not mean: it is a legislative carve-out, not a scientific finding. DHEA is unambiguously an androgen precursor and is structurally related to testosterone; Congress wrote it out of the definition as a matter of policy. The exclusion says nothing about the substance's biological activity, and it does not apply outside the United States — other jurisdictions treat DHEA differently, and local law governs.\n\nAnyone connected with competitive sport should note that DHEA is prohibited as an anabolic agent under anti-doping rules, and should consult the current published WADA Prohibited List directly; its precise listing was not independently verified for this page.\n\nOn the evidence, two findings from well-designed randomised controlled trials deserve emphasis because they cut against the claims commonly made for this substance. In 33 hypoadrenal women, 50 mg per day of oral DHEA for three months significantly reduced HDL, including the larger HDL particles, and the investigators concluded that it produced an unfavourable lipoprotein profile warranting long-term cardiovascular risk studies. In women with adrenal insufficiency, nine days of the same dose normalised androgen levels but produced no measurable change in energy expenditure, substrate oxidation, glucose or protein turnover, insulin sensitivity or adipose lipolysis, assessed by glucose clamp, isotope dilution, indirect calorimetry and microdialysis. These are results from the better end of the DHEA literature, in the population with the clearest rationale for replacement.\n\nNothing on this page suggests that this material is suitable for addressing ageing, hormone deficiency, libido, body composition, athletic performance, dyspareunia or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is DHEA?",
+        "answer": "DHEA is dehydroepiandrosterone, an endogenous C19 steroid produced principally by the adrenal cortex. Verified identifiers are molecular formula C19H28O2, molecular weight approximately 288.4 g/mol, CAS 53-43-0, PubChem CID 5881. Chemically it is 3-beta-hydroxyandrost-5-en-17-one. It functions as a precursor from which peripheral tissues synthesise both androgens and oestrogens locally, rather than as a strongly active hormone itself."
+      },
+      {
+        "question": "Is DHEA a controlled substance in the US?",
+        "answer": "Not on the anabolic steroid basis. The statutory definition at 21 U.S.C. 802(41)(A) expressly excludes dehydroepiandrosterone, and the exclusion repeats at 802(41)(C) for the structural-analog test. That carve-out came from the Anabolic Steroid Control Act of 2004 (Pub. L. 108-358) and DEA regulation 21 CFR 1300.01 repeats it. Important: this is a legislative carve-out, not a scientific finding that it lacks androgenic activity, and it does not apply outside the US."
+      },
+      {
+        "question": "Is DHEA FDA approved?",
+        "answer": "In one specific form. INTRAROSA (prasterone) was approved on 16 November 2016 under NDA 208470 for moderate to severe dyspareunia due to menopause, indicated only in postmenopausal women. It is a vaginal insert containing 6.5 mg of prasterone. Notably the approved label states the mechanism of action is not fully established. That approval supports nothing about any other route, quantity or purpose, and a 10 mg vial is not a version of it."
+      },
+      {
+        "question": "Why is DHEA’s pharmacology considered complex?",
+        "answer": "Because it acts as a precursor converted locally in target tissues rather than as a direct receptor agonist. The effect of supplying it depends on the enzymatic capacity of whichever tissue does the converting, so the same circulating precursor can produce different local hormone profiles in different tissues and different people. That tissue-dependence is a substantial part of why clinical results have been inconsistent — and why the approved label can say the mechanism is not fully established."
+      },
+      {
+        "question": "What did the DHEA lipid trial find?",
+        "answer": "An unfavourable result. A double-blind randomised placebo-controlled crossover study at the Mayo Clinic gave 33 hypoadrenal women 50 mg/day oral DHEA for three months. Total cholesterol fell significantly (P = 0.02), but HDL also fell significantly (P = 0.006), with the larger HDL particles specifically reduced. The investigators concluded that oral DHEA in these women produces an unfavourable lipoprotein profile and called for long-term cardiovascular risk studies."
+      },
+      {
+        "question": "Why does the HDL particle detail matter?",
+        "answer": "Because it reverses the interpretation. Total cholesterol fell, which in isolation sounds favourable, and a study reporting only total cholesterol would have described a benefit. But HDL fell more meaningfully, and it was the larger HDL particles — generally regarded as the more protective subfraction — that were reduced. It is a clean illustration of why surrogate endpoints should be examined at the resolution the technology allows rather than at the level producing the cleanest headline."
+      },
+      {
+        "question": "Did DHEA change metabolism in trials?",
+        "answer": "No, in the best-measured study. Nine women with adrenal insufficiency received 50 mg/day for nine days with assessment by isotope dilution, indirect calorimetry, a euglycaemic hyperinsulinaemic clamp and in situ microdialysis. DHEA normalised all androgen levels — confirming the intervention worked — yet energy expenditure, protein/lipid/glucose oxidation, glucose and protein turnover, insulin sensitivity and adipose glycerol release were all unaffected. The caveats are nine participants and nine days."
+      },
+      {
+        "question": "Why is that null result informative?",
+        "answer": "Because of how sensitively it was measured. This was not a study that missed an effect through crude measurement — it used some of the most sensitive techniques in human metabolic physiology, and it confirmed biochemical success by normalising androgen levels. A null from sensitive measurement, in a population genuinely deficient in the hormone, is far more informative than a null from a weak study. A small or slowly developing effect could still have been missed."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "NMR structural confirmation, not just mass. The androstane skeleton admits many isomers sharing the formula C19H28O2, differing only in double bond position, hydroxyl position or orientation, or oxidation state — and several are themselves biologically active, in some cases more androgenic than DHEA. Pathway-adjacent steroids like androstenedione and the androstenediols are realistic impurities. Also expect residual solvent content as a separate question."
+      },
+      {
+        "question": "Any handling point that affects experiments?",
+        "answer": "Yes — it is poorly soluble in water and is conventionally dissolved in ethanol or DMSO for in vitro work. That means a vehicle enters every experiment, and vehicles have their own effects on cells at sufficient concentration. A vehicle control is not optional with this compound, and the final vehicle concentration should be a deliberate decision rather than a consequence of whichever stock concentration was convenient."
+      }
+    ]
+  }
+}

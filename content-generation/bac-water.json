@@ -1,0 +1,241 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. This is a DILUENT, not a peptide, and the approved reference product (Bacteriostatic Water for Injection, USP) has FDA-labelled contraindications that are stated on the page. Benzyl alcohol concentration and sterility assurance for this specific product remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "bac-water",
+    "qc": {
+      "main_content_words": 2919,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "The reference product category, Bacteriostatic Water for Injection USP, is an FDA-labelled prescription product. FDA-approved labelling for it lists NEONATAL TOXICITY as a contraindication and warning, and the 30 mL vial tray panel carries the warning \"NOT FOR USE IN NEONATES\". This research-grade material is not that approved product.",
+    "not_a_peptide": "This is a DILUENT - sterile water with a benzyl alcohol preservative. It contains no peptide and has no single molecular formula. The peptide storage boilerplate was deliberately NOT used.",
+    "variants_from_csv": [
+      {
+        "variant": "3mL",
+        "price_usd": "9.90"
+      },
+      {
+        "variant": "10mL",
+        "price_usd": "16.50"
+      },
+      {
+        "variant": "30mL",
+        "price_usd": "30.80"
+      }
+    ],
+    "images": [
+      {
+        "variant": "3mL",
+        "source_file": "BAC Water 3mL.png",
+        "upload_as": "amino-bac-water-3ml.png"
+      },
+      {
+        "variant": "10mL",
+        "source_file": "BAC Water 10mL.png",
+        "upload_as": "amino-bac-water-10ml.png"
+      },
+      {
+        "variant": "30mL",
+        "source_file": "BAC Water 30mL.png",
+        "upload_as": "amino-bac-water-30ml.png"
+      }
+    ],
+    "frontend_bug_fixed": "A frontend defect was identified and corrected during this work: components/product/ProductClient.tsx hard-coded \"/assets/shelf_vial_tb500.png\" for this product in two places, so the BAC Water page displayed a TB-500 vial image. Both occurrences were replaced with a resolveProductImageUrl() call for BAC Water. The fix is in the working tree and is NOT deployed.",
+    "references": [
+      "FDA-approved labelling, Bacteriostatic Water for Injection, USP (Hospira; DailyMed setid 87d6e9dc-fe3b-4593-ac9a-d7493d1959c7): \"a sterile, nonpyrogenic preparation of water for injection containing 0.9% (9 mg/mL) or 1.1% (11 mg/mL) of benzyl alcohol\". Neonatal toxicity listed as a contraindication and warning; \"solutions containing benzyl alcohol must not be used in this patient population\"; the 30 mL vial tray panel carries \"NOT FOR USE IN NEONATES\"; \"For medications for use in neonates, only preservative-free Sterile Water for Injection should be used.\" Verified 2026-11-09.",
+      "FDA-approved labelling for other benzyl-alcohol-containing products describes the \"gasping syndrome\" as \"characterized by central nervous system depression, metabolic acidosis, gasping respirations, and high levels of benzyl alcohol and its metabolites\" (Saizen label), and states that \"Benzyl alcohol has been reported to be associated with a fatal 'Gasping Syndrome' in premature infants\" (Leukine label). Verified 2026-11-09 via accessdata.fda.gov."
+    ],
+    "unverified": [
+      "Benzyl alcohol concentration in this product - the approved reference category specifies 0.9% (9 mg/mL) or 1.1% (11 mg/mL); which, if either, applies here is not stated",
+      "Sterility assurance, pyrogen status and container-closure integrity - no lot certificate supplied and no sterility claim is made here",
+      "Whether this material meets the Bacteriostatic Water for Injection USP monograph - it should not be assumed to",
+      "Compatibility with any specific peptide - benzyl alcohol is a reactive organic solvent-class preservative and peptide-specific compatibility data is not supplied"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational and practical. The searcher wants to know what bacteriostatic water is, how it differs from sterile water, and what the safety considerations are.",
+    "primary_keyword": "BAC Water",
+    "secondary_keywords": [
+      "bacteriostatic water",
+      "Bacteriostatic Water for Injection USP",
+      "benzyl alcohol preservative",
+      "BAC water vs sterile water",
+      "bacteriostatic water 30mL",
+      "benzyl alcohol 0.9%"
+    ],
+    "long_tail_keywords": [
+      "what is BAC water",
+      "bacteriostatic water vs sterile water difference",
+      "how much benzyl alcohol is in bacteriostatic water",
+      "is bacteriostatic water sterile",
+      "bacteriostatic water not for use in neonates",
+      "what is gasping syndrome benzyl alcohol",
+      "bacteriostatic water peptide compatibility",
+      "bacteriostatic sodium chloride vs bacteriostatic water",
+      "bacteriostatic water 3mL 10mL 30mL",
+      "bacteriostatic water certificate of analysis"
+    ],
+    "semantic_terms": [
+      "benzyl alcohol",
+      "benzoic acid",
+      "glycine conjugation",
+      "preservative",
+      "bacteriostatic",
+      "multiple-dose vial",
+      "aseptic technique",
+      "Sterile Water for Injection",
+      "nonpyrogenic",
+      "bacterial endotoxin testing",
+      "container-closure integrity",
+      "elastomeric closure",
+      "gasping syndrome",
+      "metabolic acidosis",
+      "benzaldehyde",
+      "co-solvent",
+      "USP monograph"
+    ],
+    "name_variations": [
+      "BAC Water",
+      "bacteriostatic water",
+      "Bacteriostatic Water for Injection USP",
+      "Sterile Water for Injection is a DIFFERENT, preservative-free product",
+      "Bacteriostatic Sodium Chloride Injection is a different product again"
+    ],
+    "informational_queries": [
+      "what is BAC water",
+      "bacteriostatic water vs sterile water",
+      "is bacteriostatic water safe",
+      "what is in bacteriostatic water",
+      "how long does bacteriostatic water last"
+    ],
+    "commercial_queries": [
+      "buy BAC water",
+      "bacteriostatic water 30mL",
+      "bacteriostatic water 10mL",
+      "BAC water COA"
+    ],
+    "cannibalisation_check": "Owns BAC water and the bacteriostatic-versus-sterile and benzyl-alcohol-safety intents. No overlap with any active-substance page; this is the only diluent in the catalogue and is the natural link target from peptide pages discussing reconstitution.",
+    "h1": "Driven by CMS name field; renders as \"BAC Water\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/glutathione",
+        "anchor": "Glutathione",
+        "rationale": "Documented free-thiol oxidation liability; the clearest worked example of why solvent compatibility is worth verifying rather than assuming.",
+        "verified": true
+      },
+      {
+        "route": "/product/oxytocin",
+        "anchor": "Oxytocin",
+        "rationale": "Disulfide-cyclised peptide whose reduced form is nearly invisible to mass measurement; another concrete compatibility consideration.",
+        "verified": true
+      },
+      {
+        "route": "/product/epitalon",
+        "anchor": "Epitalon",
+        "rationale": "Contains the aspartate-glycine arrangement susceptible to isoaspartate formation; a third documented liability relevant to reconstitution.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "BAC Water | Bacteriostatic Water, Benzyl Alcohol Diluent | Amino Based",
+    "seoDescription": "BAC Water: sterile water with benzyl alcohol preservative. Not a peptide. FDA labelling for this category warns against neonatal use. Research use only.",
+    "description": "BAC Water is bacteriostatic water — sterile water containing benzyl alcohol as an antimicrobial preservative, supplied as a diluent rather than as an active substance. It contains no peptide and has no single molecular formula. The approved reference product category, Bacteriostatic Water for Injection USP, is specified in FDA-approved labelling as containing 0.9 per cent (9 mg/mL) or 1.1 per cent (11 mg/mL) benzyl alcohol, and that labelling lists neonatal toxicity as a contraindication, with the 30 mL vial tray panel carrying the warning \"NOT FOR USE IN NEONATES\". This research-grade material is not that approved product and is supplied for laboratory research use only.",
+    "productDetailsTitle": "BAC Water: What It Is, What the Preservative Does, and What FDA Labelling Says About It",
+    "productDetailsDescription": "BAC Water is the only product in this catalogue that is not a substance under investigation. It is a diluent — a liquid intended for reconstituting lyophilised material — and it contains no peptide, no steroid and no active compound of any kind. Consequently it has no molecular formula, no molecular weight and no CAS registry number as a product, and none is stated here. What it contains is water and benzyl alcohol.\n\nThe distinction from plain sterile water is the entire point, and it is worth understanding properly. Sterile Water for Injection is water that has been sterilised and is free of microorganisms at the moment of manufacture. It contains no preservative. Once its container is opened or punctured, nothing prevents microbial growth in it, so it is intended for single use and immediate discard. Bacteriostatic water adds benzyl alcohol, an antimicrobial preservative, which inhibits the growth of bacteria that might be introduced when the stopper is punctured. The word \"bacteriostatic\" is precise and worth noting: it means growth-inhibiting, not growth-killing. The preservative suppresses proliferation of introduced organisms; it does not sterilise a contaminated vial, and it is not a substitute for aseptic technique.\n\nThe practical consequence is that bacteriostatic water is the conventional choice where a reconstituted preparation is to be drawn from more than once over a period of days, because the preservative limits growth between withdrawals. Plain sterile water is the conventional choice for single use.\n\nThe composition of the approved reference product is specified precisely, and the figure matters. According to FDA-approved labelling, Bacteriostatic Water for Injection, USP is a sterile, nonpyrogenic preparation of water for injection containing 0.9 per cent — that is, 9 mg per millilitre — or 1.1 per cent (11 mg per millilitre) of benzyl alcohol. Note that there are two strengths in the approved category, which means \"bacteriostatic water\" does not denote a single composition. Which, if either, of those concentrations applies to this product is not stated, and it is not verified here.\n\nNow the safety information in the approved labelling, which is specific, serious, and the most important content on this page. FDA-approved labelling for Bacteriostatic Water for Injection lists **neonatal toxicity** as both a contraindication and a warning. The labelling states that solutions containing benzyl alcohol must not be used in this patient population, and that for medications for use in neonates, only preservative-free Sterile Water for Injection should be used. The 30 mL vial tray panel carries the warning \"NOT FOR USE IN NEONATES\" on the packaging itself — a warning placed where it cannot be missed.\n\nThe clinical basis for that contraindication is documented in the approved labelling of other benzyl-alcohol-containing products. The condition is known as the \"gasping syndrome\", described in FDA-approved labelling as characterised by central nervous system depression, metabolic acidosis, gasping respirations, and high levels of benzyl alcohol and its metabolites. Another approved label states that benzyl alcohol has been reported to be associated with a fatal gasping syndrome in premature infants. This is not a theoretical concern or a precautionary formality; it is a recognised, labelled, fatal toxicity associated with this specific preservative in this specific population, and it is the reason the warning appears on the packaging.\n\nTwo further points follow from the preservative's chemistry and deserve stating because they are routinely overlooked.\n\nFirst, benzyl alcohol is an organic solvent-class molecule, not an inert additive. It is present at 9 to 11 mg per millilitre in the approved category, which is a substantial concentration. Whether it is compatible with any given peptide is a real question rather than a formality: organic co-solvents can affect peptide conformation, can promote aggregation in some cases, and can participate in chemical reactions with susceptible residues. Peptide-specific compatibility data is not supplied for this product, and compatibility should not be assumed from the fact that the practice is common.\n\nSecond, this product makes no sterility claim here. Sterility assurance, pyrogen status and container-closure integrity are properties established by validated manufacturing and testing, not by labelling, and no lot certificate is supplied. A research-grade diluent is not a pharmaceutical-grade diluent, and should not be assumed to meet the Bacteriostatic Water for Injection USP monograph.\n\nA product-page note that belongs on the record. A frontend defect affecting this specific product was identified and corrected during this work: the product component had the image path for a TB-500 vial hard-coded for BAC Water in two places, so this page displayed a peptide vial image rather than a diluent. Both occurrences were replaced with a proper image lookup for BAC Water. That fix is in the working tree and is not deployed.\n\nA naming note. This product appears as BAC Water, bacteriostatic water, bac water, and formally as Bacteriostatic Water for Injection, USP. Sterile Water for Injection, USP is a different and preservative-free product. Bacteriostatic Sodium Chloride Injection USP is a different product again — saline with benzyl alcohol rather than water with benzyl alcohol — and is not interchangeable, since the salt content affects tonicity. Normal saline, 0.9 per cent sodium chloride, is a different product with no preservative.",
+    "researchFocusTitle": "A Diluent, Assessed as a Diluent",
+    "researchFocusDescription": "There is no efficacy literature for bacteriostatic water, and there should not be. It is a diluent, and assessing it means assessing what the preservative does, what the approved labelling establishes, and what a laboratory should know about using it — not searching for trials it was never the subject of. Stating that plainly is more useful than manufacturing a research narrative.\n\nWhat is established, and well established, is the function of benzyl alcohol as a pharmaceutical preservative. It has broad antimicrobial activity and has been used in injectable products for decades, which is why it appears across a range of approved products including diluents supplied with recombinant protein medicines. Its inclusion addresses a specific and real problem: a multiple-dose container is punctured repeatedly, each puncture is an opportunity for microbial ingress, and an unpreserved solution provides an excellent growth medium. A bacteriostatic preservative limits proliferation between withdrawals. That is a solved engineering problem rather than an open research question.\n\nWhat is equally well established, and documented in FDA-approved labelling rather than in contested literature, is the toxicity that bounds its use. The neonatal contraindication is unambiguous: FDA-approved labelling for Bacteriostatic Water for Injection lists neonatal toxicity as a contraindication and a warning, states that solutions containing benzyl alcohol must not be used in that population, and directs that only preservative-free Sterile Water for Injection be used for medications intended for neonates. The 30 mL presentation carries \"NOT FOR USE IN NEONATES\" on the vial tray panel.\n\nThe syndrome behind that language is described in the approved labelling of other benzyl-alcohol-containing products as the gasping syndrome, characterised by central nervous system depression, metabolic acidosis, gasping respirations, and high levels of benzyl alcohol and its metabolites, and one approved label records it as a fatal syndrome reported in premature infants. The mechanism is understandable in terms of ordinary pharmacology: benzyl alcohol is metabolised to benzoic acid, which is conjugated with glycine for excretion, and the immature hepatic conjugation capacity of neonates — particularly premature neonates — limits clearance, allowing accumulation. A preservative that is well tolerated at these concentrations in adults is therefore not well tolerated in a population that cannot clear it. That is a clean illustration of a general principle in toxicology: the dose-to-clearance relationship, not the substance alone, determines whether an exposure is safe.\n\nFor laboratory purposes, three considerations follow from all of this and are worth working through.\n\nThe first is that \"bacteriostatic\" is not \"sterile\". The preservative inhibits growth of organisms introduced during use; it does not sterilise a contaminated preparation, does not inactivate organisms already present in quantity, and is not a replacement for aseptic handling. A laboratory treating bacteriostatic water as a licence for casual technique has misunderstood what it does.\n\nThe second is compatibility, and it is the consideration most often skipped. Benzyl alcohol at 9 to 11 mg per millilitre is a meaningful concentration of an organic solvent-class molecule, not an inert tracer. Peptides are conformationally sensitive, and organic co-solvents can alter conformation, promote aggregation in susceptible sequences, or interact chemically with reactive residues. Several products in this catalogue have specific chemical liabilities documented on their own pages — free thiols that oxidise and dimerise, methionines that oxidise to sulfoxides, aspartate-glycine sequences that isomerise, disulfide bridges whose reduction is nearly invisible to mass measurement. Whether a benzyl alcohol-containing diluent accelerates any of those processes for any given peptide is an empirical question, and peptide-specific compatibility data is not supplied with this product. The honest position is that common practice is not the same as demonstrated compatibility.\n\nThe third is that composition here is unverified in a way that matters. The approved reference category permits two benzyl alcohol strengths, 0.9 and 1.1 per cent, and this product does not state which applies — or whether either does. For a preservative whose entire function depends on concentration, and whose toxicity also depends on concentration, that is not a trivial gap. Nor is any sterility, pyrogen or container-closure claim made here.\n\nFor a laboratory the practical conclusions are therefore straightforward. Establish the actual benzyl alcohol concentration with the supplier rather than assuming a monograph figure. Do not treat a research-grade diluent as meeting a pharmacopoeial monograph. Maintain aseptic technique regardless of the preservative. And where a peptide has a documented chemical liability, treat solvent compatibility as something to verify rather than inherit from convention.",
+    "qualityPurityTitle": "Verification for a Diluent: Concentration, Sterility, and What Is Not Claimed",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThe verification framework for a diluent differs entirely from that for an active substance, and the checks that matter here have nothing to do with molecular identity.\n\nThere is no molecular formula, molecular weight or CAS registry number for this product, because it is a mixture of water and a preservative rather than a defined compound. None is stated on this page. A certificate quoting a molecular formula or a single molecular weight for bacteriostatic water is describing something other than this product.\n\nBenzyl alcohol concentration is the primary specification, and it is unverified here. The approved reference category, Bacteriostatic Water for Injection USP, is specified in FDA-approved labelling as containing 0.9 per cent (9 mg/mL) or 1.1 per cent (11 mg/mL) benzyl alcohol — two distinct strengths within the same category. Which of these applies to this product, or whether either does, is not stated. This figure determines both the preservative's effectiveness and its toxicological profile, so it is the one number a certificate should carry. It is readily measured by gas chromatography or by HPLC with ultraviolet detection, benzyl alcohol having a convenient chromophore, so there is no analytical obstacle to reporting it.\n\nSterility and pyrogen status are the second and third specifications, and no claim is made for either here. These are properties established by validated aseptic manufacturing together with compendial sterility testing and bacterial endotoxin testing — not by a product name or a label format. A research-grade diluent should not be assumed to meet the Bacteriostatic Water for Injection USP monograph, and no such equivalence is claimed on this page.\n\nContainer-closure integrity deserves separate mention for a multiple-dose presentation, because it is the property the whole product concept depends on. A vial intended to be punctured repeatedly relies on an elastomeric closure that reseals after each withdrawal. If it does not reseal reliably, the preservative is being asked to compensate for a mechanical failure, which it cannot do indefinitely. Closure integrity is established by validated testing rather than by inspection.\n\nTwo further analytical points are worth noting for completeness. Benzyl alcohol can oxidise to benzaldehyde on storage, particularly with air exposure, and benzaldehyde is both an impurity and an indicator of oxidative handling history; it is readily detected by the same chromatographic methods used to assay the preservative. And water quality itself — conductivity and total organic carbon — is a meaningful specification for a product that is predominantly water, and is the kind of parameter a compendial monograph addresses and a research-grade product may not.\n\nFinally, a point that is a specification question rather than a chemistry one: compatibility with any specific peptide is not addressed by any of the above, and peptide-specific compatibility data is not supplied. The presence of a 9 to 11 mg per millilitre organic co-solvent is a variable in any reconstitution, and where a peptide has documented chemical liabilities — thiol oxidation, methionine oxidation, aspartate isomerisation, disulfide reduction — those should be treated as things to verify in the actual solvent rather than assumed unaffected.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: A Diluent With a Labelled Neonatal Contraindication",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThis product is a diluent containing a preservative, not an active substance. It contains no peptide and no therapeutic compound.\n\nThe regulatory position should be stated precisely. The reference product category, Bacteriostatic Water for Injection, USP, is an FDA-labelled prescription product with a defined monograph specification. This research-grade material is not that approved product: it is not manufactured under pharmaceutical quality systems, is not released against the compendial monograph, makes no sterility or pyrogen claim here, and should not be assumed equivalent. Its benzyl alcohol concentration is not stated and is not verified.\n\nOne item of safety information from FDA-approved labelling requires emphasis, because it is specific, serious and documented rather than precautionary. FDA-approved labelling for Bacteriostatic Water for Injection lists **neonatal toxicity as a contraindication and a warning**. It states that solutions containing benzyl alcohol must not be used in this patient population, and that for medications for use in neonates, only preservative-free Sterile Water for Injection should be used. The 30 mL vial tray panel carries the warning \"NOT FOR USE IN NEONATES\" on the packaging itself.\n\nThe basis for that contraindication is described in FDA-approved labelling for other benzyl-alcohol-containing products as the \"gasping syndrome\", characterised by central nervous system depression, metabolic acidosis, gasping respirations, and high levels of benzyl alcohol and its metabolites — with one approved label recording it as a **fatal** gasping syndrome reported in premature infants. The pharmacological basis is clearance: benzyl alcohol is metabolised to benzoic acid and conjugated with glycine for excretion, and immature hepatic conjugation capacity in neonates limits that clearance and permits accumulation. A preservative tolerated at these concentrations in adults is not tolerated in a population unable to clear it.\n\nTwo further points. \"Bacteriostatic\" means growth-inhibiting, not sterilising: the preservative suppresses proliferation of organisms introduced during use, does not sterilise a contaminated vial, and is not a substitute for aseptic technique. And benzyl alcohol at 9 to 11 mg per millilitre is a meaningful concentration of an organic solvent-class molecule rather than an inert additive; peptide-specific compatibility data is not supplied with this product, and common practice is not the same as demonstrated compatibility.\n\nNothing on this page constitutes guidance on reconstituting, diluting or preparing any substance for administration to any person or animal, and no such guidance is available on request. This material is not for human or veterinary use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is BAC water?",
+        "answer": "BAC water is bacteriostatic water — sterile water containing benzyl alcohol as an antimicrobial preservative, supplied as a diluent rather than an active substance. It contains no peptide and no therapeutic compound, so it has no molecular formula, molecular weight or CAS number as a product, and none is stated here. It is the only item in this catalogue that is not a substance under investigation."
+      },
+      {
+        "question": "How does it differ from sterile water?",
+        "answer": "Sterile Water for Injection is sterilised and preservative-free: once its container is punctured, nothing prevents microbial growth, so it is intended for single use. Bacteriostatic water adds benzyl alcohol, which inhibits growth of bacteria introduced when the stopper is punctured. So bacteriostatic water is the conventional choice where a preparation will be drawn from more than once, and plain sterile water for single use."
+      },
+      {
+        "question": "Does \"bacteriostatic\" mean sterile?",
+        "answer": "No, and the distinction is precise rather than pedantic. \"Bacteriostatic\" means growth-inhibiting, not growth-killing. The preservative suppresses proliferation of organisms introduced during use. It does not sterilise a contaminated vial, does not inactivate organisms already present in quantity, and is not a substitute for aseptic technique. Treating it as a licence for casual handling misunderstands what it does."
+      },
+      {
+        "question": "How much benzyl alcohol does it contain?",
+        "answer": "For the approved reference category, FDA-approved labelling specifies Bacteriostatic Water for Injection USP as containing 0.9 per cent (9 mg/mL) **or** 1.1 per cent (11 mg/mL) benzyl alcohol — two distinct strengths within the same category, so \"bacteriostatic water\" does not denote a single composition. Which, if either, applies to this product is not stated and is not verified here."
+      },
+      {
+        "question": "What does the FDA labelling warn about?",
+        "answer": "Neonatal toxicity, as both a contraindication and a warning. FDA-approved labelling for Bacteriostatic Water for Injection states that solutions containing benzyl alcohol must not be used in that patient population, and that for medications for use in neonates only preservative-free Sterile Water for Injection should be used. The 30 mL vial tray panel carries \"NOT FOR USE IN NEONATES\" on the packaging itself."
+      },
+      {
+        "question": "What is \"gasping syndrome\"?",
+        "answer": "A serious documented toxicity of benzyl alcohol, described in FDA-approved labelling of other benzyl-alcohol-containing products as characterised by central nervous system depression, metabolic acidosis, gasping respirations, and high levels of benzyl alcohol and its metabolites. One approved label records it as a **fatal** gasping syndrome reported in premature infants. This is a labelled toxicity, not a precautionary formality."
+      },
+      {
+        "question": "Why are neonates affected and adults not?",
+        "answer": "Clearance, which illustrates a general toxicological principle. Benzyl alcohol is metabolised to benzoic acid and conjugated with glycine for excretion. Immature hepatic conjugation capacity in neonates — particularly premature neonates — limits that clearance, allowing accumulation. A preservative well tolerated at these concentrations in adults is not tolerated in a population that cannot clear it. The dose-to-clearance relationship, not the substance alone, determines safety."
+      },
+      {
+        "question": "Is it compatible with every peptide?",
+        "answer": "That should be verified rather than assumed, and it is the consideration most often skipped. Benzyl alcohol at 9-11 mg/mL is a meaningful concentration of an organic solvent-class molecule, not an inert tracer. Peptides are conformationally sensitive, and organic co-solvents can alter conformation, promote aggregation, or interact with reactive residues. No peptide-specific compatibility data is supplied with this product — common practice is not demonstrated compatibility."
+      },
+      {
+        "question": "Which peptide liabilities are worth thinking about?",
+        "answer": "Several products in this catalogue have documented chemical vulnerabilities set out on their own pages: glutathione’s free thiol oxidises readily to the disulfide dimer; oxytocin’s disulfide bridge, whose reduction shifts mass by only 2 units out of 1,007; epitalon’s aspartate-glycine arrangement, which isomerises to isoaspartate with no mass change at all. Whether a benzyl-alcohol diluent accelerates any of those is empirical."
+      },
+      {
+        "question": "Is this the same as the approved USP product?",
+        "answer": "No, and it should not be assumed to be. Bacteriostatic Water for Injection USP is an FDA-labelled prescription product with a compendial monograph specification. This research-grade material is not manufactured under pharmaceutical quality systems, is not released against that monograph, and makes no sterility, pyrogen or container-closure-integrity claim here. Its benzyl alcohol concentration is unstated and unverified."
+      }
+    ]
+  }
+}

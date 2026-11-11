@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "dihexa",
+    "qc": {
+      "main_content_words": 2670,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Foundational mechanism paper RETRACTED April 2025.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "72.59"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Dihexa 10mg.png",
+        "upload_as": "amino-dihexa-10mg.png"
+      }
+    ],
+    "integrity_flag": "CRITICAL: the single most-cited mechanism paper for this compound (PMID 25187433) was RETRACTED by The Journal of Pharmacology and Experimental Therapeutics in April 2025 (retraction notice PMID 40312093, doi:10.1016/j.jpet.2025.103567). The page states this explicitly and does not rely on the retracted findings. Several widely cited reviews predate and cite that retracted work, and were authored by investigators affiliated with the commercial developer.",
+    "references": [
+      "PubChem CID 129010512 (PUG REST, verified 2026-11-09): C27H44N4O5, MW 504.7, CAS 1401708-83-5.",
+      "RETRACTED - PMID 25187433 doi:10.1124/jpet.114.218735 - J Pharmacol Exp Ther 351(2):390-402 (2014) - \"The procognitive and synaptogenic effects of angiotensin IV-derived peptides are dependent on activation of the hepatocyte growth factor/c-Met system.\" PubMed article type includes \"Retracted Publication\". MUST NOT be cited as support.",
+      "PMID 40312093 doi:10.1016/j.jpet.2025.103567 - J Pharmacol Exp Ther 392(4):103567 (April 2025) - Retraction notice for the above. Article type \"Retraction Notice\".",
+      "PMID 25649658 doi:10.3233/JAD-142814 - J Alzheimers Dis 45(4):985-1000 - review by Wright & Harding; both authors list M3 Biotechnology, Inc. affiliation. Describes dihexa as orally active and blood-brain-barrier penetrant.",
+      "PMID 25455861 doi:10.1016/j.pneurobio.2014.11.004 - Prog Neurobiol 125:26-46 - review by Wright, Kawas & Harding; all three list M3 Biotechnology, Inc. affiliation. Notes active controversy over the identity of the AT4 receptor protein (IRAP vs HGF/c-Met).",
+      "PMID 25674052 doi:10.3389/fncel.2015.00003 - Front Cell Neurosci 9:3 - zebrafish lateral line hair cell protection from aminoglycosides; 1 uM optimal; protection attenuated by HGF antagonist 6-AH and partially by Akt/TOR/MEK inhibitors; Dihexa did NOT reduce entry of fluorescently tagged gentamicin. Co-authors include M3 Biotechnology personnel.",
+      "PMID 27532814 doi:10.1002/cpsc.13 - Curr Protoc Stem Cell Biol 38:1G.6.1-1G.6.18 - fully independent (University of Oslo); uses Dihexa purely as a hepatocyte growth factor agonist reagent in a small-molecule hepatocyte differentiation protocol.",
+      "PMID 42825082 doi:10.1177/2689288X251392851 - Neurotrauma Rep 6(1):991-998 (2025) - fully independent (Rowan University); HGF/MET positive modulator dose-dependently rescued working memory deficits after repeated mild TBI in a closed-head midline impact model."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Aqueous solubility and recommended assay solvent for this presentation - not supplied, and not assumable from the peptides in this catalogue",
+      "Whether the HGF/c-Met mechanism survives the 2025 retraction - unresolved in the published record"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational, with a strong verification component. The searcher wants to know what Dihexa is, whether the cognitive claims hold up, and increasingly whether the retraction they have heard about is real.",
+    "primary_keyword": "Dihexa",
+    "secondary_keywords": [
+      "Dihexa peptide",
+      "Dihexa retraction",
+      "N-hexanoic-Tyr-Ile-(6) aminohexanoic amide",
+      "Dihexa molecular weight",
+      "HGF c-Met modulator",
+      "angiotensin IV analogue"
+    ],
+    "long_tail_keywords": [
+      "what is Dihexa",
+      "was the Dihexa study retracted",
+      "Dihexa HGF c-Met mechanism",
+      "Dihexa molecular formula C27H44N4O5",
+      "Dihexa CAS 1401708-83-5",
+      "is Dihexa FDA approved",
+      "Dihexa vs Nle1-angiotensin IV",
+      "does Dihexa work",
+      "Dihexa independent research",
+      "Dihexa certificate of analysis"
+    ],
+    "semantic_terms": [
+      "hepatocyte growth factor",
+      "c-Met receptor",
+      "MET",
+      "angiotensin IV",
+      "insulin-regulated aminopeptidase",
+      "IRAP",
+      "blood-brain barrier",
+      "synaptogenesis",
+      "spinogenesis",
+      "retraction notice",
+      "conflict of interest",
+      "lipophilicity",
+      "stereocentre",
+      "nuclear magnetic resonance"
+    ],
+    "name_variations": [
+      "Dihexa",
+      "N-hexanoic-Tyr-Ile-(6)-aminohexanoic amide",
+      "HGF/MET positive modulator",
+      "Nle1-AngIV analogue (parent compound is distinct)"
+    ],
+    "informational_queries": [
+      "what is Dihexa",
+      "Dihexa mechanism",
+      "Dihexa retracted study",
+      "does Dihexa improve memory",
+      "Dihexa research"
+    ],
+    "commercial_queries": [
+      "buy Dihexa",
+      "Dihexa 10mg",
+      "Dihexa certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns Dihexa and the angiotensin IV analogue intent, and uniquely owns the retraction-verification query. /product/semax and /product/selank own the nootropic peptide intent; this page is a small molecule and a different mechanism entirely.",
+    "h1": "Driven by CMS name field; renders as \"Dihexa\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/semax",
+        "anchor": "Semax",
+        "rationale": "Other cognition-focused compound in the catalogue, with a genuinely different evidence base and mechanism; useful contrast.",
+        "verified": true
+      },
+      {
+        "route": "/product/semax-selank-blend",
+        "anchor": "Semax + Selank Blend",
+        "rationale": "Adjacent nootropic intent; keeps the distinction between peptide and small-molecule approaches clear.",
+        "verified": true
+      },
+      {
+        "route": "/product/epitalon",
+        "anchor": "Epitalon",
+        "rationale": "Another catalogue compound where the evidence base is concentrated in a narrow set of sources; parallel methodological caution applies.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Dihexa | Angiotensin IV-Derived HGF/c-Met Modulator | Amino Based",
+    "seoDescription": "Dihexa: C27H44N4O5, MW 504.7, CAS 1401708-83-5. HGF/c-Met research, and the 2025 retraction of its foundational mechanism paper. Research use only.",
+    "description": "Dihexa is N-hexanoic-tyrosine-isoleucine-(6)-aminohexanoic amide, a small lipophilic molecule derived from the angiotensin IV analogue Norleucine-1-angiotensin IV. Its molecular formula is C27H44N4O5, with a molecular weight of approximately 504.7 g/mol (PubChem CID 129010512, CAS 1401708-83-5). It is not approved in any jurisdiction and is supplied for laboratory research use only. Researchers should be aware that the foundational paper establishing its proposed mechanism was retracted in April 2025; this page sets out what that leaves standing.",
+    "productDetailsTitle": "Dihexa: What It Is, and Why Its Evidence Base Requires Care",
+    "productDetailsDescription": "Dihexa is not a peptide in the ordinary sense, and treating it as one leads to practical mistakes. Its full chemical name, N-hexanoic-tyrosine-isoleucine-(6)-aminohexanoic amide, describes a molecule built around two amino acid residues — tyrosine and isoleucine — that has been deliberately modified at both ends: a six-carbon fatty acid chain at the N-terminus and a six-carbon aminohexanoic amide at the C-terminus. The result is a compact, markedly lipophilic molecule of approximately 504.7 g/mol, closer in character to a conventional small-molecule drug candidate than to the polypeptides elsewhere in this catalogue.\n\nThat design is the whole point. Dihexa was synthesised to solve a specific problem. Angiotensin IV and related molecules had been reported to possess procognitive properties, but the field was blocked by two obstacles: a lack of analogues able to cross the blood-brain barrier, and the absence of a validated mechanism of action. The hexanoic and aminohexanoic modifications were intended to address the first obstacle by conferring metabolic stability and membrane permeability, and the compound has been described in the literature as orally active and blood-brain-barrier permeable (PMID 25649658, doi:10.3233/JAD-142814). Whether the second obstacle has been cleared is the central question on this page, and the honest answer is that it has not.\n\nHere is the critical fact, and it belongs at the front of the page rather than in a footnote. The single most-cited paper establishing Dihexa's proposed mechanism — reporting that it binds hepatocyte growth factor with high affinity, induces c-Met phosphorylation, and produces hippocampal spinogenesis and synaptogenesis, with its procognitive effect blocked by an HGF antagonist — was published in The Journal of Pharmacology and Experimental Therapeutics in 2014 and **retracted by that journal in April 2025** (retraction notice doi:10.1016/j.jpet.2025.103567, PubMed article type \"Retraction Notice\"; the original is now flagged in PubMed as a Retracted Publication). A retraction means the published record no longer stands behind those findings. They cannot be cited as support, and this page does not cite them as support.\n\nThe consequences ripple outward, because that paper was foundational. Two widely read reviews that shaped how this compound is described — one in the Journal of Alzheimer's Disease and one in Progress in Neurobiology — were published in 2014 and 2015, predate the retraction, and cite the now-retracted work as the mechanistic basis for their claims. Anyone reading those reviews today is reading a mechanism account built in part on a retracted foundation. That is not a criticism of the reviews, which were written in good faith with the record as it then stood; it is a statement about what a reader in 2026 should know.\n\nA second disclosure belongs alongside the first. The investigators behind the retracted paper and both of those reviews listed affiliation with M3 Biotechnology, Inc., a company developing this compound class commercially. Commercial affiliation does not make research wrong, and declaring it is normal practice. But when the great majority of the favourable literature on a compound originates from a single group with a financial interest in it, and the group's central mechanistic paper has since been retracted, the appropriate response is to weight independent work far more heavily. This page does exactly that.\n\nIt is also worth recording that the mechanism was contested even within the favourable literature. One of those same reviews states plainly that there is active controversy over the identity of the receptor protein involved, with one body of work identifying it as insulin-regulated aminopeptidase and the authors' own work identifying it instead with the hepatocyte growth factor and c-Met receptor system (PMID 25455861, doi:10.1016/j.pneurobio.2014.11.004). So the receptor question was openly unsettled before the retraction, and the retraction removed the principal evidence for one of the two competing answers.\n\nA naming note. This compound appears as Dihexa, as N-hexanoic-Tyr-Ile-(6)-aminohexanoic amide, as the hexanoic-Tyr-Ile-aminohexanoic amide, and in the literature as an angiotensin IV analogue or an HGF/MET positive modulator. Its parent compound, Norleucine-1-angiotensin IV, abbreviated Nle1-AngIV, is a distinct chemical entity and search results for the two should not be conflated. The designation \"HGF/MET activator\" or \"positive modulator\" is how the most recent independent work refers to it, and is the more productive search term for current literature.\n\nThe material is supplied as a solid in a sealed glass vial, and the stated quantity refers to the mass of material in the vial. Unlike the lyophilised peptides elsewhere in this catalogue, this compound is a small lipophilic molecule rather than a conventional polypeptide, which changes the practical handling questions: solubility in aqueous buffer is the first thing a receiving laboratory should establish rather than assume, and the solvent used will depend on the assay. Amino Based publishes no product-specific stability study for this material, so no shelf-life, solution-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "What Survives the Retraction: Independent Work and a Defensible Reagent Use",
+    "researchFocusDescription": "A retraction does not establish that a compound is inert. It removes specific findings from the record and obliges a reader to ask what is left. In this case something is left, it is more modest than the marketing around this compound suggests, and it is more interesting for being independent.\n\nThe most useful recent evidence comes from a group with no connection to the original developers. Investigators at Rowan University, using a closed-head midline impact model of repeated mild traumatic brain injury, reported that an HGF/MET positive modulator dose-dependently rescued working memory deficits following injury (PMID 42825082, doi:10.1177/2689288X251392851). Two features make this valuable. The design is dose-dependent rather than single-dose, which is a considerably stronger form of evidence because a graded response is harder to produce by accident. And the authors are independent of the commercial developer and of Washington State University, so the finding constitutes a genuine external observation rather than a continuation of one group's programme. The authors are also measured about what it means, describing HGF/MET as a potential pharmacological target and noting that no approved drug exists for mild traumatic brain injury.\n\nA second independent line concerns sensory hair cells. Work on the larval zebrafish lateral line — a system whose hair cells are homologous to mammalian inner ear hair cells — reported that Dihexa protected hair cells against the ototoxic aminoglycosides neomycin and gentamicin, with a concentration of 1 micromolar conferring optimal protection (PMID 25674052, doi:10.3389/fncel.2015.00003). The mechanistic controls in that study are worth describing because they are well designed. Protection was attenuated by co-treatment with an HGF antagonist, and partially attenuated by inhibitors of the downstream targets Akt, TOR and MEK, both of which implicate HGF signalling. Pretreatment did not change the amount of fluorescently tagged gentamicin entering hair cells, which rules out the simplest alternative explanation — that the compound merely blocks the toxin's entry — and points instead to an intracellular event. The investigators also found that adding an amino group at the N-terminus attenuated protection, indicating that even small structural substitutions substantially alter activity. That study included M3 Biotechnology personnel among its authors, so it is not fully arm's-length, but its design addresses the obvious confounds directly.\n\nThe most defensible use of this compound, and the one least dependent on any contested claim, is as a laboratory reagent. A published protocol for differentiating human pluripotent stem cells into hepatocyte-like cells uses Dihexa specifically as a hepatocyte growth factor agonist, replacing conventional recombinant growth factors in a small-molecule-driven differentiation route (PMID 27532814, doi:10.1002/cpsc.13). That work comes from the University of Oslo and is entirely independent of the compound's developers. It is also a different kind of evidence: it does not assert a therapeutic effect at all. It reports that the compound reproducibly does a defined job in a cell-culture protocol, which is precisely what a research reagent is supposed to do, and it implies a functional interaction with the HGF/c-Met axis in a system where the readout is unambiguous cell differentiation rather than animal behaviour.\n\nSet against that, the limitations are substantial and should be stated without softening. There are no completed human trials demonstrating cognitive benefit. The headline synaptogenesis and procognitive findings that made this compound notable have been retracted. Much of the remaining favourable literature originates with investigators holding a commercial interest. The receptor identity was disputed before the retraction and is less settled after it. The independent animal work, while encouraging, consists of a small number of studies in injury and toxicity models rather than in the neurodegenerative indications the compound became known for. And the zebrafish result, though mechanistically careful, concerns protection of hair cells from a specific class of antibiotic — a long way from the claims commonly attached to this molecule.\n\nFor a laboratory, this profile suggests a particular and fairly narrow set of uses. As a small-molecule HGF/c-Met pathway tool in cell culture, it has independent published precedent and a defined function. As a probe in injury models where HGF/MET signalling is upregulated, there is now one independent dose-dependent result to build on or attempt to replicate. As a validated procognitive agent, it should not be treated as established, because the evidence that made that case has been withdrawn from the literature. Replication is the obvious scientific opportunity here: a compound whose central mechanism paper has been retracted, but which independent groups continue to find active in defined systems, is an unusually clear candidate for careful independent re-examination.",
+    "qualityPurityTitle": "Analytical Verification for a Modified Small Molecule, Not a Peptide",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThe analytical questions for this compound differ from those for the peptides elsewhere in this catalogue, and applying peptide expectations to it produces the wrong checks.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 504.7 g/mol, with the molecular formula C27H44N4O5 and CAS registry number 1401708-83-5 (PubChem CID 129010512). Because this is a small molecule with a defined covalent structure rather than a sequence, nuclear magnetic resonance spectroscopy is the appropriate confirmatory technique and is the one to request. NMR establishes the actual connectivity — that the hexanoic chain is attached at the intended position and the aminohexanoic amide at the other — in a way that mass alone cannot, since isomers would share both the formula and the mass.\n\nThat isomer point is not theoretical for this molecule. The zebrafish work found that adding a single amino group at the N-terminus substantially attenuated activity, which tells you directly that this structure has little tolerance for substitution. A preparation containing a positional variant or an incompletely modified intermediate could pass a mass-only identity check while behaving differently in an assay.\n\nPurity assessment by reverse-phase chromatography is appropriate, but the impurity profile to expect is a synthetic-organic one — unreacted intermediates, partially acylated species, residual coupling reagents and solvents — rather than the deletion and oxidation sequences that dominate peptide impurity discussions. Residual solvent content is a legitimate question for a compound made this way and is not addressed by a chromatographic purity figure alone.\n\nStereochemistry deserves explicit attention. The molecule incorporates tyrosine and isoleucine residues, and isoleucine in particular has two stereocentres. Stereoisomers are identical in formula and mass and are not distinguished by routine mass spectrometry. Where configuration matters, chiral analysis or an explicit supplier statement is required, and an ordinary certificate will not address it.\n\nSolubility is a practical verification question rather than a purity one, and it is worth raising because of how this compound is often mishandled. It is markedly lipophilic by design. A laboratory that reconstitutes it the way it would reconstitute a lyophilised peptide may obtain an incompletely dissolved preparation and an uninterpretable result. Solubility behaviour should be established empirically before an assay rather than assumed from experience with the rest of this catalogue.\n\nLyophilised or solid mass is also not necessarily active compound: a vial labelled 10 mg may include residual solvent and water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Regulatory Status and a Retracted Evidence Base",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nDihexa is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. There is no completed clinical trial demonstrating cognitive benefit in humans.\n\nOne point requires particular emphasis because of how this compound is marketed. The study that established its reputation — reporting synaptogenesis, spinogenesis and procognitive effects mediated through hepatocyte growth factor and c-Met — was retracted by the publishing journal in April 2025. Claims about this compound's effects on synapse formation, memory consolidation or cognitive function that trace back to that work are claims resting on a retracted paper. A substantial amount of material circulating about this molecule was written before the retraction and has not been updated. Anyone evaluating this compound should check the current status of the sources they are relying on.\n\nIt should also be noted that much of the favourable literature was produced by investigators affiliated with a company developing the compound commercially, and that the identity of the receptor through which it acts was openly disputed in that same literature.\n\nNone of this establishes that the compound is inactive — independent groups have reported effects in defined systems, as set out above. It establishes that the mechanistic and procognitive claims commonly attached to it are not currently supported by the published record in the way those claims imply. Nothing on this page suggests that this material is suitable for addressing Alzheimer's disease, traumatic brain injury, hearing loss, cognitive decline or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is Dihexa?",
+        "answer": "Dihexa is N-hexanoic-tyrosine-isoleucine-(6)-aminohexanoic amide, a small lipophilic molecule derived from the angiotensin IV analogue Norleucine-1-angiotensin IV. Verified identifiers are molecular formula C27H44N4O5, molecular weight approximately 504.7 g/mol, CAS 1401708-83-5, PubChem CID 129010512. Despite being commonly sold alongside peptides, it is chemically closer to a conventional small-molecule drug candidate."
+      },
+      {
+        "question": "Was a major Dihexa study retracted?",
+        "answer": "Yes. The 2014 paper in The Journal of Pharmacology and Experimental Therapeutics reporting that Dihexa binds hepatocyte growth factor and produces synaptogenesis and procognitive effects was retracted by that journal in April 2025. The original record is flagged in PubMed as a Retracted Publication and the retraction notice is indexed separately. Those findings can no longer be cited as support, and this page does not rely on them."
+      },
+      {
+        "question": "Does the retraction mean Dihexa does nothing?",
+        "answer": "No. A retraction removes specific findings from the published record; it does not demonstrate that a compound is inert. Independent groups have since reported activity in defined systems, including a dose-dependent rescue of working memory deficits in a repeated mild traumatic brain injury model and protection of zebrafish lateral line hair cells from aminoglycoside toxicity. What the retraction removes is the principal evidence for the synaptogenesis and procognitive claims specifically."
+      },
+      {
+        "question": "What is the strongest independent evidence?",
+        "answer": "Two lines. Investigators at Rowan University reported that an HGF/MET positive modulator dose-dependently rescued working memory deficits after repeated mild traumatic brain injury — a dose-dependent design from a group unconnected to the original developers. Separately, a University of Oslo protocol uses Dihexa purely as a hepatocyte growth factor agonist reagent to differentiate stem cells into hepatocyte-like cells, which is independent evidence that it reproducibly performs a defined function in cell culture."
+      },
+      {
+        "question": "Why does commercial affiliation matter here?",
+        "answer": "Because of how concentrated the literature is. The retracted paper and the two most-cited reviews describing this compound were authored by investigators listing affiliation with M3 Biotechnology, Inc., a company developing this compound class. Commercial affiliation does not make research wrong and declaring it is normal practice. But when most favourable literature on a compound comes from one group with a financial interest, and that group’s central mechanistic paper has been retracted, independent work deserves disproportionate weight."
+      },
+      {
+        "question": "What is the proposed mechanism, and is it settled?",
+        "answer": "The proposed mechanism is positive modulation of hepatocyte growth factor signalling through the c-Met receptor. It is not settled. The receptor identity was openly disputed in the literature before the retraction, with one body of work identifying the relevant angiotensin IV binding site as insulin-regulated aminopeptidase and another identifying it with the HGF/c-Met system. The retraction removed the principal evidence for the second position."
+      },
+      {
+        "question": "Is Dihexa a peptide?",
+        "answer": "Not in the ordinary sense, and this matters practically. It is built around two residues, tyrosine and isoleucine, but both termini are modified with six-carbon chains, producing a compact and markedly lipophilic molecule of about 505 g/mol. A laboratory that reconstitutes it as it would a lyophilised peptide may end up with an incompletely dissolved preparation. Solubility should be established empirically rather than assumed."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "Mass spectrometric identity against approximately 504.7 g/mol, and — more importantly than for a peptide — nuclear magnetic resonance confirmation of structure, because isomers would share the formula and mass while differing in connectivity. Expect a synthetic-organic impurity profile of unreacted intermediates, partially acylated species and residual solvents, rather than the deletion sequences that dominate peptide discussions. Residual solvent content is a legitimate separate question."
+      },
+      {
+        "question": "Does stereochemistry need checking?",
+        "answer": "Yes, where it matters to the experiment. The molecule incorporates isoleucine, which has two stereocentres. Stereoisomers share formula and mass and are not distinguished by routine mass spectrometry. Chiral analysis or an explicit supplier statement of configuration is required; an ordinary purity certificate will not address it. The published finding that even adding a single amino group substantially attenuated activity suggests this structure tolerates variation poorly."
+      },
+      {
+        "question": "Is Dihexa approved for any use?",
+        "answer": "No. It is not approved by the FDA or any other regulatory authority, for any indication, in any jurisdiction. There is no approved labelling, no established dosing, no post-marketing surveillance, and no completed clinical trial demonstrating cognitive benefit in humans. It is supplied for laboratory research use only and is not for human or veterinary use."
+      }
+    ]
+  }
+}

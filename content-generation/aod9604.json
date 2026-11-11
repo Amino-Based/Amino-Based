@@ -1,0 +1,231 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "aod9604",
+    "qc": {
+      "main_content_words": 2850,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Reached clinical development for obesity and was DISCONTINUED. No completed trial result for this compound appears in the PubMed-indexed peer-reviewed literature.",
+    "variants_from_csv": [
+      {
+        "variant": "5mg",
+        "price_usd": "54.99"
+      },
+      {
+        "variant": "10mg",
+        "price_usd": "65.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "5mg",
+        "source_file": "AOD9604 5mg.png",
+        "upload_as": "amino-aod9604-5mg.png"
+      },
+      {
+        "variant": "10mg",
+        "source_file": "AOD9604 10mg.png",
+        "upload_as": "amino-aod9604-10mg.png"
+      }
+    ],
+    "identity_distinction": "AOD9604 is C78H123N23O23S2, MW 1815.1 (CID 71300630). HGH fragment 176-191, sold here as \"H Frag\", is C80H127N23O24S2, MW 1859.1 (CID 172966176). These are DIFFERENT molecules differing by about 44 g/mol; AOD9604 carries a modification relative to the plain fragment. A bulk lookup for the plain fragment initially FELL BACK to the AOD9604 record, which was caught and corrected. Do not conflate the two.",
+    "evidence_gap_flag": "IMPORTANT: PubMed-indexed reviews from 2006 and 2007 list AOD9604 as a compound then UNDERGOING clinical development for obesity. No publication reporting the outcome of a completed AOD9604 efficacy trial was found in the indexed literature. The 2006 review states that of the obesity compounds then in development, only rimonabant had got as far as completing phase III. Secondary and vendor sources report that a 24-week phase IIb trial failed to show significant weight loss versus placebo at any dose and that the programme was terminated in 2007; those reports are NOT primary sources and the figures they give are inconsistent with one another, so they are described on the page as unverified secondary reports rather than stated as fact.",
+    "references": [
+      "PubChem CID 71300630 (PUG REST, verified 2026-11-09): C78H123N23O23S2, MW 1815.1, CAS 221231-10-3.",
+      "PMID 16625817 - Curr Opin Investig Drugs 7(4):312-8 (2006) - review of obesity drugs in clinical development; lists \"a human growth hormone fragment (AOD-9604) that increases adipose tissue breakdown\" among compounds then undergoing clinical development, and states that of these, ONLY RIMONABANT had got as far as completing phase III clinical trials. No DOI indexed.",
+      "PMID 17971763 - Postepy Hig Med Dosw 61:612-26 (2007), Polish language - review of antiobesity drugs; lists human growth hormone fragment (AOD9604) among new antiobesity drugs then under clinical development. No DOI indexed."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Outcome of any completed AOD9604 efficacy trial - no such publication found in the PubMed-indexed literature",
+      "The specific nature of the modification distinguishing AOD9604 from the plain hGH 176-191 fragment for any given lot - the two differ by about 44 g/mol and must be distinguished analytically",
+      "Disulfide bridge integrity - the formula contains two sulfur atoms; the reduced form is mass-shifted by only 2 units"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a verification component. The searcher wants to know what AOD9604 is, whether it works, and how it differs from the plain hGH fragment.",
+    "primary_keyword": "AOD9604",
+    "secondary_keywords": [
+      "AOD-9604",
+      "hGH fragment",
+      "AOD9604 molecular weight",
+      "AOD9604 CAS 221231-10-3",
+      "AOD9604 vs HGH Frag 176-191",
+      "growth hormone fragment fat loss"
+    ],
+    "long_tail_keywords": [
+      "what is AOD9604",
+      "does AOD9604 work for weight loss",
+      "AOD9604 clinical trial results",
+      "AOD9604 vs hGH fragment 176-191 difference",
+      "AOD9604 molecular formula C78H123N23O23S2",
+      "was AOD9604 discontinued",
+      "is AOD9604 FDA approved",
+      "AOD9604 phase 2b trial",
+      "AOD9604 1815 molecular weight",
+      "AOD9604 certificate of analysis"
+    ],
+    "semantic_terms": [
+      "human growth hormone",
+      "somatropin",
+      "lipolysis",
+      "adipose tissue breakdown",
+      "C-terminal fragment",
+      "structure-activity relationship",
+      "phase IIb",
+      "placebo-controlled",
+      "evidence hierarchy",
+      "publication bias",
+      "disulfide bridge",
+      "intact mass spectrometry"
+    ],
+    "name_variations": [
+      "AOD9604",
+      "AOD-9604",
+      "AOD 9604",
+      "hGH fragment 176-191 is a DIFFERENT molecule (MW approx 1859.1)",
+      "somatropin is the full 191-residue hormone"
+    ],
+    "informational_queries": [
+      "what is AOD9604",
+      "does AOD9604 work",
+      "AOD9604 trial results",
+      "AOD9604 vs H Frag",
+      "is AOD9604 approved"
+    ],
+    "commercial_queries": [
+      "buy AOD9604",
+      "AOD9604 5mg",
+      "AOD9604 10mg",
+      "AOD9604 COA"
+    ],
+    "cannibalisation_check": "Owns AOD9604 and the modified-fragment identity intent. /product/h-frag owns the plain hGH 176-191 fragment and states the distinction from the other side. GH-axis intent belongs to /product/sermorelin, /product/ipamorelin and /product/tesamorelin; weight-management evidence belongs to /product/semaglutide.",
+    "h1": "Driven by CMS name field; renders as \"AOD9604\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/h-frag",
+        "anchor": "H Frag",
+        "rationale": "Essential disambiguation: the plain hGH 176-191 fragment, a different molecule about 44 g/mol heavier. Stated from both sides.",
+        "verified": true
+      },
+      {
+        "route": "/product/semaglutide",
+        "anchor": "Semaglutide",
+        "rationale": "Where the weight-management trial evidence in this catalogue actually sits; direct contrast with a discontinued candidate.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "Worked example of a fragment that does retain parent-hormone activity; directly relevant to the structure-activity question raised here.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "AOD9604 | Modified hGH Fragment, MW 1815.1 | Amino Based",
+    "seoDescription": "AOD9604: C78H123N23O23S2, MW 1815.1, CAS 221231-10-3. Reached clinical development for obesity and was discontinued. Research use only.",
+    "description": "AOD9604 is a modified fragment derived from the C-terminal region of human growth hormone. Its molecular formula is C78H123N23O23S2, with a molecular weight of approximately 1815.1 g/mol (PubChem CID 71300630, CAS 221231-10-3). It is a distinct molecule from the plain hGH 176-191 fragment, which differs by roughly 44 g/mol and is sold separately in this catalogue. AOD9604 entered clinical development as an anti-obesity candidate and was discontinued; no completed efficacy trial result for it appears in the PubMed-indexed literature. It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "AOD9604: A Fragment That Reached the Clinic and Did Not Emerge",
+    "productDetailsDescription": "AOD9604 is a peptide derived from the C-terminal portion of human growth hormone, modified relative to the plain fragment. Its verified identifiers are molecular formula C78H123N23O23S2, molecular weight approximately 1815.1 g/mol, and CAS registry number 221231-10-3, recorded under PubChem CID 71300630. The two sulfur atoms in that formula indicate a pair of cysteine residues, which matters for verification and is addressed below.\n\nThe distinction between this compound and the plain fragment is the first thing to establish, because it is routinely collapsed and because it was a live error in compiling this catalogue. AOD9604 is C78H123N23O23S2 at approximately 1815.1 g/mol. The plain human growth hormone fragment 176-191, sold in this catalogue as \"H Frag\", is C80H127N23O24S2 at approximately 1859.1 g/mol, recorded under PubChem CID 172966176. The difference is about 44 g/mol — the two molecules have the same nitrogen and sulfur counts but differ by two carbons, four hydrogens and one oxygen. These are different chemical entities, and the honest note is that during verification of this catalogue a bulk database lookup for the plain fragment initially fell back to the AOD9604 record. That error was caught and corrected, but its occurrence indicates how easily the two are conflated — including by automated tools that supplier datasheets are often built from.\n\nThe pharmacological rationale behind the compound is worth understanding because it is more specific than the growth-hormone framing suggests. Growth hormone has a broad range of effects, including effects on glucose metabolism and on tissue growth that make it unsuitable as a weight-loss agent. The observation underlying this compound class was that the lipolytic activity of growth hormone — its promotion of fat breakdown — appeared to reside in a discrete portion of the molecule, and that this portion might be separable from the rest. A fragment retaining the fat-metabolism effect while shedding the growth-promoting and glucose effects would be a more targeted agent than the whole hormone. A 2006 review describes the compound in exactly these terms, listing it as \"a human growth hormone fragment (AOD-9604) that increases adipose tissue breakdown\" among compounds then undergoing clinical development for obesity (PMID 16625817).\n\nThat is a coherent and legitimate drug-development hypothesis, and it is why this compound was taken into human trials by a pharmaceutical developer rather than remaining a laboratory curiosity. What happened next is the part this page has to handle carefully.\n\nHere is what the indexed literature actually establishes. Two PubMed-indexed reviews, from 2006 and 2007, list AOD9604 among anti-obesity compounds then under clinical development (PMID 16625817; PMID 17971763). The 2006 review additionally states that of the obesity compounds it surveyed, only rimonabant had got as far as completing phase III clinical trials — which places AOD9604 short of that at the time. Searching the indexed literature for a publication reporting the outcome of a completed AOD9604 efficacy trial returns nothing. That absence is itself the most informative verifiable fact available about this compound: it entered clinical development roughly two decades ago, it is not approved anywhere, and no completed efficacy trial result for it has been published in the peer-reviewed indexed literature.\n\nSecondary and vendor sources report that a 24-week phase IIb trial failed to show statistically significant weight loss versus placebo at any dose tested, with a sample in the region of 500 participants, and that the developer terminated the obesity programme in 2007. Those accounts are consistent with one another in outline and with the compound's absence from the market and from the literature. But they are not primary sources, they disagree among themselves on the participant number and the doses, and no peer-reviewed publication of that trial was located. They are therefore recorded here as unverified secondary reports rather than asserted as fact. What can be stated without qualification is that the compound entered development, is approved nowhere, and has no published positive efficacy result.\n\nA naming note. This compound appears as AOD9604, AOD-9604, AOD 9604, and sometimes loosely as \"hGH fragment\" — which is the term that causes the conflation described above. The plain fragment hGH 176-191, also written HGH Frag 176-191, is a different molecule sold separately here. Growth hormone itself, somatropin, is a 191-residue protein and bears no useful resemblance to either fragment in size or in regulatory status.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 5 mg and 10 mg presentations.",
+    "researchFocusTitle": "A Discontinued Development Programme, and What That Implies",
+    "researchFocusDescription": "The research assessment for this compound is unusual because the most important finding is an absence. Rather than weighing conflicting studies, the task is to be precise about what the published record does and does not contain, and about what can legitimately be inferred.\n\nWhat the record contains is evidence that this compound was taken seriously as a drug candidate. It appears in two independent review articles surveying the obesity drug development landscape of the mid-2000s, positioned alongside compounds that are now familiar — rimonabant, orlistat, sibutramine, the GLP-1 agonists exenatide and liraglutide, pramlintide, and PYY3-36 (PMID 16625817; PMID 17971763). Being included in that company is meaningful: it indicates that reviewers assessing the field considered AOD9604 a genuine clinical-stage candidate, not a fringe compound. The mechanistic description in those reviews is also specific rather than vague — a growth hormone fragment that increases adipose tissue breakdown.\n\nWhat the record does not contain is any published outcome. There is no indexed publication reporting results from a completed AOD9604 efficacy trial. For a compound that entered clinical development around two decades ago, that is a substantial and informative silence, and it admits of a limited number of explanations. Trials with positive results in a commercially attractive indication such as obesity are, as a rule, published — they support regulatory filings, they attract investment, and they establish priority. A development programme that generated no published efficacy outcome and resulted in no approved product is, on the ordinary balance of probabilities, a programme that did not produce the result its sponsor wanted.\n\nThat inference is consistent with what secondary sources report: a 24-week phase IIb trial that failed to separate from placebo on weight loss at any dose, and termination of the obesity programme in 2007. Those sources are not primary, they conflict on details such as the participant count, and the trial they describe does not appear in the indexed literature. So the claim is presented here as what it is — a consistent secondary account that cannot be verified from primary sources — rather than as an established fact. It is worth stating that this uncertainty cuts in one direction only: the absence of a published positive result is not uncertain.\n\nThere is a specific and recurring problem in how this compound is marketed that follows from all of the above, and it is worth naming because a researcher should recognise it. Material promoting AOD9604 commonly cites an earlier, smaller, shorter trial reported to have shown a modest weight-loss advantage over placebo. Whether or not that earlier result is accurately reported, the methodological point is the one that matters: a small early-phase signal followed by a larger, longer, better-powered trial that does not confirm it is one of the most common patterns in drug development, and it is precisely the pattern that larger trials exist to detect. Citing the small positive study while omitting the larger non-confirmatory one inverts the evidence hierarchy. Where both exist, the larger and longer trial is the more informative, and a compound's development history — not the most favourable study within it — is the relevant evidence.\n\nThe limitations therefore are not that the evidence is contested but that the efficacy evidence is effectively absent from the peer-reviewed record while the development history points to discontinuation. There is no approved product anywhere. There is no published trial demonstrating efficacy for any indication. The mechanistic hypothesis — separable lipolytic activity within the growth hormone molecule — remains a reasonable hypothesis rather than a demonstrated therapeutic principle.\n\nFor a laboratory, the compound retains legitimate interest precisely as a structure-activity question rather than as a therapeutic candidate. Whether a defined fragment of a large protein hormone can reproduce one of that hormone's activities while shedding the others is a real and general question in peptide pharmacology, and this catalogue contains several worked examples pointing in different directions — the KPV tripeptide retains an anti-inflammatory effect from a hormone many times its size, while other fragments do not reproduce their parents' effects. AOD9604 and the plain hGH 176-191 fragment, held side by side with a defined 44 g/mol structural difference between them, constitute a usable comparison pair for exactly that kind of work. The precondition, as always, is being certain which of the two is in the vial.",
+    "qualityPurityTitle": "Analytical Verification: Separating Two Fragments 44 Daltons Apart",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 1815.1 g/mol, with molecular formula C78H123N23O23S2 and CAS registry number 221231-10-3 (PubChem CID 71300630).\n\nThe specific check that matters most here is discrimination from the plain fragment, and unlike some cases in this catalogue this one is analytically straightforward — which makes omitting it harder to excuse. The plain hGH 176-191 fragment is C80H127N23O24S2 at approximately 1859.1 g/mol. The difference from AOD9604 is about 44 g/mol, roughly 2.4 per cent of the molecular weight. That is a comfortable margin: ordinary intact mass spectrometry resolves a 44-dalton difference at this mass without difficulty, and a certificate reporting an observed mass to within a few daltons settles which compound is present. This is therefore a case where a routine measurement is decisive, and the only reason to be left uncertain is a certificate that does not report the observed mass at all.\n\nThat point is worth pressing because the conflation of these two compounds is demonstrably common. During verification of this catalogue, a bulk database query for the plain fragment returned the AOD9604 record instead. If automated lookups make that substitution, supplier datasheets assembled from automated lookups will reproduce it, and the resulting document may name one compound while describing the other's identifiers. Checking the quoted molecular weight against the two values above is a quick way to detect it.\n\nDisulfide integrity is the second check. The molecular formula contains two sulfur atoms, indicating two cysteine residues and therefore the possibility of a disulfide bridge. Reduction of a disulfide adds two hydrogen atoms, so the reduced form is heavier by only 2 mass units out of 1,815 — about 0.1 per cent, well inside the tolerance of a loosely specified intact-mass check. Where the bridged form is the intended entity, confirming it requires accurate mass with the 2-unit distinction addressed, a free-thiol assay, or chromatographic separation of reduced from oxidised forms. The companion question is intermolecular dimerisation: a free thiol on one molecule can pair with another, producing dimers that appear at roughly twice the monomer mass and are not detected by a purity figure reported without reference to the high-mass region.\n\nSequence confirmation by tandem mass spectrometry fragmentation is worth requesting for a peptide of this length. At around 16 residues, a single-residue substitution produces a small proportional mass shift, and the practical concern is not an exotic one: the two closely related fragments described above differ structurally in a defined way, and sequence-level data is what distinguishes a correct AOD9604 preparation from a plain fragment that has been mislabelled or from a partially modified intermediate.\n\nPurity assessment by reverse-phase chromatography is appropriate, and the impurity classes to expect are deletion sequences, truncated chains, the reduced form, dimers, and incompletely modified species. Because the distinction between the two marketed fragments is a structural modification, incomplete modification is a specifically plausible impurity for this product and one that would place plain-fragment material inside an AOD9604 preparation.\n\nThe salt-form question applies as usual, and lyophilised mass is not peptide content: a vial labelled 5 mg or 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Unapproved, Discontinued, and Without Published Efficacy",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nAOD9604 is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nThe development history requires a precise statement, because it is the most important fact about this compound and it is routinely misrepresented. PubMed-indexed reviews from 2006 and 2007 list AOD9604 among anti-obesity compounds then undergoing clinical development, and the 2006 review notes that of the compounds it surveyed only rimonabant had reached completion of phase III. No publication reporting the outcome of a completed AOD9604 efficacy trial was found in the indexed literature. The compound entered clinical development approximately two decades ago, is approved nowhere, and has no published trial demonstrating efficacy for any indication.\n\nSecondary and vendor sources report that a 24-week phase IIb trial failed to show statistically significant weight loss versus placebo at any dose and that the obesity programme was terminated in 2007. Those accounts are consistent in outline but are not primary sources, disagree among themselves on participant numbers and doses, and correspond to no publication located in the indexed literature. They are recorded here as unverified secondary reports. The absence of any published positive efficacy result, by contrast, is not in doubt.\n\nA specific caution about marketing claims follows. Promotional material for this compound commonly cites a small, short early trial reported to have shown a modest weight-loss advantage, without reference to the larger and longer trial that reportedly did not confirm it. Where a small early signal is followed by a better-powered trial that fails to replicate it, the larger trial is the more informative result — detecting exactly that situation is why larger trials are conducted. Claims resting on the smaller study alone invert the evidence hierarchy.\n\nNothing on this page suggests that this material is suitable for addressing obesity, weight loss, body composition, fat metabolism or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is AOD9604?",
+        "answer": "AOD9604 is a modified peptide derived from the C-terminal region of human growth hormone. Verified identifiers are molecular formula C78H123N23O23S2, molecular weight approximately 1815.1 g/mol, CAS 221231-10-3, PubChem CID 71300630. The two sulfur atoms indicate a pair of cysteine residues and therefore a possible disulfide bridge, which matters for verification."
+      },
+      {
+        "question": "How does it differ from HGH Frag 176-191?",
+        "answer": "They are different molecules about 44 g/mol apart. AOD9604 is C78H123N23O23S2 at approximately 1815.1 g/mol; the plain hGH 176-191 fragment, sold here as H Frag, is C80H127N23O24S2 at approximately 1859.1 g/mol (CID 172966176). Same nitrogen and sulfur counts, differing by two carbons, four hydrogens and one oxygen. AOD9604 carries a modification relative to the plain fragment."
+      },
+      {
+        "question": "Why is that distinction easy to get wrong?",
+        "answer": "Because automated lookups conflate them. During verification of this catalogue, a bulk database query for the plain fragment returned the AOD9604 record instead — an error that was caught and corrected. If automated tools make that substitution, supplier datasheets built from them reproduce it, so a document may name one compound while quoting the other’s identifiers. Checking the quoted molecular weight against 1815.1 and 1859.1 detects it quickly."
+      },
+      {
+        "question": "What was the development rationale?",
+        "answer": "That growth hormone’s lipolytic activity might reside in a discrete portion of the molecule, separable from its growth-promoting and glucose effects. A fragment keeping the fat-breakdown effect while shedding the rest would be a more targeted agent than the whole hormone. A 2006 review describes it precisely that way — a human growth hormone fragment that increases adipose tissue breakdown — and lists it among obesity compounds then in clinical development."
+      },
+      {
+        "question": "Did AOD9604 complete a successful trial?",
+        "answer": "No publication reporting the outcome of a completed AOD9604 efficacy trial was found in the PubMed-indexed literature. It appears in 2006 and 2007 reviews as a compound then undergoing clinical development, with the 2006 review noting that only rimonabant among those surveyed had reached completion of phase III. It entered development roughly two decades ago, is approved nowhere, and has no published positive efficacy result."
+      },
+      {
+        "question": "Was the programme discontinued?",
+        "answer": "Secondary and vendor sources report that a 24-week phase IIb trial failed to show statistically significant weight loss versus placebo at any dose, with roughly 500 participants, and that the obesity programme was terminated in 2007. Those accounts are consistent in outline and with the compound’s absence from the market, but they are not primary sources, they disagree on participant numbers and doses, and no corresponding publication was located."
+      },
+      {
+        "question": "What does the publication silence imply?",
+        "answer": "Trials with positive results in a commercially attractive indication like obesity are generally published — they support regulatory filings, attract investment and establish priority. A development programme that generated no published efficacy outcome and no approved product is, on the ordinary balance of probabilities, one that did not produce the result its sponsor wanted. The uncertainty here is about details, not about the absence of a positive result."
+      },
+      {
+        "question": "Why is the marketing of this compound misleading?",
+        "answer": "Because it typically cites a small, short early trial reported to show a modest weight-loss advantage while omitting the larger, longer trial that reportedly did not confirm it. A small early signal followed by a better-powered trial that fails to replicate it is among the most common patterns in drug development — detecting exactly that is why larger trials are run. Citing only the small positive study inverts the evidence hierarchy."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "An observed mass, reported numerically — because a 44-dalton difference at this mass is comfortably resolved by ordinary intact mass spectrometry, so the measurement that distinguishes AOD9604 from the plain fragment is routine. Also disulfide status (the reduced form is only 2 units heavier, within a loose check’s tolerance), dimer content, and ideally sequence confirmation by tandem MS fragmentation."
+      },
+      {
+        "question": "Is there a legitimate research use?",
+        "answer": "Yes, as a structure-activity question rather than a therapeutic candidate. Whether a defined fragment of a large protein hormone can reproduce one activity while shedding others is a real general question in peptide pharmacology, and this catalogue holds examples pointing both ways — KPV retains an anti-inflammatory effect from a much larger hormone. AOD9604 and the plain fragment, with a defined 44 g/mol difference, make a usable comparison pair."
+      }
+    ]
+  }
+}

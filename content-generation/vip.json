@@ -1,0 +1,227 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "vip",
+    "qc": {
+      "main_content_words": 3043,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in the United States. Received FDA Fast Track designation in 2020 for COVID-19 respiratory distress - a review-speed designation, NOT an approval. An emergency use authorisation request was submitted; no approval followed. The definitive NIH-funded randomised trial was STOPPED FOR FUTILITY.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "82.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "VIP 10mg.png",
+        "upload_as": "amino-vip-10mg.png"
+      }
+    ],
+    "key_negative_trial": "TESICO (NCT04843761), published in Lancet Respiratory Medicine 2023, is a definitive independent negative trial. NIH-funded, 28 US sites, 473 enrolled, 461 in the modified intention-to-treat aviptadil comparison. Primary 90-day ordinal outcome OR 1.11 (95% CI 0.80-1.55; p = 0.54). Day-90 mortality 38% aviptadil versus 36% placebo (HR 1.04, 95% CI 0.77-1.41; p = 0.78). Primary safety outcome 63% versus 56% (OR 1.40, 95% CI 0.94-2.08; p = 0.10) - numerically worse, not significant. The independent data and safety monitoring board recommended STOPPING the aviptadil trial on 25 May 2022 FOR FUTILITY.",
+    "references": [
+      "PubChem CID 16132300 (PUG REST, verified 2026-11-09, matched name \"aviptadil\"): C147H237N43O43S, MW 3326.8, CAS 40077-57-4.",
+      "PMID 37348524 doi:10.1016/S2213-2600(23)00147-9 - Lancet Respir Med 11(9):791-803 (2023) - TESICO: randomised, placebo-controlled trial of intravenous aviptadil and remdesivir in COVID-19-associated hypoxaemic respiratory failure, 28 US sites, NIH-funded. 473 enrolled; 461 in the modified intention-to-treat aviptadil analysis (231 aviptadil, 230 placebo). Aviptadil given as a daily 12-h infusion for 3 days targeting 600, 1200 and 1800 pmol/kg on days 1-3. 431 of 461 (94%) were in intensive care at baseline. Primary 90-day six-category ordinal outcome: OR 1.11 (95% CI 0.80-1.55; p = 0.54). Day-90 mortality 38% versus 36% (HR 1.04, 95% CI 0.77-1.41; p = 0.78). Primary safety outcome 146/231 (63%) versus 129/230 (56%) (OR 1.40, 95% CI 0.94-2.08; p = 0.10). DSMB recommended stopping the aviptadil trial on 25 May 2022 FOR FUTILITY. Conclusion: aviptadil did not significantly improve clinical outcomes up to day 90.",
+      "FDA Fast Track designation announced by the sponsors in June 2020 for RLF-100 (aviptadil) for respiratory distress in COVID-19, with an inhaled IND granted in August 2020 and an expanded access protocol; an emergency use authorisation request was submitted in 2020. Fast Track is a designation intended to speed development and review and is NOT an approval. Verified 2026-11-09 from the sponsors' own press releases; no FDA approval or authorisation for aviptadil was identified."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Whether any aviptadil product holds approval in any jurisdiction outside the United States - not confirmed here",
+      "Disulfide or free-thiol status - the formula contains one sulfur atom, indicating a single cysteine or methionine; which, and its oxidation state, is not established here",
+      "Methionine oxidation status - a single sulfur-containing residue in a 28-residue peptide is an oxidation liability and is mass-shifted by 16 units if oxidised"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a regulatory component. The searcher wants to know what VIP/aviptadil is, whether it was approved, and what the COVID-19 trial showed.",
+    "primary_keyword": "VIP",
+    "secondary_keywords": [
+      "aviptadil",
+      "vasoactive intestinal peptide",
+      "VIP molecular weight",
+      "aviptadil CAS 40077-57-4",
+      "RLF-100",
+      "Zyesami"
+    ],
+    "long_tail_keywords": [
+      "what is vasoactive intestinal peptide",
+      "is aviptadil FDA approved",
+      "aviptadil COVID trial results TESICO",
+      "VIP molecular formula C147H237N43O43S",
+      "what does FDA Fast Track designation mean",
+      "aviptadil stopped for futility",
+      "VPAC1 VPAC2 receptor",
+      "aviptadil vs placebo mortality",
+      "VIP peptide research",
+      "VIP certificate of analysis"
+    ],
+    "semantic_terms": [
+      "VPAC1",
+      "VPAC2",
+      "cyclic AMP",
+      "glucagon-secretin superfamily",
+      "PACAP",
+      "vasodilation",
+      "smooth muscle relaxation",
+      "alveolar type II cells",
+      "hypoxaemic respiratory failure",
+      "ordinal outcome",
+      "futility stop",
+      "data and safety monitoring board",
+      "Fast Track designation",
+      "emergency use authorisation",
+      "methionine oxidation",
+      "peptide mapping"
+    ],
+    "name_variations": [
+      "VIP",
+      "vasoactive intestinal peptide",
+      "vasoactive intestinal polypeptide",
+      "aviptadil",
+      "RLF-100",
+      "Zyesami",
+      "PACAP is a related but DIFFERENT compound"
+    ],
+    "informational_queries": [
+      "what is VIP peptide",
+      "is aviptadil approved",
+      "aviptadil COVID trial",
+      "what does Fast Track designation mean",
+      "VIP receptor mechanism"
+    ],
+    "commercial_queries": [
+      "buy VIP peptide",
+      "aviptadil research peptide",
+      "VIP 10mg",
+      "VIP COA"
+    ],
+    "cannibalisation_check": "Owns VIP / aviptadil and the Fast-Track-is-not-approval intent. /product/ll-37 owns host-defence peptide intent; /product/thymosin-alpha-1 owns immunomodulatory peptide intent with its own regulatory history.",
+    "h1": "Driven by CMS name field; renders as \"VIP\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/thymosin-alpha-1",
+        "anchor": "Thymosin Alpha-1",
+        "rationale": "Other immunomodulatory peptide with a documented but different regulatory history; useful contrast in evidence strength.",
+        "verified": true
+      },
+      {
+        "route": "/product/ll-37",
+        "anchor": "LL-37",
+        "rationale": "Other endogenous peptide in the catalogue with established receptor-independent biology; adjacent research intent.",
+        "verified": true
+      },
+      {
+        "route": "/product/ara-290",
+        "anchor": "ARA-290",
+        "rationale": "Other engineered peptide that reached clinical trials; direct contrast between a futility stop and a positive imaging endpoint.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "VIP (Aviptadil) | 28-Residue Vasoactive Intestinal Peptide | Amino Based",
+    "seoDescription": "VIP: aviptadil, C147H237N43O43S, MW 3326.8, CAS 40077-57-4. Its definitive trial was stopped for futility. Research use only.",
+    "description": "VIP is vasoactive intestinal peptide, a 28-residue endogenous neuropeptide; the synthetic form carries the generic name aviptadil. Its molecular formula is C147H237N43O43S, with a molecular weight of approximately 3326.8 g/mol (PubChem CID 16132300, CAS 40077-57-4). It is not approved in the United States. It received FDA Fast Track designation in 2020 for COVID-19 respiratory distress — a review-speed designation, not an approval — and the definitive NIH-funded randomised trial was subsequently stopped for futility. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "VIP: A Well-Characterised Neuropeptide, and a Cautionary Regulatory Tale",
+    "productDetailsDescription": "Vasoactive intestinal peptide is a 28-residue endogenous neuropeptide, first characterised from intestinal tissue — which is where its name comes from — and subsequently found to be widely distributed in the nervous system and in peripheral tissues including the lung. Verified identifiers are molecular formula C147H237N43O43S, molecular weight approximately 3326.8 g/mol, and CAS registry number 40077-57-4, recorded under PubChem CID 16132300 under the generic name aviptadil. The single sulfur atom in the formula indicates one sulfur-containing residue, which matters for verification.\n\nIts endogenous biology is well established and not in dispute. VIP belongs to the glucagon-secretin peptide superfamily and acts at two G-protein-coupled receptors, VPAC1 and VPAC2, which signal principally through cyclic AMP. Its physiological actions include smooth muscle relaxation, vasodilation — hence the \"vasoactive\" in its name — stimulation of secretion in several epithelia, and a range of immunomodulatory effects. In the lung it is present in high concentration and has been of interest because of its effects on pulmonary vasculature, bronchial smooth muscle and alveolar cells. A notable localisation underpinning the clinical interest is its concentration in the lung and its receptor expression on alveolar type II cells.\n\nThe compound's recent history is instructive and is the reason this page is written as it is. During the COVID-19 pandemic, aviptadil was advanced as a treatment for COVID-19-associated respiratory failure on the rationale that VIP protects alveolar cells and modulates inflammation. The developers obtained FDA Fast Track designation in June 2020, an investigational new drug authorisation for an inhaled formulation in August 2020, and an expanded access protocol, and submitted a request for emergency use authorisation in 2020.\n\nEach of those is a real regulatory step, and none of them is an approval. This distinction matters because it was widely blurred at the time and still is. Fast Track designation is a mechanism intended to speed the development and review of drugs addressing serious conditions with unmet need; it is granted on the basis of promise rather than demonstrated benefit, and it says nothing about whether a drug works. An investigational new drug authorisation permits a trial to proceed. An expanded access protocol permits use outside a trial in defined circumstances. A submitted emergency use authorisation request is a request. No FDA approval or authorisation for aviptadil was identified, and the compound is not approved in the United States.\n\nWhat happened next is set out in the research section, and it is the single most important fact about this compound: the definitive independent trial was stopped for futility.\n\nA note on the presentation. This product is supplied as a nominal 10 mg quantity. For context, the doses used in the definitive trial were expressed in picomoles per kilogram and delivered by 12-hour intravenous infusion in an intensive care setting — a mode of administration that bears no relation to a vial of powder, and one requiring continuous monitoring because VIP is a potent vasodilator. That potency is a practical point rather than a formality: a peptide whose defining pharmacological action is vasodilation is a peptide with obvious haemodynamic consequences.\n\nA naming note. This compound appears as VIP, vasoactive intestinal peptide, vasoactive intestinal polypeptide, aviptadil, and under the development code RLF-100 and the proposed trade name Zyesami. PACAP, pituitary adenylate cyclase-activating polypeptide, is a structurally related member of the same superfamily and a distinct compound that also acts at VPAC receptors. Secretin and glucagon are more distant relatives within the same superfamily and are entirely different substances.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "A Definitive Negative Trial, Stopped for Futility",
+    "researchFocusDescription": "The research position on aviptadil is unusually clear, because the question was settled by a well-designed independent trial rather than left to interpretation. That makes this one of the few compounds in this catalogue where a confident negative statement can be made about a specific indication.\n\nThe trial is TESICO, published in The Lancet Respiratory Medicine in 2023 (PMID 37348524, doi:10.1016/S2213-2600(23)00147-9). Its features deserve enumeration because they are what make the result definitive rather than suggestive. It was randomised and placebo-controlled, with matched saline placebo administered in identical volumes. It was conducted at 28 sites in the United States. It was funded by the National Institutes of Health rather than by the compound's developer — so this is independent evidence, not sponsor evidence. It enrolled 473 participants, with 461 in the modified intention-to-treat analysis for the aviptadil comparison, 231 receiving aviptadil and 230 placebo. It used a 2 × 2 factorial design allowing simultaneous evaluation of remdesivir. Randomisation was stratified by disease severity. Aviptadil was given as the developers intended — a daily 12-hour infusion for three days, targeting 600, 1200 and 1800 pmol/kg on successive days. And the population was genuinely severe: 431 of 461 participants, 94 per cent, were in an intensive care unit at baseline, with 59 per cent on high-flow nasal oxygen or non-invasive ventilation and 40 per cent on invasive mechanical ventilation.\n\nThe primary outcome was a six-category ordinal measure assessed at day 90, ranging from recovered at home off oxygen for at least 77 days through to death — a sensibly constructed endpoint capturing the full range of outcomes rather than a single threshold.\n\nThe result: the odds ratio for being in a better category of the primary endpoint for aviptadil versus placebo at day 90 was 1.11, with a 95 per cent confidence interval of 0.80 to 1.55 and p = 0.54. An odds ratio of 1.11 with an interval straddling 1 is no effect.\n\nMortality, a key secondary outcome, showed the same. Up to day 90, 86 participants in the aviptadil group and 83 in the placebo group died — cumulative percentages of 38 per cent and 36 per cent, hazard ratio 1.04, interval 0.77 to 1.41, p = 0.78. Again no difference, and the point estimate marginally favours placebo.\n\nThe safety outcome is worth reporting because it cuts against the compound rather than for it. The primary safety outcome — death, serious adverse events, organ failure, serious infection, or grade 3 or 4 adverse events up to day 5 — occurred in 146 of 231 aviptadil participants, 63 per cent, versus 129 of 230 on placebo, 56 per cent. The odds ratio was 1.40, interval 0.94 to 2.08, p = 0.10. That is not statistically significant, and it should not be overstated as harm. But it is numerically worse on the active drug, with an interval mostly above 1, in a compound whose principal pharmacological action is vasodilation given to critically ill patients. It is a signal that argues for caution rather than one that can be waved away.\n\nMost telling of all is how the trial ended. The independent data and safety monitoring board recommended stopping the aviptadil trial on 25 May 2022 **for futility**. A futility stop is a specific and consequential judgement: an independent board with access to accumulating unblinded data concluded that continuing was unlikely to demonstrate benefit, and that it was therefore not justified to keep randomising critically ill patients to the intervention. That is a stronger statement than a trial simply reporting a null result, because it reflects a prospective judgement by people who could see the data as it accrued. The authors' conclusion was plain: among patients with COVID-19-associated acute hypoxaemic respiratory failure, aviptadil did not significantly improve clinical outcomes up to day 90.\n\nSet that against the regulatory history described above — Fast Track designation, an inhaled investigational new drug authorisation, an expanded access protocol, an emergency use authorisation request, and a great deal of publicity — and the sequence is a clean illustration of a general point worth internalising. Early regulatory designations reflect promise and unmet need, not demonstrated efficacy. They are routinely reported in a way that implies endorsement, and they do not survive contact with an adequately powered independent trial if the compound does not work. Anyone evaluating a compound on the strength of a Fast Track designation is evaluating it on the wrong evidence.\n\nThree honest qualifications. First, this trial tested one indication — COVID-19-associated hypoxaemic respiratory failure — in critically ill patients, by intravenous infusion, over three days. It does not establish that VIP is biologically inert, and it does not speak to other conditions, routes or durations. Second, the underlying endogenous biology of VIP is well established and uncontroversial: it is a real neuropeptide with real receptors and real physiological actions, and none of that is called into question by a failed trial in sepsis-adjacent critical illness. Third, no other completed randomised trial of aviptadil for any indication was identified here, so the evidence base is essentially this one definitive negative result plus the endogenous physiology.\n\nFor a laboratory, VIP remains a legitimate and well-founded research tool. The receptors VPAC1 and VPAC2 are cloned and characterised, the cyclic AMP readout is standard, the peptide's actions on smooth muscle and on immune cells are reproducible, and its role in pulmonary biology is genuinely interesting independent of the failed therapeutic programme. Receptor pharmacology, smooth muscle physiology and immunomodulation studies require no reliance on any clinical claim.",
+    "qualityPurityTitle": "Analytical Verification for a 28-Residue Neuropeptide",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 3326.8 g/mol, with molecular formula C147H237N43O43S and CAS registry number 40077-57-4 (PubChem CID 16132300).\n\nAt 28 residues, intact mass alone is a weak identity check and should not be relied upon. A single-residue substitution in a peptide of this size produces a mass shift that may be smaller than the practical accuracy of an intact measurement at 3,327 daltons. Identity should therefore be established by peptide mapping or sequence coverage rather than by intact mass, and this is a reasonable thing to require for a peptide at this price point.\n\nThe single sulfur atom in the molecular formula is a specific verification point worth raising. One sulfur in a 28-residue peptide means one sulfur-containing residue — a methionine or a lone cysteine. If methionine, it is an oxidation liability: methionine oxidises readily to the sulfoxide, which adds 16 mass units, a shift that is detectable but only if looked for, and which can reduce or abolish activity depending on position. If a lone cysteine, there is a free thiol, which raises the possibility of intermolecular disulfide dimerisation at roughly twice the monomer mass. Either way, the oxidation state of that residue is a legitimate specification question, and a certificate that does not address it leaves a known liability uncharacterised. Which residue it is, and its oxidation state, is not established here.\n\nDeamidation deserves attention for a peptide of this composition. Asparagine and glutamine residues deamidate to the corresponding acids with a 1-unit mass shift — well under 0.1 per cent on a molecule of 3,327 and invisible to any nominal mass check. Where deamidation matters, a method capable of resolving the deamidated species is required.\n\nC-terminal amidation should be confirmed if it is part of the intended structure, since the amide and free acid forms differ by 1 mass unit and are not distinguished by a nominal intact-mass figure. This is a recurring theme for neuropeptides and a recurring omission on certificates.\n\nPurity assessment by reverse-phase chromatography is appropriate, and the impurity classes to expect for a 28-residue synthetic peptide are deletion sequences, truncated chains and incompletely deprotected species. Deletion of a single residue from 28 is a proportionally small change that may not resolve cleanly, which is part of why a chromatographic purity figure at this chain length should be read alongside the method rather than on its own.\n\nAggregation is a reasonable question at this size. Peptides of several kilodaltons can aggregate, and aggregates are not detected by reverse-phase purity reporting; size-exclusion analysis addresses it.\n\nThe salt-form question applies with some force. At approximately 3,327 g/mol with multiple basic residues present, several counter-ion equivalents are possible and acetate or trifluoroacetate loading is a meaningful fraction of supplied mass. Lyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Not Approved, and a Trial Stopped for Futility",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nAviptadil is not an approved medicine in the United States. It has not been approved by the United States Food and Drug Administration for any indication, and no FDA approval or emergency use authorisation for it was identified. Whether any aviptadil product holds approval in any jurisdiction outside the United States was not confirmed here.\n\nThe regulatory history requires precise handling, because it is the most commonly misrepresented aspect of this compound. In 2020 the developers obtained FDA Fast Track designation for aviptadil in COVID-19 respiratory distress, an investigational new drug authorisation for an inhaled formulation, and an expanded access protocol, and submitted a request for emergency use authorisation. Every one of those is a genuine regulatory step, and not one of them is an approval. Fast Track designation is a mechanism for speeding development and review of drugs addressing serious conditions with unmet need; it is granted on the basis of promise, says nothing about whether a drug works, and is routinely reported in a way that implies endorsement. An investigational new drug authorisation permits a trial. An expanded access protocol permits defined use outside a trial. A submitted authorisation request is a request. No approval followed.\n\nThe definitive evidence is a negative trial, and it should be stated plainly. TESICO, published in The Lancet Respiratory Medicine in 2023, was an NIH-funded randomised placebo-controlled trial at 28 United States sites, enrolling 473 participants with 461 in the modified intention-to-treat aviptadil analysis, 94 per cent of whom were in intensive care at baseline. The odds ratio for a better category of the 90-day primary outcome was 1.11 (95% CI 0.80 to 1.55; p = 0.54). Day-90 mortality was 38 per cent on aviptadil versus 36 per cent on placebo (hazard ratio 1.04, 95% CI 0.77 to 1.41; p = 0.78). The primary safety outcome occurred in 63 per cent on aviptadil versus 56 per cent on placebo (odds ratio 1.40, 95% CI 0.94 to 2.08; p = 0.10) — numerically worse on the active drug, though not statistically significant. Critically, **the independent data and safety monitoring board recommended stopping the aviptadil trial on 25 May 2022 for futility**: an independent board with access to accumulating data judged that continuing was unlikely to show benefit and that further randomisation of critically ill patients was not justified.\n\nTwo balancing points. This trial tested one indication, in critically ill patients, by intravenous infusion over three days; it does not establish that VIP is biologically inert, nor speak to other conditions or routes. And the endogenous biology of vasoactive intestinal peptide is well established and uncontroversial — it is a real neuropeptide with characterised receptors and reproducible physiological actions, none of which a failed trial calls into question.\n\nOne further safety-relevant fact: this peptide's defining pharmacological action is vasodilation. In the definitive trial it was administered by 12-hour intravenous infusion in intensive care with continuous monitoring. A potent vasodilator has obvious haemodynamic consequences, and unsupervised use would be hazardous.\n\nNothing on this page suggests that this material is suitable for addressing respiratory failure, COVID-19, lung injury, sarcoidosis or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is VIP?",
+        "answer": "VIP is vasoactive intestinal peptide, a 28-residue endogenous neuropeptide first characterised from intestinal tissue and widely distributed in the nervous system and peripheral tissues including the lung. The synthetic form carries the generic name aviptadil. Verified identifiers are molecular formula C147H237N43O43S, molecular weight approximately 3326.8 g/mol, CAS 40077-57-4, PubChem CID 16132300."
+      },
+      {
+        "question": "Is aviptadil FDA approved?",
+        "answer": "No. It has not been approved by the FDA for any indication, and no FDA approval or emergency use authorisation for it was identified. It received Fast Track designation in 2020 for COVID-19 respiratory distress, an investigational new drug authorisation for an inhaled formulation, and an expanded access protocol, and an emergency use authorisation request was submitted — but none of those is an approval and no approval followed."
+      },
+      {
+        "question": "What does Fast Track designation actually mean?",
+        "answer": "It is a mechanism intended to speed the development and review of drugs addressing serious conditions with unmet need. It is granted on the basis of promise rather than demonstrated benefit, and it says nothing about whether a drug works. It is routinely reported in a way that implies endorsement. Anyone evaluating a compound on the strength of a Fast Track designation is evaluating it on the wrong evidence."
+      },
+      {
+        "question": "What did the definitive trial find?",
+        "answer": "No benefit. TESICO, published in The Lancet Respiratory Medicine in 2023, was an NIH-funded randomised placebo-controlled trial at 28 US sites with 461 participants in the aviptadil analysis, 94 per cent in intensive care at baseline. The odds ratio for a better category of the 90-day primary outcome was 1.11 (95% CI 0.80-1.55; p = 0.54). Day-90 mortality was 38 per cent on aviptadil versus 36 per cent on placebo."
+      },
+      {
+        "question": "Why does \"stopped for futility\" matter so much?",
+        "answer": "Because it is a prospective judgement rather than a retrospective result. The independent data and safety monitoring board recommended stopping the aviptadil trial on 25 May 2022 for futility — meaning a board with access to accumulating unblinded data concluded that continuing was unlikely to demonstrate benefit and that further randomisation of critically ill patients was not justified. That is stronger than a trial merely reporting a null result."
+      },
+      {
+        "question": "Was there a safety signal?",
+        "answer": "A numerical one that should not be overstated. The primary safety outcome — death, serious adverse events, organ failure, serious infection, or grade 3-4 adverse events up to day 5 — occurred in 63 per cent on aviptadil versus 56 per cent on placebo, odds ratio 1.40 (95% CI 0.94-2.08; p = 0.10). Not statistically significant, so not demonstrated harm — but numerically worse on active drug with an interval mostly above 1, in a potent vasodilator given to critically ill patients."
+      },
+      {
+        "question": "Does the failed trial mean VIP does nothing?",
+        "answer": "No, and this distinction matters. The trial tested one indication — COVID-19-associated hypoxaemic respiratory failure — in critically ill patients, by intravenous infusion, over three days. The endogenous biology of VIP is well established and uncontroversial: a real neuropeptide acting at characterised VPAC1 and VPAC2 receptors through cyclic AMP, with reproducible effects on smooth muscle, vasculature and immune cells. A failed trial in critical illness does not call that into question."
+      },
+      {
+        "question": "How does VIP work?",
+        "answer": "It belongs to the glucagon-secretin peptide superfamily and acts at two G-protein-coupled receptors, VPAC1 and VPAC2, signalling principally through cyclic AMP. Its physiological actions include smooth muscle relaxation, vasodilation — hence \"vasoactive\" — stimulation of epithelial secretion, and immunomodulatory effects. It is present in high concentration in the lung, with receptor expression on alveolar type II cells, which was the basis of the clinical interest."
+      },
+      {
+        "question": "Why is the single sulfur atom a verification point?",
+        "answer": "Because one sulfur in a 28-residue peptide means one sulfur-containing residue — a methionine or a lone cysteine — and each carries a different liability. A methionine oxidises readily to the sulfoxide, adding 16 mass units and potentially reducing activity. A lone cysteine means a free thiol and the possibility of intermolecular disulfide dimers at twice the monomer mass. Either way its oxidation state is a legitimate specification a certificate should address."
+      },
+      {
+        "question": "What is a well-founded laboratory use?",
+        "answer": "Receptor pharmacology and physiology, none of which depends on any clinical claim. VPAC1 and VPAC2 are cloned and characterised, the cyclic AMP readout is standard, the peptide’s actions on smooth muscle and immune cells are reproducible, and its role in pulmonary biology is genuinely interesting independent of the failed therapeutic programme. Note that this is a potent vasodilator, which is a handling consideration as well as a pharmacological one."
+      }
+    ]
+  }
+}

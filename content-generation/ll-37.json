@@ -1,0 +1,213 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "ll-37",
+    "qc": {
+      "main_content_words": 2091,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction.",
+    "variants_from_csv": [
+      {
+        "variant": "Standard",
+        "price_usd": "54.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "Standard",
+        "source_file": "LL-37.png",
+        "upload_as": "amino-ll-37.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 16198951 (PUG REST, verified 2026-11-09): C205H340N60O53, MW 4493; CAS 154947-66-7",
+      "PMID 26556394 doi:10.1016/j.bbamem.2015.11.003 - Biochim Biophys Acta - LL-37 as pore-forming antibacterial peptide and host-cell modulator; amphipathic helix, oligomerisation under physiological conditions, cytotoxic and immunomodulatory effects",
+      "PMID 30223448 doi:10.3390/vaccines6030063 - Vaccines - Cathelicidins: Immunomodulatory Antimicrobials; both pro- and anti-inflammatory functions, chemotaxis, cell differentiation toward type 1 responses; potential and LIMITATIONS of therapeutic use",
+      "PMID 20600427 doi:10.1016/j.peptides.2010.06.016 - Peptides - hCAP18/LL-37 in mycobacterial infection; expressed by neutrophils and epithelial cells"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Stated quantity for the \"Standard\" presentation - the CSV gives no mass. Confirm the fill quantity before any quantitative work."
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to understand what LL-37 is, how it works, and why it has not become a drug.",
+    "primary_keyword": "LL-37",
+    "secondary_keywords": [
+      "cathelicidin",
+      "hCAP18",
+      "antimicrobial peptide",
+      "LL-37 molecular weight",
+      "host defence peptide",
+      "LL-37 CAS"
+    ],
+    "long_tail_keywords": [
+      "what is LL-37",
+      "LL-37 mechanism of action membrane",
+      "why is LL-37 not a drug",
+      "LL-37 molecular formula C205H340N60O53",
+      "LL-37 CAS 154947-66-7",
+      "is LL-37 the only human cathelicidin",
+      "LL-37 salt sensitivity antimicrobial",
+      "LL-37 oligomerisation",
+      "LL-37 inflammation both directions",
+      "LL-37 certificate of analysis purity"
+    ],
+    "semantic_terms": [
+      "cathelicidin",
+      "hCAP18",
+      "cathelin domain",
+      "amphipathic helix",
+      "cationic peptide",
+      "pore formation",
+      "alarmin",
+      "chemotaxis",
+      "type 1 immune response",
+      "oligomerisation",
+      "ionic strength",
+      "deletion sequence",
+      "ion-pairing"
+    ],
+    "name_variations": [
+      "LL-37",
+      "hCAP18/LL-37",
+      "human cathelicidin",
+      "CAP-18",
+      "LL37"
+    ],
+    "informational_queries": [
+      "what is LL-37",
+      "LL-37 mechanism",
+      "is LL-37 safe",
+      "LL-37 antimicrobial",
+      "LL-37 immune function"
+    ],
+    "commercial_queries": [
+      "buy LL-37 research peptide",
+      "LL-37 peptide",
+      "LL-37 COA"
+    ],
+    "cannibalisation_check": "Owns LL-37, cathelicidin and the host-defence-peptide intent. /product/kpv owns the anti-inflammatory tripeptide intent; /product/thymosin-alpha-1 owns immune modulation. Distinct mechanisms, cross-linked rather than overlapping.",
+    "h1": "Driven by CMS name field; renders as \"LL-37\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "Other immune-focused short peptide in the catalogue; different mechanism.",
+        "verified": true
+      },
+      {
+        "route": "/product/thymosin-alpha-1",
+        "anchor": "Thymosin Alpha-1",
+        "rationale": "Immune-modulating comparator with a different mode of action.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "LL-37 | Human Cathelicidin Peptide | Amino Based",
+    "seoDescription": "LL-37: the only human cathelicidin, C205H340N60O53, MW 4493, CAS 154947-66-7. Antimicrobial and immunomodulatory biology. Research use only.",
+    "description": "LL-37 is the C-terminal antimicrobial domain of hCAP18, the only cathelicidin identified in humans. Its molecular formula is C205H340N60O53, with a molecular weight of approximately 4493 g/mol and CAS registry number 154947-66-7 (PubChem CID 16198951). It is a 37-residue host defence peptide with both direct antimicrobial activity and extensive immunomodulatory function. It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "LL-37: The Human Cathelicidin and Its Amphipathic Structure",
+    "productDetailsDescription": "LL-37 is a 37-amino-acid peptide whose name describes it directly: the sequence begins with two leucine residues and is 37 residues long. It is the C-terminal antimicrobial domain of a larger precursor protein called hCAP18, human cationic antimicrobial protein, and it is released from that precursor by proteinase cleavage.\n\nThe verified identifiers are a molecular formula of C205H340N60O53, a molecular weight of approximately 4493 g/mol and CAS registry number 154947-66-7, recorded under PubChem CID 16198951. At roughly 4.5 kDa it is among the larger peptides in this catalogue, comparable in size to the incretin analogues, and considerably larger than the short synthetic peptides it is often listed alongside.\n\nCathelicidins are a family of host defence peptides found across many vertebrates, characterised by a conserved N-terminal cathelin domain and a variable C-terminal antimicrobial domain. LL-37 is the only human cathelicidin identified to date, which is an unusual and significant fact: where other species carry several, humans have one, and that single peptide therefore bears a correspondingly broad functional load. It is expressed mainly by neutrophils and epithelial cells.\n\nThe structural basis of its activity is relatively well understood and worth setting out, because it explains both what the peptide does and why it is difficult to work with. LL-37 is cationic — it carries a net positive charge at physiological pH — and amphipathic, meaning that when it folds into a helix the hydrophobic and hydrophilic residues segregate onto opposite faces. That combination is the classic architecture of membrane-active antimicrobial peptides: the positive charge attracts the peptide to the anionic surfaces characteristic of bacterial membranes, and the amphipathic helix then inserts into the lipid bilayer. The peptide acts as a pore-forming agent directed by the host organism against bacterial cells.\n\nA property with direct practical consequences is its marked tendency to form oligomers under physiological solution conditions and then to bind molecular surfaces in that oligomeric state. This is not a formulation nuisance to be engineered around; it is part of how the peptide behaves and part of the explanation for both its cytotoxic and its immunomodulatory effects. For laboratory handling it means that concentration, ionic strength and surface contact are not incidental variables, and that a solution's behaviour may not scale linearly with concentration.\n\nThe same membrane activity that kills bacteria also acts on host cell membranes, and many of the peptide's other activities in host defence are membrane-dependent effects on the organism's own cells. That dual character — host-protective and potentially host-damaging through the same mechanism — is the central tension in this compound's biology and the main obstacle to therapeutic development.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a presentation designated \"Standard\"; the fill quantity is not stated in the supplied catalogue data and should be confirmed.",
+    "researchFocusTitle": "A Remarkably Wide Functional Repertoire, and Why That Complicates Everything",
+    "researchFocusDescription": "LL-37 has become, in the words of one review, a paradigm for the pleiotropic roles of peptides in host defence. Understanding it means understanding why doing many things is a problem as well as an attraction.\n\nA review in Biochimica et Biophysica Acta sets out the breadth directly: direct antimicrobial activity against various classes of microorganism; the role of an alarmin, helping to orchestrate the immune response to infection; the capacity to modulate inflammation locally in both directions, enhancing it to aid in combating infection and limiting it to prevent damage to infected tissues; promotion of angiogenesis and wound healing; and possibly the elimination of abnormal cells. The review's framing is notable — it asks how a small, simple amphipathic helical structure manages to carry out all of these reported activities, and answers in terms of primary and secondary structure, oligomerisation behaviour and surface binding (PMID 26556394, doi:10.1016/j.bbamem.2015.11.003).\n\nThe bidirectional inflammatory effect deserves emphasis because it is frequently flattened into a single direction in summary descriptions. A review in Vaccines examining cathelicidins as immunomodulatory antimicrobials describes a wide variety of immunomodulatory functions, both boosting and inhibiting inflammation, directing chemotaxis and affecting cell differentiation, primarily toward type 1 immune responses. That review explicitly frames its purpose as putting in vitro results in the context of in vivo situations, and discusses both the potential and the limitations of using cathelicidins as immunomodulatory or antimicrobial drugs (PMID 30223448, doi:10.3390/vaccines6030063).\n\nThat emphasis on in vitro versus in vivo context is the methodological heart of this field and worth dwelling on. Membrane-active cationic peptides are easy to demonstrate activity with in a test tube, where conditions can be chosen favourably. Physiological environments contain high salt concentrations that screen electrostatic attraction, serum proteins that bind the peptide, and proteases that degrade it. Antimicrobial activity measured in low-ionic-strength buffer frequently does not survive translation to physiological conditions, and this is a recognised and recurring problem for the entire antimicrobial peptide field rather than a criticism of any particular study. Any experiment with LL-37 should state its ionic conditions, and any claimed activity should be interpreted in light of them.\n\nInfection-specific work provides a concrete example of the peptide's role. A review in Peptides describes hCAP18/LL-37 as a multifunctional molecule mediating bactericidal action, chemotaxis, epithelial cell activation, angiogenesis, epithelial wound repair and chemokine secretion, and specifically addresses its production during mycobacterial infection and its microbicidal effect there, along with progress toward therapeutic application of the peptide and its derivatives (PMID 20600427, doi:10.1016/j.peptides.2010.06.016).\n\nThe limitations are substantial and largely intrinsic rather than incidental. Host cell cytotoxicity arises from the same membrane mechanism as antimicrobial activity, which constrains the therapeutic window directly. Salt sensitivity limits translation from in vitro findings. The peptide's bidirectional immunomodulation means that effects may run opposite ways depending on context, dose and tissue, so a result in one setting is weak evidence for another. Proteolytic degradation limits persistence. And there is no approved therapeutic use in any jurisdiction, despite sustained interest over decades — which is itself informative about how hard the translation has proven.\n\nFor laboratory work the compound is genuinely useful precisely because its structure-activity relationships are comparatively well characterised. Membrane interaction studies, oligomerisation behaviour as a function of conditions, chemotaxis assays and comparative work against derivative peptides are all well supported by existing literature. The key discipline is controlling for the conditions that determine whether observed activity is physiologically meaningful.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation by mass spectrometry compares observed mass against the calculated value of approximately 4493 Da. At 37 residues this is a long peptide by synthetic standards, and length has direct analytical consequences worth understanding.\n\nSynthesis of a 37-residue chain involves many more coupling steps than a short peptide, and each step is an opportunity for a deletion. The resulting deletion sequences differ from the target by the mass of a single residue, which against a 4493 Da parent is a proportionally small difference that may be poorly resolved chromatographically and can be difficult to distinguish on a low-resolution mass measurement. A purity figure for a peptide this long therefore depends heavily on method quality, and a high percentage obtained under a shallow gradient is substantially weaker evidence than the same figure obtained under conditions demonstrated to separate close-eluting species.\n\nThe peptide's physical behaviour creates a second, less obvious analytical problem. LL-37 oligomerises under physiological solution conditions and binds molecular surfaces readily. Both properties affect chromatographic behaviour and recovery, and a preparation that adsorbs to surfaces or aggregates during analysis can produce a purity figure that reflects the analysis as much as the material. This is a reason to look at the chromatogram rather than the number, and to treat method conditions as part of the result.\n\nThe strongly cationic character also affects reverse-phase behaviour, since ion-pairing conditions materially influence retention and peak shape for a peptide carrying this much positive charge. A purity figure should be read together with the mobile phase composition.\n\nLyophilised mass is also not peptide content: a vial may contain counter-ions and residual water alongside the peptide, and for a highly charged peptide the counter-ion contribution can be substantial. Unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass. This matters particularly here because the supplied catalogue data give no mass for this product at all.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nLL-37 is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nThat an endogenous human peptide with decades of research interest has produced no approved therapeutic is worth stating rather than passing over, because it is informative. Published reviews discussing therapeutic application of cathelicidins address limitations as well as potential, and the obstacles are intrinsic: host cell cytotoxicity arises from the same membrane-disrupting mechanism as antimicrobial activity, and salt sensitivity limits translation of in vitro findings to physiological conditions. These are not problems awaiting a formulation fix; they follow from how the molecule works.\n\nThe fact that LL-37 occurs naturally in the human body warrants a specific caution. That a peptide is endogenous says nothing about the safety of administering it exogenously. Endogenous LL-37 is produced locally by neutrophils and epithelial cells, under regulation, at sites and concentrations determined by physiological context. Administering a synthetic preparation is a pharmacological intervention with none of that regulation, and its membrane activity is not selective for bacterial cells in the way a targeted antibiotic would be.\n\nThe research findings described above derive predominantly from in vitro work and animal models. They are not an assessment of this material and must not be read as evidence of its safety or efficacy.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is LL-37?",
+        "answer": "LL-37 is a 37-amino-acid host defence peptide, the C-terminal antimicrobial domain of a precursor protein called hCAP18, released by proteinase cleavage. Its name describes it: the sequence begins with two leucines and is 37 residues long. Verified identifiers are C205H340N60O53, molecular weight approximately 4493 g/mol, CAS 154947-66-7, PubChem CID 16198951."
+      },
+      {
+        "question": "Why is it significant that humans have only one cathelicidin?",
+        "answer": "Cathelicidins are a family of host defence peptides found across many vertebrates, with a conserved N-terminal cathelin domain and a variable C-terminal antimicrobial domain. Many species carry several; humans have exactly one identified to date. That single peptide therefore bears a correspondingly broad functional load, which is part of why its reported activity profile is so wide."
+      },
+      {
+        "question": "How does LL-37 kill bacteria?",
+        "answer": "Through membrane disruption. It is cationic, carrying net positive charge at physiological pH, and amphipathic, so that when folded into a helix its hydrophobic and hydrophilic residues segregate onto opposite faces. The charge attracts it to the anionic surfaces characteristic of bacterial membranes, and the amphipathic helix inserts into the bilayer. It acts as a pore-forming agent directed by the host against bacterial cells."
+      },
+      {
+        "question": "Why does it also affect host cells?",
+        "answer": "Because it is the same mechanism. Membrane activity is not inherently selective for bacterial membranes, and many of the peptide’s other host defence activities are membrane-dependent effects on the organism’s own cells. That dual character — host-protective and potentially host-damaging through one mechanism — is the central tension in its biology and the main obstacle to therapeutic development."
+      },
+      {
+        "question": "Does LL-37 increase or decrease inflammation?",
+        "answer": "Both, depending on context, and summary descriptions frequently flatten this into one direction. Reviews describe cathelicidins as boosting and inhibiting inflammation, directing chemotaxis and affecting cell differentiation primarily toward type 1 immune responses. For LL-37 specifically, the capacity to enhance inflammation to aid in combating infection and to limit it to prevent tissue damage are both documented."
+      },
+      {
+        "question": "Why does salt concentration matter so much in LL-37 experiments?",
+        "answer": "Because electrostatic attraction drives the first step of its mechanism. Physiological salt concentrations screen that attraction, serum proteins bind the peptide and proteases degrade it. Antimicrobial activity demonstrated in low-ionic-strength buffer frequently does not survive translation to physiological conditions. This is a recognised problem across the whole antimicrobial peptide field, so any experiment should state its ionic conditions."
+      },
+      {
+        "question": "What is oligomerisation and why does it matter here?",
+        "answer": "LL-37 has a marked tendency to associate into multi-unit assemblies under physiological solution conditions and then bind molecular surfaces in that state. It is not a formulation nuisance but part of how the peptide behaves, and part of the explanation for both cytotoxic and immunomodulatory effects. Practically, concentration, ionic strength and surface contact are not incidental variables, and behaviour may not scale linearly with concentration."
+      },
+      {
+        "question": "Is LL-37 approved for anything?",
+        "answer": "No, nowhere, for any indication. That an endogenous human peptide with decades of research interest has produced no approved therapeutic is itself informative. The obstacles are intrinsic rather than awaiting a formulation fix: cytotoxicity arises from the same mechanism as antimicrobial activity, and salt sensitivity limits translation from in vitro findings."
+      },
+      {
+        "question": "Does being a natural human peptide make it safe?",
+        "answer": "No. Endogenous LL-37 is produced locally by neutrophils and epithelial cells, under regulation, at sites and concentrations set by physiological context. Administering a synthetic preparation is a pharmacological intervention with none of that regulation, and its membrane activity is not selective for bacterial cells in the way a targeted antibiotic would be."
+      },
+      {
+        "question": "Why is purity analysis harder for a 37-residue peptide?",
+        "answer": "Because synthesis involves many coupling steps and each is an opportunity for a deletion. A single-residue deletion against a 4493 Da parent is a proportionally small mass difference, often poorly resolved chromatographically and hard to distinguish at low mass resolution. Add the peptide’s tendency to oligomerise and adsorb to surfaces, and a purity figure can reflect the analysis as much as the material. Look at the chromatogram, not just the number."
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "ara-290",
+    "qc": {
+      "main_content_words": 2890,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Reached phase 2b for sarcoidosis-associated small nerve fibre loss.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "49.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "ARA-290 10mg.png",
+        "upload_as": "amino-ara-290-10mg.png"
+      }
+    ],
+    "dose_response_flag": "NON-MONOTONIC DOSE RESPONSE IN THE PHASE 2B TRIAL. Placebo-corrected mean change in corneal nerve fibre area at day 28 was 109 (95% CI -429 to 647) at 1 mg, 697 (95% CI 159 to 1236; P = 0.012) at 4 mg, and 431 (95% CI -130 to 992) at 8 mg. Only the MIDDLE dose reached significance; the confidence intervals for both 1 mg and 8 mg cross zero. The page states this explicitly rather than reporting only the significant arm.",
+    "pain_endpoint_flag": "The phase 2b paper states that pain improved significantly in ALL groups - including placebo - and that the placebo-corrected decrease in pain intensity in the 4 mg group among subjects with moderate-severe pain had P = 0.157, which is NOT statistically significant. The pain endpoint did not separate from placebo. The page states this.",
+    "references": [
+      "PubChem CID 91810664 (PUG REST, verified 2026-11-09, matched name \"ARA-290\"): C51H84N16O21, MW 1257.3, CAS 1208243-50-8.",
+      "PMID 24136731 doi:10.2119/molmed.2013.00122 - Mol Med 19(1):334-45 - blinded, placebo-controlled trial; 28 days of daily subcutaneous ARA 290 in patients with documented sarcoidosis-associated small nerve fibre loss and damage. Significantly improved neuropathic symptoms; significant increase in corneal small nerve fibre density; changes in cutaneous temperature sensitivity; increased exercise capacity by 6-minute walk test. Authors include Araim Pharmaceuticals personnel (sponsor).",
+      "PMID 28475703 doi:10.1167/iovs.16-21291 - Invest Ophthalmol Vis Sci 58(6):BIO52-BIO60 - PHASE 2B, 28-day, randomised, multicentre trial; 64 subjects with sarcoid-associated small nerve fibre loss and neuropathic pain; cibinetide 1, 4 or 8 mg/day versus placebo. Primary endpoint change in corneal nerve fibre area (CNFA) at 28 days. Placebo-corrected mean change (micrometres squared): 109 (95% CI -429 to 647) at 1 mg; 697 (159 to 1236; P = 0.012) at 4 mg; 431 (-130 to 992) at 8 mg. Intraepidermal GAP-43+ fibres increased in the 4 mg group (P = 0.035). CNFA change correlated with GAP-43+ change (rho = 0.575; P = 0.025) and with 6-minute walk test (rho = 0.645; P = 0.009). PAIN: improved significantly in ALL groups; placebo-corrected decrease in the 4 mg group among moderate-severe pain subjects P = 0.157 (NOT significant). Authors include Araim Pharmaceuticals personnel (sponsor)."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "The \"innate repair receptor\" as a distinct molecular entity - this terminology is used principally by the group that developed this compound and does not correspond to a widely established receptor nomenclature; treated on the page as a proposed target rather than a characterised one",
+      "Whether the 4 mg efficacy signal replicates - the non-monotonic dose response in a 64-subject trial has not been confirmed in a larger study identified here"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what ARA-290 is, what its trial evidence shows, and whether the pain claims hold up.",
+    "primary_keyword": "ARA-290",
+    "secondary_keywords": [
+      "cibinetide",
+      "ARA 290 peptide",
+      "ARA-290 molecular weight",
+      "ARA-290 CAS 1208243-50-8",
+      "innate repair receptor",
+      "erythropoietin helix B peptide"
+    ],
+    "long_tail_keywords": [
+      "what is ARA-290",
+      "ARA-290 cibinetide trial results",
+      "does ARA-290 help neuropathic pain",
+      "ARA-290 molecular formula C51H84N16O21",
+      "ARA-290 dose response 4mg 8mg",
+      "is ARA-290 approved",
+      "ARA-290 sarcoidosis small fiber neuropathy",
+      "what is the innate repair receptor",
+      "ARA-290 corneal nerve fiber area",
+      "ARA-290 certificate of analysis"
+    ],
+    "semantic_terms": [
+      "erythropoietin",
+      "helix B surface peptide",
+      "innate repair receptor",
+      "small nerve fibre loss",
+      "sarcoidosis",
+      "corneal confocal microscopy",
+      "corneal nerve fibre area",
+      "GAP-43",
+      "six-minute walk test",
+      "surrogate endpoint",
+      "non-monotonic dose response",
+      "inverted-U",
+      "placebo response",
+      "confidence interval",
+      "multiplicity"
+    ],
+    "name_variations": [
+      "ARA-290",
+      "ARA 290",
+      "cibinetide",
+      "helix B surface peptide",
+      "HBSP",
+      "erythropoietin and epoetin alfa are DIFFERENT substances"
+    ],
+    "informational_queries": [
+      "what is ARA-290",
+      "does ARA-290 work",
+      "ARA-290 trial results",
+      "ARA-290 vs erythropoietin",
+      "ARA-290 mechanism"
+    ],
+    "commercial_queries": [
+      "buy ARA-290",
+      "ARA-290 10mg",
+      "cibinetide research peptide",
+      "ARA-290 COA"
+    ],
+    "cannibalisation_check": "Owns ARA-290 / cibinetide and the EPO-derived non-erythropoietic peptide intent. /product/bpc-157 owns tissue-repair intent broadly; /product/ss-31 owns the mitochondrial-protection intent; this page does not restate either.",
+    "h1": "Driven by CMS name field; renders as \"ARA-290\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/ss-31",
+        "anchor": "SS-31",
+        "rationale": "Other engineered peptide in the catalogue aimed at cellular protection; comparable evidence-maturity contrast.",
+        "verified": true
+      },
+      {
+        "route": "/product/bpc-157",
+        "anchor": "BPC-157",
+        "rationale": "Other tissue-repair-focused peptide; useful contrast between a compound with phase 2b imaging endpoints and one without.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "Another fragment designed to retain one parent activity while shedding another; the same separation-of-activities logic.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "ARA-290 (Cibinetide) | 11-Residue EPO-Derived Peptide | Amino Based",
+    "seoDescription": "ARA-290: cibinetide, C51H84N16O21, MW 1257.3, CAS 1208243-50-8. Phase 2b data with a non-monotonic dose response. Research use only.",
+    "description": "ARA-290, also known as cibinetide, is an eleven-residue peptide derived from a structural region of erythropoietin, engineered to act at a proposed tissue-repair target without the red-blood-cell-stimulating activity of the parent hormone. Its molecular formula is C51H84N16O21, with a molecular weight of approximately 1257.3 g/mol (PubChem CID 91810664, CAS 1208243-50-8). It reached phase 2b trials in sarcoidosis-associated small nerve fibre loss. It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "ARA-290: Separating Tissue Repair From Erythropoiesis",
+    "productDetailsDescription": "ARA-290 is an eleven-residue peptide with verified molecular formula C51H84N16O21, molecular weight approximately 1257.3 g/mol, and CAS registry number 1208243-50-8, recorded under PubChem CID 91810664. It is also known by the generic name cibinetide, which is the name used in the later clinical literature and is the more productive search term.\n\nThe design concept behind it is genuinely elegant and worth setting out, because it is the reason the compound exists. Erythropoietin is best known as the hormone that drives red blood cell production, and recombinant erythropoietin is an established medicine for anaemia. But erythropoietin had also been observed to have tissue-protective effects — on neurons, on injured tissue, on inflammatory processes — that appeared distinct from its haematopoietic action. The problem with exploiting those effects therapeutically is obvious: giving erythropoietin to stimulate tissue repair also raises haematocrit, which carries thrombotic risk and is unacceptable in patients who are not anaemic.\n\nARA-290 is an attempt to separate the two. It corresponds to a defined structural region of the erythropoietin molecule — the helix B region — and is described in the literature as a small peptide engineered to activate what its developers term the innate repair receptor, antagonising inflammatory processes and stimulating tissue repair, without the erythropoietic effect. If that separation holds, it converts an unusable effect into a usable one, which is the same logic that motivates several fragment compounds in this catalogue.\n\nA terminological caution belongs here, and it is a point of intellectual honesty rather than pedantry. The \"innate repair receptor\" is described in this literature as the target, and it is presented as a heteromeric complex involving the erythropoietin receptor together with another subunit. That terminology is used principally by the research group that developed this compound. It does not correspond to a widely established, independently characterised receptor nomenclature in the way that, say, the melanocortin or GLP-1 receptors do. A researcher evaluating this compound should treat the innate repair receptor as a proposed target supported by one group's work rather than as a settled molecular entity, and should be aware that searching for it in receptor databases will not yield the kind of entry that an established receptor has.\n\nThat caveat does not undermine the compound's experimental results, which stand on their own measurements. It does mean that the mechanistic story and the empirical findings should be weighted separately — the findings are measurements of nerve fibre density and walking distance, and those do not depend on the receptor account being correct.\n\nA note on what makes this compound unusually well positioned for assessment. Its clinical programme used corneal confocal microscopy to quantify corneal nerve fibre area, which is an imaging measurement of small nerve fibre abundance rather than a patient-reported score. For a condition whose principal symptom is pain — a subjective experience notoriously vulnerable to placebo response — having an objective structural readout alongside the symptom reports is a substantial methodological advantage, and it is what allows the trials to be assessed as sharply as the research section does.\n\nA naming note. This compound appears as ARA-290, ARA 290, cibinetide, and sometimes as the helix B surface peptide or HBSP. The parent hormone, erythropoietin, and its recombinant medicines such as epoetin alfa and darbepoetin alfa are entirely different substances — a glycoprotein of around 30 kilodaltons versus an eleven-residue peptide — and the whole point of this compound is that it is intended *not* to share erythropoietin's principal activity. Nothing about erythropoietin's approvals transfers to it.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "Two Trials With Real Objective Signals, a Non-Monotonic Dose Response, and a Pain Endpoint That Failed",
+    "researchFocusDescription": "ARA-290 has better clinical trial data than most compounds in this catalogue, and reading those trials carefully produces a more interesting picture than either enthusiasm or dismissal.\n\nThe condition studied is worth understanding. Sarcoidosis is frequently complicated by small nerve fibre loss and damage, which produces autonomic dysfunction and sensory abnormalities including pain syndromes that substantially degrade quality of life. Existing treatment consists largely of immune suppression and symptomatic measures and is, in the words of the earlier trial report, typically unsatisfactory. So this was a genuine unmet need rather than a crowded indication, and the patients enrolled had documented nerve fibre loss rather than symptoms alone.\n\nThe first trial was blinded and placebo-controlled, administering daily subcutaneous ARA 290 for 28 days to patients with documented small nerve fibre loss. It reported significantly improved neuropathic symptoms, a significant increase in corneal small nerve fibre density, changes in cutaneous temperature sensitivity, and increased exercise capacity measured by the six-minute walk test (PMID 24136731, doi:10.2119/molmed.2013.00122). The combination is notable: a structural measure, a sensory measure and a functional measure all moving together is harder to attribute to placebo response than a symptom score alone.\n\nThe phase 2b trial is where the detail matters, and it is worth reporting in full rather than selectively. It was a 28-day randomised multicentre trial in 64 subjects with sarcoid-associated small nerve fibre loss and neuropathic pain, comparing cibinetide at 1, 4 or 8 mg per day against placebo, with change in corneal nerve fibre area at 28 days as the primary endpoint (PMID 28475703, doi:10.1167/iovs.16-21291).\n\nThe primary endpoint results, as placebo-corrected mean changes with 95 per cent confidence intervals, were: 109 at 1 mg, interval −429 to 647; 697 at 4 mg, interval 159 to 1236, P = 0.012; and 431 at 8 mg, interval −130 to 992.\n\nRead those three numbers together, because reading only the middle one would misrepresent the trial. The dose response is **non-monotonic**. The 4 mg dose reached statistical significance. The 1 mg dose did not, with an interval comfortably spanning zero. And the 8 mg dose — twice the effective dose — also did not reach significance, with its interval crossing zero. So of three doses tested, one worked and the higher one did not. That pattern is not impossible biologically; inverted-U dose responses occur, and receptor desensitisation at higher exposure is a recognised phenomenon. But in a 64-subject trial split across four arms, roughly sixteen subjects per arm, a single significant dose flanked by two non-significant ones is also exactly what chance produces when several doses are tested. Distinguishing a genuine inverted-U from a multiplicity artefact requires a larger confirmatory trial, and none was identified here.\n\nThe supporting findings strengthen the case somewhat. Intraepidermal regenerating nerve fibres, marked by GAP-43 positivity, increased in the 4 mg group with P = 0.035 — so a second, independent structural measure moved in the same arm. And changes in corneal nerve fibre area correlated with changes in GAP-43-positive fibres, rho = 0.575, P = 0.025, and with the six-minute walk test, rho = 0.645, P = 0.009. Those correlations are the most scientifically valuable part of the paper, because they support the use of corneal nerve fibre area as a surrogate endpoint: a structural imaging measure that tracks both a second structural measure and a functional one is behaving like a meaningful surrogate rather than an isolated number.\n\nNow the finding most often omitted. The paper states that pain improved significantly in **all** groups — which includes placebo. And the placebo-corrected decrease in pain intensity among subjects with moderate-to-severe pain in the 4 mg group carried P = 0.157. That is not statistically significant. In plain terms: the symptom that actually troubles patients improved in everyone, including those receiving nothing, and the drug did not separate from placebo on it. This is a textbook demonstration of why subjective pain endpoints require placebo controls, and it is the single most important limitation of the programme. A compound can produce a measurable structural change without that change translating into symptomatic benefit over placebo within the trial period, and that appears to be what happened here over 28 days.\n\nSponsorship should also be noted: the author lists of both trials include personnel from Araim Pharmaceuticals, the company developing the compound. This is entirely normal for clinical trials, which sponsors run, and declaration is standard practice. But no independent replication of these findings was identified, so the evidence base rests on one developer's programme.\n\nThe limitations in summary: two small trials of 28 days' duration from a single developer; a non-monotonic dose response in which the highest dose tested did not reach significance; a primary structural endpoint that did reach significance at one dose and was supported by a second structural measure and functional correlations; a pain endpoint that improved in all arms including placebo and did not separate; no independent replication; and a proposed receptor target whose terminology is specific to the originating group.\n\nFor a laboratory, this is a reasonably attractive compound. The target is proposed rather than established, which makes receptor characterisation itself an open question. The parent hormone is well characterised, so the separation-of-activities hypothesis is directly testable — a peptide intended to retain tissue protection without erythropoiesis can be assayed for both. And there is a published surrogate-endpoint validation, in the correlations above, that is genuinely useful methodology for anyone working on neuropathy models.",
+    "qualityPurityTitle": "Analytical Verification for an Eleven-Residue Engineered Peptide",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 1257.3 g/mol, with molecular formula C51H84N16O21 and CAS registry number 1208243-50-8 (PubChem CID 91810664). A CAS number exists for this compound, which is useful: it gives an independent identifier to check a certificate against, and a certificate quoting a different CAS number for material sold as ARA-290 or cibinetide warrants querying.\n\nSequence confirmation by tandem mass spectrometry fragmentation is worth requesting specifically for this compound, for a reason rooted in its design. ARA-290 corresponds to a defined region of the erythropoietin sequence, and compounds in this class are distinguished from one another by precisely which residues are included and by what modifications are made. A peptide spanning a slightly different range, or lacking an intended modification, would be a different compound and in some cases a mass-similar one. Sequence-level data establishes the actual residue span rather than a consistent total mass.\n\nNote what the molecular formula does **not** contain: there is no sulfur. That absence is informative, because it means this peptide contains no cysteine and therefore no disulfide bridge — so the disulfide-integrity and dimerisation questions that dominate verification of several other products in this catalogue do not apply here. It also means a certificate reporting a sulfur-containing composition or discussing disulfide status for this compound is describing something else.\n\nPurity assessment by reverse-phase chromatography is appropriate, and the impurity classes to expect for an eleven-residue synthetic peptide are deletion sequences, truncated chains, and incompletely deprotected species. At eleven residues a single-residue deletion is a moderate proportional mass change and should resolve reasonably well, so its absence is a reasonable requirement rather than a courtesy.\n\nOxidation and deamidation deserve attention as handling-history indicators. The composition includes residues susceptible to deamidation, which converts an amide to a carboxylic acid with a 1-unit mass shift — small enough on a molecule of 1,257 to pass a nominal mass check unless specifically sought. Quantified deamidation and oxidation products speak to how material has been stored and transported, which makes them more informative than a purity percentage alone.\n\nStereochemistry should be confirmed where it matters. Engineered peptides in this class may incorporate non-natural stereochemistry at defined positions as part of their design, and stereoisomers share molecular formula and mass and are not distinguished by mass spectrometry under any conditions. Chiral analysis or an explicit written supplier statement is required.\n\nThe salt-form question applies as usual. At approximately 1,257 g/mol, with basic residues present in the sequence, multiple counter-ion equivalents are possible and an acetate or trifluoroacetate load represents a meaningful fraction of supplied mass. A molar calculation using the free-peptide value on salt-form material will be wrong.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Phase 2b Evidence, Honestly Characterised",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nARA-290 is not an approved medicine. Neither ARA-290 nor cibinetide has been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nThe clinical evidence should be represented completely, because selective reporting of it would be misleading in a specific way. Two small placebo-controlled trials of 28 days' duration in patients with sarcoidosis-associated small nerve fibre loss reported increases in corneal small nerve fibre abundance, supported in the phase 2b trial by an increase in regenerating intraepidermal fibres and by correlations between the structural measure and both a second structural measure and the six-minute walk test. Those are real objective findings on imaging endpoints.\n\nThree qualifications are essential. First, the phase 2b dose response was non-monotonic: of three doses tested, only the middle 4 mg dose reached statistical significance on the primary endpoint, while both the 1 mg dose and the higher 8 mg dose had confidence intervals crossing zero. In a trial of 64 subjects across four arms, a single significant dose flanked by two non-significant ones may reflect a genuine inverted-U response or may reflect testing several doses; no larger confirmatory trial was identified.\n\nSecond, and most importantly for anyone evaluating claims about this compound: **the pain endpoint did not separate from placebo.** The phase 2b paper states that pain improved significantly in all groups, including placebo, and that the placebo-corrected decrease in pain intensity in the 4 mg group among subjects with moderate-to-severe pain carried P = 0.157 — not statistically significant. A measurable structural change did not translate into symptomatic benefit over placebo within the trial period.\n\nThird, the author lists of both trials include personnel from the company developing the compound, which is normal for sponsored trials, and no independent replication of these findings was identified.\n\nA mechanistic note also bears on how claims should be read. The proposed target, termed the innate repair receptor, is described principally by the group that developed this compound and does not correspond to a widely established, independently characterised receptor. It should be treated as a proposed target rather than a settled molecular entity.\n\nNothing on this page suggests that this material is suitable for addressing sarcoidosis, neuropathy, nerve damage, chronic pain or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is ARA-290?",
+        "answer": "ARA-290, also known as cibinetide, is an eleven-residue peptide derived from the helix B region of erythropoietin, engineered to act at a proposed tissue-repair target without the red-cell-stimulating activity of the parent hormone. Verified identifiers are molecular formula C51H84N16O21, molecular weight approximately 1257.3 g/mol, CAS 1208243-50-8, PubChem CID 91810664."
+      },
+      {
+        "question": "What problem was it designed to solve?",
+        "answer": "Erythropoietin has tissue-protective effects on neurons and injured tissue that appear distinct from its haematopoietic action — but giving erythropoietin to stimulate repair also raises haematocrit, carrying thrombotic risk and being unacceptable in non-anaemic patients. ARA-290 corresponds to a defined region of the molecule and is intended to deliver the repair effect without the erythropoietic one."
+      },
+      {
+        "question": "Is the \"innate repair receptor\" an established target?",
+        "answer": "Not in the way established receptors are, and this is worth knowing. The terminology is used principally by the group that developed this compound and does not correspond to a widely characterised receptor nomenclature like the melanocortin or GLP-1 receptors. Treat it as a proposed target supported by one group’s work. Importantly, the trial measurements — nerve fibre density, walking distance — do not depend on the receptor account being correct."
+      },
+      {
+        "question": "What did the phase 2b trial find?",
+        "answer": "In 64 subjects with sarcoid-associated small nerve fibre loss over 28 days, placebo-corrected mean change in corneal nerve fibre area was 109 at 1 mg (95% CI −429 to 647), 697 at 4 mg (159 to 1236; P = 0.012), and 431 at 8 mg (−130 to 992). Only the middle dose reached significance. Regenerating intraepidermal GAP-43+ fibres also increased in the 4 mg group (P = 0.035)."
+      },
+      {
+        "question": "Why does the non-monotonic dose response matter?",
+        "answer": "Because of three doses tested, one worked and the *higher* one did not, with both flanking intervals crossing zero. Inverted-U responses do occur biologically and receptor desensitisation is recognised — but in a 64-subject trial split four ways, roughly sixteen per arm, a single significant dose flanked by two non-significant ones is also what chance produces when several doses are tested. Distinguishing the two needs a larger confirmatory trial, and none was identified."
+      },
+      {
+        "question": "Did ARA-290 reduce pain?",
+        "answer": "Not compared with placebo — and this is the finding most often omitted. The phase 2b paper states that pain improved significantly in *all* groups, including placebo, and that the placebo-corrected decrease in pain intensity in the 4 mg group among moderate-to-severe pain subjects carried P = 0.157, which is not statistically significant. A measurable structural change did not translate into symptomatic benefit over placebo within 28 days."
+      },
+      {
+        "question": "What is the most valuable part of the trial?",
+        "answer": "Arguably the correlations rather than the primary endpoint. Changes in corneal nerve fibre area correlated with changes in GAP-43-positive regenerating fibres (rho = 0.575; P = 0.025) and with the six-minute walk test (rho = 0.645; P = 0.009). A structural imaging measure that tracks both a second structural measure and a functional one is behaving like a meaningful surrogate endpoint, which is genuinely useful methodology for neuropathy research."
+      },
+      {
+        "question": "Why use corneal imaging as an endpoint?",
+        "answer": "Because it is objective. The principal symptom of this condition is pain — a subjective experience notoriously vulnerable to placebo response, as this trial itself demonstrated. Corneal confocal microscopy quantifies small nerve fibre abundance by imaging rather than by patient report, so having it alongside symptom scores is a real methodological advantage and is what allows the trials to be assessed sharply."
+      },
+      {
+        "question": "Has this been independently replicated?",
+        "answer": "No independent replication was identified. The author lists of both trials include personnel from Araim Pharmaceuticals, the company developing the compound. That is entirely normal for clinical trials, which sponsors run, and declaring it is standard practice — but it means the evidence base rests on a single developer’s programme of two small 28-day studies."
+      },
+      {
+        "question": "Does this peptide have a disulfide bridge?",
+        "answer": "No, and the molecular formula tells you so: C51H84N16O21 contains no sulfur, meaning no cysteine and no disulfide. That is useful for verification, because the disulfide-integrity and dimerisation checks that dominate several other products in this catalogue simply do not apply here. It also means a certificate discussing disulfide status for this compound is describing something else."
+      }
+    ]
+  }
+}

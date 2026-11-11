@@ -1,0 +1,222 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "cjc-1295-with-dac",
+    "qc": {
+      "main_content_words": 2059,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Prohibited in sport.",
+    "variants_from_csv": [
+      {
+        "variant": "5mg",
+        "price_usd": "76.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "5mg",
+        "source_file": "CJC-1295 with DAC 5mg.png",
+        "upload_as": "amino-cjc-1295-with-dac-5mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 91971820 (PUG REST, verified 2026-11-09): C165H269N47O46, MW 3647.2; CAS 446262-90-4",
+      "PMID 19243281 doi:10.1517/13543780802707658 - Expert Opin Investig Drugs - GRF analogue development rationale vs recombinant hGH",
+      "PMID 22298602 doi:10.1345/aph.1Q629 - Ann Pharmacother - tesamorelin, the approved GRF analogue, for comparison",
+      "FDA Drugs@FDA / FDA Pharmacy Compounding Advisory Committee briefing material - Geref Diagnostic and Geref Pediatric NDA withdrawals (2008 and 2006 respectively); statement that no growth hormone secretagogue is approved for treating adult- or childhood-onset GH deficiency"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what the DAC modification does and how this differs from the non-DAC version and from sermorelin.",
+    "primary_keyword": "CJC-1295 with DAC",
+    "secondary_keywords": [
+      "CJC-1295 DAC",
+      "Drug Affinity Complex peptide",
+      "long-acting GHRH analogue",
+      "CJC-1295 molecular weight",
+      "albumin binding peptide",
+      "GRF analogue"
+    ],
+    "long_tail_keywords": [
+      "what is CJC-1295 with DAC",
+      "what does DAC mean in CJC-1295",
+      "CJC-1295 with DAC vs without DAC",
+      "CJC-1295 vs sermorelin",
+      "CJC-1295 molecular formula C165H269N47O46",
+      "CJC-1295 CAS 446262-90-4",
+      "how does drug affinity complex work",
+      "covalent vs reversible albumin binding",
+      "is CJC-1295 approved",
+      "CJC-1295 DAC half life mechanism"
+    ],
+    "semantic_terms": [
+      "Drug Affinity Complex",
+      "albumin conjugation",
+      "covalent bond",
+      "GHRH receptor",
+      "GRF 1-29",
+      "pulsatile secretion",
+      "receptor desensitisation",
+      "receptor internalisation",
+      "plasma protein binding",
+      "intact mass",
+      "reverse-phase HPLC"
+    ],
+    "name_variations": [
+      "CJC-1295 with DAC",
+      "CJC-1295 DAC",
+      "DAC:GRF",
+      "CJC-1295",
+      "drug affinity complex GRF analogue"
+    ],
+    "informational_queries": [
+      "what is CJC-1295 DAC",
+      "CJC-1295 with or without DAC",
+      "how does DAC work",
+      "CJC-1295 vs sermorelin",
+      "is CJC-1295 approved"
+    ],
+    "commercial_queries": [
+      "buy CJC-1295 with DAC",
+      "CJC-1295 DAC 5mg",
+      "CJC-1295 certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns the DAC / covalent-albumin-binding intent. /product/cjc-1295-no-dac owns modified GRF 1-29; /product/sermorelin owns GRF 1-29; /product/tesamorelin owns the approved analogue. Disambiguation content appears on each but framed from that product’s side.",
+    "h1": "Driven by CMS name field; renders as \"CJC-1295 with DAC\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/cjc-1295-no-dac",
+        "anchor": "CJC-1295 No DAC",
+        "rationale": "The other product sold under this name; disambiguation is the top user need.",
+        "verified": true
+      },
+      {
+        "route": "/product/sermorelin",
+        "anchor": "Sermorelin",
+        "rationale": "The unmodified parent fragment; short-acting comparator.",
+        "verified": true
+      },
+      {
+        "route": "/product/tesamorelin",
+        "anchor": "Tesamorelin",
+        "rationale": "Alternative stabilisation strategy at the same receptor.",
+        "verified": true
+      },
+      {
+        "route": "/product/cjc-1295-ipamorelin",
+        "anchor": "CJC-1295 / Ipamorelin",
+        "rationale": "The blend pairing a GHRH analogue with a GHS-R1a agonist.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "CJC-1295 with DAC | Long-Acting GHRH Analogue | Amino Based",
+    "seoDescription": "CJC-1295 with DAC: GRF analogue with Drug Affinity Complex, C165H269N47O46, MW 3647.2, CAS 446262-90-4. Albumin binding, identity. Research use only.",
+    "description": "CJC-1295 with DAC is a synthetic analogue of growth hormone-releasing hormone carrying a Drug Affinity Complex — a chemical group that binds covalently to circulating albumin, greatly extending the molecule's duration of action. Its molecular formula is C165H269N47O46, with a molecular weight of approximately 3647.2 g/mol and CAS registry number 446262-90-4 (PubChem CID 91971820). It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "CJC-1295 with DAC: The Drug Affinity Complex and Why It Matters",
+    "productDetailsDescription": "CJC-1295 with DAC is a modified analogue of growth hormone-releasing hormone, built on the 1-29 fragment that also underlies sermorelin, and carrying an additional chemical group known as a Drug Affinity Complex. Its verified identifiers are a molecular formula of C165H269N47O46, a molecular weight of approximately 3647.2 g/mol, and CAS registry number 446262-90-4, recorded under PubChem CID 91971820.\n\nThe Drug Affinity Complex is the defining feature and the reason the compound exists, so it is worth explaining properly rather than treating as a suffix. Native growth hormone-releasing hormone is cleared from circulation within minutes, and every analogue in this class is an attempt to solve that problem. Sermorelin does not solve it at all — it is the plain fragment and is correspondingly short-acting. Tesamorelin solves it by chemically blocking the degradation pathway. CJC-1295 with DAC takes a third approach: the DAC group is a reactive moiety that forms a covalent bond with albumin, the most abundant protein in blood plasma. Once bound, the peptide travels as part of a long-lived carrier protein and is protected from the clearance mechanisms that would otherwise remove it within minutes.\n\nThe distinction between this and the albumin binding used in the incretin analogues is worth drawing, because the two are often described in the same language but differ in an important respect. Semaglutide and tirzepatide carry fatty-acid chains that bind albumin reversibly — an equilibrium between bound and free drug, which can dissociate. The DAC approach forms a covalent bond, which does not. Covalent attachment produces a much longer and less reversible extension of duration, and this is the technical basis for the very long half-life reported for this compound relative to others in its class.\n\nThat property has a consequence which matters more for experimental design than for marketing, and which is usually under-emphasised. A compound whose action cannot easily be terminated is pharmacologically different from one that clears. The entire rationale for secretagogues over recombinant growth hormone rests on preserving the pulsatile, feedback-regulated character of endogenous secretion. A very long-acting stimulus sits in tension with that rationale, since continuous receptor stimulation is precisely what pulsatile physiology is not. Whether that tension is a problem depends on the research question, but it is a real pharmacological consideration rather than a quibble, and it is the most substantive difference between this compound and the short-acting analogues alongside it.\n\nThe nomenclature here causes persistent confusion, and clarity is worth more than brevity. \"CJC-1295\" is used in supplier literature for two different products: this one, carrying the DAC group, and a version without it. The version without DAC is described as modified GRF 1-29 and is a different chemical entity, with its own page in this catalogue and — importantly — without a comparably verified public registry record. The identifiers on this page apply only to the DAC-bearing compound. Material labelled simply \"CJC-1295\" is ambiguous and should be clarified before use.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 5 mg presentation.",
+    "researchFocusTitle": "Albumin Conjugation, Duration and the Pulsatility Tension",
+    "researchFocusDescription": "The research interest in CJC-1295 with DAC is best understood as a question about duration rather than about receptor pharmacology, since its receptor target is the same growth hormone-releasing hormone receptor engaged by sermorelin, tesamorelin and the natural hormone.\n\nThe shared class rationale is well established. Recombinant human growth hormone is clinically effective in deficiency states but carries adverse effects, and the reasoning behind developing growth hormone-releasing factor analogues was that acting upstream on the pituitary's own secretory machinery might be better tolerated than administering the hormone directly (PMID 19243281, doi:10.1517/13543780802707658). A releasing-factor analogue stimulates the pituitary rather than replacing its output, so secretion retains its episodic character and remains subject to normal negative feedback. Tesamorelin is the clearest case of that reasoning reaching approval, for a defined indication, with phase 3 evidence of reduced visceral adipose tissue maintained across extension phases (PMID 22298602, doi:10.1345/aph.1Q629).\n\nAgainst that background, the covalent albumin-conjugation strategy represents a distinct engineering choice whose consequences are worth thinking through rather than accepting as straightforwardly advantageous. Extending duration reduces administration frequency, which is a genuine benefit. But the mechanistic argument for this entire class rests on preserving pulsatile, feedback-regulated secretion, and a stimulus that persists continuously is in tension with that argument. Sustained receptor occupancy raises questions about receptor desensitisation and downregulation that a short-acting agent does not, since G protein-coupled receptors commonly respond to prolonged agonist exposure by internalising. Whether the GHRH receptor behaves this way under continuous stimulation, and over what timescale, is a legitimate experimental question rather than a settled matter, and it bears directly on whether a very long-acting analogue achieves sustained effect or progressive attenuation.\n\nA second consideration follows from the covalent bond specifically. Because the linkage is not reversible, the peptide's fate becomes tied to that of the albumin molecule it is attached to. Albumin has its own turnover and its own distribution between vascular and extravascular compartments, so the pharmacokinetics of a covalently conjugated peptide are, to a meaningful extent, the pharmacokinetics of albumin. This is a different situation from reversible binding, where free drug remains available in equilibrium, and it means that intuitions developed from the acylated incretin analogues do not transfer cleanly.\n\nThe evidence limitations are substantial and should be stated without hedging. CJC-1295 with DAC is not approved in any jurisdiction, has no completed late-phase clinical programme, and has no regulator-reviewed labelling or post-marketing surveillance. The published literature on it is considerably thinner than that on tesamorelin, and much of what circulates about its duration of action comes from early-phase or supplier material rather than from a mature peer-reviewed evidence base. Long-term safety data in healthy subjects do not exist.\n\nFor laboratory work, the tractable questions are those the compound's design raises directly: receptor desensitisation and trafficking under sustained versus pulsatile stimulation, comparative characterisation against short-acting analogues of the same receptor such as sermorelin, and the behaviour of the albumin conjugate itself. Because sermorelin provides a short-acting comparator at the same receptor and tesamorelin a differently stabilised one, this catalogue's GHRH group permits reasonably well-controlled comparisons of stabilisation strategy independent of receptor engagement.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation by mass spectrometry compares observed mass against the value calculated for the compound, approximately 3647.2 Da. This value is the most practical way to distinguish this product from the non-DAC variant, and that distinction is the single most important analytical question for anything labelled \"CJC-1295\". The DAC group contributes mass, so the DAC-bearing compound and the modified GRF 1-29 variant differ measurably. A certificate reporting an intact mass near 3647 Da supports the DAC-bearing identity; one reporting a substantially lower mass indicates something else, whatever the label says.\n\nThere is an additional analytical consideration specific to the DAC chemistry. The group that confers albumin binding is reactive by design — that reactivity is the mechanism. A reactive moiety can also react with other things, including during storage, and material in which that group has been quenched or hydrolysed would retain most of its mass and most of its sequence while having lost the property it exists to provide. Intact mass alone may not resolve this, which is a reason to treat storage history and handling as analytically relevant for this compound rather than merely as logistics.\n\nPurity assessment by reverse-phase high-performance liquid chromatography establishes what proportion of the material is the target compound rather than truncated sequences, deletion sequences or residual reagents. For a peptide of this length, single-residue deletions change total mass by a proportionally small amount and may be poorly resolved from the parent peak, so method quality matters and a purity figure obtained under a shallow gradient is weaker evidence than one obtained under conditions shown to separate close-eluting species.\n\nLyophilised mass is also not peptide content: a vial labelled 5 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nCJC-1295 with DAC is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. Its structural relationship to tesamorelin, which is approved for a defined indication, confers nothing: a shared receptor target and a shared parent sequence are not regulatory standing, and the approval of one analogue says nothing about another.\n\nA specific caution attaches to the long duration of action, because it is marketed as a convenience feature and is also a safety-relevant property. A compound whose action cannot readily be terminated is one whose effects, if unwanted, cannot readily be stopped. That is a material consideration for any agent lacking a characterised safety profile, and it applies with particular force where the linkage to the carrier protein is covalent rather than reversible.\n\nAmbiguous labelling is also a compliance matter here and not merely a technical one. \"CJC-1295\" is used for two distinct chemical entities, and the identifiers on this page apply only to the DAC-bearing compound. Material labelled without that qualification should not be assumed to be either one.\n\nGrowth hormone-releasing factor analogues fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list rather than rely on any statement here.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is CJC-1295 with DAC?",
+        "answer": "It is a synthetic analogue of growth hormone-releasing hormone, built on the same 1-29 fragment that underlies sermorelin, carrying an additional group called a Drug Affinity Complex that binds covalently to albumin in circulation. Its molecular formula is C165H269N47O46, molecular weight approximately 3647.2 g/mol, CAS 446262-90-4, PubChem CID 91971820."
+      },
+      {
+        "question": "What does DAC actually do?",
+        "answer": "It solves the clearance problem. Native growth hormone-releasing hormone is cleared within minutes. The DAC group is a reactive moiety that forms a covalent bond with albumin, the most abundant plasma protein, so the peptide then travels as part of a long-lived carrier protein and is protected from the mechanisms that would otherwise remove it quickly. That is the entire reason the compound exists in this form."
+      },
+      {
+        "question": "How is this different from how semaglutide binds albumin?",
+        "answer": "The bond type differs, and it matters. Semaglutide and tirzepatide carry fatty-acid chains that bind albumin reversibly, an equilibrium between bound and free drug that can dissociate. The DAC approach forms a covalent bond that does not. Covalent attachment produces a much longer and less reversible extension of duration, so intuitions from the acylated incretin analogues do not transfer cleanly."
+      },
+      {
+        "question": "Is a very long duration of action simply an advantage?",
+        "answer": "Not straightforwardly, and this is the most substantive point about the compound. The rationale for secretagogues over recombinant growth hormone rests on preserving pulsatile, feedback-regulated secretion. A stimulus that persists continuously sits in tension with that rationale, since continuous receptor stimulation is precisely what pulsatile physiology is not. It also raises questions about receptor desensitisation that a short-acting agent does not."
+      },
+      {
+        "question": "Is CJC-1295 with DAC the same as CJC-1295 without DAC?",
+        "answer": "No. They are different chemical entities, and the shared name causes persistent confusion. The version without DAC is described as modified GRF 1-29 and lacks the albumin-binding group entirely, giving it a completely different duration profile. It also lacks a comparably verified public registry record. The identifiers on this page apply only to the DAC-bearing compound, and material labelled simply \"CJC-1295\" is ambiguous."
+      },
+      {
+        "question": "How does it differ from sermorelin and tesamorelin?",
+        "answer": "All three act on the same GHRH receptor but solve the clearance problem differently. Sermorelin does not solve it — it is the plain 1-29 fragment and is short-acting. Tesamorelin blocks the degradation pathway by chemical modification of the N-terminus. CJC-1295 with DAC tethers covalently to albumin. Comparing them isolates the contribution of stabilisation strategy from receptor engagement, which makes this catalogue group genuinely useful experimentally."
+      },
+      {
+        "question": "Is it approved anywhere?",
+        "answer": "No. It has not been approved by the FDA or any other regulatory authority, for any indication, in any jurisdiction. Its structural relationship to tesamorelin, which is approved for a defined indication, confers nothing — a shared receptor target and parent sequence are not regulatory standing. There is no regulator-reviewed labelling and no post-marketing surveillance."
+      },
+      {
+        "question": "Why does storage history matter analytically for this compound?",
+        "answer": "Because the group that confers albumin binding is reactive by design, and that reactivity is the mechanism. A reactive moiety can also react with other things, including during storage. Material in which that group has been quenched or hydrolysed would retain most of its mass and most of its sequence while having lost the property it exists to provide, and intact mass alone may not resolve that."
+      },
+      {
+        "question": "How do I confirm I have the DAC version?",
+        "answer": "By intact mass. The DAC group contributes mass, so the DAC-bearing compound at approximately 3647 Da and the modified GRF 1-29 variant differ measurably. A certificate reporting an intact mass near 3647 Da supports the DAC-bearing identity; one reporting a substantially lower mass indicates something else regardless of what the label says. A certificate with no mass data leaves the most important question about this product unanswered."
+      },
+      {
+        "question": "What does \"research use only\" mean here?",
+        "answer": "It means the material is sold for laboratory research and nothing else. Research use only is not a legal classification and does not exempt a purchaser from applicable law; legality depends on your jurisdiction and on what you do with the material. Researchers are responsible for institutional approvals, import and export controls, and safe disposal. No dosing or administration guidance for human or veterinary use is provided."
+      }
+    ]
+  }
+}

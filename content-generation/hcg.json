@@ -1,0 +1,233 @@
+{
+  "_meta": {
+    "status": "BLOCKED",
+    "status_reason": "APPROVED BIOLOGIC SOLD AS RUO, WITH UNVERIFIABLE POTENCY. hCG is a heterodimeric glycoprotein hormone of roughly 36-38 kDa; no molecular formula may be stated for it and none is stated on this page. Potency is expressed in International Units against an international reference preparation, so no mass can be inferred and no identity or potency claim can be made without lot-specific bioassay data, which is not supplied. Additionally this is an FDA-APPROVED drug substance, which raises compliance considerations beyond those for unapproved research compounds.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "hcg",
+    "qc": {
+      "main_content_words": 3051,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "FDA-APPROVED as a prescription drug (chorionic gonadotropin for injection, USP; e.g. Pregnyl NDA 017692, Novarel NDA 017016) for certain infertility and male hypogonadism indications. NOT approved for weight loss - FDA-approved labelling carries an explicit negative statement to that effect.",
+    "variants_from_csv": [
+      {
+        "variant": "5000 IU",
+        "price_usd": "65.99"
+      },
+      {
+        "variant": "10000 IU",
+        "price_usd": "76.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "5000 IU",
+        "source_file": "HCG 5000 IU.png",
+        "upload_as": "amino-hcg-5000-iu.png"
+      },
+      {
+        "variant": "10000 IU",
+        "source_file": "HCG 10000 IU.png",
+        "upload_as": "amino-hcg-10000-iu.png"
+      }
+    ],
+    "identity_note": "A bulk database lookup under \"chorionic gonadotropin\" returned PubChem CID 1108 (C17H28, MW 232.4). This is a NAME COLLISION with a small hydrocarbon and is certainly not hCG; the result was REJECTED. hCG cannot be represented as a small-molecule record. CAS 9002-61-3 is commonly cited but was not verified via PubChem.",
+    "references": [
+      "FDA-approved labelling, chorionic gonadotropin for injection USP (Pregnyl, NDA 017692; accessdata.fda.gov/drugsatfda_docs/label/2023/017692s028s036s043lbl.pdf, and earlier 2007 and 2011 revisions; Novarel NDA 017016 label 2011). The Indications section states that hCG \"has not been demonstrated to be effective adjunctive therapy in the treatment of obesity\" and that \"there is no substantial evidence that it increases weight loss beyond that resulting from caloric restriction.\" Verified 2026-11-09.",
+      "FDA, \"Questions and Answers on HCG Products for Weight Loss\" and \"Avoid Dangerous HCG Diet Products\" (fda.gov) - hCG is approved only for certain infertility and male hormone uses; there are NO FDA-approved hCG products for weight loss; FDA has taken action against homeopathic-labelled OTC hCG weight-loss products. Verified 2026-11-09."
+    ],
+    "unverified": [
+      "MOLECULAR FORMULA - must NOT be stated. hCG is a heterodimeric glycoprotein of roughly 36-38 kDa with substantial and variable glycosylation; it has no single small-molecule formula.",
+      "Potency in International Units for any given Amino Based lot - IU is defined by bioassay against an international reference preparation and cannot be verified by mass or by routine chromatography",
+      "Glycosylation profile - a primary determinant of hCG biological activity and half-life, and not addressed by any routine purity method",
+      "Source and manufacturing route (urinary-derived versus recombinant) - not stated, and the two differ materially in impurity profile",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a verification and regulatory component. The searcher wants to know what hCG is, how IU relate to milligrams, and what the weight-loss position is.",
+    "primary_keyword": "HCG",
+    "secondary_keywords": [
+      "human chorionic gonadotropin",
+      "HCG 5000 IU",
+      "chorionic gonadotropin injection",
+      "HCG molecular weight",
+      "HCG IU to mg",
+      "beta hCG"
+    ],
+    "long_tail_keywords": [
+      "what is HCG",
+      "HCG molecular formula",
+      "how many mg is 5000 IU HCG",
+      "is HCG approved for weight loss",
+      "HCG FDA label obesity statement",
+      "HCG alpha beta subunit",
+      "urinary vs recombinant HCG",
+      "HCG glycosylation activity",
+      "HCG LH receptor",
+      "HCG certificate of analysis"
+    ],
+    "semantic_terms": [
+      "heterodimeric glycoprotein",
+      "alpha subunit",
+      "beta subunit",
+      "luteinising hormone receptor",
+      "Leydig cells",
+      "granulosa cells",
+      "corpus luteum",
+      "ovulation trigger",
+      "International Unit",
+      "bioassay",
+      "reference preparation",
+      "glycosylation",
+      "glycan analysis",
+      "dimer integrity",
+      "host cell protein"
+    ],
+    "name_variations": [
+      "HCG",
+      "hCG",
+      "human chorionic gonadotropin",
+      "chorionic gonadotrophin",
+      "chorionic gonadotropin for injection USP",
+      "Pregnyl",
+      "Novarel",
+      "beta-hCG (usually the assay analyte, not a product)"
+    ],
+    "informational_queries": [
+      "what is HCG",
+      "does HCG cause weight loss",
+      "HCG IU to mg conversion",
+      "how does HCG work",
+      "HCG vs LH"
+    ],
+    "commercial_queries": [
+      "buy HCG 5000 IU",
+      "HCG 10000 IU",
+      "HCG research",
+      "HCG COA"
+    ],
+    "cannibalisation_check": "Owns hCG and the IU-versus-mass and weight-loss-claim intents. /product/kisspeptin owns upstream reproductive-axis intent; /product/hcg does not compete for GH secretagogue or GLP-1 weight-management intent, which belong to other pages.",
+    "h1": "Driven by CMS name field; renders as \"HCG\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/kisspeptin",
+        "anchor": "Kisspeptin",
+        "rationale": "Acts upstream in the reproductive axis; useful contrast with a gonadotropin acting directly at the LH receptor.",
+        "verified": true
+      },
+      {
+        "route": "/product/pt-141",
+        "anchor": "PT-141",
+        "rationale": "Other approved-drug substance in the catalogue; the same approved-versus-research-grade distinction applies.",
+        "verified": true
+      },
+      {
+        "route": "/product/semaglutide",
+        "anchor": "Semaglutide",
+        "rationale": "Where the weight-management evidence in this catalogue actually sits; direct contrast with a hormone whose approved label records a negative finding on obesity.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "HCG (Chorionic Gonadotropin) | Glycoprotein Hormone, IU Potency | Amino Based",
+    "seoDescription": "HCG: a 36-38 kDa heterodimeric glycoprotein measured in IU, not milligrams. An FDA-approved drug, never approved for weight loss. Research use only.",
+    "description": "HCG is human chorionic gonadotropin, a heterodimeric glycoprotein hormone of roughly 36 to 38 kilodaltons composed of an alpha and a beta subunit. Because it is a large, variably glycosylated protein rather than a defined small molecule, no molecular formula is stated for it on this page and none should be quoted on any document describing it. Its potency is expressed in International Units rather than in milligrams. Chorionic gonadotropin is an FDA-approved prescription drug for certain infertility and male hypogonadism indications, and has never been approved for weight loss. This material is supplied for laboratory research use only.",
+    "productDetailsTitle": "HCG: A Glycoprotein Hormone, Measured in Activity Rather Than Mass",
+    "productDetailsDescription": "Almost everything that makes this product different from the rest of this catalogue follows from one fact: hCG is not a peptide that can be written as a sequence and weighed. It is a heterodimeric glycoprotein — two different protein chains, an alpha subunit and a beta subunit, held together non-covalently, with substantial carbohydrate attached to both. Total mass is roughly 36 to 38 kilodaltons, and a meaningful part of that mass is sugar rather than protein.\n\nThe alpha subunit is shared with other glycoprotein hormones, including luteinising hormone, follicle-stimulating hormone and thyroid-stimulating hormone. Biological specificity resides in the beta subunit. The beta subunit of hCG is closely related to that of luteinising hormone, which is why hCG acts at the luteinising hormone receptor, and it carries a C-terminal extension that the LH beta subunit lacks — a structural difference that contributes to hCG's considerably longer circulating half-life. This is also why assays can be made specific for hCG beta, and why older assays that did not discriminate produced cross-reactivity problems.\n\nA verification point belongs here, because it is a trap. A bulk chemical database query under the name \"chorionic gonadotropin\" returns a record for a small hydrocarbon of formula C17H28 and molecular weight 232.4. That result is a name collision and is certainly not this hormone — it was rejected during verification of this catalogue rather than carried through. A 37 kilodalton glycoprotein cannot be represented as a small-molecule record at all. The practical consequence: any certificate, listing or datasheet that quotes a molecular formula or a precise molecular weight for hCG is describing something other than hCG, or has been assembled by copying a database result without checking it. That is a red flag visible before any analytical data is examined.\n\nThe second structural consequence concerns how quantity is expressed, and it is the single most important practical fact about these vials. These presentations are labelled 5,000 IU and 10,000 IU, not in milligrams. An International Unit is not a unit of mass. It is a unit of biological activity, defined by bioassay against an international reference preparation. Two vials of identical labelled potency can contain different masses of protein, and no mass can be derived from the IU figure. This is the standard and correct way to express the quantity of a biologic whose activity depends on properties that mass does not capture — and for hCG the property that most affects activity is glycosylation.\n\nThat last point deserves development because it is the reason this page carries a BLOCKED status. The carbohydrate structures attached to hCG are not incidental decoration; they are primary determinants of its biological activity and of its circulating half-life. Glycosylation varies with the source of the material and with the manufacturing process, and it is not addressed by any routine purity method. A chromatographic purity figure, a protein assay and even a correct molecular weight range tell you nothing about whether the glycosylation profile is appropriate. Potency therefore has to be established by bioassay, and no lot-specific bioassay data is supplied for this product. Without it, neither identity nor potency can be verified, and the labelled IU figure cannot be independently confirmed.\n\nA related unknown is source. hCG preparations are produced either by purification from the urine of pregnant women or by recombinant expression. The two routes yield materially different impurity profiles — urinary-derived material carries the possibility of co-purified urinary proteins, while recombinant material carries host-cell proteins and a glycosylation pattern characteristic of the expression system. Which route produced this material is not stated, and it is a reasonable thing to ask.\n\nA naming note. This substance appears as hCG, HCG, human chorionic gonadotropin, chorionic gonadotrophin, and under the generic name chorionic gonadotropin for injection, USP. Approved brand presentations include Pregnyl and Novarel. \"Beta-hCG\" usually refers to the beta subunit as measured in diagnostic assays rather than to a product. HCG is pharmacologically distinct from kisspeptin, from gonadotropin-releasing hormone and its analogues, and from the growth-hormone secretagogues elsewhere in this catalogue, all of which act at different receptors and by different mechanisms.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity is expressed in International Units rather than in milligrams, which is a substantive difference rather than a labelling convention: an International Unit is a measure of biological activity defined against an international reference preparation, not a measure of mass. Two vials of identical labelled potency may contain different masses of protein, and no mass can be inferred from the IU figure. Lyophilised preparations are hygroscopic, so a sealed vial is conventionally allowed to reach room temperature before opening. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here. This product is supplied in nominal 5,000 IU and 10,000 IU presentations.",
+    "researchFocusTitle": "Established Endocrinology, Approved Indications, and a Famous Negative Finding",
+    "researchFocusDescription": "hCG occupies an unusual position in this catalogue. It is not a speculative research chemical with a thin evidence base. It is a well-characterised hormone whose physiology has been understood for decades and which has been an approved prescription medicine for many years. The research questions it raises are therefore different in kind: not \"does this do anything\" but \"what is it approved for, what has it been shown not to do, and what can be verified about a given preparation.\"\n\nThe established endocrinology is straightforward. hCG is produced by the placenta during pregnancy, and its principal action is at the luteinising hormone receptor. In females the LH receptor is expressed in ovarian tissue, where LH signalling drives ovulation and supports corpus luteum function; hCG's longer half-life relative to LH is what makes it clinically useful as an ovulation trigger. In males the LH receptor is expressed on testicular Leydig cells, where LH signalling drives testosterone production — which is the basis of hCG's approved uses in male hypogonadism and in prepubertal cryptorchidism. None of this is contested, and it is the reason hCG has approved indications at all.\n\nAccording to FDA-approved labelling for chorionic gonadotropin for injection, the approved uses fall into these areas: certain infertility indications, and male hormonal indications including hypogonadotropic hypogonadism and prepubertal cryptorchidism. FDA's own consumer guidance states the position compactly: hCG is approved only for certain infertility and male hormone uses.\n\nThe most instructive thing in the entire record on this hormone, however, is a negative finding — and it is unusually well documented, because it appears in the approved labelling itself rather than only in the literature. The FDA-approved label for chorionic gonadotropin for injection states, in its Indications section, that hCG has not been demonstrated to be effective adjunctive therapy in the treatment of obesity, and that there is no substantial evidence that it increases weight loss beyond that resulting from caloric restriction. That language has persisted across label revisions over many years, appearing in the 2007, 2011 and 2023 versions of the Pregnyl labelling and in the Novarel labelling.\n\nIt is worth appreciating how unusual that is. Regulators do not normally use approved labelling to state what a drug does not do. The presence of an explicit negative statement in the Indications section reflects a specific history: hCG was promoted for weight loss on a very large scale, the claim was examined, it did not hold up, and the regulator required the label to say so. FDA has since maintained consumer-facing guidance to the same effect, stating that there are no FDA-approved hCG products for weight loss, and has taken enforcement action against over-the-counter products labelled as homeopathic and marketed for weight loss, which FDA has not evaluated for safety or effectiveness.\n\nThe scientific logic of that negative result is also worth stating, because it explains why the claim was always implausible. The weight-loss protocols associated with hCG paired it with a severely restricted diet. Severe caloric restriction produces weight loss on its own. The question the evidence had to answer was whether hCG added anything beyond the restriction, and the answer recorded in the approved labelling is that there is no substantial evidence that it does. This is a textbook example of an effect attributable to a co-intervention rather than to the agent being promoted — and it is directly relevant to how any researcher should design a study on this hormone: without an appropriate control for caloric intake, a weight-loss result means nothing.\n\nThe limitations relevant to this product are mostly about the preparation rather than the hormone. The hormone itself is well characterised and has approved uses. What cannot be established here is whether this particular material has the potency its label states, because potency in International Units is defined by bioassay and no lot-specific bioassay data is supplied; whether its glycosylation profile — the primary determinant of activity and half-life — is appropriate, since no routine method addresses it; and whether it is urinary-derived or recombinant, which determines what impurities to expect. Those are not minor gaps for a biologic, and together they are why this page carries a BLOCKED status.\n\nFor a laboratory, the legitimate research uses are in endocrinology and reproductive biology: LH receptor pharmacology, Leydig cell and granulosa cell steroidogenesis assays, and work on the structure-function relationship between glycosylation and receptor signalling, which remains genuinely interesting. All of those applications depend on knowing the potency and glycosylation state of the material, which brings the verification questions back to the centre rather than the margin.",
+    "qualityPurityTitle": "Analytical Verification for a Glycoprotein Measured in Activity Units",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThe verification framework for a glycoprotein hormone differs fundamentally from that for a synthetic peptide, and applying peptide expectations here produces checks that look reassuring while establishing almost nothing.\n\nBegin with what must not appear. No molecular formula should be stated for hCG, and none is stated on this page. It is a heterodimeric glycoprotein of roughly 36 to 38 kilodaltons with substantial and variable carbohydrate content. A certificate that quotes a molecular formula, or a single precise molecular weight, for this substance is describing something else or has been compiled by copying a database result without checking — and as noted above, a bulk query under this hormone's name returns a small hydrocarbon of formula C17H28 and mass 232.4. Treat any such figure as evidence about the document rather than about the material.\n\nA usable conversion range can be given, with the caveat that it is a range rather than a constant. Reported biopotency for purified hCG preparations clusters around 13,000 IU per milligram, with published figures spanning roughly 8,360 to 16,800 IU/mg, while older international reference preparations were assigned substantially lower values — in the region of 4,200 to 9,300 IU/mg. On the 13,000 IU/mg figure, a 5,000 IU vial corresponds to roughly 0.4 mg of hCG protein and a 10,000 IU vial to roughly 0.8 mg; on the lower historical figures the same vials would contain several times that mass. The spread across those estimates is itself the argument for expressing this hormone in International Units: preparations of identical labelled potency genuinely do differ in protein mass, so the IU figure describes what the material does while a mass figure would not. These values are offered to give a sense of scale, not as a specification for this product.\n\nPotency is the central specification, and it is the one that cannot be verified by the usual means. These vials are labelled in International Units, a measure of biological activity defined by bioassay against an international reference preparation. No mass measurement, no chromatographic purity figure and no protein assay yields an IU value. Establishing that a lot contains its labelled potency requires bioassay data traceable to the reference preparation. That data is not supplied for this product, so the labelled 5,000 IU and 10,000 IU figures cannot be independently confirmed here. For quantitative endocrinology this is the specification that matters most, and its absence is the primary blocking issue.\n\nGlycosylation is the second specification that routine methods do not reach. The carbohydrate structures on hCG are primary determinants of its biological activity and circulating half-life, not incidental features. Two preparations with indistinguishable protein content and indistinguishable chromatographic purity can differ substantially in activity because their glycosylation differs. Characterising it requires dedicated glycan analysis — released-glycan profiling or glycopeptide mapping — which an ordinary certificate will not include and which should be requested explicitly where it matters.\n\nSubunit integrity is a third question specific to this class. hCG is a non-covalent heterodimer, and dissociation into free alpha and free beta subunits inactivates it, because receptor binding requires the assembled dimer. Free subunits may be present in a preparation and are not necessarily detected by methods that measure total protein. A certificate addressing dimer integrity, or an assay confirming receptor-binding competence, is more informative than a purity percentage.\n\nSource and host-cell impurities depend on the manufacturing route, which is not stated. Urinary-derived material raises the question of co-purified urinary proteins; recombinant material raises host-cell protein and host-cell DNA questions and will carry the glycosylation pattern of its expression system. These are different impurity questions requiring different methods, and which applies cannot be determined without knowing the route.\n\nPurity by size-exclusion or reverse-phase chromatography, where provided, speaks to aggregation and gross contamination and is worth having — but for this substance it is a secondary specification behind potency, glycosylation and dimer integrity.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: An Approved Drug, and a Documented Negative Finding on Weight Loss",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position for this substance differs from that of the unapproved research compounds elsewhere in this catalogue and should be stated precisely rather than compressed.\n\nChorionic gonadotropin for injection is an FDA-approved prescription drug. It is approved, according to FDA's own guidance, only for certain infertility and male hormone uses. That it has approved uses does not make material sold as a research chemical equivalent to an approved medicine: approved products are manufactured under pharmaceutical quality systems, released against specifications including bioassay-established potency, and supplied with regulator-reviewed labelling. None of that applies to this material, and its potency cannot be independently confirmed here. Any use of this substance as a medicine would require a prescription and an approved product, and is outside both the terms on which this material is supplied and its verified characterisation.\n\nOne negative finding warrants specific emphasis because it is among the best-documented statements about any substance in this catalogue. The FDA-approved labelling for chorionic gonadotropin for injection states, in its Indications section, that hCG has not been demonstrated to be effective adjunctive therapy in the treatment of obesity, and that there is no substantial evidence that it increases weight loss beyond that resulting from caloric restriction. That language has persisted across label revisions spanning many years. FDA's consumer guidance states that there are no FDA-approved hCG products for weight loss, and FDA has taken action against over-the-counter products labelled homeopathic and marketed for that purpose, which it has not evaluated for safety or effectiveness. Regulators rarely use approved labelling to record what a drug does not do; that this statement is there reflects a history of large-scale promotion of a claim that did not hold up on examination.\n\nThe scientific reason is simple and generalises: the weight-loss protocols associated with this hormone paired it with severe caloric restriction, which produces weight loss by itself. The question was whether the hormone added anything beyond the restriction, and the approved labelling records that there is no substantial evidence that it does.\n\nAnyone connected with competitive sport should be aware that chorionic gonadotropin appears on anti-doping prohibited lists, and should consult the current published WADA Prohibited List directly; its precise listing and the conditions attached to it were not independently verified for this page.\n\nNothing on this page suggests that this material is suitable for addressing infertility, hypogonadism, obesity, weight loss or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is HCG?",
+        "answer": "HCG is human chorionic gonadotropin, a heterodimeric glycoprotein hormone of roughly 36 to 38 kilodaltons made of an alpha and a beta subunit held together non-covalently, with substantial carbohydrate attached. The alpha subunit is shared with other glycoprotein hormones; specificity resides in the beta subunit, which is closely related to that of luteinising hormone. It acts at the luteinising hormone receptor."
+      },
+      {
+        "question": "What is HCG’s molecular formula?",
+        "answer": "It does not have one that can meaningfully be stated, and none is stated on this page. It is a large, variably glycosylated protein, not a defined small molecule. Any certificate or datasheet quoting a molecular formula or a single precise molecular weight for hCG is describing something else or was compiled by copying a database result without checking — a bulk query under this hormone’s name returns a small hydrocarbon of formula C17H28 and mass 232.4."
+      },
+      {
+        "question": "How many milligrams is 5,000 IU?",
+        "answer": "There is no fixed conversion, only a range — which is itself the point. Reported biopotency for purified hCG clusters around 13,000 IU/mg (published figures span roughly 8,360-16,800 IU/mg), while older reference preparations were assigned roughly 4,200-9,300 IU/mg. At 13,000 IU/mg a 5,000 IU vial is about 0.4 mg of protein; on the lower figures, several times that. Preparations of identical labelled potency genuinely differ in mass, which is precisely why this hormone is expressed in IU. Treat these as scale, not specification."
+      },
+      {
+        "question": "Is HCG approved for weight loss?",
+        "answer": "No, and the position is unusually well documented. The FDA-approved labelling for chorionic gonadotropin for injection states in its Indications section that hCG has not been demonstrated to be effective adjunctive therapy in the treatment of obesity, and that there is no substantial evidence that it increases weight loss beyond that resulting from caloric restriction. FDA guidance states there are no FDA-approved hCG products for weight loss."
+      },
+      {
+        "question": "Why does an approved label state what the drug does not do?",
+        "answer": "Because of a specific history. Regulators do not normally use approved labelling for negative statements. hCG was promoted for weight loss on a very large scale, the claim was examined, it did not hold up, and the label was required to say so — language that has persisted across revisions spanning many years. FDA has also taken action against over-the-counter homeopathic-labelled hCG weight-loss products."
+      },
+      {
+        "question": "Why was the weight-loss claim implausible?",
+        "answer": "Because the protocols paired hCG with severe caloric restriction, which produces weight loss on its own. The question the evidence had to answer was whether the hormone added anything beyond the restriction, and the approved labelling records that there is no substantial evidence that it does. It is a textbook case of an effect attributable to a co-intervention — and a reminder that any study here needs a caloric control."
+      },
+      {
+        "question": "Why does glycosylation matter?",
+        "answer": "Because the carbohydrate structures on hCG are primary determinants of its biological activity and circulating half-life, not incidental features. Two preparations with indistinguishable protein content and chromatographic purity can differ substantially in activity because their glycosylation differs. Characterising it needs dedicated glycan analysis — released-glycan profiling or glycopeptide mapping — which ordinary certificates do not include."
+      },
+      {
+        "question": "Can the labelled potency be verified?",
+        "answer": "Not from the information available for this product, which is why this page carries a BLOCKED status. Potency in International Units is established by bioassay traceable to an international reference preparation. No mass measurement, chromatographic purity figure or protein assay yields an IU value. No lot-specific bioassay data is supplied, so the 5,000 IU and 10,000 IU figures cannot be independently confirmed here."
+      },
+      {
+        "question": "Does it matter whether HCG is urinary-derived or recombinant?",
+        "answer": "Yes, and the route is not stated for this material. hCG is produced either by purification from the urine of pregnant women or by recombinant expression. Urinary-derived material raises the question of co-purified urinary proteins; recombinant material raises host-cell protein and DNA questions and carries the glycosylation pattern of its expression system. These require different analytical methods, so the unknown route leaves the impurity question open."
+      },
+      {
+        "question": "What is a legitimate laboratory use?",
+        "answer": "Endocrinology and reproductive biology: luteinising hormone receptor pharmacology, Leydig cell and granulosa cell steroidogenesis assays, and structure-function work on how glycosylation affects receptor signalling, which remains genuinely interesting. All of those depend on knowing the potency and glycosylation state of the material, which is exactly what cannot be confirmed here without lot-specific bioassay and glycan data."
+      }
+    ]
+  }
+}

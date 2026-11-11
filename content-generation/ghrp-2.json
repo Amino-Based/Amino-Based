@@ -1,0 +1,224 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "ghrp-2",
+    "qc": {
+      "main_content_words": 2090,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED as a therapeutic in the US/EU. Used as a diagnostic agent in some jurisdictions. Prohibited in sport (WADA S2).",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "49.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "GHRP-2 10mg.png",
+        "upload_as": "amino-ghrp-2-10mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 6918245 (PUG REST, verified 2026-11-09): C45H55N9O6, MW 818.0; CAS 158861-67-7",
+      "PMID 18056963 doi:10.1196/annals.1404.023 - Ann N Y Acad Sci - GHS-R1a agonists in aging; MK-0677 restored episodic GH amplitude in elderly subjects; lean mass and bone density effects; GHS-R1a/D1R heterodimerisation",
+      "PMID 28873385 doi:10.1159/000475732 - Endocr Dev - Ghrelin and Growth; GHS receptor gene variants and human height",
+      "PMID 33333485 doi:10.1016/j.npep.2020.102112 - Neuropeptides - ghrelin/GHS-R1a regulation of ER stress, oxidative stress and autophagy"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what GHRP-2 is, how it differs from GHRH analogues and from ipamorelin, and what evidence exists.",
+    "primary_keyword": "GHRP-2",
+    "secondary_keywords": [
+      "pralmorelin",
+      "GHRP-2 peptide",
+      "growth hormone secretagogue",
+      "GHS-R1a agonist",
+      "GHRP-2 molecular weight",
+      "ghrelin mimetic"
+    ],
+    "long_tail_keywords": [
+      "what is GHRP-2",
+      "GHRP-2 vs GHRH difference",
+      "GHRP-2 vs ipamorelin",
+      "GHRP-2 molecular formula C45H55N9O6",
+      "GHRP-2 CAS 158861-67-7",
+      "is GHRP-2 the same as pralmorelin",
+      "what is GHS-R1a",
+      "is GHRP-2 banned in sport",
+      "GHRP-2 acetate salt molar calculation",
+      "growth hormone releasing peptide mechanism"
+    ],
+    "semantic_terms": [
+      "hexapeptide",
+      "GHS-R1a",
+      "ghrelin",
+      "growth hormone secretagogue",
+      "pituitary",
+      "G protein-coupled receptor",
+      "MK-0677",
+      "episodic GH release",
+      "deletion sequence",
+      "acetate salt",
+      "reverse-phase HPLC",
+      "receptor desensitisation",
+      "signalling bias"
+    ],
+    "name_variations": [
+      "GHRP-2",
+      "pralmorelin",
+      "KP-102",
+      "GHRP-2 acetate",
+      "growth hormone-releasing peptide 2"
+    ],
+    "informational_queries": [
+      "what is GHRP-2",
+      "GHRP-2 mechanism of action",
+      "GHRP vs GHRH",
+      "GHRP-2 vs GHRP-6",
+      "is GHRP-2 approved"
+    ],
+    "commercial_queries": [
+      "buy GHRP-2 research peptide",
+      "GHRP-2 10mg",
+      "GHRP-2 certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns GHRP-2 and pralmorelin. /product/ghrp-6 owns GHRP-6 and the appetite angle; /product/ipamorelin owns selectivity. The GHRP-vs-GHRH explainer appears on each GHS-R1a page but framed from that compound’s perspective, and the GHRH pages own the GHRH-receptor intent.",
+    "h1": "Driven by CMS name field; renders as \"GHRP-2\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/ghrp-6",
+        "anchor": "GHRP-6",
+        "rationale": "Closest comparator within the same receptor class.",
+        "verified": true
+      },
+      {
+        "route": "/product/ipamorelin",
+        "anchor": "Ipamorelin",
+        "rationale": "The selectivity comparator within the same receptor class.",
+        "verified": true
+      },
+      {
+        "route": "/product/sermorelin",
+        "anchor": "Sermorelin",
+        "rationale": "Acts on the GHRH receptor rather than GHS-R1a; the key class distinction.",
+        "verified": true
+      },
+      {
+        "route": "/product/tesamorelin",
+        "anchor": "Tesamorelin",
+        "rationale": "The approved GHRH analogue; useful contrast on regulatory status.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "GHRP-2 (Pralmorelin) | GHS-R1a Agonist | Amino Based",
+    "seoDescription": "GHRP-2 (pralmorelin): synthetic hexapeptide GHS-R1a agonist, C45H55N9O6, MW 818.0, CAS 158861-67-7. Identity, receptor pharmacology. Research use only.",
+    "description": "GHRP-2, also known as pralmorelin, is a synthetic hexapeptide that acts as an agonist at the growth hormone secretagogue receptor 1a (GHS-R1a), the receptor whose endogenous ligand is ghrelin. Its molecular formula is C45H55N9O6, with a molecular weight of approximately 818.0 g/mol and CAS registry number 158861-67-7 (PubChem CID 6918245). It is supplied for laboratory research use only.",
+    "productDetailsTitle": "GHRP-2 (Pralmorelin): Identity and Receptor Class",
+    "productDetailsDescription": "GHRP-2 is a synthetic hexapeptide — six amino acid residues — belonging to the group known as growth hormone-releasing peptides. Its approved international non-proprietary name is pralmorelin, and both designations refer to the same molecule. The \"GHRP\" prefix is a source of persistent confusion that is worth clearing up immediately, because it looks similar to \"GHRH\" and the two denote entirely different pharmacology.\n\nGrowth hormone-releasing hormone, GHRH, is an endogenous hypothalamic hormone acting on its own dedicated receptor, the GHRH receptor. Growth hormone-releasing peptides, GHRPs, do not act on that receptor at all. They act on a separate G protein-coupled receptor, the growth hormone secretagogue receptor 1a, whose endogenous ligand was later identified as ghrelin. Two different receptors, two different endogenous ligands, two different signalling routes converging on a shared downstream output. Analogues of GHRH — sermorelin, CJC-1295, tesamorelin — and ghrelin mimetics such as GHRP-2, GHRP-6 and ipamorelin are therefore not interchangeable, and findings for one class do not transfer to the other. This distinction is frequently blurred in supplier literature and it is the single most useful thing to understand about this part of the catalogue.\n\nThe verified identifiers are a molecular formula of C45H55N9O6, a molecular weight of approximately 818.0 g/mol, and CAS registry number 158861-67-7, recorded under PubChem CID 6918245. At roughly 818 Da it is a small peptide by the standards of this catalogue — less than a fifth the mass of the incretin analogues — and its small size and unnatural residues contribute to a stability profile that differs from that of a longer natural-sequence peptide.\n\nGHRP-2 is distinguished from other members of its class less by its receptor target, which it shares with GHRP-6 and ipamorelin, than by its selectivity profile at that target's downstream consequences. GHS-R1a activation is not perfectly confined to growth hormone release; the literature describes effects on other pituitary outputs, and the compounds in this class differ in how cleanly they produce GH release relative to those other effects. Where ipamorelin was specifically developed for a clean profile, GHRP-2 is generally characterised as a potent secretagogue with a less selective downstream profile. That contrast is the most scientifically interesting comparison within the group, and it is the reason these compounds remain useful as distinct pharmacological tools rather than redundant versions of one another.\n\nA note on nomenclature in the literature: this compound appears as GHRP-2, pralmorelin, KP-102 and GHRP-2 acetate, and search results will differ between these terms. The free peptide and its acetate salt are distinct entries with different masses, which matters for molar calculation.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "GHS-R1a Pharmacology and the Boundaries of the Evidence",
+    "researchFocusDescription": "Research on GHRP-2 belongs to a broader body of work on the growth hormone secretagogue receptor, and that wider context is more informative than the compound-specific literature taken alone.\n\nThe receptor itself is well characterised. GHS-R1a is a G protein-coupled receptor, widely expressed across central and peripheral tissues, whose endogenous ligand ghrelin was identified after the synthetic secretagogues that led to the receptor's discovery. That historical order is unusual and worth noting: the synthetic peptides came first, the receptor was identified through them, and the natural ligand was found last. A review in Neuropeptides summarises the breadth of the system's reported activity, describing roles for ghrelin and GHS-R1a in the regulation of endoplasmic reticulum stress, oxidative stress and autophagy across multiple tissues, and framing these as areas of therapeutic interest rather than established applications (PMID 33333485, doi:10.1016/j.npep.2020.102112). The breadth of that list is a reason for caution as much as enthusiasm: a receptor implicated in very many processes is a receptor whose selective manipulation is correspondingly difficult.\n\nOn growth specifically, a review in Endocrine Development sets out the relationship between ghrelin signalling and human growth, including associations between GHS receptor gene variants and height in both healthy individuals and patients with growth disorders such as constitutional delay in growth and puberty, idiopathic short stature, and isolated growth hormone deficiency (PMID 28873385, doi:10.1159/000475732). Genetic association work of this kind is valuable because it speaks to the receptor's physiological role in humans rather than to the effect of administering an agonist.\n\nThe most directly relevant human data for this class come from studies of orally active secretagogues rather than of GHRP-2 itself. A review in the Annals of the New York Academy of Sciences reports that administration of the orally active GHS-R1a agonist MK-0677 to elderly subjects restored the amplitude of endogenous episodic growth hormone release to that of young adults, with functional benefits described as increased lean mass and bone density together with modest improvements in strength (PMID 18056963, doi:10.1196/annals.1404.023). The same review describes effects in old mice including partial restoration of thymic function and a reversion of liver phenotype through a specified mechanism involving cyclin D3 and protein phosphatase-2A activity, and reports that GHS-R1a and the dopamine D1 receptor form heterodimers that modify G-protein signalling and amplify dopamine signalling.\n\nTwo cautions follow directly from that evidence, and both matter. First, those findings concern MK-0677, a distinct orally active compound, not GHRP-2. Receptor-class membership is not equivalence, and transferring a result from one agonist to another is exactly the inferential error this field is prone to. Second, the phrase \"restored the amplitude of endogenous episodic GH release\" describes a change in a hormonal measurement; the accompanying functional benefits were described as modest, and a measurable endocrine change is not the same thing as a clinical outcome.\n\nOne structural feature of growth hormone physiology explains much of the research interest in this class and is worth setting out, because it is what separates a secretagogue from administering the hormone itself. Growth hormone is not secreted continuously but in discrete episodic pulses, and a good deal of its downstream signalling appears to depend on that pulsatile pattern rather than on average concentration alone. Administering recombinant growth hormone raises concentration but does not reproduce the pattern. A secretagogue, by acting upstream on the pituitary's own secretory machinery, in principle amplifies the endogenous pulse rather than overwriting it, and remains subject to the feedback mechanisms that constrain endogenous secretion. That is the mechanistic argument for the whole class, and it is also the basis on which secretagogues are used diagnostically: a compound that provokes the pituitary to secrete is a way of measuring whether the pituitary can.\n\nThe limitations specific to GHRP-2 should be stated plainly. There is no completed late-phase programme establishing it as a therapeutic in major markets. Much of the published work is of some age, and the compound's principal modern use in some jurisdictions is as a diagnostic agent for assessing growth hormone secretory capacity rather than as a treatment. Long-term safety data in healthy subjects are not available. And because GHS-R1a activation influences pituitary outputs beyond growth hormone, experimental designs that measure GH alone may miss relevant effects.\n\nFor laboratory work, the receptor-level questions are the tractable ones: relative potency and efficacy at GHS-R1a compared with other secretagogues, signalling bias, receptor desensitisation and trafficking on repeated exposure, and the heterodimerisation behaviour described in the ageing literature. The existence of well-characterised comparator agonists makes properly controlled comparisons feasible.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation, typically by mass spectrometry, compares observed mass against the value calculated for the sequence — approximately 818.0 Da for the free peptide. One point deserves particular attention here. Small synthetic peptides of this type are very commonly supplied as acetate salts, and for a molecule of only 818 Da the counter-ion contributes a proportionally much larger share of the total mass than it would for a 4 kDa analogue. A molar calculation performed with the free-peptide mass on material that is actually an acetate salt will therefore be wrong by a larger margin here than the same error would produce for a larger peptide. Confirm the form before quantitative work.\n\nPurity assessment, typically by reverse-phase high-performance liquid chromatography, establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual synthesis reagents. For a hexapeptide, the most likely synthesis-related impurities are deletion sequences missing a single residue, which differ from the target by the mass of that residue and are usually well resolved chromatographically. A chromatogram therefore carries real diagnostic value for a peptide this short, and a bare purity percentage discards it.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass rather than a verified peptide mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Regulatory Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nGHRP-2 is not an approved therapeutic agent in the United States or the European Union. Its regulatory position is more nuanced than a simple absence of approval, and the nuance is worth stating accurately: in some jurisdictions the compound has been used as a diagnostic agent for assessing growth hormone secretory capacity, which is a different thing from approval as a treatment. A diagnostic indication in one country does not constitute therapeutic approval anywhere, and it does not apply to research material regardless.\n\nGrowth hormone secretagogues fall within the class of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list rather than rely on any statement here, as the relevant categories and their scope are revised periodically.\n\nThe findings described in the research section above concern the receptor system broadly and, in the case of the human ageing data, a different orally active compound. They are not an assessment of this material, were not obtained with it, and must not be read as evidence of its safety or efficacy.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is GHRP-2?",
+        "answer": "GHRP-2, also called pralmorelin, is a synthetic hexapeptide that activates the growth hormone secretagogue receptor 1a (GHS-R1a), the receptor whose endogenous ligand is ghrelin. It belongs to the group known as growth hormone-releasing peptides. Its molecular formula is C45H55N9O6, molecular weight approximately 818.0 g/mol, CAS 158861-67-7, PubChem CID 6918245."
+      },
+      {
+        "question": "What is the difference between GHRP and GHRH?",
+        "answer": "They are entirely different pharmacology despite the similar abbreviations, and confusing them is the most common error in this area. GHRH is growth hormone-releasing hormone, an endogenous hypothalamic hormone acting on its own dedicated GHRH receptor; sermorelin, CJC-1295 and tesamorelin are its analogues. GHRPs are growth hormone-releasing peptides acting on a different receptor entirely, GHS-R1a, whose natural ligand is ghrelin; GHRP-2, GHRP-6 and ipamorelin belong here. Two receptors, two ligands, two signalling routes. Findings for one class do not transfer to the other."
+      },
+      {
+        "question": "How does GHRP-2 differ from ipamorelin?",
+        "answer": "They share a receptor target but differ in selectivity at that target’s downstream consequences. GHS-R1a activation is not perfectly confined to growth hormone release, and compounds in this class differ in how cleanly they produce GH release relative to effects on other pituitary outputs. Ipamorelin was specifically developed for a clean profile; GHRP-2 is generally characterised as potent but less selective downstream. That contrast is why they remain distinct pharmacological tools rather than redundant versions of one another."
+      },
+      {
+        "question": "Was the receptor or the drug discovered first?",
+        "answer": "The synthetic peptides came first, which is unusual. Growth hormone-releasing peptides were developed before their receptor was known; the receptor, GHS-R1a, was identified through them; and the endogenous ligand, ghrelin, was found last. This history explains the otherwise odd naming, in which a receptor is named after a class of synthetic compounds rather than after its natural ligand."
+      },
+      {
+        "question": "What human evidence exists for this receptor class?",
+        "answer": "The most directly relevant human data concern MK-0677, an orally active GHS-R1a agonist, not GHRP-2. A review reports that administering it to elderly subjects restored the amplitude of endogenous episodic growth hormone release to that of young adults, with functional benefits described as increased lean mass and bone density plus modest improvements in strength. Two cautions apply: that is a different compound, and a measurable endocrine change is not the same as a clinical outcome."
+      },
+      {
+        "question": "Is GHRP-2 an approved drug?",
+        "answer": "Not as a therapeutic in the United States or the European Union. Its position is more nuanced than a simple absence of approval: in some jurisdictions it has been used as a diagnostic agent for assessing growth hormone secretory capacity. A diagnostic indication in one country is not therapeutic approval anywhere, and it does not extend to research material in any case."
+      },
+      {
+        "question": "Is GHRP-2 prohibited in sport?",
+        "answer": "Growth hormone secretagogues fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list directly rather than rely on a statement here, since the relevant categories and their scope are revised periodically."
+      },
+      {
+        "question": "Why does the salt form matter more for a small peptide?",
+        "answer": "Because the counter-ion is a proportionally larger share of total mass. These peptides are commonly supplied as acetate salts, and for a molecule of only 818 Da the acetate contributes much more of the total than it would for a 4 kDa analogue. A molar calculation performed with the free-peptide mass on acetate-salt material is therefore wrong by a larger margin here than the same mistake would cause for a larger peptide."
+      },
+      {
+        "question": "What impurities should a certificate reveal for a hexapeptide?",
+        "answer": "Principally deletion sequences — chains missing a single residue during synthesis. These differ from the target by the mass of the omitted residue and are usually well resolved chromatographically, so for a peptide this short the chromatogram carries real diagnostic value. A bare purity percentage discards that information, which is why the trace matters as much as the number."
+      },
+      {
+        "question": "What does \"research use only\" mean here?",
+        "answer": "It means the material is sold for laboratory research and nothing else. Research use only is not a legal classification and does not exempt a purchaser from applicable law; legality depends on your jurisdiction and on what you do with the material. Researchers are responsible for their own regulatory compliance, including institutional approvals, import and export controls, and safe disposal. No dosing or administration guidance for human or veterinary use is provided."
+      }
+    ]
+  }
+}

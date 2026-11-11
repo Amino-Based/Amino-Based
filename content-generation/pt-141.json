@@ -1,0 +1,228 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. This substance is an APPROVED DRUG (bremelanotide, Vyleesi) and the compliance section is written accordingly. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "pt-141",
+    "qc": {
+      "main_content_words": 3005,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "FDA-APPROVED as bremelanotide (Vyleesi) for acquired, generalised hypoactive sexual desire disorder in premenopausal women; 1.75 mg subcutaneous autoinjector, used as needed before sexual activity. Material sold as research-grade \"PT-141\" is NOT that approved product.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "65.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "PT-141 10mg.png",
+        "upload_as": "amino-pt-141-10mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      }
+    ],
+    "references": [
+      "PubChem CID 9941379 (PUG REST, verified 2026-11-09, matched name \"bremelanotide\"): C50H68N14O10, MW 1025.2, CAS 189691-06-3.",
+      "PMID 35230162 doi:10.1089/jwh.2021.0225 - J Womens Health 31(3):391-400 - prespecified and integrated subgroup analyses from the RECONNECT phase 3 programme: TWO identically designed double-blind randomised placebo-controlled studies with an optional 52-week open-label extension; 1202 patients in the integrated and subgroup analyses; 1.75 mg self-administered subcutaneously by autoinjector as needed before sexual activity for 24 weeks; statistically significant improvements in FSFI desire domain and FSDS-DAO item 13 across age, weight, BMI and bioavailable-testosterone subgroups, with few exceptions. Authors include Palatin Technologies and AMAG Pharmaceuticals personnel (sponsors).",
+      "PMID 31277966 doi:10.1016/j.jsxm.2019.05.012 - J Sex Med 16(8):1226-1235 - phase 2b dose-ranging responder analyses; at the 1.75 mg dose all 7 endpoints reached statistical significance versus placebo in the overall modified intention-to-treat population (P <= .03). Responder definitions from this study were then used in the phase 3 RECONNECT registration programme. Authors include Palatin Technologies personnel.",
+      "PMID 31381550 - Med Lett Drugs Ther 61(1577):114-116 - independent drug-bulletin review of bremelanotide (Vyleesi) for HSDD, covering efficacy, adverse effects, drug interactions, dosage, pregnancy and lactation. No DOI indexed."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Cyclic (lactam) ring integrity for any given lot - PT-141 is a cyclic peptide and the linear form is a distinct, different compound of the same residue composition",
+      "Discrimination from Melanotan-II - the two differ by roughly 1 g/mol and intact low-resolution MS cannot separate them; both are sold in this catalogue",
+      "Whether the supplied material matches the approved drug substance specification - it should not be assumed to"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a regulatory component. The searcher wants to know what PT-141 is, that it is bremelanotide, what the approval covers, and how it differs from the melanotans.",
+    "primary_keyword": "PT-141",
+    "secondary_keywords": [
+      "bremelanotide",
+      "PT-141 peptide",
+      "Vyleesi",
+      "PT-141 molecular weight",
+      "melanocortin receptor agonist",
+      "PT-141 vs Melanotan 2"
+    ],
+    "long_tail_keywords": [
+      "what is PT-141",
+      "is PT-141 bremelanotide",
+      "is PT-141 FDA approved",
+      "PT-141 molecular formula C50H68N14O10",
+      "PT-141 CAS 189691-06-3",
+      "PT-141 RECONNECT phase 3",
+      "PT-141 vs Melanotan 1",
+      "is PT-141 cyclic peptide",
+      "PT-141 for men evidence",
+      "PT-141 certificate of analysis"
+    ],
+    "semantic_terms": [
+      "melanocortin receptor",
+      "MC3R",
+      "MC4R",
+      "MC1R",
+      "alpha-MSH",
+      "cyclic peptide",
+      "lactam bridge",
+      "conformational constraint",
+      "hypoactive sexual desire disorder",
+      "HSDD",
+      "RECONNECT",
+      "Female Sexual Function Index",
+      "minimal clinically important difference",
+      "responder analysis",
+      "modified intention-to-treat",
+      "D-amino acid",
+      "stereoisomer"
+    ],
+    "name_variations": [
+      "PT-141",
+      "PT141",
+      "bremelanotide",
+      "Vyleesi",
+      "Melanotan-II is a DIFFERENT compound",
+      "Melanotan-1 / afamelanotide is a DIFFERENT compound"
+    ],
+    "informational_queries": [
+      "what is PT-141",
+      "is PT-141 approved",
+      "how does PT-141 work",
+      "PT-141 vs Melanotan 2",
+      "PT-141 clinical trials"
+    ],
+    "commercial_queries": [
+      "buy PT-141",
+      "PT-141 10mg",
+      "bremelanotide research peptide",
+      "PT-141 COA"
+    ],
+    "cannibalisation_check": "Owns PT-141 / bremelanotide and the approved-melanocortin-agonist intent. /product/melanotan-1 and /product/melanotan-2 own their own molecules and the pigmentation-focused melanocortin intent; /product/kpv owns the anti-inflammatory alpha-MSH fragment intent.",
+    "h1": "Driven by CMS name field; renders as \"PT-141\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/melanotan-2",
+        "anchor": "Melanotan-2",
+        "rationale": "The compound from which PT-141 was derived; essential for understanding its receptor profile and for selectivity comparisons.",
+        "verified": true
+      },
+      {
+        "route": "/product/melanotan-1",
+        "anchor": "Melanotan-1",
+        "rationale": "Third melanocortin agonist in the catalogue with a different subtype selectivity and regulatory status; completes the comparator set.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "Alpha-MSH fragment acting at least partly independently of melanocortin receptors; informative contrast with a designed receptor agonist.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "PT-141 (Bremelanotide) | Cyclic Melanocortin Agonist | Amino Based",
+    "seoDescription": "PT-141: bremelanotide, C50H68N14O10, MW 1025.2, CAS 189691-06-3. An FDA-approved drug substance with phase 3 data. Research use only.",
+    "description": "PT-141 is bremelanotide, a cyclic seven-residue melanocortin receptor agonist derived from the alpha-melanocyte-stimulating hormone framework. Its molecular formula is C50H68N14O10, with a molecular weight of approximately 1025.2 g/mol (PubChem CID 9941379, CAS 189691-06-3). Unlike most compounds in this catalogue it is an approved drug substance: bremelanotide is FDA-approved under the brand name Vyleesi for acquired, generalised hypoactive sexual desire disorder in premenopausal women. Material sold as research-grade PT-141 is not that approved product, and this material is supplied for laboratory research use only.",
+    "productDetailsTitle": "PT-141: A Cyclic Melanocortin Agonist That Completed Phase 3",
+    "productDetailsDescription": "PT-141 is a cyclic peptide, and the cyclisation is not a detail to be skipped over — it is central to the molecule's identity and to its verification. The compound comprises seven residues closed into a ring through a lactam bridge, built on the alpha-melanocyte-stimulating hormone pharmacophore. Its verified identifiers are molecular formula C50H68N14O10, molecular weight approximately 1025.2 g/mol, and CAS registry number 189691-06-3, recorded under PubChem CID 9941379 as bremelanotide.\n\nCyclisation of a peptide achieves two things that matter. It constrains conformation, which can substantially improve receptor affinity and selectivity by locking the molecule into a shape resembling its bound state. And it confers resistance to degradation, because the exopeptidases that attack peptide termini have no free terminus to work on. This is why a cyclic heptapeptide can be a viable drug where a linear one of the same composition would not be.\n\nThe compound's lineage runs through melanotan-II, an earlier melanocortin agonist, and this history explains its pharmacology. The melanocortin receptor family comprises five subtypes with distinct roles: MC1R governs pigmentation, MC2R mediates adrenal steroidogenesis, MC3R and MC4R act in the central nervous system on energy balance and sexual function, and MC5R has exocrine roles. Bremelanotide acts as an agonist across melanocortin receptors with central activity at MC3R and MC4R understood to underlie its effect on sexual desire. That it acts centrally rather than on vascular tissue distinguishes it mechanistically from the phosphodiesterase-5 inhibitors, and is why it was developed for a desire disorder rather than an arousal or vascular indication.\n\nThe regulatory position deserves a precise statement, because this product sits in a category occupied by only a handful of items in this catalogue. Bremelanotide is an approved medicine. It was approved by the FDA under the brand name Vyleesi for the treatment of acquired, generalised hypoactive sexual desire disorder in premenopausal women, administered as a 1.75 mg subcutaneous injection by autoinjector, used as needed before sexual activity. That is a real approval supported by a completed phase 3 programme, which is described in the research section.\n\nIt is equally important to state what that does not mean for this material. An approved drug product is a specific formulation, manufactured under pharmaceutical quality systems, released against defined specifications, filled into a metered autoinjector delivering a defined dose, and supplied with regulator-reviewed labelling that includes contraindications, warnings and drug-interaction information. Research-grade material sold as PT-141 in a 10 mg vial is none of those things. The molecule may be the same; the product is not. A 10 mg vial contains, on the approved dose as a reference point, an amount many times a single approved dose — which is a statement about the quantity in the vial and not a suggestion about use, since no administration guidance is provided here or available on request.\n\nA naming note. This compound appears as PT-141, PT141, bremelanotide and under the brand name Vyleesi. Melanotan-II, from which it was derived, is a distinct compound and so is Melanotan-1 (afamelanotide); all three appear in this catalogue and should not be conflated, as their receptor selectivity profiles and their regulatory statuses differ. Bremelanotide is a cyclic peptide; the linear peptide of identical residue composition would share its molecular formula and mass while being a different compound.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "A Completed Phase 3 Programme, Read With Its Effect Sizes and Its Sponsorship",
+    "researchFocusDescription": "PT-141 has something almost nothing else in this catalogue has: a completed, published phase 3 registration programme that led to approval. That changes the nature of the assessment, which becomes a question of reading the trial evidence carefully rather than weighing preclinical fragments.\n\nThe registration programme was RECONNECT: two identically designed double-blind randomised placebo-controlled studies with an optional 52-week open-label extension. Patients self-administered 1.75 mg of bremelanotide or placebo subcutaneously using an autoinjector, as needed before sexual activity, over 24 weeks. A prespecified and integrated subgroup analysis covering 1,202 patients reported statistically significant improvements with bremelanotide relative to placebo on the Female Sexual Function Index desire domain and on item 13 of the Female Sexual Distress Scale-Desire/Arousal/Orgasm, across subgroups defined by age, weight, body mass index and baseline bioavailable testosterone quartiles, with few exceptions. Significant increases in reported sexual desire were observed in patients not taking hormonal contraceptives, with a numerical advantage in those taking them, and decreased distress was significant regardless of hormonal contraceptive use (PMID 35230162, doi:10.1089/jwh.2021.0225).\n\nTwo design features of this programme are worth highlighting because they represent genuinely good practice. Two identically designed parallel studies, rather than one, is a strong design: independent replication is built into the registration programme rather than deferred. And the subgroup analyses were prespecified rather than performed after the fact, which is what distinguishes informative subgroup analysis from the data-dredging that so often follows a trial.\n\nThe preceding phase 2b work is also informative about methodology, and it is worth understanding why. The phase 2b dose-ranging study performed formal responder analyses, with the explicit aim of establishing the minimal clinically important difference for the patient-reported outcome measures being used. Four approaches were applied — a planned analysis anchored to expert-derived historical anchors, post hoc analyses based on self-reported global benefit, receiver operating characteristic curves, and cumulative distribution functions — and the outcomes from the ROC-based approach matched those derived from clinical expert input. At the 1.75 mg dose, responder rates for all seven endpoints reached statistical significance versus placebo in the overall modified intention-to-treat population, with P values at or below 0.03. Those responder definitions were then carried forward into the phase 3 registration studies (PMID 31277966, doi:10.1016/j.jsxm.2019.05.012).\n\nThat sequence matters for an honest reading of the evidence. The endpoints here are patient-reported and subjective, which is unavoidable for this indication, and subjective endpoints are vulnerable both to placebo response and to post hoc redefinition of what counts as success. Defining response thresholds in phase 2b, validating them against multiple independent methods, and then applying them unchanged in phase 3 is the correct way to handle that vulnerability. It is a point in the programme's favour and should be credited.\n\nThree limitations belong in any honest summary. First, sponsorship: the author lists of both the phase 2b and phase 3 publications include personnel from Palatin Technologies and AMAG Pharmaceuticals, the companies developing and commercialising the compound. This is entirely normal for registration trials — sponsors run them — and declaring it is standard. But it is a reason to weight the independent assessment, and one exists: an independent drug bulletin reviewed bremelanotide for this indication, covering efficacy alongside adverse effects, drug interactions, dosage, and pregnancy and lactation considerations (PMID 31381550, The Medical Letter on Drugs and Therapeutics). Consulting independent appraisal alongside sponsor-authored trial reports is the appropriate approach for an approved drug.\n\nSecond, the evidence is indication-specific and population-specific to a degree that is often ignored. The approval and the trial data concern acquired, generalised hypoactive sexual desire disorder in premenopausal women. Every qualifier in that phrase was part of the studied population. Claims extending to men, to postmenopausal women, to erectile dysfunction, or to general libido enhancement are extrapolations beyond the trial evidence, not conclusions from it.\n\nThird, statistical significance is not the same as magnitude. The subgroup analysis reports statistically significant improvements in desire and reductions in distress, which establishes that an effect exists and is not a chance finding across a large sample. It does not by itself establish that the effect is large. This is precisely why the programme invested in responder analyses and minimal clinically important differences, and anyone evaluating the compound should look at the responder data rather than at significance alone.\n\nFor a laboratory, this compound is an attractive research tool for reasons that follow from all of the above. Melanocortin receptor pharmacology is an active field with five receptor subtypes, meaningful selectivity questions and relevance to pigmentation, energy balance, inflammation and sexual function. A cyclic, conformationally constrained agonist with a known receptor profile, a completed clinical programme and a well-documented comparator set — including Melanotan-1 and Melanotan-II in this same catalogue — is a genuinely useful reference compound for receptor-subtype selectivity work. The practical caveat is the verification issue in the next section: a cyclic peptide must be confirmed to be cyclic.",
+    "qualityPurityTitle": "Analytical Verification: Confirming a Cyclic Peptide Is Cyclic",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 1025.2 g/mol, with molecular formula C50H68N14O10 and CAS registry number 189691-06-3 (PubChem CID 9941379). For this compound, however, mass alone is conspicuously insufficient, for two separate reasons — one concerning a near-identical compound, the other concerning the ring.\n\nThe first emerged from cross-checking the identities in this catalogue against one another. Melanotan-II, also sold here, is C50H69N15O9 at approximately 1024.2 g/mol. Compare the formulas: identical carbon counts, differing by one hydrogen and one nitrogen replaced by a single oxygen. Structurally, bremelanotide is effectively Melanotan-II with its C-terminal amide replaced by a hydroxyl group. The mass difference is approximately 1 g/mol on molecules of about 1,024 — roughly one tenth of one per cent, and within the practical error of many routine intact-mass measurements at this mass. (This comparison is arithmetic from the two verified database formulas rather than a figure quoted from a source.) The consequence is direct: an intact low-resolution mass spectrum cannot reliably distinguish this compound from Melanotan-II, and a certificate reporting only an observed mass near 1,024 to 1,025 does not establish which of the two is present. One of them is an approved medicine and the other is approved nowhere, so this is a consequential distinction rather than an academic one. Three methods resolve it and one should be insisted upon: high-resolution mass spectrometry with sufficient accuracy to separate a one-dalton difference at this mass, with the measured accuracy stated rather than implied; chromatographic separation against authentic reference standards of each, since the amide and hydroxyl forms differ in polarity and retention; or tandem mass spectrometry fragmentation, where the C-terminal difference yields distinguishable fragment ions.\n\nThe ring is the issue. PT-141 is a cyclic peptide, closed through a lactam bridge. Cyclisation is a condensation that eliminates water, so the cyclic peptide and its linear precursor differ by 18 mass units — and that is the only difference between them. A linear heptapeptide of identical residue composition is a different compound with different conformational freedom and a different pharmacological profile, and 18 units on a molecule of 1,025 is a difference of under 2 per cent. A loosely specified intact-mass check can pass linear material or a mixture of cyclic and linear species. Confirming cyclisation requires either high-accuracy mass measurement with the 18-unit distinction explicitly addressed, or chromatographic separation of cyclic from linear forms, or nuclear magnetic resonance confirmation of the ring. This should be requested specifically, because it is the single most likely identity failure for this product class and the one a standard certificate is least likely to address.\n\nRelated cyclisation impurities are also worth asking about. Incomplete cyclisation leaves linear precursor; over-reaction can produce dimeric or oligomeric cyclised species, which would appear at multiples of the target mass. Both are tractable by chromatography but only if sought.\n\nPurity assessment by reverse-phase chromatography is appropriate, and a cyclic peptide generally resolves well from its linear counterpart because the conformational constraint alters hydrophobicity and retention. This is helpful: the linear impurity most likely to matter is also the one chromatography is well suited to detect, provided the method was developed with that separation in mind.\n\nStereochemistry requires attention. Melanocortin agonists in this family conventionally incorporate D-amino acid residues, and the melanotan-family compounds are specifically constructed with non-natural stereochemistry at defined positions as part of their design. Stereoisomers are identical in formula and mass and are not distinguished by mass spectrometry at all. Where configuration matters — and for a receptor agonist whose selectivity depends on three-dimensional shape, it does — chiral analysis or an explicit supplier statement of configuration is required.\n\nResidue-level identity is worth confirming by fragmentation for a seven-residue peptide, since sequence isomers would share formula and exact mass, and since this catalogue contains three structurally related melanocortin compounds whose confusion in a production setting is a realistic failure mode rather than a theoretical one.\n\nThe salt-form question applies as usual. At approximately 1,025 g/mol an acetate or trifluoroacetate counter-ion represents a meaningful fraction of supplied mass, and the molecule's basic residues permit multiple counter-ion equivalents. A molar calculation using the free-peptide value on salt-form material will be wrong.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass. A final point specific to approved-drug substances: this material should not be assumed to meet the specification of the approved drug substance, and no such equivalence is claimed here.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: An Approved Drug Substance Supplied as Research Material",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position for this substance differs from that of the unapproved compounds elsewhere in this catalogue, and conflating the two in either direction would be misleading.\n\nBremelanotide is an approved medicine. It is FDA-approved under the brand name Vyleesi for the treatment of acquired, generalised hypoactive sexual desire disorder in premenopausal women, administered as a 1.75 mg subcutaneous injection by autoinjector as needed before sexual activity. That approval rests on a completed phase 3 registration programme comprising two identically designed double-blind randomised placebo-controlled studies.\n\nWhat that does not establish is any standing for this material. An approved drug product is a specific formulation manufactured under pharmaceutical quality systems, released against defined specifications, delivered by a metered autoinjector, and supplied with regulator-reviewed labelling carrying contraindications, warnings, drug-interaction information and pregnancy and lactation guidance. Research-grade material in a vial is none of those things, its specification is not established here, and it should not be assumed to meet the approved drug substance specification. Any medical use of bremelanotide requires a prescription and the approved product, and lies outside both the terms on which this material is supplied and its verified characterisation. No administration, dosing or reconstitution guidance for human use is provided here or available on request.\n\nThe scope of the clinical evidence should also be stated precisely, because extrapolation beyond it is common. The approval and the trial data concern acquired, generalised hypoactive sexual desire disorder in premenopausal women specifically. Every element of that description defined the studied population. Claims extending to men, to postmenopausal women, to erectile dysfunction, or to general libido enhancement go beyond the trial evidence rather than following from it. It should also be noted that the author lists of the principal trial publications include personnel from the companies developing and commercialising the compound, which is normal for registration trials and is a reason to consult independent appraisal — an independent drug bulletin review of this compound exists and covers adverse effects, drug interactions and pregnancy and lactation considerations alongside efficacy.\n\nNothing on this page suggests that this material is suitable for addressing sexual dysfunction, low libido, erectile dysfunction or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is PT-141?",
+        "answer": "PT-141 is bremelanotide, a cyclic seven-residue melanocortin receptor agonist built on the alpha-melanocyte-stimulating hormone pharmacophore. Verified identifiers are molecular formula C50H68N14O10, molecular weight approximately 1025.2 g/mol, CAS 189691-06-3, PubChem CID 9941379. It is closed into a ring through a lactam bridge, which constrains its conformation and confers resistance to the exopeptidases that attack peptide termini."
+      },
+      {
+        "question": "Is PT-141 an approved drug?",
+        "answer": "The molecule is. Bremelanotide is FDA-approved as Vyleesi for acquired, generalised hypoactive sexual desire disorder in premenopausal women, given as a 1.75 mg subcutaneous injection by autoinjector as needed before sexual activity. Research-grade material in a vial is not that approved product: an approved product is a specific formulation, manufactured under pharmaceutical quality systems, released against specifications and supplied with regulator-reviewed labelling."
+      },
+      {
+        "question": "What did the phase 3 programme show?",
+        "answer": "The RECONNECT programme comprised two identically designed double-blind randomised placebo-controlled studies with an optional 52-week open-label extension. A prespecified integrated subgroup analysis of 1,202 patients found statistically significant improvements versus placebo on the Female Sexual Function Index desire domain and Female Sexual Distress Scale item 13, across age, weight, BMI and baseline bioavailable testosterone subgroups, with few exceptions."
+      },
+      {
+        "question": "What makes the trial design strong?",
+        "answer": "Two features. Running two identically designed parallel studies rather than one builds independent replication into the registration programme instead of deferring it. And the subgroup analyses were prespecified rather than performed after the fact, which is what separates informative subgroup analysis from data-dredging. The programme also defined its response thresholds in phase 2b and applied them unchanged in phase 3."
+      },
+      {
+        "question": "Why does the responder analysis matter?",
+        "answer": "Because the endpoints are patient-reported and subjective, which is unavoidable for this indication but leaves them vulnerable to placebo response and to post hoc redefinition of success. The phase 2b study established minimal clinically important differences using four independent approaches, including ROC curves that matched clinical expert estimates, and those definitions were carried forward unchanged into phase 3. That is the correct way to handle the vulnerability."
+      },
+      {
+        "question": "Does the evidence apply to men?",
+        "answer": "No. The approval and the trial data concern acquired, generalised hypoactive sexual desire disorder in premenopausal women specifically, and every qualifier in that phrase defined the studied population. Claims extending to men, to postmenopausal women, to erectile dysfunction or to general libido enhancement are extrapolations beyond the trial evidence rather than conclusions from it."
+      },
+      {
+        "question": "How does PT-141 differ from Melanotan-II?",
+        "answer": "PT-141 was derived from Melanotan-II but is a distinct compound, and Melanotan-1 (afamelanotide) is a third distinct compound; all three appear in this catalogue. The melanocortin family has five receptor subtypes with different roles — MC1R for pigmentation, MC3R and MC4R centrally on energy balance and sexual function, among others — and these compounds differ in subtype selectivity and in regulatory status. They should not be conflated."
+      },
+      {
+        "question": "Why must cyclisation be confirmed analytically?",
+        "answer": "Because cyclisation eliminates water, so the cyclic peptide and its linear precursor differ by just 18 mass units — under 2 per cent of 1,025. A loosely specified intact-mass check can pass linear material or a cyclic/linear mixture, and the linear peptide is a different compound with different conformational freedom and pharmacology. Confirmation needs high-accuracy mass with the 18-unit distinction addressed, chromatographic separation, or NMR."
+      },
+      {
+        "question": "Does stereochemistry need checking?",
+        "answer": "Yes. Melanocortin agonists in this family conventionally incorporate D-amino acid residues, and the melanotan-family compounds are deliberately built with non-natural stereochemistry at defined positions as part of their design. Stereoisomers share formula and mass and are invisible to mass spectrometry. For a receptor agonist whose selectivity depends on three-dimensional shape, configuration matters, so chiral analysis or an explicit supplier statement is required."
+      },
+      {
+        "question": "What is a legitimate laboratory use?",
+        "answer": "Melanocortin receptor pharmacology, which is an active field with five receptor subtypes, real selectivity questions, and relevance to pigmentation, energy balance, inflammation and sexual function. A conformationally constrained agonist with a known receptor profile, a completed clinical programme and a well-documented comparator set — Melanotan-1 and Melanotan-II in this same catalogue — is a genuinely useful reference compound for subtype selectivity work."
+      }
+    ]
+  }
+}

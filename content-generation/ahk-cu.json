@@ -1,0 +1,219 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "ahk-cu",
+    "qc": {
+      "main_content_words": 2067,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED as a medicine. Used as a cosmetic ingredient. Compliance section written specifically.",
+    "variants_from_csv": [
+      {
+        "variant": "50mg",
+        "price_usd": "54.99"
+      },
+      {
+        "variant": "100mg",
+        "price_usd": "65.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "50mg",
+        "source_file": "AHK-CU 50mg.png",
+        "upload_as": "amino-ahk-cu-50mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      },
+      {
+        "variant": "100mg",
+        "source_file": "AHK-CU 100mg.png",
+        "upload_as": "amino-ahk-cu-100mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 168431292 (PUG REST, verified 2026-11-09): C15H24ClCuN6O4-, MW 451.39; CAS 682809-81-0",
+      "PMID 26236730 doi:10.1155/2015/648108 - Biomed Res Int - GHK Peptide as a Natural Modulator of Multiple Cellular Pathways in Skin Regeneration. NOTE: authors are affiliated with Skin Biology, a company selling GHK products - a commercial conflict of interest relevant to the broad claims made.",
+      "PMID 35083444 doi:10.31491/apt.2020.03.014 - Aging Pathobiol Ther - The potential of GHK as an anti-aging peptide; serum GHK ~200 ng/ml at age 20 declining to ~80 ng/ml by age 60",
+      "PMID 15803494 doi:10.1002/jbm.b.30246 - J Biomed Mater Res B - biotinylated GHK in collagen matrix, rat dermal wound healing; ninefold increase in copper concentration at wound site"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Copper loading / stoichiometry of the supplied material - NOT VERIFIED",
+      "AHK-specific research literature is markedly thinner than for GHK. Most mechanistic claims encountered for AHK-Cu are extrapolated from GHK work rather than demonstrated for AHK."
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what AHK-Cu is, how it differs from GHK-Cu, and whether GHK evidence applies.",
+    "primary_keyword": "AHK-Cu",
+    "secondary_keywords": [
+      "AHK copper peptide",
+      "alanyl-histidyl-lysine copper",
+      "AHK-Cu molecular weight",
+      "copper tripeptide",
+      "AHK-Cu CAS"
+    ],
+    "long_tail_keywords": [
+      "what is AHK-Cu",
+      "AHK-Cu vs GHK-Cu difference",
+      "is AHK-Cu researched",
+      "AHK-Cu molecular formula",
+      "AHK-Cu CAS 682809-81-0",
+      "does AHK-Cu work like GHK",
+      "copper tripeptide comparison",
+      "AHK-Cu certificate of analysis",
+      "AHK-Cu copper content",
+      "alanine vs glycine tripeptide copper"
+    ],
+    "semantic_terms": [
+      "coordination complex",
+      "chelate",
+      "histidine imidazole",
+      "conformational flexibility",
+      "single-residue substitution",
+      "metal-catalysed oxidation",
+      "elemental analysis",
+      "counter-ion",
+      "extrapolation",
+      "comparator compound"
+    ],
+    "name_variations": [
+      "AHK-Cu",
+      "AHK",
+      "alanyl-histidyl-lysine copper",
+      "Cu-AHK"
+    ],
+    "informational_queries": [
+      "what is AHK-Cu",
+      "AHK-Cu vs GHK-Cu",
+      "is AHK-Cu effective",
+      "AHK-Cu research",
+      "AHK-Cu mechanism"
+    ],
+    "commercial_queries": [
+      "buy AHK-Cu",
+      "AHK-Cu 50mg 100mg",
+      "AHK-Cu COA"
+    ],
+    "cannibalisation_check": "Owns AHK-Cu and the AHK-vs-GHK comparison intent. /product/ghk-cu owns GHK-Cu and copper tripeptide-1. This page links there rather than reproducing GHK evidence under an AHK heading.",
+    "h1": "Driven by CMS name field; renders as \"AHK-CU\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/ghk-cu",
+        "anchor": "GHK-CU",
+        "rationale": "The better-researched relative; essential context and the source of most claims made about this compound.",
+        "verified": true
+      },
+      {
+        "route": "/product/klow",
+        "anchor": "Klow",
+        "rationale": "Blend context for copper peptides.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "AHK-Cu | Copper Tripeptide | Amino Based",
+    "seoDescription": "AHK-Cu: alanyl-histidyl-lysine copper complex, C15H24ClCuN6O4-, MW 451.39, CAS 682809-81-0. Identity and the GHK extrapolation problem. Research use only.",
+    "description": "AHK-Cu is the copper(II) complex of the tripeptide alanyl-histidyl-lysine, closely related to GHK-Cu but differing at the first residue. Its molecular formula is recorded as C15H24ClCuN6O4-, with a molecular weight of approximately 451.39 g/mol and CAS registry number 682809-81-0 (PubChem CID 168431292). Its specific research literature is considerably thinner than that of its better-known relative. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "AHK-Cu: One Residue Different, and What Follows From That",
+    "productDetailsDescription": "AHK-Cu is a copper-coordinating tripeptide complex closely related to GHK-Cu. The peptide portion is alanyl-histidyl-lysine: alanine, histidine, lysine. GHK is glycyl-histidyl-lysine — glycine, histidine, lysine. The two differ at a single position, where glycine is replaced by alanine, a change of one methyl group.\n\nThe verified identifiers for the complex are a molecular formula recorded as C15H24ClCuN6O4-, a molecular weight of approximately 451.39 g/mol and CAS registry number 682809-81-0, under PubChem CID 168431292. Two features of that record deserve comment. The chlorine atom indicates that the catalogued species includes a chloride, which is common for metal complexes recorded as isolated salts and is a reminder that the precise species supplied may differ from the catalogued one. The trailing minus sign, as with GHK-Cu, indicates a net negative charge on the recorded species.\n\nThe copper coordination chemistry is essentially the same as in GHK-Cu, since the histidine imidazole and the terminal amine remain the principal coordinating groups and neither is affected by the glycine-to-alanine substitution. That similarity is what makes the two compounds comparable; it is also what makes the key question about AHK-Cu a genuine one rather than a formality.\n\nThat question is simple to state: does one methyl group matter? In peptide chemistry, single-residue substitutions sometimes change activity dramatically and sometimes change nothing measurable, and which outcome applies is an empirical matter rather than something inferable from structure. Glycine is the smallest amino acid and the only one without a side chain, which gives it unusual conformational flexibility; replacing it with alanine introduces a methyl group and constrains that flexibility. Whether this alters the geometry of copper coordination, the stability of the complex, or interaction with any biological target is exactly the sort of thing that requires measurement.\n\nThis matters commercially, because the most consequential fact about AHK-Cu is what is absent rather than what is present. The research literature on GHK is substantial; the literature on AHK specifically is markedly thinner. Claims encountered about AHK-Cu are frequently extrapolated from GHK work rather than demonstrated for AHK, and a one-residue difference is precisely the kind of change that may or may not preserve activity. This page records that extrapolation problem as a stated limitation rather than reproducing GHK findings under an AHK heading.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 50 mg and 100 mg presentations.",
+    "researchFocusTitle": "A Thin Specific Literature and the Extrapolation Problem",
+    "researchFocusDescription": "The honest account of AHK-Cu's research position begins with its scale: the body of published work addressing this compound specifically is small, and considerably smaller than the body addressing its close relative GHK. Writing a research section that obscures this would mean importing GHK findings and relabelling them, which is the error this page exists partly to flag.\n\nWhat is well established concerns the related compound. A review in BioMed Research International catalogues an extensive range of activities reported for GHK, including stimulation of collagen and glycosaminoglycan synthesis and breakdown, modulation of metalloproteinases and their inhibitors, attraction of immune and endothelial cells to injury sites, and accelerated wound healing across multiple tissues and species (PMID 26236730, doi:10.1155/2015/648108). That review's authors are affiliated with a company selling GHK products, a conflict of interest worth knowing when weighing expansive claims. A separate review describes GHK's presence in human plasma, its decline with age from around 200 ng/ml at age 20 to around 80 ng/ml by 60, and anti-inflammatory and tissue-remodelling properties of both peptide and chelate, concluding that the evidence provides a rationale for further investigation (PMID 35083444, doi:10.31491/apt.2020.03.014). Independent work in a rat dermal wound model attributes effects to both copper localisation and matrikine activity, reporting a ninefold increase in copper at the wound site (PMID 15803494, doi:10.1002/jbm.b.30246).\n\nNone of that is evidence about AHK-Cu. The inferential step from \"a structurally similar tripeptide copper complex does X\" to \"this tripeptide copper complex does X\" is an assumption, and single-residue substitutions are exactly the circumstance in which such assumptions most often fail. Glycine's lack of a side chain gives it conformational properties no other residue shares, so substituting it is not a conservative change in the way that swapping two similar residues might be.\n\nThere is, however, a reasonable scientific case for interest in AHK-Cu, and it is worth stating because it does not depend on extrapolation. If copper delivery is a substantial part of the mechanism — and the wound-site copper measurement in the GHK work suggests it may be — then any tripeptide with comparable copper-chelating geometry would be expected to deliver copper comparably, and differences between AHK and GHK would then reveal how much of the observed activity is metal-dependent and how much is sequence-specific. On that reading AHK-Cu is interesting precisely as a comparator, and a well-designed experiment including GHK-Cu, AHK-Cu, the free peptides and copper alone would be considerably more informative than studying either complex in isolation.\n\nThere is a further asymmetry worth naming, because it shapes the whole evidential picture for this compound. GHK is endogenous: it occurs in human plasma, saliva and urine, which gives its study a natural starting point and a physiological rationale. AHK has no comparable established endogenous role in the published record consulted for this page. A synthetic analogue of an endogenous peptide and a synthetic tripeptide with no documented physiological counterpart occupy different evidential positions, and the difference is not merely one of research volume. Claims that treat the two as interchangeable members of a copper-peptide family elide it.\n\nThe limitations should be stated without softening. There is little peer-reviewed work on this compound specifically. Mechanistic claims in circulation are largely inherited from GHK. No regulatory approval exists as a medicine in any jurisdiction. Cosmetic use, where it occurs, operates under a framework requiring safety for topical application rather than demonstrated efficacy. And as with any copper-containing material, copper has biological effects of its own that a peptide-attributed interpretation must control for.\n\nFor laboratory work this compound's most defensible use follows directly from its position: as a structural comparator in experiments designed to separate metal-dependent from sequence-dependent effects. Framed that way, the thinness of its specific literature becomes an opportunity rather than only a caveat, since the discriminating experiments have largely not been done.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThe analytical requirements mirror those for any metal-peptide complex and differ from those for an ordinary peptide.\n\nCopper content and stoichiometry are the first question. A preparation may be the fully formed copper complex, the free tripeptide, or a mixture, and peptide-focused analysis by mass spectrometry and reverse-phase chromatography characterises the peptide portion without necessarily establishing metal content. Elemental analysis or a comparable copper determination answers it. This page records the copper loading of the supplied material as unverified.\n\nThe catalogued species for this compound includes a chloride, as the recorded formula indicates. That is a reminder worth heeding: metal complexes are catalogued as specific isolated salts, and the species actually supplied may differ in its counter-ion while sharing a name. For molar calculation the distinction is not trivial, since at roughly 451 g/mol the counter-ion and metal together represent a substantial fraction of the total mass.\n\nPeptide identity is addressed by mass spectrometry against the calculated value, with the same caveat noted for GHK-Cu: complexed and uncomplexed forms differ in mass, and what a spectrum shows depends on whether the complex survives the ionisation conditions used. Method detail matters more here than for a simple peptide.\n\nAHK contains histidine, the principal copper-coordinating residue, which is susceptible to oxidative modification. In the presence of a redox-active metal, metal-catalysed oxidation is a recognised degradation route for histidine-containing peptides, so storage conditions carry analytical weight.\n\nOne further point is specific to this compound's position. Because AHK-Cu and GHK-Cu differ by a single methyl group, they differ in mass by 14 Da — a small difference that a low-resolution method may not resolve confidently. For a product whose principal commercial context is adjacency to a better-known relative, a certificate reporting mass at sufficient resolution to distinguish the two is worth more than it would be for a compound with no near neighbour.\n\nLyophilised mass is also not peptide content: a vial labelled 100 mg may contain counter-ions, residual water and the copper itself.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Status and the Limits of Inherited Claims",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nAHK-Cu is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority as a therapeutic agent for any indication. There is no regulator-reviewed medicinal labelling, no approved indication, and no post-marketing safety surveillance as a medicine. Where it is used as a cosmetic ingredient, that regulatory framework requires safety for topical application rather than demonstration of therapeutic efficacy, and lawful cosmetic presence is not medicinal endorsement.\n\nA compliance point specific to this compound concerns the provenance of claims made about it. Much of the material circulating about AHK-Cu describes findings established for GHK, a structurally similar but distinct compound. Presenting evidence obtained with one substance as evidence for another is misleading irrespective of structural similarity, and a single-residue difference is precisely the kind of change that may abolish or alter activity. Nothing on this page attributes GHK findings to AHK-Cu, and claims encountered elsewhere that do so should be treated accordingly.\n\nThis is also a copper-containing material. Copper is an essential trace element with its own toxicology, and its biological effects are not confined to those attributed to the peptide portion.\n\nThe material supplied here is for laboratory use and has not been formulated, tested or validated for application to skin or any other tissue.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is AHK-Cu?",
+        "answer": "It is the copper(II) complex of the tripeptide alanyl-histidyl-lysine. Verified identifiers are molecular formula C15H24ClCuN6O4-, molecular weight approximately 451.39 g/mol, CAS 682809-81-0, PubChem CID 168431292. Like GHK-Cu it is a coordination complex, where the metal is part of what the substance is rather than an additive."
+      },
+      {
+        "question": "How does AHK-Cu differ from GHK-Cu?",
+        "answer": "By one residue. GHK is glycyl-histidyl-lysine; AHK is alanyl-histidyl-lysine. The difference is glycine replaced by alanine — a single methyl group. The copper coordination chemistry is essentially the same, since the histidine imidazole and terminal amine remain the principal coordinating groups and neither is affected by the substitution."
+      },
+      {
+        "question": "Does one methyl group actually matter?",
+        "answer": "That is the genuine open question, and it is empirical rather than inferable from structure. In peptide chemistry single-residue substitutions sometimes change activity dramatically and sometimes change nothing measurable. Glycine is the smallest amino acid and the only one without a side chain, giving it unusual conformational flexibility; replacing it with alanine constrains that. Whether this alters coordination geometry, complex stability or target interaction requires measurement."
+      },
+      {
+        "question": "Is there much research on AHK-Cu specifically?",
+        "answer": "No, and this is the most important thing to know about it. The body of published work addressing AHK specifically is markedly thinner than that addressing GHK. Claims encountered about AHK-Cu are frequently extrapolated from GHK work rather than demonstrated for AHK, and a one-residue difference is exactly the kind of change that may not preserve activity."
+      },
+      {
+        "question": "Why is AHK-Cu scientifically interesting then?",
+        "answer": "As a comparator, on reasoning that does not depend on extrapolation. If copper delivery is a substantial part of the mechanism, any tripeptide with comparable chelating geometry would deliver copper comparably, so differences between AHK and GHK would reveal how much observed activity is metal-dependent versus sequence-specific. A design including both complexes, both free peptides and copper alone would be far more informative than either compound studied in isolation."
+      },
+      {
+        "question": "Why does the formula contain chlorine?",
+        "answer": "Because the catalogued species includes a chloride counter-ion, which is common for metal complexes recorded as isolated salts. It is a reminder that the species actually supplied may differ in counter-ion while sharing a name. For molar calculation this is not trivial: at roughly 451 g/mol the counter-ion and metal together are a substantial fraction of total mass."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "Copper content and stoichiometry, which peptide-focused analysis may not establish; mass spectrometry for peptide identity; and chromatographic data with the method stated. Because AHK-Cu and GHK-Cu differ by only 14 Da, a mass measurement at sufficient resolution to distinguish them is worth more here than it would be for a compound with no near neighbour."
+      },
+      {
+        "question": "Is AHK-Cu approved?",
+        "answer": "Not as a medicine, anywhere. Where it is used as a cosmetic ingredient, that framework requires safety for topical application rather than demonstrated therapeutic efficacy. Lawful cosmetic presence is not medicinal endorsement, and the two regulatory systems have very different evidentiary requirements."
+      },
+      {
+        "question": "Why do storage conditions matter for this compound?",
+        "answer": "Because histidine, the principal copper-coordinating residue, is susceptible to oxidative modification, and in the presence of a redox-active metal such as copper, metal-catalysed oxidation is a recognised degradation route for histidine-containing peptides. A bound redox-active metal changes the degradation chemistry relative to an ordinary peptide."
+      },
+      {
+        "question": "Can I rely on GHK research when working with AHK-Cu?",
+        "answer": "Not as evidence about this compound. Presenting findings established for one substance as evidence for another is misleading irrespective of structural similarity. You can reasonably use GHK work to generate hypotheses about AHK-Cu, which is a different and legitimate use — but the hypotheses then need testing rather than assuming."
+      }
+    ]
+  }
+}

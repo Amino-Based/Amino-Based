@@ -1,0 +1,255 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data (see unverified[]).",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "semaglutide",
+    "regulatory_class": "APPROVED HUMAN DRUG - compliance section written specifically; RUO boilerplate does not apply",
+    "variants_from_csv": [
+      {
+        "variant": "5mg",
+        "price_usd": "60.49"
+      },
+      {
+        "variant": "10mg",
+        "price_usd": "76.99"
+      },
+      {
+        "variant": "20mg",
+        "price_usd": "104.49"
+      },
+      {
+        "variant": "30mg",
+        "price_usd": "131.99"
+      }
+    ],
+    "note": "Price, SKU, stock, variants and categories are reference only. NOT part of this content payload.",
+    "images": [
+      {
+        "variant": "5mg",
+        "source_file": "Semaglutide 5mg.png",
+        "upload_as": "amino-semaglutide-5mg.png"
+      },
+      {
+        "variant": "10mg",
+        "source_file": "Semaglutide 10mg.png",
+        "upload_as": "amino-semaglutide-10mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      },
+      {
+        "variant": "20mg",
+        "source_file": "Semaglutide 20mg.png",
+        "upload_as": "amino-semaglutide-20mg.png"
+      },
+      {
+        "variant": "30mg",
+        "source_file": "Semaglutide 30mg.png",
+        "upload_as": "amino-semaglutide-30mg.png"
+      }
+    ],
+    "qc": {
+      "main_content_words": 2144,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and displays only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with bpc-157.json. Compliance section written independently because this molecule is an approved drug.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false,
+      "approved_drug_handled": "Approval status stated factually with brand names, per user decision 2026-11-09; explicit statement that approval does not extend to research material."
+    },
+    "references": [
+      "PMID 33068776 doi:10.1016/j.molmet.2020.101102 - Mol Metab - GLP-1 RAs state-of-the-art; class mechanisms, short vs long acting, tachyphylaxis",
+      "PMID 34305810 doi:10.3389/fendo.2021.645563 - Front Endocrinol - Safety of Semaglutide; SUSTAIN/PIONEER, GI effects, cholelithiasis, retinopathy monitoring",
+      "PMID 36050763 doi:10.1186/s12933-022-01604-7 - Cardiovasc Diabetol - tirzepatide dual GIP/GLP-1; head-to-head vs semaglutide 1.0mg; open GIP mechanism question",
+      "PubChem CID 56843331 - formula C187H291N45O59, MW ~4114 g/mol",
+      "CAS 910463-68-2",
+      "FDA GSRS/GINAS semaglutide record; FDA approval Dec 2017 (T2D), Jun 2021 (chronic weight management); oral formulation approved"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for 5/10/20/30 mg presentations - no data supplied",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset",
+      "Sterility and endotoxin content - not established for research material; explicitly stated as unverified on the page"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational-commercial. The searcher wants to confirm what the molecule is, how it differs from tirzepatide and retatrutide, and what its regulatory status means for research supply.",
+    "primary_keyword": "semaglutide",
+    "secondary_keywords": [
+      "semaglutide research peptide",
+      "GLP-1 receptor agonist",
+      "semaglutide molecular weight",
+      "semaglutide molecular formula",
+      "semaglutide research use only",
+      "GLP-1 analogue peptide"
+    ],
+    "long_tail_keywords": [
+      "what is semaglutide and how does it work",
+      "semaglutide molecular formula C187H291N45O59",
+      "semaglutide molecular weight 4114",
+      "semaglutide vs tirzepatide difference",
+      "semaglutide vs retatrutide receptor targets",
+      "is semaglutide FDA approved",
+      "semaglutide CAS number 910463-68-2",
+      "why is semaglutide long acting albumin binding",
+      "research grade semaglutide purity verification",
+      "difference between research semaglutide and Ozempic"
+    ],
+    "semantic_terms": [
+      "incretin",
+      "GLP-1 receptor",
+      "DPP-4",
+      "acylation",
+      "albumin binding",
+      "C18 diacid",
+      "AIB substitution",
+      "gastric emptying",
+      "glucagon suppression",
+      "glucose-dependent insulin secretion",
+      "SUSTAIN",
+      "PIONEER",
+      "cholelithiasis",
+      "lyophilised",
+      "reverse-phase HPLC",
+      "high-resolution mass spectrometry"
+    ],
+    "name_variations": [
+      "semaglutide",
+      "GLP-1 analogue",
+      "Ozempic (brand)",
+      "Wegovy (brand)",
+      "Rybelsus (brand)",
+      "NN9535"
+    ],
+    "informational_queries": [
+      "how does semaglutide work",
+      "semaglutide mechanism of action",
+      "semaglutide vs tirzepatide",
+      "is semaglutide a peptide or protein",
+      "semaglutide side effects literature"
+    ],
+    "commercial_queries": [
+      "buy semaglutide research peptide",
+      "semaglutide 5mg 10mg 20mg 30mg",
+      "semaglutide certificate of analysis"
+    ],
+    "cannibalisation_check": "Distinct from /product/glp-1trz (tirzepatide, dual GIP/GLP-1) and /product/glp-3rta (retatrutide, triple agonist). This page owns semaglutide identity and the single-target GLP-1 intent. The comparison FAQ here must link out rather than duplicate those pages primary keywords.",
+    "h1": "Driven by CMS name field; renders as \"Semaglutide\" after extractDosageFromName() strips the dosage suffix."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. These are placement recommendations for the page template and editorial reference. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced directly in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/product/glp-1trz",
+        "anchor": "GLP-1TRZ (tirzepatide)",
+        "rationale": "The primary comparison molecule; supports the high-volume semaglutide vs tirzepatide query.",
+        "verified": true
+      },
+      {
+        "route": "/product/glp-3rta",
+        "anchor": "GLP-3RTA (retatrutide)",
+        "rationale": "Completes the single/dual/triple agonist comparison set.",
+        "verified": true
+      },
+      {
+        "route": "/product/cagrilintide",
+        "anchor": "Cagrilintide",
+        "rationale": "Amylin analogue studied in combination with semaglutide; a genuine research adjacency.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Directly useful given the fill-mass vs peptide-content discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement, important for an approved-drug molecule.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries the general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Commercial promotion unrelated to the research intent of this page; inappropriate adjacency for an approved-drug molecule."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Semaglutide | GLP-1 Receptor Agonist | Amino Based",
+    "seoDescription": "Semaglutide: GLP-1 receptor agonist, C187H291N45O59, MW ~4114. Chemical identity, mechanism, clinical evidence and regulatory status. Research use only.",
+    "description": "Semaglutide is a long-acting glucagon-like peptide-1 (GLP-1) receptor agonist: an acylated, structurally modified analogue of human GLP-1 with the molecular formula C187H291N45O59 and a molecular weight of approximately 4114 g/mol. It is an approved human medicine in many jurisdictions, marketed as Ozempic, Wegovy and Rybelsus. The material supplied here is an unapproved research chemical for laboratory use only and is not a pharmaceutical product.",
+    "productDetailsTitle": "Semaglutide: Chemical Identity and Molecular Engineering",
+    "productDetailsDescription": "Semaglutide is a synthetic analogue of human glucagon-like peptide-1, a 31-amino-acid incretin hormone released from intestinal L-cells in response to nutrient intake. Native GLP-1 is cleared within minutes by the enzyme dipeptidyl peptidase-4, which makes the unmodified hormone useless as a long-acting agent. Semaglutide is the product of deliberate engineering to defeat that clearance, and understanding the three modifications is the key to understanding why it behaves as it does.\n\nFirst, the alanine at position 8 of the native sequence is replaced with 2-aminoisobutyric acid, a non-proteinogenic amino acid that sterically blocks the DPP-4 cleavage site. Second, the lysine at position 34 is substituted with arginine, which removes a competing site so that acylation occurs at a single defined position. Third, and most consequentially, the lysine at position 26 carries a C18 diacid fatty-acid chain attached through a hydrophilic gamma-glutamyl and short polyethylene-glycol-like spacer. That fatty-acid chain binds reversibly to serum albumin, creating a circulating depot that is released slowly, and this albumin binding — not a change in receptor affinity — is what extends the half-life into the range that supports once-weekly administration in the approved product.\n\nThe molecular formula is C187H291N45O59, with a molecular weight of approximately 4114 g/mol, CAS registry number 910463-68-2 and PubChem CID 56843331. Some reference sources state 4113.58 g/mol, which is the same figure carried to more decimal places rather than a conflicting value. Note that peptides of this size are frequently supplied as a salt or with residual counter-ions and water, so the molecular weight of the pure compound is not necessarily the basis on which vial contents should be calculated; see the analytical section below.\n\nAt roughly 4.1 kDa and 31 residues plus modifications, semaglutide sits at the boundary between what is conventionally called a peptide and what is called a small protein. This matters practically: it is substantially larger than the short research peptides often handled alongside it, such as BPC-157 at around 1.4 kDa, and its behaviour in solution, its adsorption to container surfaces and its chromatographic handling differ accordingly.\n\nSemaglutide should not be confused with the several other molecules in the same therapeutic class. Liraglutide is a different GLP-1 analogue with a shorter fatty-acid chain and a daily rather than weekly profile. Tirzepatide is not a GLP-1 agonist at all in the single-target sense — it is a dual agonist at both the GIP and GLP-1 receptors, and is a chemically distinct molecule. Retatrutide adds a third target, the glucagon receptor. These compounds are routinely grouped together in marketing material and sometimes treated as interchangeable; they are not, and research findings reported for one cannot be attributed to another.\n\nThe material is supplied as a lyophilised white to off-white powder in a sealed glass vial, in nominal 5 mg, 10 mg, 20 mg and 30 mg presentations, where the stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, and the general laboratory convention is to let a sealed vial reach room temperature before opening it, so atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here. Stability data published by the manufacturer of an approved semaglutide medicine describe that specific formulation, not this material, and must not be transferred to it.",
+    "researchFocusTitle": "Mechanism, Clinical Evidence Base and What It Does Not Cover",
+    "researchFocusDescription": "Semaglutide is unusual among the compounds in this catalogue in that its pharmacology is well characterised and its clinical evidence base is large, mature and published. The uncertainty that dominates most research-peptide literature does not apply here in the same way, and it would be misleading to write as though it did.\n\nThe mechanism is established. GLP-1 receptor agonists share a common set of actions: they augment insulin secretion in a glucose-dependent manner, suppress glucagon secretion at hyperglycaemic or euglycaemic concentrations, slow gastric emptying so that post-meal glucose excursions are blunted, and reduce calorie intake and body weight through central effects on appetite regulation. A state-of-the-art review in Molecular Metabolism sets out these shared mechanisms across the class and distinguishes short-acting from long-acting agents — the long-acting agents, semaglutide among them, having more pronounced effects on overnight and fasting plasma glucose, while their effect on gastric emptying diminishes over time through tachyphylaxis (PMID 33068776, doi:10.1016/j.molmet.2020.101102). The glucose-dependence of the insulinotropic effect is the mechanistic reason this class does not carry the intrinsic hypoglycaemia risk associated with insulin or sulfonylureas.\n\nThe clinical programme is extensive and, unlike much of the peptide literature, fully published. Semaglutide was studied in the SUSTAIN programme for subcutaneous administration and the PIONEER programme for the oral formulation, each including cardiovascular outcome trials. A review in Frontiers in Endocrinology examined the safety data arising from those registration trials and subsequent real-world studies, reporting that adverse effects are predominantly mild-to-moderate and transient gastrointestinal disturbances, that the risk of biliary disease including cholelithiasis is increased, and that no unexpected safety signals had emerged (PMID 34305810, doi:10.3389/fendo.2021.645563). That review also notes that definitive conclusions on pancreatic and thyroid malignancy cannot be drawn because of the low incidence of those conditions, and that patients with existing diabetic retinopathy warrant monitoring. These are findings about a licensed medicine administered under clinical supervision. They are reported here as literature, not as safety information for any other context.\n\nFor comparative context, a review in Cardiovascular Diabetology examining tirzepatide reported that in head-to-head comparison tirzepatide reduced HbA1c and body weight more than subcutaneous semaglutide at 1.0 mg weekly, and discussed the open mechanistic question of how much the GIP receptor component actually contributes in humans, given that type 2 diabetic patients had previously been observed to respond poorly to GIP (PMID 36050763, doi:10.1186/s12933-022-01604-7). That open question is a good example of a genuine frontier in this field: the clinical effect is well demonstrated while the mechanistic attribution is not fully settled.\n\nResearch interest has also extended beyond metabolic endpoints. The literature discusses exploration of GLP-1 receptor agonists in areas including neurodegenerative disease and other indications outside type 2 diabetes, though these are investigational directions rather than established applications, and the evidence supporting them is at an earlier stage than the metabolic and cardiovascular data.\n\nFor laboratory work, the practical implications are different from those attaching to a poorly characterised peptide. Reference pharmacology is available, so receptor-level experiments can be designed against known parameters. The principal risks lie elsewhere: in the identity and purity of non-pharmaceutical material, in the physical handling of a 4 kDa acylated peptide that adsorbs to surfaces and is sensitive to its formulation environment, and in the temptation to transfer clinical findings about an approved medicine onto research material that has not been shown to be equivalent to it. The published evidence base describes a specific manufactured pharmaceutical product. It does not describe, and cannot validate, material obtained from any other source.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nVerification deserves particular emphasis for this molecule, because it is a high-demand compound with an approved pharmaceutical counterpart, and published analytical work on non-pharmaceutical material sold under incretin-analogue names has repeatedly found discrepancies between labelled and actual contents. The general lesson from that work is that a product name on a vial is not evidence of its contents, and that this is an empirical question rather than a matter of supplier reputation.\n\nTwo distinct categories of evidence answer two different questions, and they should not be conflated. Identity confirmation, typically by mass spectrometry, establishes whether the molecule present is the intended one, by comparing observed mass against the mass calculated for the sequence. For a compound of roughly 4114 Da, high-resolution mass spectrometry can discriminate semaglutide from related analogues whose masses differ substantially — tirzepatide at approximately 4813 Da and retatrutide at approximately 4731 Da are well separated from it — so a credible mass spectrum is strong evidence of identity within this class. Purity assessment, typically by reverse-phase high-performance liquid chromatography, establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences, or residual synthesis reagents. A document reporting only one of these answers only half the question, and an HPLC percentage quoted without its chromatogram is weaker evidence than one accompanied by the trace, because detection wavelength, gradient and integration method all affect the number.\n\nTwo further points apply specifically. First, lyophilised mass is not peptide content: a vial labelled 10 mg may contain counter-ions and residual water alongside the peptide, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass. For an acylated peptide of this size the gap between fill mass and peptide content can be material. Second, semaglutide's fatty-acid chain makes it prone to adsorption onto glass and plastic surfaces at low concentrations, which can cause apparent losses that have nothing to do with the quality of the material.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Approved Medicine, Unapproved Research Material: Regulatory Status",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position of this molecule requires a clear and specific statement, because the generic boilerplate applied to investigational research chemicals would be factually wrong here. Semaglutide is an approved human medicine. The United States Food and Drug Administration approved subcutaneous semaglutide for type 2 diabetes in December 2017, and approved it for chronic weight management in June 2021; an oral formulation has also been approved. It is marketed under the brand names Ozempic, Wegovy and Rybelsus, which are the trademarks of their respective proprietor. Approvals also exist in other jurisdictions.\n\nThat approval attaches to specific, licensed pharmaceutical products manufactured under pharmaceutical quality systems, supplied with regulator-approved labelling, and prescribed and supervised by qualified clinicians. It does not attach to this material. The research material supplied by Amino Based is not a licensed medicine, is not manufactured as one, is not a generic or equivalent of one, and is not a substitute for a prescribed medicine. Anyone who requires semaglutide as a treatment should obtain a licensed product through a clinician and a regulated pharmacy. The existence of an approved product containing the same molecule does not make unapproved material safe, lawful to administer, or therapeutically equivalent, and purity, identity, sterility, endotoxin content and excipient profile are all unverified for research material unless specifically documented on a lot certificate.\n\nThe published safety profile summarised in the research section above was established in supervised clinical trials of licensed products. It describes those products under those conditions. It is not a safety assessment of this material, and it must not be read as one.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law. Note additionally that GLP-1 receptor agonists are subject to anti-doping regulation in some sporting contexts, and competitors subject to such rules should consult the current prohibited list rather than rely on any statement here.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What exactly is semaglutide?",
+        "answer": "Semaglutide is a synthetic, long-acting analogue of human glucagon-like peptide-1 (GLP-1), an incretin hormone released by intestinal L-cells after eating. It is engineered from the native hormone with three modifications: an AIB substitution at position 8 that blocks enzymatic cleavage by DPP-4, a lysine-to-arginine substitution at position 34, and a C18 diacid fatty-acid chain at position 26 that binds reversibly to serum albumin. That albumin binding creates a circulating depot and is the reason the molecule persists long enough to support once-weekly dosing in the approved medicine."
+      },
+      {
+        "question": "What is its molecular formula and molecular weight?",
+        "answer": "The molecular formula is C187H291N45O59, with a molecular weight of approximately 4114 g/mol, CAS registry number 910463-68-2 and PubChem CID 56843331. Sources quoting 4113.58 g/mol are giving the same value to more decimal places, not a different figure. At around 4.1 kDa, semaglutide is roughly three times the mass of a short research peptide such as BPC-157, which affects how it behaves in solution and on chromatography."
+      },
+      {
+        "question": "Is semaglutide an approved drug?",
+        "answer": "Yes. The FDA approved subcutaneous semaglutide for type 2 diabetes in December 2017 and for chronic weight management in June 2021, and an oral formulation has also been approved. It is marketed as Ozempic, Wegovy and Rybelsus. That approval applies to specific licensed pharmaceutical products made under pharmaceutical quality systems and supplied with approved labelling. It does not apply to research material, which is not a licensed medicine, not a generic, and not a substitute for a prescribed product."
+      },
+      {
+        "question": "How does semaglutide differ from tirzepatide and retatrutide?",
+        "answer": "They act on different numbers of receptors and are chemically distinct molecules. Semaglutide is a single-target GLP-1 receptor agonist of about 4114 Da. Tirzepatide is a dual agonist at both the GIP and GLP-1 receptors, around 4813 Da. Retatrutide adds a third target, the glucagon receptor, at around 4731 Da. They are frequently grouped together and sometimes written about as if interchangeable; they are not, and a finding reported for one cannot be attributed to another. The mass differences are large enough that mass spectrometry distinguishes them clearly."
+      },
+      {
+        "question": "What is the established mechanism of action?",
+        "answer": "GLP-1 receptor agonists augment insulin secretion in a glucose-dependent manner, suppress glucagon secretion at hyperglycaemic or euglycaemic concentrations, slow gastric emptying so post-meal glucose rises are blunted, and reduce calorie intake and body weight through central appetite effects. The glucose-dependence of the insulin effect is why this class does not carry the intrinsic hypoglycaemia risk of insulin or sulfonylureas. Unlike most compounds in this catalogue, this mechanism is well established rather than proposed."
+      },
+      {
+        "question": "What does the clinical evidence base look like?",
+        "answer": "Large, mature and published — which distinguishes semaglutide sharply from most research peptides. It was studied in the SUSTAIN programme for the subcutaneous formulation and the PIONEER programme for the oral one, both including cardiovascular outcome trials, with extensive subsequent real-world data. A 2021 review in Frontiers in Endocrinology summarising that safety evidence reported predominantly mild-to-moderate transient gastrointestinal effects and an increased risk of biliary disease, with no unexpected signals. Those findings describe licensed products given under clinical supervision."
+      },
+      {
+        "question": "Can I rely on the published clinical data when working with this material?",
+        "answer": "Not as a statement about this material. The published evidence describes specific manufactured pharmaceutical products with documented identity, purity, sterility and excipients. Research material has none of those attributes established unless a lot certificate documents them. You can reasonably use the literature as reference pharmacology for the molecule — receptor behaviour, known parameters — but transferring clinical safety or efficacy conclusions onto non-pharmaceutical material is not supported."
+      },
+      {
+        "question": "What should I verify before relying on a supplier purity figure?",
+        "answer": "Ask for identity and purity separately. Mass spectrometry confirms identity by comparing observed mass against the calculated mass for the sequence, and at roughly 4114 Da semaglutide is well separated from tirzepatide and retatrutide, so a credible spectrum is strong evidence within this class. Reverse-phase HPLC assesses purity. A certificate reporting only one answers half the question, and an HPLC percentage without its chromatogram is weak evidence. This matters more than usual here: published analytical work on non-pharmaceutical material sold under incretin-analogue names has repeatedly found discrepancies between labelled and actual contents."
+      },
+      {
+        "question": "Why might measured concentrations come out lower than expected?",
+        "answer": "Two common reasons, neither of which indicates poor material. First, lyophilised mass is not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, so unless peptide content has been determined by amino acid analysis or similar, the label is a fill mass. For an acylated peptide of this size that gap can be material. Second, the C18 fatty-acid chain makes semaglutide prone to adsorbing onto glass and plastic surfaces at low concentrations, producing apparent losses that are a handling artefact rather than a quality problem."
+      },
+      {
+        "question": "What does \"research use only\" mean for a molecule that is also an approved medicine?",
+        "answer": "It means this material is sold for laboratory research and nothing else, and that it sits entirely outside the regulatory framework that governs the approved product. Research use only is not a legal classification and does not exempt a purchaser from applicable law; legality depends on your jurisdiction and on what you do with the material. The fact that an approved medicine containing the same molecule exists does not make unapproved material safe, lawful to administer, or therapeutically equivalent. Anyone who needs semaglutide as a treatment should obtain a licensed product through a clinician and a regulated pharmacy."
+      }
+    ]
+  }
+}

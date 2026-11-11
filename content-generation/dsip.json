@@ -1,0 +1,227 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "dsip",
+    "qc": {
+      "main_content_words": 2656,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. No completed randomised controlled trial in humans was identified in the PubMed-indexed literature.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "54.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "DSIP 10mg.png",
+        "upload_as": "amino-dsip-10mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      }
+    ],
+    "name_vs_evidence_flag": "The compound's NAME asserts its claimed effect. \"Delta sleep-inducing peptide\" was named for an effect reported in early animal work; the name is not evidence. No completed randomised controlled trial of DSIP for sleep in humans was identified in the indexed literature. The page states this and does not treat the name as a finding.",
+    "phosphorylated_form_flag": "IMPORTANT: the most substantive recent sleep-architecture work used PHOSPHORYLATED DSIP (p-DSIP), which is a chemically distinct molecule from DSIP. Findings obtained with p-DSIP do not transfer to unmodified DSIP, and the page states this.",
+    "references": [
+      "PubChem CID 68816 (PUG REST, verified 2026-11-09, matched name \"delta sleep-inducing peptide\"): C35H48N10O15, MW 848.8, CAS 62568-57-4.",
+      "PMID 30107169 doi:10.1016/j.lfs.2018.08.026 - Life Sci 209:282-290 - Defence Institute of Physiology and Allied Sciences, India. Used PHOSPHORYLATED DSIP (p-DSIP), 10 micrograms/kg intraperitoneally, in Morris-water-maze-trained rats exposed to simulated high altitude (7620 m) hypobaric hypoxia. p-DSIP enhanced non-REM and REM sleep and improved maze performance; lowered monoamine levels and tyrosine hydroxylase expression; increased MAO-A, GAD and ChAT expression. Naloxone, a mu-opioid receptor antagonist, altered navigational memory and decreased hippocampal CREB and p-CREB, suggesting suppression of the sleep-inducing effect of p-DSIP - implying opioid-receptor involvement. RAT STUDY, PHOSPHORYLATED FORM.",
+      "PMID 26902351 doi:10.1007/s10517-016-3186-8 - Bull Exp Biol Med 160(4):421-4 - Kursk State Medical University, Russia. DSIP at 40, 120 and 360 micrograms/kg intraperitoneally in Wistar rats under restraint stress. NON-MONOTONIC: 40 micrograms/kg produced the most pronounced effect on catalase, SOD and malondialdehyde; \"no significant changes were found after administration of this peptide in other doses\" under acute stress; and \"increasing the peptide dose to 360 micrograms/kg ABOLISHED its effects.\" RAT STUDY, oxidative-stress endpoints, not sleep."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Any human randomised controlled trial outcome - none identified in the indexed literature",
+      "Whether unmodified DSIP reproduces the sleep-architecture findings obtained with phosphorylated DSIP - not established",
+      "Receptor or molecular target - no established receptor was identified; one rat study implicates mu-opioid receptor involvement indirectly via naloxone"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with scepticism. The searcher wants to know what DSIP is and whether it actually does what its name says.",
+    "primary_keyword": "DSIP",
+    "secondary_keywords": [
+      "delta sleep-inducing peptide",
+      "DSIP peptide",
+      "DSIP molecular weight",
+      "DSIP CAS 62568-57-4",
+      "p-DSIP",
+      "DSIP sleep"
+    ],
+    "long_tail_keywords": [
+      "what is DSIP",
+      "does DSIP actually help sleep",
+      "DSIP human clinical trials",
+      "DSIP molecular formula C35H48N10O15",
+      "DSIP vs phosphorylated DSIP",
+      "DSIP receptor target",
+      "DSIP dose response non-monotonic",
+      "is DSIP approved",
+      "DSIP WAGGDASGE sequence",
+      "DSIP certificate of analysis"
+    ],
+    "semantic_terms": [
+      "delta wave sleep",
+      "non-REM sleep",
+      "REM sleep",
+      "sleep architecture",
+      "telemetric recording",
+      "hypobaric hypoxia",
+      "Morris water maze",
+      "CREB",
+      "naloxone",
+      "mu-opioid receptor",
+      "tyrosine hydroxylase",
+      "monoamine oxidase A",
+      "non-monotonic dose response",
+      "isoaspartate",
+      "phosphorylation"
+    ],
+    "name_variations": [
+      "DSIP",
+      "delta sleep-inducing peptide",
+      "WAGGDASGE",
+      "Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu",
+      "p-DSIP (phosphorylated) is a DISTINCT molecule",
+      "melatonin is not a peptide and is unrelated"
+    ],
+    "informational_queries": [
+      "what is DSIP",
+      "does DSIP work for sleep",
+      "DSIP human studies",
+      "DSIP vs p-DSIP",
+      "DSIP mechanism"
+    ],
+    "commercial_queries": [
+      "buy DSIP",
+      "DSIP 10mg",
+      "delta sleep inducing peptide research",
+      "DSIP COA"
+    ],
+    "cannibalisation_check": "Owns DSIP and the name-is-not-evidence and p-DSIP-distinction intents. /product/selank owns anxiolytic peptide intent; /product/semax owns nootropic peptide intent. No overlap with melatonin or orexin-antagonist intent, which are not in this catalogue.",
+    "h1": "Driven by CMS name field; renders as \"DSIP\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/selank",
+        "anchor": "Selank",
+        "rationale": "Other short peptide in the catalogue with central-nervous-system claims; useful contrast in evidence quality.",
+        "verified": true
+      },
+      {
+        "route": "/product/semax",
+        "anchor": "Semax",
+        "rationale": "Other short CNS-focused peptide with a documented human imaging study; direct contrast with a compound having none.",
+        "verified": true
+      },
+      {
+        "route": "/product/epitalon",
+        "anchor": "Epitalon",
+        "rationale": "Another short peptide where the evidence base is narrow relative to its reputation; parallel methodological caution.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "DSIP | Delta Sleep-Inducing Peptide, MW 848.8 | Amino Based",
+    "seoDescription": "DSIP: C35H48N10O15, MW 848.8, CAS 62568-57-4. Named for a claimed effect; no human RCT identified. Research use only.",
+    "description": "DSIP is delta sleep-inducing peptide, a nine-residue peptide first described in work on sleep-promoting factors in cerebral blood. Its molecular formula is C35H48N10O15, with a molecular weight of approximately 848.8 g/mol (PubChem CID 68816, CAS 62568-57-4). Its name records an effect reported in early animal experiments rather than a demonstrated clinical property: no completed randomised controlled trial of DSIP for sleep in humans was identified in the PubMed-indexed literature. It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "DSIP: A Peptide Whose Name Makes a Claim Its Evidence Does Not",
+    "productDetailsDescription": "DSIP is a nine-residue peptide of molecular formula C35H48N10O15 and molecular weight approximately 848.8 g/mol, with CAS registry number 62568-57-4, recorded under PubChem CID 68816 as delta sleep-inducing peptide. At under 850 g/mol it is among the smaller peptides in this catalogue. Notably, the formula contains no sulfur, so there is no cysteine and no disulfide bridge — which simplifies verification relative to several other products here.\n\nThe most important thing to understand about this compound is structural to its name rather than to its chemistry. \"Delta sleep-inducing peptide\" is not a neutral descriptor; it is a claim embedded in a name. The compound was identified in the 1970s in work on substances in cerebral venous blood of animals in a sleep-like state, and was named for the delta-wave sleep activity reported in those early experiments. The naming convention was ordinary for its time, but the consequence is that every mention of the compound restates its purported effect, which gives an impression of established function that the evidence does not support.\n\nThis is worth being explicit about because it shapes how the compound is marketed and perceived. A researcher encountering \"delta sleep-inducing peptide\" may reasonably assume sleep induction is a characterised property. It is not. No completed randomised controlled trial of DSIP for sleep in humans was identified in the PubMed-indexed literature. The name is a historical artefact of early animal work, and it is not evidence.\n\nTwo further structural points are worth noting, because both bear on how the available literature should be read.\n\nThe first concerns a modified form. The most substantive recent work on sleep architecture in this compound class used **phosphorylated** DSIP, written p-DSIP, which is a chemically distinct molecule carrying a phosphate group that DSIP does not have. Phosphorylation materially changes a peptide's charge and often its stability and receptor interaction. Findings obtained with p-DSIP therefore do not transfer to unmodified DSIP, and the distinction is routinely elided in material about this compound. The product sold here is DSIP; the better sleep data concerns p-DSIP.\n\nThe second concerns target. No established receptor for DSIP was identified. For most compounds in this catalogue a molecular target is known even where its relevance is contested — a melanocortin receptor, a GLP-1 receptor, GPR54. Here the question of what the peptide binds is substantially open, and the most specific published hint is indirect: a rat study found that naloxone, a mu-opioid receptor antagonist, suppressed the sleep-inducing effect of p-DSIP, implying opioid receptor involvement somewhere in the pathway. That is a lead rather than a characterisation, and it was obtained with the phosphorylated form.\n\nA naming note. This compound appears as DSIP, delta sleep-inducing peptide, delta sleep inducing peptide, and as the sequence Trp-Ala-Gly-Gly-Asp-Ala-Ser-Gly-Glu or WAGGDASGE. Phosphorylated DSIP, p-DSIP, is a distinct chemical entity. DSIP should not be confused with other sleep-associated molecules such as melatonin, which is a small indoleamine and not a peptide at all, or with orexin-receptor antagonists, which are small-molecule drugs with their own approvals and a completely different mechanism.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation. At approximately 848.8 g/mol, 10 mg is roughly 12 micromoles.",
+    "researchFocusTitle": "Two Rat Studies, a Modified Molecule, and a Non-Monotonic Dose Response",
+    "researchFocusDescription": "The indexed literature on DSIP is substantial in volume but thin where it matters, and examining the two most informative recent studies closely is more useful than surveying the whole.\n\nThe first and most relevant to the compound's reputation concerns sleep architecture — and it used the phosphorylated form, which is the single most important qualification to place on it. Investigators at the Defence Institute of Physiology and Allied Sciences in India administered phosphorylated DSIP at 10 micrograms per kilogram intraperitoneally to rats trained in the Morris water maze and then exposed to simulated high altitude, 7,620 metres, under chronic hypobaric hypoxia. Sleep architecture was recorded telemetrically before and during exposure (PMID 30107169, doi:10.1016/j.lfs.2018.08.026).\n\nThe findings were coherent and mechanistically detailed. Daily p-DSIP injection during the circadian active period enhanced both non-rapid-eye-movement and rapid-eye-movement sleep, and improved water maze performance. Treated animals showed lower monoamine levels and reduced tyrosine hydroxylase expression, with increased monoamine oxidase A, glutamic acid decarboxylase and choline acetyltransferase expression. And naloxone, a mu-opioid receptor antagonist, altered navigational memory and decreased hippocampal CREB and phosphorylated CREB, which the authors interpreted as suppression of the sleep-inducing effect of p-DSIP. Their conclusion was that improved sleep quality restored spatial memory by upregulating CREB phosphorylation under simulated high altitude hypoxia.\n\nThat is a reasonably well-constructed study: telemetric sleep recording rather than behavioural proxy, a defined stressor, a behavioural outcome, mechanistic measurements across several enzymes, and a pharmacological antagonist used to probe the pathway. The naloxone result is the most interesting element, because it is the closest thing to a target identification in this literature.\n\nBut the qualifications are substantial and must travel with the finding. It is a rat study. The model is high-altitude hypobaric hypoxia, a specific and unusual stressor rather than ordinary disturbed sleep. And critically, the agent was **phosphorylated** DSIP, a chemically distinct molecule from the compound sold here. Nothing in that paper establishes that unmodified DSIP produces the same effects, and the fact that investigators chose the phosphorylated form suggests they had a reason to.\n\nThe second study is methodologically instructive for a different reason. Investigators at Kursk State Medical University administered DSIP — the unmodified peptide — at 40, 120 and 360 micrograms per kilogram intraperitoneally to Wistar rats under restraint stress, measuring free radical oxidation in liver, aminotransferase activity and total serum protein (PMID 26902351, doi:10.1007/s10517-016-3186-8).\n\nThe dose response is the finding worth dwelling on. Under acute stress, 40 micrograms per kilogram increased catalase and superoxide dismutase activity and malondialdehyde concentration — and the paper states that no significant changes were found after administration of the peptide at the other doses. Under chronic stress, 40 micrograms per kilogram again produced the most pronounced effect, with 120 micrograms per kilogram producing a different pattern. And the highest dose tested is the telling one: increasing the peptide dose to 360 micrograms per kilogram **abolished its effects**.\n\nA dose response in which the lowest dose works, an intermediate dose does something different, and the highest dose does nothing at all is strongly non-monotonic. Such patterns are not impossible — receptor desensitisation and counter-regulatory responses both produce them — but they are also what emerges when a small effect is tested across several doses in small groups without correction for multiplicity. Either way, the practical implication is clear and worth stating: for this compound there is no straightforward relationship between amount administered and effect observed, and more is demonstrably not better. Note also that this study's endpoints were oxidative-stress markers in liver, not sleep.\n\nWhat the literature therefore does not contain should be stated directly. No completed randomised controlled trial of DSIP for sleep in humans was identified in the indexed literature. No established receptor was identified. The most substantive sleep-architecture data concerns a different, phosphorylated molecule. The unmodified peptide's best recent data concerns oxidative-stress markers in rat liver with a non-monotonic dose response. For a compound whose name asserts a sleep effect and which has been known since the 1970s, that is a notably thin evidence base, and the gap between the name's implication and the record's content is the central honest point about this product.\n\nFor a laboratory, DSIP presents an unusual profile. The practical attractions are real: it is a short nine-residue peptide, cheap to synthesise, straightforward to characterise analytically, with no disulfide to worry about and a defined sequence. The scientific attractions are that the basic questions remain genuinely open — target identification is unresolved, the relationship between the phosphorylated and unmodified forms is uncharacterised, and the non-monotonic dose behaviour is itself a phenomenon worth investigating. These are tractable questions, and a compound with a fifty-year history and no identified receptor is an unusual thing to find.",
+    "qualityPurityTitle": "Analytical Verification for a Nine-Residue Peptide With No Disulfide",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 848.8 g/mol, with molecular formula C35H48N10O15 and CAS registry number 62568-57-4 (PubChem CID 68816). A CAS number exists for this compound, which gives an independent identifier to check a certificate against.\n\nNote what the formula lacks: no sulfur. This peptide contains no cysteine and no methionine, so there is no disulfide bridge, no free thiol, no dimerisation risk from thiol chemistry, and no methionine oxidation liability. That removes several of the verification questions that dominate other products in this catalogue, and it also means a certificate that discusses disulfide integrity or thiol content for this compound is describing something else.\n\nThe specific check that matters most here is phosphorylation state, and it is unusual to this product. The most substantive sleep-architecture literature in this class used phosphorylated DSIP, a distinct molecule carrying an additional phosphate group. A phosphate adds approximately 80 mass units, which on a molecule of 849 is a shift of roughly 9 per cent — comfortably resolved by any mass spectrometric measurement. So a reported observed mass distinguishes DSIP from p-DSIP outright, and this is worth confirming given that the two are routinely conflated in discussion of the compound and that their literatures differ.\n\nSequence confirmation by tandem mass spectrometry fragmentation is worth requesting. At nine residues, sequence isomers would share molecular formula and exact mass while being different compounds, and fragmentation establishes residue order rather than merely composition.\n\nThe composition raises two residue-specific points. The sequence contains tryptophan, which is oxidation-sensitive and also the residue giving the peptide its ultraviolet absorbance; oxidised tryptophan species are mass-shifted and detectable if sought, and their presence indicates handling and storage history. The sequence is also notably acidic, containing aspartate and glutamate, which makes the peptide very polar. A short, highly polar peptide may elute early in reverse-phase chromatography and resolve poorly from salts and other polar contaminants under methods optimised for larger hydrophobic peptides, so an early-eluting peak reported as high purity warrants scrutiny of the method rather than acceptance.\n\nAspartate residues raise a further degradation question. Peptides containing aspartate are susceptible to isomerisation to isoaspartate, and the resulting species are identical in mass to the parent and invisible to mass spectrometry alone. Where this matters, a method capable of separating isoaspartate-containing variants is required.\n\nPurity assessment by reverse-phase chromatography is otherwise straightforward for a nine-residue peptide, where deletion impurities represent large proportional mass changes and should resolve cleanly.\n\nThe salt-form question is proportionally significant. At approximately 849 g/mol with multiple acidic side chains, counter-ion content represents a meaningful fraction of supplied mass, and multiple equivalents are possible. Lyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: A Name That Is Not Evidence",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nDSIP is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nA point about the compound's name requires direct statement, because it does more work in marketing this product than any study does. \"Delta sleep-inducing peptide\" is a claim embedded in a name, assigned in the 1970s on the basis of delta-wave activity reported in early animal experiments. It is not a demonstrated clinical property. **No completed randomised controlled trial of DSIP for sleep in humans was identified in the PubMed-indexed literature.** Every mention of the compound restates its purported effect, which creates an impression of established function that the evidence does not support. The name is a historical artefact, not a finding.\n\nTwo further qualifications bear on how claims about this compound should be read. First, the most substantive recent sleep-architecture work used **phosphorylated** DSIP, a chemically distinct molecule carrying an additional phosphate group — and it was conducted in rats under simulated high-altitude hypobaric hypoxia, a specific and unusual stressor. Nothing in that work establishes that the unmodified peptide sold here produces the same effects. Second, the best recent study of unmodified DSIP measured oxidative-stress markers in rat liver, not sleep, and reported a strongly non-monotonic dose response in which the lowest dose tested produced the most pronounced effect and the highest dose tested abolished its effects entirely. For this compound there is no straightforward relationship between amount administered and effect observed.\n\nNo established receptor or molecular target for DSIP was identified. The most specific published hint is indirect — naloxone, a mu-opioid receptor antagonist, suppressed the sleep-inducing effect of the phosphorylated form in rats — which is a lead rather than a characterisation. An unidentified target limits any ability to predict effects, including unintended ones.\n\nNothing on this page suggests that this material is suitable for addressing insomnia, sleep disturbance, stress, pain or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is DSIP?",
+        "answer": "DSIP is delta sleep-inducing peptide, a nine-residue peptide first described in 1970s work on substances in cerebral venous blood of animals in a sleep-like state. Verified identifiers are molecular formula C35H48N10O15, molecular weight approximately 848.8 g/mol, CAS 62568-57-4, PubChem CID 68816. The formula contains no sulfur, so there is no cysteine and no disulfide bridge."
+      },
+      {
+        "question": "Does DSIP actually induce sleep in humans?",
+        "answer": "No completed randomised controlled trial of DSIP for sleep in humans was identified in the PubMed-indexed literature. The name records an effect reported in early animal experiments, not a demonstrated clinical property. This is the central point about this product: the name is a historical artefact of 1970s naming conventions, and it is not evidence."
+      },
+      {
+        "question": "Why is the name itself a problem?",
+        "answer": "Because it is a claim embedded in a descriptor, so every mention of the compound restates its purported effect. A researcher encountering \"delta sleep-inducing peptide\" may reasonably assume sleep induction is a characterised property. It is not. The naming convention was ordinary for its time, but the effect is to create an impression of established function that the evidence does not support."
+      },
+      {
+        "question": "What is p-DSIP and why does it matter?",
+        "answer": "Phosphorylated DSIP — a chemically distinct molecule carrying an additional phosphate group, which materially changes charge and often stability and receptor interaction. It matters because the most substantive recent sleep-architecture work used p-DSIP, not DSIP. Those findings do not transfer to the unmodified peptide sold here, and the fact that investigators chose the phosphorylated form suggests they had a reason to."
+      },
+      {
+        "question": "What did the sleep-architecture study find?",
+        "answer": "In rats given phosphorylated DSIP at 10 micrograms/kg and exposed to simulated high altitude (7,620 m), telemetric recording showed enhanced non-REM and REM sleep with improved Morris water maze performance, alongside changes in monoamine levels and several enzymes. Naloxone suppressed the effect, implicating opioid receptors. Good design — but a rat study, an unusual stressor, and the phosphorylated molecule."
+      },
+      {
+        "question": "What does the dose-response data show?",
+        "answer": "That more is demonstrably not better. In Wistar rats under restraint stress given unmodified DSIP at 40, 120 and 360 micrograms/kg, the lowest dose produced the most pronounced effect, no significant changes were found at the other doses under acute stress, and increasing the dose to 360 micrograms/kg *abolished* the effects entirely. Strongly non-monotonic — so there is no straightforward relationship between amount administered and effect observed."
+      },
+      {
+        "question": "Is there a known receptor for DSIP?",
+        "answer": "No established receptor or molecular target was identified, which is unusual — for most compounds in this catalogue a target is known even where its relevance is contested. The most specific published hint is indirect: naloxone, a mu-opioid receptor antagonist, suppressed the sleep-inducing effect of the phosphorylated form in rats. That is a lead rather than a characterisation, and an unidentified target limits any ability to predict effects."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "An observed mass, which usefully distinguishes DSIP from p-DSIP — a phosphate adds roughly 80 units, about 9 per cent of 849, easily resolved by any mass measurement. Plus sequence confirmation by tandem MS, since nine-residue sequence isomers share formula and exact mass. Note that disulfide and thiol checks do not apply here: there is no sulfur in the formula, so a certificate discussing them is describing something else."
+      },
+      {
+        "question": "Are there chromatography pitfalls?",
+        "answer": "Yes. The sequence is notably acidic, containing aspartate and glutamate, making the peptide very polar. A short, highly polar peptide may elute early and resolve poorly from salts and other polar contaminants under methods optimised for larger hydrophobic peptides, so an early-eluting peak reported as high purity warrants scrutiny of the method. Aspartate also isomerises to isoaspartate, which is mass-identical and invisible to MS alone."
+      },
+      {
+        "question": "Is there a worthwhile research question here?",
+        "answer": "Genuinely yes, and it is the honest attraction of this compound. The basic questions remain open: target identification is unresolved, the relationship between the phosphorylated and unmodified forms is uncharacterised, and the non-monotonic dose behaviour is itself a phenomenon worth investigating. It is also a cheap, short, disulfide-free peptide that is easy to characterise. A fifty-year history with no identified receptor is an unusual thing to find."
+      }
+    ]
+  }
+}

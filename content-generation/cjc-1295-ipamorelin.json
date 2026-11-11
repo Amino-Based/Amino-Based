@@ -1,0 +1,229 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Multi-component product. Component identities are individually verified, but the blend composition, the per-component ratio, and critically WHICH CJC-1295 variant is used (with or without DAC) are supplier-specified and NOT VERIFIED.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "cjc-1295-ipamorelin",
+    "qc": {
+      "main_content_words": 2195,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Neither component is an approved medicine. Prohibited in sport.",
+    "blend": true,
+    "variants_from_csv": [
+      {
+        "variant": "5mg/5mg",
+        "price_usd": "76.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "5mg/5mg",
+        "source_file": "CJC-1295 - Ipamorelin Blend 5mg-5mg.png",
+        "upload_as": "amino-cjc-1295-ipamorelin-5mg-5mg.png",
+        "label_verified": "Vial label read directly: CJC-1295 / IPAMORELIN 5 mg/5 mg"
+      }
+    ],
+    "component_identities": {
+      "ipamorelin": "VERIFIED - PubChem CID 9831659: C38H49N9O5, MW 711.9, CAS 170851-70-4",
+      "cjc-1295": "AMBIGUOUS - the product name does not state whether the DAC-bearing variant (CID 91971820, C165H269N47O46, MW 3647.2, CAS 446262-90-4) or the non-DAC variant (no public registry record) is used. These have very different durations of action. NOT VERIFIED."
+    },
+    "references": [
+      "PMID 19243281 doi:10.1517/13543780802707658 - Expert Opin Investig Drugs - GRF analogue development rationale vs recombinant hGH",
+      "PMID 22298602 doi:10.1345/aph.1Q629 - Ann Pharmacother - tesamorelin phase 3 evidence; the approved GRF analogue",
+      "PMID 18056963 doi:10.1196/annals.1404.023 - Ann N Y Acad Sci - GHS-R1a agonists and restoration of episodic GH release amplitude",
+      "PMID 33333485 doi:10.1016/j.npep.2020.102112 - Neuropeptides - breadth of the ghrelin/GHS-R1a system",
+      "PMID 28873385 doi:10.1159/000475732 - Endocr Dev - ghrelin and growth"
+    ],
+    "unverified": [
+      "WHICH CJC-1295 VARIANT - with DAC or without - is present. Not stated by the product name. Materially changes the pharmacology.",
+      "Per-component quantity and ratio within the vial - supplier-specified, not measured",
+      "Whether the 5mg/5mg designation refers to each component separately or to a combined total",
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what is actually in the blend, which CJC-1295 variant it uses, and whether combining the classes is justified.",
+    "primary_keyword": "CJC-1295 Ipamorelin",
+    "secondary_keywords": [
+      "CJC-1295 ipamorelin blend",
+      "GHRH GHS-R1a combination",
+      "peptide blend growth hormone",
+      "CJC-1295 ipamorelin 5mg",
+      "two component peptide preparation"
+    ],
+    "long_tail_keywords": [
+      "what is CJC-1295 ipamorelin blend",
+      "does CJC-1295 ipamorelin use DAC",
+      "why combine CJC-1295 and ipamorelin",
+      "CJC-1295 ipamorelin molecular weight",
+      "is there evidence for CJC-1295 ipamorelin",
+      "blend certificate of analysis per component",
+      "CJC-1295 ipamorelin ratio",
+      "GHRH plus GHRP combination rationale",
+      "CJC-1295 ipamorelin vs separate components",
+      "is CJC-1295 ipamorelin approved"
+    ],
+    "semantic_terms": [
+      "GHRH receptor",
+      "GHS-R1a",
+      "somatotroph",
+      "convergent signalling",
+      "combination pharmacology",
+      "Drug Affinity Complex",
+      "duration of action",
+      "intact mass",
+      "per-component quantitation",
+      "pulsatile secretion"
+    ],
+    "name_variations": [
+      "CJC-1295 / Ipamorelin",
+      "CJC-1295 Ipamorelin Blend",
+      "CJC/Ipa",
+      "GHRH + GHRP blend"
+    ],
+    "informational_queries": [
+      "what is CJC-1295 ipamorelin",
+      "why combine CJC-1295 and ipamorelin",
+      "CJC-1295 ipamorelin with or without DAC",
+      "is CJC-1295 ipamorelin effective",
+      "CJC-1295 ipamorelin ratio"
+    ],
+    "commercial_queries": [
+      "buy CJC-1295 ipamorelin blend",
+      "CJC-1295 ipamorelin 5mg 5mg",
+      "CJC-1295 ipamorelin COA"
+    ],
+    "cannibalisation_check": "Owns the combination/blend intent. Component pages own their own molecules: /product/ipamorelin, /product/cjc-1295-with-dac, /product/cjc-1295-no-dac. This page links to them rather than restating their identity content.",
+    "h1": "Driven by CMS name field; renders as \"CJC-1295 / Ipamorelin\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/ipamorelin",
+        "anchor": "Ipamorelin",
+        "rationale": "Verified component; needed as an experimental control.",
+        "verified": true
+      },
+      {
+        "route": "/product/cjc-1295-with-dac",
+        "anchor": "CJC-1295 with DAC",
+        "rationale": "One of the two possible first components; identity verified.",
+        "verified": true
+      },
+      {
+        "route": "/product/cjc-1295-no-dac",
+        "anchor": "CJC-1295 No DAC",
+        "rationale": "The other possible first component; identity unverified.",
+        "verified": true
+      },
+      {
+        "route": "/product/tesamorelin-ipamorelin-blend",
+        "anchor": "Tesamorelin + Ipamorelin Blend",
+        "rationale": "The other GHRH-plus-secretagogue preparation in the catalogue.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "CJC-1295 / Ipamorelin Blend | GHRH + GHS-R1a | Amino Based",
+    "seoDescription": "CJC-1295 / Ipamorelin: two-component preparation pairing a GHRH-receptor analogue with a GHS-R1a agonist. Component identities and limits. Research use only.",
+    "description": "This is a two-component preparation pairing a growth hormone-releasing hormone analogue (CJC-1295) with a growth hormone secretagogue receptor agonist (ipamorelin, C38H49N9O5, MW 711.9, CAS 170851-70-4). Because the two act on separate receptors, the pairing is the most commonly studied combination in this area. No single molecular formula exists for a blended product, and the exact composition and ratio are supplier-specified rather than independently verified. Research use only.",
+    "productDetailsTitle": "A Two-Component Preparation: What Each Component Is",
+    "productDetailsDescription": "This product contains two distinct peptides rather than one. That is worth stating at the outset because it changes what a specification can meaningfully say: a blended preparation has no single molecular formula, no single molecular weight and no single CAS registry number, and any listing that presents one for a product of this kind is describing something other than what is in the vial.\n\nThe second component is unambiguous. Ipamorelin is a synthetic pentapeptide agonist at the growth hormone secretagogue receptor 1a, the receptor whose endogenous ligand is ghrelin. Its verified identifiers are a molecular formula of C38H49N9O5, a molecular weight of approximately 711.9 g/mol and CAS registry number 170851-70-4, recorded under PubChem CID 9831659.\n\nThe first component is not unambiguous, and this is the most important thing to understand about the product. \"CJC-1295\" is used commercially for two different chemical entities. One carries a Drug Affinity Complex, a reactive group that bonds covalently to circulating albumin and greatly extends duration of action; it has a verified identity, with molecular formula C165H269N47O46, molecular weight approximately 3647.2 g/mol and CAS registry number 446262-90-4. The other, sold as CJC-1295 without DAC or \"modified GRF 1-29\", lacks that group entirely and has no corresponding public registry record. The product name here does not specify which is present.\n\nThat ambiguity is not cosmetic. The two variants differ in duration of action by a very large margin — the DAC version is engineered specifically for prolonged action through covalent albumin tethering, while the non-DAC version would be expected to clear comparatively quickly. A preparation combining a short-acting GHRH analogue with a short-acting secretagogue is a pharmacologically different proposition from one combining a very long-acting GHRH analogue with a short-acting secretagogue, because in the second case the two components are no longer acting over the same window. Which variant is present should therefore be established before the product is used for anything quantitative.\n\nThe rationale for pairing these two classes is sound and is the reason such preparations exist. Growth hormone-releasing hormone analogues act on the GHRH receptor on pituitary somatotrophs. Ghrelin mimetics such as ipamorelin act on the growth hormone secretagogue receptor 1a. These are separate receptors with separate endogenous ligands whose signalling converges downstream on the same secretory output, so engaging both simultaneously is not equivalent to engaging either more strongly. That mechanistic non-equivalence is what makes the combination interesting rather than merely additive, and it is why the combination has attracted more research attention than either arm in isolation.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 5 mg/5 mg presentation, where that designation is understood to refer to each component. Whether it refers to each component separately or to a combined total is not independently verified and is worth confirming.",
+    "researchFocusTitle": "Why Combine Two Receptor Classes, and What the Evidence Does Not Cover",
+    "researchFocusDescription": "The research case for combining a GHRH-receptor analogue with a GHS-R1a agonist rests on receptor architecture rather than on trial evidence for any particular blended product, and it is important to keep those two things separate.\n\nThe architecture is well established. Growth hormone secretion from pituitary somatotrophs is regulated through more than one input. Growth hormone-releasing hormone acts on its own receptor; ghrelin acts on the growth hormone secretagogue receptor 1a. A review in Endocrine Development sets out the role of ghrelin signalling in human growth, including associations between growth hormone secretagogue receptor gene variants and height in healthy individuals and in patients with growth disorders (PMID 28873385, doi:10.1159/000475732), while a review in Neuropeptides describes the breadth of the ghrelin and GHS-R1a system across tissues and processes (PMID 33333485, doi:10.1016/j.npep.2020.102112). Two distinct regulatory inputs converging on one output is precisely the configuration in which simultaneous engagement would be expected to differ from stronger engagement of either alone.\n\nThe individual arms have their own supporting literature. On the secretagogue side, a review in the Annals of the New York Academy of Sciences reports that an orally active GHS-R1a agonist restored the amplitude of endogenous episodic growth hormone release in elderly subjects to that of young adults, with functional benefits characterised as increased lean mass and bone density and modest improvements in strength (PMID 18056963, doi:10.1196/annals.1404.023). On the releasing-hormone side, the development rationale for GRF analogues was that acting upstream on the pituitary's secretory machinery might be better tolerated than administering recombinant growth hormone directly (PMID 19243281, doi:10.1517/13543780802707658), and tesamorelin demonstrates that this can reach approval, with phase 3 evidence of reduced visceral adipose tissue maintained across extension phases (PMID 22298602, doi:10.1345/aph.1Q629).\n\nWhat none of that evidence does is establish anything about this preparation. The GHS-R1a human data concern MK-0677, a different compound. The GRF analogue data concern tesamorelin, a different compound. No published trial supporting this page establishes efficacy or safety for a CJC-1295 and ipamorelin combination as supplied, and the inference from \"each class has supporting literature\" to \"this blend works\" is not available. Combination effects are precisely the thing that cannot be predicted from single-agent data, which is the whole argument for studying combinations in the first place.\n\nA specific experimental problem follows from the variant ambiguity described above, and it is worth spelling out because it is easy to overlook. If the CJC-1295 component is the DAC-bearing version, its duration of action vastly exceeds that of ipamorelin. The two components would then act over different timescales, so the preparation would deliver genuine combined stimulation only briefly after administration, followed by an extended period of GHRH-receptor stimulation alone. That is a different pharmacological profile from simultaneous dual stimulation, and any experiment interpreting results as combination effects would be partly measuring something else. If the component is the non-DAC version, the timescales are more comparable but the component's exact identity is itself undocumented.\n\nThere is also a conceptual tension worth noting, shared with the DAC-bearing compound generally. The argument for secretagogues over recombinant growth hormone is that they preserve pulsatile, feedback-regulated secretion. A combination designed to maximise stimulation, particularly one including a very long-acting component, moves away from that rationale rather than toward it.\n\nFor laboratory work the tractable questions concern the combination itself: whether simultaneous engagement of both receptors produces effects differing from the sum of separate engagement, how the response depends on the relative timing of the two stimuli, and whether sustained engagement of either arm alters the response to the other. Because this catalogue carries both components separately with verified identities, properly controlled experiments comparing blend against individual components are feasible, and that is the only design from which conclusions about the combination can legitimately be drawn.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThe central analytical question for any blended preparation is different from that for a single compound, and it is worth stating directly: a certificate describing one component says nothing about the other, and a single combined purity percentage is close to meaningless. What is needed is identity and purity for each component separately, plus the actual quantity of each present in the vial.\n\nIdentity for each component is established by mass spectrometry against its own calculated mass. In a two-component preparation the components usually differ substantially in mass, which makes them individually detectable in a single analysis — an advantage of blends over single compounds, analytically speaking, provided the analysis is actually performed and reported per component.\n\nQuantitation is the harder and more frequently omitted part. A vial label stating a combined mass does not establish how that mass divides between the components, and the ratio is the property that determines what the preparation actually does. Without per-component quantitation the stated ratio is a manufacturing claim rather than a measured result.\n\nFor this preparation there is a prior question that outranks both identity and quantitation, and it should be settled first: which CJC-1295 variant is present. The DAC-bearing compound has a molecular weight of approximately 3647.2 Da. The plain GRF 1-29 sequence, for comparison, is approximately 3357.9 Da, and a modified variant would differ from that figure by whatever its substitutions contribute. These masses are far enough apart to be distinguished readily by intact-mass measurement, so a certificate reporting the masses actually observed in the preparation answers the question directly. A certificate that names the components without reporting their masses does not.\n\nIpamorelin itself is straightforward to confirm, at approximately 711.9 Da, and its small mass separates it cleanly from any GRF-derived component in the same analysis.\n\nA further point applies to blends specifically. Because the components are present together, a purity figure derived from a single chromatographic run must be interpreted carefully: a peak that is not one of the two intended components is an impurity, but the two intended components are not impurities in each other. A certificate quoting a single purity percentage without identifying which peaks were assigned to what is not interpretable.\n\nLyophilised mass is also not peptide content: a vial labelled 5 mg/5 mg may contain counter-ions and residual water alongside the peptides, and unless peptide content has been determined for each component, the stated figures are fill masses.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nNeither component of this preparation is an approved medicine. Neither CJC-1295 in either variant nor ipamorelin has been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. The preparation as a combination has likewise never been approved or evaluated by any regulator. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nThe combination warrants an additional caution beyond that attaching to its components individually. Safety information about two substances administered separately does not establish the safety of administering them together, since interaction effects are by definition not observable in single-agent data. This is the same reasoning that makes combinations scientifically interesting, applied to risk rather than to benefit, and it holds with particular force where neither component has a characterised safety profile to begin with.\n\nThe composition of this preparation is supplier-specified. The ratio of components, and which CJC-1295 variant is present, are not independently verified, and the second of those materially changes the pharmacology.\n\nGrowth hormone-releasing factor analogues and growth hormone secretagogues both fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list rather than rely on any statement here.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is in this product?",
+        "answer": "Two distinct peptides. Ipamorelin, a pentapeptide agonist at the growth hormone secretagogue receptor 1a, with verified identifiers C38H49N9O5, molecular weight approximately 711.9 g/mol and CAS 170851-70-4. And CJC-1295, an analogue of growth hormone-releasing hormone. Because it contains two components, the product has no single molecular formula, molecular weight or CAS number."
+      },
+      {
+        "question": "Which CJC-1295 variant does this contain?",
+        "answer": "The product name does not say, and that is the most important open question about it. \"CJC-1295\" is used commercially for two different entities: one carrying a Drug Affinity Complex that bonds covalently to albumin and greatly extends duration (verified identity, C165H269N47O46, MW approximately 3647.2, CAS 446262-90-4), and one without it, sold as modified GRF 1-29, which has no public registry record. Establish which is present before quantitative use."
+      },
+      {
+        "question": "Why does the variant matter so much?",
+        "answer": "Because it determines whether the two components act over the same timescale. If the DAC version is present, its duration vastly exceeds ipamorelin’s, so the preparation delivers genuine combined stimulation only briefly, followed by an extended period of GHRH-receptor stimulation alone. That is a different pharmacological profile from simultaneous dual stimulation, and an experiment interpreting the results as combination effects would be partly measuring something else."
+      },
+      {
+        "question": "Why combine these two classes at all?",
+        "answer": "Because they act on separate receptors. Growth hormone-releasing hormone analogues act on the GHRH receptor on pituitary somatotrophs; ghrelin mimetics such as ipamorelin act on the growth hormone secretagogue receptor 1a. Two distinct regulatory inputs converge downstream on the same secretory output, so engaging both simultaneously is not equivalent to engaging either more strongly. That mechanistic non-equivalence is what makes the combination interesting rather than merely additive."
+      },
+      {
+        "question": "Is there trial evidence for this combination?",
+        "answer": "Not that supports this page. The individual classes have supporting literature — a GHS-R1a agonist restoring episodic growth hormone release amplitude in elderly subjects, and GRF analogue evidence culminating in tesamorelin’s approval — but those studies concern different specific compounds. No published trial establishes efficacy or safety for a CJC-1295 and ipamorelin combination as supplied. Combination effects are precisely what cannot be predicted from single-agent data."
+      },
+      {
+        "question": "Does 5mg/5mg mean 5mg of each?",
+        "answer": "That is the conventional reading and the vial label uses that notation, but whether it refers to each component separately or to a combined total is not independently verified. It is worth confirming, because the ratio determines what the preparation actually does, and a label stating a combined mass does not establish how that mass divides."
+      },
+      {
+        "question": "What should a certificate of analysis show for a blend?",
+        "answer": "Identity and purity for each component separately, plus the actual quantity of each present. A certificate describing one component says nothing about the other, and a single combined purity percentage is close to meaningless. Quantitation is the part most often omitted: without per-component measurement, the stated ratio is a manufacturing claim rather than a measured result."
+      },
+      {
+        "question": "How can both components be detected in one analysis?",
+        "answer": "By mass. The components differ substantially — ipamorelin at approximately 711.9 Da against a GRF-derived component in the 3350 to 3650 Da range — so they are individually detectable in a single intact-mass analysis. That is genuinely an analytical advantage of blends, provided the analysis is performed and reported per component rather than summarised into one figure."
+      },
+      {
+        "question": "Is a combination riskier than its components?",
+        "answer": "It cannot be assumed equivalent. Safety information about two substances administered separately does not establish the safety of administering them together, because interaction effects are by definition not observable in single-agent data. That is the same reasoning that makes combinations scientifically interesting, applied to risk rather than benefit, and it carries particular weight where neither component has a characterised safety profile."
+      },
+      {
+        "question": "How would I design an experiment with this?",
+        "answer": "With the individual components as controls. Because this catalogue carries both separately with verified identities, comparing the blend against each component alone is feasible, and that is the only design from which conclusions about combination effects can legitimately be drawn. Testing the blend in isolation cannot distinguish a combination effect from the effect of either component."
+      }
+    ]
+  }
+}

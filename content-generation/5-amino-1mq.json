@@ -1,0 +1,224 @@
+{
+  "_meta": {
+    "status": "BLOCKED",
+    "status_reason": "THIN PRECLINICAL LITERATURE AND AN UNRESOLVED COUNTER-ION. A PubMed search for 5-amino-1-methylquinolinium returns THREE indexed records (re-verified 2026-11-11), all preclinical — two mouse studies and one cell-line study — and no human clinical trial. The blocking issue is composition, not the literature: the verified PubChem record is for a CATION (C10H11N2+, 159.21). A cation cannot be supplied alone; it must be paired with a counter-anion whose identity is not stated. Because the counter-anion can be a large fraction of the vial mass, neither the molar content of the 150 mg presentation nor the identity of the supplied salt can be determined from available information.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "5-amino-1mq",
+    "qc": {
+      "main_content_words": 3209,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. No human clinical trial of this compound was identified.",
+    "variants_from_csv": [
+      {
+        "variant": "150mg",
+        "price_usd": "84.70"
+      }
+    ],
+    "images": [
+      {
+        "variant": "150mg",
+        "source_file": "5-Amino-1MQ 150mg.png",
+        "upload_as": "amino-5-amino-1mq-150mg.png"
+      }
+    ],
+    "counter_ion_arithmetic": "The verified species is the CATION C10H11N2+ at 159.21. If the supplied salt is the iodide - a common form for quaternary quinolinium compounds - the salt formula weight would be approximately 159.21 + 126.90 = 286.1, meaning the active cation is only about 56 per cent of the supplied mass. On that interpretation a nominal 150 mg of salt contains roughly 83 mg of cation. This is ARITHMETIC from the verified cation formula plus the atomic weight of iodine, offered to illustrate the scale of the problem; the actual counter-anion for this product is NOT stated and is NOT verified. No specific salt is asserted.",
+    "references": [
+      "PubChem CID 950107 (PUG REST, verified 2026-11-09, matched name \"5-amino-1-methylquinolinium\"): C10H11N2+, MW 159.21, CAS 685079-15-6. Note the trailing \"+\" - this record is a CATION.",
+      "Direct PubMed search for \"5-amino-1-methylquinolinium\" returns THREE indexed records (re-verified 2026-11-11); the same three are returned when combined with NNMT, adipocyte or obesity terms. All three are preclinical: PMID 35013352 doi:10.1038/s41598-021-03670-5 (Sci Rep 2022 — cecal microbiome of diet-induced obese mice; adiposity and weight loss with 5-amino-1-methylquinolinium plus low-fat diet stated in the abstract opening as background); PMID 39067875 doi:10.1136/jitc-2024-009281 (J Immunother Cancer 2024 — 5-amino-1-methylquinolinium IODIDE reduced tumour growth and enhanced anti-PD-L1 apoptotic effect in mouse urothelial bladder cancer models); PMID 33645410 doi:10.1080/01443615.2020.1854696 (J Obstet Gynaecol 2021 — in vitro; 5MQ inhibited HeLa proliferation, reduced phospho-Akt and SIRT1). No human clinical trial identified. Assessed from PubMed records and abstracts; full texts NOT read. CORRECTION: an earlier version of this entry stated the search returned ZERO records. That was inaccurate.",
+      "PMID 34704059 doi:10.1039/d1cb00134e - RSC Chem Biol 2(5):1546-1555 - on NNMT as a target: \"The complexity of the role of NNMT in healthy and disease states is slowly being elucidated and provides an indication that NNMT may be an interesting therapeutic target for a variety of diseases including cancer, diabetes, and obesity.\" Notes that most NNMT inhibitors described to date are structurally related to one or both of its substrates. Reports macrocyclic peptide inhibitors with IC50 values as low as 229 nM that are NONCOMPETITIVE with either SAM or nicotinamide, indicating possible allosteric inhibition.",
+      "PMID 36622754 doi:10.1158/1535-7163.MCT-22-0278 - Mol Cancer Ther 22(3):393-405 - NNMT identified as an FTO target linked to platinum response in ovarian cancer; treatment with an NNMT inhibitor or NNMT knockdown RESTORED SENSITIVITY to platinum in FTO-overexpressing cells. Demonstrates NNMT inhibition as a real pharmacological tool and that NNMT has cancer-relevant roles."
+    ],
+    "unverified": [
+      "COUNTER-ANION IDENTITY - the verified record is a cation; the supplied salt form is not stated. This determines what fraction of the 150 mg is active species and is the primary blocking issue.",
+      "Molar content of the 150 mg presentation - cannot be calculated without the counter-anion",
+      "Any human clinical trial outcome - none identified",
+      "Whether the three published preclinical findings apply to the material supplied here - two of the three indexed papers state no salt form and the third used the iodide; this product's salt form is not stated",
+      "Purity and organic-impurity profile - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Product-specific stability - no study supplied, none claimed"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a verification component. The searcher wants to know what 5-Amino-1MQ is, whether any evidence exists for it, and what NNMT inhibition means.",
+    "primary_keyword": "5-Amino-1MQ",
+    "secondary_keywords": [
+      "5-amino-1-methylquinolinium",
+      "NNMT inhibitor",
+      "5-Amino-1MQ molecular weight",
+      "5-Amino-1MQ CAS 685079-15-6",
+      "nicotinamide N-methyltransferase",
+      "5-Amino-1MQ salt form"
+    ],
+    "long_tail_keywords": [
+      "what is 5-Amino-1MQ",
+      "are there any 5-Amino-1MQ studies",
+      "5-Amino-1MQ molecular formula C10H11N2+",
+      "is 5-Amino-1MQ a cation or salt",
+      "5-Amino-1MQ iodide molecular weight",
+      "does 5-Amino-1MQ work",
+      "what does NNMT do",
+      "5-Amino-1MQ human trials",
+      "5-Amino-1MQ 150mg",
+      "5-Amino-1MQ certificate of analysis"
+    ],
+    "semantic_terms": [
+      "nicotinamide N-methyltransferase",
+      "NNMT",
+      "1-methylnicotinamide",
+      "S-adenosyl-L-methionine",
+      "NAD+ salvage pathway",
+      "methyl donor",
+      "quaternary ammonium cation",
+      "counter-anion",
+      "salt form",
+      "regioisomer",
+      "allosteric inhibitor",
+      "IC50",
+      "membrane permeability",
+      "transporter-mediated uptake",
+      "ion chromatography",
+      "elemental analysis"
+    ],
+    "name_variations": [
+      "5-Amino-1MQ",
+      "5-amino-1-methylquinolinium",
+      "5-Amino-1MQ iodide (one possible salt; not verified)",
+      "nicotinamide and 1-methylnicotinamide are the enzyme substrate and product, not this compound"
+    ],
+    "informational_queries": [
+      "what is 5-Amino-1MQ",
+      "does 5-Amino-1MQ work",
+      "5-Amino-1MQ studies",
+      "what is NNMT",
+      "5-Amino-1MQ mechanism"
+    ],
+    "commercial_queries": [
+      "buy 5-Amino-1MQ",
+      "5-Amino-1MQ 150mg",
+      "5-Amino-1MQ capsules",
+      "5-Amino-1MQ COA"
+    ],
+    "cannibalisation_check": "Owns 5-Amino-1MQ and the NNMT-inhibition intent, plus the cation-versus-salt verification intent. /product/nad owns NAD+ and salvage-pathway intent and is linked for the metabolic connection rather than restated; /product/semaglutide owns weight-management evidence.",
+    "h1": "Driven by CMS name field; renders as \"5-Amino-1MQ\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/nad",
+        "anchor": "NAD+",
+        "rationale": "The metabolic pathway this compound’s target feeds into; also the closest parallel for the charged-molecule membrane-permeability problem.",
+        "verified": true
+      },
+      {
+        "route": "/product/semaglutide",
+        "anchor": "Semaglutide",
+        "rationale": "Where the weight-management trial evidence in this catalogue actually sits; direct contrast with a compound having no retrievable literature.",
+        "verified": true
+      },
+      {
+        "route": "/product/aod9604",
+        "anchor": "AOD9604",
+        "rationale": "Other metabolic compound in the catalogue whose evidence base is an absence; parallel reasoning about unpublished results.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "5-Amino-1MQ | NNMT Inhibitor Cation, MW 159.21 | Amino Based",
+    "seoDescription": "5-Amino-1MQ: a cation (C10H11N2+, 159.21, CAS 685079-15-6). Three indexed papers, all animal or in vitro. Research use only.",
+    "description": "5-Amino-1MQ is 5-amino-1-methylquinolinium, a small quaternary organic cation investigated as an inhibitor of nicotinamide N-methyltransferase. The verified PubChem record is for the cation C10H11N2+, with a molecular weight of approximately 159.21 (PubChem CID 950107, CAS 685079-15-6). Because a cation cannot be supplied alone, the material is necessarily a salt whose counter-anion is not stated — and that counter-anion may constitute a large fraction of the vial mass. A PubMed search under this compound's own name returns three indexed records, all preclinical — two mouse studies and one cell-line study; no human study was identified, and none of them establishes efficacy or safety for any use in people. It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "5-Amino-1MQ: A Cation Without a Stated Salt, and a Target Without a Trial",
+    "productDetailsDescription": "5-Amino-1MQ is 5-amino-1-methylquinolinium — a quinoline ring system bearing a methyl group on the ring nitrogen and an amino group at the 5-position. The methylation of the ring nitrogen is what makes this molecule unusual and what drives almost every practical consideration on this page: it creates a quaternary nitrogen carrying a permanent positive charge. The verified PubChem record reflects this, listing the species as C10H11N2+ with a molecular weight of approximately 159.21 and CAS registry number 685079-15-6 (PubChem CID 950107). That trailing plus sign is not a typographical detail — it is the identity of the substance.\n\nTwo consequences follow, and both are material.\n\nThe first is that this product cannot be what its label implies without an unstated component. A cation cannot exist as a bulk solid on its own; charge must be balanced. Whatever is in the vial is a salt, consisting of the 5-amino-1-methylquinolinium cation paired with some counter-anion. The identity of that counter-anion is not stated anywhere in the available product information, and it determines what proportion of the 150 mg is actually the active species.\n\nIt is worth illustrating the scale of that problem, because it is larger than the counter-ion issues discussed elsewhere in this catalogue. Quaternary quinolinium compounds of this type are commonly isolated as iodide salts, and the iodide is a registered chemical entity in its own right: PubChem CID 66522933, molecular formula C10H11IN2, molecular weight 286.11 (verified 2026-11-10). That figure is worth noting because it confirms the arithmetic exactly — 159.21 for the cation plus 126.90 for iodine gives 286.1, matching the registered value. On those numbers the active cation is 55.6 per cent of the salt mass, so a nominal 150 mg of the iodide would contain approximately 83 mg of cation and approximately 67 mg of iodide. To be explicit: the iodide is the most likely form and is now fully characterised, but which salt this product actually contains is still not stated by the supplier. The actual counter-anion is not stated and is not verified here, and no specific salt is asserted. A chloride salt would give a very different figure, a bromide another. The point stands regardless of which it is: without knowing the counter-anion, the quantity of active compound in this vial is unknown, and any molar calculation is unreliable by a margin that could approach a factor of two.\n\nThe second consequence is pharmacological rather than arithmetic, and it is a legitimate scientific question rather than a complaint. A permanently charged quaternary cation does not behave like a neutral small molecule. Passive diffusion across lipid membranes is strongly disfavoured for permanently charged species, which means cellular uptake generally depends on transporters rather than on partition. For a compound whose proposed target is an intracellular enzyme, that is not a trivial consideration: the molecule has to get inside cells to act, and a permanent positive charge is an obstacle to doing so passively. This is the same class of problem discussed on the NAD+ page in this catalogue, where a charged phosphorylated molecule does not readily cross membranes intact. It is a question a researcher should ask rather than assume away.\n\nNow the target, which is genuinely interesting and is the strongest thing on this page. Nicotinamide N-methyltransferase, NNMT, methylates nicotinamide to form 1-methylnicotinamide, using S-adenosyl-L-methionine as the methyl donor. That reaction sits at a junction worth appreciating: nicotinamide is a precursor in the NAD+ salvage pathway, so methylating it diverts nicotinamide away from NAD+ regeneration. Inhibiting NNMT would therefore be expected to spare nicotinamide for NAD+ synthesis while also reducing consumption of the universal methyl donor. That is a coherent metabolic rationale, and it connects this compound to the NAD+ biology described elsewhere in this catalogue.\n\nThe target's standing in the literature is real. A 2021 paper on NNMT inhibitors states that the complexity of the role of NNMT in healthy and disease states is slowly being elucidated and provides an indication that NNMT may be an interesting therapeutic target for a variety of diseases including cancer, diabetes and obesity (PMID 34704059, doi:10.1039/d1cb00134e). Note the framing carefully: an interesting target whose role is *slowly being elucidated*, and whose complexity is acknowledged. That is the language of an active research question, not a validated therapeutic mechanism.\n\nA naming note. This compound appears as 5-Amino-1MQ, 5-amino-1-methylquinolinium, 5-amino-1MQ, and occasionally with a salt designation such as iodide appended. It is distinct from nicotinamide and from 1-methylnicotinamide, which are the substrate and product of the enzyme it is proposed to inhibit, and from the NAD+ precursors nicotinamide riboside and nicotinamide mononucleotide. It is also not a peptide, despite being sold alongside them.\n\nThe material is supplied as a solid in a sealed glass vial, and the stated quantity refers to the mass of material in the vial. This compound is a small organic cation rather than a peptide, so it is necessarily supplied as a salt paired with a counter-anion, and the identity of that counter-anion determines what fraction of the vial mass is the active species. Quaternary cationic solids of this type are commonly hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it. Amino Based publishes no product-specific stability study for this material, so no shelf-life, solution-stability or freeze-thaw tolerance figures are claimed here; where such data are needed they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 150 mg presentation, with the caveat above that the molar content of that mass cannot be determined until the counter-anion is identified.",
+    "researchFocusTitle": "A Legitimate Target, and a Compound With No Literature of Its Own",
+    "researchFocusDescription": "The research assessment here requires separating two things that marketing for this product merges completely: the standing of the enzyme target, which is respectable, and the evidence for this specific compound, which is absent from the indexed literature.\n\nStart with the target, because it deserves credit. NNMT catalyses the methylation of nicotinamide to 1-methylnicotinamide using S-adenosyl-L-methionine as methyl donor. Interest in inhibiting it rests on a sensible metabolic argument. Because nicotinamide feeds the NAD+ salvage pathway — which, as the NAD+ page in this catalogue sets out, is the dominant route by which cellular NAD+ is maintained — diverting nicotinamide into a methylated dead-end product reduces the substrate available for NAD+ regeneration. Blocking that diversion would be expected to increase nicotinamide availability. The reaction also consumes S-adenosyl-L-methionine, the cell's universal methyl donor, so NNMT activity has implications for methylation capacity more broadly.\n\nThat rationale has attracted serious medicinal chemistry. A 2021 study used an mRNA display screening technique to identify macrocyclic peptides binding NNMT, reporting inhibitors with IC50 values as low as 229 nanomolar that also downregulated 1-methylnicotinamide production in cellular assays. The most interesting feature of that work is mechanistic: substrate competition experiments showed the cyclic peptides to be noncompetitive with either S-adenosyl-L-methionine or nicotinamide, indicating they may be the first allosteric inhibitors reported for NNMT. The same paper notes that most NNMT inhibitors described to date are structurally related to one or both of its substrates (PMID 34704059, doi:10.1039/d1cb00134e).\n\nThat last observation places 5-Amino-1MQ in context. It is a methylquinolinium — a methylated nitrogen heterocycle, structurally reminiscent of the methylated pyridine product of the enzyme's own reaction. It belongs, in other words, to the substrate-analogue class the paper describes as predominant. That is an ordinary and reasonable place for an inhibitor to come from. It also means the compound is not structurally novel, and that its selectivity against other methyltransferases and against nicotinamide-handling enzymes is a question requiring empirical answer rather than assumption.\n\nEvidence that NNMT inhibition does something measurable in cells also exists, from an unrelated field. Work on platinum resistance in ovarian cancer identified NNMT as a target linked to the cellular response to platinum, and reported that treatment with an NNMT inhibitor, or NNMT knockdown, restored platinum sensitivity in cells overexpressing the RNA demethylase FTO (PMID 36622754, doi:10.1158/1535-7163.MCT-22-0278). That is useful on two counts: it demonstrates that NNMT inhibitors function as real pharmacological tools with consequences that track genetic knockdown, and it shows that NNMT has roles in cancer biology. The second point cuts against casual enthusiasm — an enzyme implicated in chemotherapy response is not an enzyme whose sustained inhibition is self-evidently benign, and the review language about NNMT's complexity in health and disease should be read with that in mind.\n\nNow the literature under this compound's own name, which is thin but not absent. **A PubMed search for 5-amino-1-methylquinolinium returns three indexed records**, and the same three are returned when the search is combined with NNMT, adipocyte or obesity terms. All three are preclinical, and no human clinical trial of this compound was identified.\n\nTwo are mouse studies. A 2022 paper in Scientific Reports, whose own subject was the cecal microbiome of diet-induced obese mice, states in its opening that treatment with the NNMT inhibitor 5-amino-1-methylquinolinium combined with a low-fat diet promoted whole-body adiposity and weight loss in those mice, normalising those measures toward age-matched lean animals (PMID 35013352, doi:10.1038/s41598-021-03670-5). Note that the weight outcome is reported there as background to the microbiome question rather than as that study's own endpoint. A 2024 paper in the Journal for ImmunoTherapy of Cancer reports that targeting NNMT with **5-amino-1-methylquinolinium iodide** reduced tumour growth and enhanced the apoptotic effect of an anti-PD-L1 antibody in mouse models of urothelial bladder cancer (PMID 39067875, doi:10.1136/jitc-2024-009281). Note the salt form: that study names the iodide specifically.\n\nThe third is in vitro. A 2021 paper in the Journal of Obstetrics and Gynaecology reports that the compound, abbreviated 5MQ, inhibited proliferation of HeLa cervical cancer cells in a concentration- and time-dependent manner, with reduced phospho-Akt and SIRT1 expression (PMID 33645410, doi:10.1080/01443615.2020.1854696).\n\nWhat those three records do and do not establish should be stated precisely. They are published evidence that this compound has been used as an NNMT inhibitor and has measurable effects in mice and in cultured cells. They are not evidence of efficacy, safety, therapeutic benefit or suitability for human use in any person, and none of them studied humans. Animal and cell-culture findings are not product benefits. They also establish nothing about the material supplied here: two of the three do not state a salt form and the third used the iodide, while this product's salt form is not stated, so it cannot be assumed to be the same chemical form used in any of them. This assessment was made from PubMed records and abstracts; the full texts were not read.\n\nThe remaining gap is one of scale and type rather than of total absence, and it deserves precise characterisation. Three preclinical records is a small literature, and none of it is human. The metabolic and weight-loss claims that circulate about this product are far more specific and confident than two mouse studies and one cell-line study can support, and the adiposity result among them is reported as background in a paper whose own subject was something else. No independent replication of that result was identified here.\n\nThe honest reading is therefore: a real enzyme target with a published and partly characterised inhibitor landscape, a compound that belongs to the main structural class of inhibitors for that target, and a small preclinical literature of its own — two mouse studies and one cell-line study — showing measurable effects in animals and cultured cells while establishing nothing about humans. Claims about body composition, metabolic rate or fat loss in any person go well beyond what those three studies support.\n\nThree further limitations belong here. The compound is a permanently charged quaternary cation, which raises an unresolved question about whether and how it reaches an intracellular enzyme — a question that matters more for a charged species than for a neutral one. The supplied salt form is unstated, so even a laboratory wishing to replicate a published protocol could not reliably match a concentration. And NNMT's physiological role is described in the review literature as still being elucidated, which means off-target and on-target consequences of inhibiting it are not fully mapped.\n\nFor a laboratory, the useful work here is well defined precisely because the literature is thin. Determining the salt form and therefore the molar content is a trivial first step that makes everything else possible. Measuring cellular uptake of a permanently charged cation, and establishing whether it depends on a transporter, would address the delivery question directly. And enzymatic inhibition assays against purified NNMT, with 1-methylnicotinamide production as readout — the assay used in the published inhibitor work — would quantify this compound's own potency against the enzyme, relative to the published macrocyclic and substrate-analogue inhibitors. Those are tractable experiments, and for a compound with no retrievable literature they are the ones that matter.",
+    "qualityPurityTitle": "Analytical Verification: The Counter-Anion Is the First Question",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nFor this product, identity verification cannot be completed from the information available, and the reason is structural rather than a matter of missing paperwork.\n\nThe verified PubChem record is for the cation C10H11N2+ at approximately 159.21, with CAS registry number 685079-15-6 (PubChem CID 950107). A cation is not a bulk substance. Whatever is supplied is a salt, and the counter-anion is unstated. So the first item a certificate must specify is the salt form — and a certificate that reports only \"5-Amino-1MQ, purity 99 per cent\" has not identified the substance it describes.\n\nThe magnitude of this matters. As set out above, if the salt were the iodide the active cation would be roughly 56 per cent of the supplied mass; a chloride or bromide salt would give substantially different figures. The uncertainty in molar content therefore approaches a factor of two. For any quantitative work this is the dominant source of error, larger than the peptide salt-form issues discussed elsewhere in this catalogue, and it is resolvable by a single question to the supplier.\n\nIdentity of the cation itself is established by mass spectrometry, and here the charge is an analytical advantage rather than an obstacle: a permanently cationic species ionises efficiently in positive-mode electrospray without requiring protonation, giving a strong signal at the cation mass. Nuclear magnetic resonance is the appropriate confirmatory technique for the structure, and it is the one to request, because the quinoline ring system admits regioisomers. An amino group at a position other than the 5-position, or methylation at a ring carbon rather than the ring nitrogen, would produce a compound of identical molecular formula and identical mass while being a different substance with potentially different activity. Mass spectrometry cannot distinguish these; NMR can.\n\nThat regioisomer concern is substantive for this chemistry rather than formal. Aminoquinoline synthesis can give mixtures of positional isomers, and the distinction between N-methylation and C-methylation is exactly the distinction that creates the quaternary cation in the first place. A C-methylated isomer would not be a quaternary salt at all and would behave completely differently.\n\nAnion identity and content should be confirmed independently where it matters, and for common anions this is straightforward: ion chromatography or elemental analysis establishes the anion and its stoichiometry. Halide content in particular is readily measured, and for an iodide salt the iodine contributes so much mass that elemental analysis is decisive.\n\nPurity assessment by high-performance liquid chromatography with ultraviolet detection is appropriate and well suited to this compound, since the quinoline chromophore absorbs strongly. The impurity profile to expect is synthetic-organic: unreacted aminoquinoline starting material, positional isomers, incompletely methylated species, over-alkylated products, and residual solvents. Residual solvent content is a legitimate separate question that a chromatographic purity figure does not address.\n\nA practical note bearing on experiments: the stated 150 mg includes the counter-anion and any adsorbed water. Quaternary cationic solids are commonly hygroscopic, so unless water content has been determined the figure is a fill mass containing active cation, anion and moisture in unknown proportions.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: No Retrievable Evidence, and an Unresolved Composition",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\n5-Amino-1MQ is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nTwo matters specific to this product require direct statement. The second of them is why this page carries a BLOCKED status.\n\nFirst, the evidence. **A PubMed search for 5-amino-1-methylquinolinium returns three indexed records, all preclinical.** Two are mouse studies and one is a cell-line study: adiposity and weight loss in diet-induced obese mice, reported as background in a 2022 microbiome paper (PMID 35013352); reduced tumour growth with 5-amino-1-methylquinolinium iodide in mouse models of bladder cancer (PMID 39067875); and inhibition of HeLa cell proliferation in vitro (PMID 33645410). No human clinical trial of this compound was identified. Those three records do not establish efficacy, safety, therapeutic benefit or suitability for human use in any person, and animal and cell-culture findings are not product benefits. They also establish nothing about the material supplied here: this product's salt form is not stated, two of the three papers state none either, and the third used the iodide, so this material cannot be assumed to be the chemical form used in any of them. The metabolic and body-composition claims circulating about this material remain far more specific and confident than that literature can support.\n\nSecond, the composition. The verified identity is a **cation**, C10H11N2+. A cation cannot be supplied alone, so the material is a salt whose counter-anion is not stated. Because the counter-anion may be a large fraction of the vial mass — for an iodide salt, on the arithmetic set out above, the active cation would be only around 56 per cent of it — the quantity of active compound in a nominal 150 mg presentation is unknown, and molar calculations may be wrong by a margin approaching a factor of two. This should be resolved with the supplier before any use, including any quantitative laboratory use.\n\nTwo further points bear on how claims should be read. The enzyme target, nicotinamide N-methyltransferase, is a legitimate research target, but the review literature describes its role in healthy and disease states as still being elucidated and its complexity as acknowledged. An enzyme whose physiological role is incompletely mapped is not one whose inhibition can be assumed benign, and published work identifies NNMT as having roles in cancer biology, including in cellular response to platinum chemotherapy. Separately, this compound is a permanently charged quaternary cation, and permanently charged species do not readily cross lipid membranes by passive diffusion — which leaves an unresolved question about how it would reach an intracellular enzyme.\n\nNothing on this page suggests that this material is suitable for addressing obesity, weight loss, body composition, metabolic rate, ageing or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is 5-Amino-1MQ?",
+        "answer": "It is 5-amino-1-methylquinolinium, a small quaternary organic cation investigated as an inhibitor of nicotinamide N-methyltransferase (NNMT). The verified PubChem record is for the cation C10H11N2+ at approximately 159.21, CAS 685079-15-6, PubChem CID 950107. The methylated ring nitrogen creates a permanent positive charge, which drives most of the practical considerations for this product."
+      },
+      {
+        "question": "Is there any published research on this specific compound?",
+        "answer": "Yes — three indexed records, all preclinical. A PubMed search for 5-amino-1-methylquinolinium returns three papers: a 2022 Scientific Reports study whose opening states that this compound with a low-fat diet promoted adiposity and weight loss in diet-induced obese mice, reported there as background to a microbiome question (PMID 35013352); a 2024 study reporting that 5-amino-1-methylquinolinium iodide reduced tumour growth in mouse models of bladder cancer (PMID 39067875); and a 2021 in-vitro study reporting inhibition of HeLa cell proliferation (PMID 33645410). No human clinical trial was identified. These are animal and cell-culture results, not evidence of efficacy or safety in people and not product benefits. Two of the three do not state a salt form and the third used the iodide, so none can be assumed to describe the material supplied here, whose salt form is not stated. This summary is based on PubMed records and abstracts, not full texts."
+      },
+      {
+        "question": "Why does the \"+\" in the formula matter?",
+        "answer": "Because it means the verified substance is a cation, and a cation cannot exist as a bulk solid on its own — charge must be balanced. Whatever is in the vial is a salt, paired with a counter-anion that is not stated anywhere in the product information. That unstated component determines what proportion of the 150 mg is actually the active species."
+      },
+      {
+        "question": "How much does the counter-anion change the maths?",
+        "answer": "Potentially by close to a factor of two. Quaternary quinolinium compounds are commonly isolated as iodides; if this were the iodide, the salt weight would be roughly 159.21 plus iodine’s 126.90, about 286.1 — making the active cation only ~56 per cent of supplied mass, so 150 mg of salt would hold around 83 mg of cation. That arithmetic illustrates the scale of uncertainty; the actual anion is not stated and no specific salt is asserted here."
+      },
+      {
+        "question": "What does NNMT actually do?",
+        "answer": "It methylates nicotinamide to form 1-methylnicotinamide, using S-adenosyl-L-methionine as the methyl donor. That sits at an interesting junction: nicotinamide feeds the NAD+ salvage pathway, so methylating it diverts nicotinamide away from NAD+ regeneration. Inhibiting NNMT would be expected to spare nicotinamide for NAD+ synthesis while also reducing consumption of the cell’s universal methyl donor."
+      },
+      {
+        "question": "Is NNMT a credible target?",
+        "answer": "Yes, with a caveat about how it is described. A 2021 paper states that the complexity of NNMT’s role in healthy and disease states is \"slowly being elucidated\" and that it \"may be an interesting therapeutic target\" for cancer, diabetes and obesity. Note the framing: an active research question, not a validated therapeutic mechanism. The same work reported macrocyclic peptide inhibitors with IC50 down to 229 nM that appear to act allosterically."
+      },
+      {
+        "question": "Are there reasons for caution about inhibiting NNMT?",
+        "answer": "Yes. Published work identified NNMT as linked to platinum chemotherapy response in ovarian cancer, where an NNMT inhibitor or NNMT knockdown restored platinum sensitivity. That is useful evidence that NNMT inhibitors work as tools — but an enzyme implicated in chemotherapy response is not one whose sustained inhibition is self-evidently benign, especially given the review literature’s acknowledgement that its physiological role is incompletely mapped."
+      },
+      {
+        "question": "Does the permanent positive charge matter pharmacologically?",
+        "answer": "It raises a real unresolved question. Passive diffusion across lipid membranes is strongly disfavoured for permanently charged species, so cellular uptake generally depends on transporters rather than partition. Since the proposed target is an intracellular enzyme, the molecule has to get inside cells to act — and a permanent positive charge is an obstacle to doing so passively. This parallels the problem described on the NAD+ page."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "The salt form, first and above all — a certificate reporting only \"5-Amino-1MQ, 99 per cent\" has not identified the substance. Then NMR structural confirmation, because the quinoline system admits regioisomers: an amino group at the wrong position, or methylation at a ring carbon rather than the ring nitrogen, would share the formula and mass while being a different substance. A C-methylated isomer would not even be a quaternary salt."
+      },
+      {
+        "question": "What research would actually be worth doing?",
+        "answer": "Three tractable things, given the thin literature. Determine the salt form, which makes every other calculation possible. Measure cellular uptake of the charged cation and establish whether it is transporter-dependent, addressing the delivery question. And run enzymatic inhibition assays against purified NNMT with 1-methylnicotinamide production as readout — the assay used in published inhibitor work — to establish whether this compound inhibits the enzyme at all, and at what potency."
+      }
+    ]
+  }
+}

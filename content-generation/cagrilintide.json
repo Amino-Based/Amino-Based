@@ -1,0 +1,222 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "cagrilintide",
+    "qc": {
+      "main_content_words": 2187,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "INVESTIGATIONAL - not approved in any jurisdiction.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "82.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Cagrilintide 10mg.png",
+        "upload_as": "amino-cagrilintide-10mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 171397054 (PUG REST, verified 2026-11-09): MolecularFormula C194H312N54O59S2, MolecularWeight 4409; CAS 1415456-99-3",
+      "PMID 33727283 doi:10.1124/jpet.121.000567 - J Pharmacol Exp Ther - AM833 pharmacology across 25 endpoints vs six selective and nonselective agonists",
+      "PMID 34929674 doi:10.7570/jomes21071 - J Obes Metab Syndr - Amylin as a Future Obesity Treatment",
+      "PMID 38302593 doi:10.1038/s41366-024-01473-y - Int J Obes - obesity pipeline incl. cagrisema (GLP-1/amylin)",
+      "PMID 38687506 doi:10.2337/dci23-0100 - Diabetes Care - incretin pharmacotherapy and lean mass"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Sterility and endotoxin content - not established for research material"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational-commercial. The searcher wants to establish what cagrilintide is, how it differs from pramlintide and from incretin agonists, and how mature the evidence is.",
+    "primary_keyword": "cagrilintide",
+    "secondary_keywords": [
+      "AM833",
+      "amylin analogue",
+      "cagrilintide research peptide",
+      "cagrilintide molecular weight",
+      "long-acting amylin agonist",
+      "amylin receptor agonist"
+    ],
+    "long_tail_keywords": [
+      "what is cagrilintide",
+      "cagrilintide AM833 molecular formula",
+      "cagrilintide vs pramlintide",
+      "is cagrilintide FDA approved",
+      "amylin receptor calcitonin receptor difference",
+      "cagrilintide CAS 1415456-99-3",
+      "what is an amylin analogue",
+      "cagrilintide and semaglutide combination",
+      "does cagrilintide aggregate",
+      "cagrilintide certificate of analysis"
+    ],
+    "semantic_terms": [
+      "amylin",
+      "islet amyloid polypeptide",
+      "calcitonin receptor",
+      "receptor activity-modifying protein",
+      "RAMP",
+      "satiety signal",
+      "gastric emptying",
+      "glucagon suppression",
+      "disulfide bridge",
+      "amyloid fibril",
+      "acylation",
+      "lipidation",
+      "pramlintide",
+      "phase 2",
+      "reverse-phase HPLC"
+    ],
+    "name_variations": [
+      "cagrilintide",
+      "AM833",
+      "AM-833",
+      "NNC0174-0833",
+      "long-acting amylin analogue"
+    ],
+    "informational_queries": [
+      "what is cagrilintide",
+      "how does amylin work",
+      "cagrilintide mechanism",
+      "cagrilintide vs pramlintide",
+      "is cagrilintide approved"
+    ],
+    "commercial_queries": [
+      "buy cagrilintide research peptide",
+      "cagrilintide 10mg",
+      "cagrilintide COA"
+    ],
+    "cannibalisation_check": "Owns cagrilintide, AM833 and the amylin-analogue concept. Distinct from /product/semaglutide, /product/glp-1trz and /product/glp-3rta, which own the incretin agonist intents. Combination references link out rather than target their keywords.",
+    "h1": "Driven by CMS name field; renders as \"Cagrilintide\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/semaglutide",
+        "anchor": "Semaglutide",
+        "rationale": "The incretin agonist studied in combination with this molecule; strong research adjacency.",
+        "verified": true
+      },
+      {
+        "route": "/product/glp-3rta",
+        "anchor": "GLP-3RTA (retatrutide)",
+        "rationale": "Alternative multi-receptor approach in the same pipeline review.",
+        "verified": true
+      },
+      {
+        "route": "/product/glp-1trz",
+        "anchor": "GLP-1TRZ (tirzepatide)",
+        "rationale": "Comparator for combination versus multi-agonist strategies.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Cagrilintide (AM833) | Long-Acting Amylin Analogue | Amino Based",
+    "seoDescription": "Cagrilintide (AM833): long-acting amylin analogue, C194H312N54O59S2, MW 4409, CAS 1415456-99-3. Identity, receptor pharmacology, evidence. Research use only.",
+    "description": "Cagrilintide, also known by the development code AM833, is a long-acting acylated analogue of amylin — a pancreatic hormone co-secreted with insulin. Its molecular formula is C194H312N54O59S2, with a molecular weight of approximately 4409 g/mol and CAS registry number 1415456-99-3 (PubChem CID 171397054). It is an investigational compound, not approved in any jurisdiction, supplied here as an unapproved research chemical for laboratory use only.",
+    "productDetailsTitle": "Cagrilintide (AM833): Chemical Identity and Receptor Selectivity",
+    "productDetailsDescription": "Cagrilintide is a synthetic, lipidated analogue of human amylin, also called islet amyloid polypeptide. Amylin is a 37-amino-acid hormone co-secreted with insulin from pancreatic beta cells in response to nutrient delivery to the small intestine, and it acts as a satiety signal on sub-cortical homeostatic and hedonic brain regions, slows gastric emptying, and suppresses post-prandial glucagon responses. Cagrilintide is an engineered version of that hormone designed for a long duration of action.\n\nThe verified identifiers are a molecular formula of C194H312N54O59S2, a molecular weight of approximately 4409 g/mol, and CAS registry number 1415456-99-3, recorded under PubChem CID 171397054. The two sulfur atoms in the formula reflect a disulfide bridge, which is structurally significant: unlike the incretin analogues in this catalogue, cagrilintide contains cysteine residues forming an intramolecular disulfide bond. That bond is part of the molecule's defining structure, and it also makes the compound vulnerable to reduction and to oxidative disulfide scrambling, which linear peptides without cysteine are not. Handling and storage conditions that would be unremarkable for a linear peptide can therefore compromise this one.\n\nNative human amylin has a strong tendency to aggregate and form amyloid fibrils, which is the central problem that any amylin-based therapeutic must solve, and which the name islet amyloid polypeptide reflects directly. Analogue design in this class is substantially about suppressing that aggregation while retaining receptor activity. Pramlintide, an earlier approved amylin analogue, took this approach with proline substitutions. Cagrilintide is a later, lipidated design intended to combine aggregation resistance with the extended half-life that acylation confers.\n\nThe receptor pharmacology is more intricate than the phrase \"amylin analogue\" suggests, and this is the most important technical point on the page. Amylin receptors are not single proteins: they are heterodimers formed between the calcitonin G protein-coupled receptor and receptor activity-modifying proteins, which produce several distinct receptor subtypes. A compound in this class can act selectively at amylin receptors, or non-selectively across amylin and calcitonin receptors, and those are materially different pharmacological profiles. A study in the Journal of Pharmacology and Experimental Therapeutics characterised AM833 across 25 endpoints and compared it with six selective and non-selective agonists, concluding that it is a non-selective agonist of calcitonin-family receptors with a pharmacological profile distinct from the comparators across measures of receptor binding, activation and regulation (PMID 33727283, doi:10.1124/jpet.121.000567). Describing cagrilintide simply as an amylin receptor agonist is therefore incomplete: it also activates the calcitonin receptor directly.\n\nIt is worth unpacking that receptor architecture, because it explains why selectivity in this class is difficult to engineer and difficult to describe. The calcitonin receptor can function on its own, responding to calcitonin. When it associates with one of three receptor activity-modifying proteins, its pharmacology changes, producing the receptor subtypes conventionally designated AMY1, AMY2 and AMY3 according to which modifying protein is present. The same core receptor protein therefore presents several distinct pharmacological surfaces depending on what it is partnered with, and the partnering varies between tissues. A compound's profile across this family is consequently not a single number but a pattern across subtypes, which is precisely why the comparison study referenced above required 25 separate endpoints rather than a simple potency ranking. For anyone designing receptor-level experiments, the practical implication is that the cell system matters as much as the compound: results obtained in a system expressing one modifying protein do not transfer to another.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "Amylin Pharmacology, Combination Research and Evidence Stage",
+    "researchFocusDescription": "Cagrilintide sits at an earlier stage of development than the incretin analogues alongside it in this catalogue, and the published evidence should be weighted accordingly. It is investigational, and the bulk of what is publicly known comes from phase 2 work and from receptor-level pharmacology rather than from completed late-stage trials.\n\nThe underlying biological rationale is well established even where the specific compound is not. Amylin is a physiological satiety signal: a review in the Journal of Obesity and Metabolic Syndrome describes its co-secretion with insulin upon nutrient delivery to the small intestine, its action on sub-cortical homeostatic and hedonic brain regions, its slowing of gastric emptying and its suppression of post-prandial glucagon responses. The same review notes that pramlintide, an approved synthetic amylin analogue used in diabetes, produces better glycaemic control and small but statistically significant weight loss, and describes AM833 as an investigational long-acting acylated analogue acting as a non-selective amylin receptor agonist, with reductions in food intake and dose-dependent weight loss (PMID 34929674, doi:10.7570/jomes21071). The contrast between pramlintide's modest effect and the larger effects reported for newer analogues is itself informative about what changed: duration of action and receptor profile rather than the underlying mechanism.\n\nThe receptor-level work is where this compound is most clearly characterised. The pharmacological comparison across 25 endpoints referenced above profiled AM833 against amylin-receptor-selective and non-selective lipidated analogues, against the clinically used agonists pramlintide and salmon calcitonin, and against prototypical selective agonists of the calcitonin and amylin receptors. The conclusion that AM833 has a unique profile across binding, activation and regulation is a meaningful finding because it means the compound cannot be modelled as simply a longer-acting version of an existing agent. There is an interesting wrinkle in the background literature here: selective activation of the calcitonin receptor alone is not efficacious for weight control, yet non-selective agonists that also activate it appear to have improved efficacy. Why that should be is not resolved, and it is a genuine open question in the field.\n\nThe most active area of current interest is combination rather than monotherapy. A review of the obesity pharmacotherapy pipeline in the International Journal of Obesity places cagrilintide within the broader strategy of combining GLP-1 receptor agonism with other entero-pancreatic hormones having complementary actions — GIP, glucagon and amylin — and notes that the GLP-1 and amylin combination has progressed to phase 3 trials (PMID 38302593, doi:10.1038/s41366-024-01473-y). The rationale is that amylin and incretin signalling act through partly distinct pathways, so combining them may produce effects neither achieves alone.\n\nSeveral limitations deserve explicit statement. Cagrilintide is not approved anywhere, so there is no regulator-reviewed labelling and no post-marketing surveillance. Much of the efficacy information in circulation derives from phase 2 dose-finding work, which is provisional. The non-selective receptor profile means that effects mediated through calcitonin receptor activation — including any on bone or calcium handling, which is the calcitonin receptor's classical physiology — are a reasonable area of inquiry rather than a settled matter. And a class-wide finding applies here as it does to the incretins: a review in Diabetes Care reports that weight-loss pharmacotherapy in this broad area is accompanied by significant loss of lean mass alongside fat loss, making body composition rather than total weight change the more informative endpoint (PMID 38687506, doi:10.2337/dci23-0100).\n\nThere is also a formulation-level reason this class has historically been difficult, which is relevant to anyone handling the material. Aggregation is not merely a storage inconvenience for amylin analogues; it is the central obstacle the chemistry exists to overcome, and it interacts with concentration, temperature, agitation and surface contact. A preparation that appears acceptable at one concentration may behave differently at another, and the relationship is not necessarily linear. This is a reason to characterise solution behaviour under the specific conditions of an experiment rather than to rely on general guidance about peptide handling.\n\nFor laboratory work, the most tractable questions are at the receptor level: relative potency and efficacy across the calcitonin receptor and the amylin receptor subtypes, the consequences of receptor activity-modifying protein composition, signalling bias, and receptor trafficking and regulation. The 25-endpoint comparison provides a published framework that subsequent experiments can be designed against.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity and purity answer different questions and both are needed. Identity confirmation, typically by mass spectrometry, establishes whether the molecule present is the intended one, by comparing observed mass against the value calculated for the sequence — approximately 4409 Da in this case. Purity assessment, typically by reverse-phase high-performance liquid chromatography, establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual synthesis reagents. A certificate reporting only one answers half the question, and an HPLC percentage quoted without its chromatogram is weaker evidence than one accompanied by the trace, because detection wavelength, gradient and integration method all affect the number.\n\nTwo considerations are specific to this molecule and are more consequential than they would be for a linear peptide. First, cagrilintide contains a disulfide bridge. Disulfide-containing peptides can be supplied in a reduced or incorrectly bridged form, and such a preparation may have the correct total mass to within the two-hydrogen difference that reduction causes, while being structurally and functionally wrong. Mass alone is therefore weaker evidence of correct structure here than it would be for a linear peptide, and chromatographic behaviour or a specific disulfide assay carries additional weight. Second, amylin and its analogues are an aggregation-prone class by nature, so physical appearance on reconstitution, solution clarity and any visible particulate are meaningful observations rather than cosmetic ones.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water alongside the peptide, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass rather than a verified peptide mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Investigational Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nCagrilintide is an investigational compound. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling for it, no approved indication, no established dosing, and no post-marketing safety surveillance. Efficacy information circulating from phase 2 dose-finding work and from ongoing trials is provisional and may be revised; it is not a safety finding, and it says nothing about material obtained outside the clinical supply chain.\n\nIt is worth distinguishing cagrilintide from pramlintide on this point, because the two are sometimes discussed interchangeably as \"amylin analogues\". Pramlintide is an approved medicine. Cagrilintide is not, and the regulatory status of one says nothing about the other. The same caution applies to combination products under investigation that pair this molecule with an incretin agonist: a trial of a combination is not an approval of its components.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is cagrilintide?",
+        "answer": "Cagrilintide, development code AM833, is a synthetic long-acting acylated analogue of amylin, a 37-amino-acid pancreatic hormone co-secreted with insulin in response to nutrient delivery to the small intestine. Amylin acts as a satiety signal on sub-cortical brain regions, slows gastric emptying, and suppresses post-prandial glucagon responses. Cagrilintide is an engineered version designed for extended duration of action."
+      },
+      {
+        "question": "What is its molecular formula and molecular weight?",
+        "answer": "The molecular formula is C194H312N54O59S2, with a molecular weight of approximately 4409 g/mol and CAS registry number 1415456-99-3, recorded under PubChem CID 171397054. The two sulfur atoms reflect a disulfide bridge, which distinguishes it structurally from the linear incretin analogues in this catalogue."
+      },
+      {
+        "question": "Is cagrilintide simply an amylin receptor agonist?",
+        "answer": "No, and this is the most important technical point about it. Amylin receptors are heterodimers of the calcitonin G protein-coupled receptor with receptor activity-modifying proteins, producing several subtypes. A 2021 pharmacological study profiling AM833 across 25 endpoints concluded that it is a non-selective agonist of calcitonin-family receptors, meaning it activates the calcitonin receptor directly as well as amylin receptors, with a profile distinct from six comparator agonists. Describing it only as an amylin receptor agonist is incomplete."
+      },
+      {
+        "question": "How does it differ from pramlintide?",
+        "answer": "Pramlintide is an approved synthetic amylin analogue used in diabetes, which produces better glycaemic control and small but significant weight loss. Cagrilintide is investigational, lipidated for a much longer duration of action, and non-selective across calcitonin-family receptors. The difference in reported effect size appears to come from duration of action and receptor profile rather than from a different underlying mechanism. Their regulatory statuses are also entirely different: one is approved, the other is not."
+      },
+      {
+        "question": "Is cagrilintide approved?",
+        "answer": "No. It is not approved by the FDA or any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, and no post-marketing safety surveillance. Efficacy information from phase 2 dose-finding work is provisional. A trial of a combination product containing this molecule is not an approval of the molecule."
+      },
+      {
+        "question": "Why does amylin aggregate, and does that matter here?",
+        "answer": "Native human amylin is also called islet amyloid polypeptide, a name that reflects its strong tendency to form amyloid fibrils. Suppressing that aggregation while retaining receptor activity is the central design problem for any amylin-based compound. It matters practically: this is an aggregation-prone class, so solution clarity and any visible particulate on reconstitution are meaningful observations rather than cosmetic ones."
+      },
+      {
+        "question": "Why is mass spectrometry weaker evidence of identity for this peptide?",
+        "answer": "Because cagrilintide contains a disulfide bridge. A preparation supplied in a reduced or incorrectly bridged form can have the correct total mass to within the two-hydrogen difference that reduction causes, while being structurally and functionally wrong. For a linear peptide with no cysteine, a correct mass is strong evidence of correct structure; here it is necessary but not sufficient, and chromatographic behaviour or a specific disulfide assay carries additional weight."
+      },
+      {
+        "question": "What is the research interest in combining amylin and incretin agonists?",
+        "answer": "Amylin and incretin signalling act through partly distinct pathways, so the rationale is that combining them may produce effects neither achieves alone. A review of the obesity pharmacotherapy pipeline places cagrilintide within the broader strategy of pairing GLP-1 receptor agonism with complementary entero-pancreatic hormones — GIP, glucagon and amylin — and notes that the GLP-1 plus amylin combination has progressed to phase 3 trials."
+      },
+      {
+        "question": "What are the main open questions?",
+        "answer": "Several. Selective activation of the calcitonin receptor alone is not efficacious for weight control, yet non-selective agonists that also activate it appear to have improved efficacy, and why that should be is unresolved. The consequences of calcitonin receptor activation for bone and calcium handling, the calcitonin receptor’s classical physiology, are a reasonable area of inquiry rather than a settled matter. And body composition rather than total weight change is the more informative endpoint across this broad therapeutic area."
+      },
+      {
+        "question": "What does \"research use only\" mean here?",
+        "answer": "It means this material is sold for laboratory research and nothing else. Research use only is not a legal classification and does not exempt a purchaser from applicable law; legality depends on your jurisdiction and on what you do with the material. Researchers are responsible for their own regulatory compliance, including institutional approvals, import and export controls, and safe disposal. No dosing or administration guidance for human or veterinary use is provided."
+      }
+    ]
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "_meta": {
+    "status": "BLOCKED",
+    "status_reason": "IDENTITY NOT RESOLVABLE. Material sold as \"TB-500\" is either full-length thymosin beta-4 (43 residues, approx 4963 Da) or the short fragment Ac-LKKTETQ (thymosin beta-4 17-23, approx 889 Da) - a roughly 5.6-fold mass difference. Which entity this product contains is not stated and cannot be determined from supplier information. The page states both possibilities and asserts neither. Resolving this requires a lot-specific certificate or an explicit supplier statement of molecular identity.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "tb-500",
+    "qc": {
+      "main_content_words": 2988,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. TB-500 and thymosin beta-4 are prohibited in sport under WADA Prohibited List section S2 (per USADA advisory on the 2027 list).",
+    "variants_from_csv": [
+      {
+        "variant": "5mg",
+        "price_usd": "54.99"
+      },
+      {
+        "variant": "10mg",
+        "price_usd": "82.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "5mg",
+        "source_file": "TB-500 5mg.png",
+        "upload_as": "amino-tb-500-5mg.png"
+      },
+      {
+        "variant": "10mg",
+        "source_file": "TB-500 10mg.png",
+        "upload_as": "amino-tb-500-10mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      }
+    ],
+    "identity_ambiguity": "BOTH CANDIDATES NOW FULLY CHARACTERISED (2026-11-10). Name lookups still fail: PubChem has NO record under \"TB-500\", \"Ac-LKKTETQ\" or \"thymosin beta 4 (17-23)\". CAS-based lookups succeed for both. (1) FULL-LENGTH thymosin beta-4: CAS 77591-33-4 -> CID 16132341, C212H350N56O78S, MW approx 4963. (2) ACETYLATED FRAGMENT Ac-LKKTETQ: CAS 885340-08-9 -> CID 62707662, C38H68N10O14, MW 889.0. Self-confirming: the UNACETYLATED heptapeptide LKKTETQ is CID 10169788, C36H66N10O13, MW 847.0, and 889.0 - 847.0 = exactly 42.0, one acetyl group. WHICH of the two is in this vial remains unstated by the supplier, so neither is asserted for this product.",
+    "references": [
+      "PubChem CID 45382195 (PUG REST, verified 2026-11-09, matched name \"thymosin beta-4\"): C212H350N56O78S, MW approx 4963 - this is the FULL-LENGTH protein, not the fragment commonly sold as TB-500.",
+      "PMID 38256161 doi:10.3390/ijms25021088 - Int J Mol Sci 25(2):1088 (2024) - Tbeta4 described as a significant G-actin sequestering peptide; regulates microfilament formation and mitochondrial transfer in thymic epithelial cells, and double-negative and CD4 single-positive thymocyte formation and maturation; effects associated with impact on F-actin aggregation.",
+      "PMID 34607232 doi:10.1016/j.intimp.2021.108167 - Int Immunopharmacol 101(Pt A):108167 - OBSERVATIONAL cohort, 191 sepsis patients, Tbeta4 measured within 6h of ICU admission. LOWER endogenous Tbeta4 tertiles correlated with acute kidney injury (OR 2.102 per stage lower, 95% CI 1.448-3.050), CRRT (OR 2.346, 1.287-4.276), 7-day mortality (OR 1.755, 1.050-2.935) and 28-day mortality (OR 1.821, 1.209-2.743). AUCs 0.682-0.717. This is a BIOMARKER association, NOT an administration study.",
+      "PMID 33468581 doi:10.1128/IAI.00735-20 - Infect Immun 89(4) - Tbeta4-OVEREXPRESSING TRANSGENIC mice resisted Legionella pneumophila pulmonary and systemic infection; lower bacterial loads, reduced IL-1beta and TNF-alpha, protection from sepsis lethality. GENETIC overexpression model, NOT administration of exogenous peptide.",
+      "USADA athlete advisory on the WADA Prohibited List: TB-500 prohibited under S2; Thymosin-beta 4 prohibited under S2. Verified 2026-11-09."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "WHICH MOLECULAR ENTITY IS SUPPLIED - full-length thymosin beta-4 (approx 4963 Da) or the Ac-LKKTETQ fragment (approx 889 Da). This is the primary blocking issue.",
+      "Whether the 5 mg and 10 mg figures refer to the full protein or the fragment - the molar content differs by roughly 5.6-fold between the two interpretations",
+      "N-terminal acetylation status if the fragment is supplied - Ac-LKKTETQ is acetylated and the unacetylated heptapeptide is a different compound"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a strong verification component. The searcher wants to know what TB-500 is, and increasingly whether it is the full protein or a fragment.",
+    "primary_keyword": "TB-500",
+    "secondary_keywords": [
+      "TB-500 peptide",
+      "thymosin beta-4",
+      "Ac-LKKTETQ",
+      "TB-500 molecular weight",
+      "TB500 fragment",
+      "actin sequestering peptide"
+    ],
+    "long_tail_keywords": [
+      "what is TB-500",
+      "is TB-500 thymosin beta-4 or a fragment",
+      "TB-500 molecular weight 889 or 4963",
+      "TB-500 vs thymosin alpha-1",
+      "Ac-LKKTETQ molecular weight",
+      "is TB-500 banned WADA",
+      "TB-500 human trials",
+      "TB-500 certificate of analysis",
+      "thymosin beta-4 actin",
+      "TB-500 identity verification"
+    ],
+    "semantic_terms": [
+      "G-actin",
+      "F-actin",
+      "actin sequestration",
+      "cytoskeletal rearrangement",
+      "cell migration",
+      "tissue repair",
+      "thymic epithelial cells",
+      "biomarker association",
+      "transgenic overexpression",
+      "odds ratio",
+      "area under the curve",
+      "N-terminal acetylation",
+      "peptide mapping",
+      "WADA S2"
+    ],
+    "name_variations": [
+      "TB-500",
+      "TB500",
+      "thymosin beta-4",
+      "Tbeta4",
+      "Tb4",
+      "Ac-LKKTETQ",
+      "thymosin beta-4 (17-23)",
+      "Thymosin alpha-1 is a DIFFERENT molecule"
+    ],
+    "informational_queries": [
+      "what is TB-500",
+      "TB-500 vs thymosin beta-4",
+      "does TB-500 work",
+      "TB-500 mechanism",
+      "is TB-500 banned"
+    ],
+    "commercial_queries": [
+      "buy TB-500",
+      "TB-500 5mg",
+      "TB-500 10mg",
+      "TB-500 COA"
+    ],
+    "cannibalisation_check": "Owns TB-500 and the thymosin beta-4 identity-ambiguity intent. /product/thymosin-alpha-1 owns the alpha-1 molecule and states the same disambiguation from the other side. /product/bpc-157 and /product/bpc-157-tb-500-blend own tissue-repair intent; the blend page covers the combination.",
+    "h1": "Driven by CMS name field; renders as \"TB-500\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/thymosin-alpha-1",
+        "anchor": "Thymosin Alpha-1",
+        "rationale": "Essential disambiguation: a different molecule sharing only the historical thymosin label. Stated from both sides.",
+        "verified": true
+      },
+      {
+        "route": "/product/bpc-157-tb-500-blend",
+        "anchor": "BPC-157 / TB-500 Blend",
+        "rationale": "Blend containing this compound; the identity ambiguity documented here propagates to that product.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "Worked example of a short fragment that does retain parent-hormone activity; directly relevant to the fragment-versus-parent question raised here.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "TB-500 | Thymosin Beta-4 Fragment or Full Protein? | Amino Based",
+    "seoDescription": "TB-500: an identity ambiguity worth understanding. Full thymosin beta-4 is approx 4963 Da; Ac-LKKTETQ approx 889 Da. Research use only.",
+    "description": "TB-500 is a designation applied to material related to thymosin beta-4, an actin-sequestering peptide. Critically, the name is used in commerce for two chemically different substances: the full-length 43-residue protein, with formula C212H350N56O78S and a molecular weight of approximately 4963 g/mol (PubChem CID 45382195), and the short acetylated fragment Ac-LKKTETQ corresponding to residues 17 to 23, of approximately 889 g/mol. Which of these is supplied here is not stated and is not asserted on this page. It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "TB-500: Two Different Molecules Sold Under One Name",
+    "productDetailsDescription": "The most important thing to understand about this product is that the name does not identify a single compound. This is unusual even among research chemicals, and it is not a pedantic distinction — the two substances sold as TB-500 differ in mass by roughly a factor of 5.6.\n\nThe first is thymosin beta-4 itself, a 43-residue protein. A public database lookup under that name returns molecular formula C212H350N56O78S and a molecular weight of approximately 4963 g/mol (PubChem CID 45382195). This is a genuine, well-characterised endogenous protein, abundant in many tissues, and the subject of a substantial research literature.\n\nThe second is a short synthetic fragment, conventionally written Ac-LKKTETQ, corresponding to residues 17 to 23 of thymosin beta-4 and acetylated at its N-terminus. Seven residues, approximately 889 g/mol. This fragment contains the actin-binding motif that is thought to account for much of the parent protein's activity, which is the rationale for selling it in place of the whole protein: it is vastly cheaper to synthesise than a 43-residue protein and is far easier to characterise analytically.\n\nHere is the verification problem, stated plainly. A public chemical database search returns a record for the full-length protein. It returns **no record** under \"TB-500\", under \"Ac-LKKTETQ\", or under \"thymosin beta 4 (17-23)\" — this was checked directly rather than assumed. So the name under which the product is sold has no database entry at all, while the name of the parent protein returns a molecule that may well not be what is in the vial. A researcher who looks up \"TB-500\", finds the thymosin beta-4 record, and uses 4963 g/mol in a molar calculation may be wrong by a factor of 5.6 in either direction.\n\nThat is the reason this page carries a status of BLOCKED rather than a confident identity claim. It is not possible to determine from the available supplier information which of the two substances these 5 mg and 10 mg presentations contain, and this page therefore asserts neither. Nor can the labelled mass be interpreted without that answer: 5 mg of a 889 Da heptapeptide is roughly 5.6 micromoles, while 5 mg of a 4963 Da protein is roughly 1.0 micromole. Any protocol specifying a concentration is unworkable until the identity is settled. The practical resolution is simple and should be insisted upon: a lot-specific certificate of analysis showing an observed mass, or an explicit written statement of molecular identity from the supplier. A mass spectrum alone settles it immediately, because the two candidates are not remotely close in mass.\n\nIf the fragment is what is supplied, a secondary question follows. Ac-LKKTETQ is acetylated at the N-terminus, and the unacetylated heptapeptide is a different compound. At 42 mass units on a molecule of 889, that is a difference of nearly 5 per cent and is readily visible by mass spectrometry — but only if someone looks.\n\nThe biology of the parent protein is worth setting out, since it is what gives the fragment its rationale. Thymosin beta-4 is described in the current literature as a significant G-actin sequestering peptide. Actin exists in cells as a monomer pool, G-actin, and as polymerised filaments, F-actin, and the balance between them governs cytoskeletal remodelling — cell shape, migration, division and wound closure all depend on it. A protein that binds and sequesters monomeric actin therefore influences the dynamics of that whole system, which explains why thymosin beta-4 appears in research on tissue repair, cell migration and regeneration across many tissue types. A 2024 study illustrates the breadth: it reported that thymosin beta-4 regulates microfilament formation and mitochondrial transfer in thymic epithelial cells and influences the formation and maturation of double-negative and CD4 single-positive thymocytes, with effects associated with its impact on F-actin aggregation (PMID 38256161, doi:10.3390/ijms25021088).\n\nA naming note, and it matters because the confusion is widespread. Thymosin beta-4 and thymosin alpha-1 are entirely different molecules — different families, different sizes, different biology — and share only the historical \"thymosin\" label from early isolation work on thymic tissue. Thymosin alpha-1 is a 28-residue acetylated peptide with its own approvals in some countries. Nothing established about one transfers to the other. This compound also appears as TB-500, TB500, Tbeta4, Tb4, thymosin beta-4 fragment, and as the sequence LKKTETQ with or without an acetyl designation.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 5 mg and 10 mg presentations, with the caveat above that the molar content of those masses cannot be determined until the molecular identity is established.",
+    "researchFocusTitle": "Actin Sequestration, and Why the Evidence Base Does Not Say What It Is Said to Say",
+    "researchFocusDescription": "The research literature on thymosin beta-4 is substantial and legitimate. The difficulty is that most of it does not address the question a prospective buyer of this product is actually asking, and the gap between the two is routinely papered over.\n\nThe established core is the molecular function. Thymosin beta-4 is a G-actin sequestering peptide, and this is not a contested claim — it is the defining biochemical property described consistently across the current literature. Through that activity it participates in cytoskeletal rearrangement, which connects it mechanistically to cell migration, tissue remodelling and repair. The 2024 thymic work cited above is a good example of the quality of this mechanistic literature: it traces the peptide's effect through microfilament formation and mitochondrial transfer in epithelial cells to downstream consequences for thymocyte maturation, with the effects attributable to F-actin aggregation (PMID 38256161, doi:10.3390/ijms25021088).\n\nWhere care is needed is in the two study designs that dominate the more clinically suggestive literature, because neither is an administration study, and both are regularly cited as though they were.\n\nThe first design is biomarker association. An observational cohort study measured endogenous thymosin beta-4 concentrations in 191 patients within six hours of intensive care admission with a diagnosis of sepsis, dividing the cohort into tertiles. Lower thymosin beta-4 was associated with worse outcomes across the board: acute kidney injury with an odds ratio of 2.102 per stage lower and a 95 per cent confidence interval of 1.448 to 3.050; continuous renal replacement therapy with an odds ratio of 2.346; seven-day mortality with an odds ratio of 1.755; and 28-day mortality with an odds ratio of 1.821. Areas under the curve for prediction ranged from 0.682 to 0.717 (PMID 34607232, doi:10.1016/j.intimp.2021.108167).\n\nThose are real associations with reasonably tight intervals, and they are interesting. But read what was measured: the patients' own circulating peptide, at a single early timepoint, correlated with how they subsequently fared. Nothing was administered. Low endogenous levels marking worse illness is entirely compatible with the peptide being consumed, suppressed or diluted by severe illness rather than protecting against it — and the modest areas under the curve, in the 0.68 to 0.72 range, indicate a biomarker of limited discriminative power rather than a strong one. An association of this kind cannot support the inference that giving the peptide improves outcomes. That inference requires an interventional trial, and none is cited here because none was found.\n\nThe second design is genetic overexpression. A study in transgenic mice engineered to overexpress human thymosin beta-4 reported that those animals resisted Legionella pneumophila infection, with significantly lower pulmonary bacterial loads, less hyaline membrane formation and necrotic abscess, reduced interstitial infiltration of neutrophils and T cells, reduced interleukin-1 beta and tumour necrosis factor alpha, and protection from sepsis lethality relative to wild-type controls (PMID 33468581, doi:10.1128/IAI.00735-20). The experimental work is careful — it includes bactericidal activity in bronchoalveolar lavage fluid and cytokine measurements in bone-marrow-derived macrophages, and identifies reduced Toll-like receptor activation as a likely mediator.\n\nBut constitutive genetic overexpression from conception is a profoundly different intervention from injecting a peptide, or a seven-residue fragment of one, into an adult animal. Overexpression produces sustained elevated levels in the tissues that express the transgene, throughout development. It establishes that the protein is capable of influencing these processes; it does not establish that exogenous administration reproduces the effect, and it says nothing at all about the short fragment.\n\nThat last point is the sharpest limitation, and it deserves to be stated directly rather than implied. Essentially all of the literature described above concerns thymosin beta-4 — the full protein, or its gene. If the material supplied is the Ac-LKKTETQ fragment, then the fragment's own evidence base is considerably thinner than the parent protein's, and the common assumption that a fragment containing the actin-binding motif reproduces the parent's effects is a hypothesis rather than a finding. Fragments sometimes retain parent activity, as the KPV tripeptide elsewhere in this catalogue illustrates; they sometimes do not; and they sometimes act by different mechanisms than the parent. The identity ambiguity on this product therefore does more than frustrate molar calculations — it leaves unclear which body of evidence, if any, applies.\n\nThe limitations in summary: the molecular identity of the supplied material is unresolved; the actin-sequestering function is well established but the clinically suggestive findings come from biomarker association and genetic overexpression rather than administration; no interventional human trial was identified; and if the fragment is supplied, the evidence that applies to it specifically is slight.\n\nFor a laboratory, the honest framing is that the parent protein is a legitimate and interesting subject with a real mechanistic literature, and that the useful work here begins with identity. Establishing by mass spectrometry which entity is in the vial is a trivial experiment that converts an uninterpretable reagent into a usable one. Beyond that, direct comparison of the fragment against the full protein in an actin polymerisation assay would address the fragment-versus-parent question that the commercial literature simply assumes away.",
+    "qualityPurityTitle": "Analytical Verification: Resolving an Identity Question First",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nFor this product, identity confirmation is not one check among several. It is the prerequisite for every other specification being meaningful, and it is currently unresolved.\n\nBoth candidate substances are now fully characterised, and the route to their identifiers is worth recording because name-based lookup fails for both. Querying by CAS registry number succeeds. Full-length thymosin beta-4 is CAS 77591-33-4, returning PubChem CID 16132341, formula C212H350N56O78S, molecular weight approximately 4963 g/mol. The acetylated fragment Ac-LKKTETQ is CAS 885340-08-9, returning PubChem CID 62707662, formula C38H68N10O14, molecular weight 889.0 g/mol.\n\nThat second assignment confirms itself. The unacetylated heptapeptide LKKTETQ is recorded separately as CID 10169788, C36H66N10O13, molecular weight 847.0 g/mol. The difference between the two is 889.0 minus 847.0, exactly 42.0 — one acetyl group. The database entries therefore corroborate each other arithmetically, which is better evidence than either taken alone, and it is the same 42-unit check this page recommends for verifying acetylation on a supplied lot. A single mass spectrometric measurement distinguishes them immediately — there is no ambiguity at a 5.6-fold mass difference, and no sophisticated method is required. The value of insisting on this is that it is cheap, decisive, and converts an uninterpretable product into a defined one.\n\nA certificate that states only a purity percentage is of very little use here, because a purity figure is a statement about a substance whose identity has not been given. Ninety-nine per cent of which molecule is the question that has to be answered first.\n\nIf the full-length protein is supplied, the appropriate checks are those for a recombinant or synthetic protein of nearly 5 kDa: identity by peptide mapping or sequence coverage rather than intact mass alone, since at this size a single-residue substitution shifts the mass by less than the practical accuracy of an intact measurement; and an impurity profile addressing truncated and deletion species, which resolve poorly at this chain length. Aggregation state is also a legitimate question for a protein of this size and is not addressed by chromatographic purity.\n\nIf the fragment is supplied, the checks are those for a short synthetic peptide, and two are specific. First, acetylation status: Ac-LKKTETQ is N-terminally acetylated and the unacetylated heptapeptide is a different compound, a difference of 42 units on 889 that mass spectrometry resolves easily when someone looks for it. Second, the sequence contains three lysine residues and a threonine-glutamate-threonine run, so deletion variants are plausible synthesis impurities; at seven residues these represent large proportional mass changes and should separate cleanly, making their absence a reasonable thing to require.\n\nThe salt-form question applies in either case but bites harder on the fragment. With three basic lysine side chains, a short peptide of this composition will carry multiple counter-ion equivalents, and at 889 g/mol an acetate or trifluoroacetate load represents a substantial fraction of the supplied mass. A molar calculation using the free-peptide value on salt-form material will be materially wrong — on top of the much larger error introduced by using the wrong molecular weight entirely.\n\nLyophilised mass is also not peptide content: a vial labelled 5 mg or 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Unapproved Status, Unresolved Identity, Prohibited in Sport",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nTB-500 is not an approved medicine. Neither full-length thymosin beta-4 nor the Ac-LKKTETQ fragment has been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. No interventional human trial of either substance was identified in the indexed literature.\n\nA specific point about this product requires emphasis. The molecular identity of material sold under this name is not resolved here. Two chemically different substances differing in mass by roughly 5.6-fold are both sold as TB-500, and the available supplier information does not establish which is supplied. This is recorded as a BLOCKED status on this page rather than papered over, and it should be resolved with the supplier before any use, including any quantitative laboratory use.\n\nThe evidence base requires equally careful reading. The actin-sequestering function of thymosin beta-4 is well established. But the findings most often invoked to suggest clinical benefit come from two study types that are not administration studies: an observational cohort in which patients' own endogenous peptide levels correlated with sepsis outcomes, and transgenic mice genetically engineered to overexpress the protein from conception. Neither design supports the conclusion that administering this material produces a benefit. Furthermore, essentially all of that literature concerns the full-length protein; if the short fragment is what is supplied, the evidence applying specifically to it is slight, and the assumption that a fragment reproduces its parent's effects is a hypothesis rather than a finding.\n\nAnti-doping status is relevant to anyone connected with competitive sport. According to a United States Anti-Doping Agency athlete advisory on the WADA Prohibited List, TB-500 is prohibited under section S2, and thymosin beta-4 is separately listed as prohibited under section S2. Athletes and support personnel should consult the current published WADA Prohibited List directly, as listings are revised annually.\n\nNothing on this page suggests that this material is suitable for addressing injury, wound healing, tissue repair, sepsis, infection or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is TB-500?",
+        "answer": "TB-500 is a designation applied in commerce to two chemically different substances related to thymosin beta-4, an actin-sequestering peptide. One is the full-length 43-residue protein, formula C212H350N56O78S, molecular weight approximately 4963 g/mol (PubChem CID 45382195). The other is the short acetylated fragment Ac-LKKTETQ, residues 17 to 23, at approximately 889 g/mol. Which is supplied here is not stated and is not asserted on this page."
+      },
+      {
+        "question": "Why does the identity ambiguity matter so much?",
+        "answer": "Because the two candidates differ in mass by roughly 5.6-fold, which makes any concentration calculation unreliable until the question is settled. Five milligrams of an 889 Da heptapeptide is about 5.6 micromoles; 5 mg of a 4963 Da protein is about 1.0 micromole. Any protocol specifying a molar concentration is unworkable until you know which you have. It also determines which body of published evidence, if any, applies."
+      },
+      {
+        "question": "Can I look TB-500 up in a chemical database?",
+        "answer": "Not by name, but yes by CAS number — and the distinction matters. There is no PubChem record under \"TB-500\", \"Ac-LKKTETQ\" or \"thymosin beta 4 (17-23)\", so a name search for \"thymosin beta-4\" returns the full-length protein at approximately 4963 g/mol, which may not be what is in the vial. Querying by CAS succeeds for both candidates: 77591-33-4 returns the full protein (CID 16132341), and 885340-08-9 returns the acetylated fragment (CID 62707662, C38H68N10O14, MW 889.0)."
+      },
+      {
+        "question": "How do I resolve which substance I have?",
+        "answer": "Request a lot-specific certificate of analysis showing an observed mass, or an explicit written statement of molecular identity from the supplier. A single mass spectrometric measurement settles it immediately — at a 5.6-fold mass difference there is no ambiguity and no sophisticated method is needed. This is cheap and decisive, and it converts an uninterpretable reagent into a defined one."
+      },
+      {
+        "question": "What does thymosin beta-4 actually do?",
+        "answer": "It is a G-actin sequestering peptide, which is its defining and uncontested biochemical property. Actin exists as a monomer pool and as polymerised filaments, and the balance governs cytoskeletal remodelling — cell shape, migration, division and wound closure all depend on it. A protein that binds monomeric actin therefore influences that whole system, which is why it appears in research on tissue repair and cell migration."
+      },
+      {
+        "question": "Is there human evidence that TB-500 helps healing?",
+        "answer": "No interventional human trial of either candidate substance was identified. The most clinically suggestive findings come from study designs that are not administration studies: an observational cohort where patients’ own endogenous levels correlated with sepsis outcomes, and transgenic mice engineered to overexpress the protein. Neither supports the conclusion that administering this material produces a benefit."
+      },
+      {
+        "question": "What was the sepsis study, and what does it show?",
+        "answer": "An observational cohort measured endogenous thymosin beta-4 in 191 patients within six hours of ICU admission for sepsis. Lower levels correlated with acute kidney injury (OR 2.102 per stage lower, CI 1.448-3.050) and 28-day mortality (OR 1.821, CI 1.209-2.743). Nothing was administered. Low levels marking worse illness is equally compatible with the peptide being consumed or suppressed by severe illness, and the AUCs of 0.68-0.72 indicate limited discriminative power."
+      },
+      {
+        "question": "Why do transgenic mouse results not settle it?",
+        "answer": "Because constitutive genetic overexpression from conception is a fundamentally different intervention from injecting a peptide into an adult animal. The study showing resistance to Legionella infection used mice engineered to overexpress human thymosin beta-4 throughout development. That establishes the protein is capable of influencing these processes; it does not establish that exogenous administration reproduces the effect, and it says nothing about the short fragment."
+      },
+      {
+        "question": "Does fragment evidence transfer from the full protein?",
+        "answer": "It cannot be assumed. Essentially all the published literature concerns the full protein or its gene. The rationale for selling the fragment is that it contains the actin-binding motif — but that a fragment reproduces its parent’s effects is a hypothesis, not a finding. Fragments sometimes retain activity (KPV elsewhere in this catalogue is a worked example), sometimes do not, and sometimes act by different mechanisms."
+      },
+      {
+        "question": "Is TB-500 prohibited in sport?",
+        "answer": "Yes. According to a United States Anti-Doping Agency athlete advisory on the WADA Prohibited List, TB-500 is prohibited under section S2, and thymosin beta-4 is separately listed as prohibited under S2. Athletes and support personnel should consult the current published WADA Prohibited List directly, since listings are revised annually."
+      }
+    ]
+  }
+}

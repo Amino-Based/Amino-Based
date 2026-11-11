@@ -1,0 +1,346 @@
+{
+  "5-amino-1mq": {
+    "matched_name": "5-amino-1-methylquinolinium",
+    "cid": 950107,
+    "formula": "C10H11N2+",
+    "mw": "159.21",
+    "cas": "685079-15-6"
+  },
+  "ahk-cu": {
+    "matched_name": "AHK-Cu",
+    "cid": 168431292,
+    "formula": "C15H24ClCuN6O4-",
+    "mw": "451.39",
+    "cas": "682809-81-0"
+  },
+  "aod9604": {
+    "matched_name": "AOD9604",
+    "cid": 71300630,
+    "formula": "C78H123N23O23S2",
+    "mw": "1815.1",
+    "cas": "221231-10-3"
+  },
+  "ara-290": {
+    "matched_name": "ARA-290",
+    "cid": 91810664,
+    "formula": "C51H84N16O21",
+    "mw": "1257.3",
+    "cas": "1208243-50-8"
+  },
+  "cagrilintide": {
+    "matched_name": "cagrilintide",
+    "cid": 171397054,
+    "formula": "C194H312N54O59S2",
+    "mw": "4409",
+    "cas": "1415456-99-3"
+  },
+  "cjc-1295-no-dac": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "warning": "NOT VERIFIED. The bulk lookup fell back to sermorelin (GRF 1-29, C149H246N44O42S, MW 3357.9, CAS 86168-78-7). CJC-1295 without DAC is modified GRF (1-29), which carries amino-acid substitutions sermorelin does not have - they are NOT the same molecule. PubChem returns no record for \"CJC-1295 without DAC\" or \"modified GRF (1-29)\" (verified 2026-11-09). Do not publish sermorelin identifiers on this page."
+  },
+  "cjc-1295-with-dac": {
+    "matched_name": "CJC-1295",
+    "cid": 91971820,
+    "formula": "C165H269N47O46",
+    "mw": "3647.2",
+    "cas": "446262-90-4"
+  },
+  "dhea": {
+    "matched_name": "dehydroepiandrosterone",
+    "cid": 5881,
+    "formula": "C19H28O2",
+    "mw": "288.4",
+    "cas": "53-43-0"
+  },
+  "dihexa": {
+    "matched_name": "dihexa",
+    "cid": 129010512,
+    "formula": "C27H44N4O5",
+    "mw": "504.7",
+    "cas": "1401708-83-5"
+  },
+  "dsip": {
+    "matched_name": "delta sleep-inducing peptide",
+    "cid": 68816,
+    "formula": "C35H48N10O15",
+    "mw": "848.8",
+    "cas": "62568-57-4"
+  },
+  "epitalon": {
+    "matched_name": "epitalon",
+    "cid": 219042,
+    "formula": "C14H22N4O9",
+    "mw": "390.35",
+    "cas": "307297-39-8"
+  },
+  "ghk-cu": {
+    "matched_name": "GHK-Cu",
+    "cid": 139035031,
+    "formula": "C14H21CuN6O4-",
+    "mw": "400.90",
+    "cas": "130120-56-8"
+  },
+  "ghrp-2": {
+    "matched_name": "GHRP-2",
+    "cid": 6918245,
+    "formula": "C45H55N9O6",
+    "mw": "818.0",
+    "cas": "158861-67-7"
+  },
+  "ghrp-6": {
+    "matched_name": "GHRP-6",
+    "cid": 4345065,
+    "formula": "C46H56N12O6",
+    "mw": "873.0",
+    "cas": null
+  },
+  "glutathione": {
+    "matched_name": "glutathione",
+    "cid": 124886,
+    "formula": "C10H17N3O6S",
+    "mw": "307.33",
+    "cas": "70-18-8"
+  },
+  "h-frag": {
+    "matched_name": "HGH fragment 176-191",
+    "cid": 172966176,
+    "formula": "C80H127N23O24S2",
+    "mw": "1859.1",
+    "cas": null,
+    "correction": "Bulk lookup fell back to AOD9604 (C78H123N23O23S2, MW 1815.1). These are DIFFERENT molecules: AOD9604 is a modified fragment carrying an additional N-terminal tyrosine. Do not conflate them on either product page."
+  },
+  "hcg": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": "9002-61-3 (commonly cited; NOT verified via PubChem)",
+    "note": "GLYCOPROTEIN HORMONE - no valid small-molecule record. Bulk lookup under \"chorionic gonadotropin\" returned CID 1108 (C17H28, MW 232.4), which is a name collision and certainly not hCG. REJECTED. hCG is a heterodimeric glycoprotein of roughly 36-38 kDa; a molecular formula must NOT be stated for it. Describe by subunit composition and approximate mass only."
+  },
+  "igf-1-lr3": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "note": "NO PUBCHEM RECORD. IGF-1 LR3 is an 83-residue recombinant analogue of IGF-1 (Arg3 substitution plus a 13-residue N-terminal extension), approx 9.1 kDa. State by description and approximate mass; do not assert a molecular formula."
+  },
+  "ipamorelin": {
+    "matched_name": "ipamorelin",
+    "cid": 9831659,
+    "formula": "C38H49N9O5",
+    "mw": "711.9",
+    "cas": "170851-70-4"
+  },
+  "kisspeptin": {
+    "matched_name": "kisspeptin-10",
+    "cid": 25240297,
+    "formula": "C63H83N17O14",
+    "mw": "1302.4",
+    "cas": "374675-21-5"
+  },
+  "kpv": {
+    "matched_name": "Lys-Pro-Val",
+    "cid": 125672,
+    "formula": "C16H30N4O4",
+    "mw": "342.43",
+    "cas": null,
+    "correction": "Bulk lookup under the name \"KPV\" returned CID 13294447 (C11H12O3, MW 192.21) - a name collision, NOT a tripeptide. Rejected. Verified instead via the explicit sequence name Lys-Pro-Val."
+  },
+  "l-carnitine": {
+    "matched_name": "L-carnitine",
+    "cid": 10917,
+    "formula": "C7H15NO3",
+    "mw": "161.20",
+    "cas": "541-15-1"
+  },
+  "ll-37": {
+    "matched_name": "LL-37",
+    "cid": 16198951,
+    "formula": "C205H340N60O53",
+    "mw": "4493",
+    "cas": "154947-66-7"
+  },
+  "melanotan-1": {
+    "matched_name": "afamelanotide",
+    "cid": 16197727,
+    "formula": "C78H111N21O19",
+    "mw": "1646.8",
+    "cas": "75921-69-6"
+  },
+  "melanotan-2": {
+    "matched_name": "melanotan II",
+    "cid": 92432,
+    "formula": "C50H69N15O9",
+    "mw": "1024.2",
+    "cas": "121062-08-6"
+  },
+  "mots-c": {
+    "matched_name": "MOTS-c",
+    "cid": 146675088,
+    "formula": "C101H152N28O22S2",
+    "mw": "2174.6",
+    "cas": "1627580-64-6"
+  },
+  "nad": {
+    "matched_name": "NAD",
+    "cid": 5892,
+    "formula": "C21H27N7O14P2",
+    "mw": "663.4",
+    "cas": "53-84-9"
+  },
+  "oxytocin": {
+    "matched_name": "oxytocin",
+    "cid": 439302,
+    "formula": "C43H66N12O12S2",
+    "mw": "1007.2",
+    "cas": "50-56-6"
+  },
+  "pt-141": {
+    "matched_name": "bremelanotide",
+    "cid": 9941379,
+    "formula": "C50H68N14O10",
+    "mw": "1025.2",
+    "cas": "189691-06-3"
+  },
+  "selank": {
+    "matched_name": "selank",
+    "cid": 11765600,
+    "formula": "C33H57N11O9",
+    "mw": "751.9",
+    "cas": "129954-34-3"
+  },
+  "semax": {
+    "matched_name": "semax",
+    "cid": 9811102,
+    "formula": "C37H51N9O10S",
+    "mw": "813.9",
+    "cas": "80714-61-0"
+  },
+  "sermorelin": {
+    "matched_name": "sermorelin",
+    "cid": 16132413,
+    "formula": "C149H246N44O42S",
+    "mw": "3357.9",
+    "cas": "86168-78-7"
+  },
+  "snap-8": {
+    "matched_name": "SNAP-8",
+    "cid": 71587832,
+    "formula": "C42H72N16O15S",
+    "mw": "1073.2",
+    "cas": null
+  },
+  "ss-31": {
+    "matched_name": "elamipretide",
+    "cid": 11764719,
+    "formula": "C32H49N9O5",
+    "mw": "639.8",
+    "cas": "736992-21-5"
+  },
+  "tb-500": {
+    "matched_name": "thymosin beta-4 (FULL PROTEIN)",
+    "cid": 45382195,
+    "formula": "C212H350N56O78S",
+    "mw": "4963",
+    "cas": null,
+    "warning": "AMBIGUITY - MUST BE DISCLOSED ON THE PAGE. The bulk lookup resolved \"TB-500\" to full-length thymosin beta-4 (43 residues, ~4963 Da). Material sold as \"TB-500\" is very often the short active fragment Ac-LKKTETQ (thymosin beta-4 17-23, ~889 Da), not the full protein. PubChem has no record under \"TB-500\", \"Ac-LKKTETQ\" or \"thymosin beta 4 (17-23)\" (verified 2026-11-09). Which of the two is supplied is NOT VERIFIED for this product. State both possibilities and the ~5.6x mass difference; do not assert either."
+  },
+  "tesamorelin": {
+    "matched_name": "tesamorelin",
+    "cid": 16137828,
+    "formula": "C221H366N72O67S",
+    "mw": "5136",
+    "cas": "218949-48-5"
+  },
+  "thymosin-alpha-1": {
+    "matched_name": "thymalfasin",
+    "cid": 16130571,
+    "formula": "C129H215N33O55",
+    "mw": "3108.3",
+    "cas": "62304-98-7"
+  },
+  "vip": {
+    "matched_name": "aviptadil",
+    "cid": 16132300,
+    "formula": "C147H237N43O43S",
+    "mw": "3326.8",
+    "cas": "40077-57-4"
+  },
+  "glow": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "blend": true,
+    "note": "MULTI-COMPONENT PRODUCT - no single molecular formula exists. Typical composition: GHK-Cu + BPC-157 + TB-500 (commonly marketed composition). Exact per-vial composition and ratios are supplier-specified and NOT VERIFIED. Describe each named component by its own verified identifiers; never state a combined formula or invent ratios."
+  },
+  "klow": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "blend": true,
+    "note": "MULTI-COMPONENT PRODUCT - no single molecular formula exists. Typical composition: GHK-Cu + BPC-157 + TB-500 + KPV (commonly marketed composition). Exact per-vial composition and ratios are supplier-specified and NOT VERIFIED. Describe each named component by its own verified identifiers; never state a combined formula or invent ratios."
+  },
+  "lipo-c": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "blend": true,
+    "note": "MULTI-COMPONENT PRODUCT - no single molecular formula exists. Typical composition: lipotropic blend, commonly methionine/inositol/choline + B vitamins. Exact per-vial composition and ratios are supplier-specified and NOT VERIFIED. Describe each named component by its own verified identifiers; never state a combined formula or invent ratios."
+  },
+  "bac-water": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "blend": true,
+    "note": "MULTI-COMPONENT PRODUCT - no single molecular formula exists. Typical composition: sterile water with benzyl alcohol preservative - NOT a peptide. Exact per-vial composition and ratios are supplier-specified and NOT VERIFIED. Describe each named component by its own verified identifiers; never state a combined formula or invent ratios."
+  },
+  "bpc-157-tb-500-blend": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "blend": true,
+    "note": "MULTI-COMPONENT PRODUCT - no single molecular formula exists. Typical composition: BPC-157 + TB-500. Exact per-vial composition and ratios are supplier-specified and NOT VERIFIED. Describe each named component by its own verified identifiers; never state a combined formula or invent ratios."
+  },
+  "cjc-1295-ipamorelin": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "blend": true,
+    "note": "MULTI-COMPONENT PRODUCT - no single molecular formula exists. Typical composition: CJC-1295 + ipamorelin. Exact per-vial composition and ratios are supplier-specified and NOT VERIFIED. Describe each named component by its own verified identifiers; never state a combined formula or invent ratios."
+  },
+  "semax-selank-blend": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "blend": true,
+    "note": "MULTI-COMPONENT PRODUCT - no single molecular formula exists. Typical composition: semax + selank. Exact per-vial composition and ratios are supplier-specified and NOT VERIFIED. Describe each named component by its own verified identifiers; never state a combined formula or invent ratios."
+  },
+  "tesamorelin-ipamorelin-blend": {
+    "matched_name": null,
+    "cid": null,
+    "formula": null,
+    "mw": null,
+    "cas": null,
+    "blend": true,
+    "note": "MULTI-COMPONENT PRODUCT - no single molecular formula exists. Typical composition: tesamorelin + ipamorelin. Exact per-vial composition and ratios are supplier-specified and NOT VERIFIED. Describe each named component by its own verified identifiers; never state a combined formula or invent ratios."
+  }
+}

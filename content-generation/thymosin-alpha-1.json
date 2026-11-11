@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "thymosin-alpha-1",
+    "qc": {
+      "main_content_words": 2983,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT FDA-approved. FDA proposed in December 2024 that thymosin alpha-1 free base and acetate NOT be added to the section 503A Bulks List; the Pharmacy Compounding Advisory Committee voted 4 yes / 17 no against inclusion for each. Reported to be approved in a number of other countries for chronic hepatitis B.",
+    "variants_from_csv": [
+      {
+        "variant": "Standard",
+        "price_usd": "76.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "Standard",
+        "source_file": "Thymosin Alpha-1.png",
+        "upload_as": "amino-thymosin-alpha-1-standard.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 16130571 (PUG REST, verified 2026-11-09, matched name \"thymalfasin\"): C129H215N33O55, MW 3108.3, CAS 62304-98-7.",
+      "FDA Pharmacy Compounding Advisory Committee, 4 December 2024 - FDA proposed that Thymosin alpha-1 (free base) and Thymosin alpha-1 acetate NOT be included on the section 503A Bulks List. Committee vote: Yes 4 / No 17 / Abstain 0 for each substance. Members opposing cited lack of convincing effectiveness data. FDA materials: fda.gov/media/183892/download (Thymosin Alpha-1 (Ta1) Related Bulk Drug Substances), fda.gov/media/183583/download (FDA Briefing Document). Verified 2026-11-09.",
+      "FDA, \"Certain Bulk Drug Substances for Use in Compounding that May Present Significant Safety Risks\" - thymosin alpha-1 appears under nominated-but-withdrawn; FDA-stated concerns are immunogenicity by certain routes and complexities with regard to peptide-related impurities and API characterisation. Verified 2026-11-09.",
+      "PMID 33076834 doi:10.1186/s12876-020-01477-8 - BMC Gastroenterol 20(1):348 - systematic review and meta-analysis, 7 RCTs, 1144 subjects, entecavir + Ta1 vs entecavir alone in HBV-related cirrhosis. Complete response RR 1.18 (95% CI 1.07-1.30). At 24 weeks HBV DNA undetectable RR 1.91 (1.56-2.35) and HBeAg loss RR 2.05 (1.62-2.60). CRITICAL: at 48 and 52 weeks NO significant difference (RR 1.07, 0.96-1.18; RR 1.17, 0.89-1.55). HBsAg loss at 52 weeks not significant (RR 1.03, 0.15-7.26). Adverse events reduced (RR 0.48, 0.24-0.95). Authors note ALL patients were from Chinese mainland and call for worldwide RCTs.",
+      "PMID 21272455 doi:10.3760/cma.j.issn.1007-3418.2011.01.009 - Zhonghua Gan Zang Bing Za Zhi 19(1):29-33 (Chinese language) - meta-analysis, 7 RCTs, 535 patients, interferon + Ta1 vs interferon alone in HBeAg-positive chronic hepatitis B; HBV-DNA negative rate at follow-up 58.6% vs 30.7% (OR 3.68, 2.51-5.41); HBeAg seroconversion 47.0% vs 29.5% (OR 2.13, 1.43-3.16); HBsAg loss at follow-up 9.8% vs 3.7% (OR 2.92, 1.09-7.76)."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "N-terminal acetylation status of any given Amino Based lot - this is a defining structural feature and is not addressed by a routine purity figure",
+      "Whether FDA has finalised the 503A Bulks List decision since the December 2024 committee vote - not confirmed"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a regulatory component. The searcher wants to know what thymosin alpha-1 is, whether it is approved, and what the FDA compounding decision means.",
+    "primary_keyword": "Thymosin Alpha-1",
+    "secondary_keywords": [
+      "thymalfasin",
+      "thymosin alpha 1 peptide",
+      "Ta1 peptide",
+      "thymosin alpha-1 FDA",
+      "thymosin alpha-1 molecular weight",
+      "thymic peptide"
+    ],
+    "long_tail_keywords": [
+      "what is thymosin alpha-1",
+      "is thymosin alpha-1 FDA approved",
+      "thymosin alpha-1 503A bulks list vote",
+      "thymosin alpha-1 vs thymosin beta-4",
+      "thymalfasin hepatitis B evidence",
+      "thymosin alpha-1 molecular formula",
+      "thymosin alpha-1 CAS 62304-98-7",
+      "thymosin alpha-1 acetylation",
+      "thymosin alpha-1 compounding",
+      "thymosin alpha-1 certificate of analysis"
+    ],
+    "semantic_terms": [
+      "thymalfasin",
+      "thymus",
+      "T-cell maturation",
+      "chronic hepatitis B",
+      "entecavir",
+      "interferon",
+      "HBeAg seroconversion",
+      "HBsAg loss",
+      "relative risk",
+      "confidence interval",
+      "503A Bulks List",
+      "Pharmacy Compounding Advisory Committee",
+      "orphan drug designation",
+      "N-terminal acetylation",
+      "immunogenicity",
+      "peptide mapping"
+    ],
+    "name_variations": [
+      "Thymosin Alpha-1",
+      "thymosin alpha 1",
+      "Ta1",
+      "Talpha1",
+      "thymalfasin",
+      "Thymosin beta-4 and TB-500 are DIFFERENT molecules"
+    ],
+    "informational_queries": [
+      "what is thymosin alpha-1",
+      "is thymosin alpha-1 FDA approved",
+      "thymosin alpha-1 evidence",
+      "thymosin alpha-1 vs TB-500",
+      "thymosin alpha-1 mechanism"
+    ],
+    "commercial_queries": [
+      "buy thymosin alpha-1",
+      "thymalfasin research peptide",
+      "thymosin alpha-1 COA"
+    ],
+    "cannibalisation_check": "Owns thymosin alpha-1 / thymalfasin and the FDA compounding-vote intent. /product/tb-500 owns thymosin beta-4 fragment intent, which is a different molecule entirely; this page states the distinction rather than competing for it.",
+    "h1": "Driven by CMS name field; renders as \"Thymosin Alpha-1\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/tb-500",
+        "anchor": "TB-500",
+        "rationale": "Essential disambiguation: thymosin beta-4 fragment is a different molecule despite the shared thymosin label. Prevents the most common confusion in this area.",
+        "verified": true
+      },
+      {
+        "route": "/product/ll-37",
+        "anchor": "LL-37",
+        "rationale": "Other immune-focused peptide in the catalogue, with a different mechanism and evidence base.",
+        "verified": true
+      },
+      {
+        "route": "/product/epitalon",
+        "anchor": "Epitalon",
+        "rationale": "Other gland-derived peptide; useful contrast between a peptide with randomised trial data and one without.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Thymosin Alpha-1 (Thymalfasin) | 28-Residue Thymic Peptide | Amino Based",
+    "seoDescription": "Thymosin Alpha-1: C129H215N33O55, MW 3108.3, CAS 62304-98-7. Hepatitis B evidence, the FDA 2024 compounding vote, and what it means. Research use only.",
+    "description": "Thymosin alpha-1, known generically as thymalfasin, is a 28-residue, N-terminally acetylated peptide originally characterised from thymic tissue. Its molecular formula is C129H215N33O55, with a molecular weight of approximately 3108.3 g/mol (PubChem CID 16130571, CAS 62304-98-7). It is not approved by the United States Food and Drug Administration. In December 2024 an FDA advisory committee voted against adding it to the list of bulk drug substances permitted in pharmacy compounding. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "Thymosin Alpha-1: A Characterised Thymic Peptide With an Unusual Regulatory History",
+    "productDetailsDescription": "Thymosin alpha-1 is a 28-residue peptide of approximately 3108.3 g/mol, placing it in the mid-size range for this catalogue — several times larger than the short regulatory peptides and roughly a third the size of the hormone analogues. It derives from thymic tissue, the organ responsible for T-cell maturation, which is the origin of research interest in it as an immunological agent.\n\nOne structural detail defines this molecule and is routinely overlooked: the peptide is acetylated at its N-terminus. This is not an incidental modification. Acetylation is part of the molecule's identity, and the unacetylated 28-residue sequence is a different compound. The generic name thymalfasin refers to the acetylated form. The practical consequence appears in the quality section below, but it belongs here too: a preparation that is the correct sequence but incompletely acetylated is not the same substance, and the mass difference involved — 42 units on a molecule of over 3100 — is a change of roughly 1.4 per cent that a casually specified mass check can easily miss.\n\nThe regulatory picture for this compound is more informative than for most entries in this catalogue, and it is genuinely mixed rather than uniformly negative. This peptide is reported to be approved in a number of countries for the treatment of chronic hepatitis B, which distinguishes it sharply from the unapproved research compounds elsewhere in this catalogue. It has never been approved in the United States. It has, however, received FDA orphan drug designations for several indications — and it is worth being precise that orphan designation is a status granted to encourage development of treatments for rare conditions, not a finding of efficacy and not an approval.\n\nWhat happened in the United States in December 2024 is specific, documented, and directly relevant to anyone evaluating this material. The FDA's Pharmacy Compounding Advisory Committee considered thymosin alpha-1 in two forms — the free base and the acetate salt — for inclusion on the section 503A Bulks List, which governs which bulk drug substances may lawfully be used in pharmacy compounding. The FDA's position going in was that neither form should be included. The committee agreed decisively, voting 4 in favour and 17 against inclusion for each of the two substances, with no abstentions. Committee members opposing inclusion cited the lack of convincing effectiveness data. These figures come from FDA's own published meeting materials.\n\nA procedural detail from those materials is worth recording because it shows how seriously the matter was treated. The underlying nomination had actually been withdrawn by the party that submitted it. FDA nonetheless elected to proceed with presenting thymosin alpha-1-related bulk drug substances to the committee rather than letting the question lapse. An agency choosing to put a withdrawn nomination before an advisory committee anyway is signalling that it wants the question settled on the record.\n\nSeparately, FDA's published list of bulk drug substances that may present significant safety risks includes thymosin alpha-1 under the heading of substances nominated but withdrawn, with the agency's stated concerns being immunogenicity by certain routes of administration, and complexities with regard to peptide-related impurities and active pharmaceutical ingredient characterisation. That second concern is a quality concern rather than a clinical one, and it is unusual and useful: the regulator is saying that characterising this particular peptide and its impurities is difficult. That is directly actionable information for a laboratory, and it is addressed in the quality section.\n\nSo the honest summary of status is three-part and should not be collapsed in either direction. This peptide has approvals in other countries for a defined indication, which is more than almost anything else in this catalogue can claim. It has no United States approval. And the most recent formal United States review of it concluded decisively against permitting even compounding use, on effectiveness grounds, with documented quality concerns recorded alongside.\n\nA naming note. This compound appears as thymosin alpha-1, thymosin alpha 1, Ta1, Talpha1, and under the generic name thymalfasin. Thymosin beta-4 and its fragment TB-500 are entirely different molecules despite the shared \"thymosin\" label — different family, different size, different biology — and conflating them is one of the most common errors in this area. Thymosin alpha-1 is also distinct from crude thymic extracts such as thymosin fraction 5, from which it was originally isolated.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a single standard presentation; the fill mass is not stated on the product listing, which is itself a specification gap worth resolving with the supplier before planning quantitative work.",
+    "researchFocusTitle": "Hepatitis B Evidence: Real Effects, a Durability Problem, and a Geographic Limitation",
+    "researchFocusDescription": "Unlike most compounds in this catalogue, thymosin alpha-1 has been studied in randomised controlled trials in humans and subjected to formal meta-analysis. That makes the evidence assessment both more meaningful and more demanding, because meta-analyses report confidence intervals and timepoints that can be examined rather than impressions that cannot.\n\nThe most informative single source is a systematic review and meta-analysis in BMC Gastroenterology covering seven randomised controlled trials and 1,144 subjects, comparing entecavir plus thymosin alpha-1 against entecavir alone in patients with hepatitis B virus-related cirrhosis (PMID 33076834, doi:10.1186/s12876-020-01477-8). Its findings have a clear shape, and the shape matters more than any single number.\n\nThe short-term results favour combination therapy and the effect sizes are not marginal. Complete response was higher with combination therapy, with a relative risk of 1.18 and a 95 per cent confidence interval of 1.07 to 1.30 — modest but statistically clear. At 24 weeks of post-treatment follow-up the differences were substantial: the rate of undetectable HBV DNA gave a relative risk of 1.91 with a confidence interval of 1.56 to 2.35, and HBeAg loss a relative risk of 2.05 with a confidence interval of 1.62 to 2.60. Roughly doubled rates on both virological measures, with intervals comfortably clear of unity.\n\nThen the picture changes, and this is the finding most often omitted when this compound is described. At 48 and 52 weeks of treatment, there was no significant difference between combination therapy and entecavir alone. The relative risk at 48 weeks was 1.07 with a confidence interval of 0.96 to 1.18, and at 52 weeks 1.17 with an interval of 0.89 to 1.55 — both intervals crossing 1. HBsAg loss at 52 weeks showed no significant difference either, with a relative risk of 1.03 and a confidence interval of 0.15 to 7.26, an interval so wide that it conveys almost no information. In plain terms: an early advantage that does not persist to the one-year mark on the measures examined.\n\nOne finding ran in a favourable direction and should be reported: the number of adverse events was significantly reduced with combination therapy relative to entecavir alone, with a relative risk of 0.48 and a confidence interval of 0.24 to 0.95. A combination producing fewer adverse events than monotherapy is somewhat counterintuitive and worth noting, though the interval reaches close to 1 and the result rests on event counts across heterogeneous trials.\n\nThe authors themselves identify the limitation that most constrains interpretation: all patients included in the meta-analysis were from the Chinese mainland, and they explicitly call for more worldwide randomised controlled trials with larger sample sizes to verify the findings. That is not a minor caveat. When an entire evidence base for a compound comes from one country's trial literature, differences in population genetics, viral genotype distribution, standard of care, and trial conduct all become uncontrolled variables. The same constraint applies to a second meta-analysis, of interferon plus thymosin alpha-1 versus interferon alone in HBeAg-positive chronic hepatitis B, covering seven randomised trials and 535 patients, which reported favourable results — HBV DNA negativity at follow-up of 58.6 against 30.7 per cent with an odds ratio of 3.68, HBeAg seroconversion of 47.0 against 29.5 per cent with an odds ratio of 2.13, and HBsAg loss at follow-up of 9.8 against 3.7 per cent with an odds ratio of 2.92 (PMID 21272455, doi:10.3760/cma.j.issn.1007-3418.2011.01.009). Those are larger effect sizes, from an older meta-analysis published in a Chinese-language journal, drawing on the same regional trial literature.\n\nThe December 2024 FDA advisory committee outcome has to be read against this evidence, and the two are reconcilable. A committee voting 17 to 4 against inclusion, with members citing the lack of convincing effectiveness data, was not necessarily disputing that the trials reported effects. The more likely reading is that the body of evidence — regionally concentrated, showing short-term virological differences that did not persist at one year, and bearing on a specific hepatitis indication — did not meet the standard the committee was applying for permitting compounded use in a different and much broader set of circumstances. Both things can be true: real measured effects in a defined clinical context, and an evidence base judged insufficient to support general compounding availability.\n\nThe limitations, stated plainly: the human evidence is concentrated in hepatitis B and HBV-related cirrhosis, almost entirely from one geographic region; the short-term virological advantages did not persist at 48 and 52 weeks; the most recent formal United States review concluded against even compounding use on effectiveness grounds; and the regulator has separately flagged immunogenicity by certain routes and difficulty characterising the peptide and its impurities. Evidence for the broader immune-enhancement claims commonly attached to this peptide is considerably weaker than the hepatitis trial literature, and should not borrow credibility from it.\n\nFor a laboratory, this is nonetheless one of the better-documented peptides in the catalogue. It has a defined 28-residue sequence with a known modification, a real randomised trial literature with quantified effect sizes and confidence intervals, formal regulatory assessment documents in the public record, and approvals elsewhere for a specific indication. The open questions — whether the early virological advantage can be made durable, whether the findings replicate outside the region that produced them, and the characterisation difficulty the regulator itself identified — are unusually well defined.",
+    "qualityPurityTitle": "Analytical Verification, Including a Difficulty the Regulator Named",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThis product has an unusual feature: the characterisation difficulty is not merely an inference from the chemistry but something a regulator has stated directly. FDA's published list of bulk drug substances that may present significant safety risks records, for thymosin alpha-1, concerns including complexities with regard to peptide-related impurities and active pharmaceutical ingredient characterisation. When a regulator says that characterising a peptide and its impurities is complex, that is a strong signal to scrutinise certificates rather than accept them.\n\nIdentity confirmation is by mass spectrometry against the verified molecular weight of approximately 3108.3 g/mol, with molecular formula C129H215N33O55 and CAS registry number 62304-98-7 (PubChem CID 16130571). At 28 residues, this peptide is large enough that identity should be established by peptide mapping or sequence coverage rather than by intact mass alone, because a single-residue substitution can produce a mass shift smaller than the practical accuracy of an intact measurement on a molecule this size.\n\nThe acetylation question is the most important specific check, and it is the one most often omitted. This peptide is N-terminally acetylated, and that modification is part of its identity — the generic name thymalfasin refers to the acetylated form. An incompletely acetylated preparation is a different substance. The mass difference is 42 units on a molecule of over 3,100, about 1.4 per cent, which is within the range where a loosely specified intact-mass check can pass a mixed preparation. A certificate should state the acetylation status explicitly rather than leave it to be inferred from a molecular weight figure.\n\nNote also the two distinct forms FDA considered: thymosin alpha-1 free base and thymosin alpha-1 acetate. The acetate here refers to a counter-ion salt form, which is a different matter from N-terminal acetylation, and the two are easily confused in discussion of this compound. A certificate that says \"acetate\" without specifying which is being described is ambiguous on a point that affects both molar calculation and identity.\n\nPurity assessment by reverse-phase chromatography is appropriate, and the impurity profile to expect for a 28-residue synthetic peptide includes deletion sequences, truncated chains, and incompletely deprotected species. Deletion of a single residue from a 28-residue peptide is a proportionally small change and may not resolve cleanly, which is part of what makes impurity characterisation here genuinely harder than for the short peptides elsewhere in this catalogue.\n\nThe immunogenicity concern FDA recorded is worth understanding even in a research context, because it bears on experimental interpretation rather than only on safety. Peptide-related impurities in a preparation of this size can elicit immune responses distinct from those of the intended molecule, which means an impurity profile is not merely a purity question in immunological experiments — it is a potential confound in the readout itself.\n\nLyophilised mass is also not peptide content: the stated fill may contain counter-ions and residual water, and unless content has been determined specifically, the figure is a fill mass. The product listing for this item does not state a nominal quantity, which should be resolved with the supplier before any quantitative work.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: A Documented and Mixed Regulatory Position",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThymosin alpha-1 has not been approved by the United States Food and Drug Administration for any indication. It is reported to be approved in a number of other countries for the treatment of chronic hepatitis B, and it has received FDA orphan drug designations for several indications — but orphan designation is a status intended to encourage development of treatments for rare conditions, not a finding of efficacy and not an approval. The distinction is frequently blurred in material promoting this peptide.\n\nThe most recent formal United States assessment should be stated precisely. On 4 December 2024 the FDA's Pharmacy Compounding Advisory Committee considered thymosin alpha-1 free base and thymosin alpha-1 acetate for inclusion on the section 503A Bulks List, which governs which bulk drug substances may lawfully be used in pharmacy compounding. FDA's position was that neither should be included. The committee voted 4 in favour and 17 against inclusion for each substance, with no abstentions, members opposing citing the lack of convincing effectiveness data. FDA has separately recorded concerns regarding immunogenicity by certain routes of administration and complexities with regard to peptide-related impurities and active pharmaceutical ingredient characterisation. Whether FDA has finalised that Bulks List decision since the committee vote has not been confirmed here.\n\nOn the clinical evidence, two points bear directly on how this material should be understood. The randomised trial literature concerns hepatitis B and HBV-related cirrhosis specifically, and the meta-analysed advantages in virological measures observed at 24 weeks were no longer statistically significant at 48 and 52 weeks. And that entire evidence base derives almost entirely from trials conducted in one geographic region, a limitation the meta-analysis authors themselves identify in calling for worldwide trials. The broader immune-enhancement claims commonly attached to this peptide rest on considerably weaker evidence than the hepatitis trial literature and should not borrow its credibility.\n\nNothing on this page suggests that this material is suitable for addressing hepatitis, cirrhosis, immune deficiency, infection, cancer, or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is Thymosin Alpha-1?",
+        "answer": "Thymosin alpha-1, generic name thymalfasin, is a 28-residue N-terminally acetylated peptide originally characterised from thymic tissue. Verified identifiers are molecular formula C129H215N33O55, molecular weight approximately 3108.3 g/mol, CAS 62304-98-7, PubChem CID 16130571. The thymus is the organ responsible for T-cell maturation, which is the origin of research interest in this peptide as an immunological agent."
+      },
+      {
+        "question": "Is Thymosin Alpha-1 FDA approved?",
+        "answer": "No. It has no United States approval for any indication. It is reported to be approved in a number of other countries for chronic hepatitis B, and it has received FDA orphan drug designations for several indications — but orphan designation encourages development of treatments for rare conditions and is neither a finding of efficacy nor an approval. That distinction is frequently blurred in promotional material."
+      },
+      {
+        "question": "What did the FDA advisory committee decide in 2024?",
+        "answer": "On 4 December 2024 the FDA’s Pharmacy Compounding Advisory Committee considered thymosin alpha-1 free base and thymosin alpha-1 acetate for inclusion on the section 503A Bulks List, which governs which bulk substances may lawfully be used in pharmacy compounding. FDA proposed neither be included. The committee voted 4 in favour and 17 against for each, with no abstentions; members opposing cited the lack of convincing effectiveness data."
+      },
+      {
+        "question": "Is Thymosin Alpha-1 the same as TB-500?",
+        "answer": "No, and this is the most common error in this area. TB-500 relates to thymosin beta-4, a different molecule from a different family — different size, different sequence, different biology. The shared \"thymosin\" label reflects historical isolation from thymic tissue, not chemical relationship. Thymosin alpha-1 is also distinct from crude thymic extracts such as thymosin fraction 5, from which it was originally isolated."
+      },
+      {
+        "question": "What does the hepatitis B evidence actually show?",
+        "answer": "A meta-analysis of 7 randomised trials and 1,144 subjects comparing entecavir plus thymosin alpha-1 against entecavir alone in HBV-related cirrhosis found higher complete response (RR 1.18, CI 1.07-1.30) and, at 24 weeks, roughly doubled rates of undetectable HBV DNA (RR 1.91) and HBeAg loss (RR 2.05). Critically, at 48 and 52 weeks there was no significant difference — an early advantage that did not persist to one year on the measures examined."
+      },
+      {
+        "question": "Why does the geographic origin of the trials matter?",
+        "answer": "Because the authors of the main meta-analysis identify it as the limitation that most constrains their findings: all included patients were from the Chinese mainland, and they explicitly call for worldwide randomised trials with larger samples to verify the results. When an evidence base comes from one country’s trial literature, population genetics, viral genotype distribution, standard of care and trial conduct all become uncontrolled variables."
+      },
+      {
+        "question": "Why is N-terminal acetylation important?",
+        "answer": "Because it is part of the molecule’s identity, not an optional modification — the generic name thymalfasin refers to the acetylated form, and an incompletely acetylated preparation is a different substance. The mass difference is 42 units on a molecule over 3,100, about 1.4 per cent, which is within the range where a loosely specified intact-mass check can pass a mixed preparation. A certificate should state acetylation status explicitly."
+      },
+      {
+        "question": "What did FDA say about characterising this peptide?",
+        "answer": "FDA’s published list of bulk drug substances that may present significant safety risks records, for thymosin alpha-1, concerns including immunogenicity by certain routes of administration and complexities with regard to peptide-related impurities and active pharmaceutical ingredient characterisation. A regulator stating that characterisation of a peptide and its impurities is complex is strong grounds to scrutinise certificates rather than accept them."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "Identity by peptide mapping or sequence coverage rather than intact mass alone, since at 28 residues a single-residue substitution can shift mass by less than the practical accuracy of an intact measurement. Explicit acetylation status. Clarity on whether \"acetate\" refers to a counter-ion salt or to N-terminal acetylation, since both arise for this compound. And an impurity profile addressing deletion and truncated sequences, which resolve poorly at this chain length."
+      },
+      {
+        "question": "Can impurities affect immunological experiments?",
+        "answer": "Yes, and this is a point about interpretation as well as safety. Peptide-related impurities in a preparation of this size can elicit immune responses distinct from those of the intended molecule. In immunological work that makes the impurity profile a potential confound in the readout itself, not merely a purity specification — which is one reason FDA recorded immunogenicity by certain routes among its concerns."
+      }
+    ]
+  }
+}

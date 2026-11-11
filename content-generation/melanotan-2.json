@@ -1,0 +1,229 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "melanotan-2",
+    "qc": {
+      "main_content_words": 2929,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Multiple national health organisations have issued safety warnings regarding melanotan I and II.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "49.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Melanotan-2 10mg.png",
+        "upload_as": "amino-melanotan-2-10mg.png"
+      }
+    ],
+    "critical_analytical_finding": "NEAR-ISOBARIC WITH PT-141. Melanotan-II is C50H69N15O9, MW 1024.2 (CID 92432). PT-141 / bremelanotide is C50H68N14O10, MW 1025.2 (CID 9941379). The two differ by one hydrogen and one nitrogen replaced by one oxygen - approximately 1 g/mol on molecules of about 1024, i.e. roughly 0.1 per cent. Bremelanotide is effectively the C-terminal amide of Melanotan-II replaced by a hydroxyl. CONSEQUENCE: intact low-resolution mass spectrometry CANNOT reliably distinguish these two compounds, and both are sold in this catalogue. Derived by comparing the two VERIFIED PubChem formulas; stated as an arithmetic consequence, not as a database-sourced figure.",
+    "references": [
+      "PubChem CID 92432 (PUG REST, verified 2026-11-09, matched name \"melanotan II\"): C50H69N15O9, MW 1024.2, CAS 121062-08-6.",
+      "PubChem CID 9941379 (bremelanotide, verified 2026-11-09): C50H68N14O10, MW 1025.2 - included here to document the near-isobaric relationship.",
+      "PMID 28266027 doi:10.1111/ijd.13585 - Int J Dermatol 56(10):975-980 - review of risks of UNREGULATED use of alpha-MSH analogues. Increasing case reports of cutaneous complications from both melanotan I and II, particularly melanocytic changes in existing moles and newly emerging (dysplastic) nevi. FOUR case reports of melanomas emerging from existing moles during or shortly after melanotan use; conclusive causal evidence LACKING. Multiple national health organisations have issued safety warnings. Reviewers note questions regarding preparation, administration and dosage of these substances, and describe melanotan as part of a tanning culture in certain subpopulations.",
+      "PMID 31119650 doi:10.1007/s40257-019-00444-8 - Am J Clin Dermatol 20(5):669-682 - systematic review of eruptive melanocytic nevi; 93 articles, 179 patients. Suspected causes: skin and other diseases 50%; immunosuppressive agents, chemotherapy or MELANOTAN 41%; miscellaneous including idiopathic 9%. 16% of cases had at least one histologically confirmed dysplastic nevus; five cases of associated melanoma. Authors state the nature of the data PRECLUDED assessment of risk of malignant transformation.",
+      "PMID 22425244 doi:10.1016/j.ad.2011.10.001 - Actas Dermosifiliogr 103(4):329-31 - case report, eruptive dysplastic nevi following melanotan use."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Cyclic (lactam) ring integrity - Melanotan-II is cyclic and the linear form is a distinct compound differing by only 18 mass units",
+      "Discrimination from PT-141 / bremelanotide - the two differ by roughly 1 g/mol and intact low-resolution MS cannot separate them",
+      "D-amino acid configuration - non-natural stereochemistry is part of the design and is invisible to mass spectrometry"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with safety and verification components. The searcher wants to know what Melanotan-2 is, whether it is risky, and how it differs from Melanotan-1 and PT-141.",
+    "primary_keyword": "Melanotan-2",
+    "secondary_keywords": [
+      "Melanotan II",
+      "MT-2 peptide",
+      "Melanotan-2 molecular weight",
+      "melanocortin agonist",
+      "Melanotan 2 vs PT-141",
+      "melanotan safety"
+    ],
+    "long_tail_keywords": [
+      "what is Melanotan-2",
+      "is Melanotan-2 safe",
+      "Melanotan-2 molecular formula C50H69N15O9",
+      "Melanotan-2 CAS 121062-08-6",
+      "Melanotan-2 vs PT-141 difference",
+      "melanotan melanoma case reports",
+      "melanotan dysplastic nevi",
+      "is Melanotan-2 approved anywhere",
+      "Melanotan-2 MC4R",
+      "Melanotan-2 certificate of analysis"
+    ],
+    "semantic_terms": [
+      "melanocortin receptor",
+      "MC1R",
+      "MC3R",
+      "MC4R",
+      "alpha-MSH",
+      "cyclic peptide",
+      "lactam bridge",
+      "receptor selectivity",
+      "eruptive melanocytic nevi",
+      "dysplastic nevi",
+      "melanoma",
+      "case report",
+      "confounding",
+      "near-isobaric",
+      "high-resolution mass spectrometry",
+      "D-amino acid"
+    ],
+    "name_variations": [
+      "Melanotan-2",
+      "Melanotan II",
+      "MT-2",
+      "MT-II",
+      "MT2",
+      "Melanotan-1 / afamelanotide is a DIFFERENT compound",
+      "PT-141 / bremelanotide is a DIFFERENT, near-isobaric compound"
+    ],
+    "informational_queries": [
+      "what is Melanotan-2",
+      "is Melanotan-2 dangerous",
+      "Melanotan-2 vs Melanotan-1",
+      "does Melanotan-2 cause melanoma",
+      "Melanotan-2 mechanism"
+    ],
+    "commercial_queries": [
+      "buy Melanotan-2",
+      "Melanotan-2 10mg",
+      "MT-2 research peptide",
+      "Melanotan-2 COA"
+    ],
+    "cannibalisation_check": "Owns Melanotan-2 and the melanotan safety-signal and near-isobaric-identity intents. /product/melanotan-1 owns afamelanotide and the EPP intent; /product/pt-141 owns bremelanotide and the HSDD intent.",
+    "h1": "Driven by CMS name field; renders as \"Melanotan-2\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/pt-141",
+        "anchor": "PT-141",
+        "rationale": "Near-isobaric successor compound differing by roughly 1 g/mol; critical for the identity-verification discussion and for selectivity comparison.",
+        "verified": true
+      },
+      {
+        "route": "/product/melanotan-1",
+        "anchor": "Melanotan-1",
+        "rationale": "MC1R-selective comparator with a genuine approval; the selectivity contrast is the central pharmacological point.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "Alpha-MSH fragment acting at least partly independently of melanocortin receptors; informative mechanistic contrast.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Melanotan-2 | Cyclic Melanocortin Agonist, MW 1024.2 | Amino Based",
+    "seoDescription": "Melanotan-2: C50H69N15O9, MW 1024.2, CAS 121062-08-6. Unapproved, and near-isobaric with PT-141. Documented safety signal. Research use only.",
+    "description": "Melanotan-2 is a cyclic seven-residue analogue of alpha-melanocyte-stimulating hormone. Its molecular formula is C50H69N15O9, with a molecular weight of approximately 1024.2 g/mol (PubChem CID 92432, CAS 121062-08-6). It is not approved in any jurisdiction, and multiple national health organisations have issued safety warnings regarding melanotan I and II. It is also near-isobaric with PT-141, differing by roughly 1 g/mol, which has direct consequences for how it must be verified. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "Melanotan-2: A Cyclic Analogue, and a Molecule Almost Indistinguishable From Another",
+    "productDetailsDescription": "Melanotan-2 is a cyclic heptapeptide: seven residues closed into a ring through a lactam bridge, built on the alpha-melanocyte-stimulating hormone pharmacophore. Verified identifiers are molecular formula C50H69N15O9, molecular weight approximately 1024.2 g/mol, and CAS registry number 121062-08-6, recorded under PubChem CID 92432 as melanotan II.\n\nTwo design features define it. Cyclisation constrains the molecule's conformation, locking it into a shape resembling its receptor-bound state, and removes the free termini that exopeptidases attack — so a cyclic heptapeptide is both more potent and more stable than a linear one of the same composition. And the molecule incorporates non-natural D-amino acid stereochemistry at defined positions, which is likewise part of the design rather than an impurity.\n\nReceptor selectivity is where this compound differs most importantly from Melanotan-1, and it explains both its appeal and its risk profile. The melanocortin family comprises five receptor subtypes: MC1R governs pigmentation, MC2R mediates adrenal steroidogenesis, MC3R and MC4R act centrally on energy balance and sexual function, and MC5R has exocrine roles. Melanotan-1 is relatively selective for MC1R, the pigmentation receptor. Melanotan-2 is a considerably less selective agonist, acting across melanocortin receptors including the central MC3R and MC4R. That non-selectivity is why effects beyond pigmentation are reported with this compound and not with the more selective analogue — and it is a pharmacological reason to expect a broader effect profile rather than a cleaner one.\n\nNow the finding that matters most for verification, and it emerged from cross-checking the identities in this catalogue against one another rather than from any published source. Melanotan-2 is C50H69N15O9 at approximately 1024.2 g/mol. PT-141, bremelanotide, which is also sold in this catalogue, is C50H68N14O10 at approximately 1025.2 g/mol. Compare the formulas: the two molecules have identical carbon counts, and differ by one hydrogen and one nitrogen replaced by a single oxygen. Structurally, bremelanotide is effectively Melanotan-2 with its C-terminal amide replaced by a hydroxyl group. The mass difference is approximately 1 g/mol on molecules of about 1,024 — roughly one tenth of one per cent. (This comparison is arithmetic from the two verified database formulas rather than a figure quoted from a source.)\n\nThe consequence is practical and significant: intact low-resolution mass spectrometry cannot reliably distinguish Melanotan-2 from PT-141. These are two different compounds with different receptor profiles and radically different regulatory statuses — one is approved as a medicine, the other is approved nowhere — and a routine mass check on either will not tell you which you have. Any laboratory holding both should treat them as a realistic cross-contamination and mislabelling risk and should verify them by a method that actually separates them, which the quality section addresses. This is not a hypothetical concern: a one-dalton difference is within the practical error of many routine mass measurements on a molecule this size.\n\nThe compound's history is worth knowing because PT-141 came out of it. Melanotan-2 was developed as a melanocortin agonist, and the observation of effects on sexual function during its investigation led to the development of bremelanotide as a compound directed at that effect specifically — which then completed a phase 3 programme and was approved. So these two molecules are not merely similar by coincidence; one is the deliberate successor of the other, which is why they are so close in structure.\n\nA naming note. This compound appears as Melanotan-2, Melanotan II, MT-2, MT-II, and MT2. Melanotan-1 (afamelanotide) is a linear 13-residue peptide and a different compound with a genuine approval for a rare indication. PT-141 (bremelanotide) is the near-isobaric approved successor described above. All three are in this catalogue, all three are routinely conflated, and the consequences of conflating them are analytical as well as pharmacological.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "A Documented Safety Signal, Weighed Honestly",
+    "researchFocusDescription": "The research literature on Melanotan-2 has an unusual centre of gravity. For most compounds in this catalogue the published record is predominantly about efficacy, with safety under-characterised. Here the most substantial and most specific literature is about harm, and it comes from dermatology rather than from pharmacology. That is where an honest assessment has to focus.\n\nThe receptor pharmacology is not seriously contested. This is a non-selective melanocortin agonist with activity at MC1R, which drives pigmentation, and at the central MC3R and MC4R, which are involved in energy balance and sexual function. The breadth of that activity is well established and explains why a wider range of effects is reported with this compound than with the MC1R-selective analogue. What is absent is a clinical development programme: no completed trial establishing efficacy or safety for any indication was identified, and this compound is approved nowhere. Its own successor compound, bremelanotide, is the one that was taken through registration trials — which is itself informative about how the developers judged the parent molecule's suitability.\n\nThe safety literature is specific enough to be useful. A review in the International Journal of Dermatology examined the risks of unregulated use of alpha-MSH analogues. Its findings on melanotan I and II together: increasing numbers of case reports indicate that unregulated use is associated with cutaneous complications, particularly melanocytic changes in existing moles and newly emerging dysplastic nevi; four case reports have described melanomas emerging from existing moles either during or shortly after melanotan use; and multiple national health organisations have issued safety warnings regarding these substances. The reviewers also raise non-clinical concerns about the preparation, administration and dosage of unregulated material, and note that melanotan forms part of a tanning culture in certain subpopulations (PMID 28266027, doi:10.1111/ijd.13585).\n\nA systematic review of eruptive melanocytic nevi gives a sense of how melanotan ranks among recognised triggers. Compiling 93 articles covering 179 patients, it grouped suspected causes as skin and other diseases at 50 per cent; immunosuppressive agents, chemotherapy or melanotan at 41 per cent; and miscellaneous including idiopathic at 9 per cent. Of the compiled cases, 16 per cent had at least one histologically confirmed dysplastic nevus, and five cases of associated melanoma were reported. The authors state explicitly that the nature of the data precluded assessment of the risk of malignant transformation (PMID 31119650, doi:10.1007/s40257-019-00444-8). Individual case reports of eruptive dysplastic nevi following melanotan use are also published (PMID 22425244, doi:10.1016/j.ad.2011.10.001).\n\nThis evidence needs weighing carefully rather than either dismissing or overstating, so here is the weighing.\n\nAgainst treating it as established causation: these are case reports and case series, which cannot establish causal relationships. Both reviews say so directly — one notes that conclusive evidence linking the phenomena is lacking, the other that the data precluded assessment of malignant transformation risk. There is substantial confounding potential: people who use tanning compounds are, by selection, people interested in tanning, and are therefore likely to differ from the general population in sun exposure, sunbed use and baseline skin cancer risk. Reporting bias also operates strongly — a striking case involving an unusual compound is more likely to be written up than an unremarkable one.\n\nAgainst dismissing it: the signal is mechanistically coherent, which distinguishes it from a random adverse event cluster. This compound is a melanocortin receptor agonist that acts directly on melanocytes, and the reported findings are changes in melanocytic lesions — new nevi, dysplastic nevi, and changes in existing moles. That is precisely the tissue and cell type where an effect of this compound would be expected to appear if it had one. The appearance of eruptive nevi being attributed to melanotan alongside immunosuppressive agents and chemotherapy places it in recognised company. And multiple national health organisations, which have access to pharmacovigilance data not reflected in the published case literature, judged the signal sufficient to warrant public warnings.\n\nThe reasonable conclusion is the one both reviews reach: an association that is not proven causal, is biologically plausible, has prompted regulatory warnings, and is inadequately characterised. For a compound with no approval, no completed efficacy trial, and a successor molecule that was developed and approved instead of it, that is the honest summary.\n\nThe non-clinical risks the reviewers raise also deserve mention because they apply directly to research material: questions about preparation, administration and dosage of unregulated product. For a laboratory, the analytical corollary is the near-isobaric relationship with PT-141 documented above — a compound that cannot be reliably distinguished from another by routine mass measurement is a compound whose identity needs establishing by better means before any result involving it can be trusted.\n\nFor laboratory work, Melanotan-2 remains a legitimate tool in melanocortin receptor pharmacology, specifically as a non-selective agonist comparator against the MC1R-selective Melanotan-1 and the approved bremelanotide. A three-compound comparator set spanning different selectivity profiles within one receptor family is genuinely useful for subtype selectivity studies — provided all three are correctly identified, which is exactly the problem.",
+    "qualityPurityTitle": "Analytical Verification: Distinguishing Two Near-Isobaric Compounds",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThis product presents the most demanding identity-verification problem in this catalogue, and a standard certificate will not solve it.\n\nIdentity nominally confirms against the verified molecular weight of approximately 1024.2 g/mol, with molecular formula C50H69N15O9 and CAS registry number 121062-08-6 (PubChem CID 92432). The difficulty is that this measurement does not uniquely identify the compound.\n\nPT-141, bremelanotide, is C50H68N14O10 at approximately 1025.2 g/mol — the same carbon count, with one hydrogen and one nitrogen replaced by one oxygen, which is structurally the C-terminal amide replaced by a hydroxyl. The difference is about 1 g/mol on a molecule of 1,024, roughly 0.1 per cent, and it is within the practical error of many routine intact-mass measurements at this mass. Both compounds are sold in this catalogue. The conclusion follows directly: an intact low-resolution mass spectrum cannot reliably tell these two apart, so a certificate reporting only an observed mass near 1,024 to 1,025 does not establish which compound is present.\n\nThree methods do resolve it, and one should be insisted upon. High-resolution mass spectrometry with sufficient accuracy to separate a one-dalton difference at this mass, with the measured accuracy stated rather than implied. Chromatographic separation against an authentic reference standard of each compound, since the amide and the hydroxyl forms differ in polarity and will differ in retention under a method developed for the purpose. Or tandem mass spectrometry fragmentation, where the C-terminal difference produces distinguishable fragment ions. Any of these is adequate; an intact mass alone is not.\n\nA second identity question concerns the ring. Melanotan-2 is cyclic, closed through a lactam bridge, and cyclisation eliminates water — so the cyclic peptide and its linear precursor differ by 18 mass units, under 2 per cent of the total. A linear heptapeptide of identical composition is a different compound with different conformational freedom and pharmacology. Incomplete cyclisation leaves linear precursor; over-reaction can give cyclised dimers appearing at multiples of the target mass. Cyclisation should be confirmed explicitly by accurate mass addressing the 18-unit distinction, by chromatographic separation, or by nuclear magnetic resonance.\n\nA third concerns stereochemistry. This molecule incorporates non-natural D-amino acid residues at defined positions as part of its design. Stereoisomers have identical formulas and identical masses and are not distinguished by mass spectrometry under any conditions. Where configuration matters — and for a receptor agonist whose selectivity depends on three-dimensional shape, it does — chiral analysis or an explicit written supplier statement is required.\n\nTaken together, these three points mean that the routine checks that suffice for most peptides are inadequate here. Purity assessment by reverse-phase chromatography remains worth having, and for a seven-residue peptide deletion impurities represent large proportional mass changes that should resolve cleanly — but purity is a statement about a substance whose identity has to be established first by one of the methods above.\n\nThe salt-form question applies as usual. At approximately 1,024 g/mol with basic residues present, multiple counter-ion equivalents are possible and acetate or trifluoroacetate loading represents a meaningful fraction of supplied mass. Lyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Unapproved, With Safety Warnings From Multiple National Authorities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nMelanotan-2 is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. No completed clinical trial establishing efficacy or safety for any indication was identified. It is worth noting that this compound's own successor molecule, bremelanotide, is the one that was taken through a phase 3 registration programme and approved.\n\nA documented safety signal must be stated plainly rather than minimised. According to a review in the International Journal of Dermatology, unregulated use of melanotan I and melanotan II is associated in an increasing number of case reports with cutaneous complications, particularly melanocytic changes in existing moles and newly emerging dysplastic nevi. Four case reports have described melanomas emerging from existing moles either during or shortly after melanotan use. The same review records that multiple national health organisations have issued safety warnings regarding these substances, and raises further concerns about the preparation, administration and dosage of unregulated material. A systematic review of eruptive melanocytic nevi placed melanotan among a small group of recognised triggers for sudden onset of multiple nevi, alongside immunosuppressive agents and chemotherapy, and reported that 16 per cent of compiled cases had at least one histologically confirmed dysplastic nevus with five cases of associated melanoma.\n\nThe limits of that evidence should be stated with equal clarity. Case reports and case series cannot establish causation, and both reviews say so explicitly — one noting that conclusive evidence linking the phenomena is lacking, the other that the data precluded assessment of malignant transformation risk. Confounding is substantial, since people who use tanning compounds are likely to differ from the general population in sun exposure and baseline skin cancer risk. What can fairly be said is that the association is unproven but biologically coherent — this compound acts directly on melanocytes, the cell type melanoma arises from, and the reported findings are changes in melanocytic lesions — and that it has been judged sufficient by multiple national authorities to warrant public warnings.\n\nAn analytical caution also bears on compliance. This compound differs from PT-141, bremelanotide, by roughly 1 g/mol, and routine intact mass spectrometry cannot reliably distinguish them. One is approved as a medicine and the other is approved nowhere. Anyone handling both should treat misidentification as a realistic risk rather than a theoretical one.\n\nNothing on this page suggests that this material is suitable for tanning, photoprotection, appetite modulation, sexual function or any other purpose in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is Melanotan-2?",
+        "answer": "Melanotan-2 is a cyclic seven-residue analogue of alpha-melanocyte-stimulating hormone, closed into a ring through a lactam bridge and incorporating non-natural D-amino acid stereochemistry. Verified identifiers are molecular formula C50H69N15O9, molecular weight approximately 1024.2 g/mol, CAS 121062-08-6, PubChem CID 92432. It is not approved in any jurisdiction."
+      },
+      {
+        "question": "How does it differ from Melanotan-1?",
+        "answer": "Both structurally and pharmacologically. Melanotan-1 is a linear 13-residue peptide relatively selective for MC1R, the pigmentation receptor, and is approved for a rare photodermatosis. Melanotan-2 is a cyclic heptapeptide and a considerably less selective agonist, acting across melanocortin receptors including the central MC3R and MC4R involved in energy balance and sexual function. That non-selectivity is why a broader effect profile is reported with it."
+      },
+      {
+        "question": "Why can Melanotan-2 be confused with PT-141 analytically?",
+        "answer": "Because they are near-isobaric. Melanotan-2 is C50H69N15O9 at about 1024.2 g/mol; PT-141 is C50H68N14O10 at about 1025.2 — identical carbon count, with one hydrogen and one nitrogen replaced by one oxygen. Structurally PT-141 is effectively Melanotan-2 with its C-terminal amide replaced by a hydroxyl. The roughly 1 g/mol difference is about 0.1 per cent and falls within the practical error of many routine intact-mass measurements."
+      },
+      {
+        "question": "How should identity be verified then?",
+        "answer": "By a method that actually separates the two. High-resolution mass spectrometry with accuracy sufficient to resolve a one-dalton difference at this mass, with the measured accuracy stated. Or chromatographic separation against authentic reference standards of each, since the amide and hydroxyl forms differ in polarity and retention. Or tandem MS fragmentation, where the C-terminal difference yields distinguishable fragment ions. An intact mass alone is not adequate."
+      },
+      {
+        "question": "Is there a documented safety concern?",
+        "answer": "Yes. A review in the International Journal of Dermatology reports that unregulated use of melanotan I and II is associated in an increasing number of case reports with cutaneous complications — particularly melanocytic changes in existing moles and newly emerging dysplastic nevi — and records four case reports of melanomas emerging from existing moles during or shortly after use. Multiple national health organisations have issued safety warnings about these substances."
+      },
+      {
+        "question": "Does that prove Melanotan-2 causes melanoma?",
+        "answer": "No, and both relevant reviews say so. Case reports and series cannot establish causation; one review notes conclusive evidence linking the phenomena is lacking, the other that the data precluded assessment of malignant transformation risk. Confounding is substantial, since people who use tanning compounds likely differ in sun exposure and baseline skin cancer risk. The fair summary is an unproven but biologically coherent association."
+      },
+      {
+        "question": "Why take the signal seriously if it is unproven?",
+        "answer": "Because it is mechanistically coherent rather than a random adverse-event cluster. This compound is a melanocortin agonist acting directly on melanocytes, and the reported findings are changes in melanocytic lesions — exactly the tissue where an effect would appear. A systematic review placed melanotan among recognised triggers of eruptive nevi alongside immunosuppressive agents and chemotherapy. And multiple national authorities with pharmacovigilance access judged it sufficient for public warnings."
+      },
+      {
+        "question": "Has Melanotan-2 ever completed a clinical trial?",
+        "answer": "No completed trial establishing efficacy or safety for any indication was identified, and it is approved nowhere. Something telling: its own successor molecule, bremelanotide (PT-141), is the compound that was taken through a phase 3 registration programme and approved. Observations of effects on sexual function during Melanotan-2 investigation led to bremelanotide being developed specifically for that effect instead."
+      },
+      {
+        "question": "Why must cyclisation be confirmed?",
+        "answer": "Because cyclisation eliminates water, so the cyclic peptide and its linear precursor differ by just 18 mass units — under 2 per cent of the total. The linear heptapeptide of identical composition is a different compound with different conformational freedom and pharmacology. Incomplete cyclisation leaves linear precursor; over-reaction can give cyclised dimers at multiples of the target mass. Confirm by accurate mass, chromatography or NMR."
+      },
+      {
+        "question": "What is a legitimate laboratory use?",
+        "answer": "Melanocortin receptor pharmacology, specifically as a non-selective agonist comparator against the MC1R-selective Melanotan-1 and the approved bremelanotide. A three-compound set spanning different selectivity profiles within one receptor family is genuinely useful for subtype selectivity studies — provided all three are correctly identified, which given the near-isobaric relationship is precisely the practical challenge."
+      }
+    ]
+  }
+}

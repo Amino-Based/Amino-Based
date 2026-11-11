@@ -1,0 +1,228 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "tesamorelin",
+    "qc": {
+      "main_content_words": 2006,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "APPROVED HUMAN DRUG (FDA, November 2010, HIV-associated lipodystrophy; brand Egrifta). Compliance section written specifically.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "82.49"
+      },
+      {
+        "variant": "20mg",
+        "price_usd": "120.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Tesamorelin 10mg.png",
+        "upload_as": "amino-tesamorelin-10mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      },
+      {
+        "variant": "20mg",
+        "source_file": "Tesamorelin 20mg.png",
+        "upload_as": "amino-tesamorelin-20mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      }
+    ],
+    "references": [
+      "PubChem CID 16137828 (PUG REST, verified 2026-11-09): C221H366N72O67S, MW 5136; CAS 218949-48-5",
+      "PMID 22298602 doi:10.1345/aph.1Q629 - Ann Pharmacother - tesamorelin review; FDA approved November 2010 for HIV-associated lipodystrophy; 2 phase 3 trials, 26 weeks plus 26-week extensions; reduced waist circumference and visceral adipose tissue",
+      "PMID 19243281 doi:10.1517/13543780802707658 - Expert Opin Investig Drugs - tesamorelin (TH9507) development review; GRF analogue rationale vs recombinant hGH"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Sterility and endotoxin content - not established for research material"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational-commercial. The searcher wants to know what tesamorelin is, that it is an approved drug, and what the approval actually covers.",
+    "primary_keyword": "tesamorelin",
+    "secondary_keywords": [
+      "TH9507",
+      "growth hormone releasing factor analogue",
+      "GHRH analogue",
+      "tesamorelin molecular weight",
+      "tesamorelin CAS",
+      "Egrifta molecule"
+    ],
+    "long_tail_keywords": [
+      "what is tesamorelin",
+      "is tesamorelin FDA approved",
+      "what was tesamorelin approved for",
+      "tesamorelin vs ipamorelin",
+      "tesamorelin molecular formula C221H366N72O67S",
+      "tesamorelin CAS 218949-48-5",
+      "GHRH vs GHRP difference",
+      "tesamorelin visceral adipose tissue trial",
+      "tesamorelin HIV lipodystrophy",
+      "research grade tesamorelin verification"
+    ],
+    "semantic_terms": [
+      "growth hormone-releasing factor",
+      "GHRH receptor",
+      "somatotroph",
+      "visceral adipose tissue",
+      "lipodystrophy",
+      "phase 3",
+      "N-terminal modification",
+      "pulsatile secretion",
+      "pituitary feedback",
+      "intact mass",
+      "reverse-phase HPLC",
+      "fill mass"
+    ],
+    "name_variations": [
+      "tesamorelin",
+      "TH9507",
+      "TH-9507",
+      "Egrifta (brand)",
+      "tesamorelin acetate"
+    ],
+    "informational_queries": [
+      "what is tesamorelin",
+      "tesamorelin mechanism",
+      "is tesamorelin approved",
+      "tesamorelin vs sermorelin",
+      "tesamorelin side effects"
+    ],
+    "commercial_queries": [
+      "buy tesamorelin research peptide",
+      "tesamorelin 10mg 20mg",
+      "tesamorelin COA"
+    ],
+    "cannibalisation_check": "Owns tesamorelin, TH9507 and the approved-GHRH-analogue intent. /product/sermorelin owns the GRF 1-29 intent; the GHS-R1a pages own the secretagogue intent. The GHRH-vs-GHRP explainer is framed from this compound’s side.",
+    "h1": "Driven by CMS name field; renders as \"Tesamorelin\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/sermorelin",
+        "anchor": "Sermorelin",
+        "rationale": "The other GHRH-receptor analogue; closest comparator.",
+        "verified": true
+      },
+      {
+        "route": "/product/tesamorelin-ipamorelin-blend",
+        "anchor": "Tesamorelin + Ipamorelin Blend",
+        "rationale": "The blend pairing this compound with a GHS-R1a agonist.",
+        "verified": true
+      },
+      {
+        "route": "/product/ipamorelin",
+        "anchor": "Ipamorelin",
+        "rationale": "The GHS-R1a comparator; the key class distinction.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Tesamorelin | GHRH Analogue (TH9507) | Amino Based",
+    "seoDescription": "Tesamorelin: growth hormone-releasing factor analogue, C221H366N72O67S, MW 5136, CAS 218949-48-5. FDA-approved molecule. Research use only material.",
+    "description": "Tesamorelin is a synthetic analogue of human growth hormone-releasing factor, developed under the code TH9507. Its molecular formula is C221H366N72O67S, with a molecular weight of approximately 5136 g/mol and CAS registry number 218949-48-5 (PubChem CID 16137828). It is an approved human medicine, authorised by the FDA in November 2010 for HIV-associated lipodystrophy and marketed as Egrifta. The material supplied here is an unapproved research chemical, not a pharmaceutical product.",
+    "productDetailsTitle": "Tesamorelin (TH9507): Chemical Identity and GHRH-Receptor Class",
+    "productDetailsDescription": "Tesamorelin is a synthetic analogue of human growth hormone-releasing factor, also called growth hormone-releasing hormone. Its verified identifiers are a molecular formula of C221H366N72O67S, a molecular weight of approximately 5136 g/mol, and CAS registry number 218949-48-5, recorded under PubChem CID 16137828. At roughly 5.1 kDa it is the largest peptide in the growth hormone group of this catalogue, and larger than any of the incretin analogues.\n\nThe receptor class distinction is fundamental and separates this compound from the secretagogues alongside it. Growth hormone-releasing hormone is an endogenous hypothalamic hormone that acts on its own dedicated receptor, the GHRH receptor, on pituitary somatotrophs. Tesamorelin is an analogue of that hormone and acts there. The growth hormone-releasing peptides — GHRP-2, GHRP-6, ipamorelin — act instead on the growth hormone secretagogue receptor 1a, whose endogenous ligand is ghrelin. Two separate receptors with separate endogenous ligands, converging downstream on a shared secretory output. Despite the similarity of the abbreviations GHRH and GHRP, these are different pharmacological classes and findings for one do not transfer to the other.\n\nNative growth hormone-releasing factor has a very short circulating half-life, and the design problem for any analogue is to resist that rapid degradation while preserving receptor activity. Tesamorelin addresses this through a chemical modification to the N-terminus of the natural sequence, which confers stability that the unmodified hormone lacks. This is a different strategy from the albumin-binding acylation used in the incretin analogues, and it illustrates that there is more than one route to extending a peptide's useful duration: block the degradation pathway, or slow clearance by tethering to a carrier protein. Tesamorelin takes the first approach.\n\nThe development rationale is worth stating because it explains why this class exists at all. Recombinant human growth hormone is clinically effective in growth hormone-deficient states but carries a range of adverse effects. The reasoning behind developing growth hormone-releasing factor analogues, as set out in a development review in Expert Opinion on Investigational Drugs, was that acting upstream on the pituitary's own secretory machinery might be better tolerated than administering the hormone directly (PMID 19243281, doi:10.1517/13543780802707658). That is the same pulsatility-and-feedback argument that underlies the secretagogue class generally, and tesamorelin is the clearest case of it reaching approval.\n\nA note on naming: this compound appears as tesamorelin, TH9507 and under the brand name Egrifta, which is the trademark of its proprietor. Literature searches should use \"tesamorelin\" or \"TH9507\".\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 10 mg and 20 mg presentations.",
+    "researchFocusTitle": "Clinical Evidence, Visceral Adiposity and What the Data Cover",
+    "researchFocusDescription": "Tesamorelin is the only compound in the growth hormone group of this catalogue with a completed late-phase clinical programme and a regulatory approval, which makes its evidence base qualitatively different from that of its neighbours and worth describing precisely.\n\nA review in the Annals of Pharmacotherapy evaluating its efficacy and safety records that tesamorelin was approved by the Food and Drug Administration in November 2010 for the treatment of lipodystrophy associated with HIV infection. In two phase 3 clinical trials and their pooled analyses, it significantly decreased waist circumference and visceral adipose tissue after 26 weeks of treatment, with significant improvements in some subjective body image parameters. Both trials included 26-week extension phases, which confirmed that the reductions in visceral adipose tissue were maintained on continued treatment without adverse impact on blood glucose and lipid parameters. The review notes potential limitations including high cost and a lack of long-term safety and adherence data, and states that data supporting off-label uses were limited (PMID 22298602, doi:10.1345/aph.1Q629).\n\nSeveral features of that evidence deserve emphasis because they are unusual in this catalogue. The endpoint was a directly measured tissue compartment — visceral adipose tissue — rather than a hormone concentration. The effect was shown to persist across an extension phase rather than only at a single timepoint. Metabolic parameters that might have been expected to deteriorate were specifically examined and did not. And the population was a defined clinical group with a specific condition, not healthy volunteers.\n\nThat last point is the most important qualification, and it is the one most often dropped when this compound is discussed. The approval and the supporting evidence concern HIV-associated lipodystrophy, a particular pathological state of fat redistribution occurring in a particular patient population. Evidence of benefit in that condition is not evidence of benefit in anyone else, and the review's observation that data supporting off-label uses were limited is a direct statement to that effect. Extending the finding to general body-composition change in healthy individuals is unsupported by the trials that produced it.\n\nThe earlier development review in Expert Opinion on Investigational Drugs frames the programme's rationale and notes that a multicentre randomised placebo-controlled phase 3 trial suggested tesamorelin might be a beneficial treatment strategy for HIV-related lipodystrophy with a good safety profile and a positive effect on reducing visceral fat, while adding that other potential indications appeared less promising on the data then available (PMID 19243281, doi:10.1517/13543780802707658). That assessment of other indications is a useful corrective to the assumption that an approved compound is broadly applicable.\n\nFor laboratory work, tesamorelin's position as an approved GHRH-receptor analogue with published clinical data makes it a useful reference compound for the GHRH arm of growth hormone regulation, in the way that GHRP-6 functions as a reference agonist for the GHS-R1a arm. Receptor-level questions remain open and tractable: comparative potency at the GHRH receptor against other analogues, receptor desensitisation on sustained exposure, and the interaction between GHRH-receptor and GHS-R1a signalling when both are engaged, which is the mechanistic basis for the combination preparations that exist in this catalogue.\n\nThe limitations for research use are nonetheless real. The clinical data describe a licensed pharmaceutical product in a defined patient population. They do not describe research material, they do not establish anything about healthy subjects, and long-term safety and adherence data were identified as lacking even for the approved product.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation by mass spectrometry compares observed mass against the value calculated for the sequence, approximately 5136 Da. At this size tesamorelin is well separated by mass from the other growth hormone compounds in this catalogue — sermorelin at approximately 3358 Da and the small secretagogues below 900 Da — so a credible measured mass is informative evidence of identity within this group rather than merely consistent with it.\n\nPurity assessment by reverse-phase high-performance liquid chromatography establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual synthesis reagents. For a peptide of this length the analytical challenge is different from that of a hexapeptide: a single-residue deletion in a 44-residue chain changes total mass by a proportionally small amount and may be poorly resolved from the parent peak, so chromatographic resolution and the quality of the method matter more, and a high purity figure obtained under a shallow gradient is weaker evidence than the same figure obtained under conditions demonstrated to separate close-eluting species.\n\nThe N-terminal modification that confers tesamorelin's stability is also a point of analytical interest, since material lacking or carrying an incorrect modification would differ from the intended compound in a way that a sequence-level check alone might not reveal. Intact mass measurement addresses this directly.\n\nLyophilised mass is also not peptide content: a vial labelled 20 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass rather than a verified peptide mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Approved Medicine, Unapproved Research Material: Regulatory Status",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position requires a specific statement, because generic research-chemical language would be factually wrong here. Tesamorelin is an approved human medicine. The United States Food and Drug Administration approved it in November 2010 for the treatment of lipodystrophy associated with HIV infection, and it is marketed under the brand name Egrifta, which is the trademark of its proprietor.\n\nThat approval attaches to a specific licensed pharmaceutical product, manufactured under pharmaceutical quality systems, supplied with regulator-approved labelling, and prescribed and supervised by qualified clinicians for a defined indication in a defined patient population. It does not attach to this material. The research material supplied by Amino Based is not a licensed medicine, is not manufactured as one, is not a generic or equivalent of one, and is not a substitute for a prescribed medicine. Anyone who requires tesamorelin as a treatment should obtain a licensed product through a clinician and a regulated pharmacy.\n\nThe scope of the approval also deserves emphasis, because it is narrower than general discussion of this compound often implies. The indication is HIV-associated lipodystrophy. The clinical evidence was generated in that population and in that condition, and a published review of the compound noted that data supporting off-label uses were limited. Evidence of effect in a specific pathological state is not evidence of effect in healthy individuals, and the approval should not be read as a general endorsement of the compound for body-composition purposes.\n\nGrowth hormone-releasing factor analogues fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list rather than rely on any statement here.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is tesamorelin?",
+        "answer": "Tesamorelin, development code TH9507, is a synthetic analogue of human growth hormone-releasing factor. Its molecular formula is C221H366N72O67S, molecular weight approximately 5136 g/mol, CAS 218949-48-5, PubChem CID 16137828. At roughly 5.1 kDa it is the largest peptide in the growth hormone group of this catalogue."
+      },
+      {
+        "question": "Is tesamorelin an approved drug?",
+        "answer": "Yes. The FDA approved it in November 2010 for the treatment of lipodystrophy associated with HIV infection, marketed as Egrifta. That approval applies to a specific licensed pharmaceutical product made under pharmaceutical quality systems with regulator-approved labelling. It does not apply to research material, which is not a licensed medicine, not a generic, and not a substitute for a prescribed product."
+      },
+      {
+        "question": "What exactly was tesamorelin approved to treat?",
+        "answer": "HIV-associated lipodystrophy specifically, a particular pathological state of fat redistribution in a particular patient population. This scope is narrower than general discussion of the compound usually implies. The clinical evidence was generated in that population and in that condition, and a published review noted that data supporting off-label uses were limited. Evidence of effect in a defined pathological state is not evidence of effect in healthy individuals."
+      },
+      {
+        "question": "What did the phase 3 trials show?",
+        "answer": "In two phase 3 trials and their pooled analyses, tesamorelin significantly decreased waist circumference and visceral adipose tissue after 26 weeks, with significant improvements in some subjective body image measures. Both trials had 26-week extension phases confirming that visceral adipose tissue reductions were maintained without adverse impact on blood glucose and lipid parameters. The reviewing authors noted high cost and a lack of long-term safety and adherence data as limitations."
+      },
+      {
+        "question": "How does tesamorelin differ from ipamorelin or GHRP-6?",
+        "answer": "Different receptors. Tesamorelin is an analogue of growth hormone-releasing hormone and acts on the GHRH receptor on pituitary somatotrophs. GHRP-2, GHRP-6 and ipamorelin act on the growth hormone secretagogue receptor 1a, whose endogenous ligand is ghrelin. The abbreviations GHRH and GHRP differ by one letter but the pharmacology differs completely, and findings for one class do not transfer to the other."
+      },
+      {
+        "question": "How does it resist degradation?",
+        "answer": "Through a chemical modification to the N-terminus of the natural growth hormone-releasing factor sequence, which confers stability the unmodified hormone lacks. This is a different strategy from the albumin-binding acylation used in incretin analogues such as semaglutide: block the degradation pathway rather than slow clearance by tethering to a carrier protein. Both routes extend a peptide’s useful duration by different means."
+      },
+      {
+        "question": "Why develop a releasing-factor analogue instead of using growth hormone?",
+        "answer": "Because recombinant human growth hormone, while clinically effective in deficiency states, carries a range of adverse effects. The development rationale was that acting upstream on the pituitary’s own secretory machinery might be better tolerated than administering the hormone directly, since it preserves the pulsatile pattern of endogenous secretion and remains subject to normal feedback. Tesamorelin is the clearest case of that reasoning reaching approval."
+      },
+      {
+        "question": "Can I rely on the clinical data when working with research material?",
+        "answer": "Not as a statement about this material. The published evidence describes a specific manufactured pharmaceutical product with documented identity, purity, sterility and excipients, studied in a defined patient population. Research material has none of those attributes established unless a lot certificate documents them. The literature is reasonable reference pharmacology for the molecule; it is not a safety or efficacy finding for material from any other source."
+      },
+      {
+        "question": "Why is purity analysis harder for a peptide this long?",
+        "answer": "Because a single-residue deletion in a 44-residue chain changes total mass by a proportionally small amount and may be poorly resolved from the parent peak. In a hexapeptide the same error is large and obvious. Consequently chromatographic resolution and method quality matter more here, and a high purity figure obtained under a shallow gradient is weaker evidence than the same figure under conditions shown to separate close-eluting species."
+      },
+      {
+        "question": "Is tesamorelin prohibited in sport?",
+        "answer": "Growth hormone-releasing factor analogues fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list directly rather than rely on any statement here, as the relevant categories and their scope are revised periodically."
+      }
+    ]
+  }
+}

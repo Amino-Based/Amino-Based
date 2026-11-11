@@ -1,0 +1,236 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "snap-8",
+    "qc": {
+      "main_content_words": 3038,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "A COSMETIC INGREDIENT, not a drug. Not approved as a drug in any jurisdiction. No peer-reviewed clinical trial of SNAP-8 (acetyl octapeptide-3) was identified in the PubMed-indexed literature.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "49.49"
+      },
+      {
+        "variant": "20mg",
+        "price_usd": "65.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Snap8 10mg.png",
+        "upload_as": "amino-snap-8-10mg.png"
+      },
+      {
+        "variant": "20mg",
+        "source_file": "Snap8 20mg.png",
+        "upload_as": "amino-snap-8-20mg.png"
+      }
+    ],
+    "penetration_finding": "CRITICAL MECHANISM FINDING, from the FDA's own laboratory. The claimed mechanism for this peptide class is interference with neuromuscular signalling - which requires the peptide to reach nerve or muscle. An FDA CFSAN study of the closely related acetyl hexapeptide-8 found that from a 10% oil-in-water emulsion applied at 2 mg/cm2 for 24 hours, the majority was washed off the surface; penetrated peptide remained mostly in the STRATUM CORNEUM (0.54% of applied dose in hairless guinea pig, 0.22% in human cadaver skin); total in the EPIDERMIS was 0.01% in both; and NO PEPTIDE WAS DETECTED IN THE DERMIS or in the receptor buffer beneath the skin, in either species. The target tissue is below the epidermis.",
+    "references": [
+      "PubChem CID 71587832 (PUG REST, verified 2026-11-09, matched name \"SNAP-8\"): C42H72N16O15S, MW 1073.2. No CAS obtained.",
+      "PMID 24754410 doi:10.3109/15569527.2014.894521 - Cutan Ocul Toxicol 34(1):46-52 - US FOOD AND DRUG ADMINISTRATION, CFSAN Office of Applied Research and Safety Assessment, Division of Toxicology. In vitro skin penetration of acetyl hexapeptide-8 (Ac-EEMQRR-amide) from a 10% oil-in-water cosmetic emulsion, 2 mg/cm2, 24 h, in hairless guinea pig and HUMAN CADAVER skin in diffusion cells, quantified by hydrophilic interaction LC-MS/MS with stable isotopically labelled internal standards. Results as percent of applied dose: majority washed from the surface; mostly retained in stratum corneum (0.54% guinea pig, 0.22% human), decreasing with each tape-stripped layer; total in epidermis 0.01% in both species; NO peptide detected in the dermis or in buffer beneath the skin in either species; no hexapeptide metabolite detected anywhere. The paper notes the claimed anti-wrinkle mechanism is interference with neuromuscular signalling.",
+      "PMID 38376906 doi:10.2196/54217 - JMIR Dermatol 7:e54217 (2024) - longitudinal analysis of US Google search volume 2013-2023 for acetyl hexapeptide-8 (Argireline). \"Argireline\" and \"Botox in a Bottle\" both rose substantially in 2022, while remaining less searched than \"Botox\". Describes the agent as a topical, SHORT-ACTING synthetic peptide marketed as a more accessible alternative to botulinum neurotoxin. This is a SEARCH-INTEREST study, NOT an efficacy study."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "CAS registry number - none obtained during verification",
+      "Any clinical efficacy trial of SNAP-8 specifically - none identified in the PubMed-indexed literature",
+      "Whether SNAP-8 penetrates to the dermis - not directly studied; the FDA penetration data concerns the related, SHORTER acetyl hexapeptide-8, and a longer peptide would not be expected to penetrate better",
+      "Disulfide or thiol status - the formula contains one sulfur atom, indicating one sulfur-containing residue of unestablished identity and oxidation state"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with scepticism. The searcher wants to know what SNAP-8 is and whether topical \"Botox alternative\" peptides actually work.",
+    "primary_keyword": "SNAP-8",
+    "secondary_keywords": [
+      "acetyl octapeptide-3",
+      "SNAP8 peptide",
+      "SNAP-8 molecular weight",
+      "Argireline vs SNAP-8",
+      "topical botox alternative peptide",
+      "SNAP-25 peptide"
+    ],
+    "long_tail_keywords": [
+      "what is SNAP-8",
+      "does SNAP-8 actually work",
+      "acetyl octapeptide-3 vs acetyl hexapeptide-8",
+      "SNAP-8 molecular formula C42H72N16O15S",
+      "does Argireline penetrate skin FDA study",
+      "is SNAP-8 a botox alternative",
+      "SNAP-8 SNARE complex mechanism",
+      "acetyl hexapeptide-8 skin penetration dermis",
+      "SNAP-8 clinical trials",
+      "SNAP-8 certificate of analysis"
+    ],
+    "semantic_terms": [
+      "SNAP-25",
+      "SNARE complex",
+      "botulinum neurotoxin",
+      "acetylcholine release",
+      "neuromuscular signalling",
+      "stratum corneum",
+      "epidermis",
+      "dermis",
+      "percutaneous absorption",
+      "in vitro diffusion cell",
+      "tape stripping",
+      "human cadaver skin",
+      "LC-MS/MS",
+      "stable isotope internal standard",
+      "N-terminal acetylation"
+    ],
+    "name_variations": [
+      "SNAP-8",
+      "SNAP8",
+      "acetyl octapeptide-3",
+      "acetyl octapeptide-8",
+      "acetyl hexapeptide-8 / Argireline is a DIFFERENT, shorter peptide",
+      "SNAP-25 is the full protein",
+      "botulinum neurotoxin is unrelated"
+    ],
+    "informational_queries": [
+      "what is SNAP-8",
+      "does SNAP-8 work",
+      "SNAP-8 vs Argireline",
+      "do topical botox peptides work",
+      "SNAP-8 mechanism"
+    ],
+    "commercial_queries": [
+      "buy SNAP-8",
+      "SNAP-8 10mg",
+      "acetyl octapeptide-3 raw material",
+      "SNAP-8 COA"
+    ],
+    "cannibalisation_check": "Owns SNAP-8 / acetyl octapeptide-3 and the topical-peptide-penetration intent. /product/ghk-cu and /product/ahk-cu own the copper-peptide skin intent; this page is the only SNARE-mechanism cosmetic peptide and does not overlap them.",
+    "h1": "Driven by CMS name field; renders as \"Snap-8\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/ghk-cu",
+        "anchor": "GHK-Cu",
+        "rationale": "Other skin-focused peptide in the catalogue; the same percutaneous-delivery question applies and the evidence bases differ instructively.",
+        "verified": true
+      },
+      {
+        "route": "/product/ahk-cu",
+        "anchor": "AHK-Cu",
+        "rationale": "Adjacent cosmetic peptide intent; keeps the topical-delivery comparison available.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "Short peptide studied with engineered delivery systems; directly relevant to the general problem of getting small peptides to target tissue.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "SNAP-8 (Acetyl Octapeptide-3) | Cosmetic Peptide, MW 1073.2 | Amino Based",
+    "seoDescription": "SNAP-8: acetyl octapeptide-3, C42H72N16O15S, MW 1073.2. A cosmetic ingredient; FDA penetration data is unflattering. Research use only.",
+    "description": "SNAP-8 is acetyl octapeptide-3, an eight-residue acetylated peptide derived from the SNAP-25 protein sequence and used as a topical cosmetic ingredient. Its molecular formula is C42H72N16O15S, with a molecular weight of approximately 1073.2 g/mol (PubChem CID 71587832); no CAS registry number was obtained during verification. It is a cosmetic ingredient rather than a drug, is not approved as a drug in any jurisdiction, and no peer-reviewed clinical trial of it was identified in the PubMed-indexed literature. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "SNAP-8: A Cosmetic Peptide With a Mechanism That Requires Reaching Tissue It Does Not Reach",
+    "productDetailsDescription": "SNAP-8 is an eight-residue acetylated peptide, known in cosmetic ingredient nomenclature as acetyl octapeptide-3. Verified identifiers are molecular formula C42H72N16O15S and molecular weight approximately 1073.2 g/mol, recorded under PubChem CID 71587832. No CAS registry number was obtained during verification, and none is asserted here. The single sulfur atom in the formula indicates one sulfur-containing residue.\n\nThis product differs from everything else in this catalogue in a way worth stating at the outset: it is a **cosmetic ingredient**, not a therapeutic candidate. It is not a compound that entered drug development and failed, nor an endogenous molecule with established physiology. It was designed for inclusion in topical skincare formulations, and its commercial existence is as a raw material sold to cosmetic manufacturers.\n\nIts design logic refers to a genuine piece of neurobiology. SNAP-25 is a protein component of the SNARE complex, the molecular machinery that mediates fusion of neurotransmitter-containing vesicles with the presynaptic membrane — the final step in releasing neurotransmitter into a synapse. SNAP-25 is also the substrate cleaved by botulinum neurotoxin type A, which is how that toxin prevents acetylcholine release and thereby relaxes muscle. The reasoning behind this peptide class is that a short peptide derived from the SNAP-25 sequence might competitively interfere with SNARE complex assembly, reducing neurotransmitter release and producing muscle relaxation — in effect, a topically applied molecule achieving something like what an injected neurotoxin achieves. This is the basis for the \"needle-free alternative\" marketing that surrounds these compounds, which one recent dermatology analysis describes directly, noting that the related acetyl hexapeptide-8 is marketed as a more accessible alternative to botulinum neurotoxin and that searches for \"Botox in a Bottle\" rose substantially in 2022 (PMID 38376906, doi:10.2196/54217).\n\nThe mechanism is coherent on paper. It also makes a demand that can be tested: for a peptide to interfere with neuromuscular signalling, it has to reach nerve or muscle. Those structures are not in the outer layers of skin. The stratum corneum is the dead, keratinised outer barrier; beneath it is the living epidermis; beneath that is the dermis, where nerve endings, blood vessels and the structures relevant to muscle lie. A topically applied molecule claiming to act on neuromuscular signalling must traverse the stratum corneum and the epidermis and arrive in the dermis.\n\nThat demand has been tested directly, and the result is set out in the research section. The short version: in the FDA's own laboratory, for the closely related and *shorter* peptide in this class, no peptide was detected in the dermis at all.\n\nA naming note. This compound appears as SNAP-8, SNAP8, and acetyl octapeptide-3 or acetyl octapeptide-8 in cosmetic ingredient listings. Acetyl hexapeptide-8, also called acetyl hexapeptide-3 and sold under the trade name Argireline, is a closely related six-residue peptide in the same class and a distinct molecule — SNAP-8 is the elongated eight-residue version. SNAP-25 is the full protein from which the sequence derives, not a product. Botulinum neurotoxin is a bacterial protein toxin of around 150 kilodaltons administered by injection, bears no chemical resemblance to an eight-residue peptide, and is an approved medicine with its own extensive clinical evidence — none of which transfers here.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 10 mg and 20 mg presentations. A note on context: these quantities are raw-material amounts. Cosmetic formulations containing peptides of this class typically include them at low single-digit percentages or below, so a 10 mg quantity is a formulation-scale rather than a dosing-scale amount.",
+    "researchFocusTitle": "The FDA Measured Whether This Class Reaches Its Target. It Does Not.",
+    "researchFocusDescription": "The evidence position for this compound is unusual and, for once, unusually clean. There is no peer-reviewed efficacy trial of SNAP-8 to assess. But there is a directly relevant penetration study on the closely related peptide in the same class, conducted by a regulator's own laboratory, and it addresses the mechanism claim at its foundation.\n\nFirst, the gap. No peer-reviewed clinical trial of SNAP-8 (acetyl octapeptide-3) was identified in the PubMed-indexed literature. The efficacy claims in circulation for this peptide class originate predominantly from manufacturer-generated data — in-house studies, instrumental measurements of wrinkle depth, and subject self-assessments — which is not peer-reviewed and generally not independently replicated. A 2024 analysis in JMIR Dermatology examined this class's rising popularity and is worth reading for what it is and is not: it is a longitudinal study of **Google search volume** in the United States from 2013 to 2023, documenting that searches for \"Argireline\" and \"Botox in a Bottle\" rose substantially in 2022 while remaining below \"Botox\". It describes the agent as a topical, short-acting synthetic peptide marketed as a more accessible alternative to botulinum neurotoxin (PMID 38376906, doi:10.2196/54217). That paper measures public interest. It does not measure efficacy, and it should not be cited as though it did.\n\nNow the substantive study, which is the most informative thing available about this compound class. Investigators at the United States Food and Drug Administration's Center for Food Safety and Applied Nutrition, Office of Applied Research and Safety Assessment, Division of Toxicology, measured the in vitro skin penetration of acetyl hexapeptide-8 from a cosmetic formulation (PMID 24754410, doi:10.3109/15569527.2014.894521).\n\nThe design is rigorous and worth describing, because its rigour is what makes the result hard to dismiss. An oil-in-water emulsion containing 10 per cent of the peptide — a high concentration, well above typical cosmetic use levels — was applied at 2 mg per square centimetre to both hairless guinea pig skin and **human cadaver skin** assembled into in vitro diffusion cells. After a 24-hour exposure, the surface was washed to remove unabsorbed peptide. Skin disks were tape-stripped to determine peptide in the stratum corneum, with removal of those layers verified by confocal microscopy. The epidermis was then heat-separated from the dermis and each fraction homogenised. Quantification used hydrophilic interaction liquid chromatography with tandem mass spectrometry, with stable isotopically labelled hexapeptides as internal standards to correct for matrix effects. The paper states explicitly at the outset that claims for this peptide suggest interference with neuromuscular signalling as its anti-wrinkle mechanism of action — so the investigators framed the study against exactly that claim.\n\nThe results, as percentage of applied dose. The majority of the peptide was washed from the surface of both guinea pig and human skin. Peptide that did penetrate remained mostly in the stratum corneum — 0.54 per cent of the applied dose in guinea pig skin, 0.22 per cent in human skin — with levels decreasing as each layer was removed by tape stripping. Total peptide found in the epidermis was 0.01 per cent in both species. And in the dermis, and in the buffer collected beneath the skin: **no peptide was detected**, in either human or guinea pig skin. No hexapeptide metabolite was detected in any layer or in the buffer either.\n\nConsider what those numbers mean against the mechanism claim. Of the applied dose, roughly one hundredth of one per cent reached the living epidermis. Nothing measurable reached the dermis, where nerve endings are. The claimed mechanism — interference with neuromuscular signalling — requires the peptide to act on structures that this study found it does not reach, from a formulation at 10 per cent, which is considerably more concentrated than cosmetic products using these ingredients. The gradient observed through the tape-stripped layers, with concentration falling at each step, is itself consistent with the peptide loading into the outer barrier and stopping there rather than transiting it.\n\nThree honest qualifications belong with this. First, the study examined acetyl hexapeptide-8, not SNAP-8. These are different molecules. But the relevant difference runs against SNAP-8: it is the *longer* peptide, eight residues versus six, and larger peptides do not penetrate skin better than smaller ones — size is among the primary determinants of percutaneous absorption. So there is no reasonable basis for expecting SNAP-8 to reach the dermis when the shorter analogue did not. Second, this was in vitro diffusion-cell work on excised skin, which is the standard method for percutaneous absorption but is not identical to living skin with intact circulation. Third, the study measured penetration, not clinical effect. It remains logically possible for a topical peptide to produce some visible change by a mechanism that does not require reaching nerve — moisturisation, superficial film-forming, or effects within the epidermis — and nothing here rules that out. What the study does establish is that the specific neuromuscular mechanism claimed for this class is not supported by where the molecule actually goes.\n\nThat is the honest summary and it is a strong one: a regulator's laboratory tested the physical precondition for the advertised mechanism, using human skin and isotope-corrected mass spectrometry, and the precondition was not met.\n\nFor a laboratory, this compound is nonetheless a legitimate object of study, and the open questions are well defined. Percutaneous absorption of peptides is a real and active field, and the measured question — whether any formulation strategy can carry an eight-residue peptide across the stratum corneum in meaningful quantity — is tractable and unanswered for SNAP-8 specifically. The SNARE-interference hypothesis is also directly testable in vitro, in cell-free or cultured systems where delivery is not the obstacle, which would separate the question of whether the peptide can do what is claimed from the question of whether it can get where it would need to be.",
+    "qualityPurityTitle": "Analytical Verification for an Acetylated Octapeptide",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is against the verified molecular formula C42H72N16O15S and molecular weight of approximately 1073.2 g/mol (PubChem CID 71587832). No CAS registry number was obtained during verification, so a certificate quoting a CAS number for this compound should be checked rather than assumed.\n\nThe most consequential identity check is discrimination from the shorter peptide in the same class. Acetyl hexapeptide-8, sold as Argireline, is the six-residue member of this family and a distinct molecule; SNAP-8 is the elongated eight-residue version. Two additional residues represent a substantial mass difference, comfortably resolved by ordinary intact mass spectrometry — so a certificate reporting an observed mass numerically distinguishes them outright. Given that the two are closely related, frequently discussed interchangeably, and likely to be produced by the same suppliers, requiring a reported mass rather than only a name and a purity figure is a reasonable precaution.\n\nN-terminal acetylation is the second check and is part of the compound's identity — the ingredient name itself is *acetyl* octapeptide-3. Acetylation adds 42 mass units, which on a molecule of 1,073 is a shift of roughly 3.9 per cent: large enough to be resolved readily by mass spectrometry, but only if the measurement is reported and compared. An incompletely acetylated preparation is a different substance, and a certificate should state acetylation status explicitly rather than leave it inferred.\n\nC-terminal amidation should likewise be confirmed if it forms part of the intended structure, since amide and free-acid forms differ by 1 mass unit and are not distinguished by a nominal intact-mass figure.\n\nThe single sulfur atom in the formula is a verification point. One sulfur in an eight-residue peptide means one sulfur-containing residue — a methionine or a lone cysteine — and each carries a different liability. A methionine oxidises readily to the sulfoxide, adding 16 mass units, which is detectable but only if sought. A lone cysteine means a free thiol and the possibility of intermolecular disulfide dimerisation at roughly twice the monomer mass, which a purity figure reported without reference to the high-mass region will not detect. Which residue it is, and its oxidation state, is not established here, and it is a legitimate specification question.\n\nSequence confirmation by tandem mass spectrometry fragmentation is worth requesting. At eight residues, sequence isomers would share formula and exact mass while being different compounds, and the family relationship with the shorter analogue makes residue-level confirmation more than a formality.\n\nPurity assessment by reverse-phase chromatography is straightforward for an eight-residue peptide, where deletion impurities represent large proportional mass changes and should resolve cleanly. The impurity classes to expect are deletion sequences, the unacetylated peptide, and incompletely deprotected species.\n\nThe salt-form question applies as usual. At approximately 1,073 g/mol with basic residues present, multiple counter-ion equivalents are possible and counter-ion loading is a meaningful fraction of supplied mass. Lyophilised mass is also not peptide content: a vial labelled 10 mg or 20 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: A Cosmetic Ingredient With an Unsupported Mechanism Claim",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nSNAP-8 is a cosmetic ingredient, not a drug. It has not been approved as a drug by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed drug labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. No peer-reviewed clinical trial of SNAP-8 was identified in the PubMed-indexed literature; efficacy claims for this peptide class originate predominantly from manufacturer-generated data that is not peer-reviewed and generally not independently replicated.\n\nThe mechanism claim requires specific comment, because it is the basis of how this class is marketed and because it has been tested at its foundation. The claimed mechanism is interference with neuromuscular signalling, by competing with the SNAP-25 protein in SNARE complex assembly and thereby reducing neurotransmitter release. That mechanism requires the peptide to reach nerve or muscle, which lie below the stratum corneum and the epidermis.\n\nA study conducted by the FDA's own Center for Food Safety and Applied Nutrition measured in vitro skin penetration of the closely related acetyl hexapeptide-8, applying a 10 per cent oil-in-water emulsion at 2 mg per square centimetre for 24 hours to hairless guinea pig and **human cadaver** skin, with quantification by liquid chromatography-tandem mass spectrometry using stable isotopically labelled internal standards. The majority of applied peptide was washed from the surface. Penetrated peptide remained mostly in the stratum corneum — 0.54 per cent of applied dose in guinea pig, 0.22 per cent in human skin. Total in the epidermis was 0.01 per cent in both species. **No peptide was detected in the dermis, or in the buffer beneath the skin, in either species.**\n\nThree qualifications belong with that finding. It examined acetyl hexapeptide-8 rather than SNAP-8 — but SNAP-8 is the *longer* peptide, and larger peptides do not penetrate skin better than smaller ones, so there is no basis for expecting it to perform better. It was in vitro diffusion-cell work on excised skin, the standard method for percutaneous absorption but not identical to living skin. And it measured penetration rather than clinical effect, so it does not exclude some visible change arising by a mechanism not requiring nerve access, such as superficial moisturisation or film-forming. What it does establish is that the specific neuromuscular mechanism advertised for this class is not supported by where the molecule actually goes.\n\nComparisons to botulinum neurotoxin should be treated with corresponding scepticism. Botulinum neurotoxin is a bacterial protein of around 150 kilodaltons, administered by injection directly into muscle, and is an approved medicine with extensive clinical evidence. An eight-residue topical peptide bears no chemical resemblance to it, and none of its evidence or regulatory standing transfers.\n\nNothing on this page suggests that this material is suitable for reducing wrinkles, relaxing muscle, or addressing any cosmetic or medical condition in any person. It is not for human use, including topical use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is SNAP-8?",
+        "answer": "SNAP-8 is acetyl octapeptide-3, an eight-residue acetylated peptide derived from the SNAP-25 protein sequence and used as a topical cosmetic ingredient. Verified identifiers are molecular formula C42H72N16O15S and molecular weight approximately 1073.2 g/mol, PubChem CID 71587832. No CAS registry number was obtained during verification. It is a cosmetic raw material, not a therapeutic candidate."
+      },
+      {
+        "question": "What is the claimed mechanism?",
+        "answer": "SNAP-25 is a component of the SNARE complex, the machinery mediating fusion of neurotransmitter vesicles with the presynaptic membrane — and it is the protein cleaved by botulinum neurotoxin. The reasoning is that a short peptide from the SNAP-25 sequence might competitively interfere with SNARE assembly, reducing neurotransmitter release and relaxing muscle. Coherent on paper, and the basis of \"needle-free alternative\" marketing."
+      },
+      {
+        "question": "What did the FDA penetration study find?",
+        "answer": "That the peptide class does not reach its target tissue. FDA’s CFSAN laboratory applied a 10 per cent emulsion of the related acetyl hexapeptide-8 at 2 mg/cm² for 24 hours to guinea pig and human cadaver skin. Most was washed off; penetrated peptide stayed mostly in the stratum corneum (0.54 per cent guinea pig, 0.22 per cent human); total in epidermis was 0.01 per cent; and **no peptide was detected in the dermis** or the buffer beneath, in either species."
+      },
+      {
+        "question": "Why does reaching the dermis matter?",
+        "answer": "Because that is where the relevant structures are. The stratum corneum is the dead keratinised outer barrier; beneath it is the living epidermis; beneath that is the dermis, containing nerve endings and blood vessels. A mechanism based on interference with neuromuscular signalling requires the peptide to act on structures below the epidermis. The study found roughly one hundredth of one per cent of applied dose reached the living epidermis and nothing measurable reached the dermis."
+      },
+      {
+        "question": "That study used a different peptide — does it apply?",
+        "answer": "The difference runs against SNAP-8, not in its favour. The study examined acetyl hexapeptide-8, which is the *shorter* six-residue member of this family; SNAP-8 is the elongated eight-residue version. Size is among the primary determinants of percutaneous absorption, and larger peptides do not penetrate skin better than smaller ones — so there is no reasonable basis for expecting SNAP-8 to reach the dermis when the shorter analogue did not."
+      },
+      {
+        "question": "What are the limits of that finding?",
+        "answer": "Three, stated fairly. It was in vitro diffusion-cell work on excised skin — the standard method for percutaneous absorption, but not identical to living skin with intact circulation. It measured penetration, not clinical effect. And it remains logically possible for a topical peptide to produce some visible change by a mechanism not requiring nerve access, such as moisturisation or superficial film-forming. What it establishes is that the advertised neuromuscular mechanism is unsupported."
+      },
+      {
+        "question": "Are there clinical trials of SNAP-8?",
+        "answer": "No peer-reviewed clinical trial of SNAP-8 was identified in the PubMed-indexed literature. Efficacy claims for this peptide class come predominantly from manufacturer-generated data — in-house studies, instrumental wrinkle-depth measurements and subject self-assessments — which is not peer-reviewed and generally not independently replicated."
+      },
+      {
+        "question": "Isn’t there a published study showing its popularity?",
+        "answer": "There is, and it is worth being clear what it measures. A 2024 JMIR Dermatology analysis studied US **Google search volume** from 2013 to 2023, finding searches for \"Argireline\" and \"Botox in a Bottle\" rose substantially in 2022 while staying below \"Botox\". It describes the agent as a topical, short-acting peptide marketed as an accessible neurotoxin alternative. That paper measures public interest, not efficacy, and should not be cited as though it did."
+      },
+      {
+        "question": "How does it compare to botulinum toxin?",
+        "answer": "It does not, in any chemically meaningful way. Botulinum neurotoxin is a bacterial protein of around 150 kilodaltons injected directly into muscle, and is an approved medicine with extensive clinical evidence. An eight-residue topical peptide bears no chemical resemblance to it, and none of its evidence or regulatory standing transfers. The comparison is a marketing device, not a pharmacological one."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "An observed mass — which distinguishes SNAP-8 from the shorter acetyl hexapeptide-8, two residues being a comfortable mass difference. Explicit N-terminal acetylation status, since acetylation is part of the compound’s identity and adds 42 units (about 3.9 per cent). And the identity and oxidation state of the single sulfur-containing residue: a methionine would be an oxidation liability, a lone cysteine a dimerisation risk."
+      }
+    ]
+  }
+}

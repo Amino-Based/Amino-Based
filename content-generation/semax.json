@@ -1,0 +1,227 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "semax",
+    "qc": {
+      "main_content_words": 2074,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in the US or EU. Registered and clinically used in Russia for ischaemic stroke. Compliance section written specifically.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "54.99"
+      },
+      {
+        "variant": "30mg",
+        "price_usd": "87.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Semax-10mg.png",
+        "upload_as": "amino-semax-10mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      },
+      {
+        "variant": "30mg",
+        "source_file": "Semax 40mg.png",
+        "upload_as": "amino-semax-30mg.png",
+        "label_verified": "Vial label read directly: SEMAX 30 mg. The source FILENAME says 40mg and is WRONG; user confirmed 2026-11-09 that no 40mg product exists."
+      }
+    ],
+    "references": [
+      "PubChem CID 9811102 (PUG REST, verified 2026-11-09): C37H51N9O10S, MW 813.9; CAS 80714-61-0",
+      "PMID 32342318 doi:10.1134/S001249662001007X - Dokl Biol Sci 2020 - resting-state fMRI in 52 healthy participants; Selank and Semax vs placebo; functional connectivity between right amygdala and right temporal cortex; amygdala and DLPFC as ROIs",
+      "PMID 28255762 doi:10.1007/s00438-017-1297-1 - Mol Genet Genomics 2017 - Semax transcriptome analysis in rat focal cerebral ischemia; immune response genes, antigen presentation, interferon signalling; PGP studied separately",
+      "PMID 17385423 - Ross Fiziol Zh Im I M Sechenova 2006 - Semax in rat myocardial infarction model; left ventricular remodelling"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what Semax is, whether it is approved, and what evidence exists beyond anecdote.",
+    "primary_keyword": "Semax",
+    "secondary_keywords": [
+      "Semax peptide",
+      "ACTH(4-7)-Pro-Gly-Pro",
+      "Semax molecular weight",
+      "nootropic peptide",
+      "Semax CAS",
+      "ACTH fragment peptide"
+    ],
+    "long_tail_keywords": [
+      "what is Semax",
+      "Semax molecular formula C37H51N9O10S",
+      "is Semax FDA approved",
+      "Semax approved in Russia",
+      "Semax vs Selank difference",
+      "what does Pro-Gly-Pro do in Semax",
+      "Semax human study fMRI",
+      "Semax mechanism neuroimmune",
+      "Semax CAS 80714-61-0",
+      "does Semax have hormonal effects"
+    ],
+    "semantic_terms": [
+      "adrenocorticotropic hormone",
+      "ACTH fragment",
+      "Pro-Gly-Pro",
+      "peptidase resistance",
+      "functional connectivity",
+      "resting-state fMRI",
+      "amygdala",
+      "dorsolateral prefrontal cortex",
+      "antigen presentation",
+      "interferon signalling",
+      "neuroimmune crosstalk",
+      "methionine oxidation"
+    ],
+    "name_variations": [
+      "Semax",
+      "ACTH(4-7)-Pro-Gly-Pro",
+      "ACTH 4-7 PGP",
+      "Semax acetate"
+    ],
+    "informational_queries": [
+      "what is Semax",
+      "Semax mechanism of action",
+      "is Semax approved",
+      "Semax vs Selank",
+      "Semax evidence"
+    ],
+    "commercial_queries": [
+      "buy Semax research peptide",
+      "Semax 10mg 30mg",
+      "Semax certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns Semax and the ACTH-fragment intent. /product/selank owns tuftsin/anxiolytic intent; /product/semax-selank-blend owns the combination. The shared Pro-Gly-Pro explainer is framed from this compound’s side.",
+    "h1": "Driven by CMS name field; renders as \"Semax\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/selank",
+        "anchor": "Selank",
+        "rationale": "Sibling compound sharing the Pro-Gly-Pro architecture; studied together in the human imaging work.",
+        "verified": true
+      },
+      {
+        "route": "/product/semax-selank-blend",
+        "anchor": "Semax + Selank Blend",
+        "rationale": "The combination preparation of these two compounds.",
+        "verified": true
+      },
+      {
+        "route": "/product/dihexa",
+        "anchor": "Dihexa",
+        "rationale": "Other cognition-focused compound in the catalogue, acting by a different mechanism.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Semax | ACTH(4-7)-Pro-Gly-Pro Peptide | Amino Based",
+    "seoDescription": "Semax: ACTH(4-7)-Pro-Gly-Pro heptapeptide, C37H51N9O10S, MW 813.9, CAS 80714-61-0. Identity, Russian clinical status, evidence. Research use only.",
+    "description": "Semax is a synthetic heptapeptide consisting of the 4-7 fragment of adrenocorticotropic hormone joined to the tripeptide Pro-Gly-Pro. Its molecular formula is C37H51N9O10S, with a molecular weight of approximately 813.9 g/mol and CAS registry number 80714-61-0 (PubChem CID 9811102). It is registered and clinically used in Russia but is not approved in the United States or European Union. It is supplied here for laboratory research use only.",
+    "productDetailsTitle": "Semax: An ACTH Fragment With a Stabilising Tail",
+    "productDetailsDescription": "Semax is a synthetic heptapeptide with a construction that is unusually transparent once the name is unpacked. Its formal designation, ACTH(4-7)-Pro-Gly-Pro, states its composition directly: the fourth through seventh residues of adrenocorticotropic hormone, followed by the tripeptide proline-glycine-proline. The ACTH fragment contributes methionine, glutamate, histidine and phenylalanine, which accounts for the single sulfur atom in the molecular formula — methionine is the only sulfur-containing residue present, and the peptide carries no disulfide bridge.\n\nThe verified identifiers are a molecular formula of C37H51N9O10S, a molecular weight of approximately 813.9 g/mol, and CAS registry number 80714-61-0, recorded under PubChem CID 9811102.\n\nThe design logic is worth drawing out because it recurs across a whole family of compounds. Adrenocorticotropic hormone has well-known endocrine functions mediated through its effects on the adrenal cortex, but fragments of the molecule had been reported to influence learning and attention independently of that endocrine activity. The 4-10 region in particular attracted interest as the part responsible for those behavioural effects rather than for corticosteroid release. Semax takes a short fragment from that region — short enough to have no appreciable endocrine activity of its own — and addresses the obvious problem with any very short peptide, which is that it would be degraded almost immediately in circulation.\n\nThat is what the Pro-Gly-Pro tail is for. The motif resists cleavage by peptidases and, attached to the C-terminus, protects the fragment it is joined to. This is the same engineering problem that acylation solves for the incretin analogues and that N-terminal modification solves for tesamorelin, approached differently: rather than blocking a specific cleavage site or tethering to a carrier protein, a resistant motif is appended as a shield.\n\nThe Pro-Gly-Pro motif also links Semax to its sibling compound. Selank is built on the same principle — the tetrapeptide tuftsin joined to the identical Pro-Gly-Pro tail — and the two were developed by the same Russian research tradition. Recognising the shared architecture makes the relationship between them clear: they are not variants of one another but two different active fragments carrying the same stabilising element. Notably, published work has examined Pro-Gly-Pro on its own as a comparator, which is a methodologically sound way of establishing which effects belong to the active fragment and which to the tail.\n\nA naming note for literature searching. This compound appears as Semax, as ACTH(4-7)-Pro-Gly-Pro, and in indexing systems under the latter form. Searches using only the trade-style name will miss part of the literature, much of which is Russian in origin and some of which is published in Russian-language journals with English abstracts.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 10 mg and 30 mg presentations.",
+    "researchFocusTitle": "Clinical Use in One Jurisdiction, Human Imaging Data, and the Evidence Gap Elsewhere",
+    "researchFocusDescription": "Semax occupies a distinctive position: it is a compound with genuine clinical use in one country and essentially no regulatory presence anywhere else, and a substantial literature that is geographically concentrated in a way that affects how it should be read.\n\nUnusually for a peptide in this catalogue, there is published human data from a controlled imaging study. A study in Doklady Biological Sciences examined the effects of Selank and Semax on whole-brain resting-state functional connectivity in 52 healthy participants, using the amygdala and dorsolateral prefrontal cortex as regions of interest, with functional MRI performed before injection and at five and twenty minutes afterwards, against placebo. The investigators reported between-group and between-condition differences in functional connectivity between the right amygdala and a region spanning the fusiform, inferior and middle temporal and parahippocampal gyri in the right hemisphere, and described defining both general and compound-specific effects on that connectivity for the first time (PMID 32342318, doi:10.1134/S001249662001007X).\n\nThat study deserves careful reading rather than enthusiasm. It is a human study, placebo-controlled, in a reasonable sample, which places it well above most of the evidence supporting research peptides. But its endpoint is functional connectivity measured by resting-state fMRI — a demonstration that the compound produces measurable changes in brain network activity, not a demonstration of cognitive benefit. A change in connectivity between two regions is a biological effect; whether it corresponds to anything a person would notice or value is a separate question the study was not designed to answer.\n\nThe mechanistic work is more developed than for most compounds of this type. A transcriptome analysis in Molecular Genetics and Genomics examined the cerebral cortex of rats with focal cerebral ischaemia treated with Semax or with Pro-Gly-Pro alone, and reported that the immune response was the process most markedly affected: Semax enhanced antigen presentation signalling, intensified the effect of ischaemia on interferon signalling pathways, and affected immunoglobulin synthesis processes, with significant increases in expression of the gene encoding the immunoglobulin heavy chain alongside effects on cytokine, stress response and ribosomal protein genes. Pro-Gly-Pro alone attenuated immune activity and suppressed neurotransmission. The authors proposed that the neuroprotective mechanism operates via neuroimmune crosstalk (PMID 28255762, doi:10.1007/s00438-017-1297-1).\n\nTwo things make that study valuable. It proposes a specific mechanism rather than asserting a general neuroprotective property, and it separates the contribution of the Pro-Gly-Pro tail from that of the ACTH fragment — the right control for a compound of this design, and one that is frequently omitted.\n\nBeyond neurological models, effects have been examined in other tissues: a study in a rat myocardial infarction model reported effects on left ventricular remodelling and cardiomyocyte hypertrophy twenty-eight days after infarction, while noting that cardiac work itself was not affected (PMID 17385423).\n\nThe limitations are specific and should be weighed carefully. The literature is overwhelmingly Russian in origin, and while that is not a defect in itself, it does mean that independent replication outside that research tradition is limited, and some of the work is published in journals with restricted international circulation. The clinical use in Russia for ischaemic stroke reflects a regulatory determination made in that jurisdiction, not a globally accepted evidence base, and regulators elsewhere have not reached the same conclusion. Most mechanistic work is in rodent models. And the human imaging study, while genuinely useful, measured a biological endpoint rather than a clinical one.\n\nFor laboratory work the compound is well suited to mechanistic investigation precisely because the published work provides specific, testable claims: neuroimmune crosstalk, antigen presentation and interferon signalling are all directly measurable, and the use of Pro-Gly-Pro as a comparator provides an established control design.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation by mass spectrometry compares observed mass against the value calculated for the sequence, approximately 813.9 Da. At this size the compound is small enough that an intact-mass measurement is straightforward and informative, and the sequence is short enough that fragmentation data, where available, can confirm the arrangement of residues rather than merely their total mass.\n\nOne consideration is specific to this sequence and consequential. Semax contains methionine, which is among the amino acids most readily oxidised, converting to methionine sulfoxide with a mass increase of 16 Da. That single methionine is also the molecule's only sulfur atom, so oxidation is the dominant chemical degradation route available to it. Oxidation can occur during synthesis, purification, lyophilisation or storage, and the oxidised species is a distinct chemical entity whose activity should not be assumed equivalent to that of the parent. On a mass spectrum it appears as a satellite peak 16 Da above the expected value; on reverse-phase chromatography oxidised forms typically elute earlier than the parent. A certificate quoting only a purity percentage, without the chromatogram or the full mass spectrum, will not reveal whether such species are present, which is a concrete reason to request the underlying data rather than the summary figure for this compound in particular.\n\nPurity assessment by reverse-phase high-performance liquid chromatography establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual synthesis reagents. For a seven-residue chain, single-residue deletions are a proportionally large structural change and are generally well resolved chromatographically, so the chromatogram carries real diagnostic value.\n\nLyophilised mass is also not peptide content: a vial labelled 30 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Approved in One Jurisdiction, Not in Others",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nSemax has a regulatory status that differs by country, and stating it accurately requires more care than a simple approved-or-not formulation allows.\n\nSemax is registered and clinically used in Russia, where it has been applied in the treatment of ischaemic stroke. It has not been approved by the United States Food and Drug Administration, by the European Medicines Agency, or by other major regulatory authorities, for any indication. There is no regulator-reviewed labelling in those jurisdictions, no approved indication, and no post-marketing safety surveillance outside the country where it is registered.\n\nThe existence of approval in one jurisdiction is a genuine fact and should not be dismissed, but neither should it be over-read. Regulatory authorities apply differing evidentiary standards and reach differing conclusions on the same compound, and an approval granted in one country is a determination by that country's regulator, not a global finding of safety or efficacy. Marketing that describes this compound simply as \"clinically approved\" without stating where is misleading by omission.\n\nThe research findings described above were obtained predominantly in rodent models. The human study referenced measured functional connectivity on brain imaging — a biological endpoint demonstrating that the compound produces measurable changes in brain network activity, not a demonstration of cognitive benefit or clinical effect. None of that work is an assessment of this material, which is research-grade and not a pharmaceutical product.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is Semax?",
+        "answer": "Semax is a synthetic heptapeptide whose formal designation, ACTH(4-7)-Pro-Gly-Pro, describes it exactly: residues four to seven of adrenocorticotropic hormone joined to the tripeptide proline-glycine-proline. Its molecular formula is C37H51N9O10S, molecular weight approximately 813.9 g/mol, CAS 80714-61-0, PubChem CID 9811102."
+      },
+      {
+        "question": "Does Semax have hormonal effects like ACTH?",
+        "answer": "The design intent is that it does not. Adrenocorticotropic hormone has well-known endocrine functions through the adrenal cortex, but fragments of the molecule were reported to influence learning and attention independently of that activity. Semax uses a short fragment from that region, short enough to lack appreciable endocrine activity of its own, which is the point of using a fragment rather than the hormone."
+      },
+      {
+        "question": "What is the Pro-Gly-Pro tail for?",
+        "answer": "Stability. A very short peptide would be degraded almost immediately in circulation, and the Pro-Gly-Pro motif resists peptidase cleavage, protecting the fragment it is attached to. It is the same engineering problem that acylation solves for incretin analogues and N-terminal modification solves for tesamorelin, approached differently: appending a resistant motif as a shield rather than blocking a specific site or tethering to a carrier protein."
+      },
+      {
+        "question": "How is Semax related to Selank?",
+        "answer": "They share an architecture, not a sequence. Selank is the tetrapeptide tuftsin joined to the identical Pro-Gly-Pro tail; Semax is an ACTH fragment joined to the same tail. They are not variants of one another but two different active fragments carrying the same stabilising element, developed within the same Russian research tradition."
+      },
+      {
+        "question": "Is Semax approved anywhere?",
+        "answer": "Yes, in Russia, where it is registered and has been used clinically in ischaemic stroke. It is not approved by the FDA, the EMA or other major authorities, for any indication. That distinction matters: regulators apply differing evidentiary standards, and an approval in one country is that regulator’s determination rather than a global finding. Marketing that says \"clinically approved\" without saying where is misleading by omission."
+      },
+      {
+        "question": "Is there human evidence for Semax?",
+        "answer": "Some, and better than for most research peptides. A placebo-controlled study in 52 healthy participants used resting-state fMRI before injection and at five and twenty minutes afterwards, reporting differences in functional connectivity between the right amygdala and right temporal regions for both Semax and Selank. But the endpoint is brain network connectivity, not cognition: it demonstrates a measurable biological effect, not a benefit a person would notice."
+      },
+      {
+        "question": "What mechanism has been proposed?",
+        "answer": "Neuroimmune crosstalk. A transcriptome study in rats with focal cerebral ischaemia found the immune response to be the process most markedly affected: Semax enhanced antigen presentation signalling, intensified ischaemia’s effect on interferon pathways, and affected immunoglobulin synthesis, with effects on cytokine, stress response and ribosomal protein genes. That is a specific, testable proposal rather than a general assertion of neuroprotection."
+      },
+      {
+        "question": "Why does the Pro-Gly-Pro control matter in that study?",
+        "answer": "Because it separates the contribution of the stabilising tail from that of the active fragment. The study treated some animals with Pro-Gly-Pro alone and found it attenuated immune activity and suppressed neurotransmission — a different profile from Semax. That is the correct control for a compound of this design, and its frequent omission elsewhere is a real weakness in the wider literature."
+      },
+      {
+        "question": "What are the main limitations of the evidence?",
+        "answer": "The literature is overwhelmingly Russian in origin, which is not a defect in itself but does mean independent replication outside that research tradition is limited, and some work appears in journals with restricted international circulation. Most mechanistic work is in rodent models. The clinical use in Russia reflects one jurisdiction’s regulatory determination, and regulators elsewhere have not reached the same conclusion."
+      },
+      {
+        "question": "Why is methionine oxidation a particular concern here?",
+        "answer": "Because Semax contains a single methionine and that is its only sulfur atom, making oxidation the dominant chemical degradation route available to the molecule. Oxidation adds 16 Da and produces a distinct chemical entity whose activity should not be assumed equivalent. It shows as a satellite peak 16 Da above the expected mass and typically elutes earlier on reverse-phase HPLC. A bare purity percentage will not reveal it."
+      }
+    ]
+  }
+}

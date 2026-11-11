@@ -1,0 +1,225 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "kisspeptin",
+    "qc": {
+      "main_content_words": 2940,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Studied in humans as an investigational diagnostic probe of the reproductive endocrine axis.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "65.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Kisspeptin 10mg.png",
+        "upload_as": "amino-kisspeptin-10mg.png"
+      }
+    ],
+    "length_ambiguity_flag": "The verified identity is KISSPEPTIN-10 (CID 25240297, C63H83N17O14, MW 1302.4, CAS 374675-21-5). Note a real labelling hazard: the product is listed as \"Kisspeptin 10mg\", where \"10mg\" is a MASS. It is NOT the \"-10\" length designation. Kisspeptin-54 and kisspeptin-10 are different peptides of different length, mass and pharmacokinetics, and much of the human literature uses kisspeptin-54. Which length is supplied should be confirmed with the supplier; the page states the verified identifiers for kisspeptin-10 and flags the ambiguity rather than assuming.",
+    "references": [
+      "PubChem CID 25240297 (PUG REST, verified 2026-11-09, matched name \"kisspeptin-10\"): C63H83N17O14, MW 1302.4, CAS 374675-21-5.",
+      "PMID 32232399 doi:10.1210/clinem/dgaa162 - J Clin Endocrinol Metab 105(8):e2717-25 - longitudinal cohort, Boston Children's Hospital / Massachusetts General Hospital; 16 children (3 girls, 13 boys) with delayed or stalled puberty, followed every 6 months. ALL participants with an LH rise to kisspeptin of >= 0.8 mIU/mL subsequently progressed through puberty (n = 8); ALL with LH responses <= 0.4 mIU/mL reached age 18 without physical signs of puberty (n = 8). P = .0002. The kisspeptin-stimulation test OUTPERFORMED GnRH-stimulated LH, inhibin B and genetic testing. Article type includes Clinical Trial, Phase I.",
+      "PMID 28650956 doi:10.1371/journal.pone.0179156 - PLoS One 12(6):e0179156 - Utrecht University; NEGATIVE / TOOL-VALIDATION finding. Putative kisspeptin antagonists p234, p271, p354 and p356 did NOT prevent or lower the KP10-induced intracellular Ca2+ response in CHEM1 cells stably expressing human GPR54, and in female dogs none lowered basal plasma LH nor the KP10-induced LH response. Conclusion: these four compounds had no antagonistic effects in vitro or in vivo."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "WHICH KISSPEPTIN LENGTH IS SUPPLIED - kisspeptin-10 versus kisspeptin-54; different mass and pharmacokinetics, and the human literature largely uses the 54-residue form",
+      "Methionine oxidation status - the kisspeptin-10 sequence terminates in a Phe-amide and contains oxidation-sensitive residues; oxidised species are mass-shifted and detectable only if sought"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what kisspeptin is, how kisspeptin-10 differs from kisspeptin-54, and what the human evidence shows.",
+    "primary_keyword": "Kisspeptin",
+    "secondary_keywords": [
+      "kisspeptin-10",
+      "KP10",
+      "kisspeptin molecular weight",
+      "kisspeptin-54",
+      "GPR54 agonist",
+      "metastin"
+    ],
+    "long_tail_keywords": [
+      "what is kisspeptin",
+      "kisspeptin-10 vs kisspeptin-54",
+      "kisspeptin molecular formula C63H83N17O14",
+      "kisspeptin CAS 374675-21-5",
+      "kisspeptin stimulation test delayed puberty",
+      "does kisspeptin raise LH",
+      "kisspeptin GPR54 KISS1R",
+      "kisspeptin antagonist p234 does not work",
+      "kisspeptin amidation activity",
+      "kisspeptin certificate of analysis"
+    ],
+    "semantic_terms": [
+      "GPR54",
+      "KISS1R",
+      "KISS1",
+      "gonadotropin-releasing hormone",
+      "GnRH",
+      "luteinising hormone",
+      "follicle-stimulating hormone",
+      "hypothalamic-pituitary-gonadal axis",
+      "delayed puberty",
+      "inhibin B",
+      "exome sequencing",
+      "intracellular calcium",
+      "CHEM1 cells",
+      "C-terminal amidation",
+      "nested fragment"
+    ],
+    "name_variations": [
+      "Kisspeptin",
+      "kisspeptin-10",
+      "KP10",
+      "KP-10",
+      "metastin",
+      "kisspeptin-54 is a DIFFERENT peptide",
+      "KISS1 is the gene; GPR54 / KISS1R is the receptor"
+    ],
+    "informational_queries": [
+      "what is kisspeptin",
+      "kisspeptin-10 vs 54",
+      "how does kisspeptin work",
+      "kisspeptin puberty test",
+      "kisspeptin LH response"
+    ],
+    "commercial_queries": [
+      "buy kisspeptin",
+      "kisspeptin-10 10mg",
+      "KP10 research peptide",
+      "kisspeptin COA"
+    ],
+    "cannibalisation_check": "Owns kisspeptin / GPR54 and the upstream-reproductive-axis intent, plus the kisspeptin-10 versus -54 disambiguation. /product/hcg owns gonadotropin intent acting at the gonads; /product/oxytocin owns the other hypothalamic peptide intent.",
+    "h1": "Driven by CMS name field; renders as \"Kisspeptin\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/hcg",
+        "anchor": "HCG",
+        "rationale": "Acts at the gonads, several steps downstream; the upstream-versus-downstream contrast is the central pharmacological point.",
+        "verified": true
+      },
+      {
+        "route": "/product/oxytocin",
+        "anchor": "Oxytocin",
+        "rationale": "Other hypothalamic peptide in the catalogue; keeps the neuroendocrine comparison available.",
+        "verified": true
+      },
+      {
+        "route": "/product/dhea",
+        "anchor": "DHEA",
+        "rationale": "Acts as a peripheral steroid precursor rather than through the central axis; useful contrast in level of intervention.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Kisspeptin-10 | GPR54 Agonist, MW 1302.4 | Amino Based",
+    "seoDescription": "Kisspeptin-10: C63H83N17O14, MW 1302.4, CAS 374675-21-5. A GPR54 agonist with a striking diagnostic result. Research use only.",
+    "description": "Kisspeptin is a neuropeptide that acts at the receptor GPR54, also called KISS1R, and sits upstream of gonadotropin-releasing hormone in the control of the reproductive endocrine axis. The verified identity for this listing is kisspeptin-10, with molecular formula C63H83N17O14 and a molecular weight of approximately 1302.4 g/mol (PubChem CID 25240297, CAS 374675-21-5). Note that the \"10mg\" in the product listing is a mass, not the \"-10\" length designation, and that kisspeptin-54 is a different peptide used in much of the human literature. It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "Kisspeptin: The Switch Upstream of the Reproductive Axis",
+    "productDetailsDescription": "Kisspeptin occupies a genuinely important place in reproductive endocrinology, and its discovery changed how the field understands the control of puberty and fertility. The reproductive axis had long been described as a hierarchy: hypothalamic neurons release gonadotropin-releasing hormone, which drives pituitary release of luteinising hormone and follicle-stimulating hormone, which in turn act on the gonads. Kisspeptin was identified as sitting above gonadotropin-releasing hormone in that hierarchy — a signal that drives GnRH release, making it a more upstream control point than anything previously characterised. Loss-of-function mutations in its receptor cause failure of puberty, which is about as direct a demonstration of necessity as human genetics provides.\n\nThe verified identifiers for this listing are molecular formula C63H83N17O14 and molecular weight approximately 1302.4 g/mol, with CAS registry number 374675-21-5, recorded under PubChem CID 25240297 as kisspeptin-10. The receptor it acts at is GPR54, also written KISS1R, a G-protein-coupled receptor; agonist binding produces an intracellular calcium response, which is the standard in vitro readout.\n\nA labelling hazard needs flagging before anything else, because it is specific to this product and could produce a serious error. The listing reads \"Kisspeptin 10mg\". In that string, \"10mg\" is a quantity of material — ten milligrams. It is not the length designation. Kisspeptin exists in several lengths derived from the same precursor protein: kisspeptin-54, the 54-residue form, and shorter fragments including kisspeptin-13, kisspeptin-14 and kisspeptin-10, which comprises the C-terminal ten residues and retains receptor activity. These differ substantially in mass — kisspeptin-54 is roughly four to five times the mass of kisspeptin-10 — and in pharmacokinetics, since a 54-residue peptide and a 10-residue peptide clear at different rates and have different half-lives.\n\nThe risk of confusion is obvious and the consequence is not trivial: a researcher reading \"Kisspeptin 10mg\" could reasonably take it to mean kisspeptin-10, and would then be correct only by coincidence. The verified identifiers above are for kisspeptin-10, which is what the identity lookup for this listing resolved to, but which length is actually supplied should be confirmed with the supplier rather than inferred from a product name in which a mass figure and a length designation are indistinguishable.\n\nThat distinction matters beyond labelling, because it determines which literature applies. Much of the human work on kisspeptin — particularly the studies examining hormonal responses to administration — used kisspeptin-54. Work in vitro and in animals frequently uses kisspeptin-10, often written KP10. The two are not interchangeable for purposes of comparing to published protocols, and a concentration or quantity taken from a kisspeptin-54 study and applied to kisspeptin-10 material will be wrong on both a molar and a pharmacokinetic basis.\n\nThe compound's position in the axis also explains its research appeal, which is mechanistic rather than therapeutic. A compound acting upstream of gonadotropin-releasing hormone offers a way to probe the integrity of the whole downstream cascade. If kisspeptin is administered and luteinising hormone rises, the chain from GnRH neuron through pituitary to measurable hormone output is intact. If it does not, something in that chain is not working. That logic is the basis of the most interesting published result on this compound, described in the research section, and it is a diagnostic application rather than a treatment.\n\nA naming note. This compound appears as kisspeptin, kisspeptin-10, KP10, KP-10, metastin — the original name, reflecting its initial discovery in the context of metastasis suppression rather than reproduction — and kisspeptin-54, which is a different peptide. The gene is KISS1 and the receptor is GPR54 or KISS1R. Kisspeptin is pharmacologically distinct from gonadotropin-releasing hormone and its analogues, which act one step downstream, and from the gonadotropins themselves such as hCG, which act at the gonads.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation — a quantity of material, not a length designation.",
+    "researchFocusTitle": "A Striking Diagnostic Result, and a Useful Negative One",
+    "researchFocusDescription": "The kisspeptin literature contains one human result of unusual quality for anything in this catalogue, and one negative finding that is instructive about laboratory practice. Both are worth examining closely.\n\nThe diagnostic result concerns a real clinical problem. Managing children with delayed puberty is difficult because it is hard to distinguish those who will eventually progress through puberty spontaneously from those who will never attain adult reproductive endocrine function. The two situations call for different management, and conventional tests do not separate them reliably.\n\nA longitudinal cohort study at Boston Children's Hospital and Massachusetts General Hospital tested whether responses to kisspeptin could predict the outcome. Sixteen children with delayed or stalled puberty — three girls and thirteen boys — underwent kisspeptin- and GnRH-stimulation tests and were then followed every six months for clinical evidence of pubertal progression. Inhibin B was measured in boys, and a subset underwent exome sequencing.\n\nThe results were categorical in a way clinical prediction studies rarely are. Every participant who responded to kisspeptin with a rise in luteinising hormone of 0.8 mIU/mL or greater subsequently progressed through puberty — all eight of them. Every participant whose LH response to kisspeptin was 0.4 mIU/mL or below reached the age of eighteen without developing physical signs of puberty — all eight of them. The separation was complete, with P = 0.0002. And the kisspeptin-stimulation test outperformed GnRH-stimulated LH, inhibin B, and genetic testing in predicting pubertal outcomes (PMID 32232399, doi:10.1210/clinem/dgaa162).\n\nThat is a remarkable finding and deserves both credit and caution. The credit: a clean threshold effect with no overlap between groups, prospective follow-up to a definitive endpoint rather than a surrogate, and direct comparison against three established alternatives, all of which it beat. The design is exactly right for the question — it asks whether a test predicts a future outcome and then waits to find out. The caution: sixteen participants is a small cohort, and a complete separation in a small sample can reflect sampling luck as much as a sharp underlying biological boundary; the eight-versus-eight split means the thresholds were derived in the same data that demonstrated them; and the sex distribution was heavily skewed toward boys, with only three girls. Replication in a larger and more balanced cohort is the obvious requirement, and the paper is indexed as a phase I clinical trial, which reflects its early-stage character.\n\nWhat makes the result scientifically satisfying is that it follows from the mechanism rather than being an empirical correlation. Kisspeptin acts upstream of GnRH, so a kisspeptin challenge tests the integrity of the entire downstream cascade — GnRH neuron responsiveness, pituitary competence, and measurable gonadotropin output. A child whose axis is capable of activating responds; a child whose axis is not, does not. That it outperformed GnRH stimulation specifically is informative, since GnRH stimulation tests the cascade from one step lower down and therefore cannot assess whether the GnRH neurons themselves are capable of responding.\n\nThe second study is a negative result, and it is the kind that saves other laboratories time. Investigators at Utrecht University tested four putative kisspeptin antagonists — p234, p271, p354 and p356 — both in vitro and in vivo. In CHEM1 cells stably expressing human GPR54, kisspeptin-10 produced a clear intracellular calcium response, confirming the assay worked. None of the four compounds prevented or lowered that response. In female dogs, none lowered basal plasma luteinising hormone concentration, and none lowered the kisspeptin-10-induced LH response. The conclusion was unambiguous: these four peptides had no antagonistic effects in vitro, nor any effect on basal or kisspeptin-stimulated plasma LH in dogs (PMID 28650956, doi:10.1371/journal.pone.0179156).\n\nThis matters for two reasons. First, compounds circulating in the literature as \"kisspeptin antagonists\" were shown not to antagonise kisspeptin under these conditions, which is directly useful to anyone planning to use them as pharmacological tools — a published negative result on a reagent prevents wasted work. Second, the study design is a model of how to do this properly: a positive control establishing that the assay detects the agonist response, testing in both a defined receptor-expressing cell line and a whole animal, and a species chosen because it shows a rapid and robust LH response to kisspeptin. The negative conclusion is credible precisely because the positive control worked.\n\nThe limitations across this literature: the strongest human result rests on sixteen participants with thresholds derived in the same sample; most mechanistic work is in vitro or in animals; and the kisspeptin-10 versus kisspeptin-54 distinction means that results obtained with one form do not transfer quantitatively to the other. There is no approved kisspeptin product and no therapeutic indication.\n\nFor a laboratory, this is one of the better-founded compounds in the catalogue. The receptor is cloned and expressible, the in vitro readout is a standard calcium assay with a clear agonist response, the physiology is well established with human genetic support, and there is a validated negative control set in the four non-antagonists described above. Reproductive endocrinology, GPR54 pharmacology and work on the kisspeptin-GnRH relationship are all well-posed research areas requiring no speculative claims.",
+    "qualityPurityTitle": "Analytical Verification, Beginning With Which Peptide This Is",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nFor this product the first verification question is not purity but length, and a certificate that does not resolve it leaves the material ambiguous.\n\nKisspeptin exists in several lengths derived from the same precursor: the 54-residue form, and shorter C-terminal fragments including the 10-residue form. These differ in mass by a factor of roughly four to five. The verified identifiers for this listing are molecular formula C63H83N17O14 and molecular weight approximately 1302.4 g/mol, CAS registry number 374675-21-5 (PubChem CID 25240297), which are the values for kisspeptin-10. Because the product name \"Kisspeptin 10mg\" contains a mass figure that is visually indistinguishable from a length designation, the length should be confirmed explicitly rather than inferred.\n\nFortunately this is analytically trivial once asked. A four-to-five-fold mass difference is resolved by any mass spectrometric measurement, so a certificate reporting an observed mass numerically settles it outright. A certificate that reports only a purity percentage and the name \"kisspeptin\" settles nothing, and given the ambiguity in the product name, this is a case where insisting on a reported mass is particularly worthwhile.\n\nSequence confirmation by tandem mass spectrometry fragmentation is the next check, and for this peptide family it addresses a specific concern. The shorter kisspeptins are nested C-terminal fragments of the same parent sequence, which means that a preparation one or two residues longer or shorter than intended is a plausible synthesis or specification error, and would be a different peptide with a different mass but a highly similar sequence. Fragmentation data establishes the actual residue span rather than merely a consistent total mass.\n\nC-terminal amidation requires attention. The active kisspeptins terminate in an amidated phenylalanine residue, and amidation is required for receptor activity. The free acid — the unamidated form — is a different compound, differing by 1 mass unit from the amide, which is a difference of under 0.1 per cent on a molecule of 1,302 and is well inside the tolerance of a loosely specified intact-mass check. This is the single most likely consequential impurity for this product: a preparation that is correct in sequence and length but incompletely amidated would be substantially less active while passing a nominal mass identity test. A certificate should state amidation status explicitly.\n\nOxidation is a further question. Residues susceptible to oxidation are present in these sequences, and oxidised species are mass-shifted by 16 units per oxygen added, which is detectable but only if looked for. Oxidation products speak to handling and storage history rather than synthetic quality, which makes their quantification more informative than a purity percentage alone.\n\nPurity assessment by reverse-phase chromatography is appropriate, and at ten residues deletion impurities represent large proportional mass changes that should resolve cleanly — so their absence is a reasonable thing to require rather than a courtesy.\n\nThe salt-form question applies with some force. The kisspeptin-10 sequence contains basic residues, so multiple counter-ion equivalents are possible, and at approximately 1,302 g/mol an acetate or trifluoroacetate load is a meaningful fraction of supplied mass. Lyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: An Investigational Diagnostic Probe, Not a Therapy",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nKisspeptin is not an approved medicine. Neither kisspeptin-10 nor kisspeptin-54 has been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nThe nature of the human research on this compound should be understood accurately, because it differs from most of this catalogue in an important way. Kisspeptin has been studied in humans primarily as an investigational **diagnostic probe** of the reproductive endocrine axis — a challenge agent given to test whether the axis can respond — rather than as a treatment intended to produce a sustained therapeutic effect. The most informative published study used it to predict which children with delayed puberty would subsequently progress, and it was administered in a specialist academic setting with hormonal monitoring. A diagnostic challenge agent and a therapy are different categories, and evidence that a compound usefully probes a system is not evidence that administering it treats anything.\n\nThat study's limitations bear directly on how much weight its result carries: sixteen participants, thresholds derived within the same small sample, a sex distribution of thirteen boys to three girls, and indexing as a phase I clinical trial. The separation it reported between responders and non-responders was complete and highly significant, which is genuinely striking, but complete separation in a sample of sixteen requires replication in a larger and more balanced cohort before it can be relied upon.\n\nA caution specific to this product concerns identity. The listing name \"Kisspeptin 10mg\" contains a mass figure that is visually indistinguishable from the \"-10\" length designation, and kisspeptin-10 and kisspeptin-54 are different peptides differing in mass by roughly four to five-fold and differing in pharmacokinetics. Much of the human literature used the 54-residue form. Quantities or concentrations taken from published studies and applied to material of the other length will be wrong on both a molar and a pharmacokinetic basis. The length should be confirmed with the supplier before any quantitative work.\n\nBecause this compound acts on the reproductive endocrine axis, it should also be noted that unsupervised interference with that axis would be hazardous, and that the published human work was conducted with endocrine monitoring in specialist centres.\n\nNothing on this page suggests that this material is suitable for addressing delayed puberty, infertility, hypogonadism, libido or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is kisspeptin?",
+        "answer": "Kisspeptin is a neuropeptide acting at the receptor GPR54, also called KISS1R, which sits upstream of gonadotropin-releasing hormone in the control of the reproductive axis. Its discovery changed the field: loss-of-function mutations in its receptor cause failure of puberty. Verified identifiers for kisspeptin-10 are molecular formula C63H83N17O14, molecular weight approximately 1302.4 g/mol, CAS 374675-21-5, PubChem CID 25240297."
+      },
+      {
+        "question": "Does \"Kisspeptin 10mg\" mean kisspeptin-10?",
+        "answer": "Not necessarily, and this is a genuine labelling hazard. In that product name, \"10mg\" is a quantity of material — ten milligrams — not the length designation. Kisspeptin exists in several lengths, and kisspeptin-54 and kisspeptin-10 differ in mass by roughly four to five-fold and in pharmacokinetics. A researcher could reasonably read the name as the 10-residue form and be correct only by coincidence. Confirm the length with the supplier."
+      },
+      {
+        "question": "Why does the length distinction matter?",
+        "answer": "Because it determines which literature applies and every quantitative calculation. Much of the human work — particularly studies of hormonal responses to administration — used kisspeptin-54, while in vitro and animal work frequently uses kisspeptin-10. A concentration or quantity taken from a kisspeptin-54 study and applied to kisspeptin-10 material will be wrong on both a molar and a pharmacokinetic basis."
+      },
+      {
+        "question": "What is the most striking human result?",
+        "answer": "A longitudinal study of 16 children with delayed or stalled puberty, followed every six months. Every participant whose LH rose by 0.8 mIU/mL or more to kisspeptin subsequently progressed through puberty (all 8); every participant with an LH response of 0.4 mIU/mL or below reached age 18 with no physical signs of puberty (all 8). Complete separation, P = 0.0002 — and it outperformed GnRH-stimulated LH, inhibin B and genetic testing."
+      },
+      {
+        "question": "How much weight should that result carry?",
+        "answer": "It deserves credit and caution. Credit: a clean threshold with no overlap, prospective follow-up to a definitive endpoint rather than a surrogate, and direct comparison against three established alternatives it beat. Caution: sixteen participants is small, complete separation in a small sample can reflect sampling luck, the thresholds were derived in the same data that demonstrated them, and only three of sixteen were girls. It is indexed as a phase I trial."
+      },
+      {
+        "question": "Why does kisspeptin work better than GnRH stimulation?",
+        "answer": "Because it tests more of the cascade. Kisspeptin acts upstream of GnRH, so a kisspeptin challenge probes GnRH neuron responsiveness, pituitary competence and measurable gonadotropin output together. GnRH stimulation enters the cascade one step lower down and therefore cannot assess whether the GnRH neurons themselves are capable of responding. The result follows from the mechanism rather than being an empirical correlation."
+      },
+      {
+        "question": "Are there validated kisspeptin antagonists?",
+        "answer": "Not among four commonly cited ones. A Utrecht University study tested p234, p271, p354 and p356 in CHEM1 cells stably expressing human GPR54 and in female dogs. Kisspeptin-10 produced a clear calcium response, confirming the assay worked — and none of the four compounds prevented or lowered it, nor lowered basal or kisspeptin-stimulated plasma LH in dogs. A published negative result on a reagent that saves other laboratories wasted work."
+      },
+      {
+        "question": "Why is C-terminal amidation important?",
+        "answer": "Because it is required for receptor activity and is the most likely consequential impurity here. Active kisspeptins terminate in an amidated phenylalanine; the unamidated free acid is a different compound differing by just 1 mass unit — under 0.1 per cent of 1,302, well inside a loose intact-mass check’s tolerance. A preparation correct in sequence and length but incompletely amidated would be substantially less active while passing a nominal identity test."
+      },
+      {
+        "question": "Is kisspeptin a treatment or a diagnostic?",
+        "answer": "The human research has used it primarily as an investigational diagnostic probe — a challenge agent given to test whether the reproductive axis can respond — not as a therapy producing a sustained effect. That distinction matters: evidence that a compound usefully probes a system is not evidence that administering it treats anything. It is approved nowhere, for any indication."
+      },
+      {
+        "question": "What makes this a good laboratory compound?",
+        "answer": "Several things rare in this catalogue. The receptor is cloned and expressible, the in vitro readout is a standard intracellular calcium assay with a clear agonist response, the physiology is well established with human genetic support from receptor loss-of-function mutations, and there is now a validated negative control set in the four compounds shown not to antagonise it. Reproductive endocrinology and GPR54 pharmacology need no speculative claims here."
+      }
+    ]
+  }
+}

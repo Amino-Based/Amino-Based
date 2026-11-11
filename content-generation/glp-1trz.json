@@ -1,0 +1,253 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "glp-1trz",
+    "qc": {
+      "main_content_words": 2024,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "product_name_note": "Catalogue name GLP-1TRZ. Molecular identity confirmed by the site owner on 2026-11-09 as TIRZEPATIDE. The repo itself is contradictory on this point (see lib/productSlugs.ts redirects vs lib/products/productImage.ts \"unconfirmed\" note), so this confirmation is the authority.",
+    "regulatory_class": "APPROVED HUMAN DRUG - compliance section written specifically; RUO boilerplate does not apply",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "65.99"
+      },
+      {
+        "variant": "20mg",
+        "price_usd": "87.99"
+      },
+      {
+        "variant": "30mg",
+        "price_usd": "115.49"
+      },
+      {
+        "variant": "60mg",
+        "price_usd": "175.99"
+      }
+    ],
+    "note": "Price, SKU, stock, variants and categories are reference only. NOT part of this content payload.",
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "GLP-1TRZ 10mg.png",
+        "upload_as": "amino-glp-1trz-10mg.png"
+      },
+      {
+        "variant": "20mg",
+        "source_file": "GLP-1TRZ 20mg.png",
+        "upload_as": "amino-glp-1trz-20mg.png"
+      },
+      {
+        "variant": "30mg",
+        "source_file": "GLP-1TRZ 30mg.png",
+        "upload_as": "amino-glp-1trz-30mg.png"
+      },
+      {
+        "variant": "60mg",
+        "source_file": "GLP-1TRZ 60mg.png",
+        "upload_as": "amino-glp-1trz-60mg.png"
+      }
+    ],
+    "references": [
+      "PubChem PUG REST (compound/name/tirzepatide): MolecularFormula C225H348N48O68, MolecularWeight 4813; CIDs incl. 166567236, 163285897",
+      "PubChem synonyms: CAS 2023788-19-2",
+      "PMID 36050763 doi:10.1186/s12933-022-01604-7 - Cardiovasc Diabetol - dual GIP/GLP-1 co-agonist; SURPASS 1-5; head-to-head vs semaglutide 1.0mg; open GIP mechanism question",
+      "PMID 38302593 doi:10.1038/s41366-024-01473-y - Int J Obes - obesity pipeline; tirzepatide up to 22.5% weight loss in phase 3 obesity trials",
+      "PMID 38687506 doi:10.2337/dci23-0100 - Diabetes Care - incretin pharmacotherapy and lean mass loss",
+      "PMID 33068776 doi:10.1016/j.molmet.2020.101102 - Mol Metab - GLP-1 RA class mechanisms"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for 10/20/30/60 mg presentations - no data supplied",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset",
+      "Sterility and endotoxin content - not established for research material"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational-commercial. The searcher wants to know what GLP-1TRZ actually is, confirm it is tirzepatide, and compare it against semaglutide and retatrutide.",
+    "primary_keyword": "tirzepatide",
+    "secondary_keywords": [
+      "GLP-1TRZ",
+      "tirzepatide research peptide",
+      "GIP GLP-1 dual agonist",
+      "tirzepatide molecular weight",
+      "tirzepatide CAS number",
+      "dual incretin agonist"
+    ],
+    "long_tail_keywords": [
+      "what is GLP-1TRZ",
+      "is GLP-1TRZ the same as tirzepatide",
+      "tirzepatide molecular formula C225H348N48O68",
+      "tirzepatide vs semaglutide difference",
+      "tirzepatide vs retatrutide",
+      "is tirzepatide a GLP-1 analogue",
+      "tirzepatide mechanism GIP receptor",
+      "tirzepatide SURPASS trial results",
+      "does tirzepatide cause muscle loss",
+      "research grade tirzepatide verification"
+    ],
+    "semantic_terms": [
+      "incretin",
+      "GIP receptor",
+      "GLP-1 receptor",
+      "dual agonist",
+      "acylation",
+      "C20 fatty diacid",
+      "albumin binding",
+      "SURPASS",
+      "HbA1c",
+      "lean mass",
+      "sarcopenia",
+      "high-resolution mass spectrometry",
+      "reverse-phase HPLC",
+      "lyophilised",
+      "fill mass"
+    ],
+    "name_variations": [
+      "GLP-1TRZ",
+      "tirzepatide",
+      "Mounjaro (brand)",
+      "Zepbound (brand)",
+      "LY3298176",
+      "GIP/GLP-1 co-agonist"
+    ],
+    "informational_queries": [
+      "what is tirzepatide",
+      "tirzepatide mechanism of action",
+      "tirzepatide vs semaglutide",
+      "is GLP-1TRZ tirzepatide",
+      "tirzepatide lean mass loss"
+    ],
+    "commercial_queries": [
+      "buy tirzepatide research peptide",
+      "GLP-1TRZ 10mg 20mg 30mg 60mg",
+      "tirzepatide certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns the tirzepatide and GLP-1TRZ intent. /product/semaglutide owns single-target GLP-1; /product/glp-3rta owns retatrutide. Comparison FAQs here must link out rather than target those pages primary keywords.",
+    "h1": "Driven by CMS name field; renders as \"GLP-1TRZ\" after extractDosageFromName() strips the dosage suffix. Generic name is carried in seoTitle and the opening sentence so the identity is machine-readable."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/semaglutide",
+        "anchor": "Semaglutide",
+        "rationale": "The head-to-head comparator in the cited trial evidence; highest-intent comparison query.",
+        "verified": true
+      },
+      {
+        "route": "/product/glp-3rta",
+        "anchor": "GLP-3RTA (retatrutide)",
+        "rationale": "Completes the single/dual/triple agonist set.",
+        "verified": true
+      },
+      {
+        "route": "/product/cagrilintide",
+        "anchor": "Cagrilintide",
+        "rationale": "Amylin analogue studied in combination with incretin agonists.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Relevant to the fill-mass versus peptide-content discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement for an approved-drug molecule.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Commercial promotion inappropriate adjacent to an approved-drug molecule."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "GLP-1TRZ (Tirzepatide) | GIP/GLP-1 Dual Agonist | Amino Based",
+    "seoDescription": "GLP-1TRZ is tirzepatide: dual GIP/GLP-1 receptor agonist, C225H348N48O68, MW 4813, CAS 2023788-19-2. Identity, mechanism, evidence. Research use only.",
+    "description": "GLP-1TRZ is Amino Based's catalogue designation for tirzepatide, a dual agonist at the glucose-dependent insulinotropic polypeptide (GIP) and glucagon-like peptide-1 (GLP-1) receptors. Its molecular formula is C225H348N48O68, with a molecular weight of approximately 4813 g/mol and CAS registry number 2023788-19-2. Tirzepatide is an approved human medicine in several jurisdictions, marketed as Mounjaro and Zepbound. The material supplied here is an unapproved research chemical for laboratory use only.",
+    "productDetailsTitle": "GLP-1TRZ (Tirzepatide): Chemical Identity and Dual-Receptor Design",
+    "productDetailsDescription": "GLP-1TRZ is this catalogue's name for tirzepatide. Because coined product names can obscure what is actually in a vial, the identity is stated here plainly: GLP-1TRZ is tirzepatide, and the two terms refer to the same molecule throughout this page. Anyone searching the scientific literature should search \"tirzepatide\", since \"GLP-1TRZ\" is a commercial designation that appears in no peer-reviewed publication.\n\nTirzepatide is a synthetic 39-amino-acid acylated peptide engineered from the GIP sequence rather than from GLP-1, which is a point that is frequently reported incorrectly. Its backbone derives from native glucose-dependent insulinotropic polypeptide, and it has been modified so that it activates both the GIP receptor and the GLP-1 receptor. It is therefore not a GLP-1 analogue in the sense that semaglutide and liraglutide are; it is a GIP-based peptide given dual-receptor activity by design. The catalogue name, with its \"GLP-1\" prefix, is somewhat misleading in this respect, which is another reason to anchor on the generic name.\n\nThe verified identifiers are a molecular formula of C225H348N48O68, a molecular weight of approximately 4813 g/mol, and CAS registry number 2023788-19-2. These values are consistent across multiple PubChem compound records for the substance. As with any peptide of this size, material may be supplied as a salt or with residual counter-ions and water, so the molecular weight of the pure compound is not automatically the right basis for calculating vial contents.\n\nLike semaglutide, tirzepatide carries a C20 fatty diacid moiety attached via a linker, which binds reversibly to serum albumin and creates a circulating depot. That albumin binding is what extends its duration of action sufficiently to support once-weekly administration in the approved product. The structural logic is the same as in other long-acting incretin analogues even though the peptide backbone differs: resist enzymatic degradation, then slow clearance by tethering the molecule to albumin.\n\nAt roughly 4.8 kDa, tirzepatide is the largest of the three incretin analogues in this catalogue, and the mass differences between them are large enough to be analytically useful. Semaglutide is approximately 4114 Da, retatrutide approximately 4731 Da, and tirzepatide approximately 4813 Da. High-resolution mass spectrometry separates all three without ambiguity, which matters because these compounds are routinely confused, substituted and mislabelled in non-pharmaceutical supply.\n\nThe material is supplied as a lyophilised white to off-white powder in a sealed glass vial, in nominal 10 mg, 20 mg, 30 mg and 60 mg presentations, where the stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed. Stability data published for an approved tirzepatide medicine describe that specific formulation, not this material, and cannot be transferred to it.",
+    "researchFocusTitle": "Dual-Agonist Pharmacology, Clinical Evidence and the Open GIP Question",
+    "researchFocusDescription": "Tirzepatide occupies an unusual position in this catalogue: its clinical effects are exceptionally well documented, while the mechanistic explanation for those effects remains genuinely contested. Both halves of that statement are worth taking seriously, because the literature is often summarised as though only the first were true.\n\nThe clinical evidence is substantial. A review in Cardiovascular Diabetology describes tirzepatide as the first dual GIP/GLP-1 receptor co-agonist approved for type 2 diabetes, and summarises the SURPASS 1-5 trial programme, in which weekly doses of 5-15 mg reduced HbA1c by 1.24 to 2.58 per cent and body weight by 5.4 to 11.7 kg — reductions the authors describe as unprecedented for a single agent. A substantial proportion of participants reached an HbA1c below 5.7 per cent, the upper limit of the normal range, and 20.7 to 68.4 per cent lost more than ten per cent of baseline body weight. In direct comparison, tirzepatide reduced HbA1c and body weight more than subcutaneous semaglutide at 1.0 mg weekly (PMID 36050763, doi:10.1186/s12933-022-01604-7). A separate review of the obesity pharmacotherapy pipeline reports weight loss of up to 22.5 per cent in phase 3 obesity trials (PMID 38302593, doi:10.1038/s41366-024-01473-y).\n\nThe reported adverse-effect profile resembles that of selective GLP-1 receptor agonists — mainly nausea, vomiting, diarrhoea and constipation, more frequent at higher doses. Cardiovascular events were adjudicated across the trial programme, and for none of the analysed endpoints was a hazard ratio above 1.0 found against pooled comparators, with upper confidence bounds below 1.3, satisfying conventional definitions of cardiovascular safety. These are findings about a licensed medicine given under clinical supervision, reported here as literature rather than as safety information for any other context.\n\nThe genuinely open question is mechanistic. The same Cardiovascular Diabetology review states the problem directly: while GIP reduces food intake and body weight in rodents, those effects have not been demonstrated in humans, and it remains to be shown that GIP receptor agonism improves insulin secretion in type 2 diabetic patients, who had been noted in earlier studies to be unresponsive to GIP. In other words, a drug built around dual GIP and GLP-1 agonism outperforms a selective GLP-1 agonist, yet the contribution of the GIP component in humans is not established. Tirzepatide was observed to improve insulin sensitivity and insulin secretory responses more than semaglutide, associated with lower prandial insulin and glucagon concentrations, but the attribution of that advantage to GIP receptor activation specifically remains an inference rather than a demonstrated fact.\n\nThis is an unusually clean example of a dissociation between clinical efficacy and mechanistic understanding, and it is the most scientifically interesting thing about the molecule. For laboratory work it is also the most useful, because it identifies where the real questions are: receptor-level studies of GIP receptor signalling, biased agonism, receptor trafficking and species differences between rodent and human GIP biology are all live areas rather than settled ones.\n\nOne further finding deserves mention because it is frequently omitted from summaries of this drug class. A review in Diabetes Care examining incretin-based weight-loss pharmacotherapy reports that these agents — liraglutide, semaglutide, tirzepatide and retatrutide — induce roughly 15 to 24 per cent weight loss in adults with overweight and obesity, but also cause rapid and significant loss of lean mass, on the order of ten per cent or around 6 kg, which the authors compare to a decade or more of ageing. The review proposes resistance exercise as an adjunct to preserve lean mass (PMID 38687506, doi:10.2337/dci23-0100). Body-composition effects, not simply total weight change, are an active research question across this entire class.\n\nFor laboratory work, the practical position is that reference pharmacology exists and experiments can be designed against known parameters, but the published evidence describes specific manufactured pharmaceutical products. It does not describe, and cannot validate, material obtained from any other source.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity verification carries particular weight for this molecule, for a reason specific to the incretin class: these three compounds are routinely confused with one another, both honestly and otherwise. Fortunately the masses separate cleanly. Semaglutide is approximately 4114 Da, retatrutide approximately 4731 Da, and tirzepatide approximately 4813 Da. A high-resolution mass spectrum therefore distinguishes tirzepatide from its two closest commercial neighbours without ambiguity, and a certificate that reports a measured mass consistent with roughly 4813 Da is meaningful evidence in a way that a bare percentage is not.\n\nTwo distinct categories of evidence answer different questions. Identity confirmation, typically by mass spectrometry, establishes whether the molecule present is the intended one. Purity assessment, typically by reverse-phase high-performance liquid chromatography, establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences, or residual synthesis reagents. A document reporting only one answers half the question, and an HPLC percentage quoted without its chromatogram is weaker evidence than one accompanied by the trace, because detection wavelength, gradient and integration method all affect the number.\n\nTwo further points apply. First, lyophilised mass is not peptide content: a vial labelled 30 mg may contain counter-ions and residual water alongside the peptide, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass. For an acylated peptide approaching 5 kDa that gap can be substantial. Second, the C20 fatty diacid chain makes tirzepatide prone to adsorption onto glass and plastic surfaces at low concentrations, which can produce apparent losses that are a handling artefact rather than a quality problem.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Approved Medicine, Unapproved Research Material: Regulatory Status",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition. It is not supplied as, and must not be used as, a drug, a dietary supplement, a cosmetic, a food or a medical device. That sentence describes how Amino Based supplies and sells this material and the uses for which it is offered; it is not a legal classification of the substance, and it is not a claim that tirzepatide — which is an approved medicine — is not a drug. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position requires a specific statement, because generic research-chemical boilerplate would be factually wrong here. Tirzepatide is an approved human medicine. It was approved for the treatment of type 2 diabetes in the United States, Europe and other jurisdictions, and subsequently approved for obesity management, and it is marketed under the brand names Mounjaro and Zepbound, which are the trademarks of their proprietor.\n\nThat approval attaches to specific licensed pharmaceutical products, manufactured under pharmaceutical quality systems, supplied with regulator-approved labelling, and prescribed and supervised by qualified clinicians. It does not attach to this material. The research material supplied by Amino Based is not a licensed medicine, is not manufactured as one, is not a generic or equivalent of one, and is not a substitute for a prescribed medicine. Anyone who requires tirzepatide as a treatment should obtain a licensed product through a clinician and a regulated pharmacy. The existence of an approved product containing the same molecule does not make unapproved material safe, lawful to administer, or therapeutically equivalent; purity, identity, sterility, endotoxin content and excipient profile are all unverified for research material unless specifically documented on a lot certificate.\n\nThe efficacy and safety findings summarised in the research section above were established in supervised clinical trials of licensed products. They describe those products under those conditions. They are not an assessment of this material and must not be read as one.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law. Note additionally that incretin receptor agonists are subject to anti-doping regulation in some sporting contexts, and competitors subject to such rules should consult the current prohibited list rather than rely on any statement here.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is GLP-1TRZ, and is it the same as tirzepatide?",
+        "answer": "Yes. GLP-1TRZ is this catalogue’s commercial designation for tirzepatide; the two names refer to the same molecule. GLP-1TRZ appears in no peer-reviewed publication, so any literature search should use \"tirzepatide\". This is worth stating plainly, because coined product names can obscure what is actually in a vial, and a buyer is entitled to know which molecule they are evaluating."
+      },
+      {
+        "question": "What is its molecular formula and molecular weight?",
+        "answer": "Tirzepatide has the molecular formula C225H348N48O68, a molecular weight of approximately 4813 g/mol, and CAS registry number 2023788-19-2. These values are consistent across multiple PubChem compound records. At roughly 4.8 kDa it is the largest of the three incretin analogues in this catalogue."
+      },
+      {
+        "question": "Is tirzepatide a GLP-1 analogue?",
+        "answer": "Not in the way semaglutide is, and the catalogue name is misleading on this point. Tirzepatide is a 39-amino-acid peptide engineered from the GIP sequence, not the GLP-1 sequence, and modified so that it activates both the GIP and GLP-1 receptors. It is a GIP-based dual agonist, not a GLP-1 analogue given a second activity. This is one of the most commonly misreported facts about the molecule."
+      },
+      {
+        "question": "How does it differ from semaglutide and retatrutide?",
+        "answer": "By the number of receptors targeted and by backbone. Semaglutide is a single-target GLP-1 receptor agonist of about 4114 Da. Tirzepatide is a dual GIP/GLP-1 agonist of about 4813 Da. Retatrutide adds the glucagon receptor as a third target, at about 4731 Da. They are chemically distinct molecules and a finding reported for one cannot be attributed to another. The mass differences are large enough that high-resolution mass spectrometry separates all three unambiguously."
+      },
+      {
+        "question": "Is tirzepatide an approved drug?",
+        "answer": "Yes. It was approved for type 2 diabetes in the United States, Europe and other jurisdictions and subsequently for obesity management, marketed as Mounjaro and Zepbound. That approval applies to licensed pharmaceutical products made under pharmaceutical quality systems with approved labelling. It does not apply to research material, which is not a licensed medicine, not a generic, and not a substitute for a prescribed product."
+      },
+      {
+        "question": "What does the clinical evidence show?",
+        "answer": "The SURPASS 1-5 programme reported that weekly doses of 5-15 mg reduced HbA1c by 1.24 to 2.58 per cent and body weight by 5.4 to 11.7 kg, described in a 2022 review as unprecedented for a single agent, with 20.7 to 68.4 per cent of participants losing more than ten per cent of baseline weight. In head-to-head comparison it outperformed subcutaneous semaglutide at 1.0 mg weekly. Phase 3 obesity trials have reported weight loss up to 22.5 per cent. Cardiovascular endpoints met conventional safety definitions across the programme."
+      },
+      {
+        "question": "Is the mechanism of action fully understood?",
+        "answer": "No, and this is the most scientifically interesting thing about the molecule. Although tirzepatide outperforms a selective GLP-1 agonist, the contribution of the GIP component in humans is not established. GIP reduces food intake and body weight in rodents, but those effects have not been demonstrated in humans, and type 2 diabetic patients were noted in earlier studies to be unresponsive to GIP. The clinical effect is well demonstrated; the mechanistic attribution is an inference. That gap is a live research area, not a settled question."
+      },
+      {
+        "question": "Does weight loss with this class affect lean mass?",
+        "answer": "Yes, and it is often omitted from summaries. A review in Diabetes Care reports that incretin-based weight-loss agents, including tirzepatide, induce roughly 15 to 24 per cent weight loss but also cause rapid and significant loss of lean mass on the order of ten per cent or about 6 kg, which the authors compare to a decade or more of ageing. The review proposes resistance exercise as an adjunct to preserve lean mass. Body composition, rather than total weight change, is an active research question across the class."
+      },
+      {
+        "question": "What should I verify before relying on a supplier purity figure?",
+        "answer": "Ask for identity and purity separately. Mass spectrometry establishes identity, and here it is unusually decisive: at approximately 4813 Da tirzepatide separates cleanly from retatrutide at about 4731 Da and semaglutide at about 4114 Da, so a credible measured mass is strong evidence within this class. Reverse-phase HPLC assesses purity, and the chromatogram matters as much as the percentage. A certificate reporting only one answers half the question. Note also that a labelled vial mass is a fill mass unless peptide content has been separately determined."
+      },
+      {
+        "question": "Why might measured concentrations come out lower than expected?",
+        "answer": "Two common reasons, neither indicating poor material. First, lyophilised mass is not peptide content: a vial labelled 30 mg may contain counter-ions and residual water, so unless peptide content has been determined by amino acid analysis or similar, the label is a fill mass, and for an acylated peptide approaching 5 kDa that gap can be substantial. Second, the C20 fatty diacid chain makes tirzepatide prone to adsorbing onto glass and plastic at low concentrations, producing apparent losses that are a handling artefact."
+      }
+    ]
+  }
+}

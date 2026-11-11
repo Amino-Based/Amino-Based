@@ -1,0 +1,219 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "kpv",
+    "qc": {
+      "main_content_words": 2088,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "65.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "KPV 10mg.png",
+        "upload_as": "amino-kpv-10mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      }
+    ],
+    "references": [
+      "PubChem CID 125672 (PUG REST, verified 2026-11-09 via the explicit sequence name Lys-Pro-Val): C16H30N4O4, MW 342.43. IMPORTANT: a bulk lookup under the name \"KPV\" returned CID 13294447 (C11H12O3, MW 192.21), a NAME COLLISION and not a tripeptide. That wrong result was rejected.",
+      "PMID 18092346 doi:10.1002/ibd.20334 - Inflamm Bowel Dis - KPV in DSS colitis and CD45RBhi transfer colitis; reduced inflammatory infiltrate and MPO activity; effects at least partially INDEPENDENT of MC1R; rescued all MC1Re/e animals from death",
+      "PMID 15102092 doi:10.1111/j.0022-202X.2004.22404.x - J Invest Dermatol - signalling of alpha-MSH, KPV and ACTH in human keratinocytes; NO cAMP elevation detected; intracellular calcium responses; MC-1R transfected CHO cells",
+      "PMID 28143741 doi:10.1016/j.ymthe.2016.11.020 - Mol Ther - orally targeted delivery of KPV via hyaluronic acid-functionalised nanoparticles in a mouse ulcerative colitis model; downregulated TNF-alpha"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what KPV is, its relationship to alpha-MSH, and whether the anti-inflammatory claims hold up.",
+    "primary_keyword": "KPV",
+    "secondary_keywords": [
+      "KPV peptide",
+      "alpha-MSH 11-13",
+      "lysine-proline-valine",
+      "KPV molecular weight",
+      "anti-inflammatory tripeptide",
+      "melanocortin tripeptide"
+    ],
+    "long_tail_keywords": [
+      "what is KPV peptide",
+      "KPV alpha-MSH fragment",
+      "KPV molecular formula C16H30N4O4",
+      "does KPV work through MC1R",
+      "KPV colitis research",
+      "KPV vs alpha-MSH",
+      "what is KP-D-V",
+      "KPV molecular weight 342",
+      "KPV mechanism of action",
+      "KPV certificate of analysis"
+    ],
+    "semantic_terms": [
+      "alpha-melanocyte-stimulating hormone",
+      "melanocortin-1 receptor",
+      "MC1R",
+      "cyclic AMP",
+      "intracellular calcium",
+      "myeloperoxidase",
+      "DSS colitis",
+      "transfer colitis",
+      "TNF-alpha",
+      "nanoparticle delivery",
+      "stereoisomer",
+      "counter-ion"
+    ],
+    "name_variations": [
+      "KPV",
+      "alpha-MSH(11-13)",
+      "MSH 11-13",
+      "Lys-Pro-Val",
+      "lysine-proline-valine",
+      "KP-D-V (D-isomer, distinct)"
+    ],
+    "informational_queries": [
+      "what is KPV",
+      "KPV mechanism",
+      "KPV anti-inflammatory",
+      "KPV vs alpha-MSH",
+      "does KPV work"
+    ],
+    "commercial_queries": [
+      "buy KPV peptide",
+      "KPV 10mg",
+      "KPV certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns KPV and the alpha-MSH fragment intent. /product/ll-37 owns host defence peptides; /product/klow owns the blend containing it. Melanocortin receptor agonist intent belongs to /product/melanotan-1, /product/melanotan-2 and /product/pt-141, which are receptor agonists rather than anti-inflammatory fragments.",
+    "h1": "Driven by CMS name field; renders as \"KPV\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/klow",
+        "anchor": "Klow",
+        "rationale": "Blend commonly containing this compound.",
+        "verified": true
+      },
+      {
+        "route": "/product/ll-37",
+        "anchor": "LL-37",
+        "rationale": "Other immune-focused peptide in the catalogue; different mechanism.",
+        "verified": true
+      },
+      {
+        "route": "/product/melanotan-2",
+        "anchor": "Melanotan-2",
+        "rationale": "Melanocortin receptor agonist; useful contrast with a fragment that acts at least partly independently of MC1R.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "KPV | Alpha-MSH(11-13) Tripeptide | Amino Based",
+    "seoDescription": "KPV: lysine-proline-valine, C-terminal tripeptide of alpha-MSH. C16H30N4O4, MW 342.43. Anti-inflammatory research and mechanism. Research use only.",
+    "description": "KPV is the tripeptide lysine-proline-valine, corresponding to residues 11-13 of alpha-melanocyte-stimulating hormone — the smallest fragment of that hormone reported to retain anti-inflammatory activity. Its molecular formula is C16H30N4O4, with a molecular weight of approximately 342.43 g/mol (PubChem CID 125672). It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "KPV: The Smallest Anti-Inflammatory Fragment of a Hormone",
+    "productDetailsDescription": "KPV is a tripeptide: lysine, proline, valine. Three residues, nothing more. At approximately 342.43 g/mol it is the smallest compound in this catalogue by a wide margin — less than half the mass of the next smallest peptide, and roughly one-fourteenth that of the incretin analogues.\n\nIts verified identifiers are a molecular formula of C16H30N4O4 and a molecular weight of approximately 342.43 g/mol, recorded under PubChem CID 125672. An identification caveat belongs on this page rather than buried in a data file: a database query under the name \"KPV\" returns a different compound entirely, a name collision with a molecule of formula C11H12O3 that is not a peptide at all. The identifiers above were obtained by querying the explicit sequence name, lysine-proline-valine. Anyone verifying this compound against a public database should do the same, and should treat a formula near 192 g/mol on any document as a red flag rather than a variant.\n\nThe compound's origin explains its interest. Alpha-melanocyte-stimulating hormone is a thirteen-residue peptide hormone, known for pigmentation effects and also for well-documented anti-inflammatory properties. KPV is simply its last three residues — the C-terminal tripeptide, designated alpha-MSH(11-13). What makes this worth noting is that this fragment is the smallest minimal sequence reported to prevent inflammation, which is a striking structure-activity result: almost the entire hormone can be removed and an anti-inflammatory effect persists.\n\nThat has practical consequences. A three-residue peptide is trivially cheap to synthesise compared with a thirteen-residue hormone, is far easier to characterise analytically, and critically, lacks the residues responsible for the melanocortin receptor binding that drives pigmentation. A fragment that retains the anti-inflammatory effect while shedding the pigmentation effect is a more useful research tool than the parent hormone, and that selectivity-by-truncation is the central attraction of this molecule.\n\nIt also raises an obvious mechanistic question, which the research section addresses: if the fragment lacks the structural features that bind the receptor, how does it act? That question is not fully resolved, and the published evidence pointing toward a receptor-independent component is the most scientifically interesting aspect of this compound.\n\nA naming note. This compound appears as KPV, as alpha-MSH(11-13), as MSH 11-13, and written out as lysine-proline-valine or Lys-Pro-Val. A D-isomer variant, KP-D-V, also appears in the literature and is a distinct chemical entity. Searches using only the three-letter abbreviation will both miss relevant literature and return irrelevant results, for the collision reason described above.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "Colitis Models, a Receptor-Independent Component, and an Unresolved Mechanism",
+    "researchFocusDescription": "The research literature on KPV is modest in volume but unusually coherent, and it contains one finding that makes the compound genuinely interesting rather than merely another anti-inflammatory candidate.\n\nThe most informative work concerns intestinal inflammation. A study in Inflammatory Bowel Diseases examined KPV in two established murine models — dextran sodium sulfate colitis and CD45RBhi transfer colitis — and reported that treatment led to earlier recovery and significantly greater regain of body weight, with significantly reduced inflammatory infiltrates on histology and significantly reduced myeloperoxidase activity in colonic tissue, a marker of neutrophil infiltration. Findings in the transfer colitis model supported those in the DSS model (PMID 18092346, doi:10.1002/ibd.20334).\n\nThe striking result in that study concerns mechanism. The investigators also treated animals expressing a non-functional melanocortin-1 receptor, and reported that KPV treatment rescued all animals in the treatment group from death during DSS colitis. They concluded that the effects seem to be at least partially independent of MC1R signalling. That is a strong experimental design — using a receptor-deficient animal to test whether an effect requires the receptor — and the result is the opposite of what the compound's parent-hormone origin would predict.\n\nSignalling work in keratinocytes deepens the puzzle rather than resolving it. A study in the Journal of Investigative Dermatology examined intracellular signalling of alpha-MSH, KPV, KP-D-V and ACTH peptides in human keratinocytes, noting at the outset that although the C-terminal tripeptides of alpha-MSH are the smallest minimal sequences reported to prevent inflammation, it was not known whether they operate via MC-1R or via cyclic AMP. The investigators detected no elevation of cyclic AMP in either HaCaT or normal human keratinocytes in response to alpha-MSH, KPV or ACTH peptides — notable because the anti-inflammatory properties of alpha-MSH had been believed to be cyclic AMP dependent. Rapid intracellular calcium responses were observed in HaCaT keratinocytes to all these peptides, but only in the presence of an adenosine agonist that inhibits the cyclic AMP pathway, while CHO cells stably transfected with the MC-1 receptor showed calcium elevation in response to alpha-MSH and the KPV peptides (PMID 15102092, doi:10.1111/j.0022-202X.2004.22404.x).\n\nTaken together, these results describe a compound with a reproducible anti-inflammatory effect in animal models, a demonstrated component of activity that does not require the expected receptor, and a signalling picture that does not match the pathway assumed for its parent hormone. That is an honest summary and a more interesting one than a cleaner story would be: the compound works in models, and why is not settled.\n\nApplied work has focused on delivery, which is a sensible response to the properties of a very small peptide. A study in Molecular Therapy loaded KPV into hyaluronic-acid-functionalised polymeric nanoparticles to achieve targeted delivery to colonic epithelial cells and macrophages, reporting that the system accelerated mucosal healing and alleviated inflammation in a mouse ulcerative colitis model, with downregulation of TNF-alpha and better efficacy than a non-targeted nanoparticle comparator (PMID 28143741, doi:10.1016/j.ymthe.2016.11.020). The attention paid to delivery is itself informative: a tripeptide is readily degraded and poorly retained, so getting it to the intended tissue is a substantial part of the problem.\n\nThe limitations are clear. The evidence is predominantly murine, concentrated in colitis models, and there is no completed clinical programme. The mechanism is unresolved, which matters because an unresolved mechanism makes it difficult to predict where the compound will and will not work. And the efficacy demonstrated in the most sophisticated studies depended on engineered delivery systems rather than on the peptide alone, which should temper expectations of what unformulated material does.\n\nFor laboratory work the compound's appeal is its tractability: a three-residue peptide with a defined parent hormone, available receptor-knockout comparisons, and a specific open question about receptor-independent action that is directly addressable.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation for this compound carries an unusual preliminary burden, which is worth taking seriously. Because a public database query under the abbreviation \"KPV\" returns a different, non-peptide compound with a molecular weight near 192 g/mol, a certificate quoting that figure or a formula resembling C11H12O3 indicates either the wrong substance or a document compiled by copying from a database without checking. The correct values for the tripeptide are a formula of C16H30N4O4 and a molecular weight of approximately 342.43 g/mol. This is a rare case where a certificate can be checked for plausibility before any analysis is examined.\n\nIdentity confirmation proper is by mass spectrometry against approximately 342.43 Da. For a three-residue peptide, fragmentation data can establish the residue order outright rather than merely the composition, which is worth requesting because sequence isomers — the same three residues in a different order — would share a molecular formula and mass while being different compounds.\n\nA related point concerns stereochemistry. The literature describes a D-isomer variant, KP-D-V, as a distinct entity studied alongside the L-form. Isomers of this kind are identical in molecular formula and mass and are not distinguished by routine mass spectrometry at all. Where stereochemical identity matters to an experiment, chiral analysis or a supplier statement of configuration is required, and an ordinary certificate will not address it.\n\nPurity assessment by reverse-phase chromatography is straightforward for a tripeptide, and single-residue deletions represent such a large proportional change that they are readily resolved. The more pertinent impurity question for very short peptides is residual synthesis reagents and counter-ions rather than closely related peptide species.\n\nThe salt-form question is proportionally severe here. At roughly 342 g/mol, this is the smallest compound in the catalogue, so an acetate or trifluoroacetate counter-ion represents a very large fraction of the mass of supplied material. A molar calculation using the free-peptide value on salt-form material will be substantially wrong, more so than for any other product listed.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Status and Researcher Responsibilities",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nKPV is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nThe research described above was conducted in murine models of colitis and in cultured cells. Mouse models of inflammatory bowel disease are useful experimental systems but are not the human disease, and a long history of compounds showing benefit in such models without translating to patients counsels caution about inference. Nothing on this page suggests that this material is suitable for addressing inflammatory bowel disease or any other condition in any person. It is not for human use.\n\nTwo further points warrant emphasis. The efficacy demonstrated in the most developed studies depended on engineered nanoparticle delivery systems designed to carry the peptide to specific cell populations, not on administration of the peptide alone; results obtained with such systems should not be read as describing what unformulated material does. And the mechanism of action remains unresolved, with published evidence indicating a component of activity independent of the expected receptor. An unresolved mechanism limits the ability to predict effects outside the specific contexts studied.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is KPV?",
+        "answer": "KPV is the tripeptide lysine-proline-valine, corresponding to residues 11-13 of alpha-melanocyte-stimulating hormone — the C-terminal three residues of that hormone. Verified identifiers are molecular formula C16H30N4O4 and molecular weight approximately 342.43 g/mol, PubChem CID 125672. At roughly 342 Da it is the smallest compound in this catalogue."
+      },
+      {
+        "question": "Why does a database search for \"KPV\" return the wrong compound?",
+        "answer": "Because of a name collision. A public database query under the abbreviation returns a different, non-peptide molecule with formula C11H12O3 and molecular weight near 192 g/mol. The correct identifiers were obtained by querying the explicit sequence name, lysine-proline-valine. Practically, a certificate quoting a mass near 192 g/mol indicates either the wrong substance or a document compiled by copying from a database without checking."
+      },
+      {
+        "question": "How can three residues retain a hormone’s activity?",
+        "answer": "That is the striking structure-activity result at the centre of this compound. Alpha-MSH is thirteen residues; KPV is its last three, and is the smallest minimal sequence reported to prevent inflammation. Almost the entire hormone can be removed and an anti-inflammatory effect persists — while the residues responsible for melanocortin receptor binding and pigmentation are left behind."
+      },
+      {
+        "question": "Why is losing the pigmentation effect useful?",
+        "answer": "Because it makes the fragment a cleaner research tool than the parent hormone. Alpha-MSH drives pigmentation as well as anti-inflammatory effects; a fragment that keeps the second without the first achieves selectivity by truncation rather than by engineering. It is also trivially cheap to synthesise and far easier to characterise analytically than a thirteen-residue hormone."
+      },
+      {
+        "question": "Does KPV work through the melanocortin-1 receptor?",
+        "answer": "At least partly not, and this is the most interesting finding about it. A colitis study treated animals expressing a non-functional MC1 receptor and reported that KPV rescued all animals in the treatment group from death during DSS colitis, concluding the effects seem at least partially independent of MC1R signalling. That is the opposite of what the compound’s parent-hormone origin would predict."
+      },
+      {
+        "question": "What is known about its signalling?",
+        "answer": "Less than the parent hormone’s pharmacology would suggest. A keratinocyte study found no elevation of cyclic AMP in response to alpha-MSH, KPV or ACTH peptides — notable because alpha-MSH’s anti-inflammatory properties had been believed cyclic AMP dependent. Rapid intracellular calcium responses were seen, but only in the presence of an agent inhibiting the cyclic AMP pathway. The signalling picture does not match the pathway assumed for the parent hormone."
+      },
+      {
+        "question": "What did the colitis studies actually show?",
+        "answer": "In dextran sodium sulfate colitis, KPV treatment produced earlier recovery and significantly greater body weight regain, with significantly reduced inflammatory infiltrates histologically and significantly reduced myeloperoxidase activity in colonic tissue, a neutrophil infiltration marker. Findings in a CD45RBhi transfer colitis model supported these. Both are murine models, not human disease."
+      },
+      {
+        "question": "Why do the studies use nanoparticle delivery?",
+        "answer": "Because a tripeptide is readily degraded and poorly retained, so getting it to the intended tissue is a substantial part of the problem. One study loaded KPV into hyaluronic-acid-functionalised nanoparticles targeting colonic epithelial cells and macrophages, reporting accelerated mucosal healing, alleviated inflammation and downregulated TNF-alpha, with better efficacy than a non-targeted comparator. Results from such systems should not be read as describing unformulated peptide."
+      },
+      {
+        "question": "What is KP-D-V and how does it differ?",
+        "answer": "It is a D-isomer variant described in the literature as a distinct entity studied alongside the L-form. Stereoisomers share molecular formula and mass and are not distinguished by routine mass spectrometry at all. Where stereochemical identity matters to an experiment, chiral analysis or an explicit supplier statement of configuration is required, because an ordinary certificate will not address it."
+      },
+      {
+        "question": "Why does salt form matter more for KPV than other peptides?",
+        "answer": "Because it is the smallest compound listed. At roughly 342 g/mol, an acetate or trifluoroacetate counter-ion is a very large fraction of the mass of supplied material, so a molar calculation using the free-peptide value on salt-form material will be substantially wrong — more so than for any other product in this catalogue. The proportional error scales inversely with molecular weight."
+      }
+    ]
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "selank",
+    "qc": {
+      "main_content_words": 2102,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in the US or EU. Registered and clinically used in Russia as an anxiolytic. Compliance section written specifically.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "49.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "Selank 10mg.png",
+        "upload_as": "amino-selank-10mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 11765600 (PUG REST, verified 2026-11-09): C33H57N11O9, MW 751.9; CAS 129954-34-3",
+      "PMID 32342318 doi:10.1134/S001249662001007X - Dokl Biol Sci 2020 - resting-state fMRI in 52 healthy participants; Selank and Semax vs placebo; functional connectivity between right amygdala and right temporal cortex; amygdala and DLPFC as ROIs",
+      "PMID 28255762 doi:10.1007/s00438-017-1297-1 - Mol Genet Genomics 2017 - Semax transcriptome analysis in rat focal cerebral ischemia; immune response genes, antigen presentation, interferon signalling; PGP studied separately",
+      "PMID 17385423 - Ross Fiziol Zh Im I M Sechenova 2006 - Semax in rat myocardial infarction model; left ventricular remodelling"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what Selank is, its relationship to tuftsin and Semax, and what evidence exists.",
+    "primary_keyword": "Selank",
+    "secondary_keywords": [
+      "Selank peptide",
+      "tuftsin analogue",
+      "Selank molecular weight",
+      "anxiolytic peptide",
+      "Selank CAS",
+      "TP-7 peptide"
+    ],
+    "long_tail_keywords": [
+      "what is Selank",
+      "Selank molecular formula C33H57N11O9",
+      "Selank vs Semax difference",
+      "what is tuftsin peptide",
+      "is Selank FDA approved",
+      "Selank approved in Russia",
+      "Selank human study fMRI amygdala",
+      "Selank CAS 129954-34-3",
+      "does Selank reduce anxiety evidence",
+      "Selank Pro-Gly-Pro tail"
+    ],
+    "semantic_terms": [
+      "tuftsin",
+      "immunoglobulin G heavy chain",
+      "phagocytic cells",
+      "Pro-Gly-Pro",
+      "peptidase resistance",
+      "amygdala",
+      "dorsolateral prefrontal cortex",
+      "functional connectivity",
+      "resting-state fMRI",
+      "neuroimmune signalling",
+      "ion-pairing",
+      "placebo response"
+    ],
+    "name_variations": [
+      "Selank",
+      "TP-7",
+      "Selank acetate",
+      "tuftsin-PGP"
+    ],
+    "informational_queries": [
+      "what is Selank",
+      "Selank mechanism",
+      "Selank vs Semax",
+      "is Selank approved",
+      "does Selank work for anxiety"
+    ],
+    "commercial_queries": [
+      "buy Selank research peptide",
+      "Selank 10mg",
+      "Selank certificate of analysis"
+    ],
+    "cannibalisation_check": "Owns Selank, tuftsin and the anxiolytic-investigation intent. /product/semax owns the ACTH-fragment intent; /product/semax-selank-blend owns the combination. Shared Pro-Gly-Pro content framed from this compound’s side.",
+    "h1": "Driven by CMS name field; renders as \"Selank\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/semax",
+        "anchor": "Semax",
+        "rationale": "Sibling compound sharing the Pro-Gly-Pro architecture; studied together in the human imaging work.",
+        "verified": true
+      },
+      {
+        "route": "/product/semax-selank-blend",
+        "anchor": "Semax + Selank Blend",
+        "rationale": "The combination preparation of these two compounds.",
+        "verified": true
+      },
+      {
+        "route": "/product/dihexa",
+        "anchor": "Dihexa",
+        "rationale": "Other cognition-focused compound in the catalogue, acting by a different mechanism.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Selank | Tuftsin-Pro-Gly-Pro Anxiolytic Peptide | Amino Based",
+    "seoDescription": "Selank: tuftsin analogue heptapeptide, C33H57N11O9, MW 751.9, CAS 129954-34-3. Identity, Russian clinical status, human imaging data. Research use only.",
+    "description": "Selank is a synthetic heptapeptide consisting of the immunomodulatory tetrapeptide tuftsin joined to the tripeptide Pro-Gly-Pro. Its molecular formula is C33H57N11O9, with a molecular weight of approximately 751.9 g/mol and CAS registry number 129954-34-3 (PubChem CID 11765600). It is registered and clinically used in Russia as an anxiolytic but is not approved in the United States or European Union. It is supplied for laboratory research use only.",
+    "productDetailsTitle": "Selank: A Tuftsin Analogue and Its Immunological Parentage",
+    "productDetailsDescription": "Selank is a synthetic heptapeptide built on the same architectural principle as Semax: a short biologically active fragment joined to a stabilising Pro-Gly-Pro tail. Where Semax takes its active portion from adrenocorticotropic hormone, Selank takes its from tuftsin.\n\nIts verified identifiers are a molecular formula of C33H57N11O9, a molecular weight of approximately 751.9 g/mol, and CAS registry number 129954-34-3, recorded under PubChem CID 11765600. The formula contains no sulfur, which reflects the absence of methionine or cysteine from either the tuftsin sequence or the tail — a point of practical difference from Semax, whose single methionine makes it oxidation-prone in a way Selank is not.\n\nThe parentage is the most interesting thing about this compound and is routinely underexplained. Tuftsin is a naturally occurring tetrapeptide, threonine-lysine-proline-arginine, derived from the heavy chain of immunoglobulin G. Its established biology is immunological: it was characterised for effects on phagocytic cells. A compound developed from an immunoglobulin-derived immune peptide, and investigated primarily as an anxiolytic, sits across a boundary that pharmacological categories usually keep separate, and that is not incidental. It points toward neuroimmune signalling as the territory this family of compounds occupies, which is precisely where the mechanistic work on its sibling compound also landed.\n\nThe Pro-Gly-Pro tail serves the same purpose here as in Semax: tuftsin alone would be degraded rapidly, and the motif resists peptidase cleavage, protecting the fragment attached to it. Recognising that both compounds share this element clarifies their relationship. They are not variants of a single molecule but two distinct active fragments carrying a common stabilising solution, developed within the same Russian research tradition and often studied together.\n\nThat shared tail also has a methodological consequence worth noting. Because Pro-Gly-Pro is itself biologically active — published work examining it separately reports effects on immune activity and neurotransmission — a properly controlled experiment with either compound needs to account for the tail's own contribution rather than attributing all observed effects to the active fragment.\n\nA naming note for literature searching: this compound is indexed under Selank and under the designation TP-7, and the relevant literature is substantially Russian in origin, some of it in Russian-language journals carrying English abstracts.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg presentation.",
+    "researchFocusTitle": "Anxiolytic Investigation, Human Imaging Evidence and Geographic Concentration",
+    "researchFocusDescription": "Selank's research profile is shaped by two facts: it is used clinically in one jurisdiction, and there is a controlled human imaging study examining it directly. Both are unusual for a compound of this type and both repay careful reading.\n\nThe human evidence comes from a study in Doklady Biological Sciences that assessed the effects of Selank and Semax on whole-brain resting-state functional connectivity in 52 healthy participants, with amygdala and dorsolateral prefrontal cortex as predefined regions of interest. The amygdala was selected as one of the key regions for the regulation of anxiety and the dorsolateral prefrontal cortex as the key region for executive functions including working memory. Functional MRI was performed three times — before injection and at five and twenty minutes afterwards — against placebo. The investigators reported between-group and between-condition differences in connectivity between the right amygdala and a region spanning fusiform, inferior and middle temporal and parahippocampal gyri in the right hemisphere, and stated that post hoc analysis allowed both general and compound-specific effects of Selank and Semax on that connectivity to be defined for the first time (PMID 32342318, doi:10.1134/S001249662001007X).\n\nThe choice of the amygdala as a region of interest is not arbitrary: it reflects the anxiolytic framing under which Selank has been investigated, and a demonstrated change in amygdala connectivity is a mechanistically coherent finding for a compound studied in that context. But the limits should be equally clear. The participants were healthy rather than anxious, the endpoint was connectivity rather than symptom measurement, and the observation window was twenty minutes. The study establishes that the compound produces measurable changes in brain network activity on a short timescale. It does not establish anxiolytic efficacy, and it was not designed to.\n\nMechanistic work on this family points consistently toward neuroimmune interaction, which fits the compound's tuftsin parentage. The transcriptome study on the sibling compound in rat focal cerebral ischaemia found the immune response to be the most markedly affected process, with effects on antigen presentation and interferon signalling pathways, and reported that Pro-Gly-Pro administered alone attenuated immune activity and suppressed neurotransmission in the central nervous system (PMID 28255762, doi:10.1007/s00438-017-1297-1). That last finding matters directly for Selank: the shared tail is not pharmacologically inert, so effects observed with the intact compound cannot be attributed wholly to the tuftsin portion without a tail-only control.\n\nThe limitations are substantial and largely parallel those of its sibling. The literature is heavily concentrated in one research tradition, which limits independent replication, and some of it appears in journals with restricted international circulation. Clinical use in Russia reflects a regulatory determination in that jurisdiction rather than a globally accepted evidence base. Much of the preclinical work is in rodent models. And the quantity of peer-reviewed work on Selank specifically is smaller than for many compounds in this catalogue.\n\nA further caution applies to how anxiolytic claims are framed. Anxiety is a subjective clinical state, and compounds investigated for anxiolytic effect are particularly vulnerable to placebo response, which is why the placebo-controlled design of the imaging study is a genuine strength and why uncontrolled reports in this area carry correspondingly little weight.\n\nOne structural observation is worth drawing out, because it bears on how results with this compound should be interpreted. Tuftsin is derived from an immunoglobulin heavy chain, and the transcriptome work on the sibling compound found some of its strongest effects on immunoglobulin synthesis and antigen presentation. A compound whose active fragment originates in an antibody molecule, producing effects on antibody-related gene expression, invites an obvious question about whether that relationship is mechanistic or coincidental. The published literature does not appear to settle it, and it is exactly the kind of specific, structurally motivated hypothesis that makes this family more interesting to work on than a compound whose proposed mechanism is merely asserted.\n\nFor laboratory work the tractable questions follow from the compound's unusual position between immunology and neuroscience: effects on immune cell function given the tuftsin parentage, neuroimmune signalling readouts, and comparative experiments against Pro-Gly-Pro alone and against the tuftsin fragment alone to establish which structural element is responsible for which effect.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation by mass spectrometry compares observed mass against the value calculated for the sequence, approximately 751.9 Da. At this size intact-mass measurement is straightforward, and the seven-residue length means fragmentation data, where available, can confirm residue arrangement rather than total mass alone.\n\nSelank is chemically more robust than its sibling compound in one specific respect worth noting, because it changes what a certificate needs to show. The sequence contains no methionine and no cysteine — reflected in the absence of sulfur from its molecular formula — so neither methionine oxidation nor disulfide-related problems apply. The dominant degradation routes available to Semax are therefore not available here, and a certificate for Selank does not need to address them. That is a genuine handling advantage rather than a trivial difference.\n\nThe sequence does contain arginine and lysine, both basic residues, which affects chromatographic behaviour and means that ion-pairing conditions in a reverse-phase method materially influence retention and peak shape. A purity figure should therefore be read together with the method conditions, since a well-resolved separation and a poorly resolved one can produce very different numbers from the same material.\n\nPurity assessment by reverse-phase high-performance liquid chromatography establishes what proportion of the material is the target peptide rather than truncated sequences, deletion sequences or residual synthesis reagents. For a seven-residue chain, single-residue deletions represent a proportionally large structural change and are generally well resolved, so the chromatogram carries real diagnostic value and a bare percentage discards it.\n\nLyophilised mass is also not peptide content: a vial labelled 10 mg may contain counter-ions and residual water, and unless peptide content has been determined by amino acid analysis or a comparable method, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Approved in One Jurisdiction, Not in Others",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nSelank is registered and clinically used in Russia, where it has been applied as an anxiolytic. It has not been approved by the United States Food and Drug Administration, by the European Medicines Agency, or by other major regulatory authorities, for any indication. There is no regulator-reviewed labelling in those jurisdictions, no approved indication, and no post-marketing safety surveillance outside the country where it is registered.\n\nAs with its sibling compound, that split status should be stated precisely rather than simplified in either direction. An approval granted in one country is a determination by that country's regulator applying its own evidentiary standards; it is not a global finding of safety or efficacy, and regulators elsewhere have not reached the same conclusion. Describing the compound as \"clinically approved\" without stating where is misleading by omission.\n\nA specific caution attaches to anxiolytic framing. Anxiety is a subjective clinical state, and any compound investigated for effect on it is particularly susceptible to placebo response. Reports of benefit that are uncontrolled carry very little evidential weight in this area, and nothing on this page should be read as suggesting that this material is suitable for addressing anxiety or any other condition in any person. It is not for human use.\n\nThe human study referenced above measured functional connectivity on brain imaging in healthy participants over a twenty-minute window. It demonstrates a measurable biological effect on brain network activity. It does not demonstrate anxiolytic efficacy, was not designed to, and is not an assessment of this material, which is research-grade and not a pharmaceutical product.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is Selank?",
+        "answer": "Selank is a synthetic heptapeptide consisting of the tetrapeptide tuftsin joined to the tripeptide Pro-Gly-Pro. Its molecular formula is C33H57N11O9, molecular weight approximately 751.9 g/mol, CAS 129954-34-3, PubChem CID 11765600. It is built on the same architectural principle as Semax: a short active fragment plus a stabilising tail."
+      },
+      {
+        "question": "What is tuftsin, and why does it matter?",
+        "answer": "Tuftsin is a naturally occurring tetrapeptide, threonine-lysine-proline-arginine, derived from the heavy chain of immunoglobulin G, and its established biology is immunological — it was characterised for effects on phagocytic cells. That a compound developed from an immunoglobulin-derived immune peptide is investigated primarily as an anxiolytic is genuinely interesting: it points toward neuroimmune signalling as the territory this family occupies."
+      },
+      {
+        "question": "How does Selank relate to Semax?",
+        "answer": "They share an architecture, not a sequence. Both consist of a short active fragment joined to the identical Pro-Gly-Pro stabilising tail — Semax using an ACTH fragment, Selank using tuftsin. They are two distinct active fragments carrying a common stabilising solution, developed within the same Russian research tradition and often studied together."
+      },
+      {
+        "question": "Is there human evidence for Selank?",
+        "answer": "Yes, from a placebo-controlled imaging study. Fifty-two healthy participants underwent resting-state fMRI before injection and at five and twenty minutes afterwards, with the amygdala chosen as a key region for anxiety regulation and the dorsolateral prefrontal cortex for executive function. Differences in connectivity between the right amygdala and right temporal regions were reported. But participants were healthy, the endpoint was connectivity rather than symptoms, and the window was twenty minutes."
+      },
+      {
+        "question": "Does that study show Selank reduces anxiety?",
+        "answer": "No. It shows the compound produces measurable changes in brain network activity on a short timescale, in healthy participants, with connectivity as the endpoint. Anxiolytic efficacy was not measured and the study was not designed to establish it. The choice of the amygdala as a region of interest reflects the framing under which the compound has been investigated, which makes the finding mechanistically coherent without making it a clinical result."
+      },
+      {
+        "question": "Is Selank approved anywhere?",
+        "answer": "Yes, in Russia, where it is registered and used clinically as an anxiolytic. It is not approved by the FDA, the EMA or other major authorities. An approval in one country is that regulator’s determination applying its own evidentiary standards, not a global finding of safety or efficacy, and describing the compound as \"clinically approved\" without saying where is misleading by omission."
+      },
+      {
+        "question": "Why is a Pro-Gly-Pro control important?",
+        "answer": "Because the tail is not pharmacologically inert. Published work examining Pro-Gly-Pro on its own reports that it attenuates immune activity and suppresses neurotransmission in the central nervous system. Effects observed with the intact compound therefore cannot be attributed wholly to the tuftsin portion without a tail-only control, and omitting that control is a real weakness in parts of the wider literature."
+      },
+      {
+        "question": "Is Selank more chemically stable than Semax?",
+        "answer": "In one specific and useful respect, yes. Selank contains no methionine and no cysteine, reflected in the absence of sulfur from its molecular formula, so neither methionine oxidation nor disulfide-related problems apply. Those are the dominant degradation routes available to Semax, and they are simply not available here. A certificate for Selank does not need to address them."
+      },
+      {
+        "question": "What should I watch for on a certificate of analysis?",
+        "answer": "Intact mass against approximately 751.9 Da, and a chromatogram rather than a bare percentage. Selank contains arginine and lysine, both basic residues, so ion-pairing conditions in a reverse-phase method materially affect retention and peak shape — meaning a purity figure should be read together with the method conditions, since well-resolved and poorly resolved separations can yield very different numbers from the same material."
+      },
+      {
+        "question": "What are the main limitations of the evidence?",
+        "answer": "The literature is heavily concentrated in one research tradition, limiting independent replication, and some appears in journals with restricted international circulation. The quantity of peer-reviewed work on Selank specifically is smaller than for many compounds in this catalogue. Most preclinical work is in rodent models. And because anxiety is a subjective state, uncontrolled reports in this area carry particularly little evidential weight."
+      }
+    ]
+  }
+}

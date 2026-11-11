@@ -1,0 +1,224 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "h-frag",
+    "qc": {
+      "main_content_words": 2574,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. No completed clinical trial for this fragment was identified in the PubMed-indexed literature.",
+    "variants_from_csv": [
+      {
+        "variant": "5mg",
+        "price_usd": "54.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "5mg",
+        "source_file": "H Frag 5mg.png",
+        "upload_as": "amino-h-frag-5mg.png"
+      }
+    ],
+    "identity_correction": "CORRECTED DURING VERIFICATION. A bulk lookup for this product initially FELL BACK to the AOD9604 record (C78H123N23O23S2, MW 1815.1). That was wrong. The plain hGH fragment 176-191 is PubChem CID 172966176: C80H127N23O24S2, MW 1859.1 - about 44 g/mol heavier than AOD9604. No CAS number was obtained. The two must not be conflated on either product page.",
+    "references": [
+      "PubChem CID 172966176 (PUG REST, verified 2026-11-09, matched name \"HGH fragment 176-191\"): C80H127N23O24S2, MW 1859.1. No CAS obtained.",
+      "PubChem CID 71300630 (AOD9604, verified 2026-11-09): C78H123N23O23S2, MW 1815.1, CAS 221231-10-3 - included here to document the distinction.",
+      "PMID 16625817 - Curr Opin Investig Drugs 7(4):312-8 (2006) - review of obesity drugs in clinical development; the fragment class is represented in this review by the MODIFIED analogue AOD-9604, not by the plain fragment. Of the compounds surveyed, only rimonabant had completed phase III. No DOI indexed."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "CAS registry number - none obtained during verification",
+      "Any clinical trial outcome for the plain fragment - none identified; the clinical development literature concerns the MODIFIED analogue AOD9604 instead",
+      "Discrimination from AOD9604 for any given lot - the two differ by about 44 g/mol and must be distinguished analytically",
+      "Disulfide bridge integrity - the formula contains two sulfur atoms; the reduced form is mass-shifted by only 2 units"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a verification component. The searcher wants to know what HGH Frag 176-191 is and how it differs from AOD9604.",
+    "primary_keyword": "H Frag",
+    "secondary_keywords": [
+      "HGH Frag 176-191",
+      "HGH fragment 176-191",
+      "hGH 176-191",
+      "H Frag molecular weight",
+      "H Frag vs AOD9604",
+      "growth hormone fragment"
+    ],
+    "long_tail_keywords": [
+      "what is HGH Frag 176-191",
+      "HGH fragment 176-191 vs AOD9604",
+      "HGH fragment molecular weight 1859",
+      "H Frag molecular formula C80H127N23O24S2",
+      "is HGH fragment 176-191 approved",
+      "HGH fragment clinical trials",
+      "HGH frag CAS number",
+      "does HGH fragment 176-191 work",
+      "HGH fragment vs somatropin",
+      "H Frag certificate of analysis"
+    ],
+    "semantic_terms": [
+      "human growth hormone",
+      "somatropin",
+      "C-terminal fragment",
+      "lipolysis",
+      "adipose tissue",
+      "insulin-like growth factor 1",
+      "structure-activity relationship",
+      "selectivity by truncation",
+      "modified analogue",
+      "disulfide bridge",
+      "free thiol",
+      "intact mass spectrometry",
+      "tandem mass spectrometry"
+    ],
+    "name_variations": [
+      "H Frag",
+      "HGH Frag 176-191",
+      "HGH fragment 176-191",
+      "hGH 176-191",
+      "AOD9604 is a DIFFERENT, modified molecule (MW approx 1815.1)",
+      "somatropin is the full 191-residue hormone"
+    ],
+    "informational_queries": [
+      "what is HGH Frag 176-191",
+      "H Frag vs AOD9604",
+      "does HGH fragment work",
+      "HGH fragment trials",
+      "is H Frag approved"
+    ],
+    "commercial_queries": [
+      "buy H Frag",
+      "HGH Frag 176-191 5mg",
+      "HGH fragment research peptide",
+      "H Frag COA"
+    ],
+    "cannibalisation_check": "Owns the plain hGH 176-191 fragment identity intent. /product/aod9604 owns the modified analogue and the discontinued-development-programme content, and states the distinction from the other side. GH-axis intent belongs to the secretagogue pages.",
+    "h1": "Driven by CMS name field; renders as \"H Frag\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/aod9604",
+        "anchor": "AOD9604",
+        "rationale": "Essential disambiguation and the location of the development-history content; the modified analogue about 44 g/mol lighter. Stated from both sides.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "Worked example where selectivity-by-truncation demonstrably works; the direct counterpoint to this fragment’s untested hypothesis.",
+        "verified": true
+      },
+      {
+        "route": "/product/sermorelin",
+        "anchor": "Sermorelin",
+        "rationale": "GH-axis compound with an actual regulatory history; useful contrast with a fragment having none.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "H Frag (hGH 176-191) | Plain Fragment, MW 1859.1 | Amino Based",
+    "seoDescription": "H Frag: hGH fragment 176-191, C80H127N23O24S2, MW 1859.1. Distinct from AOD9604 by about 44 g/mol. Research use only.",
+    "description": "H Frag is the human growth hormone fragment 176-191, a peptide corresponding to the C-terminal region of human growth hormone. Its molecular formula is C80H127N23O24S2, with a molecular weight of approximately 1859.1 g/mol (PubChem CID 172966176); no CAS registry number was obtained during verification. It is a distinct molecule from AOD9604, the modified analogue sold separately in this catalogue, which is approximately 44 g/mol lighter. It is not approved in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "H Frag: The Plain Fragment, and Why Its Identifiers Were Wrong Once Already",
+    "productDetailsDescription": "H Frag is the unmodified human growth hormone fragment spanning residues 176 to 191 — the C-terminal segment of the 191-residue hormone. Verified identifiers are molecular formula C80H127N23O24S2 and molecular weight approximately 1859.1 g/mol, recorded under PubChem CID 172966176 as HGH fragment 176-191. No CAS registry number was obtained during verification, and none is asserted here. The two sulfur atoms in the formula indicate a pair of cysteine residues.\n\nThis page has to begin with a correction, because transparency about it is more useful than a clean-looking datasheet. During verification of identifiers for this catalogue, a bulk database query for this product initially returned the record for AOD9604 — molecular formula C78H123N23O23S2, molecular weight approximately 1815.1 g/mol. That result was wrong. AOD9604 is a *modified* analogue of this fragment, not the fragment itself, and the two differ by roughly 44 g/mol: identical nitrogen and sulfur counts, differing by two carbons, four hydrogens and one oxygen. The error was caught by checking the returned record against the compound actually being looked up, and corrected to CID 172966176.\n\nRecording that matters for a practical reason. If an automated lookup silently substitutes the modified analogue's record for the plain fragment's, then any datasheet, listing or certificate assembled by automated lookup is liable to carry the same substitution. A document headed \"HGH Fragment 176-191\" quoting a molecular weight of 1815.1 is describing AOD9604, whatever its title says. Checking the quoted figure against the two values — 1859.1 for the plain fragment, 1815.1 for AOD9604 — detects this immediately, and is worth doing on any document accompanying either product.\n\nThe relationship between the two compounds also determines what evidence applies to this one, and here the honest answer is unflattering. The pharmacological rationale for this fragment class is that growth hormone's lipolytic activity — its promotion of fat breakdown — may reside in a discrete portion of the molecule, separable from the hormone's growth-promoting and glucose-metabolic effects. A fragment retaining the first while shedding the others would be a more targeted agent than the hormone. That hypothesis is coherent and was taken seriously enough to support a pharmaceutical development programme.\n\nBut that programme used the modified analogue, not the plain fragment. When a 2006 review of obesity drugs in clinical development covered this compound class, the compound it named was AOD-9604 (PMID 16625817). The modification exists precisely because the plain fragment was judged insufficient as a drug candidate — which is the usual reason a developer modifies a lead compound rather than taking it forward unchanged. So the clinical development history that is commonly invoked for \"HGH fragment\" belongs to a different molecule, and that molecule's programme itself produced no published efficacy result and no approved product, as the AOD9604 page in this catalogue sets out.\n\nThe position for this product is therefore straightforward and should not be dressed up: no completed clinical trial of the plain hGH 176-191 fragment was identified in the indexed literature. The mechanistic hypothesis is interesting, the modified analogue derived from it reached the clinic and did not emerge, and the plain fragment has less evidence behind it than the analogue does.\n\nA naming note. This compound appears as H Frag, HGH Frag 176-191, HGH fragment 176-191, hGH 176-191, and sometimes simply as \"fragment\" or \"frag\". AOD9604 is the modified analogue and a distinct molecule. Somatropin, recombinant human growth hormone, is the full 191-residue protein, is an approved medicine for defined indications, and bears no useful resemblance to a 16-residue fragment in size, properties or regulatory status — the shared \"growth hormone\" terminology is the only thing connecting them.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 5 mg presentation.",
+    "researchFocusTitle": "A Hypothesis Worth Testing, With the Evidence Attached to a Different Molecule",
+    "researchFocusDescription": "The research position for the plain fragment is best described by separating three things that marketing routinely merges: the biology of growth hormone, the development history of the modified analogue, and the evidence for this specific peptide.\n\nThe biology of growth hormone is well established and not in dispute. Growth hormone is a 191-residue protein with a broad range of effects: it promotes linear growth and tissue anabolism largely through induction of insulin-like growth factor 1, it influences glucose metabolism in ways that can oppose insulin action, and it promotes lipolysis in adipose tissue. That breadth is exactly what makes the whole hormone unsuitable as a weight-loss agent — the metabolic and growth-promoting effects come along with the lipolytic one.\n\nThe structure-activity hypothesis follows naturally and is genuinely interesting: if the lipolytic activity maps to a discrete region of the molecule, a peptide comprising only that region might reproduce fat breakdown without the rest. This is a legitimate question in peptide pharmacology, and it has real precedent in both directions. Elsewhere in this catalogue, KPV — a three-residue fragment of a thirteen-residue hormone — retains an anti-inflammatory effect while shedding the parent's pigmentation activity, demonstrating that selectivity-by-truncation can work. Other fragments fail to reproduce their parents' effects, or act by different mechanisms. Which outcome applies to a given fragment is an empirical question that cannot be settled by reasoning from the parent hormone.\n\nFor this fragment, that empirical question has not been answered in the published literature. No completed clinical trial of the plain hGH 176-191 fragment was identified in the indexed record.\n\nWhat exists instead is the development history of the modified analogue, and the way that history bears on this product is worth spelling out because the inference usually runs the wrong way. When a 2006 review surveyed obesity compounds in clinical development, the fragment-class entry was AOD-9604 — the modified molecule (PMID 16625817). A developer who modifies a lead compound and takes the modified version into trials is, by that act, indicating that the unmodified version was judged inadequate: typically for stability, potency, or pharmacokinetic reasons. So the existence of AOD9604 is itself weak evidence *against* the plain fragment being the better candidate, rather than evidence in favour of fragments generally.\n\nAnd the modified analogue's own history is not a success story. No publication reporting a completed AOD9604 efficacy trial appears in the indexed literature, the compound is approved nowhere, and secondary sources report that its phase IIb trial failed to separate from placebo and that the programme was terminated in 2007. The full chain is therefore: an interesting hypothesis, a plain fragment judged insufficient to develop, a modified analogue developed instead, and that analogue discontinued without a published positive result. Material promoting the plain fragment on the strength of \"clinical research into HGH fragments\" is drawing on that chain while omitting how it ends.\n\nThe limitations, stated plainly: there is no clinical trial evidence for this specific peptide; the development-stage evidence concerns a different molecule; that molecule's programme produced no published efficacy result and no approval; and the fragment-retains-parent-activity assumption is a hypothesis rather than a finding for this particular fragment.\n\nFor a laboratory, this nonetheless describes a reasonable and tractable piece of work rather than a dead end. The structure-activity question is real, and this catalogue happens to contain both members of the relevant comparison pair — the plain fragment and the modified analogue — with a defined 44 g/mol structural difference and readily distinguishable masses. Comparative lipolysis assays in adipocyte culture, run on correctly identified material from both vials with appropriate controls, would address directly what two decades of marketing has asserted without evidence: whether either fragment does what the parent hormone's lipolytic activity would suggest, and whether the modification makes a difference. That is a well-posed experiment with a clear readout, and it is more interesting than the compound's commercial narrative.",
+    "qualityPurityTitle": "Analytical Verification: Confirming This Is Not the Other Fragment",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation is against the verified molecular formula C80H127N23O24S2 and molecular weight of approximately 1859.1 g/mol (PubChem CID 172966176). No CAS registry number was obtained during verification, so a certificate quoting a CAS number for this compound should be checked rather than assumed — and in particular, a certificate quoting CAS 221231-10-3 is quoting AOD9604's registry number, which identifies a different molecule.\n\nThe primary check is discrimination from AOD9604, and it is reassuringly simple. The modified analogue is approximately 1815.1 g/mol; this fragment is approximately 1859.1. A difference of about 44 g/mol, roughly 2.4 per cent, is comfortably resolved by ordinary intact mass spectrometry at this mass. So a certificate that reports an observed mass numerically settles the question outright. Conversely, a certificate that reports only a purity percentage and a compound name establishes nothing about which of the two molecules is present — and given that an automated lookup for this product returned the wrong record during verification of this catalogue, the possibility of a document describing the wrong molecule is demonstrated rather than hypothetical.\n\nDisulfide integrity is the second check. The formula contains two sulfur atoms, indicating two cysteine residues. Reduction of a disulfide adds two hydrogens, so the reduced form is heavier by only 2 mass units out of 1,859 — about 0.1 per cent, well within the tolerance of a loosely specified intact-mass measurement. Where the bridged form is intended, confirming it requires accurate mass with the 2-unit distinction explicitly addressed, a free-thiol assay such as Ellman's reagent, or chromatographic separation of reduced from oxidised forms. The companion question is dimerisation: a free thiol on one molecule can pair with another to give intermolecular disulfide dimers at roughly twice the monomer mass, which are not detected by a purity figure reported without reference to the high-mass region.\n\nSequence confirmation by tandem mass spectrometry fragmentation is worth requesting. At around 16 residues, a single-residue substitution or deletion is a small proportional mass change, and sequence data is what distinguishes a correct preparation of this fragment from a related fragment of different boundaries. Fragments are defined by their residue range, and a preparation spanning slightly different residues would be a different peptide.\n\nPurity assessment by reverse-phase chromatography is appropriate, and the impurity classes to expect are deletion sequences, truncated chains, the reduced monomer, and disulfide dimers. Because the related marketed compound differs by a structural modification, the presence of modified material within a plain-fragment preparation is also a plausible cross-contamination route where a supplier produces both.\n\nThe salt-form question applies as usual, and lyophilised mass is not peptide content: a vial labelled 5 mg may contain counter-ions and residual water, and unless content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: No Trial Evidence, and a Development History Belonging to Another Molecule",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nH Frag is not an approved medicine. The human growth hormone fragment 176-191 has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. No completed clinical trial of this fragment was identified in the PubMed-indexed literature.\n\nOne point of attribution requires emphasis, because claims about this product routinely borrow evidence that does not belong to it. The clinical development history commonly invoked for \"HGH fragment\" concerns AOD9604, a *modified* analogue and a chemically distinct molecule approximately 44 g/mol lighter. When a 2006 review surveyed obesity compounds then in clinical development, the compound it named in this class was AOD-9604, not the plain fragment. The existence of that modified analogue indicates that the unmodified fragment was judged insufficient to develop, which is the ordinary reason a developer modifies a lead rather than advancing it unchanged. And the analogue's own programme produced no published efficacy result and no approved product, with secondary sources reporting that its phase IIb trial failed to separate from placebo and that development ended in 2007.\n\nSo the chain of evidence invoked for this product is: an interesting structure-activity hypothesis, a plain fragment not taken into development, a modified analogue developed in its place, and that analogue discontinued without a published positive result. Material promoting this fragment on the strength of clinical research into growth hormone fragments is relying on that chain while omitting its conclusion.\n\nA further point concerns the parent hormone. Recombinant human growth hormone, somatropin, is an approved medicine for defined indications. It is a 191-residue protein, and a 16-residue fragment of it is a different substance with different properties and no approval anywhere. Nothing about somatropin's regulatory status or clinical evidence transfers to this material.\n\nNothing on this page suggests that this material is suitable for addressing obesity, weight loss, body composition, fat metabolism, growth disorders or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is H Frag?",
+        "answer": "H Frag is the unmodified human growth hormone fragment spanning residues 176 to 191 — the C-terminal segment of the 191-residue hormone. Verified identifiers are molecular formula C80H127N23O24S2 and molecular weight approximately 1859.1 g/mol, PubChem CID 172966176. No CAS registry number was obtained during verification, and none is asserted here. The two sulfur atoms indicate a pair of cysteine residues."
+      },
+      {
+        "question": "How does it differ from AOD9604?",
+        "answer": "AOD9604 is a modified analogue of this fragment and a chemically distinct molecule about 44 g/mol lighter: C78H123N23O23S2 at approximately 1815.1 g/mol versus C80H127N23O24S2 at approximately 1859.1. Identical nitrogen and sulfur counts, differing by two carbons, four hydrogens and one oxygen. A difference of 2.4 per cent is comfortably resolved by ordinary intact mass spectrometry."
+      },
+      {
+        "question": "Were this product’s identifiers ever wrong?",
+        "answer": "Yes, and it is more useful to say so than to present a clean datasheet. During verification for this catalogue, a bulk database query for this product returned the AOD9604 record instead — molecular weight 1815.1. The error was caught by checking the returned record against the compound being looked up, and corrected to CID 172966176. A document headed \"HGH Fragment 176-191\" quoting 1815.1 is describing AOD9604 whatever its title says."
+      },
+      {
+        "question": "Has the plain fragment been tested clinically?",
+        "answer": "No completed clinical trial of the plain hGH 176-191 fragment was identified in the PubMed-indexed literature. The clinical development literature in this compound class concerns the modified analogue AOD9604 instead — when a 2006 review surveyed obesity compounds then in development, the compound it named was AOD-9604, not the plain fragment."
+      },
+      {
+        "question": "What does the existence of AOD9604 tell you?",
+        "answer": "Something that usually gets inferred backwards. A developer who modifies a lead compound and takes the modified version into trials is indicating that the unmodified version was judged inadequate — typically on stability, potency or pharmacokinetic grounds. So AOD9604’s existence is weak evidence *against* the plain fragment being the better candidate, not evidence in favour of fragments generally."
+      },
+      {
+        "question": "What is the full evidence chain for this product?",
+        "answer": "An interesting structure-activity hypothesis; a plain fragment not taken into development; a modified analogue developed in its place; and that analogue discontinued without a published positive efficacy result, with secondary sources reporting its phase IIb trial failed to separate from placebo and development ended in 2007. Material promoting this fragment on the strength of \"clinical research into HGH fragments\" relies on that chain while omitting how it ends."
+      },
+      {
+        "question": "Is the underlying hypothesis reasonable?",
+        "answer": "Yes, genuinely. Growth hormone promotes lipolysis alongside growth and glucose effects, and if the lipolytic activity maps to a discrete region, a peptide comprising only that region might reproduce fat breakdown without the rest. There is precedent both ways: KPV elsewhere in this catalogue is a three-residue fragment that retains an anti-inflammatory effect while shedding its parent’s pigmentation activity. Which outcome applies to a given fragment is empirical."
+      },
+      {
+        "question": "Does somatropin’s approval mean anything for this product?",
+        "answer": "No. Recombinant human growth hormone, somatropin, is an approved medicine for defined indications — and it is a 191-residue protein. A 16-residue fragment is a different substance with different properties and no approval anywhere. The shared \"growth hormone\" terminology is the only thing connecting them, and nothing about somatropin’s regulatory status or clinical evidence transfers."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "An observed mass reported numerically, since that alone distinguishes this fragment (1859.1) from AOD9604 (1815.1). Check any quoted CAS number too — CAS 221231-10-3 is AOD9604’s, identifying a different molecule, and no CAS was obtained for this fragment. Also disulfide status, dimer content, and ideally sequence confirmation by tandem MS, since fragments are defined by residue range and a slightly different span is a different peptide."
+      },
+      {
+        "question": "Is there a worthwhile experiment here?",
+        "answer": "Yes, and this catalogue happens to hold both halves of it. Comparative lipolysis assays in adipocyte culture, run on correctly identified material from both the plain-fragment and AOD9604 vials with proper controls, would directly address what two decades of marketing has asserted without evidence: whether either fragment does what the parent hormone’s lipolytic activity suggests, and whether the modification matters. Well-posed, clear readout."
+      }
+    ]
+  }
+}

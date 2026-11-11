@@ -1,0 +1,217 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Multi-component product. Both component identities are individually verified; the per-component ratio is supplier-specified and NOT VERIFIED.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "semax-selank-blend",
+    "qc": {
+      "main_content_words": 2091,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in the US or EU. Both components are registered and clinically used in Russia, individually. The combination is not approved anywhere.",
+    "blend": true,
+    "variants_from_csv": [
+      {
+        "variant": "10mg/10mg",
+        "price_usd": "76.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg/10mg",
+        "source_file": "Semax - Selank Blend 10mg-10mg.png",
+        "upload_as": "amino-semax-selank-blend-10mg-10mg.png"
+      }
+    ],
+    "component_identities": {
+      "semax": "VERIFIED - PubChem CID 9811102: C37H51N9O10S, MW 813.9, CAS 80714-61-0",
+      "selank": "VERIFIED - PubChem CID 11765600: C33H57N11O9, MW 751.9, CAS 129954-34-3"
+    },
+    "references": [
+      "PMID 32342318 doi:10.1134/S001249662001007X - Dokl Biol Sci 2020 - resting-state fMRI in 52 healthy participants; Selank AND Semax vs placebo; both general and compound-specific effects on amygdala-temporal connectivity",
+      "PMID 28255762 doi:10.1007/s00438-017-1297-1 - Mol Genet Genomics 2017 - Semax transcriptome in rat cerebral ischaemia; Pro-Gly-Pro studied separately and shown to be pharmacologically active in its own right"
+    ],
+    "unverified": [
+      "Per-component ratio within the vial - supplier-specified, not measured",
+      "Total Pro-Gly-Pro load - both components carry the same C-terminal tripeptide, so a blend delivers roughly double the PGP of either alone. Not stated by the supplier and not measured.",
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what the blend contains, whether combining is justified, and what evidence exists.",
+    "primary_keyword": "Semax Selank blend",
+    "secondary_keywords": [
+      "Semax and Selank",
+      "Semax Selank stack",
+      "nootropic peptide blend",
+      "Semax Selank 10mg",
+      "Pro-Gly-Pro peptides"
+    ],
+    "long_tail_keywords": [
+      "what is Semax Selank blend",
+      "should Semax and Selank be combined",
+      "Semax Selank evidence",
+      "Semax vs Selank difference",
+      "Pro-Gly-Pro double dose blend",
+      "Semax Selank molecular weight",
+      "is Semax Selank approved",
+      "Semax Selank certificate of analysis",
+      "Semax Selank human study",
+      "Semax Selank ratio"
+    ],
+    "semantic_terms": [
+      "Pro-Gly-Pro",
+      "ACTH fragment",
+      "tuftsin",
+      "functional connectivity",
+      "amygdala",
+      "resting-state fMRI",
+      "methionine oxidation",
+      "per-component quantitation",
+      "mass resolution",
+      "ion-pairing"
+    ],
+    "name_variations": [
+      "Semax + Selank Blend",
+      "Semax / Selank",
+      "Semax Selank stack"
+    ],
+    "informational_queries": [
+      "what is Semax Selank blend",
+      "Semax and Selank together",
+      "Semax Selank evidence",
+      "should I combine Semax and Selank",
+      "Semax Selank mechanism"
+    ],
+    "commercial_queries": [
+      "buy Semax Selank blend",
+      "Semax Selank 10mg 10mg",
+      "Semax Selank COA"
+    ],
+    "cannibalisation_check": "Owns the Semax-plus-Selank combination intent. /product/semax and /product/selank own their molecules and their individual identity content; this page links there rather than restating it.",
+    "h1": "Driven by CMS name field; renders as \"Semax + Selank Blend\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/semax",
+        "anchor": "Semax",
+        "rationale": "Verified component; needed as an experimental control.",
+        "verified": true
+      },
+      {
+        "route": "/product/selank",
+        "anchor": "Selank",
+        "rationale": "Verified component; needed as an experimental control.",
+        "verified": true
+      },
+      {
+        "route": "/product/dihexa",
+        "anchor": "Dihexa",
+        "rationale": "Other cognition-focused compound in the catalogue, acting by a different mechanism.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Semax + Selank Blend | Two Pro-Gly-Pro Peptides | Amino Based",
+    "seoDescription": "Semax + Selank: two-component preparation of ACTH(4-7)-PGP and tuftsin-PGP. Component identities verified, ratio unverified. Research use only.",
+    "description": "This is a two-component preparation combining Semax (C37H51N9O10S, MW approximately 813.9, CAS 80714-61-0) with Selank (C33H57N11O9, MW approximately 751.9, CAS 129954-34-3). Both are built on the same architecture — a short active fragment joined to a Pro-Gly-Pro stabilising tail — and both have been studied together in published human imaging work. No single molecular formula exists for a blended product. Research use only.",
+    "productDetailsTitle": "Two Peptides Sharing One Structural Motif",
+    "productDetailsDescription": "This preparation contains two distinct peptides whose identities are both independently verified, which makes it analytically more tractable than most blends and leaves the ratio as the principal open question.\n\nSemax is a heptapeptide consisting of residues 4-7 of adrenocorticotropic hormone joined to the tripeptide Pro-Gly-Pro. Its verified identifiers are a molecular formula of C37H51N9O10S, a molecular weight of approximately 813.9 g/mol and CAS registry number 80714-61-0, under PubChem CID 9811102.\n\nSelank is a heptapeptide consisting of the immunoglobulin-derived tetrapeptide tuftsin joined to the identical Pro-Gly-Pro tripeptide. Its verified identifiers are a molecular formula of C33H57N11O9, a molecular weight of approximately 751.9 g/mol and CAS registry number 129954-34-3, under PubChem CID 11765600.\n\nThe shared Pro-Gly-Pro motif is what makes this particular pairing structurally coherent rather than arbitrary, and it introduces a consideration specific to blending these two compounds that is worth stating plainly. Both components carry the same C-terminal tripeptide, so a preparation containing both delivers roughly twice the Pro-Gly-Pro load of either component administered alone at the same molar quantity. That would be unremarkable if the tail were inert. It is not: published work examining Pro-Gly-Pro separately reports that it attenuates immune activity and suppresses neurotransmission in the central nervous system. A blend therefore increases exposure to a pharmacologically active element shared by both components, and this page records the total Pro-Gly-Pro load as unverified because no supplier states it.\n\nThe two components differ in mass by approximately 62 Da, which is a modest separation. That has analytical consequences discussed in the verification section below, and it is a meaningful contrast with the growth hormone blends in this catalogue, where components differ by thousands of daltons and separate trivially.\n\nSelank contains no sulfur, reflecting the absence of methionine and cysteine from both tuftsin and the tail. Semax contains a single sulfur atom, from the methionine in its ACTH fragment. That difference is chemically useful: the two components have genuinely different degradation susceptibilities, with Semax vulnerable to methionine oxidation and Selank not. In a mixed preparation, the more fragile component sets the effective handling requirement.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in a nominal 10 mg/10 mg presentation, understood to refer to each component.",
+    "researchFocusTitle": "Studied Together, but Not as a Blend",
+    "researchFocusDescription": "The research position for this preparation is unusual and favourable in one specific respect: its two components have been examined in the same published human study, which is more than can be said for most combinations.\n\nA study in Doklady Biological Sciences assessed the effects of both Selank and Semax on whole-brain resting-state functional connectivity in 52 healthy participants, using the amygdala and dorsolateral prefrontal cortex as predefined regions of interest, with functional MRI before injection and at five and twenty minutes afterwards, against placebo. The investigators reported between-group and between-condition differences in connectivity between the right amygdala and a region spanning fusiform, inferior and middle temporal and parahippocampal gyri, and stated that post hoc analysis allowed both general and compound-specific effects of the two peptides on that connectivity to be defined for the first time (PMID 32342318, doi:10.1134/S001249662001007X).\n\nThat phrasing deserves attention because it is directly relevant to the rationale for a blend. The study distinguished general effects — those common to both compounds — from compound-specific ones. Shared effects are consistent with the shared structural element, the Pro-Gly-Pro tail; divergent effects point to the differing active fragments. A study that separates the two is far more informative than one reporting that both compounds \"work\", and it provides a published basis for asking what combining them would be expected to do.\n\nBut the crucial limitation must be stated clearly: that study administered the compounds separately, not as a blend. It compared them; it did not combine them. No published work supporting this page examines Semax and Selank administered together, and the combination has not been evaluated by any regulator. The step from \"both compounds produce measurable effects individually, some shared and some distinct\" to \"the blend does something useful\" is an assumption, and the assumption is harder to defend here than for combinations acting on clearly separate receptor systems, because these two compounds share a structural element and may share part of their activity.\n\nThat shared element raises a question that cuts against the usual blend rationale. Combinations are generally justified by complementary mechanisms engaging different targets. Here the two components partially overlap by construction, and the overlapping portion is itself pharmacologically active: published work reports that Pro-Gly-Pro alone attenuates immune activity and suppresses neurotransmission (PMID 28255762, doi:10.1007/s00438-017-1297-1). A blend therefore delivers a larger dose of a shared active element alongside two different active fragments, which is a more complicated pharmacological situation than combining two unrelated agents, and not obviously a better one.\n\nThere is also a dosing-logic question that a blended presentation forecloses. The two components were developed for different stated purposes and have been investigated in different contexts, so there is no reason to assume that whatever quantity of each is appropriate for one purpose stands in any fixed relationship to the quantity appropriate for the other. A fixed-ratio preparation imposes exactly such a relationship by construction, and it cannot be varied without abandoning the product. For an experiment in which the relative contribution of the two components is itself a variable of interest, a fixed blend is the wrong tool regardless of whether the ratio chosen happens to be reasonable.\n\nThe limitations otherwise follow those of the components. The literature is heavily concentrated in one research tradition, limiting independent replication. The human study measured functional connectivity in healthy participants over twenty minutes — a biological endpoint, not a cognitive or clinical one. Most mechanistic work is in rodent models. And both components are registered medicines in Russia only, while the combination is registered nowhere.\n\nFor laboratory work, the correct design is the obvious one and is feasible with this catalogue: compare the blend against each component alone and, ideally, against Pro-Gly-Pro alone. Only that design can distinguish a genuine combination effect from the sum of two individual effects plus a doubled tail exposure.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nA certificate describing one component says nothing about the other, and a single combined purity percentage covering a two-component preparation is not interpretable: the two intended components are not impurities in each other, but anything else present is. What is required is identity and purity for each component separately, plus per-component quantitation establishing the ratio.\n\nIdentity for each component is by mass spectrometry against its calculated value: approximately 813.9 Da for Semax and approximately 751.9 Da for Selank. The separation between them is approximately 62 Da, which is modest. For comparison, the tesamorelin and ipamorelin blend in this catalogue has components separated by more than 4,000 Da, where confusion is impossible. Sixty-two daltons is readily resolved by a competent high-resolution instrument but is close enough that method resolution should be stated rather than assumed, and a low-resolution measurement reporting a single averaged figure would be uninformative about composition.\n\nPer-component quantitation is the measurement most often omitted and the one that determines what the preparation actually is. A label stating 10 mg/10 mg is a manufacturing claim until measured.\n\nThe two components have different degradation susceptibilities, which has a practical consequence for a mixed preparation. Semax contains a methionine — its only sulfur atom — and is therefore vulnerable to oxidation, which adds 16 Da and produces a distinct chemical entity whose activity should not be assumed equivalent. Selank contains neither methionine nor cysteine and is not susceptible to that route. In a blend the more fragile component sets the effective requirement, so a certificate should address oxidation of the Semax component specifically. An oxidised Semax satellite peak at approximately 830 Da would sit between the two parent masses, which is a further reason to want the full spectrum rather than a summary.\n\nBoth components are cationic, containing lysine and in Selank's case arginine as well, so ion-pairing conditions materially affect reverse-phase retention and peak shape for both. Purity figures should be read together with the method.\n\nLyophilised mass is also not peptide content: a vial may contain counter-ions and residual water alongside both peptides.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Components Registered Abroad, Combination Nowhere",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nBoth components of this preparation are registered and clinically used in Russia — Semax in ischaemic stroke and Selank as an anxiolytic. Neither has been approved by the United States Food and Drug Administration, by the European Medicines Agency, or by other major regulatory authorities, for any indication.\n\nThe combination has not been approved or evaluated by any regulatory authority anywhere, including in the jurisdiction where its components are registered. This is the point most at risk of being obscured. Registration of two substances individually is not registration of a preparation containing both: regulators assess specific products, and a combination is a different product from either component. Describing this preparation as containing \"clinically approved\" compounds, without stating where they are approved and that the combination is not, would be misleading on two counts simultaneously.\n\nSafety information about two substances administered separately does not establish the safety of administering them together. That general principle has a specific application here: both components carry the same Pro-Gly-Pro tail, which published work indicates is pharmacologically active in its own right, so a blend increases exposure to a shared active element rather than simply combining two distinct agents. The total Pro-Gly-Pro load of this preparation is not stated by the supplier and is not independently verified.\n\nThe human study referenced above administered the compounds separately rather than as a blend, measured functional connectivity on brain imaging in healthy participants over twenty minutes, and is not an assessment of this preparation or of this material.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is in this product?",
+        "answer": "Two peptides with individually verified identities. Semax: ACTH(4-7) joined to Pro-Gly-Pro, C37H51N9O10S, molecular weight approximately 813.9 g/mol, CAS 80714-61-0. Selank: tuftsin joined to the identical Pro-Gly-Pro tail, C33H57N11O9, molecular weight approximately 751.9 g/mol, CAS 129954-34-3. Being a blend, the product has no single molecular formula of its own."
+      },
+      {
+        "question": "Why are these two compounds paired?",
+        "answer": "They share a structural architecture: each is a short active fragment joined to the same Pro-Gly-Pro stabilising tail, and both emerged from the same Russian research tradition. They have also been examined together in published human imaging work, which is more than can be said for most combinations — though that study administered them separately rather than as a blend."
+      },
+      {
+        "question": "Does the shared Pro-Gly-Pro tail matter?",
+        "answer": "Yes, and it is the most important and least discussed feature of this blend. Both components carry the same C-terminal tripeptide, so a preparation containing both delivers roughly twice the Pro-Gly-Pro load of either alone at the same molar quantity. That would be unremarkable if the tail were inert, but published work reports that Pro-Gly-Pro alone attenuates immune activity and suppresses neurotransmission in the central nervous system."
+      },
+      {
+        "question": "Is there evidence for the combination specifically?",
+        "answer": "No. The human imaging study compared the two compounds; it did not combine them. No published work supporting this page examines Semax and Selank administered together. The step from \"both produce measurable effects individually\" to \"the blend does something useful\" is an assumption, and a harder one to defend than for combinations acting on clearly separate receptor systems."
+      },
+      {
+        "question": "What did the human study actually find?",
+        "answer": "In 52 healthy participants with resting-state fMRI before injection and at five and twenty minutes afterwards, against placebo, it reported differences in connectivity between the right amygdala and a right-hemisphere temporal region, and distinguished general effects common to both compounds from compound-specific ones. Shared effects are consistent with the shared tail; divergent effects point to the differing active fragments."
+      },
+      {
+        "question": "Does combining them make scientific sense?",
+        "answer": "It is more complicated than the usual blend rationale allows. Combinations are generally justified by complementary mechanisms engaging different targets. Here the components partially overlap by construction, and the overlapping portion is itself pharmacologically active. A blend delivers a larger dose of a shared active element alongside two different active fragments — a more complicated situation than combining unrelated agents, and not obviously a better one."
+      },
+      {
+        "question": "How hard is it to tell the components apart analytically?",
+        "answer": "Harder than for most blends in this catalogue. The components differ by approximately 62 Da. For comparison, the tesamorelin and ipamorelin blend has components separated by more than 4,000 Da, where confusion is impossible. Sixty-two daltons is readily resolved by a competent high-resolution instrument but close enough that method resolution should be stated rather than assumed."
+      },
+      {
+        "question": "Do the two components degrade differently?",
+        "answer": "Yes, and in a mixed preparation the more fragile one sets the handling requirement. Semax contains a methionine — its only sulfur atom — making it vulnerable to oxidation, which adds 16 Da and produces a distinct chemical entity. Selank contains neither methionine nor cysteine and is not susceptible to that route. A certificate should address oxidation of the Semax component specifically."
+      },
+      {
+        "question": "Are these compounds approved?",
+        "answer": "The components are registered and clinically used in Russia — Semax in ischaemic stroke, Selank as an anxiolytic — and are not approved by the FDA, EMA or other major authorities. The combination is approved nowhere, including in Russia. Registration of two substances individually is not registration of a preparation containing both; regulators assess specific products."
+      },
+      {
+        "question": "How should an experiment with this blend be designed?",
+        "answer": "Against its parts. Compare the blend with each component alone and, ideally, with Pro-Gly-Pro alone. Only that design distinguishes a genuine combination effect from the sum of two individual effects plus a doubled tail exposure. Because this catalogue carries both components separately with verified identities, that comparison is feasible rather than merely advisable."
+      }
+    ]
+  }
+}

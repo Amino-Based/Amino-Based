@@ -1,0 +1,224 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "ss-31",
+    "qc": {
+      "main_content_words": 2051,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED. Elamipretide has been studied in clinical trials but is not an approved medicine.",
+    "variants_from_csv": [
+      {
+        "variant": "10mg",
+        "price_usd": "71.49"
+      },
+      {
+        "variant": "50mg",
+        "price_usd": "131.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "10mg",
+        "source_file": "SS-31 10mg.png",
+        "upload_as": "amino-ss-31-10mg.png"
+      },
+      {
+        "variant": "50mg",
+        "source_file": "SS-31 50mg.png",
+        "upload_as": "amino-ss-31-50mg.png"
+      }
+    ],
+    "references": [
+      "PubChem CID 11764719 (PUG REST, verified 2026-11-09): C32H49N9O5, MW 639.8; CAS 736992-21-5 (elamipretide)",
+      "PMID 23813215 doi:10.1681/ASN.2012121216 - J Am Soc Nephrol - SS-31 binds cardiolipin with high affinity; protects cristae membranes; inhibits cytochrome c peroxidase activity by protecting its heme iron; renal ischaemia model in rats",
+      "PMID 32554501 doi:10.1073/pnas.2002250117 - PNAS - mitochondrial protein interaction landscape of SS-31 by chemical cross-linking mass spectrometry; interactors are known cardiolipin binders in oxidative phosphorylation and 2-oxoglutarate metabolism"
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to understand the cardiolipin mechanism and the difference between trials and approval.",
+    "primary_keyword": "SS-31",
+    "secondary_keywords": [
+      "elamipretide",
+      "MTP-131",
+      "mitochondria targeted peptide",
+      "cardiolipin binding peptide",
+      "SS-31 molecular weight"
+    ],
+    "long_tail_keywords": [
+      "what is SS-31 elamipretide",
+      "SS-31 cardiolipin mechanism",
+      "is elamipretide approved",
+      "SS-31 molecular formula C32H49N9O5",
+      "SS-31 CAS 736992-21-5",
+      "is SS-31 an antioxidant",
+      "SS-31 cristae protection ischaemia",
+      "SS-31 mitochondrial interactome",
+      "SS-31 vs MOTS-c",
+      "SS-31 salt form molar calculation"
+    ],
+    "semantic_terms": [
+      "cardiolipin",
+      "inner mitochondrial membrane",
+      "cristae",
+      "oxidative phosphorylation",
+      "cytochrome c peroxidase",
+      "heme iron",
+      "lipid peroxidation",
+      "ischaemia-reperfusion",
+      "ATP recovery",
+      "cross-linking mass spectrometry",
+      "2-oxoglutarate",
+      "dimethyltyrosine"
+    ],
+    "name_variations": [
+      "SS-31",
+      "elamipretide",
+      "MTP-131",
+      "Bendavia",
+      "SS31"
+    ],
+    "informational_queries": [
+      "what is SS-31",
+      "SS-31 mechanism",
+      "is elamipretide approved",
+      "SS-31 vs MOTS-c",
+      "SS-31 mitochondria"
+    ],
+    "commercial_queries": [
+      "buy SS-31 research peptide",
+      "SS-31 10mg 50mg",
+      "elamipretide COA"
+    ],
+    "cannibalisation_check": "Owns SS-31, elamipretide and the cardiolipin/mitochondrial-targeting intent. /product/mots-c owns mitochondrial-derived peptides; /product/nad owns cellular energy cofactor intent. Distinct mechanisms, cross-linked.",
+    "h1": "Driven by CMS name field; renders as \"SS-31\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/mots-c",
+        "anchor": "MOTS-c",
+        "rationale": "The other mitochondria-focused compound; different mechanism, genuine research adjacency.",
+        "verified": true
+      },
+      {
+        "route": "/product/nad",
+        "anchor": "NAD+",
+        "rationale": "Cellular energy metabolism adjacency.",
+        "verified": true
+      },
+      {
+        "route": "/product/epitalon",
+        "anchor": "Epitalon",
+        "rationale": "Commonly researched alongside in ageing contexts.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "SS-31 (Elamipretide) | Mitochondria-Targeted Peptide | Amino Based",
+    "seoDescription": "SS-31 / elamipretide: cardiolipin-binding mitochondria-targeted tetrapeptide, C32H49N9O5, MW 639.8, CAS 736992-21-5. Research use only.",
+    "description": "SS-31, also known as elamipretide, is a synthetic tetrapeptide that accumulates in mitochondria and binds the inner-membrane phospholipid cardiolipin. Its molecular formula is C32H49N9O5, with a molecular weight of approximately 639.8 g/mol and CAS registry number 736992-21-5 (PubChem CID 11764719). It has been investigated in clinical trials for ischaemia-reperfusion injury and mitochondrial disease but is not an approved medicine. Research use only.",
+    "productDetailsTitle": "SS-31 (Elamipretide): A Tetrapeptide That Targets a Membrane Lipid",
+    "productDetailsDescription": "SS-31 is a synthetic tetrapeptide — only four residues — whose verified identifiers are a molecular formula of C32H49N9O5, a molecular weight of approximately 639.8 g/mol and CAS registry number 736992-21-5, recorded under PubChem CID 11764719. The international non-proprietary name is elamipretide, and the compound also appears as MTP-131 and Bendavia in the literature. At under 640 Da it is one of the smallest compounds in this catalogue.\n\nWhat distinguishes SS-31 is its target, which is not a receptor or an enzyme but a lipid. Cardiolipin is an anionic phospholipid found almost exclusively in the inner mitochondrial membrane, where it is required for the formation of cristae — the folded invaginations that vastly increase inner-membrane surface area and house the machinery of oxidative phosphorylation. A compound that binds cardiolipin therefore localises to the inner mitochondrial membrane by virtue of binding something that is only found there.\n\nThat is an unusual and elegant targeting strategy, and it is worth appreciating why. Most pharmacological targeting relies on molecular recognition of a protein, which requires the protein to be both specific to the intended location and accessible. Cardiolipin is a structural lipid with near-exclusive mitochondrial localisation, so binding it achieves subcellular targeting through lipid composition rather than protein recognition. The compound's alternating aromatic-cationic residue pattern, characteristic of the SS peptide series, is what enables both mitochondrial accumulation and the lipid interaction.\n\nThe mechanistic consequence is structural rather than catalytic, which is a genuine distinction. A study in the Journal of the American Society of Nephrology demonstrated using a polarity-sensitive fluorescent analogue that SS-31 binds cardiolipin with high affinity, and reported that the resulting complex inhibits cytochrome c peroxidase activity — the activity that catalyses cardiolipin peroxidation and causes mitochondrial damage during ischaemia — by protecting the heme iron of cytochrome c (PMID 23813215, doi:10.1681/ASN.2012121216). The compound does not supply energy or scavenge radicals in the manner of a conventional antioxidant; it stabilises membrane architecture and constrains a damaging enzymatic activity.\n\nA note on nomenclature for literature searching. This compound appears as SS-31, elamipretide, MTP-131 and Bendavia across the literature, with the SS designation originating from its development series. Searches using only one term will miss substantial material, and the clinical literature predominantly uses elamipretide.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 10 mg and 50 mg presentations.",
+    "researchFocusTitle": "Cardiolipin Binding, a Mapped Interactome, and Clinical Translation",
+    "researchFocusDescription": "SS-31 has an unusually well-specified mechanism for a research peptide, and the quality of the mechanistic work is the most useful thing about it.\n\nThe founding mechanistic observation concerns ischaemia. Ischaemic injury depletes cellular ATP, and rapid ATP recovery on reperfusion is important in limiting tissue damage. Recovery is often delayed because ischaemia destroys the mitochondrial cristae membranes required for ATP synthesis — the structural damage impairs the machinery, so restoring blood flow is not sufficient. The study in the Journal of the American Society of Nephrology reported that pretreatment with SS-31 protected cristae membranes during renal ischaemia and prevented mitochondrial swelling, with prompt ATP recovery on reperfusion leading to rapid repair of ATP-dependent processes including restoration of the actin cytoskeleton and cell polarity, inhibition of apoptosis, protection of tubular barrier function and mitigation of renal dysfunction (PMID 23813215, doi:10.1681/ASN.2012121216).\n\nThe logic of that chain is worth following because it is specific and testable at each step: bind cardiolipin, protect cristae structure, preserve ATP synthesis capacity, enable rapid ATP recovery, allow ATP-dependent repair processes to proceed. Each link is a measurable claim rather than an assertion of general benefit.\n\nSubsequent work extended the picture from a single lipid interaction to a mapped set of protein interactions. A study in the Proceedings of the National Academy of Sciences used chemical cross-linking with mass spectrometry to identify the mitochondrial protein interactors of SS-31, finding that they are all known cardiolipin binders falling into two groups: proteins involved in ATP production through the oxidative phosphorylation pathway, and proteins involved in 2-oxoglutarate metabolic processes. The residues cross-linked with SS-31 revealed binding regions that in many cases were proximal to cardiolipin-protein interacting regions (PMID 32554501, doi:10.1073/pnas.2002250117).\n\nThat result is methodologically satisfying because it is internally coherent: a compound that binds cardiolipin turns out to interact with proteins that themselves bind cardiolipin, at regions near their cardiolipin-interacting surfaces. The authors note that mechanistic details of the compound's pharmacological effects had been unknown despite demonstrated improvements in mitochondrial function, and frame the interactome as a step toward closing that gap.\n\nThere is a conceptual point in this work worth drawing out, because it distinguishes SS-31 from most compounds marketed for mitochondrial support. Conventional antioxidant strategies attempt to neutralise reactive species after they are generated, an approach that has repeatedly disappointed in clinical testing across many agents. SS-31 operates earlier in the causal chain: by binding cardiolipin and protecting the heme iron of cytochrome c, it constrains the peroxidase activity that generates the damage in the first place. Preventing a damaging reaction and scavenging its products are different interventions with different expected behaviour, and the failure of the latter class says little about the former. Whether that distinction translates into clinical benefit is unsettled, but it is a substantive mechanistic argument rather than a marketing one.\n\nThe clinical position should be stated carefully. Elamipretide has been studied in clinical trials, including in ischaemia-reperfusion injury, and the 2013 study describes it as then in trials for that indication. Clinical investigation is not approval, and the compound is not an approved medicine in any jurisdiction. A compound entering trials means a regulator permitted investigation, not that benefit was established; and in mitochondrial medicine specifically, translation from compelling preclinical mechanism to demonstrated clinical benefit has proven difficult across many candidates.\n\nThe limitations follow. Most mechanistic work is in animal models and isolated mitochondria. Cardiolipin is present in mitochondria of all tissues, so a cardiolipin-binding compound is inherently non-tissue-selective, which cuts both ways. The protective effects demonstrated are largely in contexts of acute injury where mitochondrial damage is the proximate problem; extrapolating to settings without that pathology is unsupported. And the 2-oxoglutarate metabolism interactions identified in the interactome study are not fully characterised functionally.\n\nFor laboratory work, SS-31 is one of the better-specified tools available: cardiolipin binding, cristae morphology, ATP recovery kinetics and the mapped interactome all provide defined, published endpoints to design against.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nIdentity confirmation by mass spectrometry compares observed mass against the calculated value of approximately 639.8 Da. At four residues this is a very short peptide, which makes the analysis straightforward in some respects and raises specific considerations in others.\n\nThe salt-form question is proportionally more consequential here than for almost anything else in this catalogue. At under 640 Da, an acetate or trifluoroacetate counter-ion represents a large fraction of the total mass of supplied material. A molar calculation performed with the free-peptide value on salt-form material will be wrong by a substantial margin, and the error scales inversely with molecular weight, so a mistake that would be minor for a 5 kDa peptide is major here. Confirm the form rather than assuming it.\n\nSS-31 contains non-standard residues characteristic of the SS peptide series, including a dimethylated tyrosine. Non-proteinogenic residues matter analytically for two reasons. First, they are what give the compound its properties, so a preparation in which a modification is absent or incorrect is a different compound with potentially no activity, despite being a peptide of the right approximate size. Second, they can complicate sequence confirmation methods developed around standard residues. Intact mass measurement addresses the first point directly, since an absent methyl group changes mass measurably.\n\nPurity assessment by reverse-phase chromatography establishes what proportion of the material is the target peptide. For a four-residue chain, single-residue deletions are a proportionally enormous structural change and are generally well resolved, so the chromatogram carries strong diagnostic value and a bare percentage discards it.\n\nThe compound is cationic, which affects reverse-phase retention and makes ion-pairing conditions material to the result. A purity figure should be read together with the mobile phase composition.\n\nLyophilised mass is also not peptide content: a vial labelled 50 mg may contain counter-ions and residual water, and unless peptide content has been determined specifically, the stated figure is a fill mass.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Clinical Investigation Is Not Approval",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nSS-31, as elamipretide, has been studied in clinical trials. It is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance.\n\nThe distinction between clinical investigation and approval is the point most at risk of being blurred for this compound, because the existence of trials is often presented as though it were a form of endorsement. It is not. A compound entering clinical trials means a regulator permitted investigation on the basis of preclinical data and a proposed protocol. It establishes neither efficacy nor safety, and trials may fail. In mitochondrial medicine specifically, translation from compelling preclinical mechanism to demonstrated clinical benefit has proven difficult across many candidates, and a well-characterised mechanism is not a substitute for an outcome.\n\nThe protective effects described in the research section were demonstrated predominantly in animal models of acute injury, in contexts where mitochondrial damage is the proximate pathology. They do not demonstrate safety in humans, do not demonstrate efficacy in humans, and provide no basis for extrapolation to settings without that pathology.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is SS-31?",
+        "answer": "SS-31, also called elamipretide, is a synthetic tetrapeptide that accumulates in mitochondria and binds cardiolipin, a phospholipid of the inner mitochondrial membrane. Verified identifiers are C32H49N9O5, molecular weight approximately 639.8 g/mol, CAS 736992-21-5, PubChem CID 11764719. It also appears as MTP-131 and Bendavia in the literature."
+      },
+      {
+        "question": "What is cardiolipin and why target it?",
+        "answer": "Cardiolipin is an anionic phospholipid found almost exclusively in the inner mitochondrial membrane, where it is required for cristae formation — the folds that house the oxidative phosphorylation machinery. Binding it achieves subcellular targeting through lipid composition rather than protein recognition, which is an unusual and elegant strategy: the compound localises to mitochondria by binding something found essentially nowhere else."
+      },
+      {
+        "question": "How does SS-31 work mechanistically?",
+        "answer": "Structurally rather than catalytically. It binds cardiolipin with high affinity, and the resulting complex inhibits cytochrome c peroxidase activity — which catalyses cardiolipin peroxidation and causes mitochondrial damage during ischaemia — by protecting the heme iron of cytochrome c. It does not supply energy or scavenge radicals like a conventional antioxidant; it stabilises membrane architecture and constrains a damaging enzymatic activity."
+      },
+      {
+        "question": "What did the ischaemia work actually show?",
+        "answer": "A specific chain. Ischaemia destroys cristae membranes needed for ATP synthesis, which is why ATP recovery on reperfusion is often delayed. Pretreatment with SS-31 protected cristae and prevented mitochondrial swelling in a rat renal ischaemia model; prompt ATP recovery then allowed rapid repair of ATP-dependent processes including actin cytoskeleton restoration and cell polarity, inhibited apoptosis, protected tubular barrier function and mitigated renal dysfunction."
+      },
+      {
+        "question": "What is the interactome study and why does it matter?",
+        "answer": "A PNAS study used chemical cross-linking with mass spectrometry to map SS-31’s mitochondrial protein interactors, finding they are all known cardiolipin binders in two groups: oxidative phosphorylation proteins and 2-oxoglutarate metabolism proteins, with binding regions often proximal to their cardiolipin-interacting surfaces. It is internally coherent — a cardiolipin-binding compound interacting with cardiolipin-binding proteins near their lipid-binding regions."
+      },
+      {
+        "question": "Is SS-31 approved?",
+        "answer": "No. It has been studied in clinical trials, including for ischaemia-reperfusion injury, but clinical investigation is not approval. A compound entering trials means a regulator permitted investigation on preclinical data and a protocol; it establishes neither efficacy nor safety, and trials may fail. It is not approved by any authority in any jurisdiction."
+      },
+      {
+        "question": "Is SS-31 an antioxidant?",
+        "answer": "Not in the conventional sense, and the distinction is mechanistically important. It does not scavenge free radicals directly. It binds cardiolipin and inhibits cytochrome c peroxidase activity by protecting heme iron, which prevents cardiolipin peroxidation from occurring rather than neutralising its products. Preventing a damaging reaction and mopping up its consequences are different interventions."
+      },
+      {
+        "question": "Why does salt form matter so much for this compound?",
+        "answer": "Because it is very small. At under 640 Da, an acetate or trifluoroacetate counter-ion is a large fraction of the total mass of supplied material, so a molar calculation using the free-peptide value on salt-form material is wrong by a substantial margin. The error scales inversely with molecular weight, meaning a mistake that would be trivial for a 5 kDa peptide is major here."
+      },
+      {
+        "question": "What are the non-standard residues and why do they matter?",
+        "answer": "SS-31 contains non-proteinogenic residues characteristic of the SS series, including a dimethylated tyrosine, within an alternating aromatic-cationic pattern that enables mitochondrial accumulation and lipid interaction. They matter because they are what give the compound its properties: a preparation with an absent or incorrect modification is a different compound with potentially no activity, despite being a peptide of roughly the right size. An absent methyl group changes mass measurably."
+      },
+      {
+        "question": "What are the main limitations of the evidence?",
+        "answer": "Most mechanistic work is in animal models and isolated mitochondria. Cardiolipin is present in mitochondria of all tissues, so the compound is inherently non-tissue-selective. The demonstrated protective effects are largely in acute injury contexts where mitochondrial damage is the proximate problem, and extrapolating to settings without that pathology is unsupported. The 2-oxoglutarate metabolism interactions are not fully characterised functionally."
+      }
+    ]
+  }
+}

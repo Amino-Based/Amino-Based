@@ -1,0 +1,307 @@
+{
+  "$comment": [
+    "Per-product publication allowlist for scripts/import-generated-products.ts.",
+    "A product is written ONLY if its slug appears in approvedSlugs AND its generated",
+    "status is not BLOCKED. Structural validity of the JSON is not approval: approval",
+    "means a human has completed factual and compliance review of that product's copy.",
+    "Add a slug only after that review. Blocked slugs are refused even if listed."
+  ],
+  "approvedSlugs": [
+    "semax",
+    "ghk-cu",
+    "epitalon",
+    "nad",
+    "bpc-157",
+    "glp-1trz",
+    "glp-3rta",
+    "ahk-cu",
+    "aod9604",
+    "ara-290",
+    "bac-water",
+    "cagrilintide",
+    "cjc-1295-ipamorelin",
+    "cjc-1295-no-dac",
+    "cjc-1295-with-dac",
+    "dhea",
+    "dihexa",
+    "dsip",
+    "ghrp-2",
+    "ghrp-6",
+    "glutathione",
+    "h-frag",
+    "ipamorelin",
+    "kisspeptin",
+    "kpv",
+    "l-carnitine",
+    "ll-37",
+    "melanotan-1",
+    "melanotan-2",
+    "mots-c",
+    "oxytocin",
+    "pt-141",
+    "selank",
+    "semaglutide",
+    "semax-selank-blend",
+    "sermorelin",
+    "snap-8",
+    "ss-31",
+    "tesamorelin",
+    "tesamorelin-ipamorelin-blend",
+    "thymosin-alpha-1",
+    "vip"
+  ],
+  "reviewLog": {
+    "semax": {
+      "reviewer": "project owner",
+      "date": "2026-11-11",
+      "note": "Approved for content-only update of the 12 content fields. Replaces live content that asserted a >=99% purity catalog standard, independent third-party batch testing, a US facility with same-day shipping, and COA availability - none of which is supported, since no COA exists and coaPurity is unset."
+    },
+    "ghk-cu": {
+      "reviewer": "project owner",
+      "date": "2026-11-11",
+      "note": "Approved for content-only update of the 12 content fields. Existing content is a one-line generic description plus schema-default titles; no curated content is replaced."
+    },
+    "epitalon": {
+      "reviewer": "project owner",
+      "date": "2026-11-11",
+      "note": "Approved for content-only update of the 12 content fields. Existing content is a one-line generic description plus schema-default titles; no curated content is replaced."
+    },
+    "nad": {
+      "reviewer": "project owner",
+      "date": "2026-11-11",
+      "note": "Approved for content-only update of the 12 content fields. Existing content is a one-line generic description plus schema-default titles; no curated content is replaced."
+    },
+    "bpc-157": {
+      "reviewer": "project owner",
+      "date": "2026-11-11",
+      "note": "Approved for content-only update of the 12 content fields. Existing content is one generic line plus schema-default titles; the only substantive loss is the phrase 'Analytical grade', which is unsupported since coaPurity is unset and no COA exists. Copy preserves the clarification that an RUO label is not, in itself, a determination of legal status, and states WADA Prohibited List inclusion and FDA pharmacy-compounding consideration without treating either as a safety determination."
+    },
+    "glp-1trz": {
+      "reviewer": "project owner",
+      "date": "2026-11-11",
+      "note": "Approved for content-only update of the 12 content fields. Identity GLP-1TRZ = tirzepatide established from repo evidence: SKU prefix TIRZEP-* in masterCatalogData and on the live record, plus the tirzepatide->glp-1trz redirect in lib/productSlugs.ts and CAS 2023788-19-2 in the copy; ChEMBL CHEMBL4297839 confirms approved status (max_phase 4, 2022, Mounjaro/Zepbound). Compliance section is written specifically for an approved molecule sold as research material and does NOT claim tirzepatide is not a drug."
+    },
+    "glp-3rta": {
+      "reviewer": "project owner",
+      "date": "2026-11-11",
+      "note": "Approved for content-only update of the 12 content fields. Identity GLP-3RTA = retatrutide established from repo evidence: SKU prefix RETATR-* in masterCatalogData and on the live record, plus the retatrutide->glp-3rta redirect in lib/productSlugs.ts and CAS 2381089-83-2 in the copy; ChEMBL CHEMBL5095485 confirms investigational status (max_phase 3, never approved). Copy states that no published numerical purity measurement is supplied. Citation PMID 42559975 verified against PubMed; wording corrected on 2026-11-11 to claim only the existence of that work, since its findings were not readable."
+    },
+    "ahk-cu": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "aod9604": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "ara-290": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "bac-water": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "cagrilintide": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "cjc-1295-ipamorelin": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "cjc-1295-no-dac": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "cjc-1295-with-dac": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "dhea": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "dihexa": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "dsip": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "ghrp-2": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "ghrp-6": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "glutathione": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "h-frag": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "ipamorelin": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "kisspeptin": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "kpv": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "l-carnitine": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "ll-37": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "melanotan-1": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "melanotan-2": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "mots-c": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "oxytocin": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "pt-141": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "selank": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "semaglutide": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "semax-selank-blend": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "sermorelin": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "snap-8": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "ss-31": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "tesamorelin": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "tesamorelin-ipamorelin-blend": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "thymosin-alpha-1": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    },
+    "vip": {
+      "reviewer": "project owner (bulk authorisation)",
+      "date": "2026-11-12",
+      "note": "Bulk authorisation by the project owner on 2026-11-12, instructing publication of all remaining non-blocked products. This is an owner publication decision recorded as given; it is NOT a per-product factual or compliance review of this product copy. Each page was generated under the Phase 12 compliance gates (RUO disclaimer present, no human dosing, no treatment claims, coaPurity unset so no purity claim) and validated structurally, but its specific claims have not been individually verified. The eight generator-BLOCKED products are deliberately excluded."
+    }
+  },
+  "blockedOverrides": {
+    "5-amino-1mq": {
+      "reviewer": "project owner (explicit blocked-product authorisation)",
+      "date": "2026-11-12",
+      "acknowledgement": "Published with the generator BLOCK knowingly lifted by the project owner on 2026-11-12. The unresolved question is accepted as-is and is NOT considered resolved: \"THIN PRECLINICAL LITERATURE AND AN UNRESOLVED COUNTER-ION. A PubMed search for 5-amino-1-methylquinolinium returns THREE indexed records (re-verified 2026-11-11), all preclinical — two mouse studies and one cell-line study — and no human clinical trial. The blocking issue is composition, not the literature: the verified PubChem record is for a CATION (C10H11N2+, 159.21). A cation cannot be supplied alone; it must be paired with a counter-anion whose identity is not stated. Because the counter-anion can be a large fraction of the vial mass, neither the molar content of the 150 mg presentation nor the identity of the supplied salt can be determined from available information.\" The published copy states this uncertainty rather than asserting an identity or potency claim, coaPurity remains unset so no purity is claimed, and this record is to be revoked if a lot-specific certificate of analysis or an explicit supplier statement later resolves it."
+    },
+    "bpc-157-tb-500-blend": {
+      "reviewer": "project owner (explicit blocked-product authorisation)",
+      "date": "2026-11-12",
+      "acknowledgement": "Published with the generator BLOCK knowingly lifted by the project owner on 2026-11-12. The unresolved question is accepted as-is and is NOT considered resolved: \"INHERITED IDENTITY AMBIGUITY. This blend contains TB-500, a designation applied in commerce to TWO chemically different substances - full-length thymosin beta-4 (approx 4963 Da) and the fragment Ac-LKKTETQ (approx 889 Da) - differing in mass by roughly 5.6-fold. Which is present is not stated and cannot be determined from supplier information. A blend cannot be better characterised than its least-characterised component, so the ambiguity documented on the TB-500 page propagates here in full. Additionally no per-component quantitation is supplied for the stated 5mg/5mg and 10mg/10mg presentations.\" The published copy states this uncertainty rather than asserting an identity or potency claim, coaPurity remains unset so no purity is claimed, and this record is to be revoked if a lot-specific certificate of analysis or an explicit supplier statement later resolves it."
+    },
+    "glow": {
+      "reviewer": "project owner (explicit blocked-product authorisation)",
+      "date": "2026-11-12",
+      "acknowledgement": "Published with the generator BLOCK knowingly lifted by the project owner on 2026-11-12. The unresolved question is accepted as-is and is NOT considered resolved: \"INHERITED IDENTITY AMBIGUITY PLUS UNVERIFIED COMPOSITION. This blend is commonly marketed as GHK-Cu + BPC-157 + TB-500, but the exact per-vial composition and ratios are supplier-specified and NOT VERIFIED, and the product listing states only \"Standard\" with no quantities at all. It contains TB-500, whose designation covers two chemically different substances differing in mass by roughly 5.6-fold; which is present is not stated. A blend cannot be better characterised than its least-characterised component. Additionally, no per-component quantitation is supplied, and the presence of a redox-active copper complex alongside oxidation-sensitive peptides raises an unaddressed compatibility question.\" The published copy states this uncertainty rather than asserting an identity or potency claim, coaPurity remains unset so no purity is claimed, and this record is to be revoked if a lot-specific certificate of analysis or an explicit supplier statement later resolves it."
+    },
+    "hcg": {
+      "reviewer": "project owner (explicit blocked-product authorisation)",
+      "date": "2026-11-12",
+      "acknowledgement": "Published with the generator BLOCK knowingly lifted by the project owner on 2026-11-12. The unresolved question is accepted as-is and is NOT considered resolved: \"APPROVED BIOLOGIC SOLD AS RUO, WITH UNVERIFIABLE POTENCY. hCG is a heterodimeric glycoprotein hormone of roughly 36-38 kDa; no molecular formula may be stated for it and none is stated on this page. Potency is expressed in International Units against an international reference preparation, so no mass can be inferred and no identity or potency claim can be made without lot-specific bioassay data, which is not supplied. Additionally this is an FDA-APPROVED drug substance, which raises compliance considerations beyond those for unapproved research compounds.\" The published copy states this uncertainty rather than asserting an identity or potency claim, coaPurity remains unset so no purity is claimed, and this record is to be revoked if a lot-specific certificate of analysis or an explicit supplier statement later resolves it."
+    },
+    "igf-1-lr3": {
+      "reviewer": "project owner (explicit blocked-product authorisation)",
+      "date": "2026-11-12",
+      "acknowledgement": "Published with the generator BLOCK knowingly lifted by the project owner on 2026-11-12. The unresolved question is accepted as-is and is NOT considered resolved: \"NO PUBLIC CHEMICAL DATABASE RECORD, AND IDENTITY NOT INDEPENDENTLY VERIFIABLE. IGF-1 LR3 is an 83-residue recombinant protein analogue of approximately 9.1 kDa. PubChem holds no record for it (verified 2026-11-09) and no molecular formula is asserted on this page. As a recombinant protein it additionally cannot be verified by the methods appropriate to synthetic peptides, and no lot-specific characterisation (identity, bioactivity, host-cell impurities, endotoxin) is supplied.\" The published copy states this uncertainty rather than asserting an identity or potency claim, coaPurity remains unset so no purity is claimed, and this record is to be revoked if a lot-specific certificate of analysis or an explicit supplier statement later resolves it."
+    },
+    "klow": {
+      "reviewer": "project owner (explicit blocked-product authorisation)",
+      "date": "2026-11-12",
+      "acknowledgement": "Published with the generator BLOCK knowingly lifted by the project owner on 2026-11-12. The unresolved question is accepted as-is and is NOT considered resolved: \"INHERITED IDENTITY AMBIGUITY PLUS UNVERIFIED COMPOSITION, ACROSS FOUR COMPONENTS. Commonly marketed as GHK-Cu + BPC-157 + TB-500 + KPV, but the exact per-vial composition and ratios are supplier-specified and NOT VERIFIED, and the listing states only \"Standard\" with no quantities. Contains TB-500, whose designation covers two chemically different substances differing in mass by roughly 5.6-fold. Also contains KPV, whose own page documents a database name collision returning a non-peptide near 192 g/mol. No per-component quantitation is supplied, and a redox-active copper complex shares the vial with oxidation-sensitive peptides.\" The published copy states this uncertainty rather than asserting an identity or potency claim, coaPurity remains unset so no purity is claimed, and this record is to be revoked if a lot-specific certificate of analysis or an explicit supplier statement later resolves it."
+    },
+    "lipo-c": {
+      "reviewer": "project owner (explicit blocked-product authorisation)",
+      "date": "2026-11-12",
+      "acknowledgement": "Published with the generator BLOCK knowingly lifted by the project owner on 2026-11-12. The unresolved question is accepted as-is and is NOT considered resolved: \"COMPOSITION NOT VERIFIED AND NO QUANTITIES STATED. Lipo-C is a lipotropic mixture commonly marketed as methionine, inositol and choline with added B vitamins, but the exact per-vial composition and ratios are supplier-specified and NOT VERIFIED, and the product listing states only \"Standard\" with no quantities for any component. No molecular formula exists for the product. No component is a peptide. No randomised controlled trial of a lipotropic injection mixture for weight loss was identified in the PubMed-indexed literature.\" The published copy states this uncertainty rather than asserting an identity or potency claim, coaPurity remains unset so no purity is claimed, and this record is to be revoked if a lot-specific certificate of analysis or an explicit supplier statement later resolves it."
+    },
+    "tb-500": {
+      "reviewer": "project owner (explicit blocked-product authorisation)",
+      "date": "2026-11-12",
+      "acknowledgement": "Published with the generator BLOCK knowingly lifted by the project owner on 2026-11-12. The unresolved question is accepted as-is and is NOT considered resolved: \"IDENTITY NOT RESOLVABLE. Material sold as \"TB-500\" is either full-length thymosin beta-4 (43 residues, approx 4963 Da) or the short fragment Ac-LKKTETQ (thymosin beta-4 17-23, approx 889 Da) - a roughly 5.6-fold mass difference. Which entity this product contains is not stated and cannot be determined from supplier information. The page states both possibilities and asserts neither. Resolving this requires a lot-specific certificate or an explicit supplier statement of molecular identity.\" The published copy states this uncertainty rather than asserting an identity or potency claim, coaPurity remains unset so no purity is claimed, and this record is to be revoked if a lot-specific certificate of analysis or an explicit supplier statement later resolves it."
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "_meta": {
+    "status": "BLOCKED",
+    "status_reason": "NO PUBLIC CHEMICAL DATABASE RECORD, AND IDENTITY NOT INDEPENDENTLY VERIFIABLE. IGF-1 LR3 is an 83-residue recombinant protein analogue of approximately 9.1 kDa. PubChem holds no record for it (verified 2026-11-09) and no molecular formula is asserted on this page. As a recombinant protein it additionally cannot be verified by the methods appropriate to synthetic peptides, and no lot-specific characterisation (identity, bioactivity, host-cell impurities, endotoxin) is supplied.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "igf-1-lr3",
+    "qc": {
+      "main_content_words": 3063,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. IGF-1 (mecasermin) and its analogues are prohibited in sport under WADA Prohibited List section S2 (per USADA advisory on the 2027 list). Note: unmodified recombinant IGF-1, mecasermin, IS an approved drug for a narrow paediatric indication - this analogue is NOT that product.",
+    "variants_from_csv": [
+      {
+        "variant": "1mg",
+        "price_usd": "76.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "1mg",
+        "source_file": "IGF-1 LR3 1mg.png",
+        "upload_as": "amino-igf-1-lr3-1mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      }
+    ],
+    "identity_note": "NO PubChem record (verified 2026-11-09). IGF-1 LR3, also written LongR3 IGF-1, is an 83-residue analogue of the 70-residue human IGF-1: an arginine substitution at position 3 plus a 13-residue N-terminal extension, approximately 9.1 kDa. Described by composition and approximate mass only; no molecular formula is stated.",
+    "references": [
+      "PMID 11027158 doi:10.1021/bp0000914 - Biotechnol Prog 16(5):693-7 - Immunex Corporation; insulin versus LongR3 in serum-free CHO cell cultures expressing two recombinant cytokine receptors. Cell line CL23 REQUIRED either insulin or LongR3 for growth; both cell lines required a growth factor for optimal performance under production conditions; LongR3 better sustained viability of both lines under production conditions than insulin.",
+      "PMID 16169509 doi:10.1016/j.ab.2005.07.042 - Anal Biochem 346(1):185-7 - Medical College of Georgia; replacement of insulin by LongR3-IGF-1 allows differentiation of embryonic stem cells into neuroprogenitors and insulin-secreting cells. Establishes the reagent use in a defined differentiation protocol.",
+      "USADA athlete advisory on the WADA Prohibited List: Insulin-like growth factor 1 (IGF-1, mecasermin) and its analogues prohibited under S2. Verified 2026-11-09."
+    ],
+    "unverified": [
+      "MOLECULAR FORMULA - must NOT be stated. No PubChem record exists and no formula is asserted here.",
+      "Identity and sequence integrity of any given lot - a recombinant protein requires peptide mapping or sequence coverage, which is not supplied",
+      "Bioactivity - for a growth factor this is the specification that matters, is established by cell-based assay, and is not supplied",
+      "Host-cell protein, host-cell DNA and endotoxin content - expression-system impurities inherent to recombinant production; none supplied",
+      "Correct disulfide pairing and folding state - IGF-1 contains three disulfide bonds; misfolded or scrambled material is inactive and is not detected by mass measurement",
+      "Presence or absence of carrier protein or surfactant excipient - material to work at low concentrations; not stated",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational with a verification component. The searcher wants to know what IGF-1 LR3 is, how it differs from native IGF-1 and from mecasermin, and whether it is verifiable.",
+    "primary_keyword": "IGF-1 LR3",
+    "secondary_keywords": [
+      "LongR3 IGF-1",
+      "IGF-1 LR3 molecular weight",
+      "LR3 IGF-1",
+      "recombinant IGF-1 analogue",
+      "IGF-1 LR3 cell culture",
+      "IGF binding protein resistant"
+    ],
+    "long_tail_keywords": [
+      "what is IGF-1 LR3",
+      "IGF-1 LR3 vs IGF-1 DES",
+      "IGF-1 LR3 molecular formula",
+      "is IGF-1 LR3 the same as mecasermin",
+      "LongR3 IGF-1 serum free CHO culture",
+      "IGF-1 LR3 83 amino acids",
+      "is IGF-1 LR3 banned WADA",
+      "IGF-1 LR3 bioactivity assay",
+      "IGF-1 LR3 endotoxin",
+      "IGF-1 LR3 certificate of analysis"
+    ],
+    "semantic_terms": [
+      "insulin-like growth factor 1",
+      "IGF binding protein",
+      "IGFBP",
+      "mecasermin",
+      "recombinant protein",
+      "disulfide bond",
+      "protein folding",
+      "serum-free culture",
+      "Chinese hamster ovary cells",
+      "embryonic stem cells",
+      "neuroprogenitor",
+      "host cell protein",
+      "endotoxin",
+      "peptide mapping",
+      "bioassay",
+      "EC50",
+      "WADA S2"
+    ],
+    "name_variations": [
+      "IGF-1 LR3",
+      "LR3 IGF-1",
+      "LongR3",
+      "LongR3 IGF-I",
+      "Long R3 IGF-1",
+      "IGF-1 DES is a DIFFERENT analogue",
+      "mecasermin is unmodified IGF-1, a different molecule"
+    ],
+    "informational_queries": [
+      "what is IGF-1 LR3",
+      "IGF-1 LR3 vs IGF-1",
+      "how does IGF-1 LR3 work",
+      "is IGF-1 LR3 approved",
+      "IGF-1 LR3 cell culture use"
+    ],
+    "commercial_queries": [
+      "buy IGF-1 LR3",
+      "IGF-1 LR3 1mg",
+      "LongR3 IGF-1 research",
+      "IGF-1 LR3 COA"
+    ],
+    "cannibalisation_check": "Owns IGF-1 LR3 / LongR3 and the recombinant-analogue verification intent. The GH secretagogues (/product/ipamorelin, /product/cjc-1295-with-dac, /product/sermorelin) own GH-axis intent upstream of IGF-1 and are linked rather than restated.",
+    "h1": "Driven by CMS name field; renders as \"IGF-1 LR3\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/sermorelin",
+        "anchor": "Sermorelin",
+        "rationale": "Acts upstream on the GH axis that drives endogenous IGF-1 production; useful contrast with supplying an engineered IGF-1 analogue directly.",
+        "verified": true
+      },
+      {
+        "route": "/product/cjc-1295-with-dac",
+        "anchor": "CJC-1295 with DAC",
+        "rationale": "Other GH-axis compound in the catalogue; keeps the upstream-versus-downstream distinction explicit.",
+        "verified": true
+      },
+      {
+        "route": "/product/tesamorelin",
+        "anchor": "Tesamorelin",
+        "rationale": "An approved GH-axis drug substance; direct contrast with an analogue that has no approval anywhere.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "IGF-1 LR3 (LongR3) | 83-Residue Recombinant IGF-1 Analogue | Amino Based",
+    "seoDescription": "IGF-1 LR3: an 83-residue recombinant analogue, approx 9.1 kDa, with no public database record. Established as a cell-culture reagent. Research use only.",
+    "description": "IGF-1 LR3, also written LongR3 IGF-1, is a recombinant analogue of human insulin-like growth factor 1. Where native human IGF-1 is 70 residues, this analogue is 83: an arginine substitution at position 3 together with a 13-residue N-terminal extension, giving an approximate mass of 9.1 kilodaltons. It has no record in public chemical databases, and no molecular formula is stated for it on this page. It is not approved in any jurisdiction, is prohibited in sport, and is supplied for laboratory research use only.",
+    "productDetailsTitle": "IGF-1 LR3: An Engineered Growth Factor Built to Evade Its Binding Proteins",
+    "productDetailsDescription": "IGF-1 LR3 is a recombinant protein, not a synthetic peptide, and the distinction governs everything from how it should be verified to how it should be handled. Native human insulin-like growth factor 1 is a 70-residue single-chain protein stabilised by three disulfide bonds, structurally related to insulin. This analogue modifies it in two ways: arginine is substituted at position 3, and a 13-residue extension is added at the N-terminus. The result is an 83-residue protein with a reported molecular weight of approximately 9,111 Da. That figure comes from reagent-supplier characterisation of E. coli-expressed material rather than from a public chemical registry, and published figures vary slightly — values between about 9,111 and 9,118 are quoted in different places. A further caution worth recording: sources do not even agree on the sequence of the 13-residue N-terminal extension, with at least two variants in circulation. For a protein defined by that extension, disagreement about its sequence is a material uncertainty rather than a typographical one.\n\nBoth modifications have a specific rationale, and understanding it explains what the molecule is for. Native IGF-1 does not circulate free. It is bound almost entirely by a family of IGF binding proteins, which control its availability, protect it from degradation and restrict its access to receptors. In a laboratory context this is a nuisance: binding proteins present in culture media, in serum, or secreted by the cells themselves sequester added IGF-1 unpredictably, so the concentration a researcher adds is not the concentration the cells experience. The arginine substitution at position 3 reduces affinity for the binding proteins, and the N-terminal extension further alters the molecule's interaction with them. The engineering goal is a growth factor that remains available rather than being sequestered, giving more reproducible and more potent activity in culture at a given added concentration.\n\nThat is a real and legitimate piece of protein engineering, and it is why this analogue became a standard cell-culture reagent rather than a curiosity.\n\nA verification problem has to be stated plainly, and it is the reason this page carries a BLOCKED status. There is no record for this molecule in public chemical databases — this was checked directly rather than assumed, and PubChem holds no entry for it. Consequently no molecular formula is stated for it here, and none should appear on any document describing it. An 83-residue protein with three disulfide bonds and a defined fold is not well represented by a formula in any case, but the absence of a database record removes even the possibility of independent cross-checking of a quoted identity. For most products in this catalogue a researcher can verify a supplier's stated identifiers against a public record; here that route does not exist, and verification must come from lot-specific analytical data instead.\n\nThat data is not supplied for this product, and for a recombinant growth factor the gaps are consequential rather than formal. Four matter most. Identity and sequence integrity require peptide mapping or sequence coverage, because at 9.1 kilodaltons a single-residue substitution shifts the intact mass by less than the practical accuracy of measuring it. Disulfide pairing matters because IGF-1 contains three disulfide bonds and incorrect or scrambled pairing produces an inactive, misfolded protein that has exactly the same mass as the correctly folded one — mass measurement cannot detect it. Bioactivity, established by a cell-based assay, is the specification that actually matters for a growth factor, and no mass or purity figure substitutes for it. And recombinant production carries expression-system impurities — host-cell proteins, host-cell DNA and endotoxin — that do not arise for synthetic peptides at all and that are not addressed by a chromatographic purity figure.\n\nOne further distinction is important and frequently blurred. Unmodified recombinant human IGF-1, under the generic name mecasermin, is an approved drug for a narrow paediatric indication involving severe primary IGF-1 deficiency. This analogue is not that product. It is a different molecule — 83 residues rather than 70, with a substitution and an extension — and it has no approval anywhere. Material sold as IGF-1 LR3 should not borrow the regulatory standing of mecasermin, and the existence of an approved IGF-1 product says nothing about this one.\n\nA naming note. This compound appears as IGF-1 LR3, IGF-1 LR3, LR3 IGF-1, LongR3, LongR3 IGF-I and Long R3 IGF-1. \"IGF-1 DES\" refers to a different analogue, truncated at the N-terminus rather than extended, and is a distinct molecule. Native IGF-1, mecasermin, and mecasermin rinfabate — a complex of IGF-1 with its binding protein 3 — are all distinct from this analogue and from each other.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. Lyophilised preparations are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold material. A recombinant protein of this size raises a handling question that does not arise for short synthetic peptides: proteins of several kilodaltons are susceptible to aggregation and to surface adsorption losses at low concentrations, which is why research-grade preparations are often formulated with a carrier protein or a surfactant. Whether this presentation contains any such excipient is not stated, and it should be established before planning work at low concentrations. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here. This product is supplied in a nominal 1 mg presentation. A milligram of a 9.1 kDa protein is roughly 110 nanomoles, so this is a substantial quantity in cell-culture terms, where working concentrations are typically in the nanomolar range.",
+    "researchFocusTitle": "A Genuine and Well-Documented Use: Serum-Free Cell Culture",
+    "researchFocusDescription": "This compound has an unusually clean evidence story, provided one looks at what it was actually developed and published for rather than at what it is marketed for. Its documented application is as a cell-culture reagent, and in that role the literature is specific, independent and practical.\n\nThe clearest demonstration comes from industrial cell culture. A study at Immunex Corporation compared insulin against LongR3 for their ability to support growth, viability and recombinant protein production in two serum-free Chinese hamster ovary cell lines, each expressing a recombinant cytokine receptor. The findings are concrete. One line, CL23, required either insulin or LongR3 for cell growth — it would not grow without a growth factor at all. The other, VA12, would grow in serum-free medium lacking growth factor, but both lines required a growth factor for optimal performance under production conditions. And under those production conditions, LongR3 sustained the viability of both cell lines better than insulin did, leading the authors to conclude that LongR3 was the preferred growth factor for those lines (PMID 11027158, doi:10.1021/bp0000914).\n\nThat is exactly the kind of evidence a research reagent should have. It is a direct head-to-head comparison against the incumbent alternative, with defined cell lines, defined conditions, and an outcome measured on properties that matter to the application — growth, viability and productivity. It makes no therapeutic claim and needs none.\n\nA second independent study extends the use into stem cell work. Investigators at the Medical College of Georgia reported that replacing insulin with LongR3-IGF-1 allowed the differentiation of embryonic stem cells into neuroprogenitors and insulin-secreting cells (PMID 16169509, doi:10.1016/j.ab.2005.07.042). The significance here is methodological: in work on insulin-secreting cells, insulin in the culture medium is an obvious confound, since the readout is insulin production. Substituting a growth factor that provides the required signalling without being the analyte removes that interference. This is a case where the analogue is not merely an alternative to insulin but a better experimental choice for a specific reason.\n\nTaken together, these two studies describe the compound's real and defensible profile: a potent, binding-protein-resistant growth factor that functions reliably in serum-free culture and that can substitute for insulin, sometimes advantageously. For a laboratory, this is a reagent with published precedent, defined comparators and a clear rationale.\n\nSet against this, what the literature does not provide should be stated just as clearly. No interventional human trial of this analogue was identified. There is no clinical evidence for the muscle-growth and performance claims commonly attached to it. Those claims borrow from two sources, and both borrowings are illegitimate. The first is the general physiology of IGF-1, which is genuinely a growth-promoting hormone — but the physiology of an endogenous hormone under homeostatic control is not evidence about what administering an engineered analogue that deliberately evades that control achieves. The second is the approved status of mecasermin, unmodified recombinant IGF-1, which is approved for a narrow paediatric deficiency indication. This analogue is a different molecule with no approval anywhere, and treating the two as interchangeable is simply an error.\n\nThere is also a biological reason for caution that is independent of the absence of trials, and it follows from the engineering itself. IGF binding proteins exist to regulate IGF-1 availability; that is their function. A molecule designed to escape that regulation is, by design, less subject to the control system that normally governs this signalling axis. In a culture dish that is the desired property — it is the whole point. Extrapolating it to a whole organism, where IGF-1 signalling influences proliferation across many tissues, is not a modest extension of the culture result but a change of kind. The IGF-1 axis is also studied extensively for its relationship to cell proliferation generally, which is a reason for care rather than enthusiasm when considering sustained unregulated signalling.\n\nSo the honest summary is that this is a well-documented laboratory reagent with a thin-to-absent evidence base for anything else. For a laboratory the useful work is in the documented area: serum-free medium development, insulin replacement where insulin is a confound, growth-factor dependency studies in defined cell lines, and IGF-1 receptor signalling work where binding-protein interference needs to be removed from the system. In all of those the open practical question is the one the verification section raises — establishing that a given lot is correctly folded and bioactive, which for a growth factor is the specification that determines whether it works at all.",
+    "qualityPurityTitle": "Analytical Verification for a Recombinant Protein With No Database Record",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nVerification of a recombinant protein is a different exercise from verification of a synthetic peptide, and for this product it is made harder by the absence of any public reference record.\n\nStart with that absence, because it changes the method. There is no PubChem record for this molecule — checked directly. For most products in this catalogue, a researcher can take a supplier's stated formula and molecular weight and cross-check them against a public database entry, which catches transcription errors and outright misidentification cheaply. That route does not exist here. No molecular formula is stated on this page, and any document quoting one for an 83-residue disulfide-bonded protein should be treated with suspicion. All verification therefore has to come from lot-specific analytical data, which raises the importance of that data rather than lowering it.\n\nIdentity requires peptide mapping or sequence coverage, not intact mass. At approximately 9.1 kilodaltons, a single-residue substitution shifts the intact mass by less than the practical accuracy of measuring it, so an intact-mass figure cannot confirm sequence. Mapping is also the only way to confirm the two features that define this analogue specifically: the arginine substitution at position 3 and the 13-residue N-terminal extension. A preparation that is native 70-residue IGF-1, or that is missing the extension, would be a materially different reagent, and only sequence-level data distinguishes them.\n\nDisulfide pairing is the check most often omitted and among the most consequential. IGF-1 contains three disulfide bonds, and correct pairing is required for the fold and therefore for activity. Scrambled or incorrectly paired material is inactive and has exactly the same molecular mass as correctly folded material. No mass measurement detects it. Confirming it requires non-reducing versus reducing comparison, disulfide mapping, or — more practically — a bioassay that would fail if the protein were misfolded.\n\nBioactivity is the specification that matters most for a growth factor, and it is the one a purity percentage cannot substitute for. A preparation can be 98 per cent pure by chromatography and biologically inactive if it is misfolded or aggregated. Activity is established by a cell-based assay, conventionally a proliferation or receptor-phosphorylation readout in a responsive cell line, reported with a defined EC50 or specific activity. For this product no such data is supplied, and that absence is a principal reason this page carries a BLOCKED status.\n\nRecombinant production introduces impurity classes that do not exist for synthetic peptides and that chromatographic purity does not address: host-cell proteins, residual host-cell DNA, and endotoxin. Endotoxin in particular is worth singling out, because it has biological effects of its own at very low concentrations and will confound almost any cell-based experiment — an endotoxin specification is a legitimate requirement for a protein reagent used in culture, and its absence is a real gap rather than a technicality.\n\nAggregation state is a further protein-specific question. Proteins of this size aggregate, and aggregates are both inactive and potentially active in unintended ways. Size-exclusion chromatography addresses this; reverse-phase purity does not.\n\nFinally, formulation. Proteins at low concentrations are lost to container surfaces, which is why research-grade growth factors are often supplied with a carrier protein or a surfactant. Whether this presentation contains any excipient is not stated. It matters both for recovery at working concentrations and because a carrier protein contributes to the stated mass. A nominal 1 mg that includes carrier protein is not 1 mg of growth factor.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Unapproved Analogue, Prohibited in Sport",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nIGF-1 LR3 is not an approved medicine. This analogue has not been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. No interventional human trial of this analogue was identified in the indexed literature.\n\nOne distinction requires emphasis because it is routinely exploited. Unmodified recombinant human IGF-1, generic name mecasermin, is an approved drug for a narrow paediatric indication involving severe primary IGF-1 deficiency. This product is not that substance. It is an 83-residue engineered analogue — an arginine substitution at position 3 plus a 13-residue N-terminal extension — designed specifically to evade the binding proteins that regulate native IGF-1. It has no approval anywhere, and the existence of an approved IGF-1 product confers no regulatory standing on it.\n\nThe evidence base should be understood for what it is. This analogue has a genuine, well-documented use as a cell-culture reagent, with published head-to-head comparisons against insulin in serum-free culture and an established role in stem cell differentiation protocols. It has no clinical evidence supporting the muscle-growth or performance claims attached to it. Those claims draw on the general physiology of endogenous IGF-1 and on the approved status of a different molecule, and neither inference is sound.\n\nA biological caution follows from the engineering itself, independent of the absence of trials. IGF binding proteins exist in order to regulate IGF-1 availability. A molecule designed to escape that regulation is by construction less subject to the control system that normally governs this signalling axis. In a culture dish that is the intended property. In a whole organism, where IGF-1 signalling influences proliferation across many tissues and is extensively studied in relation to cell proliferation generally, sustained unregulated signalling is a different proposition altogether and a reason for caution rather than enthusiasm.\n\nAnti-doping status is relevant to anyone connected with competitive sport. According to a United States Anti-Doping Agency athlete advisory on the WADA Prohibited List, insulin-like growth factor 1 and its analogues are prohibited under section S2. Athletes and support personnel should consult the current published WADA Prohibited List directly, as listings are revised annually.\n\nNothing on this page suggests that this material is suitable for addressing growth disorders, muscle wasting, injury, athletic performance or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is IGF-1 LR3?",
+        "answer": "IGF-1 LR3, also written LongR3 IGF-1, is a recombinant analogue of human insulin-like growth factor 1. Native human IGF-1 is a 70-residue protein with three disulfide bonds; this analogue is 83 residues — an arginine substitution at position 3 plus a 13-residue N-terminal extension — giving an approximate mass of 9.1 kilodaltons. It is a recombinant protein, not a synthetic peptide."
+      },
+      {
+        "question": "What is its molecular formula?",
+        "answer": "None is stated on this page, because no public chemical database record exists for this molecule — this was checked directly rather than assumed. An 83-residue disulfide-bonded protein is poorly represented by a formula in any case, but the absence of a database record also removes the possibility of cross-checking a supplier’s stated identifiers against a public reference. Any document quoting a formula for it should be treated with suspicion."
+      },
+      {
+        "question": "Why was it engineered this way?",
+        "answer": "To escape the IGF binding proteins. Native IGF-1 does not circulate free; a family of binding proteins controls its availability and restricts receptor access. In culture that is a nuisance, because binding proteins in media, serum or secreted by the cells sequester added IGF-1 unpredictably. The arginine-3 substitution reduces binding-protein affinity and the N-terminal extension further alters that interaction, giving more reproducible and more potent activity at a given added concentration."
+      },
+      {
+        "question": "Is IGF-1 LR3 the same as mecasermin?",
+        "answer": "No, and the distinction is routinely exploited. Mecasermin is unmodified recombinant human IGF-1 — 70 residues — and is an approved drug for a narrow paediatric indication involving severe primary IGF-1 deficiency. This is an 83-residue engineered analogue with a substitution and an extension, and it has no approval anywhere. The existence of an approved IGF-1 product confers no regulatory standing on this one."
+      },
+      {
+        "question": "What is IGF-1 LR3 actually documented to do?",
+        "answer": "Function as a cell-culture reagent, and the evidence there is specific. A head-to-head study in serum-free Chinese hamster ovary cultures found that one cell line required either insulin or LongR3 to grow at all, and that under production conditions LongR3 sustained viability of both tested lines better than insulin — leading the authors to call it the preferred growth factor for those lines. A separate study used it to replace insulin in differentiating embryonic stem cells into neuroprogenitors and insulin-secreting cells."
+      },
+      {
+        "question": "Why replace insulin with it in stem cell work?",
+        "answer": "Because insulin can be a confound. In work on insulin-secreting cells, insulin in the culture medium interferes with the readout, since the thing being measured is insulin production. Substituting a growth factor that provides the required signalling without being the analyte removes that interference. This is a case where the analogue is not just an alternative to insulin but a better experimental choice for a defined reason."
+      },
+      {
+        "question": "Is there evidence for muscle growth or performance?",
+        "answer": "No interventional human trial of this analogue was identified, and there is no clinical evidence for those claims. They borrow from two sources, and neither borrowing is legitimate: the general physiology of endogenous IGF-1, which is a growth-promoting hormone under homeostatic control, and the approved status of mecasermin, which is a different molecule. Neither tells you what administering an analogue engineered to evade that control achieves."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "Identity by peptide mapping or sequence coverage, not intact mass — at 9.1 kDa a single-residue substitution shifts intact mass by less than the practical accuracy of measuring it, and only sequence data confirms the arginine-3 substitution and the 13-residue extension. Plus a bioactivity figure from a cell-based assay, disulfide or folding confirmation, host-cell protein and DNA levels, endotoxin, and aggregation state by size-exclusion chromatography."
+      },
+      {
+        "question": "Why does disulfide pairing matter?",
+        "answer": "Because it is the check most often omitted and among the most consequential. IGF-1 contains three disulfide bonds and correct pairing is required for the fold and therefore for activity. Scrambled material is inactive and has exactly the same molecular mass as correctly folded material, so no mass measurement detects it. Confirming it needs disulfide mapping, non-reducing versus reducing comparison, or a bioassay that would fail if the protein were misfolded."
+      },
+      {
+        "question": "Is IGF-1 LR3 prohibited in sport?",
+        "answer": "Yes. According to a United States Anti-Doping Agency athlete advisory on the WADA Prohibited List, insulin-like growth factor 1 and its analogues are prohibited under section S2. Athletes and support personnel should consult the current published WADA Prohibited List directly, since listings are revised annually."
+      }
+    ]
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "_meta": {
+    "status": "BLOCKED",
+    "status_reason": "INHERITED IDENTITY AMBIGUITY PLUS UNVERIFIED COMPOSITION, ACROSS FOUR COMPONENTS. Commonly marketed as GHK-Cu + BPC-157 + TB-500 + KPV, but the exact per-vial composition and ratios are supplier-specified and NOT VERIFIED, and the listing states only \"Standard\" with no quantities. Contains TB-500, whose designation covers two chemically different substances differing in mass by roughly 5.6-fold. Also contains KPV, whose own page documents a database name collision returning a non-peptide near 192 g/mol. No per-component quantitation is supplied, and a redox-active copper complex shares the vial with oxidation-sensitive peptides.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "klow",
+    "qc": {
+      "main_content_words": 3479,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. No component is approved anywhere. TB-500 and thymosin beta-4 are prohibited in sport under WADA Prohibited List section S2 (per USADA advisory).",
+    "variants_from_csv": [
+      {
+        "variant": "Standard",
+        "price_usd": "120.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "Standard",
+        "source_file": "Klow.png",
+        "upload_as": "amino-klow-standard.png"
+      }
+    ],
+    "blend_note": "MULTI-COMPONENT PRODUCT. No single molecular formula exists and none is stated. The composition below is the COMMONLY MARKETED composition; it is NOT verified for this product, and NO RATIOS ARE INVENTED. The listing states \"Standard\" and no component quantities.",
+    "components": [
+      {
+        "name": "GHK-Cu",
+        "note": "Copper tripeptide-1; a copper(II) complex. See the GHK-Cu page."
+      },
+      {
+        "name": "BPC-157",
+        "note": "Pentadecapeptide. See the BPC-157 page."
+      },
+      {
+        "name": "TB-500",
+        "note": "IDENTITY UNRESOLVED - either full-length thymosin beta-4 (approx 4963 Da) or Ac-LKKTETQ (approx 889 Da). Neither asserted. See the TB-500 page."
+      },
+      {
+        "name": "KPV",
+        "note": "Lysine-proline-valine tripeptide, PubChem CID 125672, C16H30N4O4, MW 342.43. NOTE: a database query under the abbreviation \"KPV\" returns a non-peptide near 192 g/mol - a name collision documented on the KPV page."
+      }
+    ],
+    "references": [
+      "PubChem CID 45382195 (PUG REST, verified 2026-11-09, matched name \"thymosin beta-4\"): C212H350N56O78S, MW approx 4963. NAME-based lookups fail - PubChem holds no record under \"TB-500\", \"Ac-LKKTETQ\" or \"thymosin beta 4 (17-23)\". CAS-based lookups SUCCEED for both candidates (verified 2026-11-10): CAS 77591-33-4 -> CID 16132341 (full-length, C212H350N56O78S, MW approx 4963); CAS 885340-08-9 -> CID 62707662 (Ac-LKKTETQ, C38H68N10O14, MW 889.0). Self-confirming: unacetylated LKKTETQ is CID 10169788 at MW 847.0, and 889.0 - 847.0 = exactly 42.0, one acetyl group.",
+      "PubChem CID 125672 (PUG REST, verified 2026-11-09 via the explicit sequence name Lys-Pro-Val): C16H30N4O4, MW 342.43. A bulk lookup under the abbreviation \"KPV\" returned CID 13294447 (C11H12O3, MW 192.21), a NAME COLLISION and not a tripeptide; that result was rejected.",
+      "USADA athlete advisory on the WADA Prohibited List: TB-500 prohibited under S2; Thymosin-beta 4 prohibited under S2. Verified 2026-11-09.",
+      "Component evidence is documented on the individual component pages (/product/ghk-cu, /product/bpc-157, /product/tb-500, /product/kpv) and is not restated here. No study examining this four-component combination against its components was identified."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "ACTUAL COMPOSITION - the four-component composition stated is the commonly marketed one and is NOT verified for this product",
+      "ALL COMPONENT QUANTITIES - the listing states \"Standard\" with no masses; no molar calculation of any kind is possible",
+      "WHICH TB-500 ENTITY IS PRESENT - full-length thymosin beta-4 (approx 4963 Da) or the Ac-LKKTETQ fragment (approx 889 Da)",
+      "Copper content and copper-to-peptide stoichiometry - not stated; copper is redox-active and its quantity is a specification in its own right",
+      "Chemical compatibility of a copper(II) complex with oxidation-sensitive peptides in a shared vial over time - no stability study supplied",
+      "Any evidence for the COMBINATION as distinct from the components - none identified"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what is in Klow, how it differs from Glow, and whether the combination is justified.",
+    "primary_keyword": "Klow",
+    "secondary_keywords": [
+      "Klow peptide blend",
+      "GHK-Cu BPC-157 TB-500 KPV blend",
+      "Klow vs Glow",
+      "Klow blend composition",
+      "four peptide blend"
+    ],
+    "long_tail_keywords": [
+      "what is in Klow peptide blend",
+      "Klow vs Glow difference",
+      "Klow blend GHK-Cu BPC-157 TB-500 KPV",
+      "does Klow blend work",
+      "Klow blend evidence",
+      "Klow blend component quantities",
+      "how many trial arms for a four component blend",
+      "Klow blend molecular weight",
+      "is Klow blend banned WADA",
+      "Klow blend certificate of analysis"
+    ],
+    "semantic_terms": [
+      "copper tripeptide-1",
+      "copper(II) complex",
+      "redox-active metal",
+      "metal-catalysed oxidation",
+      "name collision",
+      "full factorial design",
+      "sixteen-arm design",
+      "component-alone control",
+      "per-component quantitation",
+      "authentic reference standard",
+      "copper-to-peptide stoichiometry",
+      "melanocortin-1 receptor",
+      "counter-ion load",
+      "WADA S2"
+    ],
+    "name_variations": [
+      "Klow",
+      "Klow blend",
+      "GHK-Cu + BPC-157 + TB-500 + KPV (commonly marketed composition, NOT verified)",
+      "Glow is the related blend without KPV"
+    ],
+    "informational_queries": [
+      "what is Klow peptide blend",
+      "Klow vs Glow",
+      "what is in Klow",
+      "does Klow blend work",
+      "Klow blend ingredients"
+    ],
+    "commercial_queries": [
+      "buy Klow peptide blend",
+      "Klow blend vial",
+      "GHK-Cu BPC-157 TB-500 KPV blend",
+      "Klow COA"
+    ],
+    "cannibalisation_check": "Owns the four-component Klow combination intent only. /product/ghk-cu, /product/bpc-157, /product/tb-500 and /product/kpv own their molecules and individual evidence; /product/glow owns the three-component variant.",
+    "h1": "Driven by CMS name field; renders as \"Klow\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/glow",
+        "anchor": "Glow",
+        "rationale": "The same combination without KPV; the direct comparison a searcher most often wants, and where the shared copper and design arguments are also set out.",
+        "verified": true
+      },
+      {
+        "route": "/product/kpv",
+        "anchor": "KPV",
+        "rationale": "The distinguishing component, evidentially the strongest here, and the location of the database name-collision account relevant to checking certificates.",
+        "verified": true
+      },
+      {
+        "route": "/product/tb-500",
+        "anchor": "TB-500",
+        "rationale": "Verified component and the location of the identity-ambiguity account this product inherits; also needed as an experimental control.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Klow | Four-Component Peptide Blend, Composition Unverified | Amino Based",
+    "seoDescription": "Klow: commonly GHK-Cu + BPC-157 + TB-500 + KPV. Composition and quantities unverified; four components, no stated masses. Research use only.",
+    "description": "Klow is a multi-component blend commonly marketed as containing GHK-Cu, BPC-157, TB-500 and KPV in a single vial. That composition is the commonly marketed one and is not verified for this product; the listing states a variant of \"Standard\" with no component quantities at all. Being a mixture, it has no single molecular formula and none is stated here. It contains TB-500, a designation covering two chemically different substances differing in mass by roughly 5.6-fold. No component is approved in any jurisdiction, TB-500 and thymosin beta-4 are prohibited in sport, and this material is supplied for laboratory research use only.",
+    "productDetailsTitle": "Klow: Four Components, No Stated Quantities, and Compounding Uncertainty",
+    "productDetailsDescription": "Klow is the most complex product in this catalogue, and the number of components is itself the central fact about it. Each additional constituent adds its own identity question, its own quantity question, and its own interactions with the others — and uncertainty in a mixture compounds rather than averages.\n\nThe product has no molecular formula, no molecular weight and no CAS registry number, because a mixture of four compounds does not have them. Any document quoting a single formula or molecular weight for this product is describing something other than its contents.\n\nThe composition commonly marketed under this name is GHK-Cu, BPC-157, TB-500 and KPV — the Glow combination with KPV added. That is stated here as the commonly marketed composition, not as a verified fact about this product, and no ratios are invented because none are available to state.\n\nThe most basic gap is the same as for Glow and is worth stating just as plainly. The listing gives a variant of \"Standard\" and **no component quantities whatsoever** — no total mass, no individual masses, no ratio. For a four-component product this is more consequential than for a single substance, because a blend's identity *is* its composition. Without quantities, no molar calculation of any kind is possible, no concentration can be prepared to a known value, no published protocol concerning any component can be matched, and it cannot be determined whether the four components are present in comparable amounts or whether one dominates. This should be resolved with the supplier before any use.\n\nThe same reconstruction applies and extends cleanly. The repository's catalogue data lists the corresponding spray under SKU \"SPR-KLOW-80MG\", a **total fill mass of 80 mg** against Glow's 70 mg. The difference is exactly 10 mg, and KPV — the component distinguishing Klow from Glow — is sold in this catalogue at a single strength of 10 mg. That gives **GHK-Cu 50 mg + BPC-157 10 mg + TB-500 10 mg + KPV 10 mg = 80 mg**, uniquely, using only the strengths actually offered.\n\nThe internal consistency is the reason to take it seriously: two independent totals, derived from separate SKUs, differ by precisely one unit of the one component that differs between the products. The same caveats apply — the figures describe the spray line rather than this vial, and the catalogue file is stale on prices and images — so this remains a reproducible inference requiring supplier confirmation, not a verified specification.\n\nTwo inherited identity problems then apply, both documented on component pages in this catalogue.\n\nThe first is TB-500, and it is the more serious. That designation is applied in commerce to two chemically different substances: full-length thymosin beta-4, a 43-residue protein of molecular formula C212H350N56O78S and molecular weight approximately 4963 g/mol (PubChem CID 45382195), and the short acetylated fragment Ac-LKKTETQ at approximately 889 g/mol — differing by roughly a factor of 5.6. Public databases hold no record under \"TB-500\", \"Ac-LKKTETQ\" or \"thymosin beta 4 (17-23)\", checked directly. Which is present is not stated.\n\nThe second concerns KPV, and it is a verification hazard rather than an ambiguity about what is supplied. KPV is the tripeptide lysine-proline-valine, with verified identifiers C16H30N4O4 and molecular weight approximately 342.43 g/mol (PubChem CID 125672). But as documented on the KPV page, a database query under the abbreviation \"KPV\" returns a different compound entirely — a non-peptide of formula C11H12O3 and molecular weight near 192.21. The correct identifiers were obtained by querying the explicit sequence name. The practical consequence for this blend is that a certificate or datasheet quoting a mass near 192 for the KPV component is reproducing a database collision rather than describing the tripeptide, and anyone checking this product's paperwork should know that.\n\nThe governing principle applies with extra force here: **a blend cannot be better characterised than its least-characterised component.** With four components, one of unresolved molecular identity and another carrying a documented lookup hazard, and no stated quantities for any of them, this product is the least characterised item in the catalogue. That is why the page carries a BLOCKED status.\n\nA chemical issue specific to this blend family also applies.\n\nA chemical point applies to any vial combining a copper complex with other peptides, and it is the most substantive concern specific to this product rather than inherited from its components. GHK-Cu is a copper(II) complex — the copper is the point of the molecule, not an impurity. Copper(II) is a redox-active transition metal and a well-established catalyst of oxidative reactions in peptides and proteins: it catalyses thiol oxidation to disulfides, and it participates in metal-catalysed oxidation of susceptible residues including methionine and histidine. Placing a redox-active metal complex in the same vial as peptides carrying oxidation-sensitive residues raises a real compatibility question. If the TB-500 component is the full-length protein, its molecular formula contains a sulfur atom, indicating a cysteine and therefore a free thiol or disulfide — precisely the chemistry copper catalyses. No stability or compatibility study for this combination is supplied, and none is claimed here. Components individually stable are not thereby stable together, and a certificate issued at release says nothing about what the vial contains after a period of storage.\n\nHere the copper concern extends to one more component than it does for Glow, and KPV is relevant to it: a three-residue peptide of lysine, proline and valine contains no cysteine or methionine, so it is not itself an obvious metal-catalysed oxidation target — which is worth noting as the one favourable detail in this picture. The concern remains for whichever other components carry oxidation-sensitive residues.\n\nFinally, the experimental-design argument scales badly. Demonstrating that a four-component combination outperforms its parts requires, for a full factorial, sixteen arms: vehicle, four singles, six pairs, four triples and the quadruple. A pre-mixed vial supplies one. The gap between what the product offers and what would be needed to justify it is wider here than anywhere else in this catalogue.\n\nA naming note. This product appears as Klow, Klow blend, and occasionally as a \"K\" variant of Glow — the K referring to the added KPV. Each component carries disambiguation requirements documented on its own page. Glow in this catalogue is commonly marketed as this same combination without KPV.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. The product listing states a variant of \"Standard\" and no component quantities, so no statement about the molar content of this presentation is possible.",
+    "researchFocusTitle": "Four Components, Sixteen Arms, and No Combination Evidence",
+    "researchFocusDescription": "The research position is the same as for the other blends in this catalogue, and the arithmetic makes it starker: **no evidence for this combination, as distinct from its components, was identified.** No study examining GHK-Cu, BPC-157, TB-500 and KPV together — against each alone, or against any of the pairwise or three-way subsets — was found in the indexed literature.\n\nComponent evidence exists and belongs on the component pages. In brief, with the qualifications set out there: GHK-Cu has a skin and wound biology literature whose most frequently cited review was authored by investigators affiliated with a company selling GHK products. BPC-157 has a limited clinical record including the PL-14736 programme and a phase I trial in 42 healthy volunteers that completed in March 2016 with no results posted. TB-500's applicable evidence depends on which molecule it is, and the clinically suggestive thymosin beta-4 findings come from an observational cohort of patients' own endogenous levels and from transgenic overexpression mice — neither an administration study. KPV is, in evidence terms, the strongest component here: it has reproducible effects in two murine colitis models, and a well-designed finding that its activity is at least partly independent of the melanocortin-1 receptor, obtained by testing it in receptor-deficient animals.\n\nSo the evidence base for this product is four components of varying and individually qualified support, and nothing about the four together.\n\nThe design argument is the decisive one, and the numbers are worth stating because they are rarely confronted. For two components, demonstrating a genuine interaction requires four arms. For three, eight. For four components, a full factorial requires **sixteen** arms: vehicle, four single components, six pairwise combinations, four three-way combinations, and the full quadruple. Each arm needs adequate numbers to detect the effect sizes in question.\n\nA pre-mixed four-component vial provides one of those sixteen arms. It cannot provide a single-component control, cannot provide any subset combination, cannot vary one component while holding three constant, and cannot produce any ratio other than whatever it contains. It is therefore incapable, in principle rather than merely in practice, of demonstrating that the four-way combination does anything its components do not. And any positive observation made with it is uninterpretable: consistent with four-way synergy, with a single active component carrying three inert passengers, with simple additivity, and with one or more components antagonising others.\n\nThis is worth dwelling on because the commercial logic of multi-component blends runs directly opposite to the scientific logic. Commercially, adding components adds perceived value and justifies a higher price — this product is the most expensive blend in the catalogue. Scientifically, each added component multiplies the experimental burden of justifying the product and multiplies the opportunities for chemical interaction, while the evidence base for the combination remains at zero regardless of how many components are added. More components make the claim harder to support, not easier.\n\nOne mechanistic observation is worth making in fairness. The four components are proposed to act by different routes — copper-peptide effects on skin and matrix biology, BPC-157's less cleanly defined mechanisms, actin sequestration for thymosin beta-4, and an anti-inflammatory effect for KPV that published work indicates is at least partly receptor-independent. Four agents with non-overlapping proposed mechanisms is a more coherent construction than agents duplicating each other's pathways, which is the specific criticism that applies to the Semax + Selank blend elsewhere in this catalogue. Non-overlapping mechanisms are a reason a combination might be worth testing. They are not evidence that it works, and they do not reduce the sixteen-arm requirement.\n\nThe limitations in summary: composition unverified; no component quantities stated at all; one component's molecular identity unresolved by a factor of roughly 5.6; another component carrying a documented database collision that corrupts certificates; copper content and stoichiometry unstated for a redox-active complex; compatibility of that complex with oxidation-sensitive peptides unaddressed; no combination evidence; and a fixed-ratio format that cannot generate any. Every component limitation is inherited in full.\n\nFor a laboratory, the honest assessment is that this product is not suitable for research use even by the standards of the other blends, because the specification gaps leave nothing to measure against. If the underlying question is of interest — whether agents acting on different aspects of tissue repair combine usefully — the components are individually available in this catalogue with verified identities and stated masses, and a factorial design built from them would both answer the question and permit the copper compatibility issue to be controlled rather than confounded.",
+    "qualityPurityTitle": "Analytical Verification for a Four-Component Blend With No Stated Quantities",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nVerification of a four-component blend requires everything that verification of each component requires, plus confirmation of how much of each is present. For this product the second cannot begin, because no quantities are stated.\n\nNo single molecular formula, molecular weight or CAS registry number exists for this product, and none is stated here. A certificate quoting any of those for the blend as a whole is describing something other than its contents.\n\nThe absence of stated quantities is the primary gap. The listing gives a variant of \"Standard\" with no component masses and no ratio, and a certificate cannot verify a specification that does not exist. The first requirement is for the supplier to state the intended composition and quantities.\n\nIdentity of the TB-500 component is the second requirement and is analytically simple. The candidates differ 5.6-fold in mass — approximately 4963 g/mol for full-length thymosin beta-4 versus approximately 889 g/mol for Ac-LKKTETQ — and any mass spectrometric measurement resolves that. This blend's components span a wide mass range, from a copper-complexed tripeptide and the 342.43 g/mol KPV tripeptide up through a pentadecapeptide to either a heptapeptide or a 43-residue protein, so a mass spectrum should show well-separated species and settle the question outright.\n\nA verification hazard specific to the KPV component should be checked on any paperwork. As documented on the KPV page, a database query under the abbreviation \"KPV\" returns a non-peptide of formula C11H12O3 and molecular weight near 192.21 — a name collision. The correct tripeptide values are C16H30N4O4 and approximately 342.43 g/mol (PubChem CID 125672), obtained by querying the explicit sequence name Lys-Pro-Val. A certificate quoting a mass near 192 for this component has reproduced the collision and is not describing the tripeptide. This is a document-quality check that costs nothing and catches a real and demonstrated error mode.\n\nPer-component quantitation is the third requirement, and with four components it is demanding. Verifying a stated composition requires resolving and quantifying each component independently, each calibrated against its own authentic reference standard. Four components means four reference standards and a method that separates all four adequately. A single total-peptide figure or purity percentage establishes nothing about composition, and is the specification most commonly missing from blend certificates.\n\nCopper content and speciation is a requirement specific to this blend family. GHK-Cu is a copper(II) complex, so copper is a defining constituent. Total copper is readily measured by atomic absorption or inductively coupled plasma methods, and copper-to-peptide stoichiometry is a meaningful specification, since a preparation with excess free copper is chemically different and more redox-active than a properly complexed one. Neither is stated here.\n\nOxidation status of the other components follows from the copper question and is the check most likely to be absent. Where oxidation-sensitive residues are present, metal-catalysed oxidation produces mass-shifted species detectable only if sought, and thiol-containing components can form intermolecular disulfides appearing at combined masses. Note one favourable detail: KPV, comprising lysine, proline and valine, contains neither cysteine nor methionine, so it is not itself an obvious metal-catalysed oxidation target.\n\nStability for the combination is a genuine open question. A release certificate describes the vial at release, and where one component catalyses reactions that degrade others, composition at the point of use may differ. No stability study for this combination is supplied or claimed.\n\nSalt forms apply to each peptide component, and counter-ion load is proportionally severe for the small ones — at approximately 342 g/mol, KPV with three basic lysine side chains carries counter-ions representing a substantial fraction of its mass. Lyophilised mass is not peptide content: any stated figures would include counter-ions and residual water.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Four Unapproved Components and an Unverified Composition",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nNo component of this blend is an approved medicine. Neither GHK-Cu, nor BPC-157, nor full-length thymosin beta-4, nor the Ac-LKKTETQ fragment, nor KPV has been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance for any component or for the combination.\n\nThree points specific to this product require direct statement, and together they are why this page carries a BLOCKED status — and why this is the least characterised item in this catalogue.\n\nFirst, the composition is unverified. The four-component composition described here is the one commonly marketed under this name; it is not verified for this product, and no ratios are asserted.\n\nSecond, **no component quantities are stated at all.** The listing gives a variant of \"Standard\" with no total mass, no individual masses and no ratio. For a four-component product this is especially consequential, because a blend's identity is its composition. No molar calculation, no preparation of a known concentration, and no comparison with any published protocol is possible. This should be resolved with the supplier before any use.\n\nThird, the molecular identity of the TB-500 component is **not resolved** — two chemically different substances differing roughly 5.6-fold in mass are both sold under that designation. Separately, the KPV component carries a documented database name collision: a query under the abbreviation returns a non-peptide near 192 g/mol rather than the 342.43 g/mol tripeptide, so certificates quoting that figure are reproducing an error rather than describing the compound. Both issues are documented in full on the respective component pages.\n\nThe evidence position should be stated plainly. **No evidence for this combination, as distinct from its components, was identified.** Demonstrating that a four-component combination is worth using would require a full factorial of sixteen arms — vehicle, four singles, six pairs, four triples and the quadruple. A pre-mixed vial supplies one of them, and therefore cannot in principle establish the proposition it is sold on. Any positive observation with it is uninterpretable: consistent with four-way synergy, with one active component carrying three inert passengers, with simple additivity, and with components antagonising one another. Claims for this blend rest on claims about its components, each carrying its own documented limitations.\n\nA chemical caution applies. GHK-Cu is a copper(II) complex, and copper(II) is a redox-active metal catalysing thiol oxidation and metal-catalysed oxidation of susceptible residues. Sharing a vial with peptides carrying oxidation-sensitive residues raises a compatibility question no supplied data addresses; copper content and stoichiometry are unstated, and no stability study for the combination is supplied.\n\nAnti-doping status is relevant to anyone connected with competitive sport. According to a United States Anti-Doping Agency athlete advisory on the WADA Prohibited List, TB-500 is prohibited under section S2 and thymosin beta-4 is separately listed as prohibited under section S2. Athletes and support personnel should consult the current published WADA Prohibited List directly.\n\nNothing on this page suggests that this material is suitable for addressing skin ageing, wound healing, injury, tissue repair, inflammation, gastrointestinal disease or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is in Klow?",
+        "answer": "It is commonly marketed as GHK-Cu, BPC-157, TB-500 and KPV in a single vial — the Glow combination with KPV added. That is stated here as the commonly marketed composition, not as a verified fact about this product. Being a mixture it has no single molecular formula, molecular weight or CAS number, and none is stated here."
+      },
+      {
+        "question": "How does Klow differ from Glow?",
+        "answer": "By one component: Klow is commonly marketed as the same three-peptide combination with KPV added. Every limitation documented for Glow applies here too, with an additional component and a correspondingly larger experimental burden — sixteen arms for four components rather than eight for three. Both are listed with a variant of \"Standard\" and no component quantities."
+      },
+      {
+        "question": "How much of each component does it contain?",
+        "answer": "Nothing is stated. The listing gives a variant of \"Standard\" with no total mass, no individual masses and no ratio. For a four-component product this is especially consequential, because a blend’s identity *is* its composition. No molar calculation is possible, no concentration can be prepared to a known value, and it cannot be determined whether the components are present in comparable amounts or whether one dominates."
+      },
+      {
+        "question": "Why is this the least characterised product in the catalogue?",
+        "answer": "Because the uncertainties compound. Four components, with the composition itself only the commonly marketed one rather than verified; no stated quantities for any of them; one component (TB-500) whose molecular identity is unresolved by roughly 5.6-fold in mass; and another (KPV) carrying a documented database collision that corrupts certificates. A blend cannot be better characterised than its least-characterised component."
+      },
+      {
+        "question": "What is the KPV database problem?",
+        "answer": "A name collision worth knowing when checking paperwork. KPV is the tripeptide lysine-proline-valine, correctly C16H30N4O4 at approximately 342.43 g/mol (PubChem CID 125672) — but a database query under the abbreviation \"KPV\" returns a different compound entirely, a non-peptide of formula C11H12O3 near 192.21 g/mol. A certificate quoting a mass near 192 for this component has reproduced the collision, not described the tripeptide."
+      },
+      {
+        "question": "Is there evidence for the four-component combination?",
+        "answer": "No evidence for this combination, as distinct from its components, was identified. No study examining GHK-Cu, BPC-157, TB-500 and KPV together — against each alone, or against any pairwise or three-way subset — was found in the indexed literature. Component evidence exists and is set out on the component pages with its own qualifications."
+      },
+      {
+        "question": "How many experimental arms would justify this product?",
+        "answer": "Sixteen, for a full factorial: vehicle, four single components, six pairwise combinations, four three-way combinations, and the full quadruple — each with adequate numbers to detect the effect sizes in question. A pre-mixed vial supplies one of those sixteen, so it is incapable in principle, not merely in practice, of demonstrating that the combination does anything its components do not."
+      },
+      {
+        "question": "Why do more components make the claim harder to support?",
+        "answer": "Because the commercial and scientific logics run opposite. Commercially, adding components adds perceived value and justifies a higher price — this is the most expensive blend in the catalogue. Scientifically, each added component multiplies the experimental burden of justification and multiplies the opportunities for chemical interaction, while the combination evidence stays at zero regardless of how many are added."
+      },
+      {
+        "question": "Is there anything in the combination’s favour?",
+        "answer": "One mechanistic point, offered in fairness. The four components are proposed to act by different routes — copper-peptide effects on skin and matrix biology, BPC-157’s less cleanly defined mechanisms, actin sequestration for thymosin beta-4, and an anti-inflammatory effect for KPV that published work indicates is at least partly receptor-independent. Non-overlapping mechanisms are a reason to test a combination. They are not evidence it works."
+      },
+      {
+        "question": "Does the copper affect the other components?",
+        "answer": "It is a legitimate open question. GHK-Cu is a copper(II) complex, and copper(II) is redox-active and a known catalyst of thiol oxidation and metal-catalysed oxidation of residues like methionine and histidine. One favourable detail: KPV comprises lysine, proline and valine, so it contains neither cysteine nor methionine and is not itself an obvious target. The concern remains for components carrying oxidation-sensitive residues, and no stability study is supplied."
+      }
+    ]
+  }
+}

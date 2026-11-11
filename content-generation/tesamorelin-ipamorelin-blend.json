@@ -1,0 +1,229 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Multi-component product. Both component identities are individually verified, but the per-component ratio implied by the 6.3mg and 13mg designations is supplier-specified and NOT VERIFIED.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "tesamorelin-ipamorelin-blend",
+    "qc": {
+      "main_content_words": 2318,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "MIXED - tesamorelin is an APPROVED human drug (FDA 2010, HIV-associated lipodystrophy, Egrifta); ipamorelin is not approved anywhere. The combination has never been approved or evaluated. Compliance section written specifically.",
+    "blend": true,
+    "variants_from_csv": [
+      {
+        "variant": "6.3mg",
+        "price_usd": "98.99"
+      },
+      {
+        "variant": "13mg",
+        "price_usd": "142.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "6.3mg",
+        "source_file": "Tesamorelin - Ipamorelin Blend 6.3mg.png",
+        "upload_as": "amino-tesamorelin-ipamorelin-blend-6-3mg.png"
+      },
+      {
+        "variant": "13mg",
+        "source_file": "Tesamorelin - Ipamorelin Blend 13mg.png",
+        "upload_as": "amino-tesamorelin-ipamorelin-blend-13mg.png"
+      }
+    ],
+    "component_identities": {
+      "tesamorelin": "VERIFIED - PubChem CID 16137828: C221H366N72O67S, MW 5136, CAS 218949-48-5. FDA approved Nov 2010 for HIV-associated lipodystrophy.",
+      "ipamorelin": "VERIFIED - PubChem CID 9831659: C38H49N9O5, MW 711.9, CAS 170851-70-4"
+    },
+    "references": [
+      "PMID 19243281 doi:10.1517/13543780802707658 - Expert Opin Investig Drugs - GRF analogue development rationale vs recombinant hGH",
+      "PMID 22298602 doi:10.1345/aph.1Q629 - Ann Pharmacother - tesamorelin phase 3 evidence; the approved GRF analogue",
+      "PMID 18056963 doi:10.1196/annals.1404.023 - Ann N Y Acad Sci - GHS-R1a agonists and restoration of episodic GH release amplitude",
+      "PMID 33333485 doi:10.1016/j.npep.2020.102112 - Neuropeptides - breadth of the ghrelin/GHS-R1a system",
+      "PMID 28873385 doi:10.1159/000475732 - Endocr Dev - ghrelin and growth"
+    ],
+    "unverified": [
+      "Per-component ratio - the 6.3mg and 13mg totals do not state how mass divides between tesamorelin and ipamorelin. NOT VERIFIED and NOT inferred.",
+      "Whether the stated figure is a combined total or refers to one component",
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what is in the blend, the ratio, and whether tesamorelin being approved means anything for the combination.",
+    "primary_keyword": "tesamorelin ipamorelin",
+    "secondary_keywords": [
+      "tesamorelin ipamorelin blend",
+      "GHRH secretagogue combination",
+      "tesamorelin ipamorelin ratio",
+      "peptide blend growth hormone",
+      "tesamorelin blend"
+    ],
+    "long_tail_keywords": [
+      "what is tesamorelin ipamorelin blend",
+      "tesamorelin ipamorelin 6.3mg ratio",
+      "is tesamorelin ipamorelin approved",
+      "tesamorelin ipamorelin vs CJC-1295 ipamorelin",
+      "why combine tesamorelin and ipamorelin",
+      "tesamorelin ipamorelin certificate of analysis",
+      "does approved tesamorelin make the blend approved",
+      "tesamorelin ipamorelin duration of action",
+      "tesamorelin molecular weight 5136",
+      "blend per component quantitation"
+    ],
+    "semantic_terms": [
+      "GHRH receptor",
+      "GHS-R1a",
+      "somatotroph",
+      "combination pharmacology",
+      "intact mass",
+      "per-component quantitation",
+      "duration of action",
+      "visceral adipose tissue",
+      "pulsatile secretion",
+      "peak assignment"
+    ],
+    "name_variations": [
+      "Tesamorelin + Ipamorelin Blend",
+      "Tesamorelin / Ipamorelin",
+      "Tesa/Ipa blend"
+    ],
+    "informational_queries": [
+      "what is tesamorelin ipamorelin blend",
+      "tesamorelin ipamorelin ratio",
+      "is tesamorelin ipamorelin fda approved",
+      "tesamorelin vs CJC-1295 blend",
+      "tesamorelin ipamorelin evidence"
+    ],
+    "commercial_queries": [
+      "buy tesamorelin ipamorelin blend",
+      "tesamorelin ipamorelin 6.3mg 13mg",
+      "tesamorelin ipamorelin COA"
+    ],
+    "cannibalisation_check": "Owns the tesamorelin-plus-ipamorelin combination intent. /product/tesamorelin and /product/ipamorelin own their molecules; /product/cjc-1295-ipamorelin owns the other blend. Cross-links rather than restating component identity content.",
+    "h1": "Driven by CMS name field; renders as \"Tesamorelin + Ipamorelin Blend\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/tesamorelin",
+        "anchor": "Tesamorelin",
+        "rationale": "Verified component with its own clinical evidence; needed as an experimental control.",
+        "verified": true
+      },
+      {
+        "route": "/product/ipamorelin",
+        "anchor": "Ipamorelin",
+        "rationale": "Verified component; needed as an experimental control.",
+        "verified": true
+      },
+      {
+        "route": "/product/cjc-1295-ipamorelin",
+        "anchor": "CJC-1295 / Ipamorelin",
+        "rationale": "The other GHRH-plus-secretagogue preparation; direct comparison.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "Tesamorelin + Ipamorelin Blend | GHRH + GHS-R1a | Amino Based",
+    "seoDescription": "Tesamorelin + Ipamorelin: two-component preparation combining an approved GHRH analogue with a GHS-R1a agonist. Component identities, limits. Research use only.",
+    "description": "This is a two-component preparation combining tesamorelin (C221H366N72O67S, MW approximately 5136, CAS 218949-48-5) with ipamorelin (C38H49N9O5, MW approximately 711.9, CAS 170851-70-4). The two act on different receptors — the GHRH receptor and the growth hormone secretagogue receptor 1a respectively. Tesamorelin is an approved human medicine; ipamorelin is not, and the combination has never been approved. Research use only.",
+    "productDetailsTitle": "Two Verified Components, One Unverified Ratio",
+    "productDetailsDescription": "This preparation contains two peptides whose individual identities are both well established, which distinguishes it from most blended products and makes the remaining uncertainty unusually easy to isolate.\n\nTesamorelin is a synthetic analogue of human growth hormone-releasing factor, developed under the code TH9507. Its verified identifiers are a molecular formula of C221H366N72O67S, a molecular weight of approximately 5136 g/mol and CAS registry number 218949-48-5, recorded under PubChem CID 16137828. It acts on the growth hormone-releasing hormone receptor on pituitary somatotrophs, and it is an approved human medicine — authorised by the FDA in November 2010 for HIV-associated lipodystrophy and marketed as Egrifta.\n\nIpamorelin is a synthetic pentapeptide acting on a different receptor entirely: the growth hormone secretagogue receptor 1a, whose endogenous ligand is ghrelin. Its verified identifiers are a molecular formula of C38H49N9O5, a molecular weight of approximately 711.9 g/mol and CAS registry number 170851-70-4, recorded under PubChem CID 9831659.\n\nThe pairing follows the same logic as other GHRH-plus-secretagogue preparations. Two separate receptors with separate endogenous ligands regulate the same downstream secretory output, so simultaneous engagement is not equivalent to stronger engagement of either alone. What distinguishes this preparation from the CJC-1295 pairing is that both of its components are chemically defined and registry-verified, with no ambiguity about which variant is present. That is a meaningful advantage for experimental work.\n\nWhat is not established is the ratio. The presentations are designated 6.3 mg and 13 mg, and those figures are notable for what they do not say. Unlike a 5 mg/5 mg notation, which at least implies a per-component breakdown, a single combined figure gives no information about how the mass divides between a 5136 Da peptide and a 711.9 Da one. The ratio is the property that determines the preparation's pharmacology, and it is supplier-specified rather than measured. This page does not infer it, and no ratio should be assumed from the headline figure. For a preparation whose entire rationale is the relationship between two components, that is a material gap and it is worth resolving before use.\n\nA mass-based observation follows from the component identities and is practically useful. The components differ in mass by roughly sevenfold, which means that in an intact-mass analysis they are separated unambiguously and their relative abundance is directly observable. The information needed to establish the ratio is therefore obtainable from a single well-designed analysis.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 6.3 mg and 13 mg presentations, understood as combined totals.",
+    "researchFocusTitle": "Combination Rationale, an Approved Component, and the Limits of Inference",
+    "researchFocusDescription": "This preparation is unusual in the catalogue in that one of its components has a completed late-phase clinical programme behind it. That makes it important to be precise about what the evidence covers, because the temptation to let an approved component's data stand in for the blend is strong and the inference is not valid.\n\nTesamorelin's evidence is substantial and specific. A review in the Annals of Pharmacotherapy records that the FDA approved it in November 2010 for lipodystrophy associated with HIV infection, and that in two phase 3 trials and their pooled analyses it significantly decreased waist circumference and visceral adipose tissue after 26 weeks, with 26-week extension phases confirming maintenance of visceral adipose tissue reductions without adverse impact on blood glucose and lipid parameters. The reviewing authors noted high cost and a lack of long-term safety and adherence data as limitations, and observed that data supporting off-label uses were limited (PMID 22298602, doi:10.1345/aph.1Q629). The development rationale for the class — acting upstream on the pituitary's secretory machinery rather than administering recombinant growth hormone, which is effective but carries adverse effects — is set out in an earlier development review (PMID 19243281, doi:10.1517/13543780802707658).\n\nThree qualifications apply to that evidence in this context, and all three matter. It concerns tesamorelin administered alone, not in combination. It concerns a defined patient population with a specific condition, HIV-associated lipodystrophy, with the reviewing authors explicitly noting limited support for off-label use. And it concerns a licensed pharmaceutical product manufactured under pharmaceutical quality systems, not research material. None of those gaps is bridged by the fact that the same molecule is present here.\n\nThe secretagogue arm has its own separate literature. A review in the Annals of the New York Academy of Sciences reports an orally active GHS-R1a agonist restoring the amplitude of endogenous episodic growth hormone release in elderly subjects to young-adult values, with functional benefits described as increased lean mass and bone density plus modest improvements in strength (PMID 18056963, doi:10.1196/annals.1404.023) — findings that concern MK-0677, not ipamorelin. A review in Neuropeptides describes the breadth of the ghrelin and GHS-R1a system across tissues and processes (PMID 33333485, doi:10.1016/j.npep.2020.102112), and work on ghrelin and growth documents associations between secretagogue receptor gene variants and human height (PMID 28873385, doi:10.1159/000475732).\n\nNo published trial supporting this page examines tesamorelin and ipamorelin in combination. The combination has not been evaluated by any regulator. Evidence that each class has pharmacological activity does not establish what the two do together, and the entire reason combinations are studied is that this cannot be predicted from single-agent data.\n\nA design consideration specific to this pairing deserves attention. The two components differ substantially in duration of action: tesamorelin is a chemically stabilised analogue engineered to resist degradation, while ipamorelin is a small unmodified peptide. Where component durations differ, the window of genuine combined stimulation is shorter than the period over which either component remains active, so results attributed to combination effects may partly reflect sequential single-agent effects. Establishing the time course of each component separately is therefore a prerequisite for interpreting combination data rather than an optional refinement.\n\nThere is also the tension noted elsewhere in this group: the mechanistic argument for secretagogues over recombinant growth hormone rests on preserving pulsatile, feedback-regulated secretion, and a preparation designed to maximise stimulation moves away from that rationale rather than toward it.\n\nFor laboratory work the tractable questions are whether dual-receptor engagement differs from the sum of separate engagement, how that depends on relative timing and ratio, and whether sustained engagement of one arm alters responsiveness of the other. Because both components are available separately in this catalogue with verified identities, properly controlled comparisons are feasible — and they are the only basis on which combination conclusions can be drawn.",
+    "qualityPurityTitle": "Analytical Verification and What Is Actually Documented",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThe central analytical question for any blended preparation is different from that for a single compound, and it is worth stating directly: a certificate describing one component says nothing about the other, and a single combined purity percentage is close to meaningless. What is needed is identity and purity for each component separately, plus the actual quantity of each present in the vial.\n\nIdentity for each component is established by mass spectrometry against its own calculated mass. In a two-component preparation the components usually differ substantially in mass, which makes them individually detectable in a single analysis — an advantage of blends over single compounds, analytically speaking, provided the analysis is actually performed and reported per component.\n\nQuantitation is the harder and more frequently omitted part. A vial label stating a combined mass does not establish how that mass divides between the components, and the ratio is the property that determines what the preparation actually does. Without per-component quantitation the stated ratio is a manufacturing claim rather than a measured result.\n\nThis preparation is analytically more tractable than most blends, for a specific reason: its components differ in mass by roughly sevenfold. Tesamorelin is approximately 5136 Da and ipamorelin approximately 711.9 Da. In an intact-mass analysis they are separated unambiguously, with no prospect of one being mistaken for the other or for a degradation product of the other. Their relative abundance is directly observable in the same measurement. The information needed to establish both identity and ratio is therefore available from a single well-designed analysis, which makes the absence of that data on a certificate harder to excuse than it would be for a more analytically awkward product.\n\nThe ratio question is the one to press. The 6.3 mg and 13 mg designations are combined totals that say nothing about how mass divides between the components, and the ratio determines the preparation's pharmacology. Per-component quantitation is the measurement that answers it, and without it the composition is a manufacturing claim rather than a measured result.\n\nFor tesamorelin specifically, the N-terminal modification that confers its stability is a point of analytical interest, since material lacking or carrying an incorrect modification would differ from the intended compound in a way a sequence-level check alone might not reveal. Intact mass addresses this directly.\n\nPurity assessment by reverse-phase chromatography should identify which peaks were assigned to which component. A single purity percentage covering a two-component preparation, with no peak assignment, is not interpretable: the two intended components are not impurities in each other, but anything else present is.\n\nLyophilised mass is also not peptide content: a vial may contain counter-ions and residual water alongside the peptides, and unless peptide content has been determined for each component, stated figures are fill masses.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Mixed Regulatory Status: One Approved Component, an Unapproved Combination",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nThe regulatory position of this preparation is mixed and requires a precise statement, because neither the generic research-chemical language nor an approved-drug framing would be accurate on its own.\n\nTesamorelin, one of the two components, is an approved human medicine. The United States Food and Drug Administration approved it in November 2010 for the treatment of lipodystrophy associated with HIV infection, and it is marketed under the brand name Egrifta, the trademark of its proprietor. That approval attaches to a specific licensed pharmaceutical product, manufactured under pharmaceutical quality systems, supplied with regulator-approved labelling and prescribed for a defined indication in a defined patient population. Ipamorelin, the other component, is not approved by any regulator in any jurisdiction for any indication.\n\nThe combination itself has never been approved or evaluated by any regulatory authority anywhere. This is the point most at risk of being obscured by the presence of an approved molecule. A preparation containing an approved drug is not thereby an approved preparation; combining an approved medicine with an unapproved substance produces something that has been evaluated by nobody. Tesamorelin's approval covers tesamorelin, administered alone, as a licensed product, for HIV-associated lipodystrophy. It does not extend to this material, to this combination, or to any other population.\n\nThe material supplied here is not a licensed medicine, is not manufactured as one, is not a generic or equivalent of one, and is not a substitute for a prescribed medicine. Anyone who requires tesamorelin as a treatment should obtain a licensed product through a clinician and a regulated pharmacy.\n\nSafety information about two substances administered separately does not establish the safety of administering them together, since interaction effects are not observable in single-agent data. The composition of this preparation, including the ratio between components, is supplier-specified and not independently verified.\n\nGrowth hormone-releasing factor analogues and growth hormone secretagogues both fall within the categories of substances prohibited in sport. Competitors subject to anti-doping rules should consult the current prohibited list rather than rely on any statement here.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is in this product?",
+        "answer": "Two peptides, both with verified identities. Tesamorelin, an analogue of growth hormone-releasing factor: C221H366N72O67S, molecular weight approximately 5136 g/mol, CAS 218949-48-5, PubChem CID 16137828. And ipamorelin, a pentapeptide secretagogue: C38H49N9O5, molecular weight approximately 711.9 g/mol, CAS 170851-70-4, PubChem CID 9831659. Being a blend, the product has no single molecular formula of its own."
+      },
+      {
+        "question": "What does 6.3mg or 13mg refer to?",
+        "answer": "A combined total, and that is the main gap in the specification. Unlike a 5mg/5mg notation, a single figure gives no information about how the mass divides between a 5136 Da peptide and a 711.9 Da one. The ratio is what determines the preparation’s pharmacology, and it is supplier-specified rather than measured. This page does not infer it, and no ratio should be assumed from the headline figure."
+      },
+      {
+        "question": "Is this an approved product because it contains tesamorelin?",
+        "answer": "No, and this is the most consequential misunderstanding available here. Tesamorelin is approved — FDA, November 2010, for HIV-associated lipodystrophy, as Egrifta. But that approval covers tesamorelin administered alone, as a licensed pharmaceutical product, for that indication. The combination has never been approved or evaluated by any regulator. Combining an approved medicine with an unapproved substance produces something evaluated by nobody."
+      },
+      {
+        "question": "Why combine a GHRH analogue with a secretagogue?",
+        "answer": "Because they act on different receptors. Tesamorelin acts on the growth hormone-releasing hormone receptor on pituitary somatotrophs; ipamorelin acts on the growth hormone secretagogue receptor 1a, whose endogenous ligand is ghrelin. Two separate regulatory inputs converge on the same secretory output, so simultaneous engagement is not equivalent to stronger engagement of either alone."
+      },
+      {
+        "question": "How does this differ from the CJC-1295 blend?",
+        "answer": "Both components here are chemically defined and registry-verified, with no ambiguity about which variant is present. The CJC-1295 pairing carries an unresolved question about whether its GHRH component is the DAC-bearing variant or the non-DAC one, which have very different durations. For experimental work, knowing exactly what is in the vial is a meaningful advantage of this preparation."
+      },
+      {
+        "question": "Does the tesamorelin trial evidence apply here?",
+        "answer": "Not to this preparation. The phase 3 data concern tesamorelin administered alone, in a defined patient population with HIV-associated lipodystrophy, as a licensed pharmaceutical product — and the reviewing authors specifically noted that support for off-label uses was limited. Three gaps separate that evidence from this material: combination versus single agent, patient population, and pharmaceutical versus research material."
+      },
+      {
+        "question": "Why does the difference in duration matter?",
+        "answer": "Because it determines when the components are actually acting together. Tesamorelin is chemically stabilised to resist degradation; ipamorelin is a small unmodified peptide. Where durations differ, the window of genuine combined stimulation is shorter than the period either component remains active, so results attributed to combination effects may partly reflect sequential single-agent effects. Establishing each component’s time course is a prerequisite for interpreting combination data."
+      },
+      {
+        "question": "What makes this blend easier to analyse than most?",
+        "answer": "The sevenfold mass difference between components. At approximately 5136 Da and 711.9 Da, tesamorelin and ipamorelin separate unambiguously in intact-mass analysis, with no prospect of one being mistaken for the other or for a degradation product of the other, and their relative abundance is directly observable in the same measurement. Identity and ratio are both obtainable from one well-designed analysis."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "Identity and purity for each component separately, plus per-component quantitation establishing the ratio. A purity percentage covering the whole preparation without peak assignment is not interpretable, since the two intended components are not impurities in each other but anything else present is. Given how analytically tractable this pairing is, absent data is harder to excuse here than for a more awkward product."
+      },
+      {
+        "question": "What does \"research use only\" mean for a product containing an approved drug?",
+        "answer": "It means this material is sold for laboratory research and nothing else, and sits entirely outside the regulatory framework governing the approved product. It is not a licensed medicine, not a generic, and not a substitute for a prescribed product. Anyone who requires tesamorelin as a treatment should obtain a licensed product through a clinician and a regulated pharmacy."
+      }
+    ]
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "_meta": {
+    "status": "NEEDS VERIFICATION",
+    "status_reason": "Content and evidence requirements satisfied. Product-specific specifications remain unverified pending supplier/lot data.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "nad",
+    "qc": {
+      "main_content_words": 3098,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED as a drug in any jurisdiction. Note: this is an endogenous coenzyme present in all living cells, and a standard laboratory biochemical reagent.",
+    "variants_from_csv": [
+      {
+        "variant": "500mg",
+        "price_usd": "71.49"
+      },
+      {
+        "variant": "1000mg",
+        "price_usd": "98.99"
+      }
+    ],
+    "images": [
+      {
+        "variant": "500mg",
+        "source_file": "NAD+ 500mg.png",
+        "upload_as": "amino-nad-500mg.png",
+        "blocklist_warning": "original filename rejected by isBlockedProductImage(); amino- prefix required"
+      },
+      {
+        "variant": "1000mg",
+        "source_file": "NAD+ 1000mg.png",
+        "upload_as": "amino-nad-1000mg.png"
+      }
+    ],
+    "not_a_peptide": "NAD+ is a dinucleotide coenzyme, not a peptide. The shared lyophilised-peptide storage boilerplate was deliberately NOT used for this page; a bespoke handling paragraph covering hygroscopicity and solution instability was written instead.",
+    "references": [
+      "PubChem CID 5892 (PUG REST, verified 2026-11-09): C21H27N7O14P2, MW 663.4, CAS 53-84-9.",
+      "PMID 37271226 doi:10.1016/j.freeradbiomed.2023.05.032 - Free Radic Biol Med 205:77-89 - one-day DOUBLE BLINDED, PLACEBO-CONTROLLED human study of six Combined Metabolic Activator formulations each with 1 g of a different NAD+ PRECURSOR. Key findings: the NAD+ SALVAGE PATHWAY is the main source for boosting NAD levels; nicotinamide boosted NAD products most, followed by niacin, nicotinamide riboside and nicotinamide mononucleotide, but NOT flush-free niacin; niacin caused a flushing reaction with decreased phospholipids and increased bilirubin, described by the authors as potentially risky.",
+      "PMID 34180141 doi:10.1002/advs.202101222 - Adv Sci 8(17):e2101222 - placebo-controlled open-label phase 2 and double-blinded phase 3 trials of Combined Metabolic Activators (containing nicotinamide riboside, NOT NAD+ itself) in mild-to-moderate COVID-19; time to complete recovery 6.6 vs 9.3 days (phase 2) and 5.7 vs 9.2 days (phase 3).",
+      "PMID 27924925 doi:10.1038/srep38489 - Sci Rep 6:38489 - replicatively senescent human fibroblast metabolomics; striking accumulation of NMN and NR in the amidated salvage pathway; identifies CD73 as the NR transport protein; intracellular NAD+ and nicotinamide nevertheless MAINTAINED; sirtuin 1 downregulated.",
+      "PMID 29215048 doi:10.1038/s41598-017-17568-8 - Sci Rep 7(1):17188 - pharmacological ascorbate depleted cellular NAD+ preferentially in cancer versus normal cells, leading to ATP depletion; demonstrates NAD+ as a measurable and manipulable intracellular target."
+    ],
+    "unverified": [
+      "Salt form for any given Amino Based lot - free acid versus disodium salt materially changes the formula weight and therefore every molar calculation",
+      "Purity, residual nicotinamide and NADH content - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "Product-specific stability and solution stability - no study supplied, none claimed; this coenzyme is known to be considerably less stable in solution than as a dry solid",
+      "Whether the stated 500 mg / 1000 mg figures are free-acid equivalent or as-is salt mass - not stated"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational, with a strong verification component. The searcher wants to know what NAD+ is, whether taking it works, and how it differs from NMN and NR.",
+    "primary_keyword": "NAD+",
+    "secondary_keywords": [
+      "nicotinamide adenine dinucleotide",
+      "NAD+ 500mg",
+      "NAD+ molecular weight",
+      "NAD+ CAS 53-84-9",
+      "NAD+ vs NMN",
+      "NAD+ disodium salt"
+    ],
+    "long_tail_keywords": [
+      "what is NAD+",
+      "does NAD+ enter cells",
+      "NAD+ vs NMN vs NR",
+      "NAD+ molecular formula C21H27N7O14P2",
+      "NAD+ free acid vs disodium salt molecular weight",
+      "is NAD+ FDA approved",
+      "NAD+ salvage pathway",
+      "NAD+ enzyme assay reagent",
+      "NAD+ 340 nm absorbance check",
+      "NAD+ certificate of analysis"
+    ],
+    "semantic_terms": [
+      "NADH",
+      "NADP+",
+      "nicotinamide",
+      "niacin",
+      "nicotinamide riboside",
+      "nicotinamide mononucleotide",
+      "salvage pathway",
+      "sirtuin",
+      "SIRT1",
+      "poly-ADP-ribose polymerase",
+      "CD38",
+      "CD73",
+      "dehydrogenase",
+      "redox",
+      "coupled enzyme assay",
+      "disodium salt",
+      "hygroscopic"
+    ],
+    "name_variations": [
+      "NAD+",
+      "NAD",
+      "nicotinamide adenine dinucleotide",
+      "diphosphopyridine nucleotide",
+      "coenzyme I",
+      "NADH (reduced form, distinct)",
+      "NADP+ / NADPH (distinct molecules)"
+    ],
+    "informational_queries": [
+      "what is NAD+",
+      "does NAD+ work",
+      "NAD+ vs NMN",
+      "how does NAD+ enter cells",
+      "NAD+ salvage pathway"
+    ],
+    "commercial_queries": [
+      "buy NAD+ 500mg",
+      "NAD+ 1000mg",
+      "NAD+ research reagent",
+      "NAD+ COA"
+    ],
+    "cannibalisation_check": "Owns NAD+ and the coenzyme / precursor-distinction intent. /product/glutathione owns the antioxidant cofactor intent; /product/l-carnitine owns carnitine, which is a separate component of the Combined Metabolic Activator formulations discussed here; /product/epitalon owns the pineal-peptide longevity intent.",
+    "h1": "Driven by CMS name field; renders as \"NAD+\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/l-carnitine",
+        "anchor": "L-Carnitine",
+        "rationale": "A separate component of the Combined Metabolic Activator formulations discussed on this page; directly relevant to the precursor-versus-formulation distinction.",
+        "verified": true
+      },
+      {
+        "route": "/product/glutathione",
+        "anchor": "Glutathione",
+        "rationale": "Other endogenous non-peptide-drug metabolite in the catalogue with a comparable membrane-permeability problem.",
+        "verified": true
+      },
+      {
+        "route": "/product/epitalon",
+        "anchor": "Epitalon",
+        "rationale": "Adjacent cellular-ageing research intent, with a far narrower and less independently replicated evidence base.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "NAD+ | Nicotinamide Adenine Dinucleotide, CAS 53-84-9 | Amino Based",
+    "seoDescription": "NAD+: C21H27N7O14P2, MW 663.4, CAS 53-84-9. An endogenous coenzyme and lab reagent. Why trials used precursors, not NAD+. Research use only.",
+    "description": "NAD+ is nicotinamide adenine dinucleotide, a dinucleotide coenzyme present in every living cell and central to cellular redox chemistry. Its molecular formula is C21H27N7O14P2, with a molecular weight of approximately 663.4 g/mol (PubChem CID 5892, CAS 53-84-9). Unlike the peptides elsewhere in this catalogue it is an endogenous metabolite and a long-established laboratory biochemical reagent. It is not approved as a drug in any jurisdiction and is supplied for laboratory research use only.",
+    "productDetailsTitle": "NAD+: A Coenzyme, a Reagent, and a Molecule That Does Not Enter Cells Intact",
+    "productDetailsDescription": "NAD+ is not a peptide, and almost everything practical about this product follows from that. It is a dinucleotide: a nicotinamide ribonucleotide joined to an adenine ribonucleotide through a pyrophosphate bridge. At approximately 663.4 g/mol it carries two phosphate groups, which at physiological pH make it a strongly and multiply negatively charged molecule. That charge is the single most important fact on this page, for reasons that become clear below.\n\nIts biological role requires no speculation and no citation of a contested study. NAD+ is one of the most thoroughly characterised molecules in biochemistry. It is the principal electron acceptor in catabolic metabolism, cycling between its oxidised form, NAD+, and its reduced form, NADH, as it accepts and donates a hydride during glycolysis, the citric acid cycle, fatty acid oxidation and oxidative phosphorylation. Beyond redox chemistry it is a consumed substrate — not merely a cofactor — for several enzyme classes, including the sirtuin deacetylases, poly-ADP-ribose polymerases involved in DNA damage response, and CD38 and related ectoenzymes. Those consuming reactions cleave the molecule, which means cellular NAD+ is continuously degraded and must be continuously resynthesised. This established biochemistry is textbook material, and nothing in this catalogue has a better-characterised function.\n\nThe pharmacological problem, and the reason this page is written the way it is, follows from the chemistry. A large, doubly phosphorylated, multiply charged molecule does not readily cross intact plasma membranes. Cells do not generally take up NAD+ whole; they synthesise it internally from smaller precursors that are transportable. The salvage pathway, which recycles nicotinamide and related precursors back into NAD+, is the dominant route by which cellular NAD+ is maintained.\n\nThat is not an inference. A metabolomic study of replicatively senescent human fibroblasts documented the relevant machinery directly, reporting striking accumulation of nicotinamide mononucleotide and nicotinamide riboside in the amidated salvage pathway, and identifying CD73 as the nicotinamide riboside transport protein — a transporter for a precursor, which is how the precursor gets in. Notably, intracellular NAD+ and nicotinamide were nevertheless maintained in those senescent cells, while sirtuin 1 was downregulated, leading the authors to explain the precursor accumulation by reduced flux through the salvage pathway due to reduced sirtuin activity rather than by a shortage of the coenzyme itself (PMID 27924925, doi:10.1038/srep38489). That is a more subtle picture than the familiar \"NAD+ declines with age, so replace it\" framing: in that system the coenzyme level held while the flux through the pathway changed.\n\nThe human trial literature points the same way, and this is the most important thing a prospective buyer should understand. A one-day double-blinded, placebo-controlled human study compared six Combined Metabolic Activator formulations, each containing one gram of a different NAD+ precursor, using global metabolomics. Its integrative analysis concluded that the NAD+ salvage pathway is the main source for boosting NAD levels. Among the precursors tested, nicotinamide boosted NAD products most, followed by niacin, then nicotinamide riboside, then nicotinamide mononucleotide — while flush-free niacin did not. The study also recorded that niacin administration produced a flushing reaction accompanied by decreased phospholipids and increased bilirubin and bilirubin derivatives, which the authors described as potentially risky (PMID 37271226, doi:10.1016/j.freeradbiomed.2023.05.032).\n\nRead that list carefully: every agent tested was a precursor. Nicotinamide, niacin, nicotinamide riboside, nicotinamide mononucleotide. NAD+ itself was not among them. The same is true of the larger clinical work in this area — placebo-controlled phase 2 and double-blinded phase 3 trials of Combined Metabolic Activators in mild-to-moderate COVID-19 reported shorter time to complete recovery, 6.6 against 9.3 days in phase 2 and 5.7 against 9.2 days in phase 3, and the NAD+ arm of that formulation was nicotinamide riboside, not NAD+ (PMID 34180141, doi:10.1002/advs.202101222).\n\nThis is the central honesty point of this page. The human evidence frequently cited in support of NAD+ products is evidence about NAD+ precursors. Those trials do not establish that administering NAD+ itself raises cellular NAD+, and the chemistry gives a clear reason to expect it would be an inefficient way to try. Material sold as NAD+ should not borrow the credibility of trials conducted on different molecules.\n\nWhat this compound unambiguously is, and what makes a 500 mg or 1000 mg vial entirely sensible, is a standard laboratory biochemical reagent. NAD+ is the cofactor in a very large number of established enzyme assays. Dehydrogenase activity is routinely measured by following NADH absorbance at 340 nanometres, and coupled-enzyme assay designs across clinical chemistry and biochemistry depend on supplying NAD+ as a reagent. At these quantities, in vitro biochemistry — enzyme kinetics, coupled assays, cell-free systems, and work on the NAD+-consuming enzyme classes themselves — is the well-founded use. That work does not require the molecule to cross a membrane, which is precisely why the membrane problem is irrelevant to it.\n\nA naming note. This compound appears as NAD+, NAD, nicotinamide adenine dinucleotide, diphosphopyridine nucleotide and coenzyme I. NADH is the reduced form and a different chemical entity with a different mass. NADP+ and NADPH carry an additional phosphate and are distinct molecules used in different reactions. The precursors — nicotinamide, niacin, nicotinamide riboside and nicotinamide mononucleotide — are all different compounds and are routinely conflated with NAD+ in marketing material.\n\nThe material is supplied as a solid in a sealed glass vial, and the stated quantity refers to the mass of material in the vial. This compound is a dinucleotide coenzyme rather than a peptide, and the handling considerations differ accordingly. The solid is hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold material. More importantly, this coenzyme is well known to be considerably less stable in solution than as a dry solid, with degradation accelerated at alkaline pH, so solutions are conventionally prepared fresh rather than stored. Amino Based publishes no product-specific stability study for this material, so no shelf-life, solution-stability or freeze-thaw tolerance figures are claimed here; where such data are needed they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in nominal 500 mg and 1000 mg presentations.",
+    "researchFocusTitle": "What the Evidence Supports: Precursor Trials, Salvage Flux, and Reagent Use",
+    "researchFocusDescription": "The research literature on NAD+ is vast, old and in large part uncontroversial, which makes the assessment task here different from elsewhere in this catalogue. The question is not whether this molecule matters — it demonstrably does — but which claims the evidence attaches to the molecule as supplied rather than to the biology it participates in.\n\nStart with what is firmly established. NAD+ is central to energy metabolism and is a consumed substrate for sirtuins, poly-ADP-ribose polymerases, and CD38 and related ectoenzymes. Because those enzymes cleave it, the pool turns over continuously. Declining NAD+ availability with age, and in various disease states, is a well-developed and much-studied hypothesis in ageing biology. None of that is in dispute, and none of it is specific to this product.\n\nThe experimental tractability of NAD+ as a target is also well demonstrated. Work on pharmacological ascorbate in pancreatic cancer reported that high-dose ascorbate depleted cellular NAD+ preferentially in cancer cells relative to normal cells, leading to ATP depletion and cell death, alongside increased alpha-tubulin acetylation that inhibited motility and mitosis (PMID 29215048, doi:10.1038/s41598-017-17568-8). The relevance here is methodological rather than therapeutic: it shows NAD+ is a measurable, manipulable intracellular quantity whose depletion produces consequences that can be traced. That is what makes it a good experimental target.\n\nThe senescence metabolomics work is the most instructive single study for understanding what supplementation can and cannot be expected to do. In replicatively senescent human fibroblasts, nicotinamide mononucleotide and nicotinamide riboside accumulated strikingly in the amidated salvage pathway, while nicotinamide phosphoribosyl transferase and the nicotinamide riboside transport protein CD73 were not increased. Intracellular NAD+ and nicotinamide were maintained. Sirtuin 1 was downregulated, and the authors explained the precursor accumulation as reduced flux through the amidated salvage arm consequent on reduced sirtuin activity (PMID 27924925, doi:10.1038/srep38489). The implication is important and cuts against the simplest version of the supplementation argument: in this system the problem was not an absent pool but altered flux through the pathway, and precursors were accumulating rather than being depleted. Adding more substrate to a pathway whose throughput is limited downstream is not obviously useful.\n\nThe best human evidence in this area is the precursor-comparison study, and it is worth describing precisely because its design is good. Six Combined Metabolic Activator formulations, each with one gram of a different NAD+ precursor, were compared in a one-day double-blinded, placebo-controlled human study with global metabolomics as the readout. The conclusion was that the salvage pathway is the main source for boosting NAD levels. Nicotinamide produced the greatest increase in NAD products, followed by niacin, nicotinamide riboside and nicotinamide mononucleotide; flush-free niacin did not. Niacin produced a flushing reaction with decreased phospholipids and increased bilirubin and derivatives, which the authors flagged as potentially risky (PMID 37271226, doi:10.1016/j.freeradbiomed.2023.05.032). Two things follow. First, precursors differ substantially from one another in effect, so they are not interchangeable. Second — and this is the point most often elided — the agent that performed best was plain nicotinamide, the simplest and cheapest of them, outperforming the two precursors most heavily marketed for this purpose.\n\nThe clinical endpoint evidence in this family concerns formulations, not NAD+. Placebo-controlled open-label phase 2 and double-blinded phase 3 trials of Combined Metabolic Activators in mild-to-moderate COVID-19 reported shorter time to complete recovery — 6.6 against 9.3 days, and 5.7 against 9.2 days respectively — with improvements in plasma markers of inflammation and antioxidant metabolism (PMID 34180141, doi:10.1002/advs.202101222). Those are real randomised results. But the formulation comprised L-serine, N-acetyl-L-cysteine, nicotinamide riboside and L-carnitine tartrate. Four active components, one of which was an NAD+ precursor and none of which was NAD+. No conclusion about NAD+ as supplied can be drawn from them.\n\nSo the limitations here are of an unusual kind. The underlying biochemistry is not weakly evidenced — it is extremely well evidenced. What is weakly evidenced is the specific proposition that administering this molecule raises cellular NAD+ in a useful way, and the chemistry supplies a clear mechanistic reason for the doubt: a doubly phosphorylated, multiply charged molecule of 663 g/mol does not readily cross plasma membranes, and the documented transport machinery handles precursors rather than the intact coenzyme. Human trials in this field have, consistently, used precursors. Where the intact coenzyme is administered, the expectation from first principles is extracellular degradation to precursors, which makes it an indirect and inefficient way of delivering what the cheaper precursors deliver directly.\n\nFor a laboratory, this points to a clear and defensible research focus. In vitro biochemistry is the well-founded use: enzyme kinetics on dehydrogenases, coupled-enzyme assays following NADH absorbance at 340 nanometres, cell-free reconstitution, and direct study of the NAD+-consuming enzyme classes. For those applications this compound is not a speculative research chemical at all — it is a standard reagent with decades of established methodology behind it, and 500 mg to 1000 mg is a sensible working quantity. The interesting open questions concern flux rather than pool size: what limits salvage pathway throughput, why senescent cells accumulate precursors while maintaining the coenzyme, and whether downstream limitation rather than substrate availability is the real constraint. Those are tractable questions, and this reagent is a legitimate tool for approaching them.",
+    "qualityPurityTitle": "Analytical Verification for a Coenzyme, Including a Salt-Form Trap",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nThe analytical questions for this product differ fundamentally from those for the peptides in this catalogue, and the single most consequential one is the salt form.\n\nIdentity is established against the verified free-acid molecular formula C21H27N7O14P2 and molecular weight of approximately 663.4 g/mol, CAS registry number 53-84-9 (PubChem CID 5892). This compound is very commonly supplied as the disodium salt rather than the free acid. Substituting two sodium atoms for two acidic protons raises the formula weight by about 44 units — roughly 7 per cent — which can be computed directly from the verified free-acid formula, though that salt figure is arithmetic here rather than a value taken from a database record. The consequence is unavoidable: a molar calculation performed with the free-acid weight on disodium salt material is wrong by about 7 per cent in every experiment that uses it. The product listing does not state which form is supplied, nor whether the 500 mg and 1000 mg figures are free-acid equivalent or as-is salt mass. For enzyme kinetics, where accurate concentrations are the entire point, this should be resolved with the supplier before use. It is the most likely source of quantitative error with this product.\n\nPurity assessment is by high-performance liquid chromatography with ultraviolet detection, which is well established for this compound and benefits from the adenine chromophore. Two specific impurities matter more than a headline purity figure. The first is NADH, the reduced form, which is a different chemical entity and is readily distinguished spectrophotometrically: NADH absorbs at 340 nanometres while NAD+ does not, so the ratio of absorbance at 340 to that at 260 is a direct and inexpensive check on reduced-form contamination. Any laboratory with a spectrophotometer can perform this verification independently of a supplier certificate, which is unusual among the products in this catalogue and worth taking advantage of.\n\nThe second is nicotinamide and other hydrolysis products. The glycosidic and pyrophosphate bonds in this molecule are susceptible to hydrolysis, so free nicotinamide is the expected degradation product. Its presence is an indicator of handling and storage history rather than of synthetic quality, and it is a more informative figure than a purity percentage alone because it speaks to how the material has been treated.\n\nStability deserves explicit statement because it is genuinely different from the peptides here. This coenzyme is well known to be considerably less stable in solution than as a dry solid, with degradation accelerated at alkaline pH. The practical implication is that solutions are conventionally prepared fresh rather than stored, and that a purity figure determined on receipt says nothing about the concentration of a stock solution kept for a fortnight. Amino Based publishes no product-specific stability study for this material and none is claimed here.\n\nWater content is a real quantitative issue for a hygroscopic solid of this kind. Unless water content has been determined, the stated figure is a fill mass that includes adsorbed moisture, and for a compound this hygroscopic that is not a negligible correction.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: An Endogenous Coenzyme, Not an Approved Therapy",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nNAD+ is not an approved medicine. It has not been approved by the United States Food and Drug Administration or by any other regulatory authority as a drug for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance. That this molecule occurs naturally in every living cell does not confer any regulatory status on a manufactured preparation of it, and the familiarity of the name should not be mistaken for approval.\n\nOne point requires particular emphasis because it is the most common misrepresentation in this area. The human clinical evidence routinely cited in connection with NAD+ products concerns NAD+ *precursors* — nicotinamide, niacin, nicotinamide riboside and nicotinamide mononucleotide — and not NAD+ itself. In the best-designed comparison identified, every one of the six formulations tested contained a precursor rather than the coenzyme, and the agent that performed best was plain nicotinamide. The randomised clinical trials in this family tested a four-component formulation whose NAD+-related ingredient was nicotinamide riboside. No conclusion about administering NAD+ itself follows from any of that work, and material sold as NAD+ should not borrow the credibility of trials conducted on different molecules.\n\nThere is also a mechanistic reason for caution that is independent of any trial. This is a doubly phosphorylated, multiply charged molecule that does not readily cross intact plasma membranes, and the transport machinery documented in the literature handles precursors rather than the intact coenzyme. Claims that administering NAD+ raises cellular NAD+ are not supported by the evidence identified here and face a clear chemical obstacle.\n\nNothing on this page suggests that this material is suitable for addressing ageing, fatigue, cognitive decline, addiction, metabolic disease, or any other condition in any person. It is not for human use. Its well-founded application is in vitro biochemistry, where it is a long-established laboratory reagent.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is NAD+?",
+        "answer": "NAD+ is nicotinamide adenine dinucleotide, a dinucleotide coenzyme present in every living cell. Verified identifiers are molecular formula C21H27N7O14P2, molecular weight approximately 663.4 g/mol, CAS 53-84-9, PubChem CID 5892. It is the principal electron acceptor in catabolic metabolism and a consumed substrate for sirtuins, poly-ADP-ribose polymerases and CD38. Unlike the peptides in this catalogue it is an endogenous metabolite and a long-established laboratory reagent."
+      },
+      {
+        "question": "Does NAD+ enter cells intact?",
+        "answer": "Not readily, and this is the key point about the molecule. It is a doubly phosphorylated, multiply charged molecule of about 663 g/mol, and molecules of that description do not cross intact plasma membranes easily. Cells synthesise NAD+ internally from smaller transportable precursors. The documented transport machinery — for example CD73 as the nicotinamide riboside transporter — handles precursors, not the intact coenzyme."
+      },
+      {
+        "question": "Do the human trials actually test NAD+?",
+        "answer": "No, and this is the most important thing to understand before buying. The best-designed comparison tested six formulations each containing one gram of a different NAD+ precursor — nicotinamide, niacin, nicotinamide riboside, nicotinamide mononucleotide and flush-free niacin. The randomised clinical trials in this family tested a four-component formulation whose NAD+-related ingredient was nicotinamide riboside. NAD+ itself was not administered in any of them."
+      },
+      {
+        "question": "Which NAD+ precursor performed best?",
+        "answer": "Plain nicotinamide. In a one-day double-blinded, placebo-controlled human study using global metabolomics, nicotinamide boosted NAD products most, followed by niacin, then nicotinamide riboside, then nicotinamide mononucleotide; flush-free niacin did not. The study also found that the salvage pathway is the main source for boosting NAD levels. Notably, the simplest and cheapest precursor outperformed the two most heavily marketed ones."
+      },
+      {
+        "question": "Is the \"NAD+ declines with age so replace it\" story accurate?",
+        "answer": "It is more complicated than that framing suggests. A metabolomic study of replicatively senescent human fibroblasts found nicotinamide mononucleotide and nicotinamide riboside accumulating strikingly, while intracellular NAD+ and nicotinamide were maintained and sirtuin 1 was downregulated. The authors attributed the precursor build-up to reduced flux through the salvage pathway, not a depleted pool. Adding substrate to a pathway limited downstream is not obviously useful."
+      },
+      {
+        "question": "What is NAD+ legitimately used for in a laboratory?",
+        "answer": "In vitro biochemistry, where it is a standard reagent with decades of established methodology. It is the cofactor in a large number of enzyme assays; dehydrogenase activity is routinely measured by following NADH absorbance at 340 nanometres, and many coupled-enzyme assay designs require NAD+ as a supplied reagent. None of that work requires the molecule to cross a membrane, which is why the permeability problem is irrelevant to it. 500 mg to 1000 mg is a sensible working quantity for this."
+      },
+      {
+        "question": "Free acid or disodium salt — does it matter?",
+        "answer": "Yes, and it is the most likely source of quantitative error with this product. NAD+ is very commonly supplied as the disodium salt. Replacing two acidic protons with sodium raises the formula weight by about 44 units, roughly 7 per cent. A molar calculation done with the free-acid weight of 663.4 on disodium salt material is wrong by about 7 per cent in every experiment using it. The listing does not state which form is supplied; resolve this with the supplier before kinetics work."
+      },
+      {
+        "question": "Can I verify quality myself?",
+        "answer": "Partly, and unusually for this catalogue, yes. NADH — the reduced form and a distinct chemical entity — absorbs at 340 nanometres while NAD+ does not. The ratio of absorbance at 340 nm to that at 260 nm is therefore a direct, inexpensive check on reduced-form contamination that any laboratory with a spectrophotometer can run independently of a supplier certificate. Free nicotinamide, the expected hydrolysis product, is the other impurity worth asking about."
+      },
+      {
+        "question": "How stable is NAD+?",
+        "answer": "Considerably less stable in solution than as a dry solid, with degradation accelerated at alkaline pH. The practical consequence is that solutions are conventionally prepared fresh rather than stored, and a purity figure determined on receipt tells you nothing about a stock solution kept for a fortnight. The solid is also hygroscopic, so water content is a real quantitative issue and an undetermined water content means the stated mass includes adsorbed moisture."
+      },
+      {
+        "question": "Is NAD+ approved for any use?",
+        "answer": "No. It is not approved by the FDA or any other regulatory authority as a drug for any indication, in any jurisdiction. That the molecule occurs naturally in every living cell confers no regulatory status on a manufactured preparation, and the familiarity of the name should not be mistaken for approval. It is supplied for laboratory research use only and is not for human or veterinary use."
+      }
+    ]
+  }
+}

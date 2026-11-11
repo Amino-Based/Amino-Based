@@ -1,0 +1,245 @@
+{
+  "_meta": {
+    "status": "BLOCKED",
+    "status_reason": "INHERITED IDENTITY AMBIGUITY. This blend contains TB-500, a designation applied in commerce to TWO chemically different substances - full-length thymosin beta-4 (approx 4963 Da) and the fragment Ac-LKKTETQ (approx 889 Da) - differing in mass by roughly 5.6-fold. Which is present is not stated and cannot be determined from supplier information. A blend cannot be better characterised than its least-characterised component, so the ambiguity documented on the TB-500 page propagates here in full. Additionally no per-component quantitation is supplied for the stated 5mg/5mg and 10mg/10mg presentations.",
+    "generated": "2026-11-09",
+    "template_version": 2,
+    "payload_collection": "products",
+    "slug": "bpc-157-tb-500-blend",
+    "qc": {
+      "main_content_words": 3158,
+      "faq_count": 10,
+      "faq_count_rationale": "Exactly 10 - frontend discards <10 (ProductClient.tsx:241) and shows only first 10 (ProductClient.tsx:980) while page.tsx emits ALL into FAQPage JSON-LD.",
+      "unique_content": "No paragraph shared with any other file in content-generation/.",
+      "ruo_disclaimer_present": true,
+      "human_dosing_present": false,
+      "treatment_claims_present": false,
+      "purity_claim_present": false
+    },
+    "regulatory_class": "NOT APPROVED in any jurisdiction. Neither component is approved anywhere. TB-500 and thymosin beta-4 are prohibited in sport under WADA Prohibited List section S2 (per USADA advisory).",
+    "variants_from_csv": [
+      {
+        "variant": "5mg/5mg",
+        "price_usd": "76.99"
+      },
+      {
+        "variant": "10mg/10mg",
+        "price_usd": "104.49"
+      }
+    ],
+    "images": [
+      {
+        "variant": "5mg/5mg",
+        "source_file": "BPC-157 - TB-500 Blend 5mg-5mg.png",
+        "upload_as": "amino-bpc-157-tb-500-blend-5mg-5mg.png"
+      },
+      {
+        "variant": "10mg/10mg",
+        "source_file": "BPC-157 - TB-500 Blend 10mg-10mg.png",
+        "upload_as": "amino-bpc-157-tb-500-blend-10mg-10mg.png"
+      }
+    ],
+    "blend_note": "MULTI-COMPONENT PRODUCT. No single molecular formula exists for this product and none is stated. Each component is described by its own verified identifiers. Ratios shown are those stated in the product listing; no ratio is invented.",
+    "components": [
+      {
+        "name": "BPC-157",
+        "note": "Pentadecapeptide; see the BPC-157 page in this catalogue for verified identifiers and the PL-14736 / NCT02637284 clinical record."
+      },
+      {
+        "name": "TB-500",
+        "note": "IDENTITY UNRESOLVED (which entity is supplied). BOTH candidates are now fully characterised via CAS (2026-11-10): full-length thymosin beta-4 = CAS 77591-33-4 / CID 16132341 / C212H350N56O78S / MW approx 4963; acetylated fragment Ac-LKKTETQ = CAS 885340-08-9 / CID 62707662 / C38H68N10O14 / MW 889.0. Name-based lookups still fail for both. Neither is asserted for this product."
+      }
+    ],
+    "references": [
+      "PubChem CID 45382195 (PUG REST, verified 2026-11-09, matched name \"thymosin beta-4\"): C212H350N56O78S, MW approx 4963 - the FULL-LENGTH protein, not the fragment commonly sold as TB-500.",
+      "NAME-based lookups fail - PubChem holds no record under \"TB-500\", \"Ac-LKKTETQ\" or \"thymosin beta 4 (17-23)\". CAS-based lookups SUCCEED for both candidates (verified 2026-11-10): CAS 77591-33-4 -> CID 16132341 (full-length, C212H350N56O78S, MW approx 4963); CAS 885340-08-9 -> CID 62707662 (Ac-LKKTETQ, C38H68N10O14, MW 889.0). Self-confirming: unacetylated LKKTETQ is CID 10169788 at MW 847.0, and 889.0 - 847.0 = exactly 42.0, one acetyl group.",
+      "PMID 15777950 doi:10.1016/j.ejphar.2005.02.033 - Eur J Pharmacol - BPC-157 / PL-14736 development for inflammatory bowel disease; see the BPC-157 page for the full record.",
+      "ClinicalTrials.gov NCT02637284 - Phase I, 42 healthy volunteers, oral PCO-02 1 mg, PharmaCotherapia / Hospital Angeles Tijuana, completion 2016-03, status UNKNOWN, no results posted. See the BPC-157 page.",
+      "USADA athlete advisory on the WADA Prohibited List: TB-500 prohibited under S2; Thymosin-beta 4 prohibited under S2. Verified 2026-11-09."
+    ],
+    "unverified": [
+      "Salt form / counter-ion content for any given Amino Based lot - affects molar calculations",
+      "Peptide content vs fill mass for the supplied presentations - no data provided",
+      "Product-specific stability, shelf-life and reconstituted-stability - no study supplied, none claimed",
+      "Purity - no lot certificate supplied; coaPurity deliberately left unset so the page makes no purity claim",
+      "WHICH TB-500 ENTITY IS PRESENT - full-length thymosin beta-4 (approx 4963 Da) or the Ac-LKKTETQ fragment (approx 889 Da). Primary blocking issue, inherited from the TB-500 component.",
+      "Per-component quantitation - whether each stated mass refers to that component individually, and whether the actual content matches, is not supplied",
+      "Whether the two components are chemically compatible in a single vial over time - no stability study supplied for the combination",
+      "Any evidence for the COMBINATION as distinct from the components - none identified"
+    ]
+  },
+  "seo": {
+    "primary_search_intent": "Informational. The searcher wants to know what is in the blend, whether combining is justified, and what evidence exists for the combination.",
+    "primary_keyword": "BPC-157 TB-500 blend",
+    "secondary_keywords": [
+      "BPC-157 and TB-500",
+      "BPC-157 TB-500 stack",
+      "BPC-157 TB-500 5mg",
+      "peptide healing blend",
+      "BPC-157 TB-500 ratio"
+    ],
+    "long_tail_keywords": [
+      "what is BPC-157 TB-500 blend",
+      "should BPC-157 and TB-500 be combined",
+      "BPC-157 TB-500 blend evidence",
+      "is TB-500 in the blend the fragment or full protein",
+      "BPC-157 TB-500 blend molecular weight",
+      "BPC-157 TB-500 blend molar ratio",
+      "is BPC-157 TB-500 banned WADA",
+      "BPC-157 TB-500 blend certificate of analysis",
+      "why buy peptides separately not blended",
+      "BPC-157 TB-500 combination study"
+    ],
+    "semantic_terms": [
+      "pentadecapeptide",
+      "thymosin beta-4",
+      "Ac-LKKTETQ",
+      "G-actin sequestration",
+      "cytoskeletal remodelling",
+      "fixed-ratio combination",
+      "component-alone control",
+      "four-arm design",
+      "synergy",
+      "additivity",
+      "per-component quantitation",
+      "authentic reference standard",
+      "intermolecular disulfide",
+      "N-terminal acetylation",
+      "WADA S2"
+    ],
+    "name_variations": [
+      "BPC-157 / TB-500 Blend",
+      "BPC-157 + TB-500",
+      "BPC-157 TB-500 stack",
+      "TB-500 may be full thymosin beta-4 OR the Ac-LKKTETQ fragment",
+      "thymosin alpha-1 is a DIFFERENT molecule"
+    ],
+    "informational_queries": [
+      "what is BPC-157 TB-500 blend",
+      "does BPC-157 TB-500 blend work",
+      "should I combine BPC-157 and TB-500",
+      "BPC-157 TB-500 blend evidence",
+      "BPC-157 TB-500 ratio"
+    ],
+    "commercial_queries": [
+      "buy BPC-157 TB-500 blend",
+      "BPC-157 TB-500 5mg 5mg",
+      "BPC-157 TB-500 10mg 10mg",
+      "BPC-157 TB-500 blend COA"
+    ],
+    "cannibalisation_check": "Owns the BPC-157-plus-TB-500 combination intent only. /product/bpc-157 and /product/tb-500 own their molecules and their individual identity and evidence content; this page links there rather than restating it. /product/glow and /product/klow own the larger multi-component blends.",
+    "h1": "Driven by CMS name field; renders as \"BPC-157 / TB-500 Blend\"."
+  },
+  "internal_links": {
+    "note": "Content fields are plain textarea and cannot carry anchor tags. Placement recommendations only. All routes verified to exist in app/.",
+    "recommended": [
+      {
+        "route": "/product/tb-500",
+        "anchor": "TB-500",
+        "rationale": "Verified component and the location of the full identity-ambiguity account that this product inherits; also needed as an experimental control.",
+        "verified": true
+      },
+      {
+        "route": "/product/bpc-157",
+        "anchor": "BPC-157",
+        "rationale": "Verified component and the location of its clinical record; needed as an experimental control.",
+        "verified": true
+      },
+      {
+        "route": "/product/semax-selank-blend",
+        "anchor": "Semax + Selank Blend",
+        "rationale": "Other two-component blend in the catalogue, where the components overlap mechanistically and are analytically hard to resolve; instructive contrast.",
+        "verified": true
+      },
+      {
+        "route": "/certificates",
+        "anchor": "Certificates page",
+        "rationale": "Referenced in the Quality panel; where lot-specific COAs are published.",
+        "verified": true
+      },
+      {
+        "route": "/peptide-calculator",
+        "anchor": "peptide calculator",
+        "rationale": "Supports the molar-calculation and fill-mass discussion.",
+        "verified": true
+      },
+      {
+        "route": "/medical-disclaimer",
+        "anchor": "medical disclaimer",
+        "rationale": "Compliance reinforcement adjacent to the RUO panel.",
+        "verified": true
+      },
+      {
+        "route": "/faq",
+        "anchor": "FAQ hub",
+        "rationale": "Carries general research-use-only and ordering questions.",
+        "verified": true
+      }
+    ],
+    "rejected": [
+      {
+        "route": "/shop",
+        "reason": "Already in global nav on every page; adds nothing in body copy."
+      },
+      {
+        "route": "/military-discount",
+        "reason": "Unrelated to the research intent of this page; cross-selling for its own sake."
+      }
+    ]
+  },
+  "payload_fields": {
+    "seoTitle": "BPC-157 / TB-500 Blend | Two Peptides, One Unresolved Identity | Amino Based",
+    "seoDescription": "BPC-157 / TB-500 Blend: a two-peptide combination inheriting TB-500 identity ambiguity of roughly 5.6-fold in mass. Research use only.",
+    "description": "This product is a two-component blend containing BPC-157 and TB-500 in a single vial, offered in stated 5 mg/5 mg and 10 mg/10 mg presentations. Being a mixture, it has no single molecular formula and none is stated here; each component is described by its own verified identifiers. A critical qualification applies: \"TB-500\" is used in commerce for two chemically different substances differing in mass by roughly 5.6-fold, and which is present here is not stated. Neither component is approved in any jurisdiction, both TB-500 and thymosin beta-4 are prohibited in sport, and this material is supplied for laboratory research use only.",
+    "productDetailsTitle": "A Blend Inherits Its Components’ Problems — and This One Inherits a Serious Ambiguity",
+    "productDetailsDescription": "This product combines two peptides in a single vial. There is no molecular formula for the product, no molecular weight and no CAS registry number, because a mixture of two compounds does not have them — and any document quoting a single formula or molecular weight for this blend is describing something other than what is in the vial. Each component has to be considered on its own identifiers.\n\nThe first component is BPC-157, a pentadecapeptide with its own page in this catalogue, where its verified identifiers and its clinical record are set out — including the PL-14736 development programme for inflammatory bowel disease and the phase I trial NCT02637284 in 42 healthy volunteers, which completed in March 2016 with no results posted and a status recorded as unknown.\n\nThe second component is TB-500, and this is where the product acquires a problem it cannot resolve on its own. As documented in detail on the TB-500 page in this catalogue, that designation is applied in commerce to two chemically different substances. One is full-length thymosin beta-4, a 43-residue protein: CAS 77591-33-4, PubChem CID 16132341, molecular formula C212H350N56O78S, molecular weight approximately 4963 g/mol. The other is the short acetylated fragment Ac-LKKTETQ, residues 17 to 23: CAS 885340-08-9, PubChem CID 62707662, molecular formula C38H68N10O14, molecular weight 889.0 g/mol. These differ in mass by roughly a factor of 5.6.\n\nBoth are now fully characterised, but only via CAS number — name-based lookups fail for both, returning nothing under \"TB-500\", \"Ac-LKKTETQ\" or \"thymosin beta 4 (17-23)\". The fragment assignment confirms itself arithmetically: the unacetylated heptapeptide LKKTETQ is CID 10169788 at 847.0 g/mol, and 889.0 minus 847.0 is exactly 42.0, one acetyl group. What remains unknown is not what either candidate is, but which of them is in this vial.\n\nThat ambiguity is the reason this page carries a BLOCKED status, and the general principle behind it is worth stating because it applies to every blend in this catalogue: **a blend cannot be better characterised than its least-characterised component.** Combining a reasonably well-defined peptide with one whose molecular identity is unresolved does not average out the uncertainty; it imports it wholesale. Whatever is known about BPC-157 remains known, and whatever is unresolved about TB-500 remains unresolved, now inside a vial where the two cannot be examined separately without analytical work.\n\nThe practical consequences compound. Consider the stated 5 mg/5 mg presentation. If the TB-500 component is the heptapeptide fragment, 5 mg is roughly 5.6 micromoles. If it is the full-length protein, 5 mg is roughly 1.0 micromole. So the molar ratio between the two peptides in this vial differs by a factor of about 5.6 depending on which entity is present — and the ratio between components is precisely what a blend is supposed to fix. A product whose selling point is a defined combination cannot deliver a defined combination while one component's molecular identity is unknown.\n\nA second structural issue applies to blends generally and is worth being explicit about, because it is the strongest argument against them for research purposes. A fixed-ratio combination removes a variable the experimenter would otherwise control. If a researcher wants to study BPC-157 and TB-500 together, buying them separately permits any ratio, permits either alone as a control, and permits the dose of one to be varied while the other is held constant — which is how an interaction between two agents is actually demonstrated. A pre-mixed vial forecloses all of that. It cannot produce a component-alone control, and without component-alone controls it is impossible to attribute any observed effect to the combination rather than to either constituent. For a product sold on the premise that the combination is worth having, the inability to test that premise is a notable limitation.\n\nA third consideration is chemical rather than experimental. Two peptides sharing a vial share a chemical environment, and compatibility over time is a legitimate question rather than a formality. If the TB-500 component is the full-length protein, it contains a cysteine — the molecular formula includes one sulfur atom — and therefore a free thiol or a disulfide. Thiol chemistry in a shared solution can lead to intermolecular disulfide formation, and a free thiol can participate in exchange reactions. No stability study for this specific combination is supplied, and none is claimed here. Two peptides individually stable are not thereby stable together.\n\nA naming note. This product appears as BPC-157 / TB-500 Blend, BPC-157 + TB-500, and loosely as a \"healing stack\" or similar. Both component names carry their own disambiguation requirements, set out on their respective pages: BPC-157 is also written as body protection compound 157 and relates to PL-14736; TB-500 relates to thymosin beta-4 and must not be confused with thymosin alpha-1, which is an entirely different molecule with its own approvals in some countries.\n\nThe material is supplied as a lyophilised powder in a sealed glass vial. The stated quantity refers to the mass of material in the vial. Lyophilised peptides are hygroscopic, so the usual laboratory convention is to allow a sealed vial to reach room temperature before opening it, so that atmospheric moisture does not condense onto cold powder. Amino Based publishes no product-specific stability study for this material, so no shelf-life, reconstituted-stability or freeze-thaw tolerance figures are claimed here; where such data are needed for a protocol they should be established in the receiving laboratory or taken from a lot-specific certificate. This product is supplied in stated 5 mg/5 mg and 10 mg/10 mg presentations, with the caveat that the molar content of the TB-500 component cannot be determined until its molecular identity is established.",
+    "researchFocusTitle": "No Evidence for the Combination, and Why Component-Alone Controls Matter",
+    "researchFocusDescription": "The research position for this product can be stated directly: **no evidence for this combination, as distinct from its components, was identified.** No study examining BPC-157 together with TB-500 against each alone was found in the indexed literature. What exists is evidence about each component separately, and that evidence is set out on each component's own page in this catalogue rather than restated here.\n\nIn brief, and with the detail belonging on the component pages: BPC-157 has a genuine if limited clinical record, including the PL-14736 development programme for inflammatory bowel disease and a phase I trial in 42 healthy volunteers that completed in March 2016 with no results posted. TB-500's situation is more complicated, because the clinically suggestive findings for thymosin beta-4 come from study designs that are not administration studies — an observational cohort in which patients' own endogenous peptide levels correlated with sepsis outcomes, and transgenic mice genetically engineered to overexpress the protein from conception — and because essentially all of that literature concerns the full-length protein rather than the fragment.\n\nSo the honest summary of the evidence base for this blend is: two components, one with modest direct clinical evidence, one whose applicable evidence depends on an unresolved question about which molecule it is, and nothing at all about the combination.\n\nThat last point deserves development, because the absence of combination evidence is not a minor gap that can be filled by reasoning from the components. Demonstrating that a combination is worth using requires showing that it does something the components alone do not — and that requires a specific experimental structure. At minimum: component A alone, component B alone, the combination, and vehicle, all at matched quantities. Only that design distinguishes a genuine interaction from the trivial case where the combination's effect is simply whichever component was doing the work. Without component-alone arms, a positive result for a combination is uninterpretable: it is consistent with synergy, with additivity, with one component being active and the other inert, and even with one component partially antagonising the other.\n\nThis is where the fixed-ratio format becomes a research liability rather than a convenience. A pre-mixed vial cannot produce a component-alone control. It cannot produce a different ratio. It cannot hold one component constant while varying the other, which is the standard approach to characterising an interaction. A laboratory wanting to investigate whether these two peptides interact would need to buy them separately — in which case the blend offers nothing experimentally, and its appeal is convenience for non-research use, which is not a use this material is supplied for.\n\nThere is also a mechanistic observation worth making, and it cuts in a mildly favourable direction for the combination's rationale while not constituting evidence for it. The two components are proposed to act differently. Thymosin beta-4's defining and uncontested biochemical property is G-actin sequestration, influencing cytoskeletal remodelling and therefore cell migration — a well-characterised molecular function. BPC-157's proposed mechanisms, as set out on its page, are less cleanly defined. Two agents proposed to act by different routes are at least a more coherent combination than two agents acting by the same route, which is the structural criticism that applies to the Semax + Selank blend elsewhere in this catalogue, where both components share the same Pro-Gly-Pro tail and the blend therefore delivers roughly double that moiety. Non-overlapping mechanisms are a reason a combination might be worth testing. They are not a reason to believe it works.\n\nThe limitations, stated together: the molecular identity of one component is unresolved, which also makes the molar ratio between components unknown by a factor of about 5.6; no evidence for the combination as distinct from its components was identified; the fixed-ratio format prevents the component-alone controls that would be needed to generate such evidence; no stability or compatibility study for the two peptides sharing a vial is supplied; and each component carries its own limitations, documented on its own page, which this product inherits in full.\n\nFor a laboratory, the constructive framing is that the combination question is genuinely open and genuinely interesting — two agents with different proposed mechanisms in tissue repair is a reasonable hypothesis to test — but that this product is not the right material with which to test it. Resolving the TB-500 identity by mass spectrometry, which a 5.6-fold mass difference makes trivial, is the necessary first step for any work involving this vial at all. Beyond that, separately sourced components with verified identities, assembled into a proper four-arm design, is what would actually answer the question.",
+    "qualityPurityTitle": "Analytical Verification for a Blend: Two Components, One Unresolved",
+    "qualityPurityDescription": "Amino Based publishes analytical results on a per-lot basis. Where a lot-specific certificate of analysis has been issued for this product it is available from the Certificates page, and any purity figure displayed on this page is taken directly from that certificate and stated exactly as recorded. Where no certificate has been published for a lot, no analytical result is claimed for it here, and the absence of a figure should be read as the absence of a published measurement rather than as an implied standard.\n\nVerification of a two-component blend requires everything that verification of each component requires, plus confirmation of how much of each is present. For this product the first of those is incomplete before the second can begin.\n\nNo single molecular formula, molecular weight or CAS registry number exists for this product, and none is stated here. A certificate quoting any of those for the blend as a whole is describing something other than what is in the vial.\n\nThe primary issue is the identity of the TB-500 component, and it is unresolved. The two candidates are full-length thymosin beta-4, C212H350N56O78S at approximately 4963 g/mol (PubChem CID 45382195), and the fragment Ac-LKKTETQ at approximately 889 g/mol. A single mass spectrometric measurement distinguishes them immediately — a 5.6-fold mass difference admits no ambiguity and requires no sophisticated method. Because BPC-157 is a pentadecapeptide of intermediate mass, a mass spectrum of this blend should show two clearly separated species, and which second species appears settles the question outright. This is the cheapest and most informative test available for this product, and it should be insisted upon before anything else.\n\nPer-component quantitation is the second requirement and is specific to blends. The product states 5 mg/5 mg and 10 mg/10 mg presentations, which asserts quantities of each component. Verifying that assertion requires a method that resolves and quantifies both peptides independently — typically reverse-phase chromatography with each component calibrated against its own authentic reference standard. A single total-peptide figure, or a single purity percentage, does not establish the ratio and is the specification most commonly missing from blend certificates. For this product, note that quantitation cannot even be interpreted in molar terms until the TB-500 identity is settled.\n\nResolution between the components is a practical analytical question here, and in this case it is favourable. The three candidate species differ substantially in size — a pentadecapeptide, a heptapeptide, and a 43-residue protein — so whichever pairing is present should separate readily by both chromatography and mass. This contrasts with the Semax + Selank blend elsewhere in this catalogue, where the components differ by only 62 daltons and resolution is genuinely difficult. Here the analytical task is easy; the obstacle is that it apparently has not been done.\n\nThiol and disulfide chemistry requires attention if the full-length protein is the component present, since its molecular formula contains one sulfur atom, indicating a cysteine and therefore either a free thiol or a disulfide. A free thiol in a shared solution can form intermolecular disulfides, producing species at combined masses that a purity figure reported without reference to the high-mass region will not detect. If the fragment is present instead, acetylation status is the relevant check: Ac-LKKTETQ is N-terminally acetylated, and the unacetylated heptapeptide is a different compound differing by 42 units on 889, readily resolved when sought.\n\nCompatibility and stability for the combination is a genuine open question rather than a formality. Two peptides individually stable are not thereby stable together, and no stability study for this specific combination is supplied or claimed. Degradation of one component in the presence of the other would alter the ratio over time while a certificate issued at release would still read correctly.\n\nThe salt-form question applies to both components, and lyophilised mass is not peptide content: the stated figures may include counter-ions and residual water for each component, and unless content has been determined specifically they are fill masses.\n\nAmino Based has not performed independent laboratory testing, manufacturing validation, or primary research on this compound beyond what is recorded on any published lot certificate, and makes no claim of third-party accreditation, pharmaceutical-grade manufacture, or regulatory approval for this product.",
+    "complianceNoticeTitle": "Research Use Only: Unapproved Components, Unresolved Identity, Prohibited in Sport",
+    "complianceNoticeDescription": "This product is supplied for laboratory research use only (RUO). It is not for human or veterinary use. It is not a drug, a dietary supplement, a cosmetic, a food or a medical device, and it must not be used in the diagnosis, treatment, cure, mitigation or prevention of any disease or condition in humans or animals. Sale is restricted to qualified researchers, laboratories and scientific institutions. Nothing on this page constitutes medical advice, and no administration, dosing or reconstitution guidance for human or veterinary use is provided here or available on request.\n\nNeither component of this blend is an approved medicine. Neither BPC-157, nor full-length thymosin beta-4, nor the Ac-LKKTETQ fragment has been approved by the United States Food and Drug Administration or by any other regulatory authority, for any indication, in any jurisdiction. There is no regulator-reviewed labelling, no approved indication, no established dosing, and no post-marketing safety surveillance for the components or for the combination.\n\nA point specific to this product requires emphasis and is why this page carries a BLOCKED status. The molecular identity of the TB-500 component is **not resolved**. Two chemically different substances differing in mass by roughly 5.6-fold are both sold under that designation, and the available supplier information does not establish which is present. The consequence is not only that the quantity of that component is unknown in molar terms, but that the ratio between the two peptides — the defining property of a blend — differs by about a factor of 5.6 depending on which entity it is. This should be resolved with the supplier before any use, including any quantitative laboratory use. The fuller account of this ambiguity is on the TB-500 page in this catalogue.\n\nThe evidence position should also be stated plainly. **No evidence for this combination, as distinct from its components, was identified.** No study examining these two peptides together against each alone was found. Demonstrating that a combination is worth using requires component-alone arms alongside the combination and a vehicle control; without those, a positive result is equally consistent with synergy, with simple additivity, with one component being active and the other inert, and with one component partially antagonising the other. A fixed-ratio pre-mixed vial cannot produce those controls. Claims for this blend therefore rest on claims about its components, each of which carries its own documented limitations.\n\nThose component limitations are inherited in full and are set out on the component pages. In particular, the clinically suggestive findings for thymosin beta-4 derive from an observational cohort measuring patients' own endogenous peptide levels and from transgenic mice genetically engineered to overexpress the protein — neither of which is an administration study — and essentially all of that literature concerns the full-length protein rather than the fragment.\n\nAnti-doping status is relevant to anyone connected with competitive sport. According to a United States Anti-Doping Agency athlete advisory on the WADA Prohibited List, TB-500 is prohibited under section S2 and thymosin beta-4 is separately listed as prohibited under section S2. Athletes and support personnel should consult the current published WADA Prohibited List directly, as listings are revised annually.\n\nNothing on this page suggests that this material is suitable for addressing injury, wound healing, tissue repair, gastrointestinal disease or any other condition in any person. It is not for human use.\n\nResearchers remain responsible for compliance with the law in their own jurisdiction, for institutional review and biosafety approvals where their work requires them, for any import and export controls applying to shipments of research chemicals, and for safe handling and disposal of the material. Labelling a substance \"research use only\" describes the supplier's intended use and the terms of sale; it is not a determination of legal status and does not exempt a purchaser from applicable law.\n\nStandard institutional practice for handling lyophilised peptide powders applies: appropriate personal protective equipment, handling in a suitable containment environment to avoid aerosolising fine powder, and disposal of vials and residual solutions in accordance with institutional chemical and biohazard waste protocols.",
+    "faqs": [
+      {
+        "question": "What is in this blend?",
+        "answer": "Two peptides in a single vial: BPC-157, a pentadecapeptide, and TB-500. Being a mixture, the product has no single molecular formula, molecular weight or CAS number, and none is stated here — any document quoting one for the blend is describing something other than what is in the vial. Each component must be considered on its own identifiers, set out on its own page."
+      },
+      {
+        "question": "Why is this product’s identity unresolved?",
+        "answer": "Because of the TB-500 component. That designation is used in commerce for two chemically different substances: full-length thymosin beta-4 (C212H350N56O78S, approximately 4963 g/mol, PubChem CID 45382195) and the acetylated fragment Ac-LKKTETQ at approximately 889 g/mol — a roughly 5.6-fold mass difference. Public databases hold no record under \"TB-500\", \"Ac-LKKTETQ\" or \"thymosin beta 4 (17-23)\", checked directly."
+      },
+      {
+        "question": "How does that affect the blend specifically?",
+        "answer": "It makes the ratio unknown, which is the defining property of a blend. In a stated 5 mg/5 mg vial, if the TB-500 component is the heptapeptide then 5 mg is about 5.6 micromoles; if it is the full-length protein, about 1.0 micromole. So the molar ratio between the two peptides differs by a factor of roughly 5.6 depending on which entity is present. A product sold on a defined combination cannot deliver one under that uncertainty."
+      },
+      {
+        "question": "Does a blend inherit its components’ problems?",
+        "answer": "Yes, and this is the general principle: a blend cannot be better characterised than its least-characterised component. Combining a reasonably well-defined peptide with one whose molecular identity is unresolved does not average out the uncertainty — it imports it wholesale, now inside a vial where the two cannot be examined separately without analytical work."
+      },
+      {
+        "question": "Is there evidence for the combination?",
+        "answer": "No evidence for this combination, as distinct from its components, was identified. No study examining BPC-157 together with TB-500 against each alone was found in the indexed literature. What exists is evidence about each component separately, set out on their own pages — and for TB-500 that evidence depends on the unresolved question of which molecule it is."
+      },
+      {
+        "question": "Why do component-alone controls matter so much?",
+        "answer": "Because without them a combination result is uninterpretable. Demonstrating a combination is worth using requires at minimum four arms: component A alone, component B alone, the combination, and vehicle, at matched quantities. A positive result without component-alone arms is equally consistent with synergy, with simple additivity, with one component being active and the other inert, and even with one component partially antagonising the other."
+      },
+      {
+        "question": "Why is the fixed ratio a research limitation?",
+        "answer": "Because it removes a variable the experimenter would otherwise control. A pre-mixed vial cannot produce a component-alone control, cannot produce a different ratio, and cannot hold one component constant while varying the other — which is the standard way to characterise an interaction. A laboratory wanting to investigate whether these peptides interact would need to buy them separately, at which point the blend offers nothing experimentally."
+      },
+      {
+        "question": "Is there anything in the combination’s favour?",
+        "answer": "One mechanistic point, which is a reason to test rather than to believe. The components are proposed to act differently — thymosin beta-4’s defining property is G-actin sequestration affecting cytoskeletal remodelling, while BPC-157’s proposed mechanisms are less cleanly defined. Non-overlapping mechanisms make a more coherent combination than two agents acting by the same route, which is the structural criticism applying to the Semax + Selank blend."
+      },
+      {
+        "question": "Could the two peptides affect each other in the vial?",
+        "answer": "It is a legitimate open question. If the TB-500 component is the full-length protein, its formula contains one sulfur atom, indicating a cysteine and therefore a free thiol or disulfide — and thiol chemistry in a shared solution can lead to intermolecular disulfide formation and exchange reactions. No stability study for this specific combination is supplied or claimed. Two peptides individually stable are not thereby stable together."
+      },
+      {
+        "question": "What should a certificate of analysis show?",
+        "answer": "An observed mass showing two clearly separated species — which settles the TB-500 identity outright, since a 5.6-fold mass difference admits no ambiguity. Plus per-component quantitation, with each peptide resolved and calibrated against its own authentic reference standard; a single total-peptide or purity figure does not establish the ratio and is the specification most often missing from blend certificates."
+      }
+    ]
+  }
+}
