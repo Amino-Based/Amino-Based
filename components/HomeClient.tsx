@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
 import {
   ArrowRight,
   ArrowUpRight,
@@ -38,9 +38,15 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import type { ShopMockProduct } from "@/lib/shopCardProduct";
 import CategoriesSection, { type CategoryCardData } from "@/components/CategoriesSection";
+import WhyChooseUsSection from "@/components/home/WhyChooseUsSection";
 import BlogSection, { type BlogPostCardData } from "@/components/BlogSection";
 import BestSellingProducts from "@/components/BestSellingProducts";
 import MilitaryDiscountSection from "@/components/MilitaryDiscountSection";
+import FAQSection from "@/components/FAQSection";
+import ContactSection from "@/components/contact/ContactSection";
+import FluidVialVisual from "@/components/home/FluidVialVisual";
+import HangingSpraysVisual from "@/components/home/HangingSpraysVisual";
+import InteractiveBrandChamber from "@/components/home/InteractiveBrandChamber";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -109,10 +115,6 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
     replayDropRef.current();
   };
 
-  // Contact form state
-  const [contactStatus, setContactStatus] = useState<"idle" | "loading" | "success">("idle");
-  const [contactForm, setContactForm] = useState({ name: "", email: "", subject: "", message: "" });
-
   const timelineSteps = [
     {
       title: "Solid-phase synthesis builds the peptide chain one amino acid at a time.",
@@ -142,46 +144,52 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
 
   const stackedCards = [
     {
-      title: "Metabolic Research Peptides",
-      category: "Metabolic",
-      badge: "≥99% HPLC",
-      image: "/assets/service_card_1.jpg",
-      desc: "Compounds studied for metabolic signalling and receptor binding in laboratory models.",
-      href: "/contact-us",
+      title: "Solid-Phase Lyophilized Vials",
+      category: "Vacuum Borosilicate",
+      badge: "≥99% Lot-Tested",
+      image: "/assets/amino-based-water-swirl-poster.webp",
+      video: "/assets/amino-based-water-swirl-web.mp4",
+      desc: "Vacuum-sealed under nitrogen atmosphere to eliminate oxidation and preserve 24+ month peptide integrity.",
+      href: "/shop",
+      btnText: "Explore Vials",
       iconType: "flask",
+      isFluidAnimated: true,
     },
     {
-      title: "Regenerative Research Peptides",
-      category: "Regenerative",
-      badge: "Lot-tested",
-      image: "/assets/service_card_2_clean.jpg",
-      desc: "Sequences investigated for tissue-repair and cellular-signalling research applications.",
-      href: "/contact-us",
+      title: "Calibrated Metered Nasal Sprays",
+      category: "Intranasal Aerosol",
+      badge: "0.1ml Precision Mist",
+      image: "/assets/format_sprays_suspended_lineup.jpg",
+      desc: "Engineered intranasal delivery systems for mucosal neuropeptide and cognitive research sequences.",
+      href: "/shop?category=nasal-sprays",
+      btnText: "Explore Sprays",
       iconType: "activity",
+      isFluidAnimated: false,
+      isHangingAnimated: true,
     },
     {
-      title: "Cognitive and Neuro Peptides",
-      category: "Neuroscience",
-      badge: "MS-verified",
-      image: "/assets/service_card_3_clean.jpg",
-      desc: "Peptides used in neurological and cognitive research under controlled laboratory conditions.",
-      href: "/contact-us",
+      title: "Synergistic Multi-Peptide Blends",
+      category: "Concentrate Matrix",
+      badge: "GHK-Cu · BPC · TB · KPV",
+      image: "/assets/format_blend_klow_stone.jpg",
+      desc: "Multi-sequence research formulations combining complementary peptides into unified research concentrates.",
+      href: "/shop",
+      btnText: "Explore Blends",
       iconType: "sparkles",
+      isFluidAnimated: false,
     },
   ];
 
   const deckRef = useRef<HTMLElement>(null);
   const scienceRef = useRef<HTMLElement>(null);
-  const faqRef = useRef<HTMLElement>(null);
-  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const orbitRef = useRef<HTMLDivElement>(null);
   const heroArmRef = useRef<HTMLDivElement>(null);
   const contactSectionRef = useRef<HTMLElement>(null);
-  const contactCardRef = useRef<HTMLDivElement>(null);
+  const contactHeadingRef = useRef<HTMLHeadingElement>(null);
   const contactConRef = useRef<HTMLSpanElement>(null);
   const contactTacRef = useRef<HTMLSpanElement>(null);
   const contactTusRef = useRef<HTMLSpanElement>(null);
-  const contactFormRef = useRef<HTMLFormElement>(null);
+  const contactCardRef = useRef<HTMLDivElement>(null);
   const labRef = useRef<HTMLElement>(null);
   const labBannerRef = useRef<HTMLDivElement>(null);
   const labCardRef = useRef<HTMLDivElement>(null);
@@ -191,16 +199,35 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
   const webinarsRef = useRef<HTMLElement>(null);
   const teamRef = useRef<HTMLElement>(null);
 
+  const [activeDeckIndex, setActiveDeckIndex] = useState(0);
+
+  const handleDeckCardSelect = (targetIndex: number) => {
+    setActiveDeckIndex(targetIndex);
+    const section = deckRef.current;
+    if (!section) return;
+    const cards = gsap.utils.toArray<HTMLElement>(".deck-card", section);
+    if (!cards.length) return;
+
+    cards.forEach((card, idx) => {
+      if (idx < targetIndex) {
+        gsap.to(card, { yPercent: -130, opacity: 0, pointerEvents: "none", duration: 0.45, ease: "power2.inOut" });
+      } else if (idx === targetIndex) {
+        gsap.to(card, { zIndex: 30, yPercent: 0, scale: 1.0, rotate: 0, opacity: 1, pointerEvents: "auto", duration: 0.45, ease: "power2.out" });
+      } else if (idx === targetIndex + 1) {
+        gsap.to(card, { zIndex: 20, yPercent: 0, scale: 0.96, rotate: 5, opacity: 1, pointerEvents: "none", duration: 0.45, ease: "power2.out" });
+      } else {
+        gsap.to(card, { zIndex: 10, yPercent: 0, scale: 0.92, rotate: -4, opacity: 1, pointerEvents: "none", duration: 0.45, ease: "power2.out" });
+      }
+    });
+  };
+
   /**
-   * Scroll drivers for the three sections the reference advances by scrolling rather than
-   * by clicking. Each pins its section, then maps scroll progress onto the thing that moves.
-   *
-   * All three are gated to md and up with motion allowed. Below that the pin is skipped and
-   * the existing click handlers remain the way through, which is also what a keyboard and a
-   * screen reader get.
+   * Scroll drivers for interactive sections.
+   * Gated cleanly by screen width so desktop gets cinematic pinned scrub
+   * and mobile gets frictionless responsive transitions without lockup.
    */
-  const DESKTOP_MOTION = "(min-width: 768px) and (prefers-reduced-motion: no-preference)";
-  const MOBILE_MOTION = "(max-width: 767px) and (prefers-reduced-motion: no-preference)";
+  const DESKTOP_MOTION = "(min-width: 768px)";
+  const MOBILE_MOTION = "(max-width: 767px)";
 
   // --- Service cards: travel bottom-to-top through the marquee, tilting as they rise. ---
   useGSAP(
@@ -304,14 +331,18 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
           scrollTrigger: {
             trigger: section,
             start: "top top",
-            end: () => "+=" + cards.length * 400,
+            end: () => "+=" + cards.length * 360,
             pin: true,
             pinSpacing: true,
             anticipatePin: 1,
-            scrub: true,
+            scrub: 0.3,
             fastScrollEnd: true,
             preventOverlaps: true,
             invalidateOnRefresh: true,
+            onUpdate: (self) => {
+              const nextIndex = Math.min(cards.length - 1, Math.floor(self.progress * cards.length));
+              setActiveDeckIndex(nextIndex);
+            },
           },
         });
 
@@ -348,27 +379,34 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
       const mm = gsap.matchMedia();
       const count = timelineSteps.length;
 
+      const dots = section.querySelectorAll<HTMLElement>(".timeline-dot");
+      const descs = section.querySelectorAll<HTMLElement>(".timeline-desc");
+      const stepEls = section.querySelectorAll<HTMLElement>(".timeline-step");
+
+      const updateStep = (idx: number) => {
+        dots.forEach((dot, i) => {
+          if (i === idx) {
+            dot.className = "timeline-dot w-4 h-4 rounded-full transition-all duration-300 bg-purple-600 ring-8 ring-purple-100 scale-125";
+          } else {
+            dot.className = "timeline-dot w-4 h-4 rounded-full transition-all duration-300 bg-gray-300 group-hover:bg-gray-500";
+          }
+        });
+        descs.forEach((desc, i) => {
+          if (i === idx) {
+            desc.className = "timeline-desc text-xs sm:text-sm leading-relaxed transition-colors duration-300 text-[#0F0F11] font-semibold";
+          } else {
+            desc.className = "timeline-desc text-xs sm:text-sm leading-relaxed transition-colors duration-300 text-[#71717A] font-normal group-hover:text-[#0F0F11]";
+          }
+        });
+      };
+
+      // Universal tap/click handler for all screen sizes
+      stepEls.forEach((el, i) => {
+        el.onclick = () => updateStep(i);
+      });
+
+      // Desktop: Pinned scrub animation
       mm.add(DESKTOP_MOTION, () => {
-        const dots = section.querySelectorAll<HTMLElement>(".timeline-dot");
-        const descs = section.querySelectorAll<HTMLElement>(".timeline-desc");
-
-        const updateStep = (idx: number) => {
-          dots.forEach((dot, i) => {
-            if (i === idx) {
-              dot.className = "timeline-dot w-4 h-4 rounded-full transition-all duration-300 bg-purple-600 ring-8 ring-purple-100 scale-125";
-            } else {
-              dot.className = "timeline-dot w-4 h-4 rounded-full transition-all duration-300 bg-gray-300 group-hover:bg-gray-500";
-            }
-          });
-          descs.forEach((desc, i) => {
-            if (i === idx) {
-              desc.className = "timeline-desc text-xs sm:text-sm leading-relaxed transition-colors duration-300 text-[#0F0F11] font-semibold";
-            } else {
-              desc.className = "timeline-desc text-xs sm:text-sm leading-relaxed transition-colors duration-300 text-[#71717A] font-normal group-hover:text-[#0F0F11]";
-            }
-          });
-        };
-
         let lastStep = -1;
         const trigger = ScrollTrigger.create({
           trigger: section,
@@ -390,12 +428,25 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
           },
         });
 
-        const stepEls = section.querySelectorAll<HTMLElement>(".timeline-step");
-        stepEls.forEach((el, i) => {
-          el.onclick = () => updateStep(i);
-        });
-
         return () => trigger.kill();
+      });
+
+      // Mobile: Scroll-driven step activation as each step passes center screen
+      mm.add("(max-width: 767px)", () => {
+        const triggers: ScrollTrigger[] = [];
+        stepEls.forEach((el, i) => {
+          const st = ScrollTrigger.create({
+            trigger: el,
+            start: "top center+=80",
+            end: "bottom center-=80",
+            onEnter: () => updateStep(i),
+            onEnterBack: () => updateStep(i),
+          });
+          triggers.push(st);
+        });
+        return () => {
+          triggers.forEach((t) => t.kill());
+        };
       });
 
       return () => mm.revert();
@@ -418,7 +469,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
 
       const mm = gsap.matchMedia();
 
-      mm.add("(prefers-reduced-motion: no-preference)", () => {
+      mm.add("all", () => {
         // When loaded, the robotic claw is securely holding the peptide.
         // As the user scrolls, the claw retracts up & to the right along the arm's axis.
         const exit = gsap.fromTo(
@@ -471,7 +522,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
 
       const mm = gsap.matchMedia();
 
-      mm.add("(prefers-reduced-motion: no-preference)", () => {
+      mm.add("all", () => {
         const rings = gsap.utils.toArray<HTMLElement>(".orbit-ring", orbit);
         const nodes = gsap.utils.toArray<HTMLElement>(".orbit-node", orbit);
         if (!rings.length && !nodes.length) return;
@@ -556,17 +607,18 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
         if (title) {
           gsap.fromTo(
             title,
-            { filter: "blur(12px)", opacity: 0, y: 24 },
+            { filter: "blur(8px)", opacity: 0, y: 20 },
             {
               filter: "blur(0px)",
               opacity: 1,
               y: 0,
-              duration: 0.9,
+              duration: 0.7,
               ease: "power2.out",
               scrollTrigger: {
                 trigger: section,
-                start: "top 82%",
-                toggleActions: "play none none reverse",
+                start: "top 92%",
+                toggleActions: "play none none none",
+                once: true,
               },
             }
           );
@@ -575,17 +627,18 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
         if (cards.length) {
           gsap.fromTo(
             cards,
-            { y: 80, opacity: 0 },
+            { y: 40, opacity: 0 },
             {
               y: 0,
               opacity: 1,
-              duration: 0.9,
-              stagger: 0.16,
-              ease: "power3.out",
+              duration: 0.7,
+              stagger: 0.06,
+              ease: "power2.out",
               scrollTrigger: {
                 trigger: section,
-                start: "top 75%",
-                toggleActions: "play none none reverse",
+                start: "top 92%",
+                toggleActions: "play none none none",
+                once: true,
               },
             }
           );
@@ -616,19 +669,39 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
       const mm = gsap.matchMedia();
 
       mm.add(DESKTOP_MOTION, () => {
+        // Dynamically compute the horizontal distance so the card starts at the extreme left side,
+        // placed directly over the Certificate of Analysis card
+        const computeStartX = () => {
+          if (!text || !card) return -720;
+          const textInner = text.querySelector(".max-w-lg") || text;
+          const currentCardX = (gsap.getProperty(card, "x") as number) || 0;
+          const currentTextX = (gsap.getProperty(text, "x") as number) || 0;
+          const naturalCardLeft = card.getBoundingClientRect().left - currentCardX;
+          const naturalTextLeft = textInner.getBoundingClientRect().left - currentTextX;
+          const diff = naturalTextLeft - naturalCardLeft;
+          return diff < -200 ? diff : -720;
+        };
+
         // Initial state:
-        // 1. Banner starts shifted to the right, sliding in right-to-left
-        gsap.set(banner, { x: 140, opacity: 0.85, willChange: "transform, opacity" });
+        // 1. Banner starts shifted to the right-bottom corner, sliding diagonally up into place as user scrolls
+        gsap.set(banner, { x: 140, y: 120, opacity: 0.85, willChange: "transform, opacity" });
         // 2. Headline on the left starts slightly below
-        if (text) gsap.set(text, { y: 40, opacity: 0, willChange: "transform, opacity" });
-        // 3. Small chromatogram card starts tucked below the banner with scale
-        gsap.set(card, { x: -160, y: 30, scale: 0.96, opacity: 0.9, transformOrigin: "center center", willChange: "transform, opacity" });
+        if (text) gsap.set(text, { y: 40, opacity: 0.9, willChange: "transform, opacity" });
+        // 3. Small chromatogram card starts at the extreme left side, right over the Certificate of Analysis text
+        gsap.set(card, {
+          x: computeStartX(),
+          y: 0,
+          scale: 1,
+          opacity: 1,
+          transformOrigin: "center center",
+          willChange: "transform, opacity",
+        });
 
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: section,
             start: "top top",
-            end: "+=650",
+            end: "+=750",
             pin: true,
             pinSpacing: true,
             anticipatePin: 1,
@@ -639,11 +712,12 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
           },
         });
 
-        // Stage 1: Banner glides in from right to left to rest position
+        // Stage 1: Laboratory banner slides dynamically from the right-bottom corner up to its rest position
         tl.to(
           banner,
           {
             x: 0,
+            y: 0,
             opacity: 1,
             duration: 0.5,
             ease: "power2.out",
@@ -651,7 +725,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
           0
         );
 
-        // Stage 1b: Left headline reveals alongside banner
+        // Stage 1b: Left headline rises into place alongside the banner
         if (text) {
           tl.to(
             text,
@@ -665,27 +739,33 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
           );
         }
 
-        // Stage 2: Small HUD card slides across above banner from left to right (matching video 00:17 - 00:19)
-        tl.to(
+        // Stage 2: Small HUD card slides across the banner all the way from the extreme left side to the right side
+        tl.fromTo(
           card,
+          {
+            x: () => computeStartX(),
+            y: 0,
+            scale: 1,
+            opacity: 1,
+          },
           {
             x: 0,
             y: 0,
             scale: 1,
             opacity: 1,
-            duration: 0.55,
-            ease: "power2.out",
+            duration: 0.75,
+            ease: "power2.inOut",
           },
-          0.2
+          0.1
         );
 
-        // Stage 3: Purity counter dynamically counts up scrubbed to scroll
+        // Stage 2: Purity counter dynamically counts up scrubbed to scroll
         const countObj = { val: 95.5 };
         tl.to(
           countObj,
           {
             val: 99.8,
-            duration: 0.45,
+            duration: 0.65,
             ease: "none",
             onUpdate: () => {
               if (labPurityRef.current) {
@@ -693,7 +773,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
               }
             },
           },
-          0.45
+          0.05
         );
 
         return () => {
@@ -704,7 +784,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
       });
 
       mm.add(MOBILE_MOTION, () => {
-        gsap.set(banner, { x: 50, opacity: 0.9 });
+        gsap.set(banner, { x: 40, y: 50, opacity: 0.9 });
         gsap.set(card, { y: 60, scale: 0.95, opacity: 0 });
         if (text) gsap.set(text, { y: 25, opacity: 0 });
 
@@ -718,7 +798,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
           },
         });
 
-        tl.to(banner, { x: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+        tl.to(banner, { x: 0, y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
         if (text) {
           tl.to(text, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" }, 0.05);
         }
@@ -752,197 +832,55 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
     { scope: labRef }
   );
 
-  // --- Section 4 Bento: Water Splash & Vial Plunge Video (Play-Once On-Scroll) ---
+  // --- Section 4 Bento: Water Splash & Vial Plunge Video (Auto-Playing on Mobile & Viewport) ---
   useEffect(() => {
     const video = splashVideoRef.current;
     const container = splashContainerRef.current;
-    if (!video || !container) return;
+    if (!video) return;
 
-    let hasPlayed = false;
+    // Mobile WebKit requirement: explicit DOM properties for autoplay
+    video.muted = true;
+    (video as any).defaultMuted = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
 
-    // Pause on the final frame so it permanently rests in the splash state
-    const handleEnded = () => {
-      video.pause();
+    const playVideo = () => {
+      video.play().catch(() => {});
     };
-    video.addEventListener("ended", handleEnded);
 
-    const playVideoOnce = () => {
-      video.currentTime = 0;
-      const playPromise = video.play();
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // Browser autoplay restriction fallback
-        });
-      }
-    };
+    playVideo();
+    video.addEventListener("loadedmetadata", playVideo, { once: true });
+    video.addEventListener("canplay", playVideo, { once: true });
 
     replayDropRef.current = () => {
-      playVideoOnce();
+      video.currentTime = 0;
+      playVideo();
     };
 
-    // Trigger ONLY ONCE when the user scrolls down and reaches Section 4
-    const st = ScrollTrigger.create({
-      trigger: container,
-      start: "top 75%",
-      once: true, // Only triggers once - never reverses on scroll up
-      onEnter: () => {
-        if (!hasPlayed) {
-          hasPlayed = true;
-          playVideoOnce();
-        }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            playVideo();
+          }
+        });
       },
-    });
+      { threshold: 0.1 }
+    );
+
+    if (container) observer.observe(container);
 
     return () => {
-      video.removeEventListener("ended", handleEnded);
-      st.kill();
+      observer.disconnect();
+      video.removeEventListener("loadedmetadata", playVideo);
+      video.removeEventListener("canplay", playVideo);
     };
   }, []);
 
-  /*
-    --- Section 11: Contact Us signature slot-in animation (00:28 - 00:32) ---
-    Matches the reference video choreography:
-    - Starts with unified "CONTACT US" text ("CON" + "TAC" + "T US").
-    - Lavender card badge flies up from below with initial -38deg tilt.
-    - Card smoothly rotates to 0deg (level) and lands directly over the "TAC" slot.
-    - Simultaneously "TAC" fades away and "CON" / "T US" slide slightly outward.
-    - Below, the capsule pills, textarea, and square Send button glide in smoothly.
-  */
-  useGSAP(
-    () => {
-      const section = contactSectionRef.current;
-      const card = contactCardRef.current;
-      const con = contactConRef.current;
-      const tac = contactTacRef.current;
-      const tus = contactTusRef.current;
-      const form = contactFormRef.current;
 
-      if (!section || !card || !con || !tac || !tus || !form) return;
 
-      const mm = gsap.matchMedia();
-
-      mm.add("(prefers-reduced-motion: no-preference)", () => {
-        // Initial state before trigger (matching video frame 30.0s - 30.4s)
-        gsap.set(card, {
-          y: 280,
-          x: 0,
-          rotate: -42,
-          opacity: 0,
-          scale: 0.88,
-          transformOrigin: "center center",
-        });
-
-        gsap.set(tac, {
-          opacity: 1,
-          scale: 1,
-        });
-
-        gsap.set(con, { x: 0 });
-        gsap.set(tus, { x: 0 });
-
-        gsap.set(form, {
-          y: 60,
-          opacity: 0,
-        });
-
-        const getOffset = () => {
-          const cardW = card.offsetWidth || 385;
-          const tacW = tac.offsetWidth || 180;
-          return Math.max(20, Math.round((cardW - tacW + 8) / 2));
-        };
-
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: section,
-            start: "top top",
-            end: "+=1000",
-            pin: true,
-            pinSpacing: true,
-            anticipatePin: 1,
-            scrub: true,
-            fastScrollEnd: true,
-            preventOverlaps: true,
-            invalidateOnRefresh: true,
-          },
-        });
-
-        // 1. Badge flies up from bottom (tilted -42deg) and un-tilts to 0deg (level)
-        tl.to(
-          card,
-          {
-            opacity: 1,
-            duration: 0.25,
-            ease: "power1.out",
-          },
-          0
-        )
-        .to(
-          card,
-          {
-            y: 0,
-            x: 0,
-            rotate: 0,
-            scale: 1,
-            duration: 0.65,
-            ease: "power2.out",
-          },
-          0
-        )
-        // 2. As card arrives, TAC fades away and CON / T US slide outward
-        .to(
-          tac,
-          {
-            opacity: 0,
-            scale: 0.75,
-            duration: 0.35,
-            ease: "power2.inOut",
-          },
-          0.22
-        )
-        .to(
-          con,
-          {
-            x: () => -getOffset(),
-            duration: 0.45,
-            ease: "power2.out",
-          },
-          0.20
-        )
-        .to(
-          tus,
-          {
-            x: () => getOffset(),
-            duration: 0.45,
-            ease: "power2.out",
-          },
-          0.20
-        )
-        // 3. Form elements glide up from below
-        .to(
-          form,
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.50,
-            ease: "power2.out",
-          },
-          0.50
-        );
-
-        return () => {
-          tl.scrollTrigger?.kill();
-          tl.kill();
-          gsap.set([card, con, tac, tus, form], {
-            clearProps: "opacity,transform,transformOrigin,scale,translate,rotate,x,y",
-          });
-        };
-      });
-
-      return () => mm.revert();
-    },
-    { scope: contactSectionRef }
-  );
-
+  // Section 11 Contact Us animation is handled independently by Framer Motion in <ContactSection />
   const teamMembers = [
     {
       name: "Juliet Walker",
@@ -1106,40 +1044,16 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
     },
   ];
 
-  const handleContactSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setContactStatus("loading");
-    try {
-      await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(contactForm),
-      });
-      setContactStatus("success");
-      setContactForm({ name: "", email: "", subject: "", message: "" });
-      setTimeout(() => setContactStatus("idle"), 4000);
-    } catch {
-      setContactStatus("success");
-      setTimeout(() => setContactStatus("idle"), 4000);
-    }
-  };
-
   return (
-    <main ref={containerRef} className="relative w-full bg-[#E8E8E8] font-inter p-0 md:p-5 lg:p-8 text-[#0F0F11]">
+    <main ref={containerRef} className="relative w-full bg-[#FAFAFC] font-inter p-0 text-[#0F0F11]">
       <ScrollMotion containerRef={containerRef} />
 
-      {/*
-        The reference site is not full-bleed: the whole page is a rounded white card
-        floating on a grey field, and content clips to its edges (the hero helix bleeds
-        off the top, the advantage numerals are cut by the card bottom). The inset is what
-        gives the design its "object on a surface" feel, so it is deliberately generous.
-      */}
-      <div className="relative w-full overflow-hidden bg-[#FAFAFC] md:rounded-[28px] shadow-[0_1px_2px_rgba(0,0,0,0.04),0_12px_40px_-12px_rgba(0,0,0,0.10)]">
+      <div className="relative w-full overflow-hidden bg-[#FAFAFC]">
 
         {/* ========================================================================= */}
         {/* SECTION 1: HERO WITH ROTATING 3D IRIDESCENT DNA HELIX (00:00 - 00:02)     */}
         {/* ========================================================================= */}
-        <section id="sec1" className="relative min-h-[92vh] flex flex-col justify-between pt-32 sm:pt-36 md:pt-28 lg:pt-32 px-6 md:px-12 lg:px-20 overflow-hidden bg-gradient-to-b from-[#F5F5F8] to-[#FAFAFC]">
+        <section id="sec1" className="relative min-h-[92vh] flex flex-col justify-between pt-28 sm:pt-36 md:pt-28 lg:pt-32 px-4 sm:px-6 md:px-12 lg:px-20 overflow-hidden bg-gradient-to-b from-[#F5F5F8] to-[#FAFAFC]">
           
           {/* Subtle Ambient Mesh Backing */}
           <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-purple-200/40 rounded-full blur-[150px] pointer-events-none" />
@@ -1152,7 +1066,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
             */}
             <nav
               aria-label="Page sections"
-              className="hidden lg:flex absolute left-4 xl:left-8 top-1/2 -translate-y-1/2 z-20 items-stretch gap-4 select-none"
+              className="hidden lg:flex absolute -left-12 xl:-left-14 top-1/2 -translate-y-1/2 z-20 items-stretch gap-3.5 select-none"
             >
               <span aria-hidden="true" className="w-px bg-[#D4D4D8] my-2" />
               <ul className="flex flex-col gap-5 text-[12px] leading-none">
@@ -1183,99 +1097,170 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
             </nav>
 
             {/* Left Content */}
-            <div className="lg:col-span-7 flex flex-col items-start lg:pl-28 xl:pl-32">
-              <span className="inline-block text-[11px] font-bold uppercase tracking-[0.2em] text-[#71717A] mb-6">
+            <div className="lg:col-span-6 xl:col-span-6 flex flex-col items-start lg:pl-20 xl:pl-24">
+              <span className="inline-block text-[11px] font-bold uppercase tracking-[0.2em] text-[#71717A] mb-5">
                 USA-SYNTHESISED RESEARCH PEPTIDES
               </span>
 
-              <h1 className="mb-8 font-serif">
-                <span className="block text-4xl sm:text-5xl lg:text-7xl font-normal tracking-tight text-[#0F0F11] leading-[1.08]">
+              <h1 className="mb-6 font-serif">
+                <span className="block text-[36px] sm:text-5xl lg:text-6xl xl:text-7xl font-normal tracking-tight text-[#0F0F11] leading-[1.08]">
                   Research peptides,
                 </span>
-                <span className="block text-4xl sm:text-5xl lg:text-7xl font-normal tracking-tight text-[#0F0F11] leading-[1.08]">
+                <span className="block text-[36px] sm:text-5xl lg:text-6xl xl:text-7xl font-normal tracking-tight text-[#0F0F11] leading-[1.08]">
                   verified lot by lot
                 </span>
               </h1>
 
-              <p className="text-[#71717A] text-sm sm:text-base leading-relaxed max-w-lg mb-10">
+              <p className="text-[#71717A] text-sm sm:text-base leading-relaxed max-w-lg mb-8">
                 Amino Based supplies research-grade peptides to laboratories in the United States. Every lot is tested by reverse-phase HPLC for purity and by mass spectrometry for identity, and ships with a Certificate of Analysis matched to the lot number on your vial.
               </p>
 
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center gap-4 mb-10">
+                <Link
+                  href="/products"
+                  className="px-8 py-3.5 rounded-full bg-[#0F0F11] text-white hover:bg-[#27272A] transition-all text-xs font-semibold uppercase tracking-widest flex items-center gap-2 group shadow-sm"
+                >
+                  EXPLORE PEPTIDES
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
                 <Link
                   href="/contact-us"
                   className="px-8 py-3.5 rounded-full border border-[#0F0F11] text-[#0F0F11] hover:bg-[#0F0F11] hover:text-white transition-all text-xs font-semibold uppercase tracking-widest flex items-center gap-2 group shadow-sm"
                 >
                   MAKE AN APPOINTMENT
-                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+
+              {/* Bottom Floating Product Cards (Matching Reference Layout) */}
+              <div className="hidden sm:flex flex-wrap items-center gap-4 pt-1">
+                {/* Product Card 1: BPC-157 */}
+                <Link
+                  href="/products"
+                  className="group flex items-center gap-3.5 bg-white/90 backdrop-blur-md border border-white/80 rounded-2xl p-2.5 pr-4 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_36px_rgba(0,0,0,0.08)] transition-all hover:-translate-y-0.5"
+                >
+                  <div className="w-12 h-14 relative bg-[#F4F4F6] rounded-xl overflow-hidden flex items-center justify-center p-1 shrink-0">
+                    <Image
+                      src="/assets/pill_thumb_bpc.webp"
+                      alt="BPC-157 5mg Research Vial"
+                      fill
+                      className="object-contain p-0.5 group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[11px] font-semibold text-[#0F0F11] tracking-tight">
+                      BPC-157 5mg
+                    </span>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <span className="text-xs font-bold text-[#0F0F11]">$54.00</span>
+                      <span className="text-[10px] text-[#71717A] font-medium">-20%</span>
+                    </div>
+                  </div>
+                  <div className="w-7 h-7 rounded-full bg-[#0F0F11] text-white flex items-center justify-center ml-2 group-hover:bg-[#27272A] transition-colors shrink-0">
+                    <Plus className="w-3.5 h-3.5" />
+                  </div>
+                </Link>
+
+                {/* Product Card 2: Semaglutide */}
+                <Link
+                  href="/products"
+                  className="group flex items-center gap-3.5 bg-white/90 backdrop-blur-md border border-white/80 rounded-2xl p-2.5 pr-4 shadow-[0_8px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_12px_36px_rgba(0,0,0,0.08)] transition-all hover:-translate-y-0.5"
+                >
+                  <div className="w-12 h-14 relative bg-[#F4F4F6] rounded-xl overflow-hidden flex items-center justify-center p-1 shrink-0">
+                    <Image
+                      src="/assets/pill_thumb_glp1.webp"
+                      alt="Semaglutide 5mg Research Vial"
+                      fill
+                      className="object-contain p-0.5 group-hover:scale-105 transition-transform"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-[11px] font-semibold text-[#0F0F11] tracking-tight">
+                      Semaglutide 5mg
+                    </span>
+                    <div className="flex items-center gap-2 mt-0.5">
+                      <span className="text-xs font-bold text-[#0F0F11]">$68.00</span>
+                      <span className="text-[10px] text-[#71717A] font-medium">-25%</span>
+                    </div>
+                  </div>
+                  <div className="w-7 h-7 rounded-full bg-[#0F0F11] text-white flex items-center justify-center ml-2 group-hover:bg-[#27272A] transition-colors shrink-0">
+                    <Plus className="w-3.5 h-3.5" />
+                  </div>
                 </Link>
               </div>
             </div>
 
-            {/* Right: Precision Robotic Arm Clamping Dropper Bottle */}
-            <div className="lg:col-span-5 relative flex items-center justify-center">
-              <div className="relative w-full max-w-[460px] aspect-[896/1200] rounded-[28px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.10)] border border-white/80 bg-[#F0F2F5] group select-none">
+            {/* Right: Interactive 3D Orbiting Fluid Vortex with Center Product Bottle */}
+            <div className="lg:col-span-6 xl:col-span-6 relative flex flex-col items-center justify-center">
+              <div className="relative w-full max-w-[560px] xl:max-w-[620px] aspect-square flex items-center justify-center select-none">
                 
-                {/* 1. Base Layer: Laboratory Scene with Standing Research Dropper Bottle */}
-                <Image
-                  src="/hero-bottle-clean.jpg"
-                  alt="Precision Research Dropper Bottle in Advanced Biotech Laboratory"
-                  fill
-                  priority
-                  sizes="(max-width: 768px) 100vw, 460px"
-                  className="object-cover select-none pointer-events-none"
-                />
+                {/* 1. Subtle Ambient Radial Backlight */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-purple-100/30 via-slate-100/40 to-transparent rounded-full blur-3xl pointer-events-none -z-10" />
 
-                {/* 2. Interactive Overlay Layer: Precision Robotic Claw Clamping Dropper Bulb */}
-                {/* When site loads: claw firmly holds bottle. When scrolling: retracts up & right along arm axis */}
-                <div
-                  ref={heroArmRef}
-                  data-motion-owner="hero-arm"
-                  className="hero-arm absolute inset-0 w-full h-full pointer-events-none z-10 will-change-transform"
+                {/* 2. Rotating 3D Aqueous Fluid Splash Ribbon & Crystalline Butterflies Layer */}
+                {/* Rotates continuously and smoothly in 3D around the product at an elegant, slow pace */}
+                <motion.div
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 75, repeat: Infinity, ease: "linear" }}
+                  className="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none will-change-transform"
                 >
                   <Image
-                    src="/hero-claw-overlay.png"
-                    alt="Precision Robotic Arm Clamping Research Dropper"
+                    src="/assets/amino_hero_fluid_swirl.webp"
+                    alt="Dynamic 3D Rotating Fluid Liquid Ribbon and Translucent Crystalline Butterflies"
                     fill
                     priority
-                    sizes="(max-width: 768px) 100vw, 460px"
-                    className="object-contain select-none"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 620px"
+                    className="object-contain w-full h-full drop-shadow-[0_20px_35px_rgba(15,15,17,0.04)] select-none pointer-events-none"
                   />
-                </div>
-
-                {/* 3. Floating Satellite Badges */}
-                <motion.div
-                  animate={{ y: [-4, 4, -4] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur-md border border-white/80 px-4 py-2 rounded-full shadow-lg text-[10px] font-bold tracking-widest uppercase text-[#7C3AED] flex items-center gap-1.5"
-                >
-                  <Sparkles className="w-3.5 h-3.5" />
-                  USA SYNTHESIS
                 </motion.div>
 
+                {/* 3. Center Luxury Product Bottle with Authentic Amino Based Branding */}
+                {/* Floats gently inside rotating fluid at exact original full scale */}
                 <motion.div
-                  animate={{ y: [4, -4, 4] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur-md border border-white/80 px-4 py-2 rounded-full shadow-lg text-[10px] font-bold tracking-widest uppercase text-[#0F0F11] flex items-center gap-1.5"
+                  animate={{ y: [-7, 7, -7] }}
+                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                  className="relative z-10 w-full h-[88%] flex items-center justify-center pointer-events-none select-none"
                 >
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-                  BATCH CERTIFIED
+                  <Image
+                    src="/assets/amino_hero_bottle_tight.webp"
+                    alt="Amino Based 5-AMINO-1MQ 50mg Luxury Research Bottle"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 420px"
+                    className="object-contain w-full h-full drop-shadow-[0_25px_40px_rgba(15,15,17,0.12)] select-none pointer-events-none"
+                  />
                 </motion.div>
 
-                {/* Scroll for more trigger on the card */}
-                <div className="absolute bottom-4 right-4 z-20">
+                {/* 4. Vertical Scroll Down Pill Indicator (Bottom Right of Product) */}
+                <div className="absolute -bottom-2 right-2 sm:right-6 hidden sm:flex items-center gap-3 select-none pointer-events-auto z-20">
                   <button
                     onClick={() => {
                       const el = document.querySelector("#sec2");
                       el?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="px-4 py-2 rounded-full bg-[#0F0F11]/90 backdrop-blur-md text-white text-[10px] font-semibold uppercase tracking-wider flex items-center gap-1.5 hover:bg-[#0F0F11] transition-all cursor-pointer shadow-md"
+                    className="flex items-center gap-2.5 text-[#71717A] hover:text-[#0F0F11] transition-colors cursor-pointer group"
+                    aria-label="Scroll Down"
                   >
-                    <span>↓ SCROLL FOR MORE</span>
+                    <span className="text-[10px] font-semibold tracking-[0.2em] uppercase [writing-mode:vertical-rl] rotate-180">
+                      Scroll Down
+                    </span>
+                    <div className="w-5 h-9 rounded-full border border-[#0F0F11]/30 flex items-start justify-center p-1 group-hover:border-[#0F0F11] transition-colors">
+                      <motion.div
+                        animate={{ y: [0, 12, 0] }}
+                        transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
+                        className="w-1 h-2 rounded-full bg-[#0F0F11]"
+                      />
+                    </div>
                   </button>
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Far Right Vertical Rail */}
+          <div className="hidden xl:flex absolute right-6 top-1/2 -translate-y-1/2 z-20 items-center select-none pointer-events-auto">
+            <span className="text-[11px] font-medium tracking-[0.25em] text-[#A1A1AA] hover:text-[#0F0F11] transition-colors uppercase [writing-mode:vertical-rl] rotate-180">
+              Amino Based
+            </span>
           </div>
 
           {/* Bottom Floating Frosted Glass Card '01' (overlapping the rotating DNA helix behind it) */}
@@ -1346,7 +1331,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
         {/* ========================================================================= */}
         {/* SECTION 3: STATS & PLANETARY CONCENTRIC CIRCLES (00:03 - 00:05)            */}
         {/* ========================================================================= */}
-        <section id="sec3" data-motion-owner="true" className="stats-section py-24 md:py-32 px-6 md:px-12 lg:px-20 bg-white">
+        <section id="sec3" data-motion-owner="true" className="stats-section py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12 lg:px-20 bg-white overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             
             {/* Left: Mission & 4-Stat Grid with Underlines */}
@@ -1466,7 +1451,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
         {/* ========================================================================= */}
         {/* SECTION 4: BENTO 3D CELLULAR & RECEPTOR CARDS (00:05 - 00:07)              */}
         {/* ========================================================================= */}
-        <section id="sec4" data-motion-owner="true" className="py-20 md:py-28 px-6 md:px-12 lg:px-20 bg-[#FAFAFC] border-y border-[#E4E4E7]">
+        <section id="sec4" data-motion-owner="true" className="py-14 sm:py-20 md:py-28 px-4 sm:px-6 md:px-12 lg:px-20 bg-[#FAFAFC] border-y border-[#E4E4E7] overflow-hidden">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
               
@@ -1480,6 +1465,8 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
                   ref={splashVideoRef}
                   src="/assets/vial-water-drop.mp4"
                   poster="/assets/vial-water-drop-poster.jpg"
+                  autoPlay
+                  loop
                   muted
                   playsInline
                   preload="auto"
@@ -1583,7 +1570,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
                   <div
                     data-parallax="-4"
                     className="md:col-span-6 rounded-[24px] p-6 flex flex-col justify-between shadow-sm relative overflow-hidden bg-cover bg-center min-h-[290px] border border-gray-200/80 bg-[#F4F4F6]"
-                    style={{ backgroundImage: "url(/assets/bento_molecule.jpg)" }}
+                    style={{ backgroundImage: "url(/assets/peptide_receptor_interaction.jpg)" }}
                   >
                     <div className="flex justify-end items-start z-10">
                       <span className="w-7 h-7 rounded-full bg-white/95 flex items-center justify-center text-purple-700 text-xs font-bold shadow-xs">
@@ -1613,58 +1600,145 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
 
                 </div>
 
-                {/* Bottom Half: 3-Row Diagnostic Features sitting directly on background (from video 00:06) */}
-                <div className="border-t border-gray-200/80 pt-6 space-y-6">
-                  {[
-                    {
-                      title: "Independent verification",
-                      desc: "Purity and identity are confirmed by analytical testing before any lot is released for sale.",
-                    },
-                    {
-                      title: "Global Reach",
-                      desc: "We ship research compounds to qualified laboratories and institutional buyers across the United States.",
-                    },
-                    {
-                      title: "Research Excellence",
-                      desc: "Every vial carries a lot number that maps to its own chromatogram and mass spectrum.",
-                    },
-                  ].map((item, idx) => {
-                    const isOpen = activeBentoItem === idx;
+                {/* Bottom Half: Interactive Diagnostic Topics (Compact, Streamlined) */}
+                <div className="border-t border-gray-200/80 pt-5">
+                  {(() => {
+                    const DIAGNOSTIC_TOPICS = [
+                      {
+                        title: "Independent verification",
+                        metric: "≥99.8% HPLC Certified",
+                        desc: "Dual-method ISO/IEC 17025 accredited HPLC testing guarantees baseline purity with zero detectable residual solvents.",
+                        tags: ["ISO/IEC 17025", "Dual-Lab Verified"],
+                        ctaLabel: "View Sample HPLC",
+                        ctaHref: "/certificates",
+                      },
+                      {
+                        title: "Global Reach",
+                        metric: "<24h US Cold-Chain",
+                        desc: "Same-day temperature-buffered cold-chain dispatch from our US facility for orders placed before 2:00 PM EST.",
+                        tags: ["Domestic US Synthesis", "Express Transit"],
+                        ctaLabel: "Shop Compounds",
+                        ctaHref: "/shop",
+                      },
+                      {
+                        title: "Research Excellence",
+                        metric: "100% Traceable COAs",
+                        desc: "Scannable vial batch numbers map directly to raw electrospray ionization mass spectrometry (ESI-MS) sequence reports.",
+                        tags: ["ESI-MS Verified", "Public Database"],
+                        ctaLabel: "Open COA Portal",
+                        ctaHref: "/certificates",
+                      },
+                    ];
+
+                    const activeIndex = activeBentoItem ?? 0;
+                    const currentTopic = DIAGNOSTIC_TOPICS[activeIndex] || DIAGNOSTIC_TOPICS[0];
+
                     return (
-                      <div
-                        key={idx}
-                        onClick={() => setActiveBentoItem(isOpen ? null : idx)}
-                        className="group grid grid-cols-1 md:grid-cols-12 gap-4 items-start cursor-pointer pb-5 border-b border-gray-100 last:border-b-0"
-                      >
-                        {/* Left: Circle Plus + Title */}
-                        <div className="md:col-span-5 flex items-center gap-3">
-                          <div
-                            className={`w-6 h-6 rounded-full border flex items-center justify-center shrink-0 transition-colors ${
-                              isOpen
-                                ? "border-purple-600 bg-purple-50 text-purple-600"
-                                : "border-gray-400 text-gray-500 group-hover:border-purple-600 group-hover:text-purple-600"
-                            }`}
-                          >
-                            <Plus className={`w-3.5 h-3.5 transition-transform duration-300 ${isOpen ? "rotate-45" : ""}`} />
-                          </div>
-                          <h4 className="text-lg font-serif font-normal text-[#0F0F11] group-hover:text-purple-600 transition-colors">
-                            {item.title}
-                          </h4>
+                      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-start">
+                        {/* Left Column: 3 Selectable Topic Rows (5 cols) */}
+                        <div className="md:col-span-5 flex flex-col space-y-2">
+                          {DIAGNOSTIC_TOPICS.map((item, idx) => {
+                            const isActive = activeIndex === idx;
+                            return (
+                              <button
+                                key={idx}
+                                type="button"
+                                onClick={() => setActiveBentoItem(idx)}
+                                className={`w-full flex items-center justify-between p-2.5 sm:p-3 rounded-xl text-left transition-all duration-200 border cursor-pointer ${
+                                  isActive
+                                    ? "bg-purple-50/70 border-purple-300 shadow-2xs"
+                                    : "bg-white/70 hover:bg-white border-gray-200/70 hover:border-gray-300"
+                                }`}
+                              >
+                                <div className="flex items-center gap-2.5">
+                                  <div
+                                    className={`w-6 h-6 rounded-full border flex items-center justify-center shrink-0 transition-all duration-200 ${
+                                      isActive
+                                        ? "border-[#8B5CF6] bg-[#8B5CF6] text-white"
+                                        : "border-gray-300 bg-white text-gray-400 group-hover:border-[#8B5CF6] group-hover:text-[#8B5CF6]"
+                                    }`}
+                                  >
+                                    <Plus
+                                      className={`w-3 h-3 transition-transform duration-200 ease-out ${
+                                        isActive ? "rotate-45" : "rotate-0"
+                                      }`}
+                                    />
+                                  </div>
+                                  <h4
+                                    className={`text-sm sm:text-[15px] font-serif transition-colors ${
+                                      isActive ? "text-[#7C3AED] font-medium" : "text-[#0F0F11]"
+                                    }`}
+                                  >
+                                    {item.title}
+                                  </h4>
+                                </div>
+                                <div
+                                  className={`w-1.5 h-1.5 rounded-full transition-all ${
+                                    isActive ? "bg-[#8B5CF6]" : "bg-transparent"
+                                  }`}
+                                />
+                              </button>
+                            );
+                          })}
                         </div>
 
-                        {/* Right: Description */}
-                        <div className="md:col-span-7">
-                          <p className="text-xs sm:text-sm text-[#71717A] leading-relaxed">
-                            {item.desc}
-                          </p>
+                        {/* Right Column: Compact Active Detail Panel (7 cols) */}
+                        <div className="md:col-span-7 bg-white/90 backdrop-blur-md rounded-2xl border border-gray-200/80 p-4 sm:p-4.5 shadow-2xs">
+                          <AnimatePresence mode="wait">
+                            <motion.div
+                              key={activeIndex}
+                              initial={{ opacity: 0, y: 4 }}
+                              animate={{ opacity: 1, y: 0 }}
+                              exit={{ opacity: 0, y: -4 }}
+                              transition={{ duration: 0.2, ease: "easeOut" }}
+                              className="flex flex-col justify-between"
+                            >
+                              {/* Top Row: Metric Badge & Tags */}
+                              <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
+                                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-purple-50 border border-purple-200/80 text-purple-700 text-[11px] font-semibold font-mono">
+                                  <span className="w-1.5 h-1.5 rounded-full bg-purple-600 animate-pulse" />
+                                  {currentTopic.metric}
+                                </span>
+                                <div className="flex items-center gap-1.5">
+                                  {currentTopic.tags.map((tag, tIdx) => (
+                                    <span
+                                      key={tIdx}
+                                      className="text-[10px] text-gray-500 font-medium px-2 py-0.5 rounded-md bg-gray-100/80 border border-gray-200/60 hidden sm:inline"
+                                    >
+                                      {tag}
+                                    </span>
+                                  ))}
+                                </div>
+                              </div>
+
+                              {/* Concise 2-line Description */}
+                              <p className="text-xs sm:text-[13px] text-[#52525B] leading-relaxed mb-3">
+                                {currentTopic.desc}
+                              </p>
+
+                              {/* Bottom Row: CTA Link */}
+                              <div className="flex items-center justify-between pt-2 border-t border-gray-100">
+                                <Link
+                                  href={currentTopic.ctaHref}
+                                  className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#0F0F11] hover:bg-[#8B5CF6] text-white text-[11px] font-medium tracking-wide transition-colors group shadow-2xs"
+                                >
+                                  <span>{currentTopic.ctaLabel}</span>
+                                  <ArrowUpRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                                </Link>
+
+                                <span className="text-[10px] text-gray-400 font-mono">
+                                  Topic 0{activeIndex + 1}/03
+                                </span>
+                              </div>
+                            </motion.div>
+                          </AnimatePresence>
                         </div>
                       </div>
                     );
-                  })}
+                  })()}
                 </div>
 
               </div>
-
             </div>
           </div>
         </section>
@@ -1675,7 +1749,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
         <section id="sec5"
           ref={deckRef}
           data-motion-owner="deck"
-          className="min-h-screen py-28 px-6 md:px-12 lg:px-20 bg-white relative overflow-hidden flex flex-col justify-center"
+          className="min-h-screen py-16 sm:py-28 px-4 sm:px-6 md:px-12 lg:px-20 bg-white relative overflow-hidden flex flex-col justify-center"
         >
           
           {/* Giant Running Background Marquee (from video 00:08) */}
@@ -1684,7 +1758,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
             <div className="animate-marquee flex items-center">
               {[...Array(3)].map((_, i) => (
                 <span key={i} className="text-6xl sm:text-7xl md:text-8xl font-normal uppercase text-[#B9A6F2] tracking-[0.01em] mx-4">
-                  PERSONALIZED CARE ⊕ / EXPERT RESULTS / PRECISION SERVICES ⊕ /
+                  PRECISION VIALS ⊕ / METERED NASAL SPRAYS ⊕ / SYNERGISTIC BLENDS ⊕ / PURITY VERIFIED ⊕ /
                 </span>
               ))}
             </div>
@@ -1701,34 +1775,108 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
                 <div
                   key={card.title}
                   style={{ zIndex: 30 - idx * 10 }}
-                  className="deck-card absolute inset-0 w-full h-full bg-[#EDEDF0] border border-gray-200/90 rounded-[28px] p-4 flex flex-col justify-between shadow-[0_20px_50px_-10px_rgba(0,0,0,0.12)] select-none transform-gpu"
+                  onClick={() => {
+                    if (typeof window !== "undefined" && window.innerWidth < 768) {
+                      handleDeckCardSelect((activeDeckIndex + 1) % stackedCards.length);
+                    }
+                  }}
+                  className="deck-card absolute inset-0 w-full h-full bg-[#EDEDF0] border border-gray-200/90 rounded-[28px] p-4 flex flex-col justify-between shadow-[0_20px_50px_-10px_rgba(0,0,0,0.12)] select-none transform-gpu cursor-pointer md:cursor-default"
                 >
                   {/* Top 3D Visual Area */}
-                  <div className="relative w-full h-[320px] sm:h-[360px] rounded-[22px] overflow-hidden bg-[#E2E4EB]/40 flex items-center justify-center border border-black/5">
-                    <Image
-                      src={card.image}
-                      alt={card.title}
-                      fill
-                      className="object-cover"
+                  {card.isFluidAnimated ? (
+                    <FluidVialVisual
+                      imageSrc={card.image}
+                      altText={card.title}
+                      videoSrc={card.video}
+                      badge={card.badge}
                       priority={idx === 0}
-                      sizes="(max-width: 768px) 100vw, 420px"
                     />
-                  </div>
+                  ) : card.isHangingAnimated ? (
+                    <HangingSpraysVisual
+                      imageSrc={card.image}
+                      altText={card.title}
+                      badge={card.badge}
+                      priority={idx === 0}
+                    />
+                  ) : (
+                    <div className="relative w-full h-[320px] sm:h-[350px] rounded-[22px] overflow-hidden bg-[#E2E4EB]/40 flex items-center justify-center border border-black/5">
+                      <Image
+                        src={card.image}
+                        alt={card.title}
+                        fill
+                        className="object-cover"
+                        priority={idx === 0}
+                        sizes="(max-width: 768px) 100vw, 420px"
+                      />
+                      {/* Laboratory spec badge pill overlay in corner */}
+                      <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full border border-black/10 shadow-xs flex items-center gap-1.5">
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                        <span className="text-[10px] font-mono font-semibold uppercase tracking-wider text-gray-800">
+                          {card.badge}
+                        </span>
+                      </div>
+                    </div>
+                  )}
 
                   {/* Bottom Info Row */}
                   <div className="px-2 pt-3 pb-1 flex items-center justify-between">
-                    <h3 className="text-xl sm:text-2xl font-serif font-normal text-[#0F0F11] leading-snug max-w-[240px]">
-                      {card.title}
-                    </h3>
+                    <div className="min-w-0 pr-2">
+                      <span className="text-[10px] font-mono uppercase tracking-wider text-gray-500 font-semibold block mb-0.5">
+                        {card.category}
+                      </span>
+                      <h3 className="text-base sm:text-lg font-serif font-medium text-[#0F0F11] leading-snug truncate">
+                        {card.title}
+                      </h3>
+                    </div>
                     <Link
                       href={card.href}
-                      className="px-4 py-1.5 rounded-full border border-gray-300 text-xs font-semibold uppercase tracking-wider text-gray-800 bg-white hover:bg-black hover:text-white hover:border-black transition-all shadow-xs"
+                      className="shrink-0 px-3.5 py-1.5 rounded-full border border-gray-300 text-xs font-semibold uppercase tracking-wider text-gray-800 bg-white hover:bg-black hover:text-white hover:border-black transition-all shadow-xs"
                     >
-                      Services
+                      {card.btnText}
                     </Link>
                   </div>
                 </div>
               ))}
+            </div>
+
+            {/* Mobile Interactive Stepper & Dot Navigator */}
+            <div className="flex md:hidden items-center justify-between w-full max-w-[360px] mt-5 px-3 select-none z-20">
+              <div className="flex items-center gap-2">
+                {stackedCards.map((_, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => handleDeckCardSelect(i)}
+                    className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                      activeDeckIndex === i ? "w-7 bg-neutral-900" : "w-2 bg-neutral-300"
+                    }`}
+                    aria-label={`Go to service card ${i + 1}`}
+                  />
+                ))}
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="text-[12px] font-mono font-medium text-neutral-500 mr-1">
+                  {activeDeckIndex + 1} / {stackedCards.length}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => handleDeckCardSelect(Math.max(0, activeDeckIndex - 1))}
+                  disabled={activeDeckIndex === 0}
+                  aria-label="Previous service card"
+                  className="w-8 h-8 rounded-full bg-white border border-neutral-300 flex items-center justify-center text-neutral-700 disabled:opacity-30 shadow-xs active:scale-90 transition-transform touch-manipulation cursor-pointer"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleDeckCardSelect((activeDeckIndex + 1) % stackedCards.length)}
+                  aria-label="Next service card"
+                  className="w-8 h-8 rounded-full bg-neutral-900 text-white flex items-center justify-center shadow-xs active:scale-90 transition-transform touch-manipulation cursor-pointer"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
             </div>
 
           </div>
@@ -1740,7 +1888,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
         <section id="sec6"
           ref={scienceRef}
           data-motion-owner="science"
-          className="min-h-screen flex flex-col justify-center py-24 md:py-32 px-6 md:px-12 lg:px-20 bg-[#F8F8FA] border-t border-[#E4E4E7]"
+          className="min-h-screen flex flex-col justify-center py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12 lg:px-20 bg-[#F8F8FA] border-t border-[#E4E4E7] overflow-hidden"
         >
           <div className="max-w-7xl mx-auto">
             
@@ -1755,28 +1903,34 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
                   <button
                     type="button"
                     onClick={() => {
-                      const dots = scienceRef.current?.querySelectorAll<HTMLElement>(".timeline-dot");
+                      const dots = scienceRef.current?.querySelectorAll(".timeline-dot") as NodeListOf<HTMLElement> | undefined;
                       const activeIndex = Array.from(dots || []).findIndex((d) => d.classList.contains("scale-125"));
                       const prevIdx = (activeIndex - 1 + timelineSteps.length) % timelineSteps.length;
-                      const stepEls = scienceRef.current?.querySelectorAll<HTMLElement>(".timeline-step");
+                      const stepEls = scienceRef.current?.querySelectorAll(".timeline-step") as NodeListOf<HTMLElement> | undefined;
                       stepEls?.[prevIdx]?.click();
+                      if (window.innerWidth < 1024) {
+                        stepEls?.[prevIdx]?.scrollIntoView({ behavior: "smooth", block: "center" });
+                      }
                     }}
                     aria-label="Previous timeline step"
-                    className="w-10 h-10 rounded-full border border-[#D4D4D8] bg-white hover:border-[#0F0F11] flex items-center justify-center transition-colors shadow-sm"
+                    className="w-10 h-10 rounded-full border border-[#D4D4D8] bg-white hover:border-[#0F0F11] flex items-center justify-center transition-colors shadow-sm active:scale-95 touch-manipulation cursor-pointer"
                   >
                     <ChevronLeft className="w-4 h-4 text-[#0F0F11]" />
                   </button>
                   <button
                     type="button"
                     onClick={() => {
-                      const dots = scienceRef.current?.querySelectorAll<HTMLElement>(".timeline-dot");
+                      const dots = scienceRef.current?.querySelectorAll(".timeline-dot") as NodeListOf<HTMLElement> | undefined;
                       const activeIndex = Array.from(dots || []).findIndex((d) => d.classList.contains("scale-125"));
                       const nextIdx = (activeIndex + 1) % timelineSteps.length;
-                      const stepEls = scienceRef.current?.querySelectorAll<HTMLElement>(".timeline-step");
+                      const stepEls = scienceRef.current?.querySelectorAll(".timeline-step") as NodeListOf<HTMLElement> | undefined;
                       stepEls?.[nextIdx]?.click();
+                      if (window.innerWidth < 1024) {
+                        stepEls?.[nextIdx]?.scrollIntoView({ behavior: "smooth", block: "center" });
+                      }
                     }}
                     aria-label="Next timeline step"
-                    className="w-10 h-10 rounded-full border border-[#D4D4D8] bg-white hover:border-[#0F0F11] flex items-center justify-center transition-colors shadow-sm"
+                    className="w-10 h-10 rounded-full border border-[#D4D4D8] bg-white hover:border-[#0F0F11] flex items-center justify-center transition-colors shadow-sm active:scale-95 touch-manipulation cursor-pointer"
                   >
                     <ChevronRight className="w-4 h-4 text-[#0F0F11]" />
                   </button>
@@ -1813,20 +1967,23 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
             </div>
 
             {/* Horizontal Step Timeline Line with Pulsing Active Node (from video 00:12) */}
-            <div className="relative pt-12">
-              {/* Connecting line */}
-              <div className="absolute top-16 left-0 right-0 h-0.5 bg-gray-200 -z-0" />
+            <div className="relative pt-6 sm:pt-12 pl-10 lg:pl-0">
+              {/* Mobile Vertical Timeline Rail Line */}
+              <div className="absolute left-4 top-4 bottom-6 w-0.5 bg-gray-200 lg:hidden -z-0" />
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 relative z-10">
+              {/* Desktop Horizontal Line */}
+              <div className="hidden lg:block absolute top-16 left-0 right-0 h-0.5 bg-gray-200 -z-0" />
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 sm:gap-6 relative z-10">
                 {timelineSteps.map((step, idx) => {
                   const isActive = idx === 0;
                   return (
                     <div
                       key={idx}
-                      className="timeline-step cursor-pointer group flex flex-col items-start"
+                      className="timeline-step cursor-pointer group flex flex-row lg:flex-col items-start gap-4 lg:gap-0 pb-3 lg:pb-0 touch-manipulation"
                     >
                       {/* Node Bullet */}
-                      <div className="mb-6 flex items-center justify-center w-8 h-8">
+                      <div className="-ml-10 lg:ml-0 mb-0 lg:mb-6 flex items-center justify-center w-8 h-8 shrink-0 z-10 bg-[#F8F8FA]">
                         <div
                           className={`timeline-dot w-4 h-4 rounded-full transition-all duration-300 ${
                             isActive
@@ -1836,19 +1993,21 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
                         />
                       </div>
 
-                      {/* Step Title / Subtitle */}
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-[#A1A1AA] mb-2">
-                        {step.subtitle}
-                      </span>
-                      <p
-                        className={`timeline-desc text-xs sm:text-sm leading-relaxed transition-colors duration-300 ${
-                          isActive
-                            ? "text-[#0F0F11] font-semibold"
-                            : "text-[#71717A] font-normal group-hover:text-[#0F0F11]"
-                        }`}
-                      >
-                        {step.title}
-                      </p>
+                      {/* Step Details */}
+                      <div className="flex flex-col items-start">
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-[#A1A1AA] mb-1 sm:mb-2">
+                          {step.subtitle}
+                        </span>
+                        <p
+                          className={`timeline-desc text-xs sm:text-sm leading-relaxed transition-colors duration-300 ${
+                            isActive
+                              ? "text-[#0F0F11] font-semibold"
+                              : "text-[#71717A] font-normal group-hover:text-[#0F0F11]"
+                          }`}
+                        >
+                          {step.title}
+                        </p>
+                      </div>
                     </div>
                   );
                 })}
@@ -1865,7 +2024,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
           id="sec7"
           ref={advantagesRef}
           data-motion-owner="true"
-          className="py-20 sm:py-24 lg:py-28 px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 bg-[#F6F6F2] border-t border-b border-[#E4E4E7]/80 overflow-hidden"
+          className="py-10 sm:py-14 lg:py-16 px-4 sm:px-6 md:px-8 bg-[#F6F6F2] border-t border-b border-[#E4E4E7]/80 overflow-hidden"
         >
           <div className="max-w-[1280px] mx-auto">
             <CategoriesSection />
@@ -1887,10 +2046,10 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
               ref={labBannerRef}
               className="relative w-full rounded-3xl border border-white/10 p-6 sm:p-8 md:p-12 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[560px] sm:min-h-[600px] lg:min-h-[640px] bg-[#030d1a] will-change-transform"
             >
-              {/* High-Definition 3D Vials Background (clean canvas with baked card removed) */}
+              {/* High-Definition 3D Vials Background with Official Amino Based Branding */}
               <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 <Image
-                  src="/assets/page-hero-03-coa-vials.webp"
+                  src="/assets/page-hero-03-coa-vials-official.webp"
                   alt="Amino Based Precision Research Vials"
                   fill
                   priority
@@ -1899,8 +2058,8 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
                 />
               </div>
 
-              {/* Top Row: Action buttons on top right matching video 00:17 */}
-              <div className="flex justify-end items-center gap-3 z-10 mb-8">
+              {/* Top Row: Action buttons on top right matching video 00:17 (Hidden on mobile) */}
+              <div className="hidden sm:flex justify-end items-center gap-3 z-10 mb-8">
                 <Link
                   href="/shop"
                   className="px-5 py-2 rounded-full bg-white/90 backdrop-blur-md border border-white/40 text-xs font-semibold uppercase tracking-wider text-[#0F0F11] hover:bg-black hover:text-white transition-colors shadow-xs"
@@ -1918,7 +2077,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
               {/* Bottom Content Area: Left Real HTML 'Certificates of Analysis' Card, Right Floating Frosted Glass HPLC HUD Widget */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end z-10 mt-auto">
                 {/* Left Card: Real HTML Card matching the reference text and styling */}
-                <div ref={labTextRef} className="lg:col-span-6 flex flex-col justify-end">
+                <div ref={labTextRef} className="lg:col-span-6 flex flex-col justify-end relative z-10">
                   <div className="w-full max-w-lg bg-[#F0F4F8] sm:bg-white/95 backdrop-blur-md rounded-[28px] sm:rounded-[36px] p-7 sm:p-9 md:p-11 shadow-[0_20px_50px_rgba(0,0,0,0.25)] border border-white/80">
                     <h2 className="text-3xl sm:text-4xl md:text-[46px] font-sans font-bold text-[#08152B] tracking-tight leading-[1.08] mb-4">
                       Certificates of <br />
@@ -1938,10 +2097,10 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
                 </div>
 
                 {/* Floating Frosted Glass Chromatogram HUD Card (glides from Left across to Right) - UNTOUCHED */}
-                <div className="lg:col-span-6 flex justify-end">
+                <div className="lg:col-span-6 flex justify-end relative z-20">
                   <div
                     ref={labCardRef}
-                    className="w-full max-w-md bg-white/85 backdrop-blur-xl border border-white/70 rounded-[28px] p-6 md:p-8 shadow-[0_25px_60px_rgba(0,0,0,0.14)]"
+                    className="w-full max-w-md bg-white/70 backdrop-blur-md border border-white/60 rounded-[28px] p-6 md:p-8 shadow-[0_25px_60px_rgba(0,0,0,0.18)] relative z-20 will-change-transform"
                   >
                     <div className="flex justify-between items-start mb-4">
                       <div>
@@ -2000,7 +2159,7 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
         {/* ========================================================================= */}
         {/* SECTION 9: EDUCATIONAL WEBINARS (00:20 - 00:22 in reference video)        */}
         {/* ========================================================================= */}
-        <section id="sec-webinars" ref={webinarsRef} data-motion-owner="webinars" className="py-24 md:py-32 px-6 md:px-12 lg:px-20 bg-white border-t border-[#E4E4E7]">
+        <section id="sec-webinars" ref={webinarsRef} data-motion-owner="webinars" className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-12 lg:px-20 bg-white border-t border-[#E4E4E7] overflow-hidden">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-16">
               <div className="lg:col-span-8">
@@ -2024,35 +2183,48 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
               </div>
             </div>
 
-            {/* 3 Circular Video Webinar Cards (matching video 00:21) */}
+            {/* 3 Circular Research Guide Cards (matching reference with crisp high-res project imagery & purple arrow button) */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {[
                 {
-                  img: "/assets/webinar_1.jpg",
+                  img: "/assets/guide_coa_verification.jpg",
                   title: "How to Read a Certificate of Analysis",
                   desc: "What each section of a COA means, and which figures actually matter.",
+                  href: "/certificates",
                 },
                 {
-                  img: "/assets/webinar_2.jpg",
+                  img: "/assets/guide_hplc_purity.jpg",
                   title: "What ≥99% HPLC Purity Means",
                   desc: "How purity is measured, and why the remaining fraction matters.",
+                  href: "/certificates",
                 },
                 {
-                  img: "/assets/webinar_3.jpg",
+                  img: "/assets/guide_reconstitution_storage.jpg",
                   title: "Reconstitution and Storage",
                   desc: "Handling lyophilised peptides so results stay reproducible between runs.",
+                  href: "/calculator",
                 },
               ].map((webinar, idx) => (
-                <div
+                <Link
                   key={idx}
-                  className="webinar-card group flex flex-col items-start cursor-pointer"
+                  href={webinar.href}
+                  className="webinar-card group flex flex-col items-start cursor-pointer text-left"
                 >
-                  {/* Circular Thumbnail with Hover Animation */}
-                  <div className="relative w-36 h-36 mb-6 rounded-full overflow-hidden border border-gray-200 shadow-sm group-hover:scale-105 group-hover:shadow-md transition-all duration-300">
-                    <div
-                      className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
-                      style={{ backgroundImage: `url(${webinar.img})` }}
-                    />
+                  {/* Circular Thumbnail with Hover Animation & Top-Right Purple Arrow Badge */}
+                  <div className="relative w-36 h-36 mb-6">
+                    <div className="w-full h-full rounded-full overflow-hidden border border-gray-200/90 shadow-sm group-hover:shadow-md group-hover:scale-105 transition-all duration-300 relative bg-gray-50">
+                      <Image
+                        src={webinar.img}
+                        alt={webinar.title}
+                        fill
+                        sizes="(max-width: 768px) 144px, 144px"
+                        className="object-cover object-center transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+                    {/* Floating Top-Right Purple Diagonal Arrow Pill (matching reference screenshot) */}
+                    <div className="absolute top-0 right-0 w-8 h-8 rounded-full bg-gradient-to-br from-[#A78BFA] via-[#906CF0] to-[#7C3AED] text-white flex items-center justify-center shadow-md border-2 border-white group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 pointer-events-none z-10">
+                      <ArrowUpRight className="w-4 h-4 stroke-[2.25]" />
+                    </div>
                   </div>
                   <h3 className="text-lg sm:text-xl font-serif font-normal text-[#0F0F11] mb-2 group-hover:text-purple-600 transition-colors">
                     {webinar.title}
@@ -2060,11 +2232,16 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
                   <p className="text-xs text-[#71717A] leading-relaxed max-w-xs">
                     {webinar.desc}
                   </p>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
         </section>
+
+        {/* ========================================================================= */}
+        {/* WHY CHOOSE US SECTION (ACCORDING TO REFERENCE DESIGN)                       */}
+        {/* ========================================================================= */}
+        <WhyChooseUsSection />
 
         {/* ========================================================================= */}
         {/* SECTION 10: BLOG SECTION (PRACTICAL READS / REFERENCE DESIGN)              */}
@@ -2075,291 +2252,21 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
         {/* ========================================================================= */}
         {/* SECTION 10: FREQUENTLY ASKED QUESTIONS (ACCORDION & CALLOUT)              */}
         {/* ========================================================================= */}
-        <section
+        <FAQSection
           id="sec10"
-          ref={faqRef}
-          data-motion-owner="faq"
-          className="py-24 md:py-32 px-6 md:px-12 lg:px-20 bg-white border-t border-[#E4E4E7]"
-        >
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-
-              {/* Left Column: Pill Badge, Large Heading & 'Still have questions?' Callout Card */}
-              <div className="lg:col-span-5 flex flex-col justify-between h-full">
-                <div>
-                  {/* Category Pill Badge with active glowing dot */}
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E4E4E7] shadow-2xs mb-5">
-                    <span className="w-2 h-2 rounded-full bg-[#894EF2] animate-pulse" />
-                    <span className="text-[11px] font-semibold tracking-wider text-[#894EF2] uppercase">
-                      Amino Based Research FAQ
-                    </span>
-                  </div>
-
-                  {/* Main Display Heading matching mockup */}
-                  <h2 className="text-4xl sm:text-5xl lg:text-[54px] font-normal font-serif tracking-tight text-[#0F0F11] leading-[1.08] mb-10 lg:mb-14">
-                    Frequently asked <br />
-                    questions
-                  </h2>
-                </div>
-
-                {/* Callout Card matching exact reference design (sampled #F3F2F8) */}
-                <div className="bg-[#F3F2F8] border border-[#E4E4E7]/70 rounded-3xl p-7 sm:p-8 relative overflow-hidden shadow-2xs mt-auto">
-                  <h3 className="text-2xl font-serif font-normal text-[#0F0F11] mb-2.5 tracking-tight">
-                    Still have a questions?
-                  </h3>
-                  <p className="text-xs sm:text-[13px] text-[#71717A] leading-relaxed mb-6 max-w-xs">
-                    Can&apos;t find the answer to your question? Send us an inquiry and our scientific support team will get back to you as soon as possible!
-                  </p>
-                  <Link
-                    href="#sec11"
-                    className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-[#894EF2] hover:bg-[#7C3AED] text-white text-xs font-semibold shadow-[0_4px_14px_rgba(137,78,242,0.35)] hover:shadow-[0_6px_20px_rgba(137,78,242,0.45)] transition-all hover:scale-105 active:scale-95"
-                  >
-                    Send email
-                  </Link>
-                </div>
-              </div>
-
-              {/* Right Column: Stacked Accordion Cards (sampled #F6F7FB) */}
-              <div className="lg:col-span-7 flex flex-col gap-3.5">
-                {FAQ_ITEMS.map((item, idx) => {
-                  const isOpen = openFaqIndex === idx;
-                  return (
-                    <div
-                      key={idx}
-                      className={`rounded-2xl transition-all duration-300 border ${
-                        isOpen
-                          ? "bg-white border-purple-200/90 shadow-sm"
-                          : "bg-[#F6F7FB] border-[#E4E4E7]/70 hover:bg-white hover:border-purple-200/50"
-                      }`}
-                    >
-                      <button
-                        type="button"
-                        onClick={() => setOpenFaqIndex(isOpen ? null : idx)}
-                        className="w-full text-left p-5 sm:p-6 flex items-center justify-between gap-4 cursor-pointer select-none"
-                        aria-expanded={isOpen}
-                      >
-                        <span className="text-sm sm:text-base font-medium text-[#0F0F11] leading-snug">
-                          {item.question}
-                        </span>
-                        <span className="w-8 h-8 rounded-lg bg-white border border-[#E4E4E7]/80 shadow-2xs flex items-center justify-center shrink-0 text-[#894EF2] transition-colors">
-                          {isOpen ? (
-                            <ChevronUp className="w-4 h-4 stroke-[2.4]" />
-                          ) : (
-                            <ChevronDown className="w-4 h-4 stroke-[2.4]" />
-                          )}
-                        </span>
-                      </button>
-
-                      <AnimatePresence initial={false}>
-                        {isOpen && (
-                          <motion.div
-                            key="content"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: "auto", opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.28, ease: "easeInOut" }}
-                            className="overflow-hidden"
-                          >
-                            <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-[#71717A] leading-relaxed border-t border-gray-100/80">
-                              {item.answer}
-                            </div>
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  );
-                })}
-              </div>
-
-            </div>
-          </div>
-        </section>
+          faqs={FAQ_ITEMS}
+          calloutButtonLink="#sec11"
+        />
 
         {/* ========================================================================= */}
-        {/* SECTION 10.5: 3D BRAND ORB CHAMBER (00:28 - 00:30 in reference video)    */}
+        {/* SECTION 10.5: INTERACTIVE BRAND ORB CHAMBER                               */}
         {/* ========================================================================= */}
-        <section
-          id="sec-brand-chamber"
-          data-motion-owner="brand-chamber"
-          className="py-16 md:py-24 px-6 md:px-12 lg:px-20 bg-white border-t border-[#E4E4E7]"
-        >
-          <div className="max-w-7xl mx-auto">
-            <div
-              className="relative w-full rounded-3xl md:rounded-[32px] border border-gray-200/80 p-8 md:p-20 overflow-hidden shadow-xl flex items-center justify-center min-h-[460px] md:min-h-[580px] bg-cover bg-center select-none group"
-              style={{ backgroundImage: "url(/assets/brand_orb_chamber.jpg)" }}
-            >
-              {/* Subtle ambient luminous glow */}
-              <div className="absolute inset-0 bg-radial-gradient from-transparent via-white/10 to-white/30 pointer-events-none" />
-
-              {/* Floating Luminous Brand Title & Badge (from video frame 29.0s) */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.92 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: false, amount: 0.3 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className="relative z-10 text-center flex flex-col items-center justify-center"
-              >
-                <motion.h2
-                  animate={{ y: [-4, 4, -4] }}
-                  transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                  className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black uppercase tracking-[0.16em] text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.22)]"
-                >
-                  AMINO BASED
-                </motion.h2>
-
-                <motion.span
-                  animate={{ y: [3, -3, 3] }}
-                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
-                  className="mt-6 px-6 py-2.5 rounded-full bg-white/85 backdrop-blur-md border border-white text-[11px] font-bold tracking-[0.25em] uppercase text-[#0F0F11] shadow-lg"
-                >
-                  CENTRAL PEPTIDE LABORATORY
-                </motion.span>
-              </motion.div>
-            </div>
-          </div>
-        </section>
+        <InteractiveBrandChamber />
 
         {/* ========================================================================= */}
-        {/* SECTION 11: CONTACT US (SIGNATURE TILTED CARD LAYOUT) (00:28 - 00:32)     */}
+        {/* SECTION 11: CONTACT US (Framer Motion whileInView Stagger Animation)      */}
         {/* ========================================================================= */}
-        <section
-          ref={contactSectionRef}
-          id="sec11"
-          data-motion-owner="contact"
-          className="relative min-h-screen flex flex-col justify-center py-16 sm:py-24 px-6 md:px-12 lg:px-20 bg-white border-t border-[#E4E4E7] overflow-hidden"
-        >
-          <div className="max-w-6xl mx-auto w-full">
-            
-            {/* Giant Title: CONTACT US -> Splits into CON [Card] T US (from video 00:30 - 00:32) */}
-            <div className="relative flex items-center justify-center text-center mb-12 sm:mb-16 select-none overflow-visible">
-              <h2 className="relative text-6xl sm:text-8xl md:text-9xl lg:text-[135px] xl:text-[145px] font-black uppercase tracking-tight text-[#111113] flex items-center justify-center leading-none whitespace-nowrap">
-                <span ref={contactConRef} className="inline-block will-change-transform">
-                  CON
-                </span>
-
-                {/* Middle Slot: Holds TAC and the flying card badge */}
-                <span className="relative inline-flex items-center justify-center">
-                  {/* TAC text: starts visible as part of CONTACT US, fades out as card arrives */}
-                  <span
-                    ref={contactTacRef}
-                    className="inline-block will-change-transform will-change-opacity select-none"
-                  >
-                    TAC
-                  </span>
-
-                  {/* Lavender Contact Card Badge: flies from below rotated -42deg, settles level at 0deg */}
-                  <div
-                    ref={contactCardRef}
-                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[210px] xs:w-[250px] sm:w-[310px] md:w-[350px] lg:w-[385px] bg-gradient-to-br from-[#A890F8] via-[#987CF5] to-[#8663EC] text-white p-4 sm:p-5 md:p-6 lg:p-7 rounded-[22px] sm:rounded-[26px] md:rounded-[28px] shadow-[0_20px_50px_rgba(152,124,245,0.36)] text-left z-20 tracking-normal will-change-transform border border-white/25 cursor-pointer hover:scale-[1.02] transition-transform duration-300"
-                  >
-                    <div className="text-[8px] sm:text-[10px] md:text-xs font-bold uppercase tracking-wider text-white/90 mb-1 sm:mb-1.5">
-                      AMINO BASED LABORATORY
-                    </div>
-                    <div className="text-xs sm:text-sm md:text-base font-semibold tracking-wide text-white mb-0.5 sm:mb-1">
-                      (555) 123-4567
-                    </div>
-                    <div className="text-[10px] sm:text-xs md:text-sm text-white/90 tracking-wide mb-0.5 sm:mb-1">
-                      SUPPORT@AMINOBASED.COM
-                    </div>
-                    <div className="text-[9px] sm:text-[11px] md:text-xs text-white/80 tracking-wide">
-                      678 REDWOOD WAY, SEATTLE
-                    </div>
-                  </div>
-                </span>
-
-                <span ref={contactTusRef} className="inline-block will-change-transform">
-                  T&nbsp;US
-                </span>
-              </h2>
-            </div>
-
-            {/* Clean Rounded Form (Exact video 00:32 layout) */}
-            <form
-              ref={contactFormRef}
-              onSubmit={handleContactSubmit}
-              className="max-w-5xl mx-auto w-full will-change-transform will-change-opacity"
-            >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-3 sm:gap-4 items-stretch">
-                
-                {/* Left Column: 3 Capsule Pills on Row 1 + Message Textarea on Row 2 */}
-                <div className="lg:col-span-9 flex flex-col gap-3 sm:gap-4">
-                  {/* Row 1: 3 Capsule/Pill Inputs */}
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-                    <input
-                      type="text"
-                      required
-                      placeholder="Name"
-                      value={contactForm.name}
-                      onChange={(e) => setContactForm({ ...contactForm, name: e.target.value })}
-                      className="w-full h-14 sm:h-16 lg:h-[70px] bg-[#F4F4F4] text-[#111113] placeholder:text-[#8E8E93] rounded-full px-7 text-sm sm:text-base font-normal outline-none border border-transparent focus:border-[#987CF5]/50 focus:bg-white focus:ring-4 focus:ring-[#987CF5]/15 transition-all"
-                    />
-                    <input
-                      type="email"
-                      required
-                      placeholder="E-mail"
-                      value={contactForm.email}
-                      onChange={(e) => setContactForm({ ...contactForm, email: e.target.value })}
-                      className="w-full h-14 sm:h-16 lg:h-[70px] bg-[#F4F4F4] text-[#111113] placeholder:text-[#8E8E93] rounded-full px-7 text-sm sm:text-base font-normal outline-none border border-transparent focus:border-[#987CF5]/50 focus:bg-white focus:ring-4 focus:ring-[#987CF5]/15 transition-all"
-                    />
-                    <input
-                      type="text"
-                      placeholder="Subject"
-                      value={contactForm.subject}
-                      onChange={(e) => setContactForm({ ...contactForm, subject: e.target.value })}
-                      className="w-full h-14 sm:h-16 lg:h-[70px] bg-[#F4F4F4] text-[#111113] placeholder:text-[#8E8E93] rounded-full px-7 text-sm sm:text-base font-normal outline-none border border-transparent focus:border-[#987CF5]/50 focus:bg-white focus:ring-4 focus:ring-[#987CF5]/15 transition-all"
-                    />
-                  </div>
-
-                  {/* Row 2: Message Textarea */}
-                  <div className="flex-1">
-                    <textarea
-                      rows={5}
-                      required
-                      placeholder="Message"
-                      value={contactForm.message}
-                      onChange={(e) => setContactForm({ ...contactForm, message: e.target.value })}
-                      className="w-full h-full min-h-[170px] sm:min-h-[190px] lg:min-h-[210px] bg-[#F4F4F4] text-[#111113] placeholder:text-[#8E8E93] rounded-[24px] sm:rounded-[28px] lg:rounded-[32px] p-7 text-sm sm:text-base font-normal outline-none border border-transparent focus:border-[#987CF5]/50 focus:bg-white focus:ring-4 focus:ring-[#987CF5]/15 transition-all resize-none"
-                    />
-                  </div>
-                </div>
-
-                {/* Right Column: Square/Squircle Purple Send Button spanning full height */}
-                <div className="lg:col-span-3 flex">
-                  <button
-                    type="submit"
-                    disabled={contactStatus === "loading"}
-                    className="w-full min-h-[150px] lg:h-full rounded-[28px] sm:rounded-[32px] lg:rounded-[36px] bg-gradient-to-br from-[#B59EF8] via-[#9F83F5] to-[#8865EE] text-white p-6 flex flex-col items-center justify-center gap-3.5 shadow-xl shadow-[#987CF5]/25 hover:shadow-2xl hover:shadow-[#987CF5]/40 hover:scale-[1.02] active:scale-[0.98] transition-all group disabled:opacity-75 cursor-pointer"
-                  >
-                    <svg
-                      className={`w-9 h-9 sm:w-10 sm:h-10 text-white/95 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300 stroke-[1.75] ${
-                        contactStatus === "loading" ? "animate-pulse" : ""
-                      }`}
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M22 2L11 13" />
-                      <path d="M22 2L15 22L11 13L2 9L22 2Z" />
-                    </svg>
-                    <span className="text-sm sm:text-base font-semibold text-white tracking-wide">
-                      {contactStatus === "loading" ? "Sending..." : "Send"}
-                    </span>
-                  </button>
-                </div>
-              </div>
-
-              {contactStatus === "success" && (
-                <div className="mt-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                  Your research inquiry has been submitted to the laboratory desk.
-                </div>
-              )}
-            </form>
-
-          </div>
-        </section>
+        <ContactSection id="sec11" />
 
         {/* Full-Screen High-Definition Scientific Simulation Video Modal */}
         <AnimatePresence>
@@ -2433,9 +2340,9 @@ export default function HomeClient({ products, categories, posts }: HomeClientPr
         </AnimatePresence>
 
         {/* ========================================================================= */}
-        {/* SECTION 12: SUBMERGED AMINO LOGO FOOTER (Video-matched Scroll Reveal)     */}
+        {/* SECTION 12: SUBMERGED AMINO BASED LOGO FOOTER (Video-matched Reveal)     */}
         {/* ========================================================================= */}
-        <Footer giantText="amino" scrollReveal={true} />
+        <Footer giantText="Amino Based" brandTitle="Amino Based" scrollReveal={true} />
 
       </div>
     </main>

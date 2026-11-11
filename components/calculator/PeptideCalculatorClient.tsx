@@ -25,6 +25,8 @@ import {
 } from "lucide-react";
 import FAQSection from "@/components/FAQSection";
 import { CALCULATOR_FAQS } from "@/lib/calculatorFaqs";
+import Breadcrumbs from "@/components/nav/Breadcrumbs";
+import SyringePistonVisualizer from "@/components/calculator/SyringePistonVisualizer";
 
 
 // Presets for chips
@@ -76,39 +78,19 @@ export default function PeptideCalculatorClient() {
       <section className="pt-24 sm:pt-28 pb-8 sm:pb-12 bg-white">
         <div className="max-w-7xl lg:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           
-          {/* Panoramic Widescreen Hero Banner matching Shop page ratio */}
-          <div className="relative w-full aspect-[21/9] sm:aspect-[24/8] lg:aspect-[32/10] rounded-[22px] sm:rounded-[26px] overflow-hidden shadow-xs border border-[#E4E4E7]/60 group">
-            <Image
-              src="/assets/calculator_hero_wide.jpg"
-              alt="Amino Based Precision Peptide Reconstitution Reference & Concentration Calculator"
-              fill
-              priority
-              sizes="(max-width: 1400px) 100vw, 1400px"
-              className="object-cover object-center group-hover:scale-101 transition-transform duration-700 ease-out"
+          {/* Wayfinding Breadcrumbs */}
+          <div className="mb-6 sm:mb-8">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Research Tools", href: "/blog" },
+                { label: "Reconstitution Calculator" },
+              ]}
             />
-            {/* Subtle Gradient for depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none" />
-
-            {/* Clean Floating Badges */}
-            <div className="absolute top-3.5 inset-x-3.5 sm:top-5 sm:inset-x-5 flex items-center justify-between gap-3 pointer-events-none z-10">
-              <span className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-[#071739] shadow-2xs border border-white/60">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#0096c8] animate-pulse" />
-                Amino Based Laboratory Standard • Reconstitution Tool
-              </span>
-
-              <div className="hidden sm:flex items-center gap-2">
-                <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#031B4E] border border-white/60 shadow-2xs">
-                  Bacteriostatic Diluent Math
-                </span>
-                <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#071739] border border-white/60 shadow-2xs">
-                  Research Use Only (RUO)
-                </span>
-              </div>
-            </div>
           </div>
 
           {/* Centered Serif Title */}
-          <div className="text-center pt-8 sm:pt-10">
+          <div className="text-center pt-2 sm:pt-4">
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-[56px] font-normal text-[#071739] tracking-tight">
               Peptide Concentration Calculator
             </h1>
@@ -118,7 +100,7 @@ export default function PeptideCalculatorClient() {
           </div>
 
           {/* Intro description & Safety Notices */}
-          <div className="max-w-4xl mx-auto mt-8 space-y-6">
+          <div className="max-w-4xl mx-auto mt-6 sm:mt-8 space-y-6">
             <p className="text-base sm:text-lg text-[#52525B] text-center leading-relaxed">
               Reconstitution means dissolving a lyophilized (freeze-dried) peptide in a measured volume of diluent. This calculator takes the two numbers that decide the result — <strong className="text-[#0F0F11] font-semibold">vial mass in mg</strong> and <strong className="text-[#0F0F11] font-semibold">diluent volume in mL</strong> — and returns the only two numbers that follow from them: <strong className="text-[#0F0F11] font-semibold">concentration in mg/mL</strong> and <strong className="text-[#0F0F11] font-semibold">mcg/mL</strong>.
             </p>
@@ -148,6 +130,37 @@ export default function PeptideCalculatorClient() {
                 <p className="text-xs sm:text-[13px] text-[#71717A] leading-relaxed">
                   Concentration math only. This page produces no dose figures, no administration guidance, and no protocols — by design.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Panoramic Widescreen Hero Banner matching Shop page ratio */}
+          <div className="relative w-full aspect-[21/9] rounded-[22px] sm:rounded-[26px] overflow-hidden shadow-xs border border-[#E4E4E7]/60 group mt-10 sm:mt-12">
+            <Image
+              src="/assets/calculator/amino-based-calculator-hero.png"
+              alt="Amino Based Precision Peptide Reconstitution Reference & Concentration Calculator"
+              fill
+              priority
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              className="object-cover object-center group-hover:scale-101 transition-transform duration-700 ease-out"
+            />
+            {/* Subtle Gradient for depth */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none" />
+
+            {/* Clean Floating Badges */}
+            <div className="absolute top-3.5 inset-x-3.5 sm:top-5 sm:inset-x-5 flex items-center justify-between gap-3 pointer-events-none z-10">
+              <span className="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-white/90 backdrop-blur-md text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-[#071739] shadow-2xs border border-white/60">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#0096c8] animate-pulse" />
+                Amino Based Laboratory Standard • Reconstitution Tool
+              </span>
+
+              <div className="hidden sm:flex items-center gap-2">
+                <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#031B4E] border border-white/60 shadow-2xs">
+                  Bacteriostatic Diluent Math
+                </span>
+                <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-widest text-[#071739] border border-white/60 shadow-2xs">
+                  Research Use Only (RUO)
+                </span>
               </div>
             </div>
           </div>
@@ -332,6 +345,14 @@ export default function PeptideCalculatorClient() {
                 <span>Concentration is undefined at zero or negative numbers — please check both inputs.</span>
               </div>
             )}
+
+            {/* Live Syringe Piston Calibration & Visualizer */}
+            <SyringePistonVisualizer
+              massMg={mass}
+              volumeMl={volume}
+              onMassChange={(m) => setMass(m)}
+              onVolumeChange={(v) => setVolume(v)}
+            />
           </div>
         </div>
       </section>
@@ -345,6 +366,7 @@ export default function PeptideCalculatorClient() {
             Jump to:
           </span>
           {[
+            { id: "syringe-visualizer", label: "Syringe Piston" },
             { id: "risk", label: "01 Risk" },
             { id: "procedure", label: "02 Procedure" },
             { id: "units", label: "03 Units" },

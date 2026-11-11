@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Navigation } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import ScrollToTopButton from "@/components/contact/ScrollToTopButton";
 import { siteUrl } from "@/lib/siteUrl";
 
@@ -128,12 +129,13 @@ export default function ContactUsPage() {
           </div>
 
           {/* Bottom Right Tab: "Home / Contacts" Breadcrumb nestled into the card corner */}
-          <div className="absolute bottom-0 right-4 sm:right-8 md:right-12 z-10 bg-white px-5 sm:px-7 py-2.5 sm:py-3 rounded-t-2xl flex items-center gap-2 text-xs font-medium text-[#0F172A] shadow-xs">
-            <Link href="/" className="text-[#64748B] hover:text-[#0F172A] transition-colors">
-              Home
-            </Link>
-            <span className="text-[#CBD5E1]">/</span>
-            <span className="font-semibold text-[#0F172A]">Contacts</span>
+          <div className="absolute bottom-0 right-4 sm:right-8 md:right-12 z-10 bg-white px-5 sm:px-7 py-2.5 sm:py-3 rounded-t-2xl flex items-center shadow-xs">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Contacts" },
+              ]}
+            />
           </div>
 
         </div>
@@ -338,9 +340,9 @@ export default function ContactUsPage() {
       </section>
 
       {/* ========================================================================= */}
-      {/* 4. FOOTER (UNIFIED WITH CRISP NAV & BLURRY "AMINO" WORDMARK)              */}
+      {/* 4. FOOTER (UNIFIED WITH ALL PAGES: FULL "AMINO BASED" WORDMARK)           */}
       {/* ========================================================================= */}
-      <Footer giantText="amino" brandTitle="Amino" />
+      <Footer />
     </main>
   );
 }

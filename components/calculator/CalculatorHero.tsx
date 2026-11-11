@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 
@@ -36,7 +37,14 @@ export function CalculatorHero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative w-full h-[400px] sm:h-[450px] md:h-[550px] rounded-[2rem] md:rounded-[3rem] overflow-hidden mb-4 sm:mb-6 shadow-2xl group cursor-pointer bg-black"
         >
-
+          <Image
+            src="/assets/calculator/amino-based-calculator-hero.png"
+            alt="Amino Based Precision Peptide Reconstitution Reference & Concentration Calculator"
+            fill
+            priority
+            sizes="(max-width: 1400px) 100vw, 1400px"
+            className="object-cover object-center group-hover:scale-101 transition-transform duration-700 ease-out"
+          />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent pointer-events-none" />
 
           <div className="absolute bottom-4 left-4 right-4 sm:bottom-10 sm:left-10 sm:right-28 z-20 pointer-events-none">

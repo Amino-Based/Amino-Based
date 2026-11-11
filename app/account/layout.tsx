@@ -20,7 +20,7 @@ export default async function AccountLayout({
     user.email.split("@")[0];
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] flex">
+    <div className="min-h-screen bg-[#FAFAFC] flex selection:bg-neutral-900 selection:text-white">
       <AccountSidebar userName={userName} userEmail={user.email} />
 
       <div className="flex-1 min-w-0 flex flex-col">

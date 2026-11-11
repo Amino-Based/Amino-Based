@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { AlertCircle, Loader2 } from "lucide-react";
+import { AlertCircle, Eye, EyeOff, Loader2, Lock, Mail } from "lucide-react";
 import AuthShell from "@/components/auth/AuthShell";
 
 function GoogleIcon({ className = "w-4 h-4" }: { className?: string }) {
@@ -30,11 +30,19 @@ function GoogleIcon({ className = "w-4 h-4" }: { className?: string }) {
   );
 }
 
+function AppleIcon({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 170 170" className={className} fill="currentColor">
+      <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.08-7.7-7.93-12-14.55-6.19-9.5-11.05-20.2-14.59-32.08-3.53-11.89-5.3-23.08-5.3-33.58 0-14.28 3.65-25.79 10.96-34.52 7.31-8.73 16.5-13.19 27.56-13.38 5.76 0 11.75 1.48 17.97 4.43 6.22 2.96 10.19 4.49 11.91 4.59 1.52 0 5.65-1.63 12.38-4.88 6.73-3.26 12.74-4.64 18.04-4.16 13.91.73 24.58 5.74 32.01 15.02-12.06 7.31-18.04 17.5-17.94 30.56.1 10.23 3.99 18.87 11.68 25.92 7.69 7.05 16.89 10.99 27.6 11.83-2.3 6.84-4.99 13.88-8.08 21.13zM119.22 31.84c0-7.39 2.68-14.29 8.04-20.71C132.62 4.7 139.75.87 148.66 0c.34 1.25.51 2.37.51 3.38 0 7.38-2.77 14.47-8.31 21.26-5.54 6.8-12.65 10.87-21.33 12.22-.11-1.7-.31-3.37-.31-5.02z" />
+    </svg>
+  );
+}
+
 export default function LoginPage() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [rememberMe, setRememberMe] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -66,117 +74,127 @@ export default function LoginPage() {
 
   return (
     <AuthShell
-      title="Sign in"
-      subtitle="Welcome back! Enter your details below."
+      mode="signin"
       footerText="Don't have an account?"
       footerLinkText="Sign up"
       footerLinkHref="/register"
     >
-      <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+      <form onSubmit={handleSubmit} className="space-y-4">
         {error && (
-          <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-red-50 border border-red-200 text-red-600 text-xs sm:text-sm font-medium">
-            <AlertCircle className="w-4 h-4 shrink-0" />
+          <div className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-red-500/15 border border-red-500/30 text-red-300 text-xs font-medium">
+            <AlertCircle className="w-4 h-4 shrink-0 text-red-400" />
             <span>{error}</span>
           </div>
         )}
 
-        {/* Email Address Field */}
+        {/* Email Field matching reference */}
         <div>
           <label
             htmlFor="email"
-            className="block text-xs sm:text-[13px] font-medium text-[#0F172A] mb-1.5"
+            className="block text-xs font-medium text-white/70 mb-1.5"
           >
-            Email address
+            Email
           </label>
-          <input
-            id="email"
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Your email address"
-            className="w-full px-4 py-3 bg-white border border-[#E2E8F0] focus:border-[#0F172A] focus:ring-1 focus:ring-[#0F172A] rounded-xl text-xs sm:text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none transition-all"
-          />
+          <div className="relative flex items-center">
+            <Mail className="absolute left-3.5 w-4 h-4 text-white/40 pointer-events-none" />
+            <input
+              id="email"
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="you@example.com"
+              className="dark-glass-input w-full pl-10 pr-4 py-3 bg-white/[0.04] hover:bg-white/[0.07] focus:bg-white/[0.09] border border-white/15 focus:border-white/50 rounded-xl text-xs sm:text-sm text-white placeholder:text-white/30 focus:outline-none transition-all"
+            />
+          </div>
         </div>
 
-        {/* Password Field with Forgot Password Link */}
+        {/* Password Field matching reference */}
         <div>
-          <div className="flex items-center justify-between mb-1.5">
-            <label
-              htmlFor="password"
-              className="block text-xs sm:text-[13px] font-medium text-[#0F172A]"
+          <label
+            htmlFor="password"
+            className="block text-xs font-medium text-white/70 mb-1.5"
+          >
+            Password
+          </label>
+          <div className="relative flex items-center">
+            <Lock className="absolute left-3.5 w-4 h-4 text-white/40 pointer-events-none" />
+            <input
+              id="password"
+              type={showPassword ? "text" : "password"}
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="••••••••"
+              className="dark-glass-input w-full pl-10 pr-10 py-3 bg-white/[0.04] hover:bg-white/[0.07] focus:bg-white/[0.09] border border-white/15 focus:border-white/50 rounded-xl text-xs sm:text-sm text-white placeholder:text-white/30 focus:outline-none transition-all font-mono tracking-wider"
+            />
+            <button
+              type="button"
+              onClick={() => setShowPassword(!showPassword)}
+              className="absolute right-3.5 text-white/40 hover:text-white transition-colors p-0.5"
+              aria-label={showPassword ? "Hide password" : "Show password"}
             >
-              Password
-            </label>
+              {showPassword ? (
+                <EyeOff className="w-4 h-4" />
+              ) : (
+                <Eye className="w-4 h-4" />
+              )}
+            </button>
+          </div>
+
+          <div className="flex justify-end mt-2">
             <Link
               href="/forgot-password"
-              className="text-xs text-[#64748B] hover:text-[#0F172A] transition-colors"
+              className="text-xs text-white/50 hover:text-white transition-colors"
             >
               Forgot password?
             </Link>
           </div>
-          <input
-            id="password"
-            type="password"
-            required
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
-            className="w-full px-4 py-3 bg-white border border-[#E2E8F0] focus:border-[#0F172A] focus:ring-1 focus:ring-[#0F172A] rounded-xl text-xs sm:text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none transition-all"
-          />
         </div>
 
-        {/* Keep Me Logged In Checkbox matching reference */}
-        <div className="flex items-center gap-2.5 pt-0.5">
-          <input
-            id="remember"
-            type="checkbox"
-            checked={rememberMe}
-            onChange={(e) => setRememberMe(e.target.checked)}
-            className="w-4 h-4 rounded border-[#CBD5E1] text-[#0F172A] focus:ring-0 focus:ring-offset-0 cursor-pointer accent-[#0F172A]"
-          />
-          <label
-            htmlFor="remember"
-            className="text-xs text-[#64748B] cursor-pointer select-none"
-          >
-            Keep me logged in
-          </label>
-        </div>
-
-        {/* Primary Dark Sign In Button */}
+        {/* Primary Pill Button: "Sign In" */}
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-3.5 px-6 rounded-xl bg-[#0F172A] hover:bg-[#1E293B] active:scale-[0.99] disabled:opacity-50 text-white text-xs sm:text-sm font-semibold tracking-wide transition-all shadow-xs flex items-center justify-center gap-2 cursor-pointer mt-2"
+          className="w-full py-3.5 px-6 rounded-full bg-[#E5E2DC] hover:bg-white active:scale-[0.99] disabled:opacity-60 text-[#121214] font-semibold text-sm transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer mt-4"
         >
           {isSubmitting ? (
             <>
-              <Loader2 className="w-4 h-4 animate-spin" />
+              <Loader2 className="w-4 h-4 animate-spin text-black" />
               <span>Signing in...</span>
             </>
           ) : (
-            "Sign in"
+            "Sign In"
           )}
         </button>
       </form>
 
-      {/* OR Divider with Hairline matching reference */}
-      <div className="relative flex items-center justify-center my-6">
-        <div className="w-full border-t border-[#E2E8F0]" />
-        <span className="absolute bg-white px-3 text-[11px] font-semibold text-[#94A3B8] uppercase tracking-wider">
-          OR
+      {/* "or continue with" Divider */}
+      <div className="relative flex items-center justify-center my-5">
+        <div className="w-full border-t border-white/10" />
+        <span className="absolute bg-[#181c1e] px-3.5 py-0.5 rounded-full text-[11px] font-medium text-white/45 tracking-wider border border-white/5">
+          or continue with
         </span>
       </div>
 
-      {/* Social Button: Google */}
-      <div>
+      {/* Social Buttons: Google & Apple matching reference */}
+      <div className="space-y-2.5">
         <button
           type="button"
           onClick={() => signIn("google", { callbackUrl: "/account" })}
-          className="w-full flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl border border-[#E2E8F0] hover:bg-[#F8FAFC] text-xs sm:text-sm font-medium text-[#0F172A] transition-all shadow-2xs cursor-pointer active:scale-98"
+          className="w-full flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/15 text-xs sm:text-sm font-medium text-white transition-all shadow-xs cursor-pointer active:scale-98"
         >
           <GoogleIcon className="w-4 h-4" />
           <span>Continue with Google</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => signIn("google", { callbackUrl: "/account" })}
+          className="w-full flex items-center justify-center gap-2.5 px-4 py-3 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/15 text-xs sm:text-sm font-medium text-white transition-all shadow-xs cursor-pointer active:scale-98"
+        >
+          <AppleIcon className="w-4 h-4" />
+          <span>Continue with Apple</span>
         </button>
       </div>
     </AuthShell>

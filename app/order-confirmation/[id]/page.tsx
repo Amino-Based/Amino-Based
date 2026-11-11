@@ -5,6 +5,7 @@ import { getPayload } from "payload";
 import config from "@payload-config";
 import { CheckCircle2, Clock, Package } from "lucide-react";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { getManualPaymentInfo } from "@/lib/payments/manualPayments";
 import { getPayloadUser } from "@/lib/auth/getPayloadUser";
 import { tokenGrantsOrderAccess } from "@/lib/orders/orderAccessToken";
@@ -73,6 +74,16 @@ export default async function OrderConfirmationPage({
     <div className="min-h-screen bg-[#FAFAFA] text-gray-900">
       <div className="px-4 pt-28 pb-12 md:px-8 md:pt-36 lg:px-12">
       <div className="max-w-3xl mx-auto flex flex-col gap-8">
+        {/* Wayfinding Breadcrumbs */}
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Orders", href: "/account/orders" },
+            { label: `Confirmation #${order.orderNumber || order.id}` },
+          ]}
+          className="self-start"
+        />
+
         <div className="flex flex-col items-center text-center gap-4">
           <div className="w-16 h-16 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center">
             <CheckCircle2 className="w-8 h-8 text-emerald-500" />

@@ -27,7 +27,9 @@ export default function ForgotPasswordPage() {
       if (!res.ok) {
         setError(data?.error || "Unable to process request. Please try again.");
       } else {
-        setMessage(data?.message || "If an account exists for that email, a reset link has been sent.");
+        setMessage(
+          data?.message || "If an account exists for that email, a reset link has been sent."
+        );
       }
     } catch {
       setError("Something went wrong. Please try again.");
@@ -38,41 +40,44 @@ export default function ForgotPasswordPage() {
 
   return (
     <AuthShell
-      eyebrow="Account recovery"
+      mode="recovery"
       title="Reset your password"
-      subtitle="Enter your email and we'll send you a reset link."
+      subtitle="Enter your email address and we'll send you an instant reset link."
       footerText="Remembered your password?"
       footerLinkText="Sign in"
       footerLinkHref="/login"
     >
       {message ? (
-        <div className="font-inter flex items-start gap-3 px-4 py-4 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 text-sm">
-          <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" />
+        <div className="flex items-start gap-3 px-4 py-3.5 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm">
+          <CheckCircle2 className="w-5 h-5 shrink-0 text-emerald-400 mt-0.5" />
           <span>{message}</span>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-4">
           {error && (
-            <div className="font-inter flex items-center gap-2 px-4 py-3 rounded-lg bg-red-50 border border-red-200 text-red-600 text-sm">
-              <AlertCircle className="w-4 h-4 shrink-0" />
+            <div className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-red-500/15 border border-red-500/30 text-red-300 text-xs font-medium">
+              <AlertCircle className="w-4 h-4 shrink-0 text-red-400" />
               <span>{error}</span>
             </div>
           )}
 
           <div>
-            <label htmlFor="email" className="font-inter block text-sm font-medium text-gray-700 mb-2">
-              Your email
+            <label
+              htmlFor="email"
+              className="block text-xs font-medium text-white/70 mb-1.5"
+            >
+              Email Address
             </label>
-            <div className="relative">
-              <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <div className="relative flex items-center">
+              <Mail className="absolute left-3.5 w-4 h-4 text-white/40 pointer-events-none" />
               <input
                 id="email"
                 type="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="font-inter w-full pl-11 pr-4 py-3 bg-white border border-gray-200 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-colors"
                 placeholder="you@example.com"
+                className="w-full pl-10 pr-4 py-3 bg-white/[0.04] hover:bg-white/[0.07] focus:bg-white/[0.09] border border-white/15 focus:border-white/50 rounded-xl text-xs sm:text-sm text-white placeholder:text-white/30 focus:outline-none transition-all"
               />
             </div>
           </div>
@@ -80,12 +85,12 @@ export default function ForgotPasswordPage() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full flex items-center justify-center gap-2 px-6 py-3.5 mt-2 text-sm font-bold uppercase tracking-widest text-white bg-black hover:bg-gray-800 disabled:opacity-60 disabled:cursor-not-allowed rounded-xl transition-colors"
+            className="w-full py-3.5 px-6 rounded-full bg-[#E5E2DC] hover:bg-white active:scale-[0.99] disabled:opacity-60 text-[#121214] font-semibold text-sm transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer mt-4"
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="w-4 h-4 animate-spin" />
-                Sending
+                <Loader2 className="w-4 h-4 animate-spin text-black" />
+                <span>Sending Reset Link...</span>
               </>
             ) : (
               "Send Reset Link"

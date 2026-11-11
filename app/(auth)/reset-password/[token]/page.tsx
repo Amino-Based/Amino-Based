@@ -2,11 +2,8 @@
 
 import React, { useState } from "react";
 import { useRouter, useParams } from "next/navigation";
-import { Lock, AlertCircle, CheckCircle2, Loader2 } from "lucide-react";
+import { Lock, AlertCircle, CheckCircle2, Loader2, Eye, EyeOff } from "lucide-react";
 import AuthShell from "@/components/auth/AuthShell";
-
-const inputClass =
-  "font-inter w-full pl-11 pr-4 py-3 bg-white border border-gray-200 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-colors";
 
 export default function ResetPasswordPage() {
   const router = useRouter();
@@ -15,6 +12,7 @@ export default function ResetPasswordPage() {
 
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [message, setMessage] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -54,61 +52,79 @@ export default function ResetPasswordPage() {
 
   return (
     <AuthShell
-      eyebrow="Account recovery"
+      mode="recovery"
       title="Choose a new password"
-      subtitle="Choose a new password for your account."
+      subtitle="Enter a new secure password for your account."
       footerText="Changed your mind?"
       footerLinkText="Back to sign in"
       footerLinkHref="/login"
     >
       {message ? (
-        <div className="font-inter flex items-start gap-3 px-4 py-4 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 text-sm">
-          <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" />
+        <div className="flex items-start gap-3 px-4 py-3.5 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 text-xs sm:text-sm">
+          <CheckCircle2 className="w-5 h-5 shrink-0 text-emerald-400 mt-0.5" />
           <span>{message}</span>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-5">
+        <form onSubmit={handleSubmit} className="space-y-4">
           {error && (
-            <div className="font-inter flex items-center gap-2 px-4 py-3 rounded-lg bg-red-50 border border-red-200 text-red-600 text-sm">
-              <AlertCircle className="w-4 h-4 shrink-0" />
+            <div className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-red-500/15 border border-red-500/30 text-red-300 text-xs font-medium">
+              <AlertCircle className="w-4 h-4 shrink-0 text-red-400" />
               <span>{error}</span>
             </div>
           )}
 
           <div>
-            <label htmlFor="password" className="font-inter block text-sm font-medium text-gray-700 mb-2">
-              New password
+            <label
+              htmlFor="password"
+              className="block text-xs font-medium text-white/70 mb-1.5"
+            >
+              New Password
             </label>
-            <div className="relative">
-              <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <div className="relative flex items-center">
+              <Lock className="absolute left-3.5 w-4 h-4 text-white/40 pointer-events-none" />
               <input
                 id="password"
-                type="password"
+                type={showPassword ? "text" : "password"}
                 required
                 minLength={8}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className={inputClass}
-                placeholder="••••••••"
+                placeholder="At least 8 characters"
+                className="w-full pl-10 pr-10 py-3 bg-white/[0.04] hover:bg-white/[0.07] focus:bg-white/[0.09] border border-white/15 focus:border-white/50 rounded-xl text-xs sm:text-sm text-white placeholder:text-white/30 focus:outline-none transition-all font-mono tracking-wider"
               />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3.5 text-white/40 hover:text-white transition-colors p-0.5"
+                aria-label={showPassword ? "Hide password" : "Show password"}
+              >
+                {showPassword ? (
+                  <EyeOff className="w-4 h-4" />
+                ) : (
+                  <Eye className="w-4 h-4" />
+                )}
+              </button>
             </div>
           </div>
 
           <div>
-            <label htmlFor="confirmPassword" className="font-inter block text-sm font-medium text-gray-700 mb-2">
-              Confirm password
+            <label
+              htmlFor="confirmPassword"
+              className="block text-xs font-medium text-white/70 mb-1.5"
+            >
+              Confirm New Password
             </label>
-            <div className="relative">
-              <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+            <div className="relative flex items-center">
+              <Lock className="absolute left-3.5 w-4 h-4 text-white/40 pointer-events-none" />
               <input
                 id="confirmPassword"
-                type="password"
+                type={showPassword ? "text" : "password"}
                 required
                 minLength={8}
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className={inputClass}
-                placeholder="••••••••"
+                placeholder="Confirm your password"
+                className="w-full pl-10 pr-4 py-3 bg-white/[0.04] hover:bg-white/[0.07] focus:bg-white/[0.09] border border-white/15 focus:border-white/50 rounded-xl text-xs sm:text-sm text-white placeholder:text-white/30 focus:outline-none transition-all font-mono tracking-wider"
               />
             </div>
           </div>
@@ -116,15 +132,15 @@ export default function ResetPasswordPage() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="w-full flex items-center justify-center gap-2 px-6 py-3.5 mt-2 text-sm font-bold uppercase tracking-widest text-white bg-black hover:bg-gray-800 disabled:opacity-60 disabled:cursor-not-allowed rounded-xl transition-colors"
+            className="w-full py-3.5 px-6 rounded-full bg-[#E5E2DC] hover:bg-white active:scale-[0.99] disabled:opacity-60 text-[#121214] font-semibold text-sm transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer mt-4"
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="w-4 h-4 animate-spin" />
-                Resetting
+                <Loader2 className="w-4 h-4 animate-spin text-black" />
+                <span>Resetting Password...</span>
               </>
             ) : (
-              "Reset Password"
+              "Update Password"
             )}
           </button>
         </form>

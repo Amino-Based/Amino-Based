@@ -49,12 +49,12 @@ const DEFAULT_GRID_POSTS: BlogPostCardData[] = [
   },
   {
     id: "blog-post-4",
-    tag: "Stability Protocols",
-    title: "Peptide Storage, Reconstitution & Stability Protocols: Preserving Structure",
+    tag: "Metabolic Research",
+    title: "Retatrutide: Triple Receptor Agonism & Bioenergetics",
     excerpt:
-      "A comprehensive laboratory guide detailing optimal storage temperatures, bacteriostatic water reconstitution techniques, and pH equilibrium parameters required to prevent peptide aggregation.",
-    image: "/about-image.jpg",
-    slug: "peptide-storage-reconstitution-stability-protocols",
+      "A technical evaluation of triple receptor agonist (GLP-1/GIP/GCGR) kinetics, exploring mitochondrial respiration, cellular lipolysis, and energetic flux in metabolic cell culture models.",
+    image: "/blog-4.jpg",
+    slug: "retatrutide-triple-agonist-cellular-bioenergetics",
   },
 ];
 
@@ -158,8 +158,8 @@ export default function BlogSection({ posts }: BlogSectionProps) {
           </div>
         </Link>
 
-        {/* Bottom 3 Grid Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+        {/* Bottom 2 Grid Cards */}
+        <div className={`grid grid-cols-1 ${gridPosts.length === 2 ? "md:grid-cols-2" : "md:grid-cols-3"} gap-6 sm:gap-8`}>
           {gridPosts.map((post) => {
             const isReferenceAsset = post.image.includes("blog_ref_card");
 

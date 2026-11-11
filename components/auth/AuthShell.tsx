@@ -1,15 +1,18 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowLeft } from "lucide-react";
 
 interface AuthShellProps {
+  mode?: "signin" | "signup" | "recovery";
   eyebrow?: string;
-  title: React.ReactNode;
-  subtitle: string;
-  footerText: string;
-  footerLinkText: string;
-  footerLinkHref: string;
+  title?: React.ReactNode;
+  subtitle?: string;
+  footerText?: string;
+  footerLinkText?: string;
+  footerLinkHref?: string;
   showcaseImage?: string;
   showcaseTitle?: React.ReactNode;
   showcaseSubtitle?: string;
@@ -17,115 +20,134 @@ interface AuthShellProps {
 }
 
 export default function AuthShell({
+  mode = "signin",
   title,
   subtitle,
   footerText,
   footerLinkText,
   footerLinkHref,
-  showcaseImage = "/assets/login_showcase_dark.jpg",
-  showcaseTitle,
-  showcaseSubtitle,
+  showcaseImage = "/assets/auth_tree_branch_semaglutide_widescreen.webp",
   children,
 }: AuthShellProps) {
+  const isTabbed = mode === "signin" || mode === "signup";
+  const isSignIn = mode === "signin";
+
   return (
-    <main className="min-h-screen w-full bg-[#ECECF0] flex items-center justify-center p-3 sm:p-6 md:p-8 lg:p-10 selection:bg-black selection:text-white">
-      {/* Main Outer Floating Card matching reference */}
-      <div className="w-full max-w-[1160px] bg-white rounded-[28px] sm:rounded-[36px] md:rounded-[40px] shadow-[0_20px_60px_rgba(0,0,0,0.06)] border border-black/5 p-3 sm:p-4 md:p-5 flex flex-col md:flex-row overflow-hidden relative min-h-[660px] lg:min-h-[720px]">
+    <main className="relative min-h-screen w-full flex items-center justify-center md:justify-end p-4 sm:p-6 md:p-10 lg:p-14 xl:pr-24 2xl:pr-32 overflow-hidden select-none bg-[#07090D]">
+      {/* ========================================================================= */}
+      {/* FULLSCREEN BACKGROUND: Cinematic Tree Branch & Research Vial Environment  */}
+      {/* ========================================================================= */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={showcaseImage}
+          alt="Amino Based Precision Research Peptides"
+          fill
+          priority
+          unoptimized
+          sizes="100vw"
+          className="object-cover object-center pointer-events-none blur-[1.5px] scale-[1.015]"
+        />
+        {/* Soft, atmospheric twilight vignette */}
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/25 pointer-events-none" />
+        {/* Right side gentle shade strictly behind the login card for clean UI contrast */}
+        <div className="hidden md:block absolute inset-y-0 right-0 w-[45%] bg-gradient-to-l from-black/60 via-black/25 to-transparent pointer-events-none" />
+      </div>
+
+      {/* ========================================================================= */}
+      {/* FLOATING TOP-LEFT: Back to Home Button                                    */}
+      {/* ========================================================================= */}
+      <div className="absolute top-4 sm:top-6 left-4 sm:left-6 z-20">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-black/60 hover:bg-black/80 backdrop-blur-md border border-white/15 text-xs font-medium text-white/85 hover:text-white transition-all shadow-md group"
+        >
+          <ArrowLeft className="w-3.5 h-3.5 group-hover:-translate-x-0.5 transition-transform" />
+          <span>Back to site</span>
+        </Link>
+      </div>
+
+      {/* ========================================================================= */}
+      {/* FLOATING FROSTED GLASS CARD: Positioned cleanly on the right half          */}
+      {/* ========================================================================= */}
+      <div className="relative z-20 w-full max-w-[420px] rounded-[32px] sm:rounded-[36px] bg-[#121516]/70 backdrop-blur-xl border border-white/15 shadow-[0_30px_80px_rgba(0,0,0,0.7)] p-6 sm:p-9 text-white">
         
-        {/* ========================================================================= */}
-        {/* LEFT COLUMN: Visual Showcase Panel (Minimalist Obsidian Dunes Landscape)  */}
-        {/* ========================================================================= */}
-        <div className="relative w-full md:w-[46%] lg:w-[44%] rounded-[22px] sm:rounded-[28px] md:rounded-[32px] overflow-hidden min-h-[380px] md:min-h-[640px] flex flex-col justify-between p-6 sm:p-8 md:p-10 select-none bg-[#0B0B0D] group shrink-0">
-          
-          {/* Background Showcase Artwork */}
-          <Image
-            src={showcaseImage}
-            alt="Amino Based login showcase panel"
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 540px"
-            className="object-cover object-center group-hover:scale-103 transition-transform duration-700 ease-out"
-          />
-
-          {/* Deep Dark Ambient Vignette Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/35 to-black/20 pointer-events-none" />
-
-          {/* Top-Left: Brand Pill Badge matching reference "clever" badge */}
+        {/* Top Center: Official Amino Based Molecule Logo Emblem */}
+        <div className="flex justify-center mb-6">
           <Link
             href="/"
-            className="relative z-10 inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white text-black shadow-sm w-fit hover:opacity-90 transition-opacity"
+            aria-label="Amino Based — Home"
+            className="w-12 h-12 rounded-full bg-white flex items-center justify-center p-2 shadow-md transition-transform hover:scale-105 active:scale-95 group overflow-hidden"
           >
-            <div className="w-5 h-5 rounded-md bg-black flex items-center justify-center text-white">
-              <svg className="w-2.5 h-2.5 fill-white" viewBox="0 0 24 24">
-                <path d="M12 2L13.5 8.5L20 7L15.5 12L20 17L13.5 15.5L12 22L10.5 15.5L4 17L8.5 12L4 7L10.5 8.5L12 2Z" />
-              </svg>
-            </div>
-            <span className="text-xs font-bold tracking-tight text-black font-sans">
-              amino
-            </span>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/icon.png"
+              alt="Amino Based"
+              className="w-full h-full object-contain"
+            />
           </Link>
-
-          {/* Bottom Left: Headline & Subtitle matching reference */}
-          <div className="relative z-10 text-white">
-            {showcaseTitle ? (
-              showcaseTitle
-            ) : (
-              <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-[1.12] mb-3">
-                Build something <br />
-                amazing today.
-              </h2>
-            )}
-            <p className="text-xs sm:text-sm text-white/75 leading-relaxed max-w-sm">
-              {showcaseSubtitle || "Precision research peptides, synthesized and verified lot by lot."}
-            </p>
-          </div>
-
         </div>
 
-        {/* ========================================================================= */}
-        {/* RIGHT COLUMN: Auth Form Area (Centered, Clean Minimalist Inputs)          */}
-        {/* ========================================================================= */}
-        <div className="w-full md:w-[54%] lg:w-[56%] flex flex-col justify-center items-center p-6 sm:p-10 md:p-12 lg:p-16">
-          <div className="w-full max-w-[390px] mx-auto">
-            
-            {/* Top Navigation: Back to Home */}
-            <div className="mb-6 flex justify-start">
-              <Link
-                href="/"
-                className="inline-flex items-center gap-1.5 text-xs text-[#64748B] hover:text-[#0F172A] transition-colors"
-              >
-                <ArrowLeft className="w-3.5 h-3.5" />
-                <span>Back to home</span>
-              </Link>
-            </div>
-
-            {/* Header: Title & Subtitle */}
-            <div className="mb-8">
-              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#0F172A] mb-1.5 font-sans">
+        {/* Tab Switcher: "Sign In" | "Sign Up" */}
+        {isTabbed ? (
+          <div className="grid grid-cols-2 border-b border-white/10 mb-6 text-center text-sm font-medium">
+            <Link
+              href="/login"
+              className={`pb-3 relative transition-colors ${
+                isSignIn
+                  ? "text-white font-semibold"
+                  : "text-white/45 hover:text-white/80"
+              }`}
+            >
+              <span>Sign In</span>
+              {isSignIn && (
+                <span className="absolute bottom-0 inset-x-3 h-[2px] bg-white rounded-full" />
+              )}
+            </Link>
+            <Link
+              href="/register"
+              className={`pb-3 relative transition-colors ${
+                !isSignIn
+                  ? "text-white font-semibold"
+                  : "text-white/45 hover:text-white/80"
+              }`}
+            >
+              <span>Sign Up</span>
+              {!isSignIn && (
+                <span className="absolute bottom-0 inset-x-3 h-[2px] bg-white rounded-full" />
+              )}
+            </Link>
+          </div>
+        ) : (
+          <div className="text-center mb-6">
+            {title && (
+              <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-1.5">
                 {title}
               </h1>
-              <p className="text-xs sm:text-sm text-[#64748B]">
+            )}
+            {subtitle && (
+              <p className="text-xs sm:text-sm text-white/60 leading-relaxed">
                 {subtitle}
               </p>
-            </div>
-
-            {/* Main Form Content */}
-            {children}
-
-            {/* Bottom Footer Link */}
-            <p className="text-center text-xs sm:text-[13px] text-[#64748B] mt-8">
-              {footerText}{" "}
-              <Link
-                href={footerLinkHref}
-                className="font-semibold text-[#4F46E5] hover:text-[#4338CA] transition-colors"
-              >
-                {footerLinkText}
-              </Link>
-            </p>
-
+            )}
           </div>
-        </div>
+        )}
 
+        {/* Form Body */}
+        {children}
+
+        {/* Footer Prompt */}
+        {footerText && footerLinkHref && footerLinkText && (
+          <div className="mt-6 pt-2 text-center text-xs text-white/50">
+            <span>{footerText}</span>{" "}
+            <Link
+              href={footerLinkHref}
+              className="font-semibold text-white hover:underline transition-colors"
+            >
+              {footerLinkText}
+            </Link>
+          </div>
+        )}
       </div>
     </main>
   );

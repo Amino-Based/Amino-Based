@@ -1,9 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import { ChevronDown, HelpCircle, ShieldCheck, ArrowRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, HelpCircle, ArrowRight } from "lucide-react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger, useGSAP);
+}
 
 export interface ShopFaqItem {
   question: string;
@@ -71,21 +77,84 @@ export default function ShopFaqSection({
   className?: string;
 }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  const sectionRef = useRef<HTMLElement>(null);
+  const listWindowRef = useRef<HTMLDivElement>(null);
+  const listInnerRef = useRef<HTMLDivElement>(null);
 
   const toggleItem = (idx: number) => {
     setOpenIndex(openIndex === idx ? null : idx);
   };
 
+  useGSAP(
+    () => {
+      const section = sectionRef.current;
+      const listWindow = listWindowRef.current;
+      const listInner = listInnerRef.current;
+      if (!section || !listWindow || !listInner) return;
+
+      const mm = gsap.matchMedia();
+
+      mm.add("(min-width: 1024px) and (prefers-reduced-motion: no-preference)", () => {
+        const getScrollDistance = () => {
+          return Math.max(0, listInner.scrollHeight - listWindow.clientHeight);
+        };
+
+        const initialScroll = getScrollDistance();
+        if (initialScroll <= 0) return;
+
+        const tween = gsap.to(listInner, {
+          y: () => -getScrollDistance(),
+          ease: "none",
+        });
+
+        const trigger = ScrollTrigger.create({
+          trigger: section,
+          start: "top top+=80",
+          end: () => `+=${getScrollDistance() + 160}`,
+          pin: true,
+          pinSpacing: true,
+          anticipatePin: 1,
+          scrub: 0.6,
+          animation: tween,
+          invalidateOnRefresh: true,
+          onUpdate: (self) => {
+            setScrollProgress(self.progress);
+          },
+        });
+
+        return () => {
+          trigger.kill();
+          tween.kill();
+          gsap.set(listInner, { clearProps: "transform" });
+        };
+      });
+
+      return () => mm.revert();
+    },
+    { scope: sectionRef, dependencies: [faqs] }
+  );
+
+  // Recalculate ScrollTrigger measurements when an accordion opens or closes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 320);
+    return () => clearTimeout(timer);
+  }, [openIndex]);
+
   return (
     <section
+      ref={sectionRef}
       id="shop-faq"
-      className={`py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-[#F8FAFC] to-white border-t border-[#E4E4E7]/70 ${className}`}
+      className={`relative z-20 py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-[#F8FAFC] to-white border-t border-[#E4E4E7]/70 ${className}`}
     >
       <div className="max-w-7xl lg:max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           
-          {/* Left Column: Pinned / Sticky while right column scrolls */}
-          <div className="lg:col-span-5 lg:sticky lg:top-28 sm:lg:top-32 lg:self-start flex flex-col space-y-6">
+          {/* Left Column: Heading and Contact Support Card */}
+          <div className="lg:col-span-5 lg:self-start flex flex-col space-y-6">
             <div>
               {/* Category Pill Badge */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#031B4E]/5 border border-[#031B4E]/15 mb-4 sm:mb-5">
@@ -129,72 +198,87 @@ export default function ShopFaqSection({
             </div>
           </div>
 
-          {/* Right Column: Scrollable FAQ Accordion Container */}
+          {/* Right Column: Scroll-Pinned FAQ Accordion List */}
           <div className="lg:col-span-7 flex flex-col">
-            <div className="flex items-center justify-between pb-3 px-1 text-xs text-[#64748B]">
+            <div className="flex items-center justify-between pb-2 px-1 text-xs text-[#64748B]">
               <span className="font-semibold uppercase tracking-wider text-[11px] text-[#031B4E] flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#031B4E]" />
                 {faqs.length} Reference Inquiries
               </span>
-              <span className="text-[11px] text-[#94A3B8]">
-                Scroll to view all questions ↓
+              <span className="text-[11px] text-[#94A3B8] font-medium hidden sm:inline-flex items-center gap-1">
+                <span>Scroll to browse inquiries</span>
+                <span className="text-[#031B4E] font-bold">({Math.round(scrollProgress * 100)}%)</span>
               </span>
             </div>
 
-            <div className="flex flex-col gap-3 pb-4 max-h-[560px] lg:max-h-[620px] overflow-y-auto pr-1 sm:pr-2.5 scroll-smooth [scrollbar-width:thin] [scrollbar-color:#CBD5E1_transparent]">
-              {faqs.map((item, idx) => {
-                const isOpen = openIndex === idx;
-                return (
-                  <div
-                    key={idx}
-                    className={`rounded-xl sm:rounded-2xl transition-all duration-300 border overflow-hidden ${
-                      isOpen
-                        ? "bg-white border-[#031B4E]/40 shadow-sm"
-                        : "bg-white/80 hover:bg-white border-[#E2E8F0] shadow-2xs"
-                    }`}
-                  >
-                    <button
-                      type="button"
-                      onClick={() => toggleItem(idx)}
-                      aria-expanded={isOpen}
-                      className="w-full text-left py-4 sm:py-5 px-5 sm:px-6 flex items-center justify-between gap-4 cursor-pointer focus:outline-none"
+            {/* Subtle Progress Bar */}
+            <div className="h-0.5 w-full bg-slate-100 rounded-full mb-4 overflow-hidden hidden lg:block">
+              <div
+                className="h-full bg-[#031B4E] transition-[width] duration-150 ease-out rounded-full"
+                style={{ width: `${Math.max(6, Math.min(100, Math.round(scrollProgress * 100)))}%` }}
+              />
+            </div>
+
+            {/* FAQ Window */}
+            <div
+              ref={listWindowRef}
+              className="relative overflow-visible lg:overflow-hidden lg:h-[540px] xl:h-[600px] 2xl:h-[640px] lg:max-h-[calc(100vh-180px)] pr-0 lg:pr-1.5"
+            >
+              <div
+                ref={listInnerRef}
+                className="flex flex-col gap-3.5 py-1 pb-6 will-change-transform"
+              >
+                {faqs.map((item, idx) => {
+                  const isOpen = openIndex === idx;
+                  return (
+                    <div
+                      key={idx}
+                      className={`rounded-xl sm:rounded-2xl transition-colors duration-200 border ${
+                        isOpen
+                          ? "bg-white border-[#031B4E]/40 shadow-sm"
+                          : "bg-white/90 hover:bg-white border-[#E2E8F0] shadow-2xs"
+                      }`}
                     >
-                      <span
-                        className={`text-sm sm:text-base font-semibold tracking-tight transition-colors pr-2 leading-snug ${
-                          isOpen ? "text-[#031B4E]" : "text-[#0F172A]"
-                        }`}
+                      <button
+                        type="button"
+                        onClick={() => toggleItem(idx)}
+                        aria-expanded={isOpen}
+                        className="w-full text-left py-4 sm:py-5 px-5 sm:px-6 flex items-center justify-between gap-4 cursor-pointer focus:outline-none"
                       >
-                        {item.question}
-                      </span>
-
-                      <span
-                        className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
-                          isOpen
-                            ? "bg-[#031B4E] text-white rotate-180"
-                            : "bg-slate-100 text-slate-500 hover:bg-slate-200"
-                        }`}
-                      >
-                        <ChevronDown className="w-3.5 h-3.5" />
-                      </span>
-                    </button>
-
-                    <AnimatePresence initial={false}>
-                      {isOpen && (
-                        <motion.div
-                          initial={{ height: 0, opacity: 0 }}
-                          animate={{ height: "auto", opacity: 1 }}
-                          exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.28, ease: "easeInOut" }}
+                        <span
+                          className={`text-sm sm:text-base font-semibold tracking-tight transition-colors pr-2 leading-snug ${
+                            isOpen ? "text-[#031B4E]" : "text-[#0F172A]"
+                          }`}
                         >
-                          <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-1 text-xs sm:text-[13px] text-[#475569] leading-relaxed border-t border-slate-100/80">
+                          {item.question}
+                        </span>
+
+                        <span
+                          className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 transition-transform duration-300 ${
+                            isOpen
+                              ? "bg-[#031B4E] text-white rotate-180"
+                              : "bg-slate-100 text-slate-500 hover:bg-slate-200"
+                          }`}
+                        >
+                          <ChevronDown className="w-3.5 h-3.5" />
+                        </span>
+                      </button>
+
+                      <div
+                        className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${
+                          isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                        }`}
+                      >
+                        <div className={isOpen ? "overflow-visible min-h-0" : "overflow-hidden min-h-0"}>
+                          <div className="px-5 sm:px-6 pb-5 sm:pb-6 pt-3 text-xs sm:text-[13px] text-[#475569] leading-relaxed border-t border-slate-100/90">
                             {item.answer}
                           </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  </div>
-                );
-              })}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
 

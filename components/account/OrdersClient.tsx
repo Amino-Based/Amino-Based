@@ -2,7 +2,7 @@
 
 import React, { useMemo, useState } from "react";
 import Link from "next/link";
-import { Package, ChevronRight, Filter } from "lucide-react";
+import { Package, ChevronRight, Filter, ArrowRight } from "lucide-react";
 
 export interface OrderListItem {
   id: string;
@@ -13,13 +13,13 @@ export interface OrderListItem {
 }
 
 const STATUS_STYLES: Record<string, string> = {
-  pending: "bg-gray-100 text-gray-600",
-  paid: "bg-amber-50 text-amber-600",
-  fulfilled: "bg-blue-50 text-blue-600",
-  shipped: "bg-blue-50 text-blue-600",
-  completed: "bg-emerald-50 text-emerald-600",
-  refunded: "bg-red-50 text-red-600",
-  cancelled: "bg-red-50 text-red-600",
+  pending: "bg-neutral-100 text-neutral-600 border border-neutral-200",
+  paid: "bg-amber-50 text-amber-700 border border-amber-200",
+  fulfilled: "bg-sky-50 text-sky-700 border border-sky-200",
+  shipped: "bg-sky-50 text-sky-700 border border-sky-200",
+  completed: "bg-emerald-50 text-emerald-700 border border-emerald-200",
+  refunded: "bg-rose-50 text-rose-700 border border-rose-200",
+  cancelled: "bg-rose-50 text-rose-700 border border-rose-200",
 };
 
 export function OrdersClient({ orders }: { orders: OrderListItem[] }) {
@@ -36,94 +36,103 @@ export function OrdersClient({ orders }: { orders: OrderListItem[] }) {
   }, [orders]);
 
   return (
-    <div className="flex flex-col gap-8">
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+    <div className="flex flex-col gap-6 pb-12">
+      <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
         <div>
-          <h1 className="font-inter text-3xl md:text-5xl uppercase font-bold tracking-wider text-gray-900">
+          <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-neutral-950 font-sans">
             Orders
           </h1>
-          <p className="font-inter text-gray-500 mt-3 max-w-lg text-sm">
-            Track and review every order you&apos;ve placed with us.
+          <p className="text-xs sm:text-sm text-neutral-500 mt-1.5 max-w-lg leading-relaxed">
+            Track and review your laboratory peptide synthesis batches and fulfillment history.
           </p>
         </div>
 
         {statuses.length > 0 && (
-          <div className="flex items-center gap-2 bg-white border border-black/10 rounded-full px-4 py-2 shadow-sm">
-            <Filter className="w-3.5 h-3.5 text-gray-400" />
-            <select
-              value={filter}
-              onChange={(e) => setFilter(e.target.value)}
-              className="font-inter bg-transparent text-xs font-bold uppercase tracking-widest text-gray-900 focus:outline-none"
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+            <button
+              onClick={() => setFilter("all")}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all whitespace-nowrap cursor-pointer ${
+                filter === "all"
+                  ? "bg-neutral-950 text-white shadow-xs"
+                  : "bg-white text-neutral-600 hover:text-black border border-neutral-200"
+              }`}
             >
-              <option value="all">All</option>
-              {statuses.map((s) => (
-                <option key={s} value={s}>
-                  {s}
-                </option>
-              ))}
-            </select>
+              All ({orders.length})
+            </button>
+            {statuses.map((status) => (
+              <button
+                key={status}
+                onClick={() => setFilter(status)}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold capitalize transition-all whitespace-nowrap cursor-pointer ${
+                  filter === status
+                    ? "bg-neutral-950 text-white shadow-xs"
+                    : "bg-white text-neutral-600 hover:text-black border border-neutral-200"
+                }`}
+              >
+                {status}
+              </button>
+            ))}
           </div>
         )}
       </div>
 
       {filteredOrders.length > 0 ? (
-        <div className="bg-white border border-black/5 rounded-2xl p-4 sm:p-6 shadow-sm">
-          <div className="flex flex-col divide-y divide-gray-100">
-            {filteredOrders.map((order) => (
-              <Link
-                key={order.id}
-                href={`/account/orders/${order.id}`}
-                className="group flex flex-col md:flex-row md:items-center justify-between py-6 gap-3 hover:bg-gray-50/60 -mx-4 px-4 rounded-2xl transition-colors"
-              >
-                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-10">
-                  <div className="flex flex-col">
-                    <span className="font-inter text-[10px] font-bold uppercase tracking-widest text-gray-400">
-                      {order.date}
+        <div className="flex flex-col gap-3">
+          {filteredOrders.map((order) => (
+            <Link
+              key={order.id}
+              href={`/account/orders/${order.id}`}
+              className="group bg-white border border-neutral-200/80 hover:border-neutral-950/40 rounded-2xl p-4 sm:p-5 shadow-[0_4px_20px_rgba(0,0,0,0.02)] transition-all flex flex-col sm:flex-row sm:items-center justify-between gap-4"
+            >
+              <div className="flex items-center gap-3.5">
+                <div className="w-11 h-11 rounded-xl bg-neutral-100 border border-neutral-200/60 flex items-center justify-center text-neutral-600 shrink-0 group-hover:scale-105 transition-transform">
+                  <Package size={20} />
+                </div>
+                <div className="flex flex-col">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm sm:text-base font-bold text-neutral-950 group-hover:text-black transition-colors font-sans">
+                      Order #{order.id}
                     </span>
-                    <span className="font-inter text-lg font-medium text-gray-900 group-hover:text-indigo-600 transition-colors">
-                      #{order.id}
+                    <span
+                      className={`text-[10px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${
+                        STATUS_STYLES[order.status] || "bg-neutral-100 text-neutral-600 border border-neutral-200"
+                      }`}
+                    >
+                      {order.status}
                     </span>
                   </div>
-                  <span
-                    className={`font-inter w-fit px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest ${
-                      STATUS_STYLES[order.status] || "bg-gray-100 text-gray-600"
-                    }`}
-                  >
-                    {order.status}
+                  <span className="text-xs text-neutral-400 mt-0.5">
+                    {order.date} &bull; {order.itemCount} item{order.itemCount === 1 ? "" : "s"}
                   </span>
                 </div>
+              </div>
 
-                <div className="flex items-center gap-6">
-                  <div className="flex flex-col items-end">
-                    <span className="font-inter text-lg font-semibold text-gray-900">
-                      ${order.total.toFixed(2)}
-                    </span>
-                    <span className="font-inter text-[10px] font-bold uppercase tracking-widest text-gray-400">
-                      {order.itemCount} item{order.itemCount === 1 ? "" : "s"}
-                    </span>
-                  </div>
-                  <div className="w-9 h-9 rounded-full border border-black/10 flex items-center justify-center text-gray-400 group-hover:bg-indigo-600 group-hover:border-indigo-600 group-hover:text-white transition-all">
-                    <ChevronRight className="w-4 h-4" />
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
+              <div className="flex items-center justify-between sm:justify-end gap-4 shrink-0 pt-2 sm:pt-0 border-t sm:border-t-0 border-neutral-100">
+                <span className="text-base font-extrabold text-neutral-950 font-sans">
+                  ${order.total.toFixed(2)}
+                </span>
+                <span className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-neutral-100 group-hover:bg-neutral-950 text-neutral-700 group-hover:text-white text-xs font-semibold transition-colors">
+                  <span>Details</span>
+                  <ChevronRight size={13} />
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center text-center py-20 bg-white border border-black/5 rounded-2xl shadow-sm">
-          <Package className="w-10 h-10 text-gray-300 mb-5" strokeWidth={1} />
-          <h2 className="font-inter text-xl uppercase tracking-wider text-gray-900 mb-2">
-            No orders yet
-          </h2>
-          <p className="font-inter text-gray-500 max-w-sm mb-8 text-sm">
-            Once you place an order it will appear here for easy tracking.
+        <div className="py-16 flex flex-col items-center justify-center text-center bg-white rounded-2xl border border-neutral-200/80 p-8">
+          <Package size={36} className="text-neutral-300 mb-3" />
+          <h2 className="text-base font-bold text-neutral-900">No orders found</h2>
+          <p className="text-xs text-neutral-400 mt-1 max-w-sm">
+            {filter === "all"
+              ? "You haven't placed any research peptide orders yet."
+              : `No orders matching status "${filter}".`}
           </p>
           <Link
             href="/shop"
-            className="font-inter px-8 py-3 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold uppercase tracking-widest transition-colors shadow-[0_8px_20px_rgba(79,70,229,0.25)]"
+            className="mt-5 px-6 py-2.5 rounded-full bg-neutral-950 text-white text-xs font-semibold hover:bg-neutral-800 transition-colors shadow-xs"
           >
-            Start Shopping
+            Browse Peptide Catalog
           </Link>
         </div>
       )}

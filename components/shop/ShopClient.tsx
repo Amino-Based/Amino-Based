@@ -19,6 +19,7 @@ import {
 import Footer from "@/components/Footer";
 import ShopProductCard from "@/components/shop/ShopProductCard";
 import ShopFaqSection from "@/components/shop/ShopFaqSection";
+import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import type { ShopMockProduct } from "@/lib/shopCardProduct";
 import { MASTER_CATEGORIES } from "@/lib/masterCatalogData";
 
@@ -167,6 +168,17 @@ function ShopClientInner({
       <section className="pt-24 sm:pt-28 pb-6 sm:pb-8 bg-white">
         <div className="max-w-7xl lg:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           
+          {/* Wayfinding Breadcrumbs */}
+          <div className="mb-4">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Catalogue", href: activeCategory ? "/shop" : undefined },
+                ...(activeCategory ? [{ label: activeCategory }] : []),
+              ]}
+            />
+          </div>
+
           {/* Panoramic Widescreen Hero Banner matching original luxury banner ratio */}
           <div className="relative w-full aspect-[21/9] sm:aspect-[24/8] lg:aspect-[32/10] rounded-[22px] sm:rounded-[26px] overflow-hidden shadow-xs border border-[#E4E4E7]/60 group">
             <Image
@@ -258,16 +270,16 @@ function ShopClientInner({
 
           {/* Right Controls: Minimal Sort ⇅ & Search matching reference layout */}
           <div className="flex items-center gap-3 shrink-0 py-2">
-            {/* Search Input */}
-            <div className="relative hidden md:block w-44 lg:w-52">
-              <Search className="w-3.5 h-3.5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+            {/* Search Input (Responsive on all viewports) */}
+            <div className="relative w-28 xs:w-36 sm:w-44 lg:w-52">
+              <Search className="w-3.5 h-3.5 text-gray-400 absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
               <input
                 type="search"
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
                 placeholder="Search..."
                 aria-label="Search peptides"
-                className="w-full bg-[#F8FAFC] border border-[#E2E8F0] rounded-full pl-8 pr-3 py-1 text-xs text-[#071739] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#071739] transition-all"
+                className="w-full bg-[#F8FAFC] border border-[#E2E8F0] rounded-full pl-7 sm:pl-8 pr-2.5 sm:pr-3 py-1 text-xs text-[#071739] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#071739] transition-all"
               />
             </div>
 
@@ -299,12 +311,12 @@ function ShopClientInner({
       <section className="max-w-7xl lg:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
         
         {/* Results Counter / Category Status */}
-        <div className="flex items-center justify-between mb-6 pb-3 border-b border-[#E4E4E7]/60">
-          <div className="text-sm sm:text-base font-semibold text-[#475569] flex items-center gap-2">
-            <Layers className="w-4.5 h-4.5 text-[#031B4E]" />
+        <div className="flex items-center justify-between mb-5 sm:mb-6 pb-2.5 sm:pb-3 border-b border-[#E4E4E7]/60">
+          <div className="text-xs sm:text-base font-semibold text-[#475569] flex items-center gap-1.5 sm:gap-2">
+            <Layers className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#031B4E] shrink-0" />
             <span>
-              Showing <span className="font-bold text-[#071739]">{filteredProducts.length}</span>{" "}
-              {filteredProducts.length === 1 ? "Research Peptide" : "Research Peptides"}
+              Found <span className="font-bold text-[#071739]">{filteredProducts.length}</span>{" "}
+              {filteredProducts.length === 1 ? "Result" : "Results"}
               {activeCategory && (
                 <span>
                   {" "}
@@ -377,9 +389,9 @@ function ShopClientInner({
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-7">
-            {filteredProducts.map((product) => (
-              <ShopProductCard key={product.id} product={product} />
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-5 lg:gap-6">
+            {filteredProducts.map((product, index) => (
+              <ShopProductCard key={product.id} product={product} index={index} />
             ))}
           </div>
         )}

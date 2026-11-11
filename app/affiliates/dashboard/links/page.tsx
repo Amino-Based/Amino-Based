@@ -16,40 +16,47 @@ export default async function AffiliateLinksPage() {
 
   return (
     <div className="space-y-6">
-      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 backdrop-blur-md">
-        <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase mb-4">Referral Link</h2>
-        <p className="text-gray-400 text-sm mb-4">
-          Share this link &mdash; anyone who visits and buys within{" "}
-          {affiliate.cookieDurationDays ?? 30} days is attributed to you.
+      <div className="bg-white border border-[#E2E8F0] rounded-[22px] p-6 sm:p-8 shadow-2xs">
+        <h2 className="text-xs font-bold tracking-wider text-[#071739] uppercase mb-2">
+          Persistent Referral Link
+        </h2>
+        <p className="text-slate-600 text-xs sm:text-sm mb-4">
+          Direct researchers with this tracking link &mdash; visits that convert within{" "}
+          <strong className="text-[#071739]">{affiliate.cookieDurationDays ?? 30} days</strong> are fully credited to your account.
         </p>
         {referralLink ? (
           <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
-            <p className="flex-1 font-mono text-sm text-indigo-300 break-all bg-black/40 border border-white/10 rounded-xl px-4 py-3">
+            <p className="flex-1 font-mono text-xs sm:text-sm text-[#031B4E] break-all bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-4 py-3 select-all">
               {referralLink}
             </p>
             <CopyLinkButton value={referralLink} />
           </div>
         ) : (
-          <p className="text-gray-500 text-sm italic">Your referral link is being generated. Check back soon.</p>
+          <p className="text-slate-400 text-xs sm:text-sm italic">
+            Your referral link is currently being generated. Check back shortly.
+          </p>
         )}
       </div>
 
-      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 backdrop-blur-md">
-        <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase mb-4">Coupon Code</h2>
-        <p className="text-gray-400 text-sm mb-4">
-          Your audience can also use this code at checkout
-          {affiliate.customerDiscount ? ` for ${affiliate.customerDiscount}% off` : ""} &mdash; it&apos;s
-          automatically attributed to you.
+      <div className="bg-white border border-[#E2E8F0] rounded-[22px] p-6 sm:p-8 shadow-2xs">
+        <h2 className="text-xs font-bold tracking-wider text-[#071739] uppercase mb-2">
+          Custom Audience Coupon Code
+        </h2>
+        <p className="text-slate-600 text-xs sm:text-sm mb-4">
+          Your readers can enter this coupon code at checkout
+          {affiliate.customerDiscount ? ` to receive a ${affiliate.customerDiscount}% discount` : ""} &mdash; attribution occurs automatically even if cookies are disabled.
         </p>
         {affiliate.couponCode ? (
           <div className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center">
-            <p className="flex-1 font-mono text-lg tracking-widest text-white bg-black/40 border border-white/10 rounded-xl px-4 py-3">
+            <p className="flex-1 font-mono text-base sm:text-lg font-bold tracking-wider text-[#071739] bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-4 py-3">
               {affiliate.couponCode}
             </p>
             <CopyLinkButton value={affiliate.couponCode} />
           </div>
         ) : (
-          <p className="text-gray-500 text-sm italic">No coupon code has been assigned yet.</p>
+          <p className="text-slate-400 text-xs sm:text-sm italic">
+            No coupon code has been assigned to this account yet.
+          </p>
         )}
       </div>
     </div>

@@ -182,8 +182,8 @@ export default function BestSellersSection({ products }: BestSellersSectionProps
 
         {/* Mobile & tablet: static grid, no slider */}
         <div className="grid grid-cols-2 lg:hidden gap-3 sm:gap-6 w-full">
-          {items.map((product) => (
-            <ShopProductCard key={product.id} product={product} />
+          {items.map((product, i) => (
+            <ShopProductCard key={product.id} product={product} index={i} />
           ))}
         </div>
 
@@ -203,9 +203,9 @@ export default function BestSellersSection({ products }: BestSellersSectionProps
             data-testid="bestsellers-slider"
             className="no-scrollbar flex gap-6 w-full overflow-x-auto scroll-smooth snap-x snap-mandatory"
           >
-            {items.map((product) => (
+            {items.map((product, i) => (
               <div key={product.id} className="w-[calc(25%-18px)] shrink-0 snap-start">
-                <ShopProductCard product={product} />
+                <ShopProductCard product={product} index={i} />
               </div>
             ))}
           </div>

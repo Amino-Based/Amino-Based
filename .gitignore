@@ -21,6 +21,7 @@
 *.tsbuildinfo
 
 # Scratch & temporary diagnostic files
+.chrome_profile*
 /scratch/
 public/scratch_*
 public/temp_*

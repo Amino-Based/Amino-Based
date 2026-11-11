@@ -3,7 +3,7 @@
 import { useState, useTransition } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Star } from "lucide-react";
+import { Star, CheckCircle2 } from "lucide-react";
 import { submitReview } from "@/app/product/[slug]/reviewActions";
 
 type Props = {
@@ -23,32 +23,44 @@ export default function ReviewForm({ familyProductIds, eligibility }: Props) {
 
   if (done) {
     return (
-      <p className="text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-3">
-        Thank you! Your review was submitted and will appear once approved.
-      </p>
+      <div className="flex items-center gap-2 text-sm text-emerald-800 bg-emerald-500/10 border border-emerald-400/30 rounded-xl px-4 py-3.5">
+        <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+        <span>Thank you! Your laboratory review was submitted and will appear once verified.</span>
+      </div>
     );
   }
   if (eligibility === "login_required") {
     return (
-      <p className="text-sm text-gray-500">
-        <Link href={`/login?callbackUrl=${encodeURIComponent(pathname)}`} className="underline text-gray-900">
+      <p className="text-sm text-[#64748B]">
+        <Link
+          href={`/login?callbackUrl=${encodeURIComponent(pathname)}`}
+          className="underline font-semibold text-[#031B4E] hover:text-[#071739]"
+        >
           Sign in
         </Link>{" "}
-        to review products you've purchased.
+        to submit a review for products you have purchased.
       </p>
     );
   }
   if (eligibility === "not_purchased") {
-    return <p className="text-sm text-gray-500">Reviews are open to customers who have purchased this product.</p>;
+    return (
+      <p className="text-sm text-[#64748B]">
+        Laboratory reviews are open exclusively to verified purchasers of this compound.
+      </p>
+    );
   }
   if (eligibility === "already_reviewed") {
-    return <p className="text-sm text-gray-500">You've already reviewed this product — thank you!</p>;
+    return (
+      <p className="text-sm text-[#64748B]">
+        You have already submitted a review for this compound — thank you for your feedback!
+      </p>
+    );
   }
 
   function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (rating < 1) {
-      setError("Please pick a star rating");
+      setError("Please select a star rating");
       return;
     }
     setError(null);
@@ -68,9 +80,10 @@ export default function ReviewForm({ familyProductIds, eligibility }: Props) {
   }
 
   return (
-    <form onSubmit={onSubmit} className="flex flex-col gap-4 mt-8 pt-8 border-t border-black/5">
-      <h3 className="font-inter uppercase text-sm font-bold tracking-wider text-gray-900">Write a review</h3>
-      <div className="flex items-center gap-1" role="radiogroup" aria-label="Rating">
+    <form onSubmit={onSubmit} className="flex flex-col gap-4 mt-6 pt-6 border-t border-[#E2E8F0]">
+      <h3 className="font-serif text-lg font-normal text-[#071739]">Write a Review</h3>
+
+      <div className="flex items-center gap-1.5" role="radiogroup" aria-label="Rating">
         {[1, 2, 3, 4, 5].map((n) => (
           <button
             key={n}
@@ -79,31 +92,34 @@ export default function ReviewForm({ familyProductIds, eligibility }: Props) {
             onMouseEnter={() => setHover(n)}
             onMouseLeave={() => setHover(0)}
             aria-label={`${n} star${n === 1 ? "" : "s"}`}
-            className="p-1 focus:outline-none"
+            className="p-1 focus:outline-none rounded hover:scale-110 transition-transform"
           >
             <Star
               className={`w-6 h-6 transition-colors ${
-                n <= (hover || rating) ? "fill-amber-400 text-amber-400" : "text-gray-300"
+                n <= (hover || rating) ? "fill-amber-400 text-amber-400" : "text-[#CBD5E1]"
               }`}
             />
           </button>
         ))}
       </div>
+
       <textarea
         value={comment}
         onChange={(e) => setComment(e.target.value)}
         maxLength={1000}
         rows={4}
-        placeholder="Share your experience (optional)"
-        className="font-inter w-full bg-gray-50 border border-black/10 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-[#031B4E]"
+        placeholder="Share your analytical assay observations or product feedback (optional)…"
+        className="w-full bg-[#F8FAFC] border border-[#E2E8F0] rounded-xl px-4 py-3 text-sm text-[#071739] placeholder:text-[#94A3B8] focus:outline-none focus:border-[#071739] focus:ring-1 focus:ring-[#071739] transition-colors"
       />
-      {error && <p className="text-xs text-red-500">{error}</p>}
+
+      {error && <p className="text-xs text-red-600 font-medium">{error}</p>}
+
       <button
         type="submit"
         disabled={isPending}
-        className="self-start h-11 px-6 rounded-full bg-[#031B4E] hover:bg-[#07266E] disabled:opacity-50 text-white text-xs font-bold uppercase tracking-widest transition-colors shadow-xs"
+        className="self-start h-11 px-7 rounded-full bg-[#031B4E] hover:bg-[#071739] disabled:opacity-50 text-white text-xs font-semibold uppercase tracking-wider transition-all shadow-xs active:scale-98"
       >
-        {isPending ? "Submitting…" : "Submit review"}
+        {isPending ? "Submitting…" : "Submit Review"}
       </button>
     </form>
   );

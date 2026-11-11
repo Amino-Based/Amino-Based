@@ -15,7 +15,9 @@ const config: Config = {
       fontFamily: {
         futuristic: ["var(--font-futuristic)", "sans-serif"],
         michroma: ["var(--font-michroma)", "sans-serif"],
-        inter: ["var(--font-inter)", "sans-serif"],
+        opensans: ["var(--font-opensans)", "sans-serif"],
+        inter: ["var(--font-opensans)", "sans-serif"],
+        sans: ["var(--font-opensans)", "sans-serif"],
         cormorant: ["var(--font-cormorant)", "serif"],
         serif: ["var(--font-cormorant)", "Georgia", "serif"],
       },

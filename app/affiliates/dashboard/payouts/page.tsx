@@ -10,10 +10,10 @@ import PayoutRequestForm from "@/components/affiliates/PayoutRequestForm";
 export const dynamic = "force-dynamic";
 
 const statusStyles: Record<string, string> = {
-  pending: "text-yellow-300 bg-yellow-500/10 border-yellow-500/30",
-  approved: "text-emerald-300 bg-emerald-500/10 border-emerald-500/30",
-  paid: "text-indigo-300 bg-indigo-500/10 border-indigo-500/30",
-  rejected: "text-red-300 bg-red-500/10 border-red-500/30",
+  pending: "text-amber-800 bg-amber-500/10 border-amber-400/30",
+  approved: "text-emerald-800 bg-emerald-500/10 border-emerald-400/30",
+  paid: "text-[#031B4E] bg-cyan-500/10 border-cyan-400/30 font-bold",
+  rejected: "text-rose-800 bg-rose-500/10 border-rose-400/30",
 };
 
 export default async function AffiliatePayoutsPage() {
@@ -50,46 +50,62 @@ export default async function AffiliatePayoutsPage() {
 
   return (
     <div className="space-y-6">
-      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 backdrop-blur-md">
-        <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase mb-2">Available Balance</h2>
-        <p className="text-3xl font-inter font-bold text-white mb-1">
+      {/* Available balance card */}
+      <div className="bg-white border border-[#E2E8F0] rounded-[22px] p-6 sm:p-8 shadow-2xs">
+        <h2 className="text-xs font-bold tracking-wider text-[#071739] uppercase mb-1">
+          Approved Available Balance
+        </h2>
+        <p className="text-3xl font-serif text-[#031B4E] font-normal mb-1">
           {formatUsd(affiliate?.totalCommissionApproved)}
         </p>
-        <p className="text-xs text-gray-500">Approved commission available to request as a payout.</p>
+        <p className="text-xs text-slate-500">
+          Verified commission balance cleared for automatic or requested disbursement.
+        </p>
       </div>
 
-      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 backdrop-blur-md">
-        <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase mb-6">Request A Payout</h2>
+      {/* Request payout */}
+      <div className="bg-white border border-[#E2E8F0] rounded-[22px] p-6 sm:p-8 shadow-2xs">
+        <h2 className="text-xs font-bold tracking-wider text-[#071739] uppercase mb-6">
+          Submit Payout Request
+        </h2>
         <PayoutRequestForm minimumThreshold={minimumThreshold} />
       </div>
 
-      <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 backdrop-blur-md">
-        <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase mb-6">Payout History</h2>
+      {/* Payout history */}
+      <div className="bg-white border border-[#E2E8F0] rounded-[22px] p-6 sm:p-8 shadow-2xs">
+        <h2 className="text-xs font-bold tracking-wider text-[#071739] uppercase mb-6">
+          Disbursement Records
+        </h2>
         {payoutRequests.length === 0 ? (
           <div className="flex flex-col items-center justify-center text-center py-12">
-            <Inbox className="w-8 h-8 text-gray-500 mb-4" strokeWidth={1.5} />
-            <p className="text-gray-400 text-sm max-w-sm">You haven&apos;t requested any payouts yet.</p>
+            <div className="w-12 h-12 rounded-full bg-[#031B4E]/5 border border-[#031B4E]/10 flex items-center justify-center text-[#031B4E] mb-3">
+              <Inbox className="w-6 h-6" strokeWidth={1.5} />
+            </div>
+            <h3 className="text-base font-bold text-[#071739] mb-1">No Disbursements Recorded</h3>
+            <p className="text-slate-500 text-xs sm:text-sm max-w-sm">
+              Your historical withdrawal records and settlement statements will appear here.
+            </p>
           </div>
         ) : (
           <div className="overflow-x-auto">
             <table className="w-full text-sm text-left">
               <thead>
-                <tr className="border-b border-white/10 text-xs uppercase tracking-widest text-gray-500">
-                  <th className="py-3 pr-4">Date</th>
-                  <th className="py-3 pr-4">Amount</th>
-                  <th className="py-3 pr-4">Method</th>
-                  <th className="py-3 pr-4">Status</th>
+                <tr className="border-b border-[#E2E8F0] text-[11px] font-bold uppercase tracking-wider text-slate-500 bg-[#F8FAFC]">
+                  <th className="py-3 px-4">Date</th>
+                  <th className="py-3 px-4">Amount</th>
+                  <th className="py-3 px-4">Method</th>
+                  <th className="py-3 px-4">Status</th>
                 </tr>
               </thead>
               <tbody>
                 {payoutRequests.map((req) => (
-                  <tr key={req.id} className="border-b border-white/5 text-gray-300">
-                    <td className="py-4 pr-4">{formatDate(req.createdAt)}</td>
-                    <td className="py-4 pr-4 text-white font-medium">{formatUsd(req.amount)}</td>
-                    <td className="py-4 pr-4 capitalize">{req.payoutMethod}</td>
-                    <td className="py-4 pr-4">
+                  <tr key={req.id} className="border-b border-[#F1F5F9] text-slate-700 hover:bg-[#F8FAFC]/50 transition-colors">
+                    <td className="py-3.5 px-4 text-xs font-medium">{formatDate(req.createdAt)}</td>
+                    <td className="py-3.5 px-4 text-xs font-mono font-bold text-[#071739]">{formatUsd(req.amount)}</td>
+                    <td className="py-3.5 px-4 text-xs capitalize">{req.payoutMethod}</td>
+                    <td className="py-3.5 px-4">
                       <span
-                        className={`inline-block px-2.5 py-1 text-xs rounded-full border uppercase tracking-wide ${
+                        className={`inline-block px-2.5 py-0.5 text-[10px] font-bold rounded-full border uppercase tracking-wider ${
                           statusStyles[req.status ?? "pending"] ?? statusStyles.pending
                         }`}
                       >

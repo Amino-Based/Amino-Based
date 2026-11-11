@@ -7,6 +7,8 @@ import { ArrowRight, Search, X, Calendar, Clock, FlaskConical, Check } from "luc
 import type { BlogPost } from "@/lib/types/blog";
 import { formatBlogDate, resolveBlogMediaUrl } from "@/lib/types/blog";
 import Footer from "@/components/Footer";
+import FAQSection from "@/components/FAQSection";
+import Breadcrumbs from "@/components/nav/Breadcrumbs";
 
 interface BlogListingClientProps {
   initialPosts: BlogPost[];
@@ -83,6 +85,15 @@ export default function BlogListingClient({ initialPosts }: BlogListingClientPro
 
         <div className="relative max-w-7xl lg:max-w-[1380px] mx-auto">
           
+          {/* Wayfinding Breadcrumbs */}
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Research Archive" },
+            ]}
+            className="mb-4"
+          />
+
           {/* Bond-line kicker */}
           <div className="flex items-center gap-2.5 text-xs font-mono font-bold tracking-[0.2em] uppercase text-[#0096c8] mb-4">
             <svg className="w-4 h-4 stroke-[#0096c8] fill-none shrink-0" viewBox="0 0 24 24" strokeWidth="2">
@@ -443,6 +454,25 @@ export default function BlogListingClient({ initialPosts }: BlogListingClientPro
           </p>
         </div>
       </section>
+
+      {/* =========================================================================
+          BLOG RESEARCH & METHODOLOGY FAQ SECTION
+          ========================================================================= */}
+      <FAQSection
+        id="blog-faq"
+        badgeText="Scientific & Literature FAQ"
+        title={
+          <>
+            Research Inquiries & <br />
+            Methodology
+          </>
+        }
+        subtitle="Key scientific guidance regarding peptide analytical literature, HPLC chromatogram interpretation, and laboratory compliance standards."
+        calloutTitle="Have a Specific Literature Question?"
+        calloutText="Can't find the citation or synthesis protocol you need? Send an inquiry directly to our scientific writing and technical review team."
+        calloutButtonText="Contact Science Team"
+        calloutButtonLink="/contact-us"
+      />
 
       {/* =========================================================================
           RUO FOOTER DISCLAIMER

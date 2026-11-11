@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     url: `${siteUrl}/peptide-calculator`,
     siteName: "Amino Based",
     type: "website",
-    images: [{ url: `${siteUrl}/assets/calculator_hero_wide.jpg` }],
+    images: [{ url: `${siteUrl}/assets/calculator/amino-based-calculator-hero.png` }],
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: [`${siteUrl}/assets/calculator_hero_wide.jpg`],
+    images: [`${siteUrl}/assets/calculator/amino-based-calculator-hero.png`],
   },
 };
 

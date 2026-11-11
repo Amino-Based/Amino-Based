@@ -20,6 +20,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import type { BlogPost } from "@/lib/types/blog";
 import { formatBlogDate, resolveBlogMediaUrl } from "@/lib/types/blog";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/nav/Breadcrumbs";
 
 interface ModernBlogArticleProps {
   post: BlogPost;
@@ -137,6 +138,19 @@ export default function ModernBlogArticle({ post, allPosts, slug }: ModernBlogAr
 
         <div className="relative max-w-7xl lg:max-w-[1380px] mx-auto">
           
+          {/* Wayfinding Breadcrumbs */}
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Research Archive", href: "/blog" },
+              ...(post.category
+                ? [{ label: post.category, href: `/blog?category=${encodeURIComponent(post.category)}` }]
+                : []),
+              { label: post.title },
+            ]}
+            className="mb-4"
+          />
+
           {/* Back link to blog listing */}
           <Link
             href="/blog"
@@ -520,21 +534,17 @@ export default function ModernBlogArticle({ post, allPosts, slug }: ModernBlogAr
                           </span>
                         </button>
 
-                        <AnimatePresence initial={false}>
-                          {isOpen && (
-                            <motion.div
-                              initial={{ height: 0, opacity: 0 }}
-                              animate={{ height: "auto", opacity: 1 }}
-                              exit={{ height: 0, opacity: 0 }}
-                              transition={{ duration: 0.22, ease: "easeInOut" }}
-                              className="overflow-hidden"
-                            >
-                              <div className="px-5 sm:px-6 pb-6 pt-1 text-xs sm:text-sm text-[#52525B] leading-relaxed border-t border-[#F1F5F9]">
-                                {faq.answer}
-                              </div>
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
+                        <div
+                          className={`grid transition-[grid-template-rows,opacity] duration-300 ease-in-out ${
+                            isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                          }`}
+                        >
+                          <div className={isOpen ? "overflow-visible min-h-0" : "overflow-hidden min-h-0"}>
+                            <div className="px-5 sm:px-6 pb-6 pt-3 text-xs sm:text-sm text-[#52525B] leading-relaxed border-t border-[#F1F5F9]">
+                              {faq.answer}
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     );
                   })}

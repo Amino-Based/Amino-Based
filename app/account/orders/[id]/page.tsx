@@ -6,6 +6,7 @@ import config from "@payload-config";
 import { getPayloadUser } from "@/lib/auth/getPayloadUser";
 import { ArrowLeft, Package, MapPin, Truck, Receipt } from "lucide-react";
 import { safeProductImageUrl } from "@/lib/products/productImage";
+import Breadcrumbs from "@/components/nav/Breadcrumbs";
 
 export const dynamic = "force-dynamic";
 
@@ -90,6 +91,14 @@ export default async function OrderDetailPage({
   return (
     <div className="flex flex-col gap-8 max-w-5xl">
       <div className="flex flex-col gap-4">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "My Account", href: "/account" },
+            { label: "Orders", href: "/account/orders" },
+            { label: `Order #${order.orderNumber || order.id}` },
+          ]}
+        />
         <Link
           href="/account/orders"
           className="font-inter w-fit flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:text-gray-900 transition-colors bg-gray-50 border border-black/5 px-4 py-2 rounded-full"
@@ -125,7 +134,7 @@ export default async function OrderDetailPage({
               <div className="relative flex justify-between px-1 sm:px-4">
                 <div className="absolute top-3 sm:top-4 left-4 right-4 h-[2px] bg-gray-100 -z-10 rounded-full" />
                 <div
-                  className="absolute top-3 sm:top-4 left-4 h-[2px] bg-indigo-600 -z-10 transition-all duration-1000 ease-out rounded-full"
+                  className="absolute top-3 sm:top-4 left-4 h-[2px] bg-neutral-950 -z-10 transition-all duration-1000 ease-out rounded-full"
                   style={{
                     width: `calc(${(Math.max(currentStepIndex, 0) / (STATUS_STEPS.length - 1)) * 100}% - 2rem)`,
                   }}
@@ -137,7 +146,7 @@ export default async function OrderDetailPage({
                     <div key={step} className="flex flex-col items-center gap-2 sm:gap-3 bg-white px-0.5 sm:px-2">
                       <div
                         className={`w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center transition-all duration-500 shadow-sm ${
-                          isCompleted ? "bg-indigo-600 text-white" : "bg-white border-2 border-gray-100 text-gray-300"
+                          isCompleted ? "bg-neutral-950 text-white" : "bg-white border-2 border-neutral-200 text-neutral-300"
                         }`}
                       >
                         {isCompleted && <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full" />}
@@ -222,7 +231,7 @@ export default async function OrderDetailPage({
                             <Package className="w-5 h-5 text-gray-300" />
                           )}
                         </div>
-                        <div className="absolute -top-2 -right-2 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-[10px] font-bold border-2 border-white shadow-sm">
+                        <div className="absolute -top-2 -right-2 w-6 h-6 bg-neutral-950 text-white rounded-full flex items-center justify-center text-[10px] font-bold border-2 border-white shadow-xs">
                           {quantity}
                         </div>
                       </div>

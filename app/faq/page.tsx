@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import FaqHubClient from "@/components/faq/FaqHubClient";
+import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { ALL_VISIBLE_FAQS } from "@/lib/faqHubData";
 import { siteUrl } from "@/lib/siteUrl";
 
@@ -120,6 +121,17 @@ export default function FaqPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-36 md:pt-44 pb-12 md:pb-16 px-6 md:px-12 lg:px-24 border-b border-[#E4E4E7]">
         <div className="relative z-10 max-w-4xl mx-auto text-center space-y-6">
+          {/* Wayfinding Breadcrumbs */}
+          <div className="flex justify-center">
+            <Breadcrumbs
+              items={[
+                { label: "Home", href: "/" },
+                { label: "Support & Research Hub", href: "/faq" },
+                { label: "Frequently Asked Questions" },
+              ]}
+            />
+          </div>
+
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E4E4E7] shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-[#894EF2] animate-pulse" />
             <span className="text-[11px] font-semibold tracking-wider text-[#894EF2] uppercase">

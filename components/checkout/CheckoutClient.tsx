@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import { useForm } from "react-hook-form";
@@ -8,7 +10,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import { ArrowLeft, Loader2, Lock, Tag, Truck, X } from "lucide-react";
+import { ArrowLeft, Loader2, Lock, Tag, Truck, X, ShieldCheck, Check } from "lucide-react";
 
 import { useCartStore, useCartSubtotal } from "@/lib/cart/store";
 import { DEFAULT_COUNTRY } from "@/lib/shipping/constants";
@@ -22,6 +24,7 @@ import {
   type ProcessingFeeOption,
   type ShippingMethodOption,
 } from "@/app/checkout/actions";
+import { safeProductImageUrl } from "@/lib/products/productImage";
 import StripeCheckoutForm from "@/components/checkout/StripeCheckoutForm";
 import Footer from "@/components/Footer";
 
@@ -38,10 +41,6 @@ const addressSchema = z.object({
   country: z.string().min(1, "Country is required"),
 });
 
-// Unlike addressSchema.partial(), this doesn't re-run the min(1) checks on omitted
-// fields — those default to "" (not undefined) when "same as shipping" is checked,
-// and .partial() only skips validation for undefined, not for a present empty string.
-// Actual required-ness when billing differs from shipping is enforced in superRefine below.
 const billingAddressSchema = z.object({
   line1: z.string().optional(),
   line2: z.string().optional(),
@@ -85,18 +84,10 @@ const checkoutSchema = z
 type CheckoutFormValues = z.infer<typeof checkoutSchema>;
 
 const PAYMENT_METHODS: Array<{ value: PaymentMethodOption; label: string; description: string }> = [
-  { value: "zelle", label: "Zelle", description: "Order held pending payment confirmation" },
-  { value: "venmo", label: "Venmo", description: "Order held pending payment confirmation" },
-  { value: "cashapp", label: "Cash App", description: "Order held pending payment confirmation" },
-  // Credit/Debit Card (Stripe), American Express, and CircoFlows are hidden for now —
-  // re-add entries here once those payment methods are ready to go live.
+  { value: "zelle", label: "Zelle", description: "Direct payment with instant confirmation" },
+  { value: "venmo", label: "Venmo", description: "Quick mobile transfer to laboratory dispatch" },
+  { value: "cashapp", label: "Cash App", description: "Secure $Cashtag transfer" },
 ];
-
-const inputClass =
-  "font-inter w-full bg-gray-50 border border-black/10 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/50 transition-colors";
-const labelClass = "text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-1.5 block";
-const errorClass = "text-xs text-red-500 mt-1";
-const cardClass = "bg-white border border-black/5 rounded-2xl p-6 shadow-sm";
 
 export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () => void }) {
   const router = useRouter();
@@ -160,7 +151,6 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
   const billingSameAsShipping = watch("billingSameAsShipping");
   const shippingCountry = watch("shippingAddress.country") || DEFAULT_COUNTRY;
 
-  // Fetch shipping methods whenever destination country or subtotal changes.
   useEffect(() => {
     let cancelled = false;
     setIsLoadingShipping(true);
@@ -182,10 +172,8 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
     return () => {
       cancelled = true;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shippingCountry, subtotal]);
 
-  // Fetch processing fees once on mount.
   useEffect(() => {
     getActiveProcessingFees()
       .then(setFees)
@@ -293,7 +281,6 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
       const orderInput = buildOrderInput(formData);
       const result = await createPayloadOrder({ ...orderInput, paymentMethod });
       if (!result.ok) {
-        // Refused before anything was created or reserved, so the customer can safely adjust and retry.
         setSubmitError(result.message);
         setIsSubmitting(false);
         return;
@@ -322,235 +309,353 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
     setStep("payment");
   });
 
+  // Stripe Payment Step
   if (step === "payment" && paymentMethod === "stripe" && pendingOrderInput) {
     if (!stripePromise) {
       return (
-        <div className="min-h-screen bg-[#FAFAFA] text-gray-900 flex items-center justify-center px-4 pt-24">
-          <div className={cardClass + " max-w-md text-center"}>
-            <p className="text-sm text-gray-500">
+        <div className="min-h-screen bg-[#F8F8F9] text-neutral-900 flex items-center justify-center px-4 pt-24">
+          <div className="bg-white border border-neutral-200 p-8 max-w-md text-center shadow-xs">
+            <p className="text-sm text-neutral-600">
               Stripe is not configured. Please set NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY.
             </p>
           </div>
-
           <Footer />
         </div>
       );
     }
 
     return (
-      <div className="min-h-screen bg-[#FAFAFA] text-gray-900">
-        <div className="px-4 pt-28 pb-10 md:px-8 md:pt-36 lg:px-12">
-          <div className="max-w-2xl mx-auto flex flex-col gap-6">
-            <button
-              onClick={() => setStep("details")}
-              className="w-fit flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:text-gray-900 transition-colors bg-black/5 border border-black/10 px-4 py-2 rounded-full"
+      <div className="min-h-screen bg-[#F8F8F9] text-neutral-900">
+        <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-28 pb-16 max-w-4xl mx-auto">
+          <button
+            onClick={() => setStep("details")}
+            className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-neutral-500 hover:text-neutral-900 transition-colors mb-6"
+          >
+            <ArrowLeft className="w-3.5 h-3.5" />
+            Back to Checkout Details
+          </button>
+
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tight text-neutral-900 mb-8">
+            PAYMENT
+          </h1>
+
+          <div className="bg-white border border-neutral-200 p-6 sm:p-10 shadow-xs">
+            <Elements
+              stripe={stripePromise}
+              options={{
+                mode: "payment",
+                amount: Math.max(50, Math.round(total * 100)),
+                currency: "usd",
+                appearance: { theme: "stripe" },
+              }}
             >
-              <ArrowLeft className="w-3.5 h-3.5" />
-              Back
-            </button>
-
-            <h1 className="text-2xl md:text-3xl font-inter uppercase font-bold tracking-wider">
-              Payment
-            </h1>
-
-            <div className={cardClass}>
-              <Elements
-                stripe={stripePromise}
-                options={{
-                  mode: "payment",
-                  amount: Math.max(50, Math.round(total * 100)),
-                  currency: "usd",
-                  appearance: { theme: "stripe" },
-                }}
-              >
-                <StripeCheckoutForm amount={total} orderInput={pendingOrderInput} onOrderPlaced={onOrderPlaced} />
-              </Elements>
-            </div>
+              <StripeCheckoutForm amount={total} orderInput={pendingOrderInput} onOrderPlaced={onOrderPlaced} />
+            </Elements>
           </div>
         </div>
-
         <Footer />
       </div>
     );
   }
 
+  const itemCount = items.reduce((s, i) => s + i.quantity, 0);
+
   return (
-    <div className="min-h-screen bg-[#FAFAFA] text-gray-900">
-      <div className="px-4 pt-28 pb-10 md:px-8 md:pt-36 lg:px-12">
-      <div className="max-w-6xl mx-auto flex flex-col gap-8">
-        <h1 className="text-2xl md:text-4xl font-inter uppercase font-bold tracking-wider">
-          Secure Checkout
-        </h1>
+    <div className="min-h-screen bg-[#F8F8F9] text-neutral-900 antialiased">
+      <div className="px-4 sm:px-8 md:px-12 lg:px-16 pt-28 sm:pt-32 md:pt-36 pb-20 max-w-7xl mx-auto">
+        {/* EDITORIAL HEADER — Matches Reference Layout */}
+        <div className="mb-8 sm:mb-12">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-neutral-900">
+            CHECKOUT
+          </h1>
+        </div>
 
         <form
           onSubmit={onContinueToPayment}
-          className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-8 items-start"
+          className="grid grid-cols-1 lg:grid-cols-[1fr_420px] xl:grid-cols-[1fr_460px] gap-10 lg:gap-14 items-start"
         >
-          <div className="flex flex-col gap-6">
-            {/* Contact + shipping address */}
-            <section className={cardClass}>
-              <h2 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-5 border-b border-black/10 pb-4">
-                Contact &amp; Shipping
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="md:col-span-2">
-                  <label className={labelClass}>Email</label>
-                  <input className={inputClass} type="email" placeholder="you@example.com" {...register("guestEmail")} />
-                  {errors.guestEmail && <p className={errorClass}>{errors.guestEmail.message}</p>}
+          {/* ========================================================================= */}
+          {/* LEFT COLUMN: INFORMATION, DELIVERY & PAYMENT                              */}
+          {/* ========================================================================= */}
+          <div className="flex flex-col gap-10 sm:gap-12">
+            {/* 1. INFORMATION SECTION */}
+            <section>
+              <div className="flex items-baseline justify-between border-b border-neutral-200 pb-3 mb-6">
+                <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900">
+                  Information
+                </h2>
+                {!session && (
+                  <Link
+                    href="/login?callbackUrl=/checkout"
+                    className="text-xs text-neutral-500 hover:text-neutral-900 transition-colors"
+                  >
+                    Already have an account? <span className="underline font-medium text-neutral-900">Log in</span>
+                  </Link>
+                )}
+              </div>
+
+              {/* Personal Information */}
+              <div className="mb-8">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-4">
+                  Personal Information
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="First name"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("firstName")}
+                    />
+                    {errors.firstName && (
+                      <p className="text-xs text-red-600 mt-1">{errors.firstName.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Last name"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("lastName")}
+                    />
+                    {errors.lastName && (
+                      <p className="text-xs text-red-600 mt-1">{errors.lastName.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="tel"
+                      placeholder="Phone number"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("phone")}
+                    />
+                    {errors.phone && (
+                      <p className="text-xs text-red-600 mt-1">{errors.phone.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("guestEmail")}
+                    />
+                    {errors.guestEmail && (
+                      <p className="text-xs text-red-600 mt-1">{errors.guestEmail.message}</p>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  <label className={labelClass}>First Name</label>
-                  <input className={inputClass} {...register("firstName")} />
-                  {errors.firstName && <p className={errorClass}>{errors.firstName.message}</p>}
+              </div>
+
+              {/* Shipping Information */}
+              <div>
+                <h3 className="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-4">
+                  Shipping Information
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Country / Region"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("shippingAddress.country")}
+                    />
+                    {errors.shippingAddress?.country && (
+                      <p className="text-xs text-red-600 mt-1">{errors.shippingAddress.country.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="City"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("shippingAddress.city")}
+                    />
+                    {errors.shippingAddress?.city && (
+                      <p className="text-xs text-red-600 mt-1">{errors.shippingAddress.city.message}</p>
+                    )}
+                  </div>
+
+                  <div className="sm:col-span-2">
+                    <input
+                      type="text"
+                      placeholder="Address line 1"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("shippingAddress.line1")}
+                    />
+                    {errors.shippingAddress?.line1 && (
+                      <p className="text-xs text-red-600 mt-1">{errors.shippingAddress.line1.message}</p>
+                    )}
+                  </div>
+
+                  <div className="sm:col-span-2">
+                    <input
+                      type="text"
+                      placeholder="Apartment, suite, unit (optional)"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("shippingAddress.line2")}
+                    />
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="State / Province"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("shippingAddress.state")}
+                    />
+                    {errors.shippingAddress?.state && (
+                      <p className="text-xs text-red-600 mt-1">{errors.shippingAddress.state.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Zip / Postal code"
+                      className="w-full bg-transparent border-b border-neutral-300 py-2.5 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 transition-colors"
+                      {...register("shippingAddress.postalCode")}
+                    />
+                    {errors.shippingAddress?.postalCode && (
+                      <p className="text-xs text-red-600 mt-1">{errors.shippingAddress.postalCode.message}</p>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  <label className={labelClass}>Last Name</label>
-                  <input className={inputClass} {...register("lastName")} />
-                  {errors.lastName && <p className={errorClass}>{errors.lastName.message}</p>}
+
+                {/* Billing address checkbox */}
+                <div className="mt-5 pt-3">
+                  <label className="inline-flex items-center gap-2.5 text-xs text-neutral-600 cursor-pointer select-none">
+                    <input
+                      type="checkbox"
+                      className="w-4 h-4 rounded border-neutral-300 text-neutral-900 accent-neutral-900"
+                      {...register("billingSameAsShipping")}
+                    />
+                    <span>Billing address same as shipping</span>
+                  </label>
                 </div>
-                <div>
-                  <label className={labelClass}>Phone</label>
-                  <input className={inputClass} type="tel" placeholder="+1 555 555 5555" {...register("phone")} />
-                  {errors.phone && <p className={errorClass}>{errors.phone.message}</p>}
-                </div>
-                <div>
-                  <label className={labelClass}>Country</label>
-                  <input className={inputClass} {...register("shippingAddress.country")} />
-                  {errors.shippingAddress?.country && (
-                    <p className={errorClass}>{errors.shippingAddress.country.message}</p>
-                  )}
-                </div>
-                <div className="md:col-span-2">
-                  <label className={labelClass}>Address Line 1</label>
-                  <input className={inputClass} {...register("shippingAddress.line1")} />
-                  {errors.shippingAddress?.line1 && (
-                    <p className={errorClass}>{errors.shippingAddress.line1.message}</p>
-                  )}
-                </div>
-                <div className="md:col-span-2">
-                  <label className={labelClass}>Address Line 2 (optional)</label>
-                  <input className={inputClass} {...register("shippingAddress.line2")} />
-                </div>
-                <div>
-                  <label className={labelClass}>City</label>
-                  <input className={inputClass} {...register("shippingAddress.city")} />
-                  {errors.shippingAddress?.city && (
-                    <p className={errorClass}>{errors.shippingAddress.city.message}</p>
-                  )}
-                </div>
-                <div>
-                  <label className={labelClass}>State</label>
-                  <input className={inputClass} {...register("shippingAddress.state")} />
-                  {errors.shippingAddress?.state && (
-                    <p className={errorClass}>{errors.shippingAddress.state.message}</p>
-                  )}
-                </div>
-                <div>
-                  <label className={labelClass}>ZIP / Postal Code</label>
-                  <input className={inputClass} {...register("shippingAddress.postalCode")} />
-                  {errors.shippingAddress?.postalCode && (
-                    <p className={errorClass}>{errors.shippingAddress.postalCode.message}</p>
-                  )}
-                </div>
+
+                {/* Billing Address Details if unchecked */}
+                {!billingSameAsShipping && (
+                  <div className="mt-6 p-5 border border-neutral-200 bg-white">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-neutral-900 mb-4">
+                      Billing Address
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
+                      <div className="sm:col-span-2">
+                        <input
+                          type="text"
+                          placeholder="Billing address"
+                          className="w-full bg-transparent border-b border-neutral-300 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900"
+                          {...register("billingAddress.line1")}
+                        />
+                        {errors.billingAddress?.line1 && (
+                          <p className="text-xs text-red-600 mt-1">{errors.billingAddress.line1.message}</p>
+                        )}
+                      </div>
+                      <div className="sm:col-span-2">
+                        <input
+                          type="text"
+                          placeholder="Apartment, suite (optional)"
+                          className="w-full bg-transparent border-b border-neutral-300 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900"
+                          {...register("billingAddress.line2")}
+                        />
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          placeholder="City"
+                          className="w-full bg-transparent border-b border-neutral-300 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900"
+                          {...register("billingAddress.city")}
+                        />
+                        {errors.billingAddress?.city && (
+                          <p className="text-xs text-red-600 mt-1">{errors.billingAddress.city.message}</p>
+                        )}
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          placeholder="State"
+                          className="w-full bg-transparent border-b border-neutral-300 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900"
+                          {...register("billingAddress.state")}
+                        />
+                        {errors.billingAddress?.state && (
+                          <p className="text-xs text-red-600 mt-1">{errors.billingAddress.state.message}</p>
+                        )}
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          placeholder="ZIP / Postal code"
+                          className="w-full bg-transparent border-b border-neutral-300 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900"
+                          {...register("billingAddress.postalCode")}
+                        />
+                        {errors.billingAddress?.postalCode && (
+                          <p className="text-xs text-red-600 mt-1">{errors.billingAddress.postalCode.message}</p>
+                        )}
+                      </div>
+                      <div>
+                        <input
+                          type="text"
+                          placeholder="Country"
+                          className="w-full bg-transparent border-b border-neutral-300 py-2 text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900"
+                          {...register("billingAddress.country")}
+                        />
+                        {errors.billingAddress?.country && (
+                          <p className="text-xs text-red-600 mt-1">{errors.billingAddress.country.message}</p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
             </section>
 
-            {/* Billing address */}
-            <section className={cardClass}>
-              <h2 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-5 border-b border-black/10 pb-4">
-                Billing Address
+            {/* 2. DELIVERY SECTION — Clean Linoge Minimalist Radio Rows */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900 mb-4 pb-2 border-b border-neutral-200">
+                Delivery
               </h2>
-              <label className="flex items-center gap-2 text-sm text-gray-600 mb-4 cursor-pointer">
-                <input type="checkbox" className="accent-indigo-500" {...register("billingSameAsShipping")} />
-                Same as shipping address
-              </label>
-              {!billingSameAsShipping && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="md:col-span-2">
-                    <label className={labelClass}>Address Line 1</label>
-                    <input className={inputClass} {...register("billingAddress.line1")} />
-                    {errors.billingAddress?.line1 && (
-                      <p className={errorClass}>{errors.billingAddress.line1.message}</p>
-                    )}
-                  </div>
-                  <div className="md:col-span-2">
-                    <label className={labelClass}>Address Line 2 (optional)</label>
-                    <input className={inputClass} {...register("billingAddress.line2")} />
-                  </div>
-                  <div>
-                    <label className={labelClass}>City</label>
-                    <input className={inputClass} {...register("billingAddress.city")} />
-                    {errors.billingAddress?.city && (
-                      <p className={errorClass}>{errors.billingAddress.city.message}</p>
-                    )}
-                  </div>
-                  <div>
-                    <label className={labelClass}>State</label>
-                    <input className={inputClass} {...register("billingAddress.state")} />
-                    {errors.billingAddress?.state && (
-                      <p className={errorClass}>{errors.billingAddress.state.message}</p>
-                    )}
-                  </div>
-                  <div>
-                    <label className={labelClass}>ZIP / Postal Code</label>
-                    <input className={inputClass} {...register("billingAddress.postalCode")} />
-                    {errors.billingAddress?.postalCode && (
-                      <p className={errorClass}>{errors.billingAddress.postalCode.message}</p>
-                    )}
-                  </div>
-                  <div>
-                    <label className={labelClass}>Country</label>
-                    <input className={inputClass} {...register("billingAddress.country")} />
-                    {errors.billingAddress?.country && (
-                      <p className={errorClass}>{errors.billingAddress.country.message}</p>
-                    )}
-                  </div>
-                </div>
-              )}
-            </section>
 
-            {/* Shipping method */}
-            <section className={cardClass}>
-              <h2 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-5 border-b border-black/10 pb-4 flex items-center gap-2">
-                <Truck className="w-4 h-4" />
-                Shipping Method
-              </h2>
               {isLoadingShipping ? (
-                <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <Loader2 className="w-4 h-4 animate-spin" />
-                  Loading shipping options…
+                <div className="flex items-center gap-2 py-4 text-xs text-neutral-500">
+                  <Loader2 className="w-4 h-4 animate-spin text-neutral-700" />
+                  Calculating courier options…
                 </div>
               ) : (
-                <div className="flex flex-col gap-3">
+                <div className="divide-y divide-neutral-200 border-b border-neutral-200">
                   {shippingMethods.map((method) => {
                     const isFree = appliedCoupon?.freeShipping && !method.isInternational;
                     const displayPrice = isFree ? 0 : method.price;
+                    const isSelected = selectedMethodName === method.method;
                     return (
                       <label
                         key={method.method}
-                        className={`flex items-center justify-between gap-4 border rounded-xl px-4 py-3 cursor-pointer transition-colors ${
-                          selectedMethodName === method.method
-                            ? "border-indigo-500 bg-indigo-500/10"
-                            : "border-black/10 hover:border-black/20"
-                        }`}
+                        className="flex items-center justify-between py-3.5 cursor-pointer group select-none"
                       >
                         <div className="flex items-center gap-3">
                           <input
                             type="radio"
-                            className="accent-indigo-500"
-                            checked={selectedMethodName === method.method}
+                            name="shippingMethodOption"
+                            className="w-4 h-4 accent-neutral-900 cursor-pointer"
+                            checked={isSelected}
                             onChange={() => setSelectedMethodName(method.method)}
                           />
                           <div>
-                            <p className="text-sm text-gray-900">{method.method}</p>
+                            <span className={`text-sm tracking-tight ${isSelected ? "font-bold text-neutral-900" : "font-normal text-neutral-800"}`}>
+                              {method.method}
+                            </span>
                             {method.estimatedDays && (
-                              <p className="text-xs text-gray-500">
-                                Est. {method.estimatedDays} day{method.estimatedDays === 1 ? "" : "s"}
+                              <p className="text-[11px] text-neutral-400">
+                                Delivery within {method.estimatedDays} business day{method.estimatedDays === 1 ? "" : "s"}
                               </p>
                             )}
                           </div>
                         </div>
-                        <span className="text-sm font-light text-gray-900">
+                        <span className="text-xs font-semibold text-neutral-900">
                           {displayPrice === 0 ? "Free" : `$${displayPrice.toFixed(2)}`}
                         </span>
                       </label>
@@ -560,61 +665,25 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
               )}
             </section>
 
-            {/* Coupon */}
-            <section className={cardClass}>
-              <h2 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-5 border-b border-black/10 pb-4 flex items-center gap-2">
-                <Tag className="w-4 h-4" />
-                Coupon Code
-              </h2>
-              {appliedCoupon ? (
-                <div className="flex items-center justify-between bg-emerald-500/10 border border-emerald-500/20 rounded-xl px-4 py-3">
-                  <span className="text-sm text-emerald-700">
-                    {appliedCoupon.code} applied — ${appliedCoupon.discount.toFixed(2)} off
-                  </span>
-                  <button type="button" onClick={handleRemoveCoupon} className="text-emerald-700 hover:text-emerald-900">
-                    <X className="w-4 h-4" />
-                  </button>
-                </div>
-              ) : (
-                <div className="flex gap-3">
-                  <input
-                    className={inputClass}
-                    placeholder="Enter code"
-                    value={couponInput}
-                    onChange={(e) => setCouponInput(e.target.value)}
-                  />
-                  <button
-                    type="button"
-                    onClick={handleApplyCoupon}
-                    disabled={isVerifyingCoupon}
-                    className="px-5 py-3 rounded-lg bg-gray-900 hover:bg-gray-700 border border-black/10 text-sm font-medium text-white whitespace-nowrap transition-colors disabled:opacity-50"
-                  >
-                    {isVerifyingCoupon ? "Checking…" : "Apply"}
-                  </button>
-                </div>
-              )}
-              {couponError && <p className={errorClass}>{couponError}</p>}
-            </section>
-
-            {/* Optional processing fees */}
+            {/* 3. OPTIONAL ADD-ONS (IF CONFIGURED) */}
             {optionalFees.length > 0 && (
-              <section className={cardClass}>
-                <h2 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-5 border-b border-black/10 pb-4">
-                  Optional Add-ons
+              <section>
+                <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900 mb-4 pb-2 border-b border-neutral-200">
+                  Laboratory Add-ons
                 </h2>
-                <div className="flex flex-col gap-3">
+                <div className="divide-y divide-neutral-200 border-b border-neutral-200">
                   {optionalFees.map((fee) => (
-                    <label key={fee.id} className="flex items-center justify-between gap-4 cursor-pointer">
-                      <span className="flex items-center gap-3 text-sm text-gray-600">
+                    <label key={fee.id} className="flex items-center justify-between py-3 cursor-pointer group select-none">
+                      <span className="flex items-center gap-3 text-sm text-neutral-800">
                         <input
                           type="checkbox"
-                          className="accent-indigo-500"
+                          className="w-4 h-4 rounded accent-neutral-900 cursor-pointer"
                           checked={selectedFeeIds.includes(fee.id)}
                           onChange={() => toggleOptionalFee(fee.id)}
                         />
                         {fee.name}
                       </span>
-                      <span className="text-sm text-gray-900">
+                      <span className="text-xs font-semibold text-neutral-900">
                         {fee.type === "percentage" ? `${fee.amount}%` : `$${fee.amount.toFixed(2)}`}
                       </span>
                     </label>
@@ -623,106 +692,210 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
               </section>
             )}
 
-            {/* Payment method */}
-            <section className={cardClass}>
-              <h2 className="text-xs font-bold uppercase tracking-widest text-gray-900 mb-5 border-b border-black/10 pb-4 flex items-center gap-2">
-                <Lock className="w-4 h-4" />
-                Payment Method
+            {/* 4. PAYMENT SECTION — Minimalist Radio Rows with Badges */}
+            <section>
+              <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900 mb-4 pb-2 border-b border-neutral-200">
+                Payment
               </h2>
-              <div className="flex flex-col gap-3">
-                {PAYMENT_METHODS.map((pm) => (
-                  <label
-                    key={pm.value}
-                    className={`flex items-center justify-between gap-4 border rounded-xl px-4 py-3 cursor-pointer transition-colors ${
-                      paymentMethod === pm.value
-                        ? "border-indigo-500 bg-indigo-500/10"
-                        : "border-black/10 hover:border-black/20"
-                    }`}
-                  >
-                    <div className="flex items-center gap-3">
-                      <input
-                        type="radio"
-                        className="accent-indigo-500"
-                        checked={paymentMethod === pm.value}
-                        onChange={() => setPaymentMethod(pm.value)}
-                      />
-                      <div>
-                        <p className="text-sm text-gray-900">{pm.label}</p>
-                        <p className="text-xs text-gray-500">{pm.description}</p>
+
+              <div className="divide-y divide-neutral-200 border-b border-neutral-200 mb-6">
+                {PAYMENT_METHODS.map((pm) => {
+                  const isSelected = paymentMethod === pm.value;
+                  return (
+                    <label
+                      key={pm.value}
+                      className="flex items-center justify-between py-4 cursor-pointer group select-none"
+                    >
+                      <div className="flex items-center gap-3">
+                        <input
+                          type="radio"
+                          name="paymentMethodSelection"
+                          className="w-4 h-4 accent-neutral-900 cursor-pointer"
+                          checked={isSelected}
+                          onChange={() => setPaymentMethod(pm.value)}
+                        />
+                        <div>
+                          <p className={`text-sm ${isSelected ? "font-bold text-neutral-900" : "font-normal text-neutral-800"}`}>
+                            {pm.label}
+                          </p>
+                          <p className="text-[11px] text-neutral-400">
+                            {pm.description}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  </label>
-                ))}
+                      <span className="text-xs uppercase tracking-wider font-bold text-neutral-500">
+                        {pm.label}
+                      </span>
+                    </label>
+                  );
+                })}
               </div>
 
+              {/* Research agreement checkbox */}
+              <div className="mb-6">
+                <label className="flex items-start gap-2.5 text-xs text-neutral-600 cursor-pointer select-none">
+                  <input
+                    type="checkbox"
+                    defaultChecked
+                    required
+                    className="w-4 h-4 mt-0.5 rounded border-neutral-300 text-neutral-900 accent-neutral-900"
+                  />
+                  <span>
+                    I confirm that all items are ordered strictly for laboratory in-vitro research use only (RUO) and agree to data processing policies.
+                  </span>
+                </label>
+              </div>
+
+              {submitError && (
+                <div className="text-xs text-red-600 bg-red-50 border border-red-200 p-3 mb-6">
+                  {submitError}
+                </div>
+              )}
+
+              {/* PAY AND PLACE ORDER BUTTON — Full Width Clean Black (Matches Linoge reference) */}
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="w-full py-4.5 bg-[#121214] hover:bg-black disabled:opacity-50 text-white text-xs sm:text-sm font-bold uppercase tracking-[0.2em] transition-all shadow-md active:scale-98 cursor-pointer"
+              >
+                {isSubmitting
+                  ? "PROCESSING ORDER…"
+                  : paymentMethod === "stripe"
+                  ? "CONTINUE TO PAYMENT"
+                  : "PAY AND PLACE ORDER"}
+              </button>
             </section>
-
-            {submitError && (
-              <div className="text-sm text-red-500 bg-red-500/10 border border-red-500/20 rounded-xl px-4 py-3">
-                {submitError}
-              </div>
-            )}
           </div>
 
-          {/* Order summary */}
-          <div className={cardClass + " lg:sticky lg:top-8 flex flex-col gap-4"}>
-            <h2 className="text-xs font-bold uppercase tracking-widest text-gray-900 border-b border-black/10 pb-4">
-              Order Summary
+          {/* ========================================================================= */}
+          {/* RIGHT COLUMN: SHOPPING BAG (3) & ORDER SUMMARY                             */}
+          {/* ========================================================================= */}
+          <div className="lg:sticky lg:top-28">
+            <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-neutral-900 pb-3 border-b border-neutral-200 mb-4">
+              Shopping Bag ({itemCount})
             </h2>
-            <div className="flex flex-col gap-3 max-h-64 overflow-y-auto pr-1">
+
+            {/* Item List with Dividers & Portrait Thumbnails */}
+            <div className="divide-y divide-neutral-200 border-b border-neutral-200 max-h-[380px] overflow-y-auto pr-1">
               {items.map((line) => (
-                <div key={line.lineId} className="flex justify-between gap-3 text-sm">
-                  <div className="flex flex-col">
-                    <span className="text-gray-900 uppercase font-semibold">{line.product.name}</span>
-                    {line.variantTitle && <span className="text-xs text-gray-500">{line.variantTitle}</span>}
-                    <span className="text-xs text-gray-500">Qty {line.quantity}</span>
+                <div key={line.lineId} className="py-4 flex gap-4 items-center justify-between">
+                  <div className="flex items-center gap-3.5 min-w-0">
+                    <div className="w-14 h-18 sm:w-16 sm:h-20 shrink-0 bg-white border border-neutral-200 overflow-hidden flex items-center justify-center relative">
+                      {line.product.imageUrl ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={safeProductImageUrl(line.product.imageUrl)}
+                          alt={line.product.name}
+                          className="max-h-full max-w-full object-contain p-1"
+                        />
+                      ) : (
+                        <span className="text-[9px] text-neutral-400 font-mono">VIAL</span>
+                      )}
+                    </div>
+
+                    <div className="min-w-0">
+                      <p className="text-xs sm:text-sm font-semibold uppercase text-neutral-900 truncate">
+                        {line.product.name}
+                      </p>
+                      <div className="text-[11px] text-neutral-500 space-y-0.5 mt-0.5">
+                        {line.variantTitle && <p>Size: {line.variantTitle}</p>}
+                        <p>Quantity: {line.quantity}</p>
+                      </div>
+                    </div>
                   </div>
-                  <span className="text-white shrink-0">${(line.priceSnapshot * line.quantity).toFixed(2)}</span>
+
+                  <div className="text-right shrink-0">
+                    <span className="text-xs sm:text-sm font-bold text-neutral-900">
+                      ${(line.priceSnapshot * line.quantity).toFixed(2)}
+                    </span>
+                  </div>
                 </div>
               ))}
             </div>
 
-            <div className="flex flex-col gap-2 border-t border-black/10 pt-4 text-sm">
-              <div className="flex justify-between text-gray-400">
-                <span>Subtotal</span>
-                <span>${subtotal.toFixed(2)}</span>
-              </div>
-              {discount > 0 && (
-                <div className="flex justify-between text-emerald-400">
-                  <span>Discount</span>
-                  <span>-${discount.toFixed(2)}</span>
+            {/* Promocode Input Row */}
+            <div className="py-4 border-b border-neutral-200">
+              {appliedCoupon ? (
+                <div className="flex items-center justify-between bg-neutral-100 px-3 py-2 text-xs">
+                  <span className="text-neutral-800 font-medium">
+                    Code <strong className="font-bold">{appliedCoupon.code}</strong> applied (-${appliedCoupon.discount.toFixed(2)})
+                  </span>
+                  <button
+                    type="button"
+                    onClick={handleRemoveCoupon}
+                    className="text-neutral-500 hover:text-neutral-900 ml-2"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              ) : (
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    placeholder="Promocode"
+                    value={couponInput}
+                    onChange={(e) => setCouponInput(e.target.value)}
+                    className="flex-1 bg-transparent border border-neutral-300 px-3 py-2 text-xs text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900"
+                  />
+                  <button
+                    type="button"
+                    onClick={handleApplyCoupon}
+                    disabled={isVerifyingCoupon}
+                    className="px-5 py-2 bg-neutral-200 hover:bg-neutral-300 disabled:opacity-50 text-neutral-900 text-xs font-bold uppercase tracking-wider transition-colors shrink-0"
+                  >
+                    {isVerifyingCoupon ? "…" : "APPLY"}
+                  </button>
                 </div>
               )}
-              <div className="flex justify-between text-gray-400">
-                <span>Shipping</span>
-                <span>{shippingCost === 0 ? "Free" : `$${shippingCost.toFixed(2)}`}</span>
-              </div>
-              {feeTotal > 0 && (
-                <div className="flex justify-between text-gray-400">
-                  <span>Fees</span>
-                  <span>${feeTotal.toFixed(2)}</span>
-                </div>
-              )}
-              <div className="flex justify-between items-center pt-3 mt-1 border-t border-black/10 text-gray-900 font-medium">
-                <span className="text-sm">Total</span>
-                <span className="text-2xl font-light">${total.toFixed(2)}</span>
-              </div>
+              {couponError && <p className="text-xs text-red-600 mt-1">{couponError}</p>}
             </div>
 
-            <button
-              type="submit"
-              disabled={isSubmitting}
-              className="w-full h-14 rounded-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed text-white text-sm font-bold uppercase tracking-widest transition-all mt-2"
-            >
-              {isSubmitting
-                ? "Placing Order…"
-                : paymentMethod === "stripe"
-                ? "Continue to Payment"
-                : "Place Order"}
-            </button>
+            {/* Cost Breakdown */}
+            <div className="py-4 space-y-2.5 text-xs text-neutral-600 border-b border-neutral-200">
+              <div className="flex justify-between">
+                <span>Shipping</span>
+                <span className="text-neutral-900 font-medium">
+                  {shippingCost === 0 ? "Free" : `$${shippingCost.toFixed(2)}`}
+                </span>
+              </div>
+
+              {discount > 0 && (
+                <div className="flex justify-between text-emerald-700">
+                  <span>Discount</span>
+                  <span className="font-medium">-${discount.toFixed(2)}</span>
+                </div>
+              )}
+
+              {feeTotal > 0 && (
+                <div className="flex justify-between">
+                  <span>Processing / Fees</span>
+                  <span className="text-neutral-900 font-medium">${feeTotal.toFixed(2)}</span>
+                </div>
+              )}
+            </div>
+
+            {/* Total Row */}
+            <div className="pt-4 flex items-baseline justify-between text-neutral-900">
+              <span className="text-sm font-semibold uppercase tracking-wider">Total:</span>
+              <span className="text-2xl sm:text-3xl font-light tracking-tight">
+                ${total.toFixed(2)}
+              </span>
+            </div>
+
+            {/* Trust Assurance Bar */}
+            <div className="mt-6 pt-4 border-t border-neutral-200 flex items-center justify-between text-[10px] text-neutral-400">
+              <span className="flex items-center gap-1">
+                <Lock className="w-3 h-3 text-neutral-600" /> Encrypted Checkout
+              </span>
+              <span>•</span>
+              <span className="flex items-center gap-1">
+                <ShieldCheck className="w-3 h-3 text-neutral-600" /> RUO Verified
+              </span>
+              <span>•</span>
+              <span>Cold-Chain Transit</span>
+            </div>
           </div>
         </form>
-      </div>
       </div>
 
       <Footer />

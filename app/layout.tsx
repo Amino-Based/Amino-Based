@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
-import { Syncopate, Michroma, Inter, Cormorant_Garamond } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Syncopate, Michroma, Open_Sans, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import CartDrawer from "@/components/cart/CartDrawer";
 import SessionProvider from "@/components/providers/SessionProvider";
@@ -9,6 +9,7 @@ import HeaderVisibility from "@/components/nav/HeaderVisibility";
 import SmoothScrollProvider from "@/components/providers/SmoothScrollProvider";
 import Analytics from "@/components/Analytics";
 import AdminOverflowFix from "@/components/admin/AdminOverflowFix";
+import SitePreloader from "@/components/preloader/SitePreloader";
 import { siteUrl } from "@/lib/siteUrl";
 
 const futuristicFont = Syncopate({
@@ -23,9 +24,10 @@ const michromaFont = Michroma({
   variable: "--font-michroma",
 });
 
-const interFont = Inter({
+const openSansFont = Open_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-opensans",
 });
 
 const cormorantFont = Cormorant_Garamond({
@@ -41,6 +43,15 @@ const cormorantFont = Cormorant_Garamond({
 // without it, a self-hosted launch would be silently noindexed.
 const isIndexable =
   process.env.VERCEL_ENV === "production" || process.env.SITE_INDEXABLE === "true";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: "#000000",
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -59,10 +70,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
+      </head>
       <body
         suppressHydrationWarning
-        className={`${futuristicFont.variable} ${michromaFont.variable} ${interFont.variable} ${cormorantFont.variable} font-inter antialiased bg-black text-white`}
+        className={`${futuristicFont.variable} ${michromaFont.variable} ${openSansFont.variable} ${cormorantFont.variable} font-opensans antialiased bg-black text-white`}
       >
+        <SitePreloader />
         <Analytics />
         <AdminOverflowFix />
         <SmoothScrollProvider>

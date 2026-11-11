@@ -92,7 +92,7 @@ export default function StripeCheckoutForm({ amount, orderInput, onOrderPlaced }
       <PaymentElement options={{ layout: "tabs" }} />
 
       {error && (
-        <div className="text-sm text-red-500 bg-red-500/10 border border-red-500/20 rounded-xl px-4 py-3">
+        <div className="text-xs text-red-600 bg-red-50 border border-red-200 p-3">
           {error}
         </div>
       )}
@@ -100,9 +100,9 @@ export default function StripeCheckoutForm({ amount, orderInput, onOrderPlaced }
       <button
         type="submit"
         disabled={!stripe || !elements || isProcessing}
-        className="w-full h-14 rounded-full bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed text-white text-sm font-bold uppercase tracking-widest transition-all"
+        className="w-full py-4.5 bg-[#121214] hover:bg-black disabled:opacity-50 text-white text-xs sm:text-sm font-bold uppercase tracking-[0.2em] transition-all shadow-md active:scale-98 cursor-pointer"
       >
-        {isProcessing ? "Processing…" : `Pay $${amount.toFixed(2)}`}
+        {isProcessing ? "PROCESSING PAYMENT…" : `PAY AND PLACE ORDER — $${amount.toFixed(2)}`}
       </button>
     </form>
   );

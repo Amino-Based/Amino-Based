@@ -2,6 +2,19 @@ import { withPayload } from '@payloadcms/next/withPayload'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Allow local mobile testing via LAN IP (prevents Next.js blocking dev HMR from phone)
+  allowedDevOrigins: [
+    'localhost:3000',
+    '127.0.0.1:3000',
+    '10.*',
+    '10.236.32.224',
+    '10.236.32.224:3000',
+    '192.168.1.*',
+    '192.168.1.8',
+    '192.168.1.8:3000',
+    '192.168.1.3',
+    '192.168.1.3:3000',
+  ],
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: '**' },
@@ -24,6 +37,31 @@ const nextConfig = {
         source: '/calc',
         destination: '/peptide-calculator',
         permanent: false,
+      },
+      {
+        source: '/terms-of-service',
+        destination: '/terms-and-conditions',
+        permanent: true,
+      },
+      {
+        source: '/terms',
+        destination: '/terms-and-conditions',
+        permanent: true,
+      },
+      {
+        source: '/privacy',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/refunds',
+        destination: '/refund-policy',
+        permanent: true,
+      },
+      {
+        source: '/shipping',
+        destination: '/shipping-policy',
+        permanent: true,
       },
     ]
   },

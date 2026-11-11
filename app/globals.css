@@ -8,15 +8,21 @@
 }
 
 html {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
-  max-width: 100vw;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .no-scrollbar {
@@ -46,6 +52,53 @@ body {
   -webkit-text-stroke: 1px #71717a;
   color: transparent;
 }
+
+/* Organic subtle floating frequency animations for product cards */
+@keyframes floatSubtle0 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-7px); }
+}
+@keyframes floatSubtle1 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(6px); }
+}
+@keyframes floatSubtle2 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+@keyframes floatSubtle3 {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(7px); }
+}
+
+.float-card-0 {
+  animation: floatSubtle0 4.2s ease-in-out infinite;
+  will-change: transform;
+}
+.float-card-1 {
+  animation: floatSubtle1 4.8s ease-in-out infinite 0.6s;
+  will-change: transform;
+}
+.float-card-2 {
+  animation: floatSubtle2 4.4s ease-in-out infinite 1.2s;
+  will-change: transform;
+}
+.float-card-3 {
+  animation: floatSubtle3 5.0s ease-in-out infinite 1.8s;
+  will-change: transform;
+}
+
+/* Dark glass input autofill styling */
+.dark-glass-input:-webkit-autofill,
+.dark-glass-input:-webkit-autofill:hover,
+.dark-glass-input:-webkit-autofill:focus,
+.dark-glass-input:-webkit-autofill:active {
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(22, 26, 28, 0.95) inset !important;
+  box-shadow: 0 0 0px 1000px rgba(22, 26, 28, 0.95) inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 
 /* Payload admin (/pb-console): its `.collection-list .table` rule sets
    `max-width: unset` plus a negative-margin full-bleed width, meant for desktop

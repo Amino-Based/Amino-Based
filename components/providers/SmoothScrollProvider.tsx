@@ -45,9 +45,27 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
       return;
     }
 
-    // Accessibility: if user has prefers-reduced-motion enabled, do NOT initialize Lenis.
+    // Accessibility & Mobile optimization:
+    // 1. If user has prefers-reduced-motion enabled, do NOT initialize Lenis.
     const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (reducedMotionQuery.matches) {
+      if (lenisRef.current) {
+        lenisRef.current.destroy();
+        lenisRef.current = null;
+        window.__lenis = null;
+      }
+      return;
+    }
+
+    // 2. On touch devices and mobile viewports, keep 100% native hardware inertial scrolling.
+    // Lenis is designed for desktop wheel smoothing; running it on mobile can interfere with
+    // touch dragging, address bar collapsing, and touch-lock events.
+    const isTouchDevice =
+      window.matchMedia("(pointer: coarse)").matches ||
+      window.innerWidth < 768 ||
+      "ontouchstart" in window;
+
+    if (isTouchDevice) {
       if (lenisRef.current) {
         lenisRef.current.destroy();
         lenisRef.current = null;
@@ -123,8 +141,9 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
       const isCartOpen = useCartStore.getState().isOpen;
       const isBodyLocked =
         document.body.style.overflow === "hidden" ||
+        document.body.style.overflowY === "hidden" ||
         document.body.classList.contains("overflow-hidden") ||
-        document.documentElement.style.overflow === "hidden";
+        document.documentElement.style.overflowY === "hidden";
 
       if (isCartOpen || isBodyLocked) {
         lenisRef.current.stop();

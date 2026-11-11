@@ -2,6 +2,7 @@ import { getPayload } from "payload";
 import config from "@payload-config";
 import type { BlogPost } from "@/lib/types/blog";
 import { DEFAULT_RESEARCH_BLOGS } from "@/lib/defaultBlogs";
+import { DEFAULT_FAQS } from "@/lib/defaultFaqs";
 import BlogListingClient from "@/components/blog/BlogListingClient";
 import { siteUrl } from "@/lib/siteUrl";
 
@@ -86,6 +87,20 @@ export default async function BlogIndexPage() {
     },
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${siteUrl}/blog#faq`,
+    mainEntity: DEFAULT_FAQS.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <main className="min-h-screen bg-white">
       <script
@@ -95,6 +110,10 @@ export default async function BlogIndexPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <BlogListingClient initialPosts={posts} />

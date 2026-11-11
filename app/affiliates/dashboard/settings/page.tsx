@@ -11,8 +11,10 @@ export default async function AffiliateSettingsPage() {
   if (!affiliate) return null;
 
   return (
-    <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 backdrop-blur-md max-w-2xl">
-      <h2 className="text-sm font-bold tracking-widest text-gray-400 uppercase mb-6">Profile & Payout Settings</h2>
+    <div className="bg-white border border-[#E2E8F0] rounded-[22px] p-6 sm:p-8 shadow-2xs max-w-2xl">
+      <h2 className="text-xs font-bold tracking-wider text-[#071739] uppercase mb-6">
+        Partner Profile &amp; Disbursement Preferences
+      </h2>
       <SettingsForm affiliate={affiliate} />
     </div>
   );

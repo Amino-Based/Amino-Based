@@ -8,36 +8,23 @@ import { useWishlistToggle } from "@/components/wishlist/useWishlistToggle";
 import { useCartStore } from "@/lib/cart/store";
 import {
   getProductDisplayDetails,
-  getMultiVariantConfig,
   type ShopMockProduct,
 } from "@/lib/shopCardProduct";
 import { resolveProductImageUrl } from "@/lib/products/productImage";
 
 export type { ShopMockProduct };
 
-// resolveShelfImage() removed. It bucketed products onto one of five vial photographs by
-// keyword, so a product was routinely shown a vial labelled with a different compound — the
-// "SEMAGLUTIDE 10 mg" vial stood in for Epitalon, DSIP, NAD+, PT-141 and ~60 others. Image
-// selection now lives in lib/products/productImage.ts, which only returns a photograph whose
-// printed label matches this product, and otherwise returns the neutral placeholder.
-
-function formatCategoryLine(category?: string): string {
-  if (!category) return "RESEARCH PEPTIDE";
-  return category
-    .replace(/\s*Research Compounds\s*/i, "")
-    .replace(/\s*Secretagogue\s*/i, "")
-    .replace(/\s*Supplies\s*/i, "")
-    .trim()
-    .toUpperCase();
+interface ShopProductCardProps {
+  product: ShopMockProduct;
+  variant?: "dark" | "light";
+  index?: number;
 }
 
 export default function ShopProductCard({
   product,
-}: {
-  product: ShopMockProduct;
-  variant?: "dark" | "light";
-}) {
-  const [selectedDosage, setSelectedDosage] = useState(
+  index = 0,
+}: ShopProductCardProps) {
+  const [selectedDosage] = useState(
     product.dosageOptions && product.dosageOptions.length > 0
       ? product.dosageOptions[0]
       : "Standard"
@@ -54,19 +41,27 @@ export default function ShopProductCard({
     dbImageUrl: displayDetails.image || product.image,
   });
 
-  // Single price display for the default variant
-  const singlePriceText = `$${displayPrice.toFixed(2)}`;
+  const priceText = `$${displayPrice.toFixed(2)}`;
+  const subtitle =
+    product.description ||
+    (product.category ? `${product.category} formula` : "High-purity research analog");
 
   const {
     isWishlisted,
     isPending: wishlistPending,
     toggle: toggleWishlist,
   } = useWishlistToggle({
-    id: displayDetails.sku,
-    aliases: [displayDetails.sku, product.id, product.slug],
+    id: displayDetails.sku || product.id,
+    aliases: [displayDetails.sku || product.id, product.id, product.slug],
     variantSku: selectedDosage,
     price: displayPrice,
   });
+
+  const handleWishlistClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleWishlist();
+  };
 
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -88,119 +83,99 @@ export default function ShopProductCard({
   };
 
   return (
-    <Link
-      href={`/product/${product.slug}`}
-      className="product-card group relative bg-white rounded-[22px] border border-[#E2E8F0] shadow-2xs hover:shadow-[0_16px_36px_rgba(3,27,78,0.08)] hover:border-[#031B4E]/30 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between overflow-hidden cursor-pointer block"
-    >
-      {/* Top Image Showcase: Clean Laboratory Pedestal Viewport */}
-      <div className="relative w-full aspect-[360/380] bg-gradient-to-b from-[#F8FAFC] via-[#F1F5F9] to-[#E2E8F0]/40 overflow-hidden">
+    <div className={`w-full float-card-${index % 4}`}>
+      <div className="group relative bg-white rounded-[26px] sm:rounded-[28px] p-3 sm:p-3.5 pb-3.5 sm:pb-4 shadow-[0_4px_24px_rgba(0,0,0,0.04)] hover:shadow-[0_14px_34px_rgba(3,27,78,0.08)] border border-neutral-100/80 flex flex-col justify-between overflow-hidden active:scale-[0.98] hover:-translate-y-1 transition-all duration-300 w-full">
+        {/* Full card clickable link (stretched over entire card) */}
+        <Link
+          href={`/product/${product.slug}`}
+          className="absolute inset-0 z-0"
+          aria-label={`View ${product.name}`}
+        />
+
         {/* Top-Left Quality / Status Badge */}
         {product.featured ? (
-          <span className="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 text-[9.5px] font-bold uppercase tracking-widest text-[#071739] bg-white/90 backdrop-blur-md px-2.5 py-1 rounded-full shadow-2xs border border-white/60">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#031B4E] animate-pulse" />
+          <span className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 z-10 inline-flex items-center gap-1 text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-neutral-800 bg-black/5 backdrop-blur-md px-2 py-0.5 rounded-full border border-black/5 pointer-events-none">
+            <span className="w-1.5 h-1.5 rounded-full bg-black animate-pulse" />
             BEST SELLER
           </span>
         ) : product.purity ? (
-          // Shown only when a certificate figure exists. The former hardcoded fallback
-          // badged every uncertified product with both a purity level and a testing method.
-          <span className="absolute top-3 left-3 z-10 inline-flex items-center gap-1 text-[9px] font-bold uppercase tracking-wider text-[#031B4E] bg-white/90 backdrop-blur-md px-2 py-0.5 rounded-md shadow-2xs border border-white/60">
+          <span className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 z-10 inline-flex items-center text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-neutral-700 bg-black/5 backdrop-blur-md px-2 py-0.5 rounded-full border border-black/5 pointer-events-none">
             {product.purity}
           </span>
         ) : null}
 
-        <Image
-          src={displayImage}
-          alt={product.name}
-          fill
-          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          priority={false}
-          className="object-cover group-hover:scale-104 transition-transform duration-500 ease-out"
-        />
-
-        {/* Wishlist Button: Frosted Glass Circle */}
-        <button
-          type="button"
-          disabled={wishlistPending}
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            toggleWishlist();
-          }}
-          aria-pressed={isWishlisted}
-          aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
-          className="absolute top-3 right-3 z-10 w-8.5 h-8.5 rounded-full bg-white/85 hover:bg-white backdrop-blur-md border border-white/70 flex items-center justify-center text-slate-400 hover:text-red-500 shadow-2xs transition-all active:scale-90"
-        >
-          <Heart
-            className={`w-3.5 h-3.5 transition-colors ${
-              isWishlisted ? "fill-red-500 text-red-500" : ""
-            }`}
+        {/* Product Image sitting cleanly on the white card without inner colored borders */}
+        <div className="relative w-full aspect-[1/1.12] sm:aspect-[1/1.15] flex items-center justify-center overflow-hidden rounded-[20px] pointer-events-none">
+          <Image
+            src={displayImage}
+            alt={product.name}
+            fill
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            priority={index < 4}
+            className="object-contain p-1.5 sm:p-2 group-hover:scale-105 transition-transform duration-300"
           />
-        </button>
-      </div>
+        </div>
 
-      {/* Bottom Product Content Body: Non-Generic Swiss Laboratory Architecture */}
-      <div className="p-4 sm:p-5 flex flex-col justify-between flex-1 bg-white">
-        <div className="space-y-1.5">
-          {/* Line 1: Uppercase Category Eyebrow */}
-          <div className="flex items-center justify-between gap-2">
-            <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.16em] text-[#031B4E]/85 truncate">
-              {formatCategoryLine(product.category)}
-            </span>
-            <span className="text-[10px] font-mono text-[#94A3B8] shrink-0 font-medium tracking-wide">
-              RUO
-            </span>
-          </div>
-
-          {/* Line 2: Product Name & Prominent Single Price Lockup */}
-          <div className="flex items-baseline justify-between gap-3 pt-0.5">
-            <h3 className="text-base sm:text-[17px] font-bold text-[#071739] group-hover:text-[#031B4E] transition-colors tracking-tight leading-snug line-clamp-1">
+        {/* Content body matching reference card typography */}
+        <div className="pt-2.5 sm:pt-3 flex flex-col justify-between flex-1 pointer-events-none">
+          <div>
+            <h3 className="text-xs sm:text-[13px] font-bold text-neutral-900 tracking-tight leading-tight line-clamp-1">
               {product.name}
             </h3>
-            <span className="text-base sm:text-[17px] font-bold text-[#071739] font-mono tracking-tight shrink-0 tabular-nums">
-              {singlePriceText}
-            </span>
+            <p className="text-[10px] sm:text-[11px] font-normal text-neutral-400 mt-1 line-clamp-1 leading-snug">
+              {subtitle}
+            </p>
           </div>
 
-          {/* Line 3: Descriptive Compound Lines (The exact lines requested by the user) */}
-          <p className="text-xs text-[#64748B] leading-relaxed line-clamp-2 pt-0.5 font-normal">
-            {product.description ||
-              `Analytical grade ${product.name} synthesized for laboratory in-vitro assays and scientific receptor kinetics.`}
-          </p>
-        </div>
+          {/* Bottom row: Price on left, Action buttons on right */}
+          <div className="mt-3 flex items-center justify-between gap-1">
+            <span className="text-[13px] sm:text-[14px] font-bold text-neutral-900 tracking-tight font-sans">
+              {priceText}
+            </span>
 
-        {/* Line 4 / Footer Dock: Formulation Spec & Quick Action Button */}
-        <div className="pt-3.5 mt-3.5 border-t border-[#F1F5F9] flex items-center justify-between gap-3">
-          {/* Dosage / Strength Tag */}
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#F8FAFC] border border-[#E2E8F0] text-[11px] font-medium text-[#475569]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#031B4E]/70" />
-            {selectedDosage || (product.dosageOptions && product.dosageOptions[0]) || "Standard"}
-          </span>
+            <div className="flex items-center gap-1.5 pointer-events-auto">
+              {/* Desktop subtle Quick Add button */}
+              <button
+                type="button"
+                onClick={handleAddToCart}
+                aria-label={`Quick add ${product.name} to cart`}
+                className={`hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10.5px] font-semibold tracking-wide transition-all shadow-2xs active:scale-95 cursor-pointer relative z-10 ${
+                  addedJustNow
+                    ? "bg-emerald-600 text-white"
+                    : "bg-neutral-100 hover:bg-black text-neutral-800 hover:text-white"
+                }`}
+              >
+                {addedJustNow ? (
+                  <>
+                    <Check className="w-3 h-3 stroke-[2.5]" />
+                    <span>Added</span>
+                  </>
+                ) : (
+                  <>
+                    <ShoppingBag className="w-3 h-3" />
+                    <span>Add</span>
+                  </>
+                )}
+              </button>
 
-          {/* Interactive Quick Add / Order Button with smooth state transition */}
-          <button
-            type="button"
-            onClick={handleAddToCart}
-            aria-label={`Quick add ${product.name} to order`}
-            className={`inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide transition-all shadow-2xs active:scale-95 cursor-pointer ${
-              addedJustNow
-                ? "bg-emerald-600 text-white"
-                : "bg-[#031B4E] hover:bg-[#07266E] text-white hover:shadow-xs"
-            }`}
-          >
-            {addedJustNow ? (
-              <>
-                <Check className="w-3.5 h-3.5" />
-                <span className="text-[11px] font-bold">Added</span>
-              </>
-            ) : (
-              <>
-                <ShoppingBag className="w-3.5 h-3.5" />
-                <span className="text-[11px]">Add</span>
-              </>
-            )}
-          </button>
+              {/* Circular black button with white heart (exact reference match) */}
+              <button
+                type="button"
+                disabled={wishlistPending}
+                onClick={handleWishlistClick}
+                aria-label={isWishlisted ? "Remove from wishlist" : "Add to wishlist"}
+                className="relative z-10 w-7 h-7 sm:w-7.5 sm:h-7.5 rounded-full bg-black hover:bg-neutral-800 text-white flex items-center justify-center shadow-xs active:scale-90 transition-transform touch-manipulation cursor-pointer shrink-0"
+              >
+                <Heart
+                  className={`w-3.5 h-3.5 transition-colors ${
+                    isWishlisted ? "fill-red-500 text-red-500" : "fill-white text-white"
+                  }`}
+                />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }

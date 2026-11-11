@@ -15,9 +15,9 @@ interface SettingsUser {
 }
 
 const inputClass =
-  "font-inter w-full px-4 py-3 bg-gray-50 border border-black/10 rounded-xl text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/50 transition-colors";
+  "w-full px-4 py-3 bg-neutral-50/80 border border-neutral-200 rounded-xl text-sm text-neutral-900 placeholder:text-neutral-400 focus:outline-none focus:border-neutral-900 focus:ring-1 focus:ring-neutral-900 transition-colors";
 const labelClass =
-  "font-inter block text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-2";
+  "block text-[11px] font-semibold uppercase tracking-wider text-neutral-500 mb-1.5";
 
 function Toggle({
   checked,
@@ -27,12 +27,12 @@ function Toggle({
   onChange: (value: boolean) => void;
 }) {
   return (
-    <div className="flex bg-gray-50 border border-black/5 rounded-full p-1 shrink-0">
+    <div className="flex bg-neutral-100 border border-neutral-200/80 rounded-full p-1 shrink-0">
       <button
         type="button"
         onClick={() => onChange(true)}
-        className={`font-inter px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full transition-all ${
-          checked ? "bg-white text-gray-900 shadow-sm" : "text-gray-400 hover:text-gray-600"
+        className={`px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full transition-all cursor-pointer ${
+          checked ? "bg-white text-neutral-950 shadow-xs" : "text-neutral-400 hover:text-neutral-600"
         }`}
       >
         On
@@ -40,8 +40,8 @@ function Toggle({
       <button
         type="button"
         onClick={() => onChange(false)}
-        className={`font-inter px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest rounded-full transition-all ${
-          !checked ? "bg-white text-gray-900 shadow-sm" : "text-gray-400 hover:text-gray-600"
+        className={`px-3.5 py-1 text-[10px] font-bold uppercase tracking-wider rounded-full transition-all cursor-pointer ${
+          !checked ? "bg-white text-neutral-950 shadow-xs" : "text-neutral-400 hover:text-neutral-600"
         }`}
       >
         Off
@@ -101,24 +101,24 @@ export function SettingsClient({ user }: { user: SettingsUser }) {
   }
 
   return (
-    <div className="flex flex-col gap-8 max-w-3xl">
+    <div className="flex flex-col gap-6 max-w-3xl pb-12">
       <div>
-        <h1 className="font-inter text-3xl md:text-5xl uppercase font-bold tracking-wider text-gray-900">
+        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-neutral-950 font-sans">
           Settings
         </h1>
-        <p className="font-inter text-gray-500 mt-3 max-w-lg text-sm">
-          Update your personal information, notification preferences, and account security.
+        <p className="text-xs sm:text-sm text-neutral-500 mt-1.5 max-w-lg leading-relaxed">
+          Update your researcher profile, notification preferences, and account security credentials.
         </p>
       </div>
 
       {/* Personal Information */}
-      <section className="bg-white border border-black/5 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-6">
-        <h2 className="font-inter text-sm font-bold uppercase tracking-widest text-gray-900 border-b border-black/5 pb-4">
+      <section className="bg-white border border-neutral-200/80 rounded-2xl p-6 sm:p-7 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col gap-6">
+        <h2 className="text-sm font-bold text-neutral-950 pb-3 border-b border-neutral-100 font-sans">
           Personal Information
         </h2>
 
         <form action={handleProfileSubmit} className="flex flex-col gap-5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className={labelClass}>First Name</label>
               <input name="firstName" defaultValue={user.firstName} className={inputClass} />
@@ -128,27 +128,27 @@ export function SettingsClient({ user }: { user: SettingsUser }) {
               <input name="lastName" defaultValue={user.lastName} className={inputClass} />
             </div>
             <div className="sm:col-span-2">
-              <label className={labelClass}>Email</label>
+              <label className={labelClass}>Email Address</label>
               <input value={user.email} disabled className={`${inputClass} opacity-60 cursor-not-allowed`} />
             </div>
             <div className="sm:col-span-2">
-              <label className={labelClass}>Phone</label>
+              <label className={labelClass}>Phone Number</label>
               <input name="phone" type="tel" defaultValue={user.phone} className={inputClass} />
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 pt-4 border-t border-black/5">
+          <div className="flex flex-col gap-4 pt-4 border-t border-neutral-100">
             <div className="flex items-center justify-between gap-4">
               <div>
-                <p className="font-inter text-sm text-gray-900">Marketing emails</p>
-                <p className="font-inter text-xs text-gray-500">Receive news and promotions.</p>
+                <p className="text-xs sm:text-sm font-semibold text-neutral-900">Research &amp; Product Updates</p>
+                <p className="text-[11px] text-neutral-400">Receive verified lot releases and scientific publication highlights.</p>
               </div>
               <Toggle checked={acceptsMarketing} onChange={setAcceptsMarketing} />
             </div>
             <div className="flex items-center justify-between gap-4">
               <div>
-                <p className="font-inter text-sm text-gray-900">Order SMS updates</p>
-                <p className="font-inter text-xs text-gray-500">Get text alerts about your order status.</p>
+                <p className="text-xs sm:text-sm font-semibold text-neutral-900">Delivery SMS Alerts</p>
+                <p className="text-[11px] text-neutral-400">Receive cold-chain dispatch and shipment tracking text alerts.</p>
               </div>
               <Toggle checked={orderSmsUpdates} onChange={setOrderSmsUpdates} />
             </div>
@@ -156,10 +156,10 @@ export function SettingsClient({ user }: { user: SettingsUser }) {
 
           {profileMessage && (
             <div
-              className={`font-inter flex items-center gap-2 px-4 py-3 rounded-xl text-sm border ${
+              className={`flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-medium border ${
                 profileMessage.type === "success"
-                  ? "bg-emerald-50 border-emerald-200 text-emerald-700"
-                  : "bg-red-50 border-red-200 text-red-600"
+                  ? "bg-emerald-50 border-emerald-200 text-emerald-800"
+                  : "bg-rose-50 border-rose-200 text-rose-800"
               }`}
             >
               {profileMessage.type === "success" ? (
@@ -167,48 +167,47 @@ export function SettingsClient({ user }: { user: SettingsUser }) {
               ) : (
                 <AlertCircle className="w-4 h-4 shrink-0" />
               )}
-              {profileMessage.text}
+              <span>{profileMessage.text}</span>
             </div>
           )}
 
           <button
             type="submit"
             disabled={isPending}
-            className="font-inter w-fit flex items-center gap-2 px-6 py-3 rounded-full bg-indigo-600 hover:bg-indigo-700 disabled:opacity-60 text-white text-xs font-bold uppercase tracking-widest transition-colors shadow-[0_8px_20px_rgba(79,70,229,0.25)]"
+            className="w-fit inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-neutral-950 hover:bg-neutral-800 disabled:opacity-60 text-white text-xs font-semibold tracking-wide transition-all shadow-xs active:scale-95 cursor-pointer"
           >
             <Save className="w-4 h-4" />
-            {isPending ? "Saving..." : "Save Changes"}
+            <span>{isPending ? "Saving..." : "Save Preferences"}</span>
           </button>
         </form>
       </section>
 
       {/* Security */}
       {user.authProvider !== "google" && (
-        <section className="bg-white border border-black/5 rounded-2xl p-6 md:p-8 shadow-sm flex flex-col gap-6">
-          <h2 className="font-inter text-sm font-bold uppercase tracking-widest text-gray-900 border-b border-black/5 pb-4">
-            Password
+        <section className="bg-white border border-neutral-200/80 rounded-2xl p-6 sm:p-7 shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col gap-6">
+          <h2 className="text-sm font-bold text-neutral-950 pb-3 border-b border-neutral-100 font-sans">
+            Password &amp; Security
           </h2>
 
-          <form onSubmit={handlePasswordSubmit} className="flex flex-col gap-5">
+          <form onSubmit={handlePasswordSubmit} className="flex flex-col gap-4">
             <div>
               <label className={labelClass}>Current Password</label>
               <input
                 type="password"
+                required
                 value={currentPassword}
                 onChange={(e) => setCurrentPassword(e.target.value)}
-                required
                 className={inputClass}
               />
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className={labelClass}>New Password</label>
                 <input
                   type="password"
+                  required
                   value={newPassword}
                   onChange={(e) => setNewPassword(e.target.value)}
-                  required
-                  minLength={8}
                   className={inputClass}
                 />
               </div>
@@ -216,10 +215,9 @@ export function SettingsClient({ user }: { user: SettingsUser }) {
                 <label className={labelClass}>Confirm New Password</label>
                 <input
                   type="password"
+                  required
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
-                  required
-                  minLength={8}
                   className={inputClass}
                 />
               </div>
@@ -227,10 +225,10 @@ export function SettingsClient({ user }: { user: SettingsUser }) {
 
             {passwordMessage && (
               <div
-                className={`font-inter flex items-center gap-2 px-4 py-3 rounded-xl text-sm border ${
+                className={`flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-medium border ${
                   passwordMessage.type === "success"
-                    ? "bg-emerald-50 border-emerald-200 text-emerald-700"
-                    : "bg-red-50 border-red-200 text-red-600"
+                    ? "bg-emerald-50 border-emerald-200 text-emerald-800"
+                    : "bg-rose-50 border-rose-200 text-rose-800"
                 }`}
               >
                 {passwordMessage.type === "success" ? (
@@ -238,17 +236,17 @@ export function SettingsClient({ user }: { user: SettingsUser }) {
                 ) : (
                   <AlertCircle className="w-4 h-4 shrink-0" />
                 )}
-                {passwordMessage.text}
+                <span>{passwordMessage.text}</span>
               </div>
             )}
 
             <button
               type="submit"
               disabled={passwordPending}
-              className="font-inter w-fit flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 hover:bg-gray-700 disabled:opacity-60 text-white text-xs font-bold uppercase tracking-widest transition-colors"
+              className="w-fit inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-neutral-950 hover:bg-neutral-800 disabled:opacity-60 text-white text-xs font-semibold tracking-wide transition-all shadow-xs active:scale-95 cursor-pointer mt-1"
             >
-              <Lock className="w-4 h-4" />
-              {passwordPending ? "Updating..." : "Update Password"}
+              <Lock className="w-3.5 h-3.5" />
+              <span>{passwordPending ? "Updating..." : "Update Password"}</span>
             </button>
           </form>
         </section>

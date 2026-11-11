@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Footer from "@/components/Footer";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
+import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { siteUrl } from "@/lib/siteUrl";
 
 const TITLE = "About Amino Based | Pure Peptide Synthesis for Research Excellence";
@@ -165,7 +166,7 @@ const CATALOG_ITEMS = [
     title: "Metabolic & Incretin Research",
     count: "15+ Compounds",
     tag: "Dual & Triple Agonists",
-    image: "/assets/about/catalog_metabolic_tirzepatide.jpg",
+    image: "/assets/about/creative_metabolic.webp",
     description: "Tirzepatide, Semaglutide, Retatrutide and novel incretin receptor probes for cellular metabolic assays.",
     href: "/shop?category=Metabolic",
   },
@@ -173,7 +174,7 @@ const CATALOG_ITEMS = [
     title: "Cellular Repair & Tissue Motility",
     count: "20+ Compounds",
     tag: "Cytoprotective Sequences",
-    image: "/assets/about/catalog_repair_bpc157.jpg",
+    image: "/assets/about/creative_repair.webp",
     description: "BPC-157, TB-500, KPV and angiogenic signalling peptides synthesized for tissue regeneration studies.",
     href: "/shop?category=Repair",
   },
@@ -181,7 +182,7 @@ const CATALOG_ITEMS = [
     title: "Mitochondrial & Cellular Longevity",
     count: "25+ Compounds",
     tag: "Mitochondrial Probes",
-    image: "/assets/about/catalog_longevity_motsc.jpg",
+    image: "/assets/about/creative_longevity.webp",
     description: "MOTS-c, SS-31, Epithalon and NAD+ pathway modulators for oxidative stress and mitochondrial kinetics.",
     href: "/shop?category=Longevity",
   },
@@ -231,7 +232,17 @@ export default function AboutUsPage() {
       {/* =========================================================================
           SECTION 1: HERO BANNER (Matches Reference Image Large Rounded Card)
           ========================================================================= */}
-      <section className="pt-28 sm:pt-36 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl lg:max-w-[1380px] mx-auto">
+      <section className="pt-28 sm:pt-32 pb-12 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl lg:max-w-[1380px] mx-auto">
+        {/* Wayfinding Breadcrumbs */}
+        <div className="mb-4">
+          <Breadcrumbs
+            items={[
+              { label: "Home", href: "/" },
+              { label: "About Us" },
+            ]}
+          />
+        </div>
+
         <div className="relative rounded-[28px] sm:rounded-[36px] overflow-hidden min-h-[460px] sm:min-h-[540px] lg:min-h-[600px] flex items-end p-6 sm:p-10 lg:p-16 border border-[#E4E4E7] shadow-xl">
           
           {/* Background Image with High-Tech Architecture / Facility Look */}
@@ -496,7 +507,7 @@ export default function AboutUsPage() {
             <div className="lg:col-span-5 relative">
               <div className="relative rounded-[32px] overflow-hidden aspect-[3/4] sm:h-[580px] w-full border border-[#E4E4E7] shadow-xl">
                 <Image
-                  src="/assets/about/quality_process_gloves_vial.jpg"
+                  src="/assets/about/creative_quality_process.webp"
                   alt="Amino Based Synthesis Quality Verification"
                   fill
                   className="object-cover object-center"
