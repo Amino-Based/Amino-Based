@@ -3,7 +3,7 @@ import { Syncopate, Michroma, Open_Sans, Cormorant_Garamond } from "next/font/go
 import "./globals.css";
 import CartDrawer from "@/components/cart/CartDrawer";
 import SessionProvider from "@/components/providers/SessionProvider";
-// import AgeGate from "@/components/AgeGate"; // restore with the gate below
+import AgeGate from "@/components/AgeGate";
 import SiteHeader from "@/components/nav/SiteHeader";
 import HeaderVisibility from "@/components/nav/HeaderVisibility";
 import SmoothScrollProvider from "@/components/providers/SmoothScrollProvider";
@@ -82,10 +82,8 @@ export default function RootLayout({
         <AdminOverflowFix />
         <SmoothScrollProvider>
           <SessionProvider>
-            {/* TODO: AgeGate is disabled at the user's request while the homepage design
-                is built. It MUST be restored before this site is deployed - it is the 21+
-                gate. Restore <AgeGate /> inside a <HeaderVisibility> wrapper here. */}
             <HeaderVisibility>
+              <AgeGate />
               <SiteHeader />
             </HeaderVisibility>
             {children}

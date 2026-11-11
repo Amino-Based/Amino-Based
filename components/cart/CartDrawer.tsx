@@ -152,13 +152,13 @@ export default function CartDrawer() {
                   className="flex gap-3.5 bg-black/45 hover:bg-black/55 backdrop-blur-md border border-white/20 hover:border-white/35 rounded-[20px] p-3.5 sm:p-4 shadow-xl transition-all"
                 >
                   {/* Thumbnail */}
-                  <div className="w-18 h-18 sm:w-20 sm:h-20 shrink-0 rounded-[14px] bg-black/50 border border-white/15 flex items-center justify-center overflow-hidden relative">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-[14px] bg-black/50 border border-white/15 flex items-center justify-center overflow-hidden relative">
                     {line.product.imageUrl ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img
                         src={safeProductImageUrl(line.product.imageUrl)}
                         alt={line.product.name}
-                        className="max-h-full max-w-full object-contain p-1"
+                        className="w-full h-full max-h-full max-w-full object-contain p-1"
                       />
                     ) : (
                       <ShoppingBag className="w-6 h-6 text-white/50" />

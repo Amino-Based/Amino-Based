@@ -145,14 +145,52 @@ export default function ContactSection({ id = "sec11" }: ContactSectionProps) {
       className="relative py-14 sm:py-20 lg:py-28 px-4 sm:px-6 md:px-12 lg:px-20 bg-white border-t border-[#E4E4E7] overflow-hidden"
     >
       <div className="max-w-6xl mx-auto w-full">
-        {/* Giant Title + Overlapping Floating Lavender Card (cleared with ample bottom breathing space) */}
-        <div className="relative flex items-center justify-center text-center mt-2 sm:mt-6 mb-16 sm:mb-20 md:mb-24 lg:mb-28 select-none overflow-visible">
+        {/* Mobile View: Clean stacked layout so title and card never overlap */}
+        <div className="block sm:hidden text-center mb-8">
+          <motion.h2
+            variants={headlineContainerVariants}
+            className="text-3xl xs:text-4xl font-[250] uppercase tracking-[0.05em] leading-tight text-center select-none flex items-center justify-center mb-4"
+          >
+            {headlineLetters.map((char, index) => (
+              <motion.span
+                key={index}
+                variants={letterVariants}
+                className="inline-block will-change-transform will-change-opacity"
+              >
+                {char === " " ? "\u00A0" : char}
+              </motion.span>
+            ))}
+          </motion.h2>
+
+          <div className="w-full max-w-[320px] mx-auto bg-gradient-to-br from-[#9D82F7] via-[#8F72F5] to-[#7E5DF2] text-white px-5 py-3 rounded-[22px] shadow-[0_16px_40px_rgba(143,114,245,0.32)] text-left border border-white/35 flex flex-col justify-center gap-1">
+            <div className="flex items-center justify-between text-white/95">
+              <span className="text-sm font-semibold tracking-tight">
+                +1 (800) 529-1037
+              </span>
+              <span className="text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-white/20 border border-white/25">
+                Central Lab
+              </span>
+            </div>
+            <div className="text-xs text-white/90 font-medium tracking-wide">
+              support@aminobased.com
+            </div>
+            <div className="text-[10px] text-white/80 tracking-wider">
+              Research & Analytical Synthesis Facility
+            </div>
+            <div className="text-[9px] text-white/70 tracking-wider uppercase">
+              Mon – Fri 9:00 AM – 6:00 PM EST
+            </div>
+          </div>
+        </div>
+
+        {/* Desktop View (sm: and up): Signature overlapping rotated floating card */}
+        <div className="hidden sm:flex relative items-center justify-center text-center sm:mt-6 mb-20 md:mb-24 lg:mb-28 select-none overflow-visible">
           <div className="relative inline-flex items-center justify-center max-w-full">
             
             {/* 1. Staggered Animated Headline */}
             <motion.h2
               variants={headlineContainerVariants}
-              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-[88px] xl:text-[120px] 2xl:text-[136px] font-[250] uppercase tracking-[0.03em] sm:tracking-[0.05em] md:tracking-[0.06em] lg:tracking-[0.08em] leading-none text-center select-none whitespace-nowrap flex items-center justify-center"
+              className="sm:text-5xl md:text-6xl lg:text-[88px] xl:text-[120px] 2xl:text-[136px] font-[250] uppercase sm:tracking-[0.05em] md:tracking-[0.06em] lg:tracking-[0.08em] leading-none text-center select-none whitespace-nowrap flex items-center justify-center"
             >
               {headlineLetters.map((char, index) => (
                 <motion.span
@@ -169,23 +207,23 @@ export default function ContactSection({ id = "sec11" }: ContactSectionProps) {
             <motion.div
               variants={cardVariants}
               style={{ transformOrigin: "center center" }}
-              className="absolute top-1/2 left-1/2 -translate-y-1/2 w-[240px] xs:w-[270px] sm:w-[310px] md:w-[350px] lg:w-[385px] max-w-[calc(100vw-36px)] h-[96px] sm:h-[106px] md:h-[114px] bg-gradient-to-br from-[#9D82F7] via-[#8F72F5] to-[#7E5DF2] text-white px-4 sm:px-6 py-2.5 sm:py-3.5 rounded-[20px] sm:rounded-[24px] md:rounded-[28px] shadow-[0_22px_55px_rgba(143,114,245,0.38)] text-left z-20 border border-white/35 flex flex-col justify-center gap-0.5 sm:gap-1 cursor-pointer select-none backdrop-blur-sm pointer-events-auto will-change-transform"
+              className="absolute top-1/2 left-1/2 -translate-y-1/2 sm:w-[310px] md:w-[350px] lg:w-[385px] max-w-[calc(100vw-36px)] sm:h-[106px] md:h-[114px] bg-gradient-to-br from-[#9D82F7] via-[#8F72F5] to-[#7E5DF2] text-white sm:px-6 sm:py-3.5 sm:rounded-[24px] md:rounded-[28px] shadow-[0_22px_55px_rgba(143,114,245,0.38)] text-left z-20 border border-white/35 flex flex-col justify-center sm:gap-1 cursor-pointer select-none backdrop-blur-sm pointer-events-auto will-change-transform"
             >
               <div className="flex items-center justify-between text-white/95">
-                <span className="text-xs sm:text-sm md:text-[15px] font-semibold tracking-tight">
+                <span className="sm:text-sm md:text-[15px] font-semibold tracking-tight">
                   +1 (800) 529-1037
                 </span>
                 <span className="text-[9px] sm:text-[10px] uppercase font-bold tracking-widest px-2 py-0.5 rounded-full bg-white/20 border border-white/25">
                   Central Lab
                 </span>
               </div>
-              <div className="text-[11px] sm:text-xs md:text-[13px] text-white/90 font-medium tracking-wide">
+              <div className="sm:text-xs md:text-[13px] text-white/90 font-medium tracking-wide">
                 support@aminobased.com
               </div>
-              <div className="text-[9px] sm:text-[10px] md:text-[11px] text-white/80 tracking-wider">
+              <div className="sm:text-[10px] md:text-[11px] text-white/80 tracking-wider">
                 Research & Analytical Synthesis Facility
               </div>
-              <div className="text-[8px] sm:text-[9px] md:text-[10px] text-white/70 tracking-wider uppercase">
+              <div className="sm:text-[9px] md:text-[10px] text-white/70 tracking-wider uppercase">
                 Mon – Fri 9:00 AM – 6:00 PM EST
               </div>
             </motion.div>

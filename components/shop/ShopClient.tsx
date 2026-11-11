@@ -224,15 +224,15 @@ function ShopClientInner({
       {/* 2. CATEGORY NAVIGATION ROW (EXACT REFERENCE HORIZONTAL TEXT WITH SUPERSCRIPT) */}
       {/* ========================================================================= */}
       <div className="sticky top-16 sm:top-20 z-20 bg-white/95 backdrop-blur-md border-b border-[#E4E4E7] transition-all">
-        <div className="max-w-7xl lg:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+        <div className="max-w-7xl lg:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center justify-between gap-2.5 md:gap-4 py-2 md:py-0">
           
           {/* Horizontal Category Text Tabs matching reference */}
-          <nav className="flex items-center gap-6 sm:gap-8 overflow-x-auto no-scrollbar py-3.5 min-w-0 flex-1 overscroll-x-contain">
+          <nav className="flex items-center gap-6 sm:gap-8 overflow-x-auto no-scrollbar py-2 md:py-3.5 w-full md:w-auto min-w-0 md:flex-1 overscroll-x-contain">
             {/* SHOW ALL */}
             <button
               type="button"
               onClick={() => setActiveCategory(null)}
-              className={`text-[11px] sm:text-xs uppercase tracking-widest whitespace-nowrap transition-all pb-3.5 -mb-[15px] border-b-2 flex items-baseline gap-1 ${
+              className={`text-[11px] sm:text-xs uppercase tracking-widest whitespace-nowrap transition-all pb-2 md:pb-3.5 md:-mb-[15px] border-b-2 flex items-baseline gap-1 ${
                 activeCategory === null
                   ? "text-[#071739] font-bold border-[#071739]"
                   : "text-[#71717A] hover:text-[#071739] font-medium border-transparent"
@@ -253,7 +253,7 @@ function ShopClientInner({
                   key={category}
                   type="button"
                   onClick={() => setActiveCategory(category)}
-                  className={`text-[11px] sm:text-xs uppercase tracking-widest whitespace-nowrap transition-all pb-3.5 -mb-[15px] border-b-2 flex items-baseline gap-1 ${
+                  className={`text-[11px] sm:text-xs uppercase tracking-widest whitespace-nowrap transition-all pb-2 md:pb-3.5 md:-mb-[15px] border-b-2 flex items-baseline gap-1 ${
                     isActive
                       ? "text-[#071739] font-bold border-[#071739]"
                       : "text-[#71717A] hover:text-[#071739] font-medium border-transparent"
@@ -269,9 +269,9 @@ function ShopClientInner({
           </nav>
 
           {/* Right Controls: Minimal Sort ⇅ & Search matching reference layout */}
-          <div className="flex items-center gap-3 shrink-0 py-2">
+          <div className="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto shrink-0 pt-1 md:pt-0 pb-1 md:py-2 border-t border-[#E4E4E7]/40 md:border-t-0">
             {/* Search Input (Responsive on all viewports) */}
-            <div className="relative w-28 xs:w-36 sm:w-44 lg:w-52">
+            <div className="relative flex-1 md:w-44 lg:w-52 md:flex-initial">
               <Search className="w-3.5 h-3.5 text-gray-400 absolute left-2.5 sm:left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
               <input
                 type="search"
@@ -284,7 +284,7 @@ function ShopClientInner({
             </div>
 
             {/* Minimal Sort Trigger matching ⇅ in reference */}
-            <div className="flex items-center gap-1.5 border border-[#E2E8F0] hover:border-[#071739]/50 rounded-full px-3 py-1 bg-white transition-colors cursor-pointer">
+            <div className="flex items-center gap-1.5 border border-[#E2E8F0] hover:border-[#071739]/50 rounded-full px-3 py-1 bg-white transition-colors cursor-pointer shrink-0">
               <ArrowUpDown className="w-3.5 h-3.5 text-[#071739]" />
               <select
                 value={sort}

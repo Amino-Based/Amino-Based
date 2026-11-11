@@ -264,9 +264,9 @@ export type CreateOrderResult =
   | { ok: true; orderId: string; orderNumber: string; total: number; accessToken: string }
   | {
       ok: false;
-      reason: "shipping_options_changed";
+      reason: "shipping_options_changed" | "out_of_stock" | "server_error";
       message: string;
-      availableMethods: ShippingMethodOption[];
+      availableMethods?: ShippingMethodOption[];
     };
 // ---------------------------------------------------------------------------
 
@@ -285,7 +285,11 @@ export async function createPayloadOrder(
       data: (err as any)?.data,
       stack: err instanceof Error ? err.stack : undefined,
     });
-    throw err;
+    return {
+      ok: false,
+      reason: "server_error",
+      message: err instanceof Error ? err.message : "Failed to place order. Please try again.",
+    };
   }
 }
 

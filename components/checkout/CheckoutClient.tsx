@@ -59,6 +59,7 @@ const checkoutSchema = z
     shippingAddress: addressSchema,
     billingSameAsShipping: z.boolean(),
     billingAddress: billingAddressSchema,
+    researchAgreement: z.boolean().refine((val) => val === true, "You must confirm RUO terms to place an order"),
   })
   .superRefine((data, ctx) => {
     if (!data.billingSameAsShipping) {
@@ -145,6 +146,7 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
         postalCode: "",
         country: DEFAULT_COUNTRY,
       },
+      researchAgreement: true,
     },
   });
 
@@ -274,7 +276,7 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
     };
   }
 
-  const onPlaceManualOrder = handleSubmit(async (formData) => {
+  async function handlePlaceManualOrder(formData: CheckoutFormValues) {
     setIsSubmitting(true);
     setSubmitError(null);
     try {
@@ -293,21 +295,39 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
       setSubmitError("Something went wrong while placing your order. Please try again.");
       setIsSubmitting(false);
     }
-  });
+  }
 
   const [pendingOrderInput, setPendingOrderInput] = useState<Omit<CreateOrderInput, "paymentMethod"> | null>(
     null
   );
 
-  const onContinueToPayment = handleSubmit((formData) => {
-    setSubmitError(null);
-    if (paymentMethod !== "stripe") {
-      void onPlaceManualOrder();
-      return;
+  const onContinueToPayment = handleSubmit(
+    async (formData) => {
+      setSubmitError(null);
+      if (paymentMethod !== "stripe") {
+        await handlePlaceManualOrder(formData);
+        return;
+      }
+      setPendingOrderInput(buildOrderInput(formData));
+      setStep("payment");
+    },
+    (formErrors) => {
+      console.warn("Checkout validation errors:", formErrors);
+      // Auto-scroll to the first invalid field so user gets immediate visual feedback
+      const keys = Object.keys(formErrors);
+      if (keys.length > 0) {
+        const firstKey = keys[0];
+        const el =
+          document.querySelector(`[name="${firstKey}"]`) ||
+          document.querySelector(`[name^="${firstKey}"]`) ||
+          document.querySelector(`[name*="${firstKey}"]`);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "center" });
+          (el as HTMLElement).focus?.();
+        }
+      }
     }
-    setPendingOrderInput(buildOrderInput(formData));
-    setStep("payment");
-  });
+  );
 
   // Stripe Payment Step
   if (step === "payment" && paymentMethod === "stripe" && pendingOrderInput) {
@@ -736,15 +756,24 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
                 <label className="flex items-start gap-2.5 text-xs text-neutral-600 cursor-pointer select-none">
                   <input
                     type="checkbox"
-                    defaultChecked
-                    required
+                    {...register("researchAgreement")}
                     className="w-4 h-4 mt-0.5 rounded border-neutral-300 text-neutral-900 accent-neutral-900"
                   />
                   <span>
                     I confirm that all items are ordered strictly for laboratory in-vitro research use only (RUO) and agree to data processing policies.
                   </span>
                 </label>
+                {errors.researchAgreement && (
+                  <p className="text-xs text-red-600 mt-1">{errors.researchAgreement.message}</p>
+                )}
               </div>
+
+              {/* Validation errors summary near the button */}
+              {Object.keys(errors).length > 0 && (
+                <div className="text-xs font-semibold text-red-700 bg-red-50 border border-red-200 p-3 mb-4 rounded-md">
+                  Please complete the required details above before placing your order.
+                </div>
+              )}
 
               {submitError && (
                 <div className="text-xs text-red-600 bg-red-50 border border-red-200 p-3 mb-6">
@@ -786,7 +815,7 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
                         <img
                           src={safeProductImageUrl(line.product.imageUrl)}
                           alt={line.product.name}
-                          className="max-h-full max-w-full object-contain p-1"
+                          className="w-full h-full max-h-full max-w-full object-contain p-1"
                         />
                       ) : (
                         <span className="text-[9px] text-neutral-400 font-mono">VIAL</span>

@@ -12,6 +12,10 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      spacing: {
+        "18": "4.5rem",
+        "22": "5.5rem",
+      },
       fontFamily: {
         futuristic: ["var(--font-futuristic)", "sans-serif"],
         michroma: ["var(--font-michroma)", "sans-serif"],

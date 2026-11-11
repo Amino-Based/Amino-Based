@@ -360,52 +360,56 @@ export default function PeptideCalculatorClient() {
       {/* =========================================================================
           TABLE OF CONTENTS JUMP LINKS
           ========================================================================= */}
-      <nav aria-label="Peptide calculator sections" className="py-6 px-6 md:px-12 lg:px-20 border-y border-[#E4E4E7] bg-white sticky top-16 z-30 shadow-2xs">
-        <div className="max-w-6xl mx-auto flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
-          <span className="text-xs font-mono font-semibold text-[#71717A] uppercase shrink-0 mr-2">
-            Jump to:
-          </span>
-          {[
-            { id: "syringe-visualizer", label: "Syringe Piston" },
-            { id: "risk", label: "01 Risk" },
-            { id: "procedure", label: "02 Procedure" },
-            { id: "units", label: "03 Units" },
-            { id: "math", label: "04 The Math" },
-            { id: "chart", label: "05 Chart" },
-            { id: "storage", label: "06 Storage" },
-            { id: "mistakes", label: "07 Mistakes" },
-            { id: "visual", label: "08 Visual Difference" },
-            { id: "degradation", label: "09 Degradation" },
-            { id: "glossary", label: "10 Glossary" },
-            { id: "faq-section", label: "FAQs" },
-          ].map((item) => (
-            <a
-              key={item.id}
-              href={`#${item.id}`}
-              className="px-3.5 py-1.5 rounded-full border border-[#E4E4E7] bg-white text-xs font-mono text-[#52525B] hover:text-[#894EF2] hover:border-[#894EF2] hover:bg-[#F3F2F8] shrink-0 transition-colors"
-            >
-              {item.label}
-            </a>
-          ))}
+      <nav aria-label="Peptide calculator sections" className="py-3 sm:py-6 px-4 sm:px-6 md:px-12 lg:px-20 border-y border-[#E4E4E7] bg-white sticky top-16 z-30 shadow-2xs">
+        <div className="relative max-w-6xl mx-auto">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none overscroll-x-contain">
+            <span className="text-xs font-mono font-semibold text-[#71717A] uppercase shrink-0 mr-1 sm:mr-2">
+              Jump to:
+            </span>
+            {[
+              { id: "syringe-visualizer", label: "Syringe Piston" },
+              { id: "risk", label: "01 Risk" },
+              { id: "procedure", label: "02 Procedure" },
+              { id: "units", label: "03 Units" },
+              { id: "math", label: "04 The Math" },
+              { id: "chart", label: "05 Chart" },
+              { id: "storage", label: "06 Storage" },
+              { id: "mistakes", label: "07 Mistakes" },
+              { id: "visual", label: "08 Visual Difference" },
+              { id: "degradation", label: "09 Degradation" },
+              { id: "glossary", label: "10 Glossary" },
+              { id: "faq-section", label: "FAQs" },
+            ].map((item) => (
+              <a
+                key={item.id}
+                href={`#${item.id}`}
+                className="px-3.5 py-1.5 rounded-full border border-[#E4E4E7] bg-white text-xs font-mono text-[#52525B] hover:text-[#894EF2] hover:border-[#894EF2] hover:bg-[#F3F2F8] shrink-0 transition-colors"
+              >
+                {item.label}
+              </a>
+            ))}
+          </div>
+          {/* Subtle Right-edge scroll indicator for mobile */}
+          <div className="sm:hidden absolute right-0 top-0 bottom-1 w-8 bg-gradient-to-l from-white to-transparent pointer-events-none" />
         </div>
       </nav>
 
       {/* =========================================================================
           01 RISK: ONE DECIMAL DECIDES EVERY NUMBER THAT FOLLOWS
           ========================================================================= */}
-      <section id="risk" className="py-16 sm:py-20 px-6 md:px-12 lg:px-20 border-b border-[#E4E4E7] bg-white scroll-mt-28">
+      <section id="risk" className="py-10 sm:py-20 px-4 sm:px-6 md:px-12 lg:px-20 border-b border-[#E4E4E7] bg-white scroll-mt-28">
         <div className="max-w-6xl mx-auto">
           
-          <div className="flex items-center gap-3 mb-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-3">
             <span className="px-2.5 py-1 rounded-full bg-[#F3F2F8] text-[#894EF2] text-xs font-mono font-semibold">
               01
             </span>
-            <span className="text-xs font-mono font-semibold text-[#894EF2] uppercase tracking-wider">
+            <span className="text-[11px] sm:text-xs font-mono font-semibold text-[#894EF2] uppercase tracking-wider">
               Mathematical Precision & In-Vitro Risk
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-normal text-[#0F0F11] tracking-tight mb-4">
+          <h2 className="text-2xl sm:text-4xl font-normal text-[#0F0F11] tracking-tight mb-4">
             One Decimal Decides Every Number That Follows
           </h2>
           <p className="text-base text-[#52525B] max-w-3xl leading-relaxed mb-10">
