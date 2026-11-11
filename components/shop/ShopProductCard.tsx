@@ -53,7 +53,7 @@ export default function ShopProductCard({
   } = useWishlistToggle({
     id: displayDetails.sku || product.id,
     aliases: [displayDetails.sku || product.id, product.id, product.slug],
-    variantSku: selectedDosage,
+    variantSku: displayDetails.variantSku,
     price: displayPrice,
   });
 
@@ -73,7 +73,7 @@ export default function ShopProductCard({
         imageUrl: displayImage,
         slug: product.slug,
       },
-      selectedDosage,
+      displayDetails.variantSku,
       1,
       displayPrice,
       selectedDosage

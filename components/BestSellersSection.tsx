@@ -27,6 +27,8 @@ const FALLBACK_PRODUCTS: ShopMockProduct[] = [
     image: "/assets/shelf_vial_glp3rta.png",
     featured: true,
     category: "GLP-1 & Metabolic",
+    hasVariants: false,
+    variants: [],
   },
   {
     id: "2",
@@ -41,6 +43,8 @@ const FALLBACK_PRODUCTS: ShopMockProduct[] = [
     image: "/assets/shelf_vial_glp1trz.png",
     featured: false,
     category: "GLP-1 & Metabolic",
+    hasVariants: false,
+    variants: [],
   },
   {
     id: "3",
@@ -54,6 +58,8 @@ const FALLBACK_PRODUCTS: ShopMockProduct[] = [
     image: "/assets/shelf_vial_semaglutide.webp",
     featured: false,
     category: "GLP-1 & Metabolic",
+    hasVariants: false,
+    variants: [],
   },
   {
     id: "4",
@@ -68,6 +74,8 @@ const FALLBACK_PRODUCTS: ShopMockProduct[] = [
     image: "/assets/shelf_vial_bpc157.png",
     featured: false,
     category: "Recovery Peptides",
+    hasVariants: false,
+    variants: [],
   },
   {
     id: "5",
@@ -81,6 +89,8 @@ const FALLBACK_PRODUCTS: ShopMockProduct[] = [
     image: FALLBACK_IMAGE,
     featured: false,
     category: "Longevity Research",
+    hasVariants: false,
+    variants: [],
   },
   {
     id: "6",
@@ -94,6 +104,8 @@ const FALLBACK_PRODUCTS: ShopMockProduct[] = [
     image: FALLBACK_IMAGE,
     featured: false,
     category: "Growth Hormone Secretagogue",
+    hasVariants: false,
+    variants: [],
   },
 ];
 

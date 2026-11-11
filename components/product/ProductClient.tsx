@@ -170,7 +170,7 @@ export default function ProductClient({
   } = useWishlistToggle({
     id: displayDetails.sku,
     aliases: [displayDetails.sku, cardProduct.id, cardProduct.slug],
-    variantSku: selectedDosage,
+    variantSku: displayDetails.variantSku,
     price: activePrice,
   });
 
@@ -196,7 +196,7 @@ export default function ProductClient({
         imageUrl: activeImage,
         slug: cardProduct.slug,
       },
-      selectedDosage,
+      displayDetails.variantSku,
       quantity,
       activePrice,
       selectedDosage
@@ -214,7 +214,7 @@ export default function ProductClient({
         imageUrl: activeImage,
         slug: cardProduct.slug,
       },
-      selectedDosage,
+      displayDetails.variantSku,
       quantity,
       activePrice,
       selectedDosage
@@ -446,8 +446,8 @@ export default function ProductClient({
               </button>
             </div>
 
-            {/* Right Column Accordions (Description, Shipping, Reviews) */}
-            <div className="border-t border-[#E4E4E7]/80 divide-y divide-[#E4E4E7]/80">
+            {/* Desktop Right Column Accordions (Description, Shipping, Reviews) */}
+            <div className="hidden lg:block border-t border-[#E4E4E7]/80 divide-y divide-[#E4E4E7]/80">
               
               {/* Accordion: Description */}
               <div className="py-4.5 sm:py-5">
@@ -545,15 +545,196 @@ export default function ProductClient({
 
             </div>
 
+            {/* Mobile-Only Unified Accordion: All dossiers and tabs consolidated seamlessly */}
+            <div className="block lg:hidden border-t border-[#E4E4E7]/80 divide-y divide-[#E4E4E7]/80 mt-6">
+              
+              {/* 1. Product Details & Formulation */}
+              <div className="py-4">
+                <button
+                  type="button"
+                  onClick={() => toggleDossierAccordion("details")}
+                  className="w-full flex items-center justify-between text-left group"
+                >
+                  <span className="text-sm font-semibold text-[#071739]">
+                    {dossierDetails.detailsTitle || "Product Details"}
+                  </span>
+                  <span className="text-sm font-light text-[#71717A] w-5 text-center">
+                    {openDossierAccordions.details ? "—" : "+"}
+                  </span>
+                </button>
+                {openDossierAccordions.details && (
+                  <div className="pt-3 pb-1 text-sm text-[#475569] leading-relaxed space-y-2.5">
+                    <DossierProse text={dossierDetails.detailsContent} />
+                    <ul className="space-y-1.5 pt-2 pl-1 text-[#475569] text-xs">
+                      {cardProduct.purity && (
+                        <li className="flex items-center gap-2">
+                          <span className="text-[#031B4E] font-bold">•</span>
+                          <span>{cardProduct.purity}</span>
+                        </li>
+                      )}
+                      <li className="flex items-center gap-2">
+                        <span className="text-[#031B4E] font-bold">•</span>
+                        <span>Physical State: Lyophilized powder in borosilicate vial</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <span className="text-[#031B4E] font-bold">•</span>
+                        <span>Storage: Store at -20°C prior to reconstitution</span>
+                      </li>
+                    </ul>
+                  </div>
+                )}
+              </div>
+
+              {/* 2. Research Focus & Mechanism */}
+              <div className="py-4">
+                <button
+                  type="button"
+                  onClick={() => toggleDossierAccordion("research")}
+                  className="w-full flex items-center justify-between text-left group"
+                >
+                  <span className="text-sm font-semibold text-[#071739]">
+                    {dossierDetails.researchTitle || "Research Focus & Mechanism"}
+                  </span>
+                  <span className="text-sm font-light text-[#71717A] w-5 text-center">
+                    {openDossierAccordions.research ? "—" : "+"}
+                  </span>
+                </button>
+                {openDossierAccordions.research && (
+                  <div className="pt-3 pb-1 text-sm text-[#475569] leading-relaxed">
+                    <DossierProse text={dossierDetails.researchContent} />
+                  </div>
+                )}
+              </div>
+
+              {/* 3. Quality & Purity Standards */}
+              <div className="py-4">
+                <button
+                  type="button"
+                  onClick={() => toggleDossierAccordion("quality")}
+                  className="w-full flex items-center justify-between text-left group"
+                >
+                  <span className="text-sm font-semibold text-[#071739]">
+                    {dossierDetails.qualityTitle || "Quality & Purity Standards"}
+                  </span>
+                  <span className="text-sm font-light text-[#71717A] w-5 text-center">
+                    {openDossierAccordions.quality ? "—" : "+"}
+                  </span>
+                </button>
+                {openDossierAccordions.quality && (
+                  <div className="pt-3 pb-1 text-sm text-[#475569] leading-relaxed space-y-3">
+                    <DossierProse text={dossierDetails.qualityContent} />
+                    <div className="flex flex-col gap-2 p-3 bg-[#F8FAFC] rounded-xl border border-[#E2E8F0]">
+                      <div className="flex items-center justify-between text-xs font-semibold text-[#071739]">
+                        {coaBatchNumber && <span>Batch: {coaBatchNumber}</span>}
+                        {coaPurity !== null && <span className="text-emerald-700">Purity: {coaPurity}%</span>}
+                      </div>
+                      {coaUrl ? (
+                        <a
+                          href={coaUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#031B4E] hover:underline"
+                        >
+                          <FileDown className="w-3.5 h-3.5" />
+                          <span>Download COA PDF</span>
+                        </a>
+                      ) : (
+                        <Link
+                          href="/certificates"
+                          className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#031B4E] hover:underline"
+                        >
+                          <FileDown className="w-3.5 h-3.5" />
+                          <span>Verify Lot Online &rarr;</span>
+                        </Link>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* 4. Compliance Notice */}
+              <div className="py-4">
+                <button
+                  type="button"
+                  onClick={() => toggleDossierAccordion("compliance")}
+                  className="w-full flex items-center justify-between text-left group"
+                >
+                  <span className="text-sm font-semibold text-[#071739]">
+                    {dossierDetails.complianceTitle || "Compliance Notice"}
+                  </span>
+                  <span className="text-sm font-light text-[#71717A] w-5 text-center">
+                    {openDossierAccordions.compliance ? "—" : "+"}
+                  </span>
+                </button>
+                {openDossierAccordions.compliance && (
+                  <div className="pt-3 pb-1 text-sm text-[#475569] leading-relaxed">
+                    <DossierProse text={dossierDetails.complianceContent} />
+                  </div>
+                )}
+              </div>
+
+              {/* 5. Shipping & Transit */}
+              <div className="py-4">
+                <button
+                  type="button"
+                  onClick={() => toggleRightAccordion("shipping")}
+                  className="w-full flex items-center justify-between text-left group"
+                >
+                  <span className="text-sm font-semibold text-[#071739]">
+                    Shipping & Delivery
+                  </span>
+                  <span className="text-sm font-light text-[#71717A] w-5 text-center">
+                    {openRightAccordions.shipping ? "—" : "+"}
+                  </span>
+                </button>
+                {openRightAccordions.shipping && (
+                  <div className="pt-3 pb-1 text-sm text-[#475569] leading-relaxed space-y-2">
+                    <p>
+                      Orders placed before 2:00 PM EST ship same-day via temperature-regulated carrier from our US facility.
+                    </p>
+                    <p>
+                      Insulated packaging with cold packs preserves chemical integrity in transit.
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* 6. Reviews */}
+              <div className="py-4">
+                <button
+                  type="button"
+                  onClick={() => toggleRightAccordion("reviews")}
+                  className="w-full flex items-center justify-between text-left group"
+                >
+                  <span className="text-sm font-semibold text-[#071739]">
+                    Reviews & Feedback
+                  </span>
+                  <span className="text-sm font-light text-[#71717A] w-5 text-center">
+                    {openRightAccordions.reviews ? "—" : "+"}
+                  </span>
+                </button>
+                {openRightAccordions.reviews && (
+                  <div className="pt-3 pb-1 text-sm text-[#475569] leading-relaxed">
+                    {reviewsSlot || (
+                      <p className="text-sm text-gray-500">
+                        Verified customer ratings & laboratory evaluation reviews.
+                      </p>
+                    )}
+                  </div>
+                )}
+              </div>
+
+            </div>
+
           </div>
 
         </div>
 
         {/* ========================================================================= */}
         {/* 3. LABORATORY DOSSIER & CONTENT SECTION (DETAILS, RESEARCH, QUALITY, RUO)  */}
-        {/*    (JUST ABOVE "YOU MAY ALSO LIKE" WITH THE SAME ACCORDION DESIGN)        */}
+        {/*    (DESKTOP FULL-WIDTH VIEW; ON MOBILE CONSOLIDATED UNDER BUY BOX)        */}
         {/* ========================================================================= */}
-        <section className="max-w-5xl mx-auto mb-16 sm:mb-20">
+        <section className="hidden lg:block max-w-5xl mx-auto mb-16 sm:mb-20">
           
           {/* Section Header */}
           <div className="mb-6 sm:mb-8">

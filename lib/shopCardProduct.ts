@@ -6,12 +6,33 @@ import {
 import { MASTER_PRODUCTS, type MasterCatalogProduct } from "@/lib/masterCatalogData";
 import { PRODUCT_IMAGE_PLACEHOLDER, resolveProductImageUrl } from "@/lib/products/productImage";
 
+/**
+ * A Payload variant flattened for the card/detail components.
+ *
+ * `sku` is the canonical variant SKU (e.g. "TIRZEP-10MG") and is the ONLY value
+ * the cart may carry as `variantSku`: `app/checkout/actions.ts` re-reads the
+ * product from the database and looks the variant up by `v.sku === variantSku`,
+ * throwing when it does not match. `label` is the human dosage ("10mg") shown in
+ * the selector and must never be used in its place.
+ */
+export interface CardVariant {
+  sku: string;
+  price: number;
+  salePrice: number | null;
+  stock: number;
+  label: string | null;
+}
+
 export interface ShopMockProduct {
   id: string;
   name: string;
   slug: string;
   description: string;
   dosageOptions: string[];
+  /** Mirrors the Payload field; when false the checkout ignores `variantSku` entirely. */
+  hasVariants: boolean;
+  /** Empty when the product has no variants. Order matches `dosageOptions`. */
+  variants: CardVariant[];
   /** Exactly as recorded on a certificate, or null when no certificate figure exists. */
   purity: string | null;
   type: string;
@@ -90,8 +111,38 @@ export function getMultiVariantConfig(nameOrSlug?: string | null): MultiVariantP
   return MASTER_CONFIG_MAP[raw] || MASTER_CONFIG_MAP[norm] || null;
 }
 
+/**
+ * The variant whose dosage label matches `selectedDosage`.
+ *
+ * Returns null when the product has no variants, or when nothing matches — the
+ * caller must then fall back to the base product price and must NOT invent a
+ * variant SKU, because the checkout throws on a SKU it cannot find.
+ */
+export function resolveCardVariant(
+  product: { hasVariants?: boolean; variants?: CardVariant[] | null },
+  selectedDosage: string
+): CardVariant | null {
+  if (!product.hasVariants) return null;
+  const variants = product.variants ?? [];
+  if (variants.length === 0) return null;
+  const want = (selectedDosage ?? "").trim().toLowerCase();
+  return (
+    variants.find((v) => (v.label ?? "").trim().toLowerCase() === want) ??
+    variants.find((v) => v.sku.toLowerCase() === want) ??
+    null
+  );
+}
+
 export function getProductDisplayDetails(
-  product: { id?: string; name: string; slug?: string; price: number; image: string },
+  product: {
+    id?: string;
+    name: string;
+    slug?: string;
+    price: number;
+    image: string;
+    hasVariants?: boolean;
+    variants?: CardVariant[] | null;
+  },
   selectedDosage: string
 ) {
   // The static master catalog must never price a product. It used to supply price, image and
@@ -107,10 +158,24 @@ export function getProductDisplayDetails(
     dosage: selectedDosage,
     dbImageUrl: product.image,
   });
+  // Price follows the selected variant when there is one, so the 60 mg vial is
+  // not shown or charged at the 10 mg price.
+  const variant = resolveCardVariant(product, selectedDosage);
+  const price = variant ? getEffectivePrice(variant.price, variant.salePrice) : product.price;
+
   return {
-    price: product.price,
+    price,
     image,
+    /** Cart `productId` / wishlist id — the product, never the variant. */
     sku: product.id || product.slug || "standard",
+    /**
+     * What the cart must carry as `variantSku`. The canonical SKU when a variant
+     * resolved; otherwise the dosage label, which the checkout ignores because
+     * `hasVariants` is false for those products.
+     */
+    variantSku: variant ? variant.sku : selectedDosage,
+    variant,
+    inStock: variant ? variant.stock > 0 : true,
     galleryImages: [image],
   };
 }
@@ -152,16 +217,28 @@ export function toShopCardProduct(product: ShopProduct): ShopMockProduct {
 
   const categoryName = categoryNames[0] ?? "Uncategorized";
 
-  const dosageOptions =
-    product.hasVariants && product.variants?.length
-      ? Array.from(
-          new Set(
-            product.variants.flatMap((v) =>
-              (v.options ?? []).map((o) => o.value).filter((v): v is string => Boolean(v))
-            )
-          )
-        )
-      : (parsed.dosage ? [parsed.dosage] : ["Standard"]);
+  const hasVariants = !!product.hasVariants && !!product.variants?.length;
+
+  // Carry the real variant SKUs through to the UI. Without them the detail page
+  // had only the dosage label to hand and passed that to the cart as the
+  // variantSku, which the checkout then failed to match against v.sku.
+  const variants: CardVariant[] = hasVariants
+    ? (product.variants ?? []).map((v) => ({
+        sku: v.sku,
+        price: v.price,
+        salePrice: typeof v.salePrice === "number" ? v.salePrice : null,
+        stock: typeof v.stock === "number" ? v.stock : 0,
+        label: (v.options ?? []).map((o) => o.value).find((value) => Boolean(value)) ?? null,
+      }))
+    : [];
+
+  const dosageOptions = hasVariants
+    ? Array.from(
+        new Set(variants.map((v) => v.label).filter((label): label is string => Boolean(label)))
+      )
+    : parsed.dosage
+      ? [parsed.dosage]
+      : ["Standard"];
 
   // Database-authoritative. The static master catalog previously overrode name, slug, price,
   // image, category and featured status whenever its config map matched — a file on disk
@@ -178,6 +255,8 @@ export function toShopCardProduct(product: ShopProduct): ShopMockProduct {
     slug,
     description: product.description ?? "",
     dosageOptions: dosageOptions.length > 0 ? dosageOptions : ["Standard"],
+    hasVariants,
+    variants,
     // Only a real certificate figure, stated exactly as recorded. The "+" suffix turned a
     // measured value into a minimum guarantee, and the old hardcoded fallback asserted a
     // purity level for products that have no certificate at all. No value means no claim.
