@@ -10,12 +10,13 @@ import { resolveMediaUrl } from "@/lib/types/shop";
 
 export const dynamic = "force-dynamic";
 
-type SearchResult = {
+export type SearchResult = {
   id: string;
   name: string;
   slug: string;
   price: number;
   imageUrl: string | null;
+  category?: string | null;
 };
 
 export async function GET(request: NextRequest) {
@@ -42,21 +43,29 @@ export async function GET(request: NextRequest) {
     const items: (SearchResult & { description?: string | null })[] = (
       productsResult.docs ?? []
     ).map((product) => {
-      // Was hardcoded to /product-card-image.png — a Prime Time Bio Labs Retatrutide vial
-      // served as the thumbnail for every search result. Resolved properly now: a stored
-      // image when there is one, else a verified Amino Based asset, else the placeholder.
       const imageUrl = resolveProductImageUrl({
         name: product.name,
         slug: product.slug,
         dbImageUrl: resolveMediaUrl(product.images?.[0]?.image as never),
       });
-      const canonicalSlug = resolveCanonicalProductSlug(product.slug ?? "") ?? toCleanSlug(product.slug, product.name);
+      const canonicalSlug =
+        resolveCanonicalProductSlug(product.slug ?? "") ?? toCleanSlug(product.slug, product.name);
+
+      let categoryName: string | null = null;
+      if (Array.isArray(product.categories) && product.categories.length > 0) {
+        const firstCat = product.categories[0];
+        if (typeof firstCat === "object" && firstCat && "name" in firstCat) {
+          categoryName = (firstCat as { name: string }).name;
+        }
+      }
+
       return {
         id: String(product.id),
         name: product.name,
         slug: canonicalSlug,
         price: product.price,
         imageUrl,
+        category: categoryName,
         description: product.description,
       };
     });
@@ -64,12 +73,13 @@ export async function GET(request: NextRequest) {
     const fuse = new Fuse(items, {
       keys: [
         { name: "name", weight: 3 },
+        { name: "category", weight: 1.5 },
         { name: "description", weight: 1 },
       ],
       threshold: 0.4,
     });
 
-    const results = fuse
+    const results: SearchResult[] = fuse
       .search(q)
       .slice(0, 8)
       .map(({ item }) => ({
@@ -78,6 +88,7 @@ export async function GET(request: NextRequest) {
         slug: item.slug,
         price: item.price,
         imageUrl: item.imageUrl,
+        category: item.category ?? null,
       }));
 
     return NextResponse.json(results);
