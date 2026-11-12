@@ -1,10 +1,15 @@
 import {
   getEffectivePrice,
   getProductPrimaryImageUrl,
+  resolveMediaUrl,
   type ShopProduct,
 } from "@/lib/types/shop";
 import { MASTER_PRODUCTS, type MasterCatalogProduct } from "@/lib/masterCatalogData";
-import { PRODUCT_IMAGE_PLACEHOLDER, resolveProductImageUrl } from "@/lib/products/productImage";
+import {
+  PRODUCT_IMAGE_PLACEHOLDER,
+  pickImageForDosage,
+  resolveProductImageUrl,
+} from "@/lib/products/productImage";
 
 /**
  * A Payload variant flattened for the card/detail components.
@@ -21,6 +26,15 @@ export interface CardVariant {
   salePrice: number | null;
   stock: number;
   label: string | null;
+  /**
+   * The vial photograph for THIS dosage, resolved on the server.
+   *
+   * The Amino Based photographs carry a printed dosage, so a 5 mg variant must not show the
+   * 10 mg vial. Resolving it per variant here means the detail page can swap the image on
+   * selection without re-querying, and keeps every image decision inside
+   * `resolveProductImageUrl` as that module requires.
+   */
+  image: string | null;
 }
 
 export interface ShopMockProduct {
@@ -149,19 +163,23 @@ export function getProductDisplayDetails(
   // SKU here, which meant a file on disk could silently contradict the database the checkout
   // prices from. Everything below is derived from the product the caller passed in, which
   // originates in Payload.
-  // The image IS dosage-dependent: the Amino Based vial photographs carry a printed dosage,
-  // so the 10 mg photo must not stand in for a 5 mg variant. Re-resolve rather than trusting
-  // whatever image the caller already held.
-  const image = resolveProductImageUrl({
-    name: product.name,
-    slug: product.slug,
-    dosage: selectedDosage,
-    dbImageUrl: product.image,
-  });
   // Price follows the selected variant when there is one, so the 60 mg vial is
   // not shown or charged at the 10 mg price.
   const variant = resolveCardVariant(product, selectedDosage);
   const price = variant ? getEffectivePrice(variant.price, variant.salePrice) : product.price;
+
+  // The image IS dosage-dependent: the Amino Based vial photographs carry a printed dosage, so
+  // the 10 mg photo must not stand in for a 5 mg variant. The resolved per-variant image wins
+  // when one exists; otherwise re-resolve from the product's own image rather than trusting
+  // whatever the caller already held.
+  const image =
+    variant?.image ??
+    resolveProductImageUrl({
+      name: product.name,
+      slug: product.slug,
+      dosage: selectedDosage,
+      dbImageUrl: product.image,
+    });
 
   return {
     price,
@@ -219,17 +237,43 @@ export function toShopCardProduct(product: ShopProduct): ShopMockProduct {
 
   const hasVariants = !!product.hasVariants && !!product.variants?.length;
 
+  // Every image stored against this product, in CMS order. A product carries one photograph
+  // per dosage, so this is the pool each variant's image is picked from below.
+  const productImageUrls = (product.images ?? [])
+    .map((entry) => resolveMediaUrl(entry?.image))
+    .filter((url): url is string => Boolean(url));
+
   // Carry the real variant SKUs through to the UI. Without them the detail page
   // had only the dosage label to hand and passed that to the cart as the
   // variantSku, which the checkout then failed to match against v.sku.
   const variants: CardVariant[] = hasVariants
-    ? (product.variants ?? []).map((v) => ({
-        sku: v.sku,
-        price: v.price,
-        salePrice: typeof v.salePrice === "number" ? v.salePrice : null,
-        stock: typeof v.stock === "number" ? v.stock : 0,
-        label: (v.options ?? []).map((o) => o.value).find((value) => Boolean(value)) ?? null,
-      }))
+    ? (product.variants ?? []).map((v) => {
+        const label =
+          (v.options ?? []).map((o) => o.value).find((value) => Boolean(value)) ?? null;
+
+        // Prefer an image attached to the variant itself — that field is unpopulated today,
+        // but honouring it first means a future admin upload wins with no code change, the
+        // same precedence resolveProductImageUrl already applies to stored images.
+        const variantOwnImage = ((v as { images?: Array<{ image?: unknown }> }).images ?? [])
+          .map((entry) => resolveMediaUrl(entry?.image as never))
+          .find((url): url is string => Boolean(url));
+
+        return {
+          sku: v.sku,
+          price: v.price,
+          salePrice: typeof v.salePrice === "number" ? v.salePrice : null,
+          stock: typeof v.stock === "number" ? v.stock : 0,
+          label,
+          // Routed through resolveProductImageUrl so the inherited-imagery block and the
+          // placeholder fallback still apply to the per-variant choice.
+          image: resolveProductImageUrl({
+            name: product.name,
+            slug: product.slug,
+            dosage: label,
+            dbImageUrl: variantOwnImage ?? pickImageForDosage(productImageUrls, label),
+          }),
+        };
+      })
     : [];
 
   const dosageOptions = hasVariants

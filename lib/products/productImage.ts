@@ -196,6 +196,68 @@ export function normaliseDosage(value: string | null | undefined): string {
   return match ? `${match[1]}${match[2].toLowerCase()}` : "";
 }
 
+// ---------------------------------------------------------------------------------------------
+// Dosage-aware selection within one product's image set
+// ---------------------------------------------------------------------------------------------
+
+/**
+ * Every spelling of a dosage that an Amino Based filename is known to use. The catalogue
+ * contains three shapes, all verified against the live image set:
+ *
+ *   amino-glp-1trz-20mg.webp                    -> "20mg"
+ *   amino-hcg-5000-iu.webp                      -> "5000iu",  unit split off
+ *   amino-tesamorelin-ipamorelin-blend-6-3mg    -> "6.3mg",   decimal point written as "-"
+ */
+function dosageFilenameTokens(dosage: string | null | undefined): string[] {
+  const match = (dosage ?? "").match(/(\d+(?:\.\d+)?)\s*(mg|mcg|iu|g|ml)\b/i);
+  if (!match) return [];
+  const num = match[1];
+  const unit = match[2].toLowerCase();
+  const dashedNum = num.replace(".", "-");
+  return Array.from(
+    new Set([`${num}${unit}`, `${num}-${unit}`, `${dashedNum}${unit}`, `${dashedNum}-${unit}`])
+  );
+}
+
+/**
+ * True when this image's filename carries exactly this dosage.
+ *
+ * The filename's separators are normalised to "-" and the dosage has to appear as a COMPLETE
+ * hyphen-delimited token run. Matching on a bare substring is not safe here: product names in
+ * this catalogue end in digits ("amino-bpc-157-5mg"), so flattening the separators away would
+ * make the 5 mg image look like "1575mg" and stop matching, while a loose substring test would
+ * let a 10 mg variant match "amino-x-210mg" or "amino-x-100mg". Token matching rejects both.
+ */
+export function imageFilenameMatchesDosage(
+  url: string | null | undefined,
+  dosage: string | null | undefined
+): boolean {
+  if (!url) return false;
+  const tokens = dosageFilenameTokens(dosage);
+  if (tokens.length === 0) return false;
+  const base = basenameOf(url).replace(/\.[a-z0-9]+$/i, "");
+  const delimited = `-${base.replace(/[^a-z0-9]+/g, "-")}-`;
+  return tokens.some((token) => delimited.includes(`-${token}-`));
+}
+
+/**
+ * The image in `urls` whose filename carries `dosage`, or undefined when none does.
+ *
+ * Used to pick the right vial photograph for the variant on screen. A product holds one image
+ * per dosage on `products.images[]` (the per-variant `variants[].images[]` field exists but is
+ * unpopulated), so the dosage printed in the filename is what ties an image to a variant.
+ * Returns undefined rather than guessing — the caller falls back to the primary image.
+ */
+export function pickImageForDosage(
+  urls: readonly (string | null | undefined)[],
+  dosage: string | null | undefined
+): string | undefined {
+  const matches = urls.filter((url) => imageFilenameMatchesDosage(url, dosage));
+  // Exactly one match is the expected case. More than one means two files claim the same
+  // dosage, which is a data problem; take the first rather than silently showing nothing.
+  return (matches[0] as string | undefined) ?? undefined;
+}
+
 export type ResolveProductImageArgs = {
   /** Product name, e.g. "BPC-157". */
   name?: string | null;
