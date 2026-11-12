@@ -10,6 +10,13 @@ import { useCartStore } from "@/lib/cart/store";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
+  // Mobile browsers collapse/expand the address bar while scrolling, which changes
+  // window.innerHeight and fires `resize` — and `resize` is in ScrollTrigger's default
+  // autoRefreshEvents. Every such event ran a full ScrollTrigger.refresh() mid-scroll,
+  // recalculating every trigger and (because several carry invalidateOnRefresh) re-reading
+  // and re-rendering their tweens. That was the visible section jitter on phones.
+  // Orientation changes and `load` still refresh; only the mobile resize noise is ignored.
+  ScrollTrigger.config({ ignoreMobileResize: true });
 }
 
 const DISABLED_PREFIXES = ["/pb-console", "/admin"];
@@ -29,7 +36,6 @@ declare global {
 export default function SmoothScrollProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const lenisRef = useRef<Lenis | null>(null);
-  const rafIdRef = useRef<number | null>(null);
   const prevPathnameRef = useRef(pathname);
 
   // Payload admin panel manages its own dynamic scroll containers
@@ -80,7 +86,7 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
       smoothWheel: true,
       wheelMultiplier: 1,
       syncTouch: false, // Mobile/touch: leave touch scrolling native
-      autoRaf: false, // We control the requestAnimationFrame loop explicitly
+      autoRaf: false, // GSAP's ticker drives lenis.raf below — see the gsap.ticker.add call
     });
 
     lenisRef.current = lenis;
@@ -100,12 +106,15 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
     const refreshTimer = window.setTimeout(refreshTrigger, 250);
     window.addEventListener("load", refreshTrigger);
 
-    // Dedicated requestAnimationFrame loop with clean unmount handling
-    function raf(time: number) {
-      lenis.raf(time);
-      rafIdRef.current = requestAnimationFrame(raf);
-    }
-    rafIdRef.current = requestAnimationFrame(raf);
+    // Lenis must advance on the SAME ticker GSAP renders on. Driving it from a separate
+    // requestAnimationFrame loop left the order of "Lenis moves the scroll position" and
+    // "GSAP renders the scrubbed tween" undefined from frame to frame, so pinned and
+    // scrubbed sections trailed the scroll by a frame and oscillated. One ticker makes the
+    // ordering deterministic. gsap.ticker reports seconds; Lenis expects milliseconds.
+    const tick = (time: number) => {
+      lenis.raf(time * 1000);
+    };
+    gsap.ticker.add(tick);
 
     // Anchor links: route in-page anchor clicks through lenis.scrollTo so they animate smoothly
     const handleAnchorClick = (e: MouseEvent) => {
@@ -175,7 +184,7 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
     // Listen to reduced-motion preference changes live
     const handleMotionChange = (e: MediaQueryListEvent) => {
       if (e.matches) {
-        if (rafIdRef.current) cancelAnimationFrame(rafIdRef.current);
+        gsap.ticker.remove(tick);
         lenis.destroy();
         lenisRef.current = null;
         window.__lenis = null;
@@ -184,10 +193,7 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
     reducedMotionQuery.addEventListener("change", handleMotionChange);
 
     return () => {
-      if (rafIdRef.current) {
-        cancelAnimationFrame(rafIdRef.current);
-        rafIdRef.current = null;
-      }
+      gsap.ticker.remove(tick);
       document.removeEventListener("click", handleAnchorClick, { capture: true });
       window.removeEventListener("lenis:stop", handleLenisStop);
       window.removeEventListener("lenis:start", handleLenisStart);
@@ -203,15 +209,36 @@ export default function SmoothScrollProvider({ children }: { children: React.Rea
     };
   }, [isDisabledRoute]);
 
-  // Route changes: reset scroll to top and stop any leftover inertia
+  // Route changes: reset scroll to top and stop any leftover inertia.
+  //
+  // This has to run whether or not Lenis exists. Lenis is deliberately never created on touch
+  // devices (see the isTouchDevice bail-out above), so gating the reset on `lenisRef.current`
+  // meant mobile never reset at all — a back-navigation restores the previous offset and
+  // nothing corrected it afterwards, so the next page opened part-way down. Desktop hid the
+  // bug because the Lenis reset was doing the work the guard was skipping on mobile.
   useEffect(() => {
-    if (prevPathnameRef.current !== pathname) {
-      prevPathnameRef.current = pathname;
+    if (prevPathnameRef.current === pathname) return;
+    prevPathnameRef.current = pathname;
+
+    // A hash in the URL is an explicit request for a position other than the top; leave it to
+    // the browser (or the anchor handler above) rather than yanking the page back up.
+    if (window.location.hash) return;
+
+    const resetScroll = () => {
       if (lenisRef.current) {
-        // Reset scroll position immediately and cancel all leftover scroll inertia
+        // Repositions and cancels any inertia left over from the previous route.
         lenisRef.current.scrollTo(0, { immediate: true });
+      } else {
+        window.scrollTo(0, 0);
       }
-    }
+    };
+
+    // Once now, then again on the next frame. The browser's own scroll restoration and late
+    // layout growth (fonts, images, streamed content) can both land *after* this effect runs,
+    // and on mobile there is no Lenis rAF loop to correct the result afterwards.
+    resetScroll();
+    const rafId = requestAnimationFrame(resetScroll);
+    return () => cancelAnimationFrame(rafId);
   }, [pathname]);
 
   if (isDisabledRoute) {
