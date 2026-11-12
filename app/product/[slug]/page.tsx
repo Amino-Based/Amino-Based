@@ -68,8 +68,39 @@ const getProductBySlug = cache(async (slug: string) => {
   const canonicalSlug = resolveCanonicalProductSlug(slug);
   if (!canonicalSlug) return null;
 
+  // Every lookup below is scoped to a publicly visible product. Payload's Local API defaults
+  // to `overrideAccess: true`, so the collection's read rule — which already narrows anonymous
+  // reads to active + visible — does not apply here. The filter has to be explicit, the way
+  // app/shop/page.tsx, app/api/search/route.ts and app/sitemap.ts all state it. Without it this
+  // route would serve a draft or archived product whose slug happened to match.
+  const publicOnly = [{ status: { equals: "active" } }, { isVisible: { equals: true } }];
+
   try {
     const payload = await getPayload({ config });
+
+    // 1. Exact slug, first and unconditionally.
+    //
+    // This used to run *after* the keyword search below, which let a fuzzy match outrank the
+    // product actually requested. Payload's `like` is a CONTAINS match, not a prefix match, so
+    // `slug like "tb-500%"` also matched "bpc-157-tb-500-blend"; `sort: "name"` then placed
+    // the blend ("B...") ahead of TB-500 ("T..."), and the dosage tie-breaker could never fire
+    // because neither name carries a number+unit pattern, so `|| docs[0]` returned the blend.
+    // Result: /product/tb-500 served "BPC-157 / TB-500 Blend" at $76.99 instead of TB-500 at
+    // $54.99, and /product/ipamorelin served "CJC-1295 / Ipamorelin" at $76.99 instead of
+    // $49.49 — wrong price on screen, wrong product into the cart, wrong price in the JSON-LD.
+    // Resolving the exact slug up front removes the whole class of collision, rather than
+    // leaving correctness to depend on which product name happens to sort first.
+    const exact = await payload.find({
+      collection: "products",
+      where: { and: [...publicOnly, { slug: { equals: canonicalSlug } }] } as any,
+      depth: 2,
+      limit: 1,
+    });
+    if (exact.docs?.[0]) return exact.docs[0] as unknown as ShopProduct;
+
+    // 2. No row carries this slug. Fall back to the master-catalogue keywords, which cover
+    //    products stored under a legacy or dosage-suffixed name. An exact slug inside the
+    //    result set still wins before the name sort is trusted.
     const mvConfig = getMultiVariantConfig(canonicalSlug);
 
     if (mvConfig) {
@@ -85,10 +116,15 @@ const getProductBySlug = cache(async (slug: string) => {
       const result = await payload.find({
         collection: "products",
         where: {
-          or: [
-            { slug: { equals: canonicalSlug } },
-            { slug: { equals: mvConfig.slug } },
-            ...keywordConditions,
+          and: [
+            ...publicOnly,
+            {
+              or: [
+                { slug: { equals: canonicalSlug } },
+                { slug: { equals: mvConfig.slug } },
+                ...keywordConditions,
+              ],
+            },
           ],
         } as any,
         sort: "name",
@@ -98,34 +134,30 @@ const getProductBySlug = cache(async (slug: string) => {
 
       if (result.docs?.length > 0) {
         const primaryDoc =
+          result.docs.find((d: any) => d.slug === canonicalSlug) ||
           result.docs.find((d: any) => {
             const parsed = extractDosageFromName(d.name || "");
             return parsed.dosage?.toLowerCase() === mvConfig.defaultDosage.toLowerCase();
-          }) || result.docs[0];
+          }) ||
+          result.docs[0];
 
         return primaryDoc as unknown as ShopProduct;
       }
     }
 
-    let result = await payload.find({
+    // 3. Last resort: a dosage-suffixed slug, e.g. "bpc-157" stored as "bpc-157-5mg". `like` is
+    //    a contains match here too, so the prefix is re-checked in JS before the row is trusted.
+    const suffixed = await payload.find({
       collection: "products",
-      where: { slug: { equals: canonicalSlug } },
+      where: { and: [...publicOnly, { slug: { like: `${canonicalSlug}-%` } }] } as any,
+      sort: "slug",
       depth: 2,
-      limit: 1,
+      limit: 10,
     });
-    if (result.docs?.[0]) return result.docs[0] as unknown as ShopProduct;
-
-    result = await payload.find({
-      collection: "products",
-      where: {
-        or: [{ slug: { like: `${canonicalSlug}-%` } }],
-      } as any,
-      sort: "name",
-      depth: 2,
-      limit: 1,
-    });
-
-    if (result.docs?.[0]) return result.docs[0] as unknown as ShopProduct;
+    const prefixed = (suffixed.docs ?? []).find((d: any) =>
+      String(d.slug ?? "").startsWith(`${canonicalSlug}-`)
+    );
+    if (prefixed) return prefixed as unknown as ShopProduct;
   } catch (err) {
     // A database failure is not "product not found". Returning null would render a 404 and
     // could deindex real products during an outage; the previous behaviour was worse still —
