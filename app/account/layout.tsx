@@ -1,11 +1,18 @@
 import React from "react";
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { getPayloadUser } from "@/lib/auth/getPayloadUser";
 import { AccountSidebar } from "@/components/account/AccountSidebar";
 import { MobileNav } from "@/components/account/MobileNav";
 import { AccountTopBar } from "@/components/account/AccountTopBar";
+import { NOINDEX_METADATA } from "@/lib/indexability";
 
 export const dynamic = "force-dynamic";
+
+// Private, per-user pages. A robots.txt Disallow only asks a crawler not to
+// fetch; this also keeps an externally linked account URL out of the index.
+// Applies to every /account/* route through layout inheritance.
+export const metadata: Metadata = NOINDEX_METADATA;
 
 export default async function AccountLayout({
   children,

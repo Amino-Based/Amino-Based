@@ -10,6 +10,7 @@ import type { ShopProduct } from "@/lib/types/shop";
 import { DEFAULT_FAQS } from "@/lib/defaultFaqs";
 import { DEFAULT_RESEARCH_BLOGS } from "@/lib/defaultBlogs";
 import { siteUrl } from "@/lib/siteUrl";
+import { SITE_INDEXING_ENABLED } from "@/lib/indexability";
 
 const FALLBACK_BLOG_IMAGE = "/blog-1.jpg";
 
@@ -23,17 +24,22 @@ export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   alternates: { canonical: siteUrl },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-  },
+  // No hardcoded `index: true`. It used to override the root layout's noindex,
+  // so this page advertised itself as indexable on every staging and preview
+  // host — including the Railway domain. Indexability is now decided in one
+  // place (lib/indexability.ts) and inherited from the layout; only the
+  // preview-size hints, which are meaningless when noindexed, are set here.
+  ...(SITE_INDEXING_ENABLED
+    ? {
+        robots: {
+          googleBot: {
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1,
+          },
+        },
+      }
+    : {}),
   openGraph: {
     title: TITLE,
     description: OG_DESCRIPTION,

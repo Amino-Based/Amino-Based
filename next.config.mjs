@@ -28,6 +28,26 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Canonicalise the hostname: www -> apex, permanently, preserving the path.
+      // Both hosts previously answered 200 independently, which made every page a
+      // duplicate across two hostnames. Scoped with `has: host` so it only ever
+      // fires for www and cannot affect the apex or the Railway domain.
+      //
+      // The Railway hostname is deliberately NOT redirected here. It must keep
+      // serving its own `Disallow: /` robots.txt, which a 301 to the apex would
+      // replace with the apex's `Allow: /` — handing a crawler permission under
+      // the wrong hostname. Being non-indexable and canonicalised to the apex is
+      // the correct treatment for it.
+      // `statusCode: 301` rather than `permanent: true`: the latter emits 308,
+      // which preserves the request method. 301 is what was specified and is
+      // the status every crawler and SEO tool understands without question.
+      // The two options are mutually exclusive.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.aminobased.com' }],
+        destination: 'https://aminobased.com/:path*',
+        statusCode: 301,
+      },
       {
         source: '/calculator',
         destination: '/peptide-calculator',

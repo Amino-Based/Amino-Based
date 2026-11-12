@@ -11,6 +11,7 @@ import Analytics from "@/components/Analytics";
 import AdminOverflowFix from "@/components/admin/AdminOverflowFix";
 import SitePreloader from "@/components/preloader/SitePreloader";
 import { siteUrl } from "@/lib/siteUrl";
+import { SITE_INDEXING_ENABLED } from "@/lib/indexability";
 
 const futuristicFont = Syncopate({
   subsets: ["latin"],
@@ -36,13 +37,18 @@ const cormorantFont = Cormorant_Garamond({
   variable: "--font-cormorant",
 });
 
-// Indexing is opt-IN, and production is the only thing that opts in. Vercel sets VERCEL_ENV
-// itself ("production" only for the production deployment), so the live .com keeps exactly the
-// indexing behaviour it has today, while local dev and every preview/staging deployment are
-// held back. SITE_INDEXABLE=true is the escape hatch for a non-Vercel production host —
-// without it, a self-hosted launch would be silently noindexed.
-const isIndexable =
-  process.env.VERCEL_ENV === "production" || process.env.SITE_INDEXABLE === "true";
+// Indexing is opt-IN via SITE_INDEXABLE, shared with robots.ts and sitemap.ts through
+// lib/indexability.ts so the three can never disagree. The previous expression also accepted
+// VERCEL_ENV === "production", which Railway never sets, so the live site silently fell through
+// to the staging branch and served noindex + Disallow: /.
+//
+// Page metadata intentionally checks only the ENVIRONMENT, not the request host. Host-awareness
+// here would require headers() inside metadata generation, which opts every page into dynamic
+// rendering and would lose static generation across the whole site. The host dimension is
+// enforced where it is cheap and authoritative instead: robots.txt (per request) plus the
+// www -> apex 301. The Railway hostname therefore still renders pages, but is Disallow'd in
+// robots.txt and canonicalises to the apex, so it cannot compete for indexing.
+const isIndexable = SITE_INDEXING_ENABLED;
 
 export const viewport: Viewport = {
   width: "device-width",

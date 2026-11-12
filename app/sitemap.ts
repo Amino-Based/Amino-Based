@@ -1,7 +1,9 @@
 import type { MetadataRoute } from "next";
+import { headers } from "next/headers";
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { siteUrl } from "@/lib/siteUrl";
+import { isIndexableRequest, resolveRequestHost } from "@/lib/indexability";
 import { toShopCardProducts } from "@/lib/shopCardProduct";
 import type { ShopProduct } from "@/lib/types/shop";
 
@@ -24,6 +26,18 @@ const STATIC_ROUTES: Array<{ path: string; priority: number; changeFrequency: Me
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  // Same two-axis gate as robots.ts, so the two can never contradict each other.
+  // Previously this route had no gate at all and happily published 65 URLs while
+  // robots.txt was serving `Disallow: /`. An empty sitemap is the correct answer
+  // for a host that is not allowed to be crawled.
+  //
+  // `headers()` is a Request-time API, so this route is evaluated per request
+  // rather than cached once and replayed to every hostname.
+  const headerList = await headers();
+  if (!isIndexableRequest(resolveRequestHost(headerList))) {
+    return [];
+  }
+
   const payload = await getPayload({ config });
 
   const entries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({

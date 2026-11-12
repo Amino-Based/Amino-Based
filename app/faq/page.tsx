@@ -12,10 +12,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: `${siteUrl}/faq`,
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  // Indexability is inherited from the root layout and decided in one place
+  // (lib/indexability.ts). A hardcoded `index: true` here used to override the
+  // layout's noindex on staging, preview and the Railway hostname.
   openGraph: {
     title: "Frequently Asked Questions | Amino Based",
     description:
