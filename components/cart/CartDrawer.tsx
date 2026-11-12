@@ -50,11 +50,14 @@ export default function CartDrawer() {
 
       {/* Drawer Shell with 10% Blurry Background Image */}
       <aside
-        className={`fixed top-0 right-0 h-full w-full max-w-md sm:max-w-lg z-[100] bg-black text-white border-l border-white/15 shadow-[0_25px_80px_rgba(0,0,0,0.9)] flex flex-col overflow-hidden transition-transform duration-400 ease-in-out ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed top-0 right-0 h-full w-full max-w-md sm:max-w-lg z-[100] bg-black text-white border-l border-white/15 flex flex-col overflow-hidden transition-all duration-400 ease-in-out ${
+          isOpen
+            ? "translate-x-0 shadow-[0_25px_80px_rgba(0,0,0,0.9)] pointer-events-auto visible"
+            : "translate-x-full shadow-none pointer-events-none invisible"
         }`}
         role="dialog"
         aria-label="Shopping cart"
+        aria-hidden={!isOpen}
       >
         {/* Background Image Layer — ~10% Soft Blur Focus */}
         <div className="absolute inset-0 z-0 pointer-events-none select-none overflow-hidden">
