@@ -1,31 +1,26 @@
 import Script from "next/script";
 
+import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 const CLARITY_PROJECT_ID = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
 
 /**
  * Google Analytics 4 + Microsoft Clarity, loaded only when their env vars are
- * set. Both use `afterInteractive` so they never block first paint/hydration.
+ * set. Clarity uses `afterInteractive` so it never blocks first paint.
+ *
+ * GA4 moved into ./analytics/GoogleAnalytics, which additionally requires the
+ * canonical production hostname and strips sensitive query parameters from the
+ * reported URL. The env-var gate below is unchanged: with
+ * NEXT_PUBLIC_GA_MEASUREMENT_ID unset, nothing GA-related is rendered at all.
+ *
+ * Both IDs are NEXT_PUBLIC_, so they are inlined at BUILD time. Setting either
+ * one on the host requires a rebuild, not a restart.
  */
 export default function Analytics() {
   return (
     <>
-      {GA_MEASUREMENT_ID && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-            strategy="afterInteractive"
-          />
-          <Script id="ga4-init" strategy="afterInteractive">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${GA_MEASUREMENT_ID}');
-            `}
-          </Script>
-        </>
-      )}
+      {GA_MEASUREMENT_ID && <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />}
 
       {CLARITY_PROJECT_ID && (
         <Script id="ms-clarity-init" strategy="afterInteractive">
