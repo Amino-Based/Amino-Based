@@ -93,6 +93,16 @@ function paymentInstructionsHtml(order: OrderLike, orderNumber: string): string 
         <p style="margin:0 0 20px 0;color:${t.text};font-size:14px;line-height:1.5;">To finalize your order, please send exactly <strong>${money(order.total)}</strong> via ${escapeHtml(manual.label)}.</p>
         <p style="margin:0 0 16px 0;color:#B91C1C;font-size:13px;font-weight:600;">Please include your order number <strong>#${escapeHtml(orderNumber)}</strong> in the payment note.</p>
         ${
+          manual.qrPath
+            ? `<div style="display:block;margin-bottom:16px;">
+          <div style="background-color:#ffffff;border-radius:8px;padding:16px;display:inline-block;">
+            <img src="${escapeHtml(`${SITE_URL}${manual.qrPath}`)}" alt="${escapeHtml(manual.label)} payment QR code for Amino Based" width="220" height="220" style="display:block;width:220px;height:220px;border:0;outline:none;text-decoration:none;" />
+            <p style="margin:12px 0 0 0;color:${t.text};font-size:11px;line-height:1.4;">Scan with your banking app to open ${escapeHtml(manual.label)}</p>
+          </div>
+        </div>`
+            : ""
+        }
+        ${
           manual.recipient
             ? `<div style="display:block;margin-bottom:16px;">
           <div style="background-color:#ffffff;border-radius:8px;padding:12px 24px;display:inline-block;">
@@ -100,9 +110,16 @@ function paymentInstructionsHtml(order: OrderLike, orderNumber: string): string 
             <p style="margin:0;color:${t.title};font-size:16px;font-weight:700;">${escapeHtml(manual.recipient)}</p>
           </div>
         </div>`
-            : `<div style="display:block;margin-bottom:16px;">
+            : // No text handle on file. The wording depends on whether a QR was offered above:
+              // telling someone to "reply for payment details" directly beneath a QR code reads
+              // as a contradiction, and image-blocking means the QR may not have rendered at all.
+              `<div style="display:block;margin-bottom:16px;">
           <div style="background-color:#ffffff;border-radius:8px;padding:12px 24px;display:inline-block;">
-            <p style="margin:0;color:${t.title};font-size:14px;line-height:1.5;">Please reply to this email and we will confirm where to send your payment before you pay.</p>
+            <p style="margin:0;color:${t.title};font-size:14px;line-height:1.5;">${
+              manual.qrPath
+                ? `If the QR code above does not appear or will not scan, reply to this email and we will send your ${escapeHtml(manual.label)} payment details.`
+                : `Please reply to this email and we will confirm where to send your payment before you pay.`
+            }</p>
           </div>
         </div>`
         }

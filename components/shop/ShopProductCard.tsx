@@ -94,12 +94,12 @@ export default function ShopProductCard({
 
         {/* Top-Left Quality / Status Badge */}
         {product.featured ? (
-          <span className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 z-10 inline-flex items-center gap-1 text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-neutral-800 bg-black/5 backdrop-blur-md px-2 py-0.5 rounded-full border border-black/5 pointer-events-none">
+          <span className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 z-10 inline-flex items-center gap-1 text-[9px] sm:text-[10.5px] font-bold uppercase tracking-wider text-neutral-800 bg-black/5 backdrop-blur-md px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-black/5 pointer-events-none">
             <span className="w-1.5 h-1.5 rounded-full bg-black animate-pulse" />
             BEST SELLER
           </span>
         ) : product.purity ? (
-          <span className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 z-10 inline-flex items-center text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-neutral-700 bg-black/5 backdrop-blur-md px-2 py-0.5 rounded-full border border-black/5 pointer-events-none">
+          <span className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 z-10 inline-flex items-center text-[9px] sm:text-[10.5px] font-bold uppercase tracking-wider text-neutral-700 bg-black/5 backdrop-blur-md px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-black/5 pointer-events-none">
             {product.purity}
           </span>
         ) : null}
@@ -119,17 +119,17 @@ export default function ShopProductCard({
         {/* Content body matching reference card typography */}
         <div className="pt-2.5 sm:pt-3 flex flex-col justify-between flex-1 pointer-events-none">
           <div>
-            <h3 className="text-xs sm:text-[13px] font-bold text-neutral-900 tracking-tight leading-tight line-clamp-1">
+            <h3 className="text-xs sm:text-[14px] lg:text-[15px] font-bold text-neutral-900 tracking-tight leading-tight line-clamp-1">
               {product.name}
             </h3>
-            <p className="text-[10px] sm:text-[11px] font-normal text-neutral-400 mt-1 line-clamp-1 leading-snug">
+            <p className="text-[10px] sm:text-xs font-normal text-neutral-500 mt-1 line-clamp-1 leading-snug">
               {subtitle}
             </p>
           </div>
 
           {/* Bottom row: Price on left, Action buttons on right */}
           <div className="mt-3 flex items-center justify-between gap-1">
-            <span className="text-[13px] sm:text-[14px] font-bold text-neutral-900 tracking-tight font-sans">
+            <span className="text-[13px] sm:text-[15px] lg:text-base font-bold text-neutral-900 tracking-tight font-sans">
               {priceText}
             </span>
 
@@ -139,7 +139,7 @@ export default function ShopProductCard({
                 type="button"
                 onClick={handleAddToCart}
                 aria-label={`Quick add ${product.name} to cart`}
-                className={`hidden sm:inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10.5px] font-semibold tracking-wide transition-all shadow-2xs active:scale-95 cursor-pointer relative z-10 ${
+                className={`hidden sm:inline-flex items-center gap-1 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full text-[10.5px] sm:text-xs font-semibold tracking-wide transition-all shadow-2xs active:scale-95 cursor-pointer relative z-10 ${
                   addedJustNow
                     ? "bg-emerald-600 text-white"
                     : "bg-neutral-100 hover:bg-black text-neutral-800 hover:text-white"

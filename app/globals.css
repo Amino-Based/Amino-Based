@@ -122,6 +122,15 @@ body {
   display: none;
 }
 
+/* Shop page laptop/desktop 110% zoom scale enhancement:
+   Ensures laptop and desktop viewports at default 100% browser zoom display
+   with the expansive, highly legible 110% visual presence requested by the user. */
+@media (min-width: 1024px) {
+  .shop-laptop-zoom {
+    zoom: 1.1;
+  }
+}
+
 /* Honour the OS "reduce motion" preference across the whole site. This covers every CSS
    transition, animation and smooth scroll. GSAP tweens are set inline and are NOT reachable
    from here, so each GSAP block checks matchMedia separately (see HomeClient). */

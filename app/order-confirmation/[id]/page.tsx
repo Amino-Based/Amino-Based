@@ -1,4 +1,6 @@
 import React from "react";
+import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPayload } from "payload";
@@ -9,8 +11,14 @@ import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { getManualPaymentInfo } from "@/lib/payments/manualPayments";
 import { getPayloadUser } from "@/lib/auth/getPayloadUser";
 import { tokenGrantsOrderAccess } from "@/lib/orders/orderAccessToken";
+import { NOINDEX_METADATA } from "@/lib/indexability";
 
 export const dynamic = "force-dynamic";
+
+// A single-use page tied to one order, reachable with an access token. It must
+// never be indexed: robots.txt Disallow stops crawling, this also keeps a
+// shared or externally linked confirmation URL out of the index.
+export const metadata: Metadata = NOINDEX_METADATA;
 
 const MANUAL_PAYMENT_METHODS = new Set(["zelle", "venmo", "cashapp", "amex", "circoflows", "stripe_link"]);
 
@@ -121,14 +129,32 @@ export default async function OrderConfirmationPage({
               </p>
               {paymentInfo && (
                 <div className="mt-4 flex flex-col items-start gap-2">
+                  {paymentInfo.qrPath && (
+                    <div className="rounded-lg bg-white p-3">
+                      {/* Unoptimised: the QR must reach the scanner exactly as generated. Any
+                          re-encoding or resampling risks corrupting the modules. */}
+                      <Image
+                        src={paymentInfo.qrPath}
+                        alt={`${paymentInfo.label} payment QR code for Amino Based`}
+                        width={200}
+                        height={200}
+                        unoptimized
+                        className="block h-[200px] w-[200px]"
+                      />
+                      <p className="mt-2 text-[11px] text-amber-700">
+                        Scan with your banking app to open {paymentInfo.label}
+                      </p>
+                    </div>
+                  )}
                   {paymentInfo.recipient ? (
                     <p className="text-xs text-amber-800">
                       Send to: <strong>{paymentInfo.recipient}</strong>
                     </p>
                   ) : (
                     <p className="text-xs text-amber-800">
-                      Please contact us before sending payment and we will confirm the{" "}
-                      {paymentInfo.label} details for your order.
+                      {paymentInfo.qrPath
+                        ? `If the QR code above will not scan, contact us and we will send your ${paymentInfo.label} payment details.`
+                        : `Please contact us before sending payment and we will confirm the ${paymentInfo.label} details for your order.`}
                     </p>
                   )}
                   <p className="text-xs text-amber-700">

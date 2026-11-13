@@ -160,7 +160,7 @@ function ShopClientInner({
   }, [activeProducts, activeCategory, queryParam, sort]);
 
   return (
-    <main ref={sectionRef} className="min-h-screen bg-white text-[#0F0F11]">
+    <main ref={sectionRef} className="min-h-screen bg-white text-[#0F0F11] shop-laptop-zoom">
       
       {/* ========================================================================= */}
       {/* 1. SHOP HERO BANNER & CATALOG TITLE (ARCHITECTURAL RESEARCH AESTHETIC)    */}
@@ -223,7 +223,7 @@ function ShopClientInner({
       {/* ========================================================================= */}
       {/* 2. CATEGORY NAVIGATION ROW (EXACT REFERENCE HORIZONTAL TEXT WITH SUPERSCRIPT) */}
       {/* ========================================================================= */}
-      <div className="sticky top-16 sm:top-20 z-20 bg-white/95 backdrop-blur-md border-b border-[#E4E4E7] transition-all">
+      <div className="sticky top-16 sm:top-20 lg:top-[68px] z-20 bg-white/95 backdrop-blur-md border-b border-[#E4E4E7] transition-all">
         <div className="max-w-7xl lg:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:items-center justify-between gap-2.5 md:gap-4 py-2 md:py-0">
           
           {/* Horizontal Category Text Tabs matching reference */}

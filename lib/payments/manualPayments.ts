@@ -12,11 +12,26 @@ export type ManualPaymentMethod = "zelle" | "venmo" | "cashapp";
 
 export const MANUAL_PAYMENT_INFO: Record<
   ManualPaymentMethod,
-  { label: string; recipient: string }
+  {
+    label: string;
+    recipient: string;
+    /**
+     * Path under `public/` to a QR code for this method, or "" when there isn't one.
+     *
+     * Must point at an account that belongs to Amino Based — see the warning above. The
+     * renderers turn this into an absolute URL, because a relative path does not resolve in
+     * an email client.
+     *
+     * A QR is never sufficient on its own: Gmail, Outlook and Apple Mail block remote images
+     * by default, so a customer may see nothing at all. Keep `recipient` filled in as the
+     * text fallback wherever a QR is offered.
+     */
+    qrPath: string;
+  }
 > = {
-  zelle: { label: "Zelle", recipient: "" },
-  venmo: { label: "Venmo", recipient: "" },
-  cashapp: { label: "Cash App", recipient: "" },
+  zelle: { label: "Zelle", recipient: "", qrPath: "/payments/zelle-qr.png" },
+  venmo: { label: "Venmo", recipient: "", qrPath: "" },
+  cashapp: { label: "Cash App", recipient: "", qrPath: "" },
 };
 
 export function getManualPaymentInfo(method?: string | null) {
