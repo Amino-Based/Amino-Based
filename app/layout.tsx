@@ -63,6 +63,16 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Amino Based | Research Peptides & Advanced Biotech",
   description: "Setting the gold standard in peptide synthesis with verified HPLC/MS testing for uncompromised results.",
+  // Bing Webmaster Tools site ownership. `other` is the documented escape hatch for a meta
+  // name the Metadata API has no typed field for; `verification` only covers Google, Yandex,
+  // Yahoo and `me`, so msvalidate.01 has to go here.
+  //
+  // Deliberately NOT gated on isIndexable: Bing has to read this tag to verify the apex, and a
+  // verification token identifies the owner rather than inviting a crawl. Indexability is still
+  // controlled by robots.ts and the robots directive below.
+  other: {
+    "msvalidate.01": "AF7BCF9F57245C1396198E83EFC86494",
+  },
   // Belt and braces alongside robots.ts: a robots.txt rule only asks a crawler not to fetch,
   // whereas this meta tag also keeps an already-known staging URL out of the index. Omitted
   // entirely in production, so nothing changes for the live site.
