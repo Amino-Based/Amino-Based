@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   // verification token identifies the owner rather than inviting a crawl. Indexability is still
   // controlled by robots.ts and the robots directive below.
   other: {
-    "msvalidate.01": "AF7BCF9F57245C1396198E83EFC86494",
+    "msvalidate.01": "AE7BCE9E57245C1396198E83EFC86494",
   },
   // Belt and braces alongside robots.ts: a robots.txt rule only asks a crawler not to fetch,
   // whereas this meta tag also keeps an already-known staging URL out of the index. Omitted
