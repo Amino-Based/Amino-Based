@@ -1,18 +1,21 @@
-import Script from "next/script";
-
+import ClarityAnalytics from "@/components/analytics/ClarityAnalytics";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 const CLARITY_PROJECT_ID = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
 
 /**
- * Google Analytics 4 + Microsoft Clarity, loaded only when their env vars are
- * set. Clarity uses `afterInteractive` so it never blocks first paint.
+ * Google Analytics 4 + Microsoft Clarity, each loaded only when its env var is
+ * set. Both gates below are unchanged: with the corresponding variable unset,
+ * nothing for that tool is rendered at all.
  *
- * GA4 moved into ./analytics/GoogleAnalytics, which additionally requires the
- * canonical production hostname and strips sensitive query parameters from the
- * reported URL. The env-var gate below is unchanged: with
- * NEXT_PUBLIC_GA_MEASUREMENT_ID unset, nothing GA-related is rendered at all.
+ * Each tool lives in its own client component because they need different
+ * protections. GA4 transmits a URL, so ./analytics/GoogleAnalytics sanitises
+ * page_location and page_referrer. Clarity records the rendered DOM, where
+ * sanitising a URL protects nothing, so ./analytics/ClarityAnalytics keeps the
+ * recorder away from pages that display customer data and masks the DOM when a
+ * client-side navigation reaches one. Both require the canonical production
+ * hostname.
  *
  * Both IDs are NEXT_PUBLIC_, so they are inlined at BUILD time. Setting either
  * one on the host requires a rebuild, not a restart.
@@ -22,17 +25,7 @@ export default function Analytics() {
     <>
       {GA_MEASUREMENT_ID && <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />}
 
-      {CLARITY_PROJECT_ID && (
-        <Script id="ms-clarity-init" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "${CLARITY_PROJECT_ID}");
-          `}
-        </Script>
-      )}
+      {CLARITY_PROJECT_ID && <ClarityAnalytics projectId={CLARITY_PROJECT_ID} />}
     </>
   );
 }

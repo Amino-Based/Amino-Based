@@ -48,7 +48,7 @@ export default function StripeCheckoutForm({ amount, orderInput, onOrderPlaced }
         setIsProcessing(false);
         return;
       }
-      const { orderId, accessToken } = result;
+      const { orderId } = result;
 
       const { clientSecret } = await createPaymentIntent(Math.round(amount * 100), orderId);
 
@@ -62,7 +62,7 @@ export default function StripeCheckoutForm({ amount, orderInput, onOrderPlaced }
         elements,
         clientSecret,
         confirmParams: {
-          return_url: `${window.location.origin}/order-confirmation/${orderId}?t=${accessToken}`,
+          return_url: `${window.location.origin}/order-confirmation/${orderId}`,
         },
         redirect: "if_required",
       });
@@ -79,7 +79,7 @@ export default function StripeCheckoutForm({ amount, orderInput, onOrderPlaced }
 
       onOrderPlaced?.();
       useCartStore.getState().clear();
-      router.push(`/order-confirmation/${orderId}?t=${accessToken}`);
+      router.push(`/order-confirmation/${orderId}`);
     } catch (err) {
       console.error("Stripe checkout failed:", err);
       setError("Something went wrong while processing your payment. Please try again.");

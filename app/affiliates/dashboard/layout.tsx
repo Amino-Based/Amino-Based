@@ -24,7 +24,12 @@ export default async function AffiliateDashboardLayout({ children }: { children:
   }
 
   return (
-    <main className="min-h-screen bg-[#F8FAFC] text-slate-800">
+    // data-clarity-mask is in the INITIAL HTML, not applied by an effect: the
+    // heading below renders the partner's display name, and the pages beneath
+    // render payouts, conversions and earnings. Applies to every
+    // /affiliates/dashboard/* route through layout inheritance. The public
+    // /affiliates landing page sits OUTSIDE this layout and stays recordable.
+    <main className="min-h-screen bg-[#F8FAFC] text-slate-800" data-clarity-mask="true">
       <div className="pt-28 sm:pt-36 pb-20 px-4 md:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">

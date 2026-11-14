@@ -27,7 +27,15 @@ export default async function AccountLayout({
     user.email.split("@")[0];
 
   return (
-    <div className="min-h-screen bg-[#FAFAFC] flex selection:bg-neutral-900 selection:text-white">
+    // data-clarity-mask is in the INITIAL HTML, not applied by an effect: this
+    // subtree renders the customer's name and email immediately (the sidebar
+    // below receives both as props), so the attribute has to exist in the same
+    // markup. Applies to every /account/* route through layout inheritance.
+    // ClarityAnalytics' <body> mask still runs as a second layer.
+    <div
+      className="min-h-screen bg-[#FAFAFC] flex selection:bg-neutral-900 selection:text-white"
+      data-clarity-mask="true"
+    >
       <AccountSidebar userName={userName} userEmail={user.email} />
 
       <div className="flex-1 min-w-0 flex flex-col">

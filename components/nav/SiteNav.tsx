@@ -471,6 +471,12 @@ export default function SiteNav({
               onClick={() => setIslandMenuOpen(false)}
               className="hidden md:flex items-center gap-1.5 text-white/70 hover:text-white p-1.5 transition-colors rounded-full hover:bg-white/10 cursor-pointer pointer-events-auto"
               aria-label={status === "authenticated" ? "Account dashboard" : "Sign in / Register"}
+              // The customer's first name is rendered here on EVERY page,
+              // including public ones, so Clarity's route exclusions cannot
+              // cover it. Masked on the link rather than the inner span because
+              // the name also appears in the `title` attribute below, and
+              // attributes are part of the DOM a session recorder serialises.
+              data-clarity-mask="true"
               title={
                 status === "authenticated"
                   ? session?.user?.firstName

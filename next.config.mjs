@@ -107,6 +107,26 @@ const nextConfig = {
           { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
         ],
       },
+      {
+        // The order-access token exchange. Its own URL carries the one-time
+        // access JWT in `?t=`, so this is the one route that must send NO
+        // referrer at all rather than the origin.
+        //
+        // This has to live here, not in the route handler. A matching entry in
+        // this config is applied after the handler runs and replaces what the
+        // handler set for the same key, so the handler's
+        // `headers.set('Referrer-Policy', 'no-referrer')` never reached the
+        // client — the response carried the site-wide
+        // `strict-origin-when-cross-origin` instead. Verified against the real
+        // HTTP response, not just the in-memory NextResponse.
+        //
+        // This entry must stay AFTER the site-wide `/:path*` block: for two
+        // entries that match the same request and set the same key, the later
+        // one wins. Only Referrer-Policy is listed, so every other security
+        // header from the block above still applies to this route.
+        source: '/order-confirmation/:id/access',
+        headers: [{ key: 'Referrer-Policy', value: 'no-referrer' }],
+      },
     ]
   },
 }

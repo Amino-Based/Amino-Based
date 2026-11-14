@@ -289,7 +289,7 @@ export default function CheckoutClient({ onOrderPlaced }: { onOrderPlaced?: () =
       }
       onOrderPlaced?.();
       useCartStore.getState().clear();
-      router.push(`/order-confirmation/${result.orderId}?t=${result.accessToken}`);
+      router.push(`/order-confirmation/${result.orderId}`);
     } catch (err) {
       console.error("Failed to place order:", err);
       setSubmitError("Something went wrong while placing your order. Please try again.");

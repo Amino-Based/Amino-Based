@@ -1,6 +1,18 @@
 import jwt, { type SignOptions } from "jsonwebtoken";
 
-export type OrderAccessPayload = { orderId: string };
+export type OrderAccessPayload = {
+  orderId: string;
+  /**
+   * Expiry as a Unix timestamp in seconds, taken from the verified JWT.
+   *
+   * Exposed so a cookie issued in exchange for a token can be given the
+   * token's REMAINING lifetime rather than a fresh fixed duration. Without
+   * this, exchanging a 30-day email token that is 29 days old would mint a
+   * cookie good for another full period and silently extend access beyond the
+   * expiry the token was signed with.
+   */
+  expiresAtSeconds: number | null;
+};
 
 const SECRET = process.env.PAYLOAD_SECRET || "";
 
@@ -18,6 +30,14 @@ const ALGORITHM = "HS256" as const;
 /** Receipt links sent by email need to keep working for a while; a post-checkout redirect does not. */
 export const ORDER_TOKEN_TTL_REDIRECT: SignOptions["expiresIn"] = "7d";
 export const ORDER_TOKEN_TTL_EMAIL: SignOptions["expiresIn"] = "30d";
+
+/**
+ * The same two TTLs in seconds, for callers that need a number rather than a
+ * jsonwebtoken duration string — a cookie `maxAge`, for instance. Kept beside
+ * the strings above so the pair cannot drift apart.
+ */
+export const ORDER_TOKEN_TTL_REDIRECT_SECONDS = 7 * 24 * 60 * 60;
+export const ORDER_TOKEN_TTL_EMAIL_SECONDS = 30 * 24 * 60 * 60;
 
 /**
  * Capability token proving the bearer may view one specific order.
@@ -63,7 +83,11 @@ export function verifyOrderAccessToken(token: string): OrderAccessPayload | null
     if (typeof decoded !== "object" || decoded === null) return null;
     const orderId = (decoded as Record<string, unknown>).orderId;
     if (typeof orderId !== "string" || orderId.length === 0) return null;
-    return { orderId };
+    const exp = (decoded as Record<string, unknown>).exp;
+    return {
+      orderId,
+      expiresAtSeconds: typeof exp === "number" && Number.isFinite(exp) ? exp : null,
+    };
   } catch {
     return null;
   }

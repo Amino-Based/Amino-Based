@@ -31,7 +31,7 @@ export default function PrivacyPolicyPage() {
       eyebrow="Data Protection"
       title="Privacy Policy & Laboratory Data Governance"
       intro="Amino Based is committed to the highest standards of researcher privacy, data security, and confidentiality. This policy outlines how information is collected, processed, and safeguarded throughout your relationship with our laboratory synthesis network."
-      lastUpdated="September 5, 2026"
+      lastUpdated="November 14, 2026"
     >
       <div>
         <h2>1. Principles of Data Stewardship</h2>
@@ -101,10 +101,41 @@ export default function PrivacyPolicyPage() {
             accurate credit assignment. These cookies do not monitor third-party browsing activity across external websites.
           </li>
           <li>
-            <strong>Analytics &amp; Performance:</strong> Anonymous, aggregated telemetry to evaluate server latency, mobile
-            responsiveness, and catalog search accuracy. We do not participate in cross-site behavioural ad-tracking networks.
+            <strong>Analytics &amp; Performance:</strong> We use two third-party analytics services, described below, to
+            understand how the site is used and to improve it. We do not participate in cross-site behavioural ad-tracking
+            networks.
           </li>
         </ul>
+        <h3>Google Analytics</h3>
+        <p>
+          Google Analytics records which pages you visit, the page you arrived from, and aggregate information about your
+          device, browser, and approximate location. Before a page address is sent to Google, we remove sensitive query
+          parameters from it, including the one-time access links used for order receipts.
+        </p>
+        <h3>Microsoft Clarity — session recordings and heatmaps</h3>
+        <p>
+          Microsoft Clarity records individual browsing sessions and builds heatmaps showing where visitors click and scroll.
+          This is more detailed than aggregate analytics. A Clarity session recording may capture:
+        </p>
+        <ul>
+          <li>The pages you view and the addresses of those pages.</li>
+          <li>Mouse movement, clicks, taps, scrolling, and how long you spend on a page.</li>
+          <li>The content of the page as it was displayed to you, including text you typed into forms.</li>
+          <li>Your device type, screen size, browser, operating system, and approximate location.</li>
+          <li>An identifier Microsoft uses to recognise a returning visitor.</li>
+        </ul>
+        <p>
+          A session recording is not anonymous: it is a reconstruction of one person&apos;s visit, and it may be linked to
+          that returning-visitor identifier.
+        </p>
+        <p>
+          We take the following specific steps to keep Clarity away from personal information. Clarity is not loaded at all on
+          pages that display or collect it — your account pages, checkout, order confirmations, sign-in, registration and
+          password-reset pages, the administrative console, the partner dashboard, and the military and veteran verification
+          page. Those pages, and your name where it appears in the site header, are additionally marked so that Clarity masks
+          their content. These measures are specific to the pages and elements listed; they are not a guarantee that no
+          personal information can ever appear in a recording.
+        </p>
       </div>
 
       <div>
@@ -122,6 +153,11 @@ export default function PrivacyPolicyPage() {
             mandate, or to prevent unlawful chemical distribution.
           </li>
         </ul>
+        <p>
+          In addition, the analytics services described in Section 4 are operated by third parties, and the information
+          described there is collected by them directly: Google Analytics by Google, and Clarity by Microsoft. Their own
+          privacy notices govern what they do with it.
+        </p>
       </div>
 
       <div>

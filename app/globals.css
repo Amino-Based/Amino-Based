@@ -11,6 +11,7 @@ html {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  overflow-x: clip;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -19,6 +20,7 @@ body {
   max-width: 100%;
   min-height: 100%;
   overflow-x: hidden;
+  overflow-x: clip;
   color: var(--foreground);
   background: var(--background);
   -webkit-font-smoothing: antialiased;
@@ -128,6 +130,17 @@ body {
 @media (min-width: 1024px) {
   .shop-laptop-zoom {
     zoom: 1.1;
+  }
+}
+
+/* Blog article TOC: Fixed on the left middle of the screen while main contents scroll */
+@media (min-width: 768px) {
+  .blog-toc-sticky-center {
+    position: -webkit-sticky;
+    position: sticky;
+    top: max(84px, calc(50vh - 220px));
+    z-index: 20;
+    align-self: flex-start;
   }
 }
 

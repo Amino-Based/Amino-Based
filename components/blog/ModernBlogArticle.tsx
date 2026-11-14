@@ -70,11 +70,16 @@ export default function ModernBlogArticle({ post, allPosts, slug }: ModernBlogAr
         el: document.getElementById(item.id),
       }));
 
+      const activationThreshold =
+        typeof window !== "undefined"
+          ? Math.max(180, window.innerHeight * 0.38)
+          : 180;
+
       for (let i = items.length - 1; i >= 0; i--) {
         const item = items[i];
         if (item.el) {
           const rect = item.el.getBoundingClientRect();
-          if (rect.top <= 180) {
+          if (rect.top <= activationThreshold) {
             setActiveSectionId(item.id);
             return;
           }
@@ -278,12 +283,12 @@ export default function ModernBlogArticle({ post, allPosts, slug }: ModernBlogAr
       {/* =========================================================================
           4. STICKY "IN THIS ARTICLE" TOC WITH SCROLLSPY + 5-9 BODY SECTIONS
           ========================================================================= */}
-      <section className="w-full !pl-0 pr-4 sm:pr-6 lg:pr-10 xl:pr-16 py-10 sm:py-14 bg-[#FAFAFC] border-t border-[#E4E4E7]">
+      <section className="w-full px-4 sm:px-6 lg:px-8 xl:px-12 py-10 sm:py-14 bg-[#FAFAFC] border-t border-[#E4E4E7]">
         <div className="w-full flex flex-col md:flex-row items-start gap-8 lg:gap-10 xl:gap-14">
           
-          {/* 4. STICKY "IN THIS ARTICLE" TABLE OF CONTENTS (Docked 100% Flush to Left Screen Edge) */}
-          <aside className="w-full md:w-[280px] lg:w-[310px] xl:w-[340px] shrink-0 md:sticky md:top-24 space-y-6 !pl-0 !ml-0">
-            <div className="rounded-none rounded-r-2xl bg-white border-y border-r border-l-0 border-[#E4E4E7] p-5 sm:p-6 pl-5 sm:pl-7 pr-5 sm:pr-6 shadow-sm">
+          {/* 4. "IN THIS ARTICLE" TABLE OF CONTENTS (Fixed on the Left Middle of the Screen) */}
+          <aside className="w-full md:w-[280px] lg:w-[310px] xl:w-[340px] shrink-0 blog-toc-sticky-center">
+            <div className="rounded-2xl bg-white border border-[#E4E4E7] p-5 sm:p-6 shadow-sm max-h-[calc(100vh-100px)] overflow-y-auto no-scrollbar">
               
               <div className="flex items-center gap-2 text-xs font-mono font-bold tracking-wider uppercase text-[#071739] mb-4 pb-3 border-b border-[#E4E4E7]">
                 <Layers className="w-4 h-4 text-[#0096c8]" />

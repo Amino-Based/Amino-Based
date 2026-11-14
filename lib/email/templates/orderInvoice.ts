@@ -373,7 +373,7 @@ export function generateOrderEmail(
     <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-bottom:24px;">${itemsHtml}</table>
     ${totalsHtml}
     ${addressesHtml}
-    <div style="text-align:center;">${emailButton({ label: "View Order Status", href: `${SITE_URL}/order-confirmation/${order.id}?t=${signOrderAccessToken(order.id, ORDER_TOKEN_TTL_EMAIL)}` })}</div>`
+    <div style="text-align:center;">${emailButton({ label: "View Order Status", href: `${SITE_URL}/order-confirmation/${order.id}/access?t=${signOrderAccessToken(order.id, ORDER_TOKEN_TTL_EMAIL)}` })}</div>`
         : ""
     }`;
 

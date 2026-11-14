@@ -9,7 +9,14 @@ import { findProductByAnyId } from "@/lib/orders/findProduct";
 import { reserveStock, releaseStock, type StockLine } from "@/lib/orders/inventory";
 import { reserveCouponUsage, releaseCouponUsage } from "@/lib/orders/coupons";
 import { getEffectivePrice } from "@/lib/types/shop";
+import { cookies } from "next/headers";
+
 import { signOrderAccessToken } from "@/lib/orders/orderAccessToken";
+import {
+  buildOrderAccessCookieOptions,
+  checkoutCookieMaxAgeSeconds,
+  orderAccessCookieName,
+} from "@/lib/orders/orderAccessCookie";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -261,7 +268,7 @@ export async function verifyCoupon(code: string, subtotal: number): Promise<Coup
  * is produced before any stock or coupon is reserved, so no order exists and nothing needs undoing.
  */
 export type CreateOrderResult =
-  | { ok: true; orderId: string; orderNumber: string; total: number; accessToken: string }
+  | { ok: true; orderId: string; orderNumber: string; total: number }
   | {
       ok: false;
       reason: "shipping_options_changed" | "out_of_stock" | "server_error";
@@ -474,14 +481,46 @@ async function createPayloadOrderImpl(
     overrideAccess: true,
   });
 
-  // Capability token for the receipt page: order ids are sequential, so the confirmation route
-  // cannot authorise on the id alone (guests have no session to check).
+  // Capability for the receipt page: order ids are sequential, so the confirmation route cannot
+  // authorise on the id alone (guests have no session to check). The token is now set as an
+  // HttpOnly cookie instead of being returned to the browser, so it never reaches the URL — and
+  // therefore never reaches browser history, access logs, the Referer header or analytics.
+  //
+  // This runs in a Server Action, one of the two places Next allows a cookie to be set; a Server
+  // Component cannot. Setting it here also means the cookie is already in place before Stripe
+  // redirects back from a 3DS challenge.
+  const cookieName = orderAccessCookieName(order.id);
+  const cookieOptions = buildOrderAccessCookieOptions({
+    orderId: order.id,
+    maxAgeSeconds: checkoutCookieMaxAgeSeconds(),
+  });
+  //
+  // Isolated on purpose. By this point the order row exists, stock and coupon usage are reserved,
+  // and for a card payment the intent may already be confirmed — the point of no return has
+  // passed. Letting a cookie failure reach the outer catch would report "server_error" for an
+  // order that was genuinely placed, and the customer's natural response is to pay again.
+  //
+  // Losing the cookie costs convenience, not access: the confirmation email carries its own
+  // token, and a signed-in owner or an admin is authorised without it. So this failure is logged
+  // and the order still returns ok. Only this write is guarded — order creation, inventory and
+  // coupon errors are all raised before here and still propagate untouched. The log records the
+  // order id and the error only, never the token or the cookie value.
+  try {
+    if (cookieName && cookieOptions) {
+      (await cookies()).set(cookieName, signOrderAccessToken(order.id), cookieOptions);
+    }
+  } catch (err) {
+    console.error("Order access cookie could not be set; order was still created", {
+      orderId: String(order.id),
+      message: err instanceof Error ? err.message : String(err),
+    });
+  }
+
   return {
     ok: true,
     orderId: String(order.id),
     orderNumber,
     total,
-    accessToken: signOrderAccessToken(order.id),
   };
   }
 }

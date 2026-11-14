@@ -46,13 +46,25 @@ export const metadata: Metadata = {
     url: siteUrl,
     siteName: "Amino Based",
     type: "website",
-    images: [{ url: `${siteUrl}/placeholder-wide.svg` }],
+    // Was /placeholder-wide.svg — a grey "IMAGE PLACEHOLDER" graphic, and SVG, which
+    // Facebook, X and LinkedIn do not render in link previews. The homepage is the most
+    // shared URL on the site, so it was the one page guaranteed to preview badly.
+    // 1200x630 is the ratio every major platform crops to; width/height let a scraper
+    // lay the card out on first fetch instead of after downloading the file.
+    images: [
+      {
+        url: `${siteUrl}/og/home.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Amino Based GLOW and KLOW research vials and a TB-500 nasal spray in a wire basket",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: OG_DESCRIPTION,
-    images: [`${siteUrl}/placeholder-wide.svg`],
+    images: [`${siteUrl}/og/home.jpg`],
   },
 };
 

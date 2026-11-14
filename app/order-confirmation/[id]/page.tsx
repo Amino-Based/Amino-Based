@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getPayload } from "payload";
 import config from "@payload-config";
 import { CheckCircle2, Clock, Package } from "lucide-react";
@@ -10,7 +10,10 @@ import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/nav/Breadcrumbs";
 import { getManualPaymentInfo } from "@/lib/payments/manualPayments";
 import { getPayloadUser } from "@/lib/auth/getPayloadUser";
+import { cookies } from "next/headers";
+
 import { tokenGrantsOrderAccess } from "@/lib/orders/orderAccessToken";
+import { orderAccessCookieName, orderAccessCookiePath } from "@/lib/orders/orderAccessCookie";
 import { NOINDEX_METADATA } from "@/lib/indexability";
 
 export const dynamic = "force-dynamic";
@@ -27,10 +30,10 @@ export default async function OrderConfirmationPage({
   searchParams,
 }: {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ t?: string }>;
+  searchParams: Promise<{ t?: string; nc?: string }>;
 }) {
   const { id } = await params;
-  const { t: accessToken } = await searchParams;
+  const { t: accessToken, nc } = await searchParams;
 
   const payload = await getPayload({ config });
 
@@ -53,7 +56,48 @@ export default async function OrderConfirmationPage({
   // alone — that exposed every customer's name, shipping address and order contents to anyone
   // counting upwards. Guests have no session, so their receipt link carries a signed,
   // order-scoped token instead.
-  if (!tokenGrantsOrderAccess(accessToken, order.id)) {
+  // Two ways to present the capability, both carrying the same signed token:
+  //   - the HttpOnly cookie set at checkout or by the email-link exchange, and
+  //   - the legacy `?t=` query parameter.
+  // The query parameter is still accepted on purpose. Email receipts sent
+  // before this change carry a 30-day token in the URL, and those links must
+  // keep working; dropping it would strand customers mid-window.
+  const cookieName = orderAccessCookieName(order.id);
+  const cookieToken = cookieName ? (await cookies()).get(cookieName)?.value : undefined;
+  const cookieGrants = tokenGrantsOrderAccess(cookieToken, order.id);
+  const queryGrants = tokenGrantsOrderAccess(accessToken, order.id);
+
+  // Self-healing for legacy links. A token in the URL stays in the address bar
+  // for the whole visit, and — because Referrer-Policy is
+  // strict-origin-when-cross-origin, which sends the FULL url same-origin —
+  // reaches our own access logs again on every internal click. So a legacy link
+  // is swapped for the cookie on arrival.
+  //
+  // Both redirects below go to a path built by orderAccessCookiePath from the
+  // order's own database id, never from anything the caller supplied, and both
+  // are reached only after the token has already verified: an invalid token
+  // falls through to the authorisation checks instead and cannot be redirected
+  // into an authorised state.
+  const safePath = orderAccessCookiePath(order.id);
+  if (safePath !== null && accessToken) {
+    if (cookieGrants) {
+      // The cookie already carries the capability, so the token in the URL is
+      // redundant: drop it. This is also the landing step of the exchange
+      // below, which is what gets the visitor to the clean receipt URL.
+      redirect(safePath);
+    }
+    if (queryGrants && nc !== "1") {
+      // Hand the token to the exchange route, which can set a cookie where a
+      // Server Component cannot. `nc=1` means that exchange has already run and
+      // the cookie did not survive, so this must not loop: that browser blocks
+      // cookies and keeps using the token below.
+      redirect(`${safePath}/access?t=${encodeURIComponent(accessToken)}&fb=1`);
+    }
+  }
+
+  const hasCapability = cookieGrants || queryGrants;
+
+  if (!hasCapability) {
     const user = await getPayloadUser();
     const ownerId =
       typeof order.owner === "object" && order.owner !== null ? order.owner.id : order.owner;
@@ -79,7 +123,13 @@ export default async function OrderConfirmationPage({
   const paymentInfo = isPendingManualPayment ? getManualPaymentInfo(order.paymentMethod) : null;
 
   return (
-    <div className="min-h-screen bg-[#FAFAFA] text-gray-900">
+    // data-clarity-mask is in the INITIAL HTML, not applied by an effect. This
+    // route has no layout of its own, so the page's root element is the correct
+    // server-rendered place for it. It matters most here: checkout reaches this
+    // page with router.push(), a client-side navigation, and the shipping
+    // address below renders as plain text in the very first paint.
+    // Authorisation above is untouched — this is a presentation attribute only.
+    <div className="min-h-screen bg-[#FAFAFA] text-gray-900" data-clarity-mask="true">
       <div className="px-4 pt-28 pb-12 md:px-8 md:pt-36 lg:px-12">
       <div className="max-w-3xl mx-auto flex flex-col gap-8">
         {/* Wayfinding Breadcrumbs */}

@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { notFound } from "next/navigation";
 import { getPayload } from "payload";
 import config from "@payload-config";
@@ -37,14 +38,14 @@ function estimateWordCount(post: BlogPost): number {
 
 export const dynamic = "force-dynamic";
 
-async function getAllPosts(): Promise<BlogPost[]> {
+const getAllPosts = cache(async (): Promise<BlogPost[]> => {
   try {
     const payload = await getPayload({ config });
     const result = await payload.find({
       collection: "blog-posts",
       where: { status: { equals: "published" } },
       sort: "-publishedAt",
-      limit: 50,
+      limit: 12,
       depth: 1,
     });
     if (result.docs && result.docs.length > 0) {
@@ -54,12 +55,30 @@ async function getAllPosts(): Promise<BlogPost[]> {
     console.error("Failed to load blog posts from database:", err);
   }
   return DEFAULT_RESEARCH_BLOGS;
-}
+});
 
-async function getPost(slug: string): Promise<BlogPost | null> {
-  const all = await getAllPosts();
-  return all.find((p) => p.slug === slug || String(p.id) === slug) ?? null;
-}
+const getPost = cache(async (slug: string): Promise<BlogPost | null> => {
+  try {
+    const payload = await getPayload({ config });
+    const result = await payload.find({
+      collection: "blog-posts",
+      where: {
+        or: [
+          { slug: { equals: slug } },
+          { id: { equals: slug } },
+        ],
+      },
+      limit: 1,
+      depth: 1,
+    });
+    if (result.docs && result.docs.length > 0) {
+      return result.docs[0] as unknown as BlogPost;
+    }
+  } catch (err) {
+    console.error("Failed to load blog post from database:", err);
+  }
+  return DEFAULT_RESEARCH_BLOGS.find((p) => p.slug === slug || String(p.id) === slug) ?? null;
+});
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

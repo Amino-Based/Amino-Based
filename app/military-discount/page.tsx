@@ -31,7 +31,15 @@ export const metadata: Metadata = {
 
 export default function MilitaryDiscountPage() {
   return (
-    <main className="min-h-screen bg-[#F8FAFC]">
+    // data-clarity-mask is in the INITIAL HTML. The route is now excluded, so a
+    // visitor landing here directly is never recorded at all — but the footer,
+    // the nav and MilitaryDiscountBanner all link here, and those are
+    // client-side navigations that leave an already-running recorder in place.
+    // The form below collects a full name, an email and a military/veteran ID,
+    // and renders the chosen file's NAME as page text, which Clarity's input
+    // masking would not cover. Masked at the root because an excluded route has
+    // no recording value left to preserve, so over-masking is the safe side.
+    <main className="min-h-screen bg-[#F8FAFC]" data-clarity-mask="true">
       {/* Hero */}
       <section className="relative bg-white overflow-hidden pt-28 pb-16 px-6 md:px-12 md:pt-36 lg:px-24 border-b border-[#E2E8F0]">
         {/* Subtle ambient glows — navy/cyan palette */}
